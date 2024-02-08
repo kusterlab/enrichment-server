@@ -1,0 +1,13 @@
+## 2024-01-26 10:44:42.7556
+input gct:	example/input_stub.gct
+gene.set.database:	example/ptm.sig.db.all.flanking.human.v1.8.1.gmt
+sample.norm.type:	rank
+weight:	0.75
+statistic:	area.under.RES
+output.score.type	NES
+nperm:	1000
+global.fdr:	FALSE
+min.overlap:	10
+correl.type:	z.score
+export.signat.gct:	FALSE
+run.parallel:	TRUE

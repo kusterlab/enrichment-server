@@ -1,0 +1,6 @@
+## 2024-01-26 10:44:42 
+MSigDB import: 0.02221513 
+Testing 3 gene sets:
+KINASE-PSP_CK2A1 
+KINASE-PSP_CDK2 
+KINASE-PSP_CDK1 
