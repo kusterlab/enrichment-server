@@ -5,15 +5,18 @@ description = ""
 authors = ["Julian Müller <julian2.mueller@tum.de>"]
 
 [tool.poetry.dependencies]
-python = ">=3.9,<3.12"
+python = ">=3.10,<3.12"
 werkzeug = "2.0.3"
 flask = "2.0.3"
 pandas = "^1.5"
-numpy = "^1.26.4"
+#numpy = "^1.26.4"
 cmappy = "^4.0.1"
 
 
 [tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
 
 [build-system]
 requires = ["poetry-core>=1.4.0"]

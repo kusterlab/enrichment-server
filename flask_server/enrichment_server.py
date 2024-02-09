@@ -1,13 +1,14 @@
 # How to send a request: curl -X POST -F file=@minimal_input.gct -F session_id=ABCDEF12345  -F dataset_name=FooBar http://127.0.0.1:5000/
-import flask.wrappers
-import werkzeug.wrappers
-from werkzeug.utils import secure_filename
 import subprocess
 from pathlib import Path
+import json
+
+import werkzeug.wrappers
+from werkzeug.utils import secure_filename
 from flask import Flask, request, send_file, jsonify
+import flask.wrappers
 import pandas as pd
-import numpy as np
-from cmapPy.pandasGEXpress import parse_gct, concat
+from cmapPy.pandasGEXpress import parse_gct
 
 app = Flask(__name__)
 
@@ -37,14 +38,36 @@ def handle_ptmsea_request() -> werkzeug.wrappers.Response | str:
     filepath = Path(secure_filename(file.filename))
     file.save(filepath)
 
-    ptmsea_combined_output = run_ptmsea(filepath, form['session_id'], form['dataset_name'])
+    #Preprocess the json input into a gct file
+    ptmsea_input = preprocess_ptmsea(filepath, form['session_id'], form['dataset_name'])
+
+    ptmsea_combined_output = run_ptmsea(ptmsea_input)
 
     # TODO: Delete everything when done to not accumulate files?
     return send_file(postprocess_ptmsea(ptmsea_combined_output), as_attachment=True)
 
 
-def run_ptmsea(filepath: Path, session_id: str, dataset_name: str) -> Path:
+def preprocess_ptmsea(filepath: Path, session_id: str, dataset_name: str) -> Path:
     output_dir = Path('..') / session_id / dataset_name
+    Path.mkdir(output_dir, parents=True, exist_ok=True)
+    input_json = json.load(open(filepath))
+    input_df = pd.DataFrame.from_dict(input_json).rename({'flanking': 'id'}, axis=1)
+    # There is a method cmapPy.pandasGEXpress.write_gct,
+    # but I could not get it to run
+    # (it tries to use DataFrame.at[] with ranges and I couldn't find a pandas version where this works)
+    # So I wrote a minimal version myself
+    input_gct_file = output_dir / 'ptmsea_input.gct'
+    with open(input_gct_file, 'w') as f:
+        # Write Version and dims
+        f.write("#1.3\n")
+        f.write(f"{input_df.shape[0]}\t{input_df.shape[1] - 1}\t0\t0\n")
+        # Write data df
+        input_df.to_csv(f, sep='\t', index=False)
+    return input_gct_file
+
+
+def run_ptmsea(filepath: Path) -> Path:
+    output_dir = filepath.parent
     Path.mkdir(output_dir, parents=True, exist_ok=True)
     output_prefix = output_dir / 'ptmsea_out'
     subprocess.run(["Rscript",
