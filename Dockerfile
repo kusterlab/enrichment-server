@@ -1,5 +1,4 @@
-#How to start shell inside docker: docker run --rm -i -t enrichment_server /bin/sh --login
-#or: docker run -it --entrypoint /bin/bash enrichment_server
+#How to start shell inside docker run -it --entrypoint /bin/bash enrichment_server
 #How to run it as a server: docker run --network host enrichment_server #TODO: It feels like I should not have to use '--network host', but I get a connection refused error if I don't.
 
 #TODO: Find a slimmer image
@@ -20,6 +19,7 @@ RUN apt-get install -y curl libcurl4-openssl-dev libssl-dev libomp5 python3-poet
 RUN git clone -b master --single-branch https://github.com/broadinstitute/ssGSEA2.0.git
 WORKDIR /app/ssGSEA2.0
 RUN git checkout 4b5198fb5a19759eec2625ba5dde03fc861d96ac
+COPY db /app/db
 
 # Copy the current directory contents into the container at /app
 COPY flask_server /app/flask_server
