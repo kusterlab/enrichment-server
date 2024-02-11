@@ -9,14 +9,17 @@ python = ">=3.10,<3.12"
 werkzeug = "2.0.3"
 flask = "2.0.3"
 pandas = "^1.5"
-#numpy = "^1.26.4"
+numpy = "^1.26.4"
 cmappy = "^4.0.1"
+kinact = { git = "https://github.com/saezlab/kinact.git" }
 
 
 [tool.poetry.dev-dependencies]
 
 [tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"
+psite-annotation = "^0.5.0"
+#pypath-omnipath = "^0.16.5" #You might have to install libpython3.10-dev to get this working
 
 [build-system]
 requires = ["poetry-core>=1.4.0"]

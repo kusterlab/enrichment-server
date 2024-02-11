@@ -3,3 +3,4 @@
 *.ipynb
 ssGSEA2.0
 flask_server/.gitignore
+*/__pycache__
