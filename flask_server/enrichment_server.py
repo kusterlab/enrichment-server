@@ -40,7 +40,8 @@ def handle_ssgsea_request(ssgsea_type) -> werkzeug.wrappers.Response | str:
 
 
 @app.route('/ksea', methods=['POST'])
-def handle_ksea_request() -> werkzeug.wrappers.Response | str:
+@app.route('/ksea/<string:ksea_type>', methods=['POST'])
+def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
     post_request_processed = process_post_request(request)
 
     if len(post_request_processed) == 1:
@@ -48,9 +49,11 @@ def handle_ksea_request() -> werkzeug.wrappers.Response | str:
 
     filepath, session_id, dataset_name = post_request_processed
 
-    # TODO: Splice in RoKAI if requested
+    preprocessed_filepath = ksea.preprocess_ksea(filepath, session_id, dataset_name)
+    if ksea_type == 'rokai':
+        preprocessed_filepath = ksea.run_rokai(preprocessed_filepath)
 
-    ksea_result = ksea.perform_ksea(filepath, session_id, dataset_name)
+    ksea_result = ksea.perform_ksea(preprocessed_filepath)
     return send_file(ksea_result, as_attachment=True)
 
 

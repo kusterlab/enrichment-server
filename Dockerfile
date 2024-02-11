@@ -19,10 +19,16 @@ RUN apt-get install -y curl libcurl4-openssl-dev libssl-dev libomp5 python3-poet
 RUN git clone -b master --single-branch https://github.com/broadinstitute/ssGSEA2.0.git
 WORKDIR /app/ssGSEA2.0
 RUN git checkout 4b5198fb5a19759eec2625ba5dde03fc861d96ac
-COPY db /app/db
+
+#Set Up RoKAI
+WORKDIR /app
+RUN git clone -b master --single-branch https://github.com/serhan-yilmaz/RokaiApp.git
+WORKDIR /app/RokaiApp
+RUN git checkout e2eb10a72c6dc5e19572e1013313fb4b7a1310ab
 
 # Copy the current directory contents into the container at /app
 COPY flask_server /app/flask_server
+COPY db /app/db
 
 #Install R-related stuff
 RUN Rscript -e "install.packages('packrat')"
