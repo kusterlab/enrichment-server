@@ -1,4 +1,5 @@
-# How to send a request: curl -X POST -F file=@<input_file> -F session_id=ABCDEF12345  -F dataset_name=FooBar http://127.0.0.1:5000/<route>
+# How to send a request:
+# curl -X POST -F file=@<input_file> -F session_id=ABCDEF12345  -F dataset_name=FooBar http://127.0.0.1:5000/<route>
 from pathlib import Path
 
 import werkzeug.wrappers

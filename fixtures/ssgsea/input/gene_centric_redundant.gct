@@ -1,6 +1,6 @@
 #1.3
 2394	2	0	0
-id	Log.P.Value.Drug_06h	Log.P.Value.Drug_24h
+id	Experiment01	Experiment02
 PSEN1	10.0034	14.6499
 AHCY	-7.767	7.6684
 TMPRSS13	-7.6898	-7.3257

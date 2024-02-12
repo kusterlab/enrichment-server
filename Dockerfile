@@ -1,4 +1,5 @@
-#How to start shell inside docker run -it --entrypoint /bin/bash enrichment_server
+#How to start shell inside docker: docker run -it --entrypoint /bin/bash enrichment_server
+#How to run tests: docker run -it enrichment_server poetry run pytest -v
 #How to run it as a server: docker run --network host enrichment_server #TODO: It feels like I should not have to use '--network host', but I get a connection refused error if I don't.
 
 #TODO: Find a slimmer image
@@ -29,6 +30,7 @@ RUN git checkout e2eb10a72c6dc5e19572e1013313fb4b7a1310ab
 # Copy the current directory contents into the container at /app
 COPY flask_server /app/flask_server
 COPY db /app/db
+COPY fixtures /app/fixtures
 
 #Install R-related stuff
 RUN Rscript -e "install.packages('packrat')"

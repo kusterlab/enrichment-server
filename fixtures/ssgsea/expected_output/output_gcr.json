@@ -1,0 +1,1775 @@
+[
+ {
+  "Signature ID":"KEGG_ACUTE_MYELOID_LEUKEMIA",
+  "Overlap [%] (Experiment01)":21.1,
+  "Overlap [%] (Experiment02)":21.1,
+  "Adj. p-value (Experiment01)":0.4158686026,
+  "Adj. p-value (Experiment02)":0.8672618236,
+  "Score (Experiment01)":-2.2186000347,
+  "Score (Experiment02)":0.6187999845
+ },
+ {
+  "Signature ID":"KEGG_ADHERENS_JUNCTION",
+  "Overlap [%] (Experiment01)":17.8,
+  "Overlap [%] (Experiment02)":17.8,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.7166634473,
+  "Score (Experiment01)":0.9857000113,
+  "Score (Experiment02)":1.0017000437
+ },
+ {
+  "Signature ID":"KEGG_ALZHEIMERS_DISEASE",
+  "Overlap [%] (Experiment01)":9.0,
+  "Overlap [%] (Experiment02)":9.0,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.9967782144,
+  "Score (Experiment01)":0.0445999987,
+  "Score (Experiment02)":0.0132999998
+ },
+ {
+  "Signature ID":"KEGG_ARRHYTHMOGENIC_RIGHT_VENTRICULAR_CARDIOMYOPATHY_ARVC",
+  "Overlap [%] (Experiment01)":13.5,
+  "Overlap [%] (Experiment02)":13.5,
+  "Adj. p-value (Experiment01)":0.6592335939,
+  "Adj. p-value (Experiment02)":0.9009589378,
+  "Score (Experiment01)":-1.5411000252,
+  "Score (Experiment02)":0.4101999998
+ },
+ {
+  "Signature ID":"KEGG_AXON_GUIDANCE",
+  "Overlap [%] (Experiment01)":10.1,
+  "Overlap [%] (Experiment02)":10.1,
+  "Adj. p-value (Experiment01)":0.4983944731,
+  "Adj. p-value (Experiment02)":0.0164166667,
+  "Score (Experiment01)":-1.9141999483,
+  "Score (Experiment02)":-3.910900116
+ },
+ {
+  "Signature ID":"KEGG_CALCIUM_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":10.1,
+  "Overlap [%] (Experiment02)":10.1,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.898922779,
+  "Score (Experiment01)":-0.3504999876,
+  "Score (Experiment02)":0.3573000133
+ },
+ {
+  "Signature ID":"KEGG_CELL_CYCLE",
+  "Overlap [%] (Experiment01)":20.0,
+  "Overlap [%] (Experiment02)":20.0,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.0164166667,
+  "Score (Experiment01)":-0.4302999973,
+  "Score (Experiment02)":-4.6582999229
+ },
+ {
+  "Signature ID":"KEGG_CHEMOKINE_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":9.5,
+  "Overlap [%] (Experiment02)":9.5,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.7091627389,
+  "Score (Experiment01)":-0.4280999899,
+  "Score (Experiment02)":-1.0163999796
+ },
+ {
+  "Signature ID":"KEGG_CHRONIC_MYELOID_LEUKEMIA",
+  "Overlap [%] (Experiment01)":20.5,
+  "Overlap [%] (Experiment02)":20.5,
+  "Adj. p-value (Experiment01)":0.2693096377,
+  "Adj. p-value (Experiment02)":0.2330671399,
+  "Score (Experiment01)":-3.0081999302,
+  "Score (Experiment02)":-2.3462998867
+ },
+ {
+  "Signature ID":"KEGG_ENDOCYTOSIS",
+  "Overlap [%] (Experiment01)":16.6,
+  "Overlap [%] (Experiment02)":16.6,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.4597199675,
+  "Score (Experiment01)":-0.9639999866,
+  "Score (Experiment02)":-1.7207000256
+ },
+ {
+  "Signature ID":"KEGG_ENDOMETRIAL_CANCER",
+  "Overlap [%] (Experiment01)":21.2,
+  "Overlap [%] (Experiment02)":21.2,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.898922779,
+  "Score (Experiment01)":0.9646999836,
+  "Score (Experiment02)":0.3899999857
+ },
+ {
+  "Signature ID":"KEGG_ERBB_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":21.8,
+  "Overlap [%] (Experiment02)":21.8,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.9483520102,
+  "Score (Experiment01)":-0.1319999993,
+  "Score (Experiment02)":-0.1406999975
+ },
+ {
+  "Signature ID":"KEGG_FC_GAMMA_R_MEDIATED_PHAGOCYTOSIS",
+  "Overlap [%] (Experiment01)":16.7,
+  "Overlap [%] (Experiment02)":16.7,
+  "Adj. p-value (Experiment01)":0.3621323529,
+  "Adj. p-value (Experiment02)":0.1491555038,
+  "Score (Experiment01)":-2.488699913,
+  "Score (Experiment02)":-2.929199934
+ },
+ {
+  "Signature ID":"KEGG_FOCAL_ADHESION",
+  "Overlap [%] (Experiment01)":14.1,
+  "Overlap [%] (Experiment02)":14.1,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.9117661618,
+  "Score (Experiment01)":-0.9179000258,
+  "Score (Experiment02)":0.3849999905
+ },
+ {
+  "Signature ID":"KEGG_GLIOMA",
+  "Overlap [%] (Experiment01)":15.4,
+  "Overlap [%] (Experiment02)":15.4,
+  "Adj. p-value (Experiment01)":0.7772596844,
+  "Adj. p-value (Experiment02)":0.1491555038,
+  "Score (Experiment01)":-1.2007000446,
+  "Score (Experiment02)":-2.7971000671
+ },
+ {
+  "Signature ID":"KEGG_GLYCOLYSIS_GLUCONEOGENESIS",
+  "Overlap [%] (Experiment01)":19.4,
+  "Overlap [%] (Experiment02)":19.4,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.6658286437,
+  "Score (Experiment01)":-0.7874000072,
+  "Score (Experiment02)":1.059499979
+ },
+ {
+  "Signature ID":"KEGG_GNRH_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":11.9,
+  "Overlap [%] (Experiment02)":11.9,
+  "Adj. p-value (Experiment01)":0.6228317525,
+  "Adj. p-value (Experiment02)":0.8257823715,
+  "Score (Experiment01)":-1.834800005,
+  "Score (Experiment02)":0.7599999905
+ },
+ {
+  "Signature ID":"KEGG_HUNTINGTONS_DISEASE",
+  "Overlap [%] (Experiment01)":10.4,
+  "Overlap [%] (Experiment02)":10.4,
+  "Adj. p-value (Experiment01)":0.6537678845,
+  "Adj. p-value (Experiment02)":0.0268027211,
+  "Score (Experiment01)":1.5794999599,
+  "Score (Experiment02)":3.7068998814
+ },
+ {
+  "Signature ID":"KEGG_INSULIN_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":19.7,
+  "Overlap [%] (Experiment02)":19.7,
+  "Adj. p-value (Experiment01)":0.4120324803,
+  "Adj. p-value (Experiment02)":0.8257823715,
+  "Score (Experiment01)":-2.3541998863,
+  "Score (Experiment02)":-0.7371000051
+ },
+ {
+  "Signature ID":"KEGG_LEUKOCYTE_TRANSENDOTHELIAL_MIGRATION",
+  "Overlap [%] (Experiment01)":13.8,
+  "Overlap [%] (Experiment02)":13.8,
+  "Adj. p-value (Experiment01)":0.9002398737,
+  "Adj. p-value (Experiment02)":0.1751630113,
+  "Score (Experiment01)":-0.671299994,
+  "Score (Experiment02)":-2.4305000305
+ },
+ {
+  "Signature ID":"KEGG_LONG_TERM_POTENTIATION",
+  "Overlap [%] (Experiment01)":14.3,
+  "Overlap [%] (Experiment02)":14.3,
+  "Adj. p-value (Experiment01)":0.6537678845,
+  "Adj. p-value (Experiment02)":0.9009589378,
+  "Score (Experiment01)":-1.6402000189,
+  "Score (Experiment02)":-0.4273999929
+ },
+ {
+  "Signature ID":"KEGG_MAPK_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":15.4,
+  "Overlap [%] (Experiment02)":15.4,
+  "Adj. p-value (Experiment01)":0.197,
+  "Adj. p-value (Experiment02)":0.5342489721,
+  "Score (Experiment01)":-4.2343997955,
+  "Score (Experiment02)":-1.5506999493
+ },
+ {
+  "Signature ID":"KEGG_MTOR_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":25.0,
+  "Overlap [%] (Experiment02)":25.0,
+  "Adj. p-value (Experiment01)":0.4967510426,
+  "Adj. p-value (Experiment02)":0.1974739374,
+  "Score (Experiment01)":-2.0555000305,
+  "Score (Experiment02)":-2.6059999466
+ },
+ {
+  "Signature ID":"KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY",
+  "Overlap [%] (Experiment01)":9.5,
+  "Overlap [%] (Experiment02)":9.5,
+  "Adj. p-value (Experiment01)":0.8208333333,
+  "Adj. p-value (Experiment02)":0.6538643907,
+  "Score (Experiment01)":-1.1211999655,
+  "Score (Experiment02)":-1.1457999945
+ },
+ {
+  "Signature ID":"KEGG_NEUROTROPHIN_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":21.4,
+  "Overlap [%] (Experiment02)":21.4,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.9404611782,
+  "Score (Experiment01)":-0.4214999974,
+  "Score (Experiment02)":-0.2111999989
+ },
+ {
+  "Signature ID":"KEGG_NON_SMALL_CELL_LUNG_CANCER",
+  "Overlap [%] (Experiment01)":20.4,
+  "Overlap [%] (Experiment02)":20.4,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.6658286437,
+  "Score (Experiment01)":-0.7712000012,
+  "Score (Experiment02)":-1.0814000368
+ },
+ {
+  "Signature ID":"KEGG_OOCYTE_MEIOSIS",
+  "Overlap [%] (Experiment01)":10.6,
+  "Overlap [%] (Experiment02)":10.6,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.0164166667,
+  "Score (Experiment01)":0.4300999939,
+  "Score (Experiment02)":-4.9762001038
+ },
+ {
+  "Signature ID":"KEGG_PATHOGENIC_ESCHERICHIA_COLI_INFECTION",
+  "Overlap [%] (Experiment01)":17.9,
+  "Overlap [%] (Experiment02)":17.9,
+  "Adj. p-value (Experiment01)":0.2693096377,
+  "Adj. p-value (Experiment02)":0.8783686316,
+  "Score (Experiment01)":2.780299902,
+  "Score (Experiment02)":-0.5026999712
+ },
+ {
+  "Signature ID":"KEGG_PATHWAYS_IN_CANCER",
+  "Overlap [%] (Experiment01)":11.7,
+  "Overlap [%] (Experiment02)":11.7,
+  "Adj. p-value (Experiment01)":0.3781190019,
+  "Adj. p-value (Experiment02)":0.5577238935,
+  "Score (Experiment01)":-2.3979001045,
+  "Score (Experiment02)":-1.38349998
+ },
+ {
+  "Signature ID":"KEGG_PROGESTERONE_MEDIATED_OOCYTE_MATURATION",
+  "Overlap [%] (Experiment01)":15.3,
+  "Overlap [%] (Experiment02)":15.3,
+  "Adj. p-value (Experiment01)":0.6330704061,
+  "Adj. p-value (Experiment02)":0.1974739374,
+  "Score (Experiment01)":-1.7433999777,
+  "Score (Experiment02)":-2.5071001053
+ },
+ {
+  "Signature ID":"KEGG_PROSTATE_CANCER",
+  "Overlap [%] (Experiment01)":22.5,
+  "Overlap [%] (Experiment02)":22.5,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.6120800365,
+  "Score (Experiment01)":-0.4930000007,
+  "Score (Experiment02)":-1.2842999697
+ },
+ {
+  "Signature ID":"KEGG_PURINE_METABOLISM",
+  "Overlap [%] (Experiment01)":6.9,
+  "Overlap [%] (Experiment02)":6.9,
+  "Adj. p-value (Experiment01)":0.6537678845,
+  "Adj. p-value (Experiment02)":0.5441875065,
+  "Score (Experiment01)":-1.5901999474,
+  "Score (Experiment02)":-1.3812999725
+ },
+ {
+  "Signature ID":"KEGG_REGULATION_OF_ACTIN_CYTOSKELETON",
+  "Overlap [%] (Experiment01)":19.7,
+  "Overlap [%] (Experiment02)":19.7,
+  "Adj. p-value (Experiment01)":0.3227524063,
+  "Adj. p-value (Experiment02)":0.0164166667,
+  "Score (Experiment01)":-2.7774000168,
+  "Score (Experiment02)":-4.5676999092
+ },
+ {
+  "Signature ID":"KEGG_RENAL_CELL_CARCINOMA",
+  "Overlap [%] (Experiment01)":21.4,
+  "Overlap [%] (Experiment02)":21.4,
+  "Adj. p-value (Experiment01)":0.9446915298,
+  "Adj. p-value (Experiment02)":0.9404611782,
+  "Score (Experiment01)":0.3420000076,
+  "Score (Experiment02)":-0.2163999975
+ },
+ {
+  "Signature ID":"KEGG_RIBOSOME",
+  "Overlap [%] (Experiment01)":17.0,
+  "Overlap [%] (Experiment02)":17.0,
+  "Adj. p-value (Experiment01)":0.7897364966,
+  "Adj. p-value (Experiment02)":0.1781762077,
+  "Score (Experiment01)":-1.1561000347,
+  "Score (Experiment02)":-2.5264000893
+ },
+ {
+  "Signature ID":"KEGG_RNA_DEGRADATION",
+  "Overlap [%] (Experiment01)":16.9,
+  "Overlap [%] (Experiment02)":16.9,
+  "Adj. p-value (Experiment01)":0.6428421053,
+  "Adj. p-value (Experiment02)":0.9978354978,
+  "Score (Experiment01)":1.6518000364,
+  "Score (Experiment02)":0.0041
+ },
+ {
+  "Signature ID":"KEGG_SPLICEOSOME",
+  "Overlap [%] (Experiment01)":28.3,
+  "Overlap [%] (Experiment02)":28.3,
+  "Adj. p-value (Experiment01)":0.9583460018,
+  "Adj. p-value (Experiment02)":0.0268027211,
+  "Score (Experiment01)":-0.2896000147,
+  "Score (Experiment02)":3.8926000595
+ },
+ {
+  "Signature ID":"KEGG_TIGHT_JUNCTION",
+  "Overlap [%] (Experiment01)":23.5,
+  "Overlap [%] (Experiment02)":23.5,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.9349092463,
+  "Score (Experiment01)":-0.86650002,
+  "Score (Experiment02)":-0.292899996
+ },
+ {
+  "Signature ID":"KEGG_T_CELL_RECEPTOR_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":15.7,
+  "Overlap [%] (Experiment02)":15.7,
+  "Adj. p-value (Experiment01)":0.6428421053,
+  "Adj. p-value (Experiment02)":0.4597199675,
+  "Score (Experiment01)":-1.6049000025,
+  "Score (Experiment02)":-1.7753000259
+ },
+ {
+  "Signature ID":"KEGG_UBIQUITIN_MEDIATED_PROTEOLYSIS",
+  "Overlap [%] (Experiment01)":8.9,
+  "Overlap [%] (Experiment02)":8.9,
+  "Adj. p-value (Experiment01)":0.3781190019,
+  "Adj. p-value (Experiment02)":0.1248316832,
+  "Score (Experiment01)":-2.4217000008,
+  "Score (Experiment02)":-2.951100111
+ },
+ {
+  "Signature ID":"KEGG_VASCULAR_SMOOTH_MUSCLE_CONTRACTION",
+  "Overlap [%] (Experiment01)":13.0,
+  "Overlap [%] (Experiment02)":13.0,
+  "Adj. p-value (Experiment01)":0.8230067667,
+  "Adj. p-value (Experiment02)":0.9967782144,
+  "Score (Experiment01)":-1.0634000301,
+  "Score (Experiment02)":0.0170000009
+ },
+ {
+  "Signature ID":"KEGG_VASOPRESSIN_REGULATED_WATER_REABSORPTION",
+  "Overlap [%] (Experiment01)":25.0,
+  "Overlap [%] (Experiment02)":25.0,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.1491555038,
+  "Score (Experiment01)":-0.4675000012,
+  "Score (Experiment02)":3.0130999088
+ },
+ {
+  "Signature ID":"KEGG_WNT_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":7.9,
+  "Overlap [%] (Experiment02)":7.9,
+  "Adj. p-value (Experiment01)":0.9950835129,
+  "Adj. p-value (Experiment02)":0.7304345161,
+  "Score (Experiment01)":0.1826999933,
+  "Score (Experiment02)":-0.9268000126
+ },
+ {
+  "Signature ID":"KEGG_MEDICUS_REFERENCE_DNA_REPLICATION_LICENSING",
+  "Overlap [%] (Experiment01)":50.0,
+  "Overlap [%] (Experiment02)":50.0,
+  "Adj. p-value (Experiment01)":0.8687816639,
+  "Adj. p-value (Experiment02)":0.0164166667,
+  "Score (Experiment01)":-0.7329000235,
+  "Score (Experiment02)":-5.3007998466
+ },
+ {
+  "Signature ID":"KEGG_MEDICUS_REFERENCE_NUCLEAR_EXPORT_OF_MRNA",
+  "Overlap [%] (Experiment01)":46.7,
+  "Overlap [%] (Experiment02)":46.7,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.7742330703,
+  "Score (Experiment01)":0.4873999953,
+  "Score (Experiment02)":-0.8227000237
+ },
+ {
+  "Signature ID":"KEGG_MEDICUS_REFERENCE_TRANSLATION_INITIATION",
+  "Overlap [%] (Experiment01)":18.5,
+  "Overlap [%] (Experiment02)":18.5,
+  "Adj. p-value (Experiment01)":0.8208333333,
+  "Adj. p-value (Experiment02)":0.1892815202,
+  "Score (Experiment01)":-1.1359000206,
+  "Score (Experiment02)":-2.6287999153
+ },
+ {
+  "Signature ID":"WP_10Q11_21Q11_23_COPY_NUMBER_VARIATION_SYNDROME",
+  "Overlap [%] (Experiment01)":18.0,
+  "Overlap [%] (Experiment02)":18.0,
+  "Adj. p-value (Experiment01)":0.8687816639,
+  "Adj. p-value (Experiment02)":0.8602620087,
+  "Score (Experiment01)":-0.7192999721,
+  "Score (Experiment02)":-0.6176999807
+ },
+ {
+  "Signature ID":"WP_15Q11Q13_COPY_NUMBER_VARIATION",
+  "Overlap [%] (Experiment01)":18.6,
+  "Overlap [%] (Experiment02)":18.6,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.640287226,
+  "Score (Experiment01)":-0.3770999908,
+  "Score (Experiment02)":1.1725000143
+ },
+ {
+  "Signature ID":"WP_16P11_2_PROXIMAL_DELETION_SYNDROME",
+  "Overlap [%] (Experiment01)":15.8,
+  "Overlap [%] (Experiment02)":15.8,
+  "Adj. p-value (Experiment01)":0.2693096377,
+  "Adj. p-value (Experiment02)":0.690542328,
+  "Score (Experiment01)":3.0460000038,
+  "Score (Experiment02)":1.0407999754
+ },
+ {
+  "Signature ID":"WP_17Q12_COPY_NUMBER_VARIATION_SYNDROME",
+  "Overlap [%] (Experiment01)":11.0,
+  "Overlap [%] (Experiment02)":11.0,
+  "Adj. p-value (Experiment01)":0.761748959,
+  "Adj. p-value (Experiment02)":0.9404611782,
+  "Score (Experiment01)":1.1958999634,
+  "Score (Experiment02)":0.2176000029
+ },
+ {
+  "Signature ID":"WP_22Q11_2_COPY_NUMBER_VARIATION_SYNDROME",
+  "Overlap [%] (Experiment01)":13.4,
+  "Overlap [%] (Experiment02)":13.4,
+  "Adj. p-value (Experiment01)":0.3165748393,
+  "Adj. p-value (Experiment02)":0.5441875065,
+  "Score (Experiment01)":2.7432000637,
+  "Score (Experiment02)":1.3970999718
+ },
+ {
+  "Signature ID":"WP_2Q37_COPY_NUMBER_VARIATION_SYNDROME",
+  "Overlap [%] (Experiment01)":8.3,
+  "Overlap [%] (Experiment02)":8.3,
+  "Adj. p-value (Experiment01)":0.4158686026,
+  "Adj. p-value (Experiment02)":0.690542328,
+  "Score (Experiment01)":-2.1956000328,
+  "Score (Experiment02)":-0.991599977
+ },
+ {
+  "Signature ID":"WP_3Q29_COPY_NUMBER_VARIATION_SYNDROME",
+  "Overlap [%] (Experiment01)":20.3,
+  "Overlap [%] (Experiment02)":20.3,
+  "Adj. p-value (Experiment01)":0.7744606063,
+  "Adj. p-value (Experiment02)":0.9404611782,
+  "Score (Experiment01)":1.2269999981,
+  "Score (Experiment02)":0.2114000022
+ },
+ {
+  "Signature ID":"WP_4_HYDROXYTAMOXIFEN_DEXAMETHASONE_AND_RETINOIC_ACIDS_REGULATION_OF_P27_EXPRESSION",
+  "Overlap [%] (Experiment01)":61.1,
+  "Overlap [%] (Experiment02)":61.1,
+  "Adj. p-value (Experiment01)":0.4967510426,
+  "Adj. p-value (Experiment02)":0.0454126325,
+  "Score (Experiment01)":-1.9586999416,
+  "Score (Experiment02)":-3.6231000423
+ },
+ {
+  "Signature ID":"WP_5Q35_COPY_NUMBER_VARIATION",
+  "Overlap [%] (Experiment01)":12.6,
+  "Overlap [%] (Experiment02)":12.6,
+  "Adj. p-value (Experiment01)":0.8908324246,
+  "Adj. p-value (Experiment02)":0.898922779,
+  "Score (Experiment01)":0.7322000265,
+  "Score (Experiment02)":-0.4332999885
+ },
+ {
+  "Signature ID":"WP_7Q11_23_COPY_NUMBER_VARIATION_SYNDROME",
+  "Overlap [%] (Experiment01)":20.6,
+  "Overlap [%] (Experiment02)":20.6,
+  "Adj. p-value (Experiment01)":0.8360084034,
+  "Adj. p-value (Experiment02)":0.0760470952,
+  "Score (Experiment01)":-1.0389000177,
+  "Score (Experiment02)":-3.1872000694
+ },
+ {
+  "Signature ID":"WP_ADIPOGENESIS",
+  "Overlap [%] (Experiment01)":13.7,
+  "Overlap [%] (Experiment02)":13.7,
+  "Adj. p-value (Experiment01)":0.4158686026,
+  "Adj. p-value (Experiment02)":0.9452931745,
+  "Score (Experiment01)":-2.2351000309,
+  "Score (Experiment02)":0.2073000073
+ },
+ {
+  "Signature ID":"WP_AGE_RAGE_PATHWAY",
+  "Overlap [%] (Experiment01)":15.2,
+  "Overlap [%] (Experiment02)":15.2,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.3504224636,
+  "Score (Experiment01)":0.1362999976,
+  "Score (Experiment02)":2.007999897
+ },
+ {
+  "Signature ID":"WP_ALZHEIMER_39_S_DISEASE",
+  "Overlap [%] (Experiment01)":15.7,
+  "Overlap [%] (Experiment02)":15.7,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.8672618236,
+  "Score (Experiment01)":0.5514000058,
+  "Score (Experiment02)":-0.6011000276
+ },
+ {
+  "Signature ID":"WP_ALZHEIMER_39_S_DISEASE_AND_MIRNA_EFFECTS",
+  "Overlap [%] (Experiment01)":15.4,
+  "Overlap [%] (Experiment02)":15.4,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.8510920668,
+  "Score (Experiment01)":0.5011000037,
+  "Score (Experiment02)":-0.592599988
+ },
+ {
+  "Signature ID":"WP_AMP_ACTIVATED_PROTEIN_KINASE_SIGNALING",
+  "Overlap [%] (Experiment01)":22.4,
+  "Overlap [%] (Experiment02)":22.4,
+  "Adj. p-value (Experiment01)":0.7098057009,
+  "Adj. p-value (Experiment02)":0.5342489721,
+  "Score (Experiment01)":-1.3779000044,
+  "Score (Experiment02)":-1.5078999996
+ },
+ {
+  "Signature ID":"WP_ANDROGEN_RECEPTOR_NETWORK_IN_PROSTATE_CANCER",
+  "Overlap [%] (Experiment01)":26.6,
+  "Overlap [%] (Experiment02)":26.6,
+  "Adj. p-value (Experiment01)":0.8208333333,
+  "Adj. p-value (Experiment02)":0.533603304,
+  "Score (Experiment01)":-1.0717999935,
+  "Score (Experiment02)":-1.5563999414
+ },
+ {
+  "Signature ID":"WP_ANDROGEN_RECEPTOR_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":21.8,
+  "Overlap [%] (Experiment02)":21.8,
+  "Adj. p-value (Experiment01)":0.6428421053,
+  "Adj. p-value (Experiment02)":0.6512396694,
+  "Score (Experiment01)":1.6669000387,
+  "Score (Experiment02)":1.1173000336
+ },
+ {
+  "Signature ID":"WP_ANGIOPOIETIN_LIKE_PROTEIN_8_REGULATORY_PATHWAY",
+  "Overlap [%] (Experiment01)":23.5,
+  "Overlap [%] (Experiment02)":23.5,
+  "Adj. p-value (Experiment01)":0.7098057009,
+  "Adj. p-value (Experiment02)":0.4645993276,
+  "Score (Experiment01)":-1.361199975,
+  "Score (Experiment02)":-1.6914000511
+ },
+ {
+  "Signature ID":"WP_APOPTOSIS",
+  "Overlap [%] (Experiment01)":11.4,
+  "Overlap [%] (Experiment02)":11.4,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.7252660194,
+  "Score (Experiment01)":-0.4056000113,
+  "Score (Experiment02)":-0.9746000171
+ },
+ {
+  "Signature ID":"WP_APOPTOSIS_MODULATION_AND_SIGNALING",
+  "Overlap [%] (Experiment01)":10.9,
+  "Overlap [%] (Experiment02)":10.9,
+  "Adj. p-value (Experiment01)":0.6592335939,
+  "Adj. p-value (Experiment02)":0.6658286437,
+  "Score (Experiment01)":1.5776000023,
+  "Score (Experiment02)":-1.0539000034
+ },
+ {
+  "Signature ID":"WP_APOPTOSIS_RELATED_NETWORK_DUE_TO_ALTERED_NOTCH3_IN_OVARIAN_CANCER",
+  "Overlap [%] (Experiment01)":24.5,
+  "Overlap [%] (Experiment02)":24.5,
+  "Adj. p-value (Experiment01)":0.3165748393,
+  "Adj. p-value (Experiment02)":0.5624107851,
+  "Score (Experiment01)":-2.6847000122,
+  "Score (Experiment02)":-1.358899951
+ },
+ {
+  "Signature ID":"WP_ARRHYTHMOGENIC_RIGHT_VENTRICULAR_CARDIOMYOPATHY",
+  "Overlap [%] (Experiment01)":13.5,
+  "Overlap [%] (Experiment02)":13.5,
+  "Adj. p-value (Experiment01)":0.6853711913,
+  "Adj. p-value (Experiment02)":0.898922779,
+  "Score (Experiment01)":-1.4348000288,
+  "Score (Experiment02)":0.4144000113
+ },
+ {
+  "Signature ID":"WP_ATM_SIGNALING_IN_DEVELOPMENT_AND_DISEASE",
+  "Overlap [%] (Experiment01)":44.4,
+  "Overlap [%] (Experiment02)":44.4,
+  "Adj. p-value (Experiment01)":0.2693096377,
+  "Adj. p-value (Experiment02)":0.4597199675,
+  "Score (Experiment01)":3.9331998825,
+  "Score (Experiment02)":1.6017999649
+ },
+ {
+  "Signature ID":"WP_ATM_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":30.0,
+  "Overlap [%] (Experiment02)":30.0,
+  "Adj. p-value (Experiment01)":0.2693096377,
+  "Adj. p-value (Experiment02)":0.2010204082,
+  "Score (Experiment01)":3.109400034,
+  "Score (Experiment02)":2.674200058
+ },
+ {
+  "Signature ID":"WP_A_NETWORK_MAP_OF_MACROPHAGE_STIMULATING_PROTEIN_MSP_SIGNALING",
+  "Overlap [%] (Experiment01)":25.6,
+  "Overlap [%] (Experiment02)":25.6,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.9009589378,
+  "Score (Experiment01)":0.0414999984,
+  "Score (Experiment02)":0.426699996
+ },
+ {
+  "Signature ID":"WP_BDNF_TRKB_SIGNALING",
+  "Overlap [%] (Experiment01)":42.4,
+  "Overlap [%] (Experiment02)":42.4,
+  "Adj. p-value (Experiment01)":0.3484777954,
+  "Adj. p-value (Experiment02)":0.1974739374,
+  "Score (Experiment01)":-2.6505000591,
+  "Score (Experiment02)":-2.6542999744
+ },
+ {
+  "Signature ID":"WP_BRAIN_DERIVED_NEUROTROPHIC_FACTOR_BDNF_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":25.5,
+  "Overlap [%] (Experiment02)":25.5,
+  "Adj. p-value (Experiment01)":0.4158686026,
+  "Adj. p-value (Experiment02)":0.9117661618,
+  "Score (Experiment01)":-2.2030000687,
+  "Score (Experiment02)":-0.3583999872
+ },
+ {
+  "Signature ID":"WP_BREAST_CANCER_PATHWAY",
+  "Overlap [%] (Experiment01)":13.0,
+  "Overlap [%] (Experiment02)":13.0,
+  "Adj. p-value (Experiment01)":0.7098057009,
+  "Adj. p-value (Experiment02)":0.305268595,
+  "Score (Experiment01)":1.3561999798,
+  "Score (Experiment02)":-2.1593999863
+ },
+ {
+  "Signature ID":"WP_B_CELL_RECEPTOR_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":25.0,
+  "Overlap [%] (Experiment02)":25.0,
+  "Adj. p-value (Experiment01)":0.3781190019,
+  "Adj. p-value (Experiment02)":0.8257823715,
+  "Score (Experiment01)":-2.3924000263,
+  "Score (Experiment02)":-0.7318000197
+ },
+ {
+  "Signature ID":"WP_CALCIUM_REGULATION_IN_CARDIAC_CELLS",
+  "Overlap [%] (Experiment01)":6.6,
+  "Overlap [%] (Experiment02)":6.6,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.9608210955,
+  "Score (Experiment01)":0.7926999927,
+  "Score (Experiment02)":-0.1185000017
+ },
+ {
+  "Signature ID":"WP_CAMKK2_PATHWAY",
+  "Overlap [%] (Experiment01)":33.3,
+  "Overlap [%] (Experiment02)":33.3,
+  "Adj. p-value (Experiment01)":0.3097484277,
+  "Adj. p-value (Experiment02)":0.1491555038,
+  "Score (Experiment01)":-2.6143000126,
+  "Score (Experiment02)":-2.7125999928
+ },
+ {
+  "Signature ID":"WP_CARDIAC_HYPERTROPHIC_RESPONSE",
+  "Overlap [%] (Experiment01)":18.2,
+  "Overlap [%] (Experiment02)":18.2,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.8841492649,
+  "Score (Experiment01)":-0.9308000207,
+  "Score (Experiment02)":0.5177000165
+ },
+ {
+  "Signature ID":"WP_CELL_CYCLE",
+  "Overlap [%] (Experiment01)":20.8,
+  "Overlap [%] (Experiment02)":20.8,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.0164166667,
+  "Score (Experiment01)":-0.4417999983,
+  "Score (Experiment02)":-4.8194999695
+ },
+ {
+  "Signature ID":"WP_CHEMOKINE_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":10.9,
+  "Overlap [%] (Experiment02)":10.9,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.6658286437,
+  "Score (Experiment01)":-0.4174999893,
+  "Score (Experiment02)":-1.0368000269
+ },
+ {
+  "Signature ID":"WP_CILIARY_LANDSCAPE",
+  "Overlap [%] (Experiment01)":13.5,
+  "Overlap [%] (Experiment02)":13.5,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.1491555038,
+  "Score (Experiment01)":0.3944000006,
+  "Score (Experiment02)":-2.7895998955
+ },
+ {
+  "Signature ID":"WP_CILIOPATHIES",
+  "Overlap [%] (Experiment01)":7.1,
+  "Overlap [%] (Experiment02)":7.1,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.0760470952,
+  "Score (Experiment01)":-0.0900999978,
+  "Score (Experiment02)":-3.242399931
+ },
+ {
+  "Signature ID":"WP_CIRCADIAN_RHYTHM_GENES",
+  "Overlap [%] (Experiment01)":12.9,
+  "Overlap [%] (Experiment02)":12.9,
+  "Adj. p-value (Experiment01)":0.9046868669,
+  "Adj. p-value (Experiment02)":0.2363261481,
+  "Score (Experiment01)":0.5870000124,
+  "Score (Experiment02)":2.4114999771
+ },
+ {
+  "Signature ID":"WP_CKAP4_SIGNALING_PATHWAY_MAP",
+  "Overlap [%] (Experiment01)":11.7,
+  "Overlap [%] (Experiment02)":11.7,
+  "Adj. p-value (Experiment01)":0.7098057009,
+  "Adj. p-value (Experiment02)":0.640287226,
+  "Score (Experiment01)":-1.3760999441,
+  "Score (Experiment02)":-1.1876000166
+ },
+ {
+  "Signature ID":"WP_CLEAR_CELL_RENAL_CELL_CARCINOMA_PATHWAYS",
+  "Overlap [%] (Experiment01)":20.0,
+  "Overlap [%] (Experiment02)":20.0,
+  "Adj. p-value (Experiment01)":0.6365235174,
+  "Adj. p-value (Experiment02)":0.2363261481,
+  "Score (Experiment01)":-1.6762000322,
+  "Score (Experiment02)":-2.3570001125
+ },
+ {
+  "Signature ID":"WP_CLOCK_CONTROLLED_AUTOPHAGY_IN_BONE_METABOLISM",
+  "Overlap [%] (Experiment01)":12.5,
+  "Overlap [%] (Experiment02)":12.5,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.9608210955,
+  "Score (Experiment01)":0.1937000006,
+  "Score (Experiment02)":0.1439999938
+ },
+ {
+  "Signature ID":"WP_CORTICOTROPIN_RELEASING_HORMONE_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":15.1,
+  "Overlap [%] (Experiment02)":15.1,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.5342489721,
+  "Score (Experiment01)":0.4235000014,
+  "Score (Experiment02)":1.4519000053
+ },
+ {
+  "Signature ID":"WP_CYTOPLASMIC_RIBOSOMAL_PROTEINS",
+  "Overlap [%] (Experiment01)":18.2,
+  "Overlap [%] (Experiment02)":18.2,
+  "Adj. p-value (Experiment01)":0.6238333333,
+  "Adj. p-value (Experiment02)":0.0760470952,
+  "Score (Experiment01)":-1.7333999872,
+  "Score (Experiment02)":-2.9547998905
+ },
+ {
+  "Signature ID":"WP_DNA_DAMAGE_RESPONSE",
+  "Overlap [%] (Experiment01)":24.6,
+  "Overlap [%] (Experiment02)":24.6,
+  "Adj. p-value (Experiment01)":1.0,
+  "Adj. p-value (Experiment02)":0.2654986523,
+  "Score (Experiment01)":0.0013,
+  "Score (Experiment02)":-2.0824000835
+ },
+ {
+  "Signature ID":"WP_DNA_DAMAGE_RESPONSE_ONLY_ATM_DEPENDENT",
+  "Overlap [%] (Experiment01)":12.7,
+  "Overlap [%] (Experiment02)":12.7,
+  "Adj. p-value (Experiment01)":0.9446915298,
+  "Adj. p-value (Experiment02)":0.1974739374,
+  "Score (Experiment01)":0.3260999918,
+  "Score (Experiment02)":2.5107998848
+ },
+ {
+  "Signature ID":"WP_DNA_IR_DAMAGE_AND_CELLULAR_RESPONSE_VIA_ATR",
+  "Overlap [%] (Experiment01)":37.0,
+  "Overlap [%] (Experiment02)":37.0,
+  "Adj. p-value (Experiment01)":0.3303983229,
+  "Adj. p-value (Experiment02)":0.4597199675,
+  "Score (Experiment01)":2.7298998833,
+  "Score (Experiment02)":1.75
+ },
+ {
+  "Signature ID":"WP_DNA_IR_DOUBLE_STRAND_BREAKS_AND_CELLULAR_RESPONSE_VIA_ATM",
+  "Overlap [%] (Experiment01)":41.8,
+  "Overlap [%] (Experiment02)":41.8,
+  "Adj. p-value (Experiment01)":0.2693096377,
+  "Adj. p-value (Experiment02)":0.6658286437,
+  "Score (Experiment01)":3.3366000652,
+  "Score (Experiment02)":1.0748000145
+ },
+ {
+  "Signature ID":"WP_DNA_REPAIR_PATHWAYS_FULL_NETWORK",
+  "Overlap [%] (Experiment01)":17.5,
+  "Overlap [%] (Experiment02)":17.5,
+  "Adj. p-value (Experiment01)":0.6428421053,
+  "Adj. p-value (Experiment02)":0.2206047032,
+  "Score (Experiment01)":1.6948000193,
+  "Score (Experiment02)":-2.3122999668
+ },
+ {
+  "Signature ID":"WP_DNA_REPLICATION",
+  "Overlap [%] (Experiment01)":28.6,
+  "Overlap [%] (Experiment02)":28.6,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.0164166667,
+  "Score (Experiment01)":0.0568999983,
+  "Score (Experiment02)":-5.7178997993
+ },
+ {
+  "Signature ID":"WP_DYRK1A_INVOLVEMENT_REGARDING_CELL_PROLIFERATION_IN_BRAIN_DEVELOPMENT",
+  "Overlap [%] (Experiment01)":22.6,
+  "Overlap [%] (Experiment02)":22.6,
+  "Adj. p-value (Experiment01)":0.71151925,
+  "Adj. p-value (Experiment02)":0.8257823715,
+  "Score (Experiment01)":1.2912000418,
+  "Score (Experiment02)":0.741599977
+ },
+ {
+  "Signature ID":"WP_EBOLA_VIRUS_INFECTION_IN_HOST",
+  "Overlap [%] (Experiment01)":12.4,
+  "Overlap [%] (Experiment02)":12.4,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.9889558233,
+  "Score (Experiment01)":-0.8327000141,
+  "Score (Experiment02)":-0.0337000005
+ },
+ {
+  "Signature ID":"WP_ECTODERM_DIFFERENTIATION",
+  "Overlap [%] (Experiment01)":8.5,
+  "Overlap [%] (Experiment02)":8.5,
+  "Adj. p-value (Experiment01)":0.6428421053,
+  "Adj. p-value (Experiment02)":0.7091627389,
+  "Score (Experiment01)":-1.6812000275,
+  "Score (Experiment02)":-0.9789999723
+ },
+ {
+  "Signature ID":"WP_EGFR_TYROSINE_KINASE_INHIBITOR_RESISTANCE",
+  "Overlap [%] (Experiment01)":21.4,
+  "Overlap [%] (Experiment02)":21.4,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.9435122283,
+  "Score (Experiment01)":0.9154999852,
+  "Score (Experiment02)":0.1869000047
+ },
+ {
+  "Signature ID":"WP_EGF_EGFR_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":28.3,
+  "Overlap [%] (Experiment02)":28.3,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.8753018449,
+  "Score (Experiment01)":-0.814800024,
+  "Score (Experiment02)":0.5501000285
+ },
+ {
+  "Signature ID":"WP_EMBRYONIC_STEM_CELL_PLURIPOTENCY_PATHWAYS",
+  "Overlap [%] (Experiment01)":11.2,
+  "Overlap [%] (Experiment02)":11.2,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.3135278515,
+  "Score (Experiment01)":-0.8373000026,
+  "Score (Experiment02)":-2.0099000931
+ },
+ {
+  "Signature ID":"WP_ENDODERM_DIFFERENTIATION",
+  "Overlap [%] (Experiment01)":16.1,
+  "Overlap [%] (Experiment02)":16.1,
+  "Adj. p-value (Experiment01)":0.6592335939,
+  "Adj. p-value (Experiment02)":0.1120045484,
+  "Score (Experiment01)":-1.5383000374,
+  "Score (Experiment02)":-3.1236000061
+ },
+ {
+  "Signature ID":"WP_ENDOMETRIAL_CANCER",
+  "Overlap [%] (Experiment01)":19.0,
+  "Overlap [%] (Experiment02)":19.0,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.8622004593,
+  "Score (Experiment01)":0.0428999998,
+  "Score (Experiment02)":-0.6208999753
+ },
+ {
+  "Signature ID":"WP_ENERGY_METABOLISM",
+  "Overlap [%] (Experiment01)":22.9,
+  "Overlap [%] (Experiment02)":22.9,
+  "Adj. p-value (Experiment01)":0.2693096377,
+  "Adj. p-value (Experiment02)":0.216209371,
+  "Score (Experiment01)":3.2130999565,
+  "Score (Experiment02)":2.3494999409
+ },
+ {
+  "Signature ID":"WP_EPITHELIAL_TO_MESENCHYMAL_TRANSITION_IN_COLORECTAL_CANCER",
+  "Overlap [%] (Experiment01)":9.9,
+  "Overlap [%] (Experiment02)":9.9,
+  "Adj. p-value (Experiment01)":0.3165748393,
+  "Adj. p-value (Experiment02)":0.5342489721,
+  "Score (Experiment01)":2.6947000027,
+  "Score (Experiment02)":-1.4444999695
+ },
+ {
+  "Signature ID":"WP_ERBB_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":21.1,
+  "Overlap [%] (Experiment02)":21.1,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.938669934,
+  "Score (Experiment01)":0.6094999909,
+  "Score (Experiment02)":0.2168000042
+ },
+ {
+  "Signature ID":"WP_FACTORS_AND_PATHWAYS_AFFECTING_INSULIN_LIKE_GROWTH_FACTOR_IGF1_AKT_SIGNALING",
+  "Overlap [%] (Experiment01)":27.8,
+  "Overlap [%] (Experiment02)":27.8,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.9889558233,
+  "Score (Experiment01)":0.8454999924,
+  "Score (Experiment02)":0.0375999995
+ },
+ {
+  "Signature ID":"WP_FAS_LIGAND_PATHWAY_AND_STRESS_INDUCTION_OF_HEAT_SHOCK_PROTEINS",
+  "Overlap [%] (Experiment01)":39.5,
+  "Overlap [%] (Experiment02)":39.5,
+  "Adj. p-value (Experiment01)":0.6537678845,
+  "Adj. p-value (Experiment02)":0.2737536912,
+  "Score (Experiment01)":-1.5866999626,
+  "Score (Experiment02)":-2.1584000587
+ },
+ {
+  "Signature ID":"WP_FOCAL_ADHESION",
+  "Overlap [%] (Experiment01)":14.1,
+  "Overlap [%] (Experiment02)":14.1,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.9349092463,
+  "Score (Experiment01)":-0.7138000131,
+  "Score (Experiment02)":0.3231000006
+ },
+ {
+  "Signature ID":"WP_FOCAL_ADHESION_PI3K_AKT_MTOR_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":11.6,
+  "Overlap [%] (Experiment02)":11.6,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.8783686316,
+  "Score (Experiment01)":-0.0909999982,
+  "Score (Experiment02)":-0.5598000288
+ },
+ {
+  "Signature ID":"WP_FRAGILE_X_SYNDROME",
+  "Overlap [%] (Experiment01)":21.5,
+  "Overlap [%] (Experiment02)":21.5,
+  "Adj. p-value (Experiment01)":0.9446915298,
+  "Adj. p-value (Experiment02)":0.8672618236,
+  "Score (Experiment01)":-0.3355999887,
+  "Score (Experiment02)":0.6452000141
+ },
+ {
+  "Signature ID":"WP_G1_TO_S_CELL_CYCLE_CONTROL",
+  "Overlap [%] (Experiment01)":21.9,
+  "Overlap [%] (Experiment02)":21.9,
+  "Adj. p-value (Experiment01)":0.8208333333,
+  "Adj. p-value (Experiment02)":0.0164166667,
+  "Score (Experiment01)":1.1290999651,
+  "Score (Experiment02)":-4.9865999222
+ },
+ {
+  "Signature ID":"WP_GASTRIN_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":22.6,
+  "Overlap [%] (Experiment02)":22.6,
+  "Adj. p-value (Experiment01)":0.9583460018,
+  "Adj. p-value (Experiment02)":0.305268595,
+  "Score (Experiment01)":-0.2786000073,
+  "Score (Experiment02)":2.0464999676
+ },
+ {
+  "Signature ID":"WP_GLIOBLASTOMA_SIGNALING_PATHWAYS",
+  "Overlap [%] (Experiment01)":28.0,
+  "Overlap [%] (Experiment02)":28.0,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.5342489721,
+  "Score (Experiment01)":0.4354999959,
+  "Score (Experiment02)":-1.4660999775
+ },
+ {
+  "Signature ID":"WP_GLYCOLYSIS_AND_GLUCONEOGENESIS",
+  "Overlap [%] (Experiment01)":26.7,
+  "Overlap [%] (Experiment02)":26.7,
+  "Adj. p-value (Experiment01)":0.871268362,
+  "Adj. p-value (Experiment02)":0.5342489721,
+  "Score (Experiment01)":0.6931999922,
+  "Score (Experiment02)":1.497699976
+ },
+ {
+  "Signature ID":"WP_G_PROTEIN_SIGNALING_PATHWAYS",
+  "Overlap [%] (Experiment01)":17.6,
+  "Overlap [%] (Experiment02)":17.6,
+  "Adj. p-value (Experiment01)":0.6592335939,
+  "Adj. p-value (Experiment02)":0.5342489721,
+  "Score (Experiment01)":1.5592999458,
+  "Score (Experiment02)":-1.4424999952
+ },
+ {
+  "Signature ID":"WP_HEAD_AND_NECK_SQUAMOUS_CELL_CARCINOMA",
+  "Overlap [%] (Experiment01)":23.0,
+  "Overlap [%] (Experiment02)":23.0,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.4597199675,
+  "Score (Experiment01)":-0.7261000276,
+  "Score (Experiment02)":-1.6805000305
+ },
+ {
+  "Signature ID":"WP_HEPATITIS_B_INFECTION",
+  "Overlap [%] (Experiment01)":11.9,
+  "Overlap [%] (Experiment02)":11.9,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.6500707111,
+  "Score (Experiment01)":-0.1596000046,
+  "Score (Experiment02)":1.1519999504
+ },
+ {
+  "Signature ID":"WP_HEPATOCYTE_GROWTH_FACTOR_RECEPTOR_SIGNALING",
+  "Overlap [%] (Experiment01)":32.4,
+  "Overlap [%] (Experiment02)":32.4,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.8783686316,
+  "Score (Experiment01)":-0.5238000154,
+  "Score (Experiment02)":0.5651000142
+ },
+ {
+  "Signature ID":"WP_HIPPO_MERLIN_SIGNALING_DYSREGULATION",
+  "Overlap [%] (Experiment01)":13.2,
+  "Overlap [%] (Experiment02)":13.2,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.0454126325,
+  "Score (Experiment01)":0.0148999998,
+  "Score (Experiment02)":-3.6677000523
+ },
+ {
+  "Signature ID":"WP_HIPPO_SIGNALING_REGULATION_PATHWAYS",
+  "Overlap [%] (Experiment01)":15.3,
+  "Overlap [%] (Experiment02)":15.3,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.9349092463,
+  "Score (Experiment01)":0.8485999703,
+  "Score (Experiment02)":0.3328000009
+ },
+ {
+  "Signature ID":"WP_HISTONE_MODIFICATIONS",
+  "Overlap [%] (Experiment01)":24.6,
+  "Overlap [%] (Experiment02)":24.6,
+  "Adj. p-value (Experiment01)":0.6853711913,
+  "Adj. p-value (Experiment02)":0.2363261481,
+  "Score (Experiment01)":1.402799964,
+  "Score (Experiment02)":-2.3148999214
+ },
+ {
+  "Signature ID":"WP_IL_1_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":18.5,
+  "Overlap [%] (Experiment02)":18.5,
+  "Adj. p-value (Experiment01)":0.6428421053,
+  "Adj. p-value (Experiment02)":0.3004193671,
+  "Score (Experiment01)":-1.6190999746,
+  "Score (Experiment02)":-2.0201001167
+ },
+ {
+  "Signature ID":"WP_IL_24_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":13.5,
+  "Overlap [%] (Experiment02)":13.5,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.0164166667,
+  "Score (Experiment01)":-0.8288999796,
+  "Score (Experiment02)":-4.0146999359
+ },
+ {
+  "Signature ID":"WP_IL_2_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":27.0,
+  "Overlap [%] (Experiment02)":27.0,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.8783686316,
+  "Score (Experiment01)":-0.8923000097,
+  "Score (Experiment02)":0.5996000171
+ },
+ {
+  "Signature ID":"WP_IL_5_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":27.0,
+  "Overlap [%] (Experiment02)":27.0,
+  "Adj. p-value (Experiment01)":0.9437096085,
+  "Adj. p-value (Experiment02)":0.6658286437,
+  "Score (Experiment01)":-0.3788999915,
+  "Score (Experiment02)":1.1431000233
+ },
+ {
+  "Signature ID":"WP_INSULIN_SIGNALING",
+  "Overlap [%] (Experiment01)":21.9,
+  "Overlap [%] (Experiment02)":21.9,
+  "Adj. p-value (Experiment01)":0.9446915298,
+  "Adj. p-value (Experiment02)":0.5441875065,
+  "Score (Experiment01)":-0.3046000004,
+  "Score (Experiment02)":-1.3671000004
+ },
+ {
+  "Signature ID":"WP_INTEGRIN_MEDIATED_CELL_ADHESION",
+  "Overlap [%] (Experiment01)":20.6,
+  "Overlap [%] (Experiment02)":20.6,
+  "Adj. p-value (Experiment01)":0.3684338917,
+  "Adj. p-value (Experiment02)":0.305268595,
+  "Score (Experiment01)":-2.5125000477,
+  "Score (Experiment02)":-2.0766999722
+ },
+ {
+  "Signature ID":"WP_INTERFERON_TYPE_I_SIGNALING_PATHWAYS",
+  "Overlap [%] (Experiment01)":27.8,
+  "Overlap [%] (Experiment02)":27.8,
+  "Adj. p-value (Experiment01)":0.8230067667,
+  "Adj. p-value (Experiment02)":0.4337124954,
+  "Score (Experiment01)":-1.0398000479,
+  "Score (Experiment02)":-1.7019000053
+ },
+ {
+  "Signature ID":"WP_JOUBERT_SYNDROME",
+  "Overlap [%] (Experiment01)":14.5,
+  "Overlap [%] (Experiment02)":14.5,
+  "Adj. p-value (Experiment01)":0.5888239116,
+  "Adj. p-value (Experiment02)":0.2363261481,
+  "Score (Experiment01)":1.8435000181,
+  "Score (Experiment02)":-2.4228000641
+ },
+ {
+  "Signature ID":"WP_KIT_RECEPTOR_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":24.5,
+  "Overlap [%] (Experiment02)":24.5,
+  "Adj. p-value (Experiment01)":0.4158686026,
+  "Adj. p-value (Experiment02)":0.898922779,
+  "Score (Experiment01)":-2.2035000324,
+  "Score (Experiment02)":-0.4767000079
+ },
+ {
+  "Signature ID":"WP_LEPTIN_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":22.5,
+  "Overlap [%] (Experiment02)":22.5,
+  "Adj. p-value (Experiment01)":0.6806031328,
+  "Adj. p-value (Experiment02)":0.9889558233,
+  "Score (Experiment01)":-1.4581999779,
+  "Score (Experiment02)":0.0362999998
+ },
+ {
+  "Signature ID":"WP_MAPK_CASCADE",
+  "Overlap [%] (Experiment01)":30.3,
+  "Overlap [%] (Experiment02)":30.3,
+  "Adj. p-value (Experiment01)":0.871268362,
+  "Adj. p-value (Experiment02)":0.7896624473,
+  "Score (Experiment01)":-0.7433000207,
+  "Score (Experiment02)":-0.8396000266
+ },
+ {
+  "Signature ID":"WP_MAPK_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":15.8,
+  "Overlap [%] (Experiment02)":15.8,
+  "Adj. p-value (Experiment01)":0.4120324803,
+  "Adj. p-value (Experiment02)":0.920742385,
+  "Score (Experiment01)":-2.3327000141,
+  "Score (Experiment02)":-0.3366999924
+ },
+ {
+  "Signature ID":"WP_MEASLES_VIRUS_INFECTION",
+  "Overlap [%] (Experiment01)":7.4,
+  "Overlap [%] (Experiment02)":7.4,
+  "Adj. p-value (Experiment01)":0.9950835129,
+  "Adj. p-value (Experiment02)":0.3004193671,
+  "Score (Experiment01)":-0.1750999987,
+  "Score (Experiment02)":-2.1375999451
+ },
+ {
+  "Signature ID":"WP_MECHANOREGULATION_AND_PATHOLOGY_OF_YAP_TAZ_VIA_HIPPO_AND_NON_HIPPO_MECHANISMS",
+  "Overlap [%] (Experiment01)":21.3,
+  "Overlap [%] (Experiment02)":21.3,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.938669934,
+  "Score (Experiment01)":-0.7626000047,
+  "Score (Experiment02)":0.3079999983
+ },
+ {
+  "Signature ID":"WP_MECP2_AND_ASSOCIATED_RETT_SYNDROME",
+  "Overlap [%] (Experiment01)":19.2,
+  "Overlap [%] (Experiment02)":19.2,
+  "Adj. p-value (Experiment01)":0.6228317525,
+  "Adj. p-value (Experiment02)":0.0760470952,
+  "Score (Experiment01)":1.8465000391,
+  "Score (Experiment02)":3.1686999798
+ },
+ {
+  "Signature ID":"WP_MELANOMA",
+  "Overlap [%] (Experiment01)":14.7,
+  "Overlap [%] (Experiment02)":14.7,
+  "Adj. p-value (Experiment01)":0.8208333333,
+  "Adj. p-value (Experiment02)":0.6012851406,
+  "Score (Experiment01)":-1.0942000151,
+  "Score (Experiment02)":-1.3106000423
+ },
+ {
+  "Signature ID":"WP_MESODERMAL_COMMITMENT_PATHWAY",
+  "Overlap [%] (Experiment01)":15.0,
+  "Overlap [%] (Experiment02)":15.0,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.1781762077,
+  "Score (Experiment01)":0.0230999999,
+  "Score (Experiment02)":-2.9421000481
+ },
+ {
+  "Signature ID":"WP_METABOLIC_EPILEPTIC_DISORDERS",
+  "Overlap [%] (Experiment01)":16.3,
+  "Overlap [%] (Experiment02)":16.3,
+  "Adj. p-value (Experiment01)":0.7585493226,
+  "Adj. p-value (Experiment02)":0.3004193671,
+  "Score (Experiment01)":1.2536000013,
+  "Score (Experiment02)":2.068500042
+ },
+ {
+  "Signature ID":"WP_METABOLIC_REPROGRAMMING_IN_COLON_CANCER",
+  "Overlap [%] (Experiment01)":26.2,
+  "Overlap [%] (Experiment02)":26.2,
+  "Adj. p-value (Experiment01)":0.9446915298,
+  "Adj. p-value (Experiment02)":0.9723632149,
+  "Score (Experiment01)":-0.3145999908,
+  "Score (Experiment02)":-0.0945999995
+ },
+ {
+  "Signature ID":"WP_MET_IN_TYPE_1_PAPILLARY_RENAL_CELL_CARCINOMA",
+  "Overlap [%] (Experiment01)":27.1,
+  "Overlap [%] (Experiment02)":27.1,
+  "Adj. p-value (Experiment01)":0.6711333182,
+  "Adj. p-value (Experiment02)":0.8602620087,
+  "Score (Experiment01)":-1.5183000565,
+  "Score (Experiment02)":-0.6538000107
+ },
+ {
+  "Signature ID":"WP_MICRORNAS_IN_CARDIOMYOCYTE_HYPERTROPHY",
+  "Overlap [%] (Experiment01)":9.6,
+  "Overlap [%] (Experiment02)":9.6,
+  "Adj. p-value (Experiment01)":0.8208333333,
+  "Adj. p-value (Experiment02)":0.9608210955,
+  "Score (Experiment01)":1.1277999878,
+  "Score (Experiment02)":-0.1541000009
+ },
+ {
+  "Signature ID":"WP_MICROTUBULE_CYTOSKELETON_REGULATION",
+  "Overlap [%] (Experiment01)":26.1,
+  "Overlap [%] (Experiment02)":26.1,
+  "Adj. p-value (Experiment01)":0.6428421053,
+  "Adj. p-value (Experiment02)":0.9404611782,
+  "Score (Experiment01)":-1.6036000252,
+  "Score (Experiment02)":-0.2030999959
+ },
+ {
+  "Signature ID":"WP_MIRNA_REGULATION_OF_DNA_DAMAGE_RESPONSE",
+  "Overlap [%] (Experiment01)":21.9,
+  "Overlap [%] (Experiment02)":21.9,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.2977057288,
+  "Score (Experiment01)":0.1142999977,
+  "Score (Experiment02)":-2.0910999775
+ },
+ {
+  "Signature ID":"WP_MRNA_PROCESSING",
+  "Overlap [%] (Experiment01)":30.2,
+  "Overlap [%] (Experiment02)":30.2,
+  "Adj. p-value (Experiment01)":0.3165748393,
+  "Adj. p-value (Experiment02)":0.0164166667,
+  "Score (Experiment01)":2.7297999859,
+  "Score (Experiment02)":6.5750999451
+ },
+ {
+  "Signature ID":"WP_MYOMETRIAL_RELAXATION_AND_CONTRACTION_PATHWAYS",
+  "Overlap [%] (Experiment01)":10.9,
+  "Overlap [%] (Experiment02)":10.9,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.5342489721,
+  "Score (Experiment01)":0.8705999851,
+  "Score (Experiment02)":1.4548000097
+ },
+ {
+  "Signature ID":"WP_NETWORK_MAP_OF_SARS_COV_2_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":6.9,
+  "Overlap [%] (Experiment02)":6.9,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.4138655462,
+  "Score (Experiment01)":-0.4083999991,
+  "Score (Experiment02)":-1.8500000238
+ },
+ {
+  "Signature ID":"WP_NEUROINFLAMMATION_AND_GLUTAMATERGIC_SIGNALING",
+  "Overlap [%] (Experiment01)":8.6,
+  "Overlap [%] (Experiment02)":8.6,
+  "Adj. p-value (Experiment01)":1.0,
+  "Adj. p-value (Experiment02)":0.622811284,
+  "Score (Experiment01)":0.003,
+  "Score (Experiment02)":-1.266299963
+ },
+ {
+  "Signature ID":"WP_NF1_COPY_NUMBER_VARIATION_SYNDROME",
+  "Overlap [%] (Experiment01)":16.7,
+  "Overlap [%] (Experiment02)":16.7,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.1491555038,
+  "Score (Experiment01)":0.7843999863,
+  "Score (Experiment02)":-2.9165999889
+ },
+ {
+  "Signature ID":"WP_NONALCOHOLIC_FATTY_LIVER_DISEASE",
+  "Overlap [%] (Experiment01)":9.7,
+  "Overlap [%] (Experiment02)":9.7,
+  "Adj. p-value (Experiment01)":0.8208333333,
+  "Adj. p-value (Experiment02)":0.2330671399,
+  "Score (Experiment01)":-1.0872000456,
+  "Score (Experiment02)":-2.3529999256
+ },
+ {
+  "Signature ID":"WP_NON_SMALL_CELL_LUNG_CANCER",
+  "Overlap [%] (Experiment01)":16.7,
+  "Overlap [%] (Experiment02)":16.7,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.8672618236,
+  "Score (Experiment01)":-0.1441999972,
+  "Score (Experiment02)":-0.6471999884
+ },
+ {
+  "Signature ID":"WP_NOTCH_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":22.2,
+  "Overlap [%] (Experiment02)":22.2,
+  "Adj. p-value (Experiment01)":0.344606414,
+  "Adj. p-value (Experiment02)":0.0164166667,
+  "Score (Experiment01)":2.4272999763,
+  "Score (Experiment02)":4.8551001549
+ },
+ {
+  "Signature ID":"WP_NUCLEAR_RECEPTORS_META_PATHWAY",
+  "Overlap [%] (Experiment01)":6.1,
+  "Overlap [%] (Experiment02)":6.1,
+  "Adj. p-value (Experiment01)":0.3684338917,
+  "Adj. p-value (Experiment02)":0.8602620087,
+  "Score (Experiment01)":-2.421900034,
+  "Score (Experiment02)":-0.6060000062
+ },
+ {
+  "Signature ID":"WP_NUCLEOTIDE_EXCISION_REPAIR_IN_XERODERMA_PIGMENTOSUM",
+  "Overlap [%] (Experiment01)":16.0,
+  "Overlap [%] (Experiment02)":16.0,
+  "Adj. p-value (Experiment01)":0.3781190019,
+  "Adj. p-value (Experiment02)":0.5342489721,
+  "Score (Experiment01)":2.3306999207,
+  "Score (Experiment02)":-1.4421000481
+ },
+ {
+  "Signature ID":"WP_ONCOSTATIN_M_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":25.0,
+  "Overlap [%] (Experiment02)":25.0,
+  "Adj. p-value (Experiment01)":0.9746268477,
+  "Adj. p-value (Experiment02)":0.6658286437,
+  "Score (Experiment01)":0.2709000111,
+  "Score (Experiment02)":1.1260999441
+ },
+ {
+  "Signature ID":"WP_OREXIN_RECEPTOR_PATHWAY",
+  "Overlap [%] (Experiment01)":14.8,
+  "Overlap [%] (Experiment02)":14.8,
+  "Adj. p-value (Experiment01)":0.9446915298,
+  "Adj. p-value (Experiment02)":0.4337124954,
+  "Score (Experiment01)":0.3388000131,
+  "Score (Experiment02)":-1.86650002
+ },
+ {
+  "Signature ID":"WP_OVERLAP_BETWEEN_SIGNAL_TRANSDUCTION_PATHWAYS_CONTRIBUTING_TO_LMNA_LAMINOPATHIES",
+  "Overlap [%] (Experiment01)":21.1,
+  "Overlap [%] (Experiment02)":21.1,
+  "Adj. p-value (Experiment01)":0.3484777954,
+  "Adj. p-value (Experiment02)":0.216209371,
+  "Score (Experiment01)":-2.551199913,
+  "Score (Experiment02)":-2.421900034
+ },
+ {
+  "Signature ID":"WP_P53_TRANSCRIPTIONAL_GENE_NETWORK",
+  "Overlap [%] (Experiment01)":13.5,
+  "Overlap [%] (Experiment02)":13.5,
+  "Adj. p-value (Experiment01)":0.7580544933,
+  "Adj. p-value (Experiment02)":0.938669934,
+  "Score (Experiment01)":-1.3039000034,
+  "Score (Experiment02)":-0.2164999992
+ },
+ {
+  "Signature ID":"WP_PANCREATIC_ADENOCARCINOMA_PATHWAY",
+  "Overlap [%] (Experiment01)":16.9,
+  "Overlap [%] (Experiment02)":16.9,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.5342489721,
+  "Score (Experiment01)":-0.1289999932,
+  "Score (Experiment02)":-1.4972000122
+ },
+ {
+  "Signature ID":"WP_PARKIN_UBIQUITIN_PROTEASOMAL_SYSTEM_PATHWAY",
+  "Overlap [%] (Experiment01)":14.1,
+  "Overlap [%] (Experiment02)":14.1,
+  "Adj. p-value (Experiment01)":0.2693096377,
+  "Adj. p-value (Experiment02)":0.5805500982,
+  "Score (Experiment01)":-3.3111999035,
+  "Score (Experiment02)":-1.3914999962
+ },
+ {
+  "Signature ID":"WP_PATHOGENIC_ESCHERICHIA_COLI_INFECTION",
+  "Overlap [%] (Experiment01)":18.2,
+  "Overlap [%] (Experiment02)":18.2,
+  "Adj. p-value (Experiment01)":0.3165748393,
+  "Adj. p-value (Experiment02)":0.898922779,
+  "Score (Experiment01)":2.6953001022,
+  "Score (Experiment02)":-0.466899991
+ },
+ {
+  "Signature ID":"WP_PATHWAYS_AFFECTED_IN_ADENOID_CYSTIC_CARCINOMA",
+  "Overlap [%] (Experiment01)":38.5,
+  "Overlap [%] (Experiment02)":38.5,
+  "Adj. p-value (Experiment01)":0.8208333333,
+  "Adj. p-value (Experiment02)":0.898922779,
+  "Score (Experiment01)":1.1100000143,
+  "Score (Experiment02)":0.4693000019
+ },
+ {
+  "Signature ID":"WP_PHYSICO_CHEMICAL_FEATURES_AND_TOXICITY_ASSOCIATED_PATHWAYS",
+  "Overlap [%] (Experiment01)":21.2,
+  "Overlap [%] (Experiment02)":21.2,
+  "Adj. p-value (Experiment01)":0.9746268477,
+  "Adj. p-value (Experiment02)":0.7833001988,
+  "Score (Experiment01)":0.2441000044,
+  "Score (Experiment02)":0.8593000174
+ },
+ {
+  "Signature ID":"WP_PI3K_AKT_MTOR_SIGNALING_PATHWAY_AND_THERAPEUTIC_OPPORTUNITIES_IN_PROSTATE_CANCER",
+  "Overlap [%] (Experiment01)":34.4,
+  "Overlap [%] (Experiment02)":34.4,
+  "Adj. p-value (Experiment01)":0.9950835129,
+  "Adj. p-value (Experiment02)":0.938669934,
+  "Score (Experiment01)":-0.2026000023,
+  "Score (Experiment02)":0.2414000034
+ },
+ {
+  "Signature ID":"WP_PI3K_AKT_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":10.6,
+  "Overlap [%] (Experiment02)":10.6,
+  "Adj. p-value (Experiment01)":0.871268362,
+  "Adj. p-value (Experiment02)":0.7424186539,
+  "Score (Experiment01)":0.7034999728,
+  "Score (Experiment02)":-0.8862000108
+ },
+ {
+  "Signature ID":"WP_PLEURAL_MESOTHELIOMA",
+  "Overlap [%] (Experiment01)":15.3,
+  "Overlap [%] (Experiment02)":15.3,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.0268027211,
+  "Score (Experiment01)":-0.5406000018,
+  "Score (Experiment02)":-3.8784000874
+ },
+ {
+  "Signature ID":"WP_PRADER_WILLI_AND_ANGELMAN_SYNDROME",
+  "Overlap [%] (Experiment01)":22.2,
+  "Overlap [%] (Experiment02)":22.2,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.1491555038,
+  "Score (Experiment01)":-0.3646000028,
+  "Score (Experiment02)":-2.888600111
+ },
+ {
+  "Signature ID":"WP_PRIMARY_FOCAL_SEGMENTAL_GLOMERULOSCLEROSIS_FSGS",
+  "Overlap [%] (Experiment01)":18.1,
+  "Overlap [%] (Experiment02)":18.1,
+  "Adj. p-value (Experiment01)":0.2693096377,
+  "Adj. p-value (Experiment02)":0.1974739374,
+  "Score (Experiment01)":-3.0281000137,
+  "Score (Experiment02)":-2.5025999546
+ },
+ {
+  "Signature ID":"WP_PRIMARY_OVARIAN_INSUFFICIENCY",
+  "Overlap [%] (Experiment01)":9.2,
+  "Overlap [%] (Experiment02)":9.2,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.2363261481,
+  "Score (Experiment01)":0.8493999839,
+  "Score (Experiment02)":-2.3471999168
+ },
+ {
+  "Signature ID":"WP_PROLACTIN_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":23.0,
+  "Overlap [%] (Experiment02)":23.0,
+  "Adj. p-value (Experiment01)":0.3165748393,
+  "Adj. p-value (Experiment02)":0.5342489721,
+  "Score (Experiment01)":-2.7911999226,
+  "Score (Experiment02)":-1.4888000488
+ },
+ {
+  "Signature ID":"WP_RAC1_PAK1_P38_MMP2_PATHWAY",
+  "Overlap [%] (Experiment01)":20.6,
+  "Overlap [%] (Experiment02)":20.6,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.70107944,
+  "Score (Experiment01)":0.469599992,
+  "Score (Experiment02)":1.0212999582
+ },
+ {
+  "Signature ID":"WP_RAS_SIGNALING",
+  "Overlap [%] (Experiment01)":11.4,
+  "Overlap [%] (Experiment02)":11.4,
+  "Adj. p-value (Experiment01)":0.6537678845,
+  "Adj. p-value (Experiment02)":0.3994003427,
+  "Score (Experiment01)":-1.674200058,
+  "Score (Experiment02)":-1.8654999733
+ },
+ {
+  "Signature ID":"WP_REGULATION_OF_ACTIN_CYTOSKELETON",
+  "Overlap [%] (Experiment01)":20.7,
+  "Overlap [%] (Experiment02)":20.7,
+  "Adj. p-value (Experiment01)":0.4158686026,
+  "Adj. p-value (Experiment02)":0.0164166667,
+  "Score (Experiment01)":-2.1510999203,
+  "Score (Experiment02)":-4.4552001953
+ },
+ {
+  "Signature ID":"WP_RETINOBLASTOMA_GENE_IN_CANCER",
+  "Overlap [%] (Experiment01)":30.3,
+  "Overlap [%] (Experiment02)":30.3,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.1482763812,
+  "Score (Experiment01)":0.8957999945,
+  "Score (Experiment02)":-2.9739999771
+ },
+ {
+  "Signature ID":"WP_RETT_SYNDROME_CAUSING_GENES",
+  "Overlap [%] (Experiment01)":22.9,
+  "Overlap [%] (Experiment02)":22.9,
+  "Adj. p-value (Experiment01)":0.4967510426,
+  "Adj. p-value (Experiment02)":0.0454126325,
+  "Score (Experiment01)":2.0297999382,
+  "Score (Experiment02)":3.6282000542
+ },
+ {
+  "Signature ID":"WP_SMITH_MAGENIS_AND_POTOCKI_LUPSKI_SYNDROME_COPY_NUMBER_VARIATION",
+  "Overlap [%] (Experiment01)":16.4,
+  "Overlap [%] (Experiment02)":16.4,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.8264615662,
+  "Score (Experiment01)":0.0142999999,
+  "Score (Experiment02)":0.6345999837
+ },
+ {
+  "Signature ID":"WP_SPLICING_FACTOR_NOVA_REGULATED_SYNAPTIC_PROTEINS",
+  "Overlap [%] (Experiment01)":23.8,
+  "Overlap [%] (Experiment02)":23.8,
+  "Adj. p-value (Experiment01)":0.2693096377,
+  "Adj. p-value (Experiment02)":0.898922779,
+  "Score (Experiment01)":-3.0885000229,
+  "Score (Experiment02)":-0.4751000106
+ },
+ {
+  "Signature ID":"WP_STEROL_REGULATORY_ELEMENT_BINDING_PROTEINS_SREBP_SIGNALING",
+  "Overlap [%] (Experiment01)":21.7,
+  "Overlap [%] (Experiment02)":21.7,
+  "Adj. p-value (Experiment01)":0.8208333333,
+  "Adj. p-value (Experiment02)":0.920742385,
+  "Score (Experiment01)":-1.1309000254,
+  "Score (Experiment02)":0.3253999949
+ },
+ {
+  "Signature ID":"WP_SUDDEN_INFANT_DEATH_SYNDROME_SIDS_SUSCEPTIBILITY_PATHWAYS",
+  "Overlap [%] (Experiment01)":13.8,
+  "Overlap [%] (Experiment02)":13.8,
+  "Adj. p-value (Experiment01)":0.8622204409,
+  "Adj. p-value (Experiment02)":0.640287226,
+  "Score (Experiment01)":0.8550999761,
+  "Score (Experiment02)":1.1773999929
+ },
+ {
+  "Signature ID":"WP_TARGET_OF_RAPAMYCIN_SIGNALING",
+  "Overlap [%] (Experiment01)":36.1,
+  "Overlap [%] (Experiment02)":36.1,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.6012851406,
+  "Score (Experiment01)":-0.4580000043,
+  "Score (Experiment02)":-1.3766000271
+ },
+ {
+  "Signature ID":"WP_TAR_SYNDROME",
+  "Overlap [%] (Experiment01)":17.5,
+  "Overlap [%] (Experiment02)":17.5,
+  "Adj. p-value (Experiment01)":0.5883890237,
+  "Adj. p-value (Experiment02)":0.4597199675,
+  "Score (Experiment01)":1.8130999804,
+  "Score (Experiment02)":-1.7192000151
+ },
+ {
+  "Signature ID":"WP_TGF_BETA_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":20.5,
+  "Overlap [%] (Experiment02)":20.5,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.2349900596,
+  "Score (Experiment01)":0.0926000029,
+  "Score (Experiment02)":2.3053998947
+ },
+ {
+  "Signature ID":"WP_THERMOGENESIS",
+  "Overlap [%] (Experiment01)":20.4,
+  "Overlap [%] (Experiment02)":20.4,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.9009589378,
+  "Score (Experiment01)":0.503099978,
+  "Score (Experiment02)":0.4250999987
+ },
+ {
+  "Signature ID":"WP_THYROID_HORMONES_PRODUCTION_AND_PERIPHERAL_DOWNSTREAM_SIGNALING_EFFECTS",
+  "Overlap [%] (Experiment01)":15.1,
+  "Overlap [%] (Experiment02)":15.1,
+  "Adj. p-value (Experiment01)":0.7772596844,
+  "Adj. p-value (Experiment02)":0.898922779,
+  "Score (Experiment01)":-1.2144999504,
+  "Score (Experiment02)":-0.4672999978
+ },
+ {
+  "Signature ID":"WP_THYROID_STIMULATING_HORMONE_TSH_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":27.6,
+  "Overlap [%] (Experiment02)":27.6,
+  "Adj. p-value (Experiment01)":0.7098057009,
+  "Adj. p-value (Experiment02)":0.6179839975,
+  "Score (Experiment01)":-1.3725999594,
+  "Score (Experiment02)":-1.1962000132
+ },
+ {
+  "Signature ID":"WP_TNF_ALPHA_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":22.5,
+  "Overlap [%] (Experiment02)":22.5,
+  "Adj. p-value (Experiment01)":0.8230067667,
+  "Adj. p-value (Experiment02)":0.9483520102,
+  "Score (Experiment01)":1.0837999582,
+  "Score (Experiment02)":0.1624000072
+ },
+ {
+  "Signature ID":"WP_TRANSLATION_FACTORS",
+  "Overlap [%] (Experiment01)":34.0,
+  "Overlap [%] (Experiment02)":34.0,
+  "Adj. p-value (Experiment01)":0.6537678845,
+  "Adj. p-value (Experiment02)":0.6147078955,
+  "Score (Experiment01)":-1.5923999548,
+  "Score (Experiment02)":-1.2654999495
+ },
+ {
+  "Signature ID":"WP_TRANSLATION_INHIBITORS_IN_CHRONICALLY_ACTIVATED_PDGFRA_CELLS",
+  "Overlap [%] (Experiment01)":30.4,
+  "Overlap [%] (Experiment02)":30.4,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.3830048156,
+  "Score (Experiment01)":-0.0834999979,
+  "Score (Experiment02)":-1.8637000322
+ },
+ {
+  "Signature ID":"WP_TROP2_REGULATORY_SIGNALING",
+  "Overlap [%] (Experiment01)":26.7,
+  "Overlap [%] (Experiment02)":26.7,
+  "Adj. p-value (Experiment01)":0.8208333333,
+  "Adj. p-value (Experiment02)":0.0848041326,
+  "Score (Experiment01)":1.0583000183,
+  "Score (Experiment02)":-3.1424000263
+ },
+ {
+  "Signature ID":"WP_T_CELL_ACTIVATION_SARS_COV_2",
+  "Overlap [%] (Experiment01)":17.0,
+  "Overlap [%] (Experiment02)":17.0,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.898922779,
+  "Score (Experiment01)":-0.1506000012,
+  "Score (Experiment02)":0.4722000062
+ },
+ {
+  "Signature ID":"WP_T_CELL_ANTIGEN_RECEPTOR_TCR_PATHWAY_DURING_STAPHYLOCOCCUS_AUREUS_INFECTION",
+  "Overlap [%] (Experiment01)":21.0,
+  "Overlap [%] (Experiment02)":21.0,
+  "Adj. p-value (Experiment01)":0.7187194903,
+  "Adj. p-value (Experiment02)":0.640287226,
+  "Score (Experiment01)":-1.3351000547,
+  "Score (Experiment02)":-1.1502000093
+ },
+ {
+  "Signature ID":"WP_T_CELL_RECEPTOR_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":24.0,
+  "Overlap [%] (Experiment02)":24.0,
+  "Adj. p-value (Experiment01)":0.4158686026,
+  "Adj. p-value (Experiment02)":0.8257823715,
+  "Score (Experiment01)":-2.3245999813,
+  "Score (Experiment02)":-0.752399981
+ },
+ {
+  "Signature ID":"WP_VASOPRESSIN_REGULATED_WATER_REABSORPTION",
+  "Overlap [%] (Experiment01)":25.0,
+  "Overlap [%] (Experiment02)":25.0,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.1491555038,
+  "Score (Experiment01)":-0.469599992,
+  "Score (Experiment02)":2.9149000645
+ },
+ {
+  "Signature ID":"WP_VEGFA_VEGFR2_SIGNALING",
+  "Overlap [%] (Experiment01)":21.6,
+  "Overlap [%] (Experiment02)":21.6,
+  "Adj. p-value (Experiment01)":0.9367654639,
+  "Adj. p-value (Experiment02)":0.8753018449,
+  "Score (Experiment01)":-0.4903999865,
+  "Score (Experiment02)":0.5720000267
+ },
+ {
+  "Signature ID":"WP_VITAMIN_D_RECEPTOR_PATHWAY",
+  "Overlap [%] (Experiment01)":5.9,
+  "Overlap [%] (Experiment02)":5.9,
+  "Adj. p-value (Experiment01)":0.721061461,
+  "Adj. p-value (Experiment02)":0.9435122283,
+  "Score (Experiment01)":-1.2949999571,
+  "Score (Experiment02)":-0.1943999976
+ },
+ {
+  "Signature ID":"WP_WNT_SIGNALING",
+  "Overlap [%] (Experiment01)":9.7,
+  "Overlap [%] (Experiment02)":9.7,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.5342489721,
+  "Score (Experiment01)":-0.0926000029,
+  "Score (Experiment02)":-1.5066000223
+ },
+ {
+  "Signature ID":"WP_WNT_SIGNALING_PATHWAY",
+  "Overlap [%] (Experiment01)":23.4,
+  "Overlap [%] (Experiment02)":23.4,
+  "Adj. p-value (Experiment01)":0.9979612004,
+  "Adj. p-value (Experiment02)":0.5342489721,
+  "Score (Experiment01)":0.0401999988,
+  "Score (Experiment02)":-1.502300024
+ }
+]
