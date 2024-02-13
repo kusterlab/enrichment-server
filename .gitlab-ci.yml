@@ -2,6 +2,7 @@ image: docker:latest
 
 variables:
   DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: ""
 
 stages:
   - build
@@ -9,6 +10,7 @@ stages:
   - deploy
 
 build:
+  stage: build
   only:
     - main
   before_script:
@@ -16,7 +18,6 @@ build:
   services:
     - name: docker:dind
       command: ["--experimental"]
-  stage: build
   script:
     - PROJECT_PATH=$(echo $CI_PROJECT_PATH | tr '[:upper:]' '[:lower:]')
     - CONTAINER_IMAGE=$CI_REGISTRY/$PROJECT_PATH
