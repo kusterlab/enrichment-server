@@ -1,4 +1,7 @@
-stages:          # List of stages for jobs, and their order of execution
+image: docker:latest
+
+
+stages:
   - build
   - test
   - deploy
@@ -14,7 +17,7 @@ build:
   stage: build
   script:
     - PROJECT_PATH=$(echo $CI_PROJECT_PATH | tr '[:upper:]' '[:lower:]')
-    - CONTAINER_IMAGE=$REGISTRY/$PROJECT_PATH
+    - CONTAINER_IMAGE=$CI_REGISTRY/$PROJECT_PATH
     - docker pull $CONTAINER_IMAGE:latest || true
     - DOCKER_BUILDKIT=0 docker build --cache-from $CONTAINER_IMAGE:latest --tag $CONTAINER_IMAGE:$CI_COMMIT_REF_SLUG --tag $CONTAINER_IMAGE:latest .
     - docker push $CONTAINER_IMAGE:$CI_COMMIT_REF_SLUG
