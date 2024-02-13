@@ -80,4 +80,5 @@ def process_post_request(post_request: werkzeug.Request) -> tuple[Path, str, str
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # TODO: What is the best way to switch debug off for deployment?
+    app.run(debug=True, host='0.0.0.0', port=4321)

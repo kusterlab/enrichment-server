@@ -43,6 +43,6 @@ RUN poetry install -C flask_server
 
 WORKDIR /app/flask_server
 
-EXPOSE 1234
-
 CMD ["poetry", "run", "python", "enrichment_server.py"]
+
+EXPOSE 4321
