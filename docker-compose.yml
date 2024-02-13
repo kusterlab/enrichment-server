@@ -1,0 +1,39 @@
+version: '3.6'
+
+services:
+  enrichment_server:
+    build: .
+    image: "${CI_REGISTRY}/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}:${CI_COMMIT_REF_SLUG}"
+    networks:
+      - INTERNAL
+      - EXTERNAL
+    deploy:
+      mode: replicated
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+        delay: 2s
+        max_attempts: 5
+        window: 10s
+      update_config:
+        parallelism: 1
+        delay: 5s
+        order: start-first
+      labels:
+        - "traefik.port=4321"
+        - "traefik.backend=${CI_COMMIT_REF_SLUG}_${CI_PROJECT_NAME}"
+        - "traefik.frontend.rule=PathPrefixStrip:/${CI_COMMIT_REF_SLUG}_${CI_PROJECT_NAME}/"
+        - "traefik.backend.loadbalancer.sticky=true"
+        - "traefik.tags=${CI_COMMIT_REF_SLUG},${CI_DEPLOY_TAG},${CI_PUBLISH}"
+        - "traefik.docker.network=${CI_DEPLOY_NETWORK}"
+      resources:
+        limits:
+          memory: 5000M
+        reservations:
+          memory: 250M
+
+networks:
+  EXTERNAL:
+    external: true
+  INTERNAL:
+    external: true
