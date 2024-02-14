@@ -6,11 +6,11 @@ import numpy as np
 import kinact
 
 
-def preprocess_ksea(filepath: Path, session_id: str, dataset_name: str) -> Path:
+def preprocess_ksea(filepath: Path) -> Path:
     input_json = json.load(open(filepath))
     input_df = pd.DataFrame.from_dict(input_json)
 
-    output_dir = Path('..') / session_id / dataset_name
+    output_dir = filepath.parent
     Path.mkdir(output_dir, parents=True, exist_ok=True)
 
     output_csv = output_dir / f'{filepath.stem}.csv'
@@ -19,7 +19,7 @@ def preprocess_ksea(filepath: Path, session_id: str, dataset_name: str) -> Path:
 
 
 def run_rokai(filepath: Path) -> Path:
-    output_path = filepath.parent / f'{filepath.stem}_rokai.csv'
+    output_path = filepath.parent / f'rokai_result.csv'
     subprocess.run(["Rscript",
                     "run_rokai.R",
                     str(filepath),
@@ -44,7 +44,7 @@ def perform_ksea(filepath: Path) -> Path:
         ksea_results.append(res)
     ksea_results_df = pd.concat(ksea_results, axis=1)
     ksea_results_df.index.name = 'Gene'
-    output_json = filepath.parent / f'{filepath.stem}_ksea.json'
+    output_json = filepath.parent / f'ksea_result.json'
     ksea_results_df.reset_index().to_json(path_or_buf=output_json,
                                           orient='records',
                                           indent=1  # For DEBUG

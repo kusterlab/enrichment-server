@@ -4,7 +4,7 @@ from pathlib import Path
 
 import werkzeug.wrappers
 from werkzeug.utils import secure_filename
-from flask import Flask, request, send_file, jsonify
+from flask import Flask, request, send_file, jsonify, make_response
 import flask.wrappers
 import ssgsea
 import ksea
@@ -14,7 +14,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def get_status() -> flask.wrappers.Response:
-    return jsonify(status=200)
+    return send_response(jsonify(status=200))
 
 
 @app.route('/ssgsea/<string:ssgsea_type>', methods=['POST'])
@@ -26,18 +26,18 @@ def handle_ssgsea_request(ssgsea_type) -> werkzeug.wrappers.Response | str:
 
     post_request_processed = process_post_request(request)
 
-    if len(post_request_processed) == 1:
+    if type(post_request_processed) is str:
         return post_request_processed
 
-    filepath, session_id, dataset_name = post_request_processed
+    filepath = post_request_processed
 
     # Preprocess the json input into a gct file
-    ssgsea_input = ssgsea.preprocess_ssgsea(filepath, session_id, dataset_name, ssgsea_type == 'gc')
+    ssgsea_input = ssgsea.preprocess_ssgsea(filepath, ssgsea_type == 'gc')
 
     ssgsea_combined_output = ssgsea.run_ssgsea(ssgsea_input, ssgsea_type)
 
-    # TODO: Delete everything when done to not accumulate files?
-    return send_file(ssgsea.postprocess_ssgsea(ssgsea_combined_output), as_attachment=True)
+    # TODO: Delete everything when done to not accumulate files? Or: Keep the final output file, and use it as a cache?
+    return send_response(send_file(ssgsea.postprocess_ssgsea(ssgsea_combined_output), as_attachment=True))
 
 
 @app.route('/ksea', methods=['POST'])
@@ -45,38 +45,51 @@ def handle_ssgsea_request(ssgsea_type) -> werkzeug.wrappers.Response | str:
 def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
     post_request_processed = process_post_request(request)
 
-    if len(post_request_processed) == 1:
+    if type(post_request_processed) is str:
         return post_request_processed
 
-    filepath, session_id, dataset_name = post_request_processed
+    filepath = post_request_processed
 
-    preprocessed_filepath = ksea.preprocess_ksea(filepath, session_id, dataset_name)
+    preprocessed_filepath = ksea.preprocess_ksea(filepath)
     if ksea_type == 'rokai':
         preprocessed_filepath = ksea.run_rokai(preprocessed_filepath)
 
     ksea_result = ksea.perform_ksea(preprocessed_filepath)
-    return send_file(ksea_result, as_attachment=True)
+    # TODO: Delete everything when done to not accumulate files? Or: Keep the final output file, and use it as a cache?
+    return send_response(send_file(ksea_result, as_attachment=True))
 
 
-def process_post_request(post_request: werkzeug.Request) -> tuple[Path, str, str] | str:
-    # Check if the POST request has the file part
-    if 'file' not in post_request.files:
-        return 'Error: No file part in the request.\n'
-
-    file = post_request.files['file']
+def process_post_request(post_request: werkzeug.Request) -> Path | str:
     form = post_request.form
     required_parameters = ['session_id', 'dataset_name']
     for param in required_parameters:
         if param not in form:
             return f'Error: parameter {param} not specified.\n'
 
-    # If the user does not select a file, the browser might submit an empty part without a filename
-    if file.filename == '':
-        return 'Error: No input file given.\n'
+    output_dir = Path('..') / secure_filename(form['session_id']) / secure_filename(form['dataset_name'])
+    Path.mkdir(output_dir, parents=True, exist_ok=True)
+    input_filepath = output_dir / 'input.json'
+    # Check if the POST request has the file part, and else if it has the data part
+    if 'file' in post_request.files and post_request.files['file'].filename != '':
+        file = post_request.files['file']
+        file.save(input_filepath)
+    elif 'data' in post_request.form:
+        # TODO: This variant is not tested yet
+        with open(input_filepath, 'w') as o:
+            o.write(post_request.form['data'])
+    else:
+        return "Error: You must either provide the input data " \
+               + "as a JSON string (-F data=<JSON_String>) or as a file (-F file=@<Filepath>).\n"
 
-    filepath = Path(secure_filename(file.filename))
-    file.save(filepath)
-    return filepath, form['session_id'], form['dataset_name']
+    return input_filepath
+
+
+def send_response(result) -> flask.Response:
+    response = make_response(result)
+    # TODO: I added this for cross-origin resource sharing, but is it unsafe?
+    # Maybe using flask-cors (https://flask-cors.readthedocs.io/en/latest/)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 
 if __name__ == '__main__':

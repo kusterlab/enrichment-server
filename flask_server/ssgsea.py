@@ -5,9 +5,8 @@ import pandas as pd
 from cmapPy.pandasGEXpress import parse_gct
 
 
-def preprocess_ssgsea(filepath: Path, session_id: str, dataset_name: str, type_is_gc) -> Path:
-    output_dir = Path('..') / session_id / dataset_name
-    Path.mkdir(output_dir, parents=True, exist_ok=True)
+def preprocess_ssgsea(filepath: Path, type_is_gc) -> Path:
+    output_dir = filepath.parent
     input_json = json.load(open(filepath))
     input_df = pd.DataFrame.from_dict(input_json)
 
@@ -38,7 +37,6 @@ def preprocess_ssgsea(filepath: Path, session_id: str, dataset_name: str, type_i
 
 def run_ssgsea(filepath: Path, ssgsea_type) -> Path:
     output_dir = filepath.parent
-    Path.mkdir(output_dir, parents=True, exist_ok=True)
     output_prefix = output_dir / f'ssgsea_{ssgsea_type}_out'
 
     match ssgsea_type:
@@ -73,7 +71,7 @@ def postprocess_ssgsea(output_gct) -> Path:
                              + [f'Adj. p-value ({exp})' for exp in experiment_names]
                              + [f'Score ({exp})' for exp in experiment_names])
 
-    output_json = output_gct.parent / f'{output_gct.stem}.json'
+    output_json = output_gct.parent / f'{output_gct.stem}_result.json'
     gct_df_joined.to_json(path_or_buf=output_json, orient='records',
                           indent=1  # For DEBUG
                           )
