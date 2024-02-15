@@ -1,7 +1,7 @@
 # How to send a request:
 # curl -X POST -F file=@<input_file> -F session_id=ABCDEF12345  -F dataset_name=FooBar http://127.0.0.1:1234/<route>
 from pathlib import Path
-
+from urllib.parse import urlparse
 import werkzeug.wrappers
 from werkzeug.utils import secure_filename
 from flask import Flask, request, send_file, jsonify, make_response
@@ -60,13 +60,17 @@ def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
 
 
 def process_post_request(post_request: werkzeug.Request) -> Path | str:
+    request_url = urlparse(request.base_url)
+
+
+
     form = post_request.form
     required_parameters = ['session_id', 'dataset_name']
     for param in required_parameters:
         if param not in form:
             return f'Error: parameter {param} not specified.\n'
 
-    output_dir = Path('..') / secure_filename(form['session_id']) / secure_filename(form['dataset_name'])
+    output_dir = Path('..') / secure_filename(form['session_id']) / secure_filename(form['dataset_name'] + request_url.path.replace('/', '_'))
     Path.mkdir(output_dir, parents=True, exist_ok=True)
     input_filepath = output_dir / 'input.json'
     # Check if the POST request has the file part, and else if it has the data part
