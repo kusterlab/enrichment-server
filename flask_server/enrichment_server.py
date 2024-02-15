@@ -17,12 +17,18 @@ def get_status() -> flask.wrappers.Response:
     return send_response(jsonify(status=200))
 
 
+# TODO: In the second route, the ssgsea_type actually can only be ssc. Can I enforce this?
 @app.route('/ssgsea/<string:ssgsea_type>', methods=['POST'])
-def handle_ssgsea_request(ssgsea_type) -> werkzeug.wrappers.Response | str:
+@app.route('/ssgsea/<string:ssgsea_type>/<string:ssc_input_type>', methods=['POST'])
+def handle_ssgsea_request(ssgsea_type, ssc_input_type='flanking') -> werkzeug.wrappers.Response | str:
     valid_ssgsea_types = ['ssc', 'gc', 'gcr']
 
     if ssgsea_type not in valid_ssgsea_types:
         return f"Invalid 'ssgsea_type'. Allowed values are {', '.join(valid_ssgsea_types)}"
+
+    valid_ssc_input_types = ['flanking', 'uniprot']
+    if ssc_input_type not in valid_ssc_input_types:
+        return f"Invalid 'ssc_input_type'. Allowed values are {', '.join(valid_ssc_input_types)}"
 
     post_request_processed = process_post_request(request)
 
@@ -34,7 +40,7 @@ def handle_ssgsea_request(ssgsea_type) -> werkzeug.wrappers.Response | str:
     # Preprocess the json input into a gct file
     ssgsea_input = ssgsea.preprocess_ssgsea(filepath, ssgsea_type == 'gc')
 
-    ssgsea_combined_output = ssgsea.run_ssgsea(ssgsea_input, ssgsea_type)
+    ssgsea_combined_output = ssgsea.run_ssgsea(ssgsea_input, ssgsea_type, ssc_input_type)
 
     # TODO: Delete everything when done to not accumulate files? Or: Keep the final output file, and use it as a cache?
     return send_response(send_file(ssgsea.postprocess_ssgsea(ssgsea_combined_output), as_attachment=True))
@@ -62,15 +68,14 @@ def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
 def process_post_request(post_request: werkzeug.Request) -> Path | str:
     request_url = urlparse(request.base_url)
 
-
-
     form = post_request.form
     required_parameters = ['session_id', 'dataset_name']
     for param in required_parameters:
         if param not in form:
             return f'Error: parameter {param} not specified.\n'
 
-    output_dir = Path('..') / secure_filename(form['session_id']) / secure_filename(form['dataset_name'] + request_url.path.replace('/', '_'))
+    output_dir = Path('..') / secure_filename(form['session_id']) / secure_filename(
+        form['dataset_name'] + request_url.path.replace('/', '_'))
     Path.mkdir(output_dir, parents=True, exist_ok=True)
     input_filepath = output_dir / 'input.json'
     # Check if the POST request has the file part, and else if it has the data part

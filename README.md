@@ -32,7 +32,7 @@ Publication: https://www.mcponline.org/article/S1535-9476(20)31860-0/fulltext
 
 <i>Input</i>
 
-A list of PTM sites surrounded by their +-7 flanking sequence, and their expression in each experiment.
+1. `.../ssc/flanking`: A list of PTM sites surrounded by their +-7 flanking sequence, and their expression in each experiment.
 E.g.:
 
 ```
@@ -45,12 +45,30 @@ E.g.:
  ...]
 ```
 
+2. `.../ssc/uniprot`: Alternatively, encode the sites as a list of Uniprot identifiers and site positions:
+E.g.:
+
+```
+ [...,
+ {
+  "id":"Q96MK2;T832-p",
+  "Experiment01":15.7046003342,
+  "Experiment02":12.9784002304
+ },
+ ...]
+```
+
 <i>Example Command</i>
 
-`curl -X POST -F file=@fixtures/ptm-sea/input/input.json
+`curl -X POST -F file=@fixtures/ptm-sea/input/input_flanking.json
 -F session_id=ABCDEF12345
--F dataset_name=ptm-sea http://10.152.171.101:4321/ssgsea/ssc
--o output_ptmsea.json`
+-F dataset_name=ptm-sea http://10.152.171.101:4321/ssgsea/ssc/flanking
+-o output_ptmsea_flanking.json`  
+
+`curl -X POST -F file=@fixtures/ptm-sea/input/input_uniprot.json
+-F session_id=ABCDEF12345
+-F dataset_name=ptm-sea http://10.152.171.101:4321/ssgsea/ssc/uniprot
+-o output_ptmsea_uniprot.json`
 </details>  
 
 

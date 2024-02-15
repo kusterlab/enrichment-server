@@ -28,24 +28,48 @@ class TestClass:
             res['Overlap [%] (Experiment02)'] == exp['Overlap [%] (Experiment02)']
             for res, exp in zip(self.actual_result, self.expected_result))
 
+    def evaluate_ksea(self):
+        assert len(self.actual_result) == len(self.expected_result) and all(
+            res['Gene'] == exp['Gene'] and
+            all(round(res[f'Score (Experiment_{i})'], 5) == round(exp[f'Score (Experiment_{i})'], 5) for i in
+                [1, 2, 3]) and
+            all(round(res[f'-log(p) (Experiment_{i})'], 5) == round(exp[f'-log(p) (Experiment_{i})'], 5) for i in
+                [1, 2, 3])
+            for res, exp in zip(self.actual_result, self.expected_result))
+
     def test_get_status(self, client):
         response = client.get('/')
         # You can do either of the following
         assert response.status == '200 OK', response.status
         assert response.json == {'status': 200}, response.json
 
-    def test_ssgsea_ssc(self, client):
-        self.input_json = Path('../fixtures/ptm-sea/input/input.json')
+    def test_ssgsea_ssc_flanking(self, client):
+        self.input_json = Path('../fixtures/ptm-sea/input/input_flanking.json')
         self.dataset_name = 'ptmsea_test'
 
-        response = client.post('/ssgsea/ssc', data={
+        response = client.post('/ssgsea/ssc/flanking', data={
             "session_id": self.session_id,
             "dataset_name": self.dataset_name,
             "file": self.input_json.open('rb')
         })
 
         self.actual_result = json.loads(response.data)
-        expected_result_file = Path('../fixtures/ptm-sea/expected_output/output_indented.json')
+        expected_result_file = Path('../fixtures/ptm-sea/expected_output/output_flanking.json')
+        self.expected_result = json.load(open(expected_result_file))
+        self.evaluate_ssgsea()
+
+    def test_ssgsea_ssc_uniprot(self, client):
+        self.input_json = Path('../fixtures/ptm-sea/input/input_uniprot.json')
+        self.dataset_name = 'ptmsea_test'
+
+        response = client.post('/ssgsea/ssc/uniprot', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_json.open('rb')
+        })
+
+        self.actual_result = json.loads(response.data)
+        expected_result_file = Path('../fixtures/ptm-sea/expected_output/output_uniprot.json')
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_ssgsea()
 
@@ -92,7 +116,7 @@ class TestClass:
         self.actual_result = json.loads(response.data)
         expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea.json')
         self.expected_result = json.load(open(expected_result_file))
-        assert self.actual_result == self.expected_result
+        self.evaluate_ksea()
 
     def test_ksea_rokai(self, client):
         self.input_json = Path('../fixtures/ksea/input/input.json')
@@ -107,4 +131,4 @@ class TestClass:
         self.actual_result = json.loads(response.data)
         expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea_rokai.json')
         self.expected_result = json.load(open(expected_result_file))
-        assert self.actual_result == self.expected_result
+        self.evaluate_ksea()

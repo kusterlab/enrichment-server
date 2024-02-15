@@ -35,18 +35,18 @@ def preprocess_ssgsea(filepath: Path, type_is_gc) -> Path:
     return input_gct_file
 
 
-def run_ssgsea(filepath: Path, ssgsea_type) -> Path:
+def run_ssgsea(filepath: Path, ssgsea_type, ssc_input_type) -> Path:
     output_dir = filepath.parent
     output_prefix = output_dir / f'ssgsea_{ssgsea_type}_out'
 
     match ssgsea_type:
         case 'ssc':
-            database = "../ssGSEA2.0/db/ptmsigdb/ptm.sig.db.all.flanking.human.v2.0.0.gmt"
+            if ssc_input_type == 'flanking':
+                database = "../ssGSEA2.0/db/ptmsigdb/ptm.sig.db.all.flanking.human.v2.0.0.gmt"
+            elif ssc_input_type == 'uniprot':
+                database = "../ssGSEA2.0/db/ptmsigdb/ptm.sig.db.all.uniprot.human.v2.0.0.gmt"
         case 'gc' | 'gcr':
             database = "../db/c2.cp.kegg+wp.v2023.2.Hs.symbols.gmt"
-        case _:
-            # This is unreachable, the parent function would have errored out already
-            database = None
 
     subprocess.run(["Rscript",
                     "../ssGSEA2.0/ssgsea-cli.R",
@@ -73,6 +73,6 @@ def postprocess_ssgsea(output_gct) -> Path:
 
     output_json = output_gct.parent / f'{output_gct.stem}_result.json'
     gct_df_joined.to_json(path_or_buf=output_json, orient='records',
-                          indent=1  # For DEBUG
+                          # indent=1  # For DEBUG
                           )
     return output_json

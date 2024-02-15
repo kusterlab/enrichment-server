@@ -1,0 +1,371 @@
+[
+ {
+  "Signature ID":"PERT-P100-DIA2_VORINOSTAT",
+  "Overlap [%] (Experiment01)":5.4,
+  "Overlap [%] (Experiment02)":5.4,
+  "Adj. p-value (Experiment01)":0.0205,
+  "Adj. p-value (Experiment02)":0.0311030193,
+  "Score (Experiment01)":4.0774998665,
+  "Score (Experiment02)":3.1133000851
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_TBB",
+  "Overlap [%] (Experiment01)":8.2,
+  "Overlap [%] (Experiment02)":8.2,
+  "Adj. p-value (Experiment01)":0.628726784,
+  "Adj. p-value (Experiment02)":0.2230234029,
+  "Score (Experiment01)":0.9111999869,
+  "Score (Experiment02)":1.7591999769
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_STAUROSPORINE",
+  "Overlap [%] (Experiment01)":4.9,
+  "Overlap [%] (Experiment02)":4.9,
+  "Adj. p-value (Experiment01)":0.1995767196,
+  "Adj. p-value (Experiment02)":0.0058571429,
+  "Score (Experiment01)":2.4221999645,
+  "Score (Experiment02)":3.9051001072
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_SP600125",
+  "Overlap [%] (Experiment01)":8.9,
+  "Overlap [%] (Experiment02)":8.9,
+  "Adj. p-value (Experiment01)":0.5546988653,
+  "Adj. p-value (Experiment02)":0.84665,
+  "Score (Experiment01)":1.1525000334,
+  "Score (Experiment02)":0.2694000006
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_SOTRASTAURIN",
+  "Overlap [%] (Experiment01)":6.5,
+  "Overlap [%] (Experiment02)":6.5,
+  "Adj. p-value (Experiment01)":0.614099321,
+  "Adj. p-value (Experiment02)":0.8913043478,
+  "Score (Experiment01)":0.9539999962,
+  "Score (Experiment02)":0.1700000018
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_SEMAGACESTAT",
+  "Overlap [%] (Experiment01)":5.6,
+  "Overlap [%] (Experiment02)":5.6,
+  "Adj. p-value (Experiment01)":0.8140754616,
+  "Adj. p-value (Experiment02)":0.8181348222,
+  "Score (Experiment01)":0.4223000109,
+  "Score (Experiment02)":-0.341899991
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_RGFP966",
+  "Overlap [%] (Experiment01)":6.2,
+  "Overlap [%] (Experiment02)":6.2,
+  "Adj. p-value (Experiment01)":0.1995767196,
+  "Adj. p-value (Experiment02)":0.0752984389,
+  "Score (Experiment01)":2.2809000015,
+  "Score (Experiment02)":2.2304000854
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_PS-1145",
+  "Overlap [%] (Experiment01)":7.2,
+  "Overlap [%] (Experiment02)":7.2,
+  "Adj. p-value (Experiment01)":0.4340190064,
+  "Adj. p-value (Experiment02)":0.0157935285,
+  "Score (Experiment01)":-1.6346000433,
+  "Score (Experiment02)":3.1844000816
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_PRAVASTATIN",
+  "Overlap [%] (Experiment01)":6.2,
+  "Overlap [%] (Experiment02)":6.2,
+  "Adj. p-value (Experiment01)":0.2179133858,
+  "Adj. p-value (Experiment02)":0.5337837838,
+  "Score (Experiment01)":-2.323800087,
+  "Score (Experiment02)":-0.8731999993
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_PONATINIB",
+  "Overlap [%] (Experiment01)":5.1,
+  "Overlap [%] (Experiment02)":5.1,
+  "Adj. p-value (Experiment01)":0.2529476282,
+  "Adj. p-value (Experiment02)":0.078151947,
+  "Score (Experiment01)":2.1947000027,
+  "Score (Experiment02)":2.5346000195
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_OLMESARTAN",
+  "Overlap [%] (Experiment01)":5.2,
+  "Overlap [%] (Experiment02)":5.2,
+  "Adj. p-value (Experiment01)":0.8140754616,
+  "Adj. p-value (Experiment02)":0.0929554656,
+  "Score (Experiment01)":-0.4165000021,
+  "Score (Experiment02)":2.3673000336
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_OKADAIC_ACID",
+  "Overlap [%] (Experiment01)":8.1,
+  "Overlap [%] (Experiment02)":8.1,
+  "Adj. p-value (Experiment01)":0.628726784,
+  "Adj. p-value (Experiment02)":0.1045918367,
+  "Score (Experiment01)":-0.8453000188,
+  "Score (Experiment02)":2.2049999237
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_MILRINONE",
+  "Overlap [%] (Experiment01)":4.7,
+  "Overlap [%] (Experiment02)":4.7,
+  "Adj. p-value (Experiment01)":0.6616769968,
+  "Adj. p-value (Experiment02)":0.0157935285,
+  "Score (Experiment01)":0.7335000038,
+  "Score (Experiment02)":3.8638000488
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_LENALIDOMIDE",
+  "Overlap [%] (Experiment01)":5.3,
+  "Overlap [%] (Experiment02)":5.3,
+  "Adj. p-value (Experiment01)":0.8705179283,
+  "Adj. p-value (Experiment02)":0.3608,
+  "Score (Experiment01)":0.1886000037,
+  "Score (Experiment02)":1.3169000149
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_KN-62",
+  "Overlap [%] (Experiment01)":5.0,
+  "Overlap [%] (Experiment02)":5.0,
+  "Adj. p-value (Experiment01)":0.0205,
+  "Adj. p-value (Experiment02)":0.0342379958,
+  "Score (Experiment01)":4.351099968,
+  "Score (Experiment02)":2.906899929
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_IMATINIB",
+  "Overlap [%] (Experiment01)":5.9,
+  "Overlap [%] (Experiment02)":5.9,
+  "Adj. p-value (Experiment01)":0.628726784,
+  "Adj. p-value (Experiment02)":0.0752984389,
+  "Score (Experiment01)":0.8895000219,
+  "Score (Experiment02)":2.5466001034
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_GSK1210151A",
+  "Overlap [%] (Experiment01)":6.8,
+  "Overlap [%] (Experiment02)":6.8,
+  "Adj. p-value (Experiment01)":0.0324110672,
+  "Adj. p-value (Experiment02)":0.6678116343,
+  "Score (Experiment01)":3.6774001122,
+  "Score (Experiment02)":0.6355999708
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_GEFITINIB",
+  "Overlap [%] (Experiment01)":4.9,
+  "Overlap [%] (Experiment02)":4.9,
+  "Adj. p-value (Experiment01)":0.4627722772,
+  "Adj. p-value (Experiment02)":0.0752984389,
+  "Score (Experiment01)":1.546900034,
+  "Score (Experiment02)":2.6099998951
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_FLECAINIDE",
+  "Overlap [%] (Experiment01)":5.9,
+  "Overlap [%] (Experiment02)":5.9,
+  "Adj. p-value (Experiment01)":0.628726784,
+  "Adj. p-value (Experiment02)":0.0352637615,
+  "Score (Experiment01)":0.8702999949,
+  "Score (Experiment02)":3.2957000732
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_FLAVOPIRIDOL",
+  "Overlap [%] (Experiment01)":7.3,
+  "Overlap [%] (Experiment02)":7.3,
+  "Adj. p-value (Experiment01)":0.4586618368,
+  "Adj. p-value (Experiment02)":0.3317387196,
+  "Score (Experiment01)":-1.6411999464,
+  "Score (Experiment02)":-1.3993999958
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_ERLOTINIB",
+  "Overlap [%] (Experiment01)":4.9,
+  "Overlap [%] (Experiment02)":4.9,
+  "Adj. p-value (Experiment01)":0.476744186,
+  "Adj. p-value (Experiment02)":0.1346469622,
+  "Score (Experiment01)":1.4721000195,
+  "Score (Experiment02)":2.0743000507
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_EPZ004777",
+  "Overlap [%] (Experiment01)":8.7,
+  "Overlap [%] (Experiment02)":8.7,
+  "Adj. p-value (Experiment01)":0.8705179283,
+  "Adj. p-value (Experiment02)":0.2653476331,
+  "Score (Experiment01)":-0.3115000129,
+  "Score (Experiment02)":1.6482000351
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_ENDOTHELIN",
+  "Overlap [%] (Experiment01)":4.9,
+  "Overlap [%] (Experiment02)":4.9,
+  "Adj. p-value (Experiment01)":0.4340190064,
+  "Adj. p-value (Experiment02)":0.1002222222,
+  "Score (Experiment01)":1.6103999615,
+  "Score (Experiment02)":2.185199976
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_DOXORUBICIN",
+  "Overlap [%] (Experiment01)":4.5,
+  "Overlap [%] (Experiment02)":4.5,
+  "Adj. p-value (Experiment01)":0.4913492063,
+  "Adj. p-value (Experiment02)":0.1515400411,
+  "Score (Experiment01)":1.2798999548,
+  "Score (Experiment02)":2.0457999706
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_DMSO",
+  "Overlap [%] (Experiment01)":5.8,
+  "Overlap [%] (Experiment02)":5.8,
+  "Adj. p-value (Experiment01)":0.1766070245,
+  "Adj. p-value (Experiment02)":0.0202169625,
+  "Score (Experiment01)":2.6414000988,
+  "Score (Experiment02)":3.9284999371
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_DAUNORUBICIN",
+  "Overlap [%] (Experiment01)":7.3,
+  "Overlap [%] (Experiment02)":7.3,
+  "Adj. p-value (Experiment01)":0.0324110672,
+  "Adj. p-value (Experiment02)":0.0157935285,
+  "Score (Experiment01)":3.5139000416,
+  "Score (Experiment02)":3.4535999298
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_CRIZOTINIB",
+  "Overlap [%] (Experiment01)":4.3,
+  "Overlap [%] (Experiment02)":4.3,
+  "Adj. p-value (Experiment01)":0.4340190064,
+  "Adj. p-value (Experiment02)":0.5216111111,
+  "Score (Experiment01)":1.6578999758,
+  "Score (Experiment02)":0.9172000289
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_COMPOUND_E",
+  "Overlap [%] (Experiment01)":6.2,
+  "Overlap [%] (Experiment02)":6.2,
+  "Adj. p-value (Experiment01)":0.2529476282,
+  "Adj. p-value (Experiment02)":0.0058571429,
+  "Score (Experiment01)":2.1228001118,
+  "Score (Experiment02)":4.3927001953
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_CERITINIB",
+  "Overlap [%] (Experiment01)":7.0,
+  "Overlap [%] (Experiment02)":7.0,
+  "Adj. p-value (Experiment01)":0.4586618368,
+  "Adj. p-value (Experiment02)":0.0752984389,
+  "Score (Experiment01)":1.6254999638,
+  "Score (Experiment02)":2.4744999409
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_BOSUTINIB",
+  "Overlap [%] (Experiment01)":5.8,
+  "Overlap [%] (Experiment02)":5.8,
+  "Adj. p-value (Experiment01)":0.5546988653,
+  "Adj. p-value (Experiment02)":0.0058571429,
+  "Score (Experiment01)":-1.1154999733,
+  "Score (Experiment02)":4.4043998718
+ },
+ {
+  "Signature ID":"PERT-P100-DIA2_AXITINIB",
+  "Overlap [%] (Experiment01)":6.1,
+  "Overlap [%] (Experiment02)":6.1,
+  "Adj. p-value (Experiment01)":0.2367734724,
+  "Adj. p-value (Experiment02)":0.0908687943,
+  "Score (Experiment01)":2.2841000557,
+  "Score (Experiment02)":2.3952999115
+ },
+ {
+  "Signature ID":"KINASE-PSP_CK2A1\/CSNK2A1",
+  "Overlap [%] (Experiment01)":2.1,
+  "Overlap [%] (Experiment02)":2.1,
+  "Adj. p-value (Experiment01)":0.0324110672,
+  "Adj. p-value (Experiment02)":0.0752984389,
+  "Score (Experiment01)":3.531899929,
+  "Score (Experiment02)":2.5875000954
+ },
+ {
+  "Signature ID":"KINASE-PSP_CDK2",
+  "Overlap [%] (Experiment01)":3.1,
+  "Overlap [%] (Experiment02)":3.1,
+  "Adj. p-value (Experiment01)":0.5203528866,
+  "Adj. p-value (Experiment02)":0.0058571429,
+  "Score (Experiment01)":-1.2573000193,
+  "Score (Experiment02)":-3.9470999241
+ },
+ {
+  "Signature ID":"KINASE-PSP_CDK1",
+  "Overlap [%] (Experiment01)":1.5,
+  "Overlap [%] (Experiment02)":1.5,
+  "Adj. p-value (Experiment01)":0.2529476282,
+  "Adj. p-value (Experiment02)":0.0058571429,
+  "Score (Experiment01)":-2.1466999054,
+  "Score (Experiment02)":-5.6375999451
+ },
+ {
+  "Signature ID":"KINASE-iKiP_MAPK8.JNK1",
+  "Overlap [%] (Experiment01)":3.4,
+  "Overlap [%] (Experiment02)":3.4,
+  "Adj. p-value (Experiment01)":0.8705179283,
+  "Adj. p-value (Experiment02)":0.0157935285,
+  "Score (Experiment01)":0.2099000067,
+  "Score (Experiment02)":-3.6043999195
+ },
+ {
+  "Signature ID":"KINASE-iKiP_MAPK3.ERK1",
+  "Overlap [%] (Experiment01)":3.6,
+  "Overlap [%] (Experiment02)":3.6,
+  "Adj. p-value (Experiment01)":0.4913492063,
+  "Adj. p-value (Experiment02)":0.0341192788,
+  "Score (Experiment01)":1.3072999716,
+  "Score (Experiment02)":-3.0011999607
+ },
+ {
+  "Signature ID":"KINASE-iKiP_MAPK13",
+  "Overlap [%] (Experiment01)":4.1,
+  "Overlap [%] (Experiment02)":4.1,
+  "Adj. p-value (Experiment01)":0.4913492063,
+  "Adj. p-value (Experiment02)":0.0678006142,
+  "Score (Experiment01)":1.2752000093,
+  "Score (Experiment02)":-2.7929000854
+ },
+ {
+  "Signature ID":"KINASE-iKiP_MAPK12",
+  "Overlap [%] (Experiment01)":3.3,
+  "Overlap [%] (Experiment02)":3.3,
+  "Adj. p-value (Experiment01)":0.4913492063,
+  "Adj. p-value (Experiment02)":0.0058571429,
+  "Score (Experiment01)":1.4170999527,
+  "Score (Experiment02)":-3.9593000412
+ },
+ {
+  "Signature ID":"KINASE-iKiP_MAPK1.ERK2",
+  "Overlap [%] (Experiment01)":3.6,
+  "Overlap [%] (Experiment02)":3.6,
+  "Adj. p-value (Experiment01)":0.7879251701,
+  "Adj. p-value (Experiment02)":0.0058571429,
+  "Score (Experiment01)":0.5218999982,
+  "Score (Experiment02)":-4.3633999825
+ },
+ {
+  "Signature ID":"KINASE-iKiP_DYRK2",
+  "Overlap [%] (Experiment01)":3.0,
+  "Overlap [%] (Experiment02)":3.0,
+  "Adj. p-value (Experiment01)":0.8705179283,
+  "Adj. p-value (Experiment02)":0.306317614,
+  "Score (Experiment01)":0.2368000001,
+  "Score (Experiment02)":-1.453099966
+ },
+ {
+  "Signature ID":"KINASE-iKiP_CSNK2A2.CK2A2",
+  "Overlap [%] (Experiment01)":3.7,
+  "Overlap [%] (Experiment02)":3.7,
+  "Adj. p-value (Experiment01)":0.1995767196,
+  "Adj. p-value (Experiment02)":0.0929554656,
+  "Score (Experiment01)":2.5706999302,
+  "Score (Experiment02)":2.4054999352
+ }
+]

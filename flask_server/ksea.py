@@ -47,6 +47,6 @@ def perform_ksea(filepath: Path) -> Path:
     output_json = filepath.parent / f'ksea_result.json'
     ksea_results_df.reset_index().to_json(path_or_buf=output_json,
                                           orient='records',
-                                          indent=1  # For DEBUG
+                                          # indent=1  # For DEBUG
                                           )
     return output_json
