@@ -35,18 +35,27 @@ def perform_ksea(filepath: Path) -> Path:
 
     ksea_results = []
     for experiment in input_df:
-        scores, p_values = kinact.ksea.ksea_mean(
-            data_fc=input_df[experiment],
-            interactions=adjacency_matrix,
-            mP=input_df.values.mean(),
-            delta=input_df.values.std())
-        res = pd.DataFrame({f'Score ({experiment})': scores, f'-log(p) ({experiment})': -np.log10(p_values)})
-        ksea_results.append(res)
-    ksea_results_df = pd.concat(ksea_results, axis=1)
-    ksea_results_df.index.name = 'Gene'
+        try:
+            scores, p_values = kinact.ksea.ksea_mean(
+                data_fc=input_df[experiment],
+                interactions=adjacency_matrix,
+                mP=input_df.values.mean(),
+                delta=input_df.values.std())
+            res = pd.DataFrame({f'Score ({experiment})': scores, f'-log(p) ({experiment})': -np.log10(p_values)})
+            ksea_results.append(res)
+        except ZeroDivisionError:
+            continue
     output_json = filepath.parent / f'ksea_result.json'
-    ksea_results_df.reset_index().to_json(path_or_buf=output_json,
-                                          orient='records',
-                                          # indent=1  # For DEBUG
-                                          )
+
+    if len(ksea_results) == 0:
+        with open(output_json, 'w') as o:
+            o.write(str(ksea_results))
+    else:
+        ksea_results_df = pd.concat(ksea_results, axis=1)
+        ksea_results_df.index.name = 'Gene'
+
+        ksea_results_df.reset_index().to_json(path_or_buf=output_json,
+                                              orient='records',
+                                              # indent=1  # For DEBUG
+                                              )
     return output_json
