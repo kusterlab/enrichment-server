@@ -59,20 +59,24 @@ def run_ssgsea(filepath: Path, ssgsea_type, ssc_input_type) -> Path:
     return Path(str(output_prefix) + '-combined.gct')
 
 
-def postprocess_ssgsea(output_gct) -> Path:
-    gct_parsed = parse_gct.parse(output_gct)
-    experiment_names = gct_parsed.data_df.columns
-    gct_df_joined = gct_parsed.row_metadata_df[[f'Signature.set.overlap.percent.{exp}' for exp in experiment_names]
-                                               + [f'fdr.pvalue.{exp}' for exp in experiment_names]
-                                               ].join(gct_parsed.data_df).reset_index()
-
-    gct_df_joined.columns = (['Signature ID']
-                             + [f'Overlap [%] ({exp})' for exp in experiment_names]
-                             + [f'Adj. p-value ({exp})' for exp in experiment_names]
-                             + [f'Score ({exp})' for exp in experiment_names])
-
+def postprocess_ssgsea(output_gct: Path) -> Path:
     output_json = output_gct.parent / f'{output_gct.stem}_result.json'
-    gct_df_joined.to_json(path_or_buf=output_json, orient='records',
-                          # indent=1  # For DEBUG
-                          )
+    if not output_gct.exists():
+        with open(output_json, 'w') as o:
+            o.write('[]')
+    else:
+        gct_parsed = parse_gct.parse(output_gct)
+        experiment_names = gct_parsed.data_df.columns
+        gct_df_joined = gct_parsed.row_metadata_df[[f'Signature.set.overlap.percent.{exp}' for exp in experiment_names]
+                                                   + [f'fdr.pvalue.{exp}' for exp in experiment_names]
+                                                   ].join(gct_parsed.data_df).reset_index()
+
+        gct_df_joined.columns = (['Signature ID']
+                                 + [f'Overlap [%] ({exp})' for exp in experiment_names]
+                                 + [f'Adj. p-value ({exp})' for exp in experiment_names]
+                                 + [f'Score ({exp})' for exp in experiment_names])
+
+        gct_df_joined.to_json(path_or_buf=output_json, orient='records',
+                              # indent=1  # For DEBUG
+                              )
     return output_json
