@@ -43,7 +43,7 @@ def handle_ssgsea_request(ssgsea_type, ssc_input_type='flanking') -> werkzeug.wr
     ssgsea_combined_output = ssgsea.run_ssgsea(ssgsea_input, ssgsea_type, ssc_input_type)
 
     # TODO: Delete everything when done to not accumulate files? Or: Keep the final output file, and use it as a cache?
-    return send_response(send_file(ssgsea.postprocess_ssgsea(ssgsea_combined_output), as_attachment=True))
+    return send_response(send_file(ssgsea.postprocess_ssgsea(ssgsea_combined_output), as_attachment=False))
 
 
 @app.route('/ksea', methods=['POST'])
@@ -62,7 +62,7 @@ def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
 
     ksea_result = ksea.perform_ksea(preprocessed_filepath)
     # TODO: Delete everything when done to not accumulate files? Or: Keep the final output file, and use it as a cache?
-    return send_response(send_file(ksea_result, as_attachment=True))
+    return send_response(send_file(ksea_result, as_attachment=False))
 
 
 def process_post_request(post_request: werkzeug.Request) -> Path | str:
