@@ -17,9 +17,9 @@ services:
       - "4321:4321"
     deploy:
       mode: replicated
-      replicas: 2
+      replicas: 3
       resources:
         limits:
-          memory: 16000M
+          memory: 8192M
         reservations:
           memory: 5000M
