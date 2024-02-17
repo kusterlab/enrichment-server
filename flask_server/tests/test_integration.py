@@ -24,8 +24,8 @@ class TestClass:
     def evaluate_ssgsea(self):
         assert len(self.actual_result) == len(self.expected_result) and all(
             res['Signature ID'] == exp['Signature ID'] and
-            res['Overlap [%] (Experiment01)'] == exp['Overlap [%] (Experiment01)'] and
-            res['Overlap [%] (Experiment02)'] == exp['Overlap [%] (Experiment02)']
+            res['Overlap (Experiment01)'] == exp['Overlap (Experiment01)'] and
+            res['Overlap (Experiment02)'] == exp['Overlap (Experiment02)']
             for res, exp in zip(self.actual_result, self.expected_result))
 
     def evaluate_ksea(self):

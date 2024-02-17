@@ -1,371 +1,371 @@
 [
- {
-  "Signature ID":"PERT-P100-DIA2_VORINOSTAT",
-  "Overlap [%] (Experiment01)":5.4,
-  "Overlap [%] (Experiment02)":5.4,
-  "Adj. p-value (Experiment01)":0.0205,
-  "Adj. p-value (Experiment02)":0.0311030193,
-  "Score (Experiment01)":4.0774998665,
-  "Score (Experiment02)":3.1133000851
- },
- {
-  "Signature ID":"PERT-P100-DIA2_TBB",
-  "Overlap [%] (Experiment01)":8.2,
-  "Overlap [%] (Experiment02)":8.2,
-  "Adj. p-value (Experiment01)":0.628726784,
-  "Adj. p-value (Experiment02)":0.2230234029,
-  "Score (Experiment01)":0.9111999869,
-  "Score (Experiment02)":1.7591999769
- },
- {
-  "Signature ID":"PERT-P100-DIA2_STAUROSPORINE",
-  "Overlap [%] (Experiment01)":4.9,
-  "Overlap [%] (Experiment02)":4.9,
-  "Adj. p-value (Experiment01)":0.1995767196,
-  "Adj. p-value (Experiment02)":0.0058571429,
-  "Score (Experiment01)":2.4221999645,
-  "Score (Experiment02)":3.9051001072
- },
- {
-  "Signature ID":"PERT-P100-DIA2_SP600125",
-  "Overlap [%] (Experiment01)":8.9,
-  "Overlap [%] (Experiment02)":8.9,
-  "Adj. p-value (Experiment01)":0.5546988653,
-  "Adj. p-value (Experiment02)":0.84665,
-  "Score (Experiment01)":1.1525000334,
-  "Score (Experiment02)":0.2694000006
- },
- {
-  "Signature ID":"PERT-P100-DIA2_SOTRASTAURIN",
-  "Overlap [%] (Experiment01)":6.5,
-  "Overlap [%] (Experiment02)":6.5,
-  "Adj. p-value (Experiment01)":0.614099321,
-  "Adj. p-value (Experiment02)":0.8913043478,
-  "Score (Experiment01)":0.9539999962,
-  "Score (Experiment02)":0.1700000018
- },
- {
-  "Signature ID":"PERT-P100-DIA2_SEMAGACESTAT",
-  "Overlap [%] (Experiment01)":5.6,
-  "Overlap [%] (Experiment02)":5.6,
-  "Adj. p-value (Experiment01)":0.8140754616,
-  "Adj. p-value (Experiment02)":0.8181348222,
-  "Score (Experiment01)":0.4223000109,
-  "Score (Experiment02)":-0.341899991
- },
- {
-  "Signature ID":"PERT-P100-DIA2_RGFP966",
-  "Overlap [%] (Experiment01)":6.2,
-  "Overlap [%] (Experiment02)":6.2,
-  "Adj. p-value (Experiment01)":0.1995767196,
-  "Adj. p-value (Experiment02)":0.0752984389,
-  "Score (Experiment01)":2.2809000015,
-  "Score (Experiment02)":2.2304000854
- },
- {
-  "Signature ID":"PERT-P100-DIA2_PS-1145",
-  "Overlap [%] (Experiment01)":7.2,
-  "Overlap [%] (Experiment02)":7.2,
-  "Adj. p-value (Experiment01)":0.4340190064,
-  "Adj. p-value (Experiment02)":0.0157935285,
-  "Score (Experiment01)":-1.6346000433,
-  "Score (Experiment02)":3.1844000816
- },
- {
-  "Signature ID":"PERT-P100-DIA2_PRAVASTATIN",
-  "Overlap [%] (Experiment01)":6.2,
-  "Overlap [%] (Experiment02)":6.2,
-  "Adj. p-value (Experiment01)":0.2179133858,
-  "Adj. p-value (Experiment02)":0.5337837838,
-  "Score (Experiment01)":-2.323800087,
-  "Score (Experiment02)":-0.8731999993
- },
- {
-  "Signature ID":"PERT-P100-DIA2_PONATINIB",
-  "Overlap [%] (Experiment01)":5.1,
-  "Overlap [%] (Experiment02)":5.1,
-  "Adj. p-value (Experiment01)":0.2529476282,
-  "Adj. p-value (Experiment02)":0.078151947,
-  "Score (Experiment01)":2.1947000027,
-  "Score (Experiment02)":2.5346000195
- },
- {
-  "Signature ID":"PERT-P100-DIA2_OLMESARTAN",
-  "Overlap [%] (Experiment01)":5.2,
-  "Overlap [%] (Experiment02)":5.2,
-  "Adj. p-value (Experiment01)":0.8140754616,
-  "Adj. p-value (Experiment02)":0.0929554656,
-  "Score (Experiment01)":-0.4165000021,
-  "Score (Experiment02)":2.3673000336
- },
- {
-  "Signature ID":"PERT-P100-DIA2_OKADAIC_ACID",
-  "Overlap [%] (Experiment01)":8.1,
-  "Overlap [%] (Experiment02)":8.1,
-  "Adj. p-value (Experiment01)":0.628726784,
-  "Adj. p-value (Experiment02)":0.1045918367,
-  "Score (Experiment01)":-0.8453000188,
-  "Score (Experiment02)":2.2049999237
- },
- {
-  "Signature ID":"PERT-P100-DIA2_MILRINONE",
-  "Overlap [%] (Experiment01)":4.7,
-  "Overlap [%] (Experiment02)":4.7,
-  "Adj. p-value (Experiment01)":0.6616769968,
-  "Adj. p-value (Experiment02)":0.0157935285,
-  "Score (Experiment01)":0.7335000038,
-  "Score (Experiment02)":3.8638000488
- },
- {
-  "Signature ID":"PERT-P100-DIA2_LENALIDOMIDE",
-  "Overlap [%] (Experiment01)":5.3,
-  "Overlap [%] (Experiment02)":5.3,
-  "Adj. p-value (Experiment01)":0.8705179283,
-  "Adj. p-value (Experiment02)":0.3608,
-  "Score (Experiment01)":0.1886000037,
-  "Score (Experiment02)":1.3169000149
- },
- {
-  "Signature ID":"PERT-P100-DIA2_KN-62",
-  "Overlap [%] (Experiment01)":5.0,
-  "Overlap [%] (Experiment02)":5.0,
-  "Adj. p-value (Experiment01)":0.0205,
-  "Adj. p-value (Experiment02)":0.0342379958,
-  "Score (Experiment01)":4.351099968,
-  "Score (Experiment02)":2.906899929
- },
- {
-  "Signature ID":"PERT-P100-DIA2_IMATINIB",
-  "Overlap [%] (Experiment01)":5.9,
-  "Overlap [%] (Experiment02)":5.9,
-  "Adj. p-value (Experiment01)":0.628726784,
-  "Adj. p-value (Experiment02)":0.0752984389,
-  "Score (Experiment01)":0.8895000219,
-  "Score (Experiment02)":2.5466001034
- },
- {
-  "Signature ID":"PERT-P100-DIA2_GSK1210151A",
-  "Overlap [%] (Experiment01)":6.8,
-  "Overlap [%] (Experiment02)":6.8,
-  "Adj. p-value (Experiment01)":0.0324110672,
-  "Adj. p-value (Experiment02)":0.6678116343,
-  "Score (Experiment01)":3.6774001122,
-  "Score (Experiment02)":0.6355999708
- },
- {
-  "Signature ID":"PERT-P100-DIA2_GEFITINIB",
-  "Overlap [%] (Experiment01)":4.9,
-  "Overlap [%] (Experiment02)":4.9,
-  "Adj. p-value (Experiment01)":0.4627722772,
-  "Adj. p-value (Experiment02)":0.0752984389,
-  "Score (Experiment01)":1.546900034,
-  "Score (Experiment02)":2.6099998951
- },
- {
-  "Signature ID":"PERT-P100-DIA2_FLECAINIDE",
-  "Overlap [%] (Experiment01)":5.9,
-  "Overlap [%] (Experiment02)":5.9,
-  "Adj. p-value (Experiment01)":0.628726784,
-  "Adj. p-value (Experiment02)":0.0352637615,
-  "Score (Experiment01)":0.8702999949,
-  "Score (Experiment02)":3.2957000732
- },
- {
-  "Signature ID":"PERT-P100-DIA2_FLAVOPIRIDOL",
-  "Overlap [%] (Experiment01)":7.3,
-  "Overlap [%] (Experiment02)":7.3,
-  "Adj. p-value (Experiment01)":0.4586618368,
-  "Adj. p-value (Experiment02)":0.3317387196,
-  "Score (Experiment01)":-1.6411999464,
-  "Score (Experiment02)":-1.3993999958
- },
- {
-  "Signature ID":"PERT-P100-DIA2_ERLOTINIB",
-  "Overlap [%] (Experiment01)":4.9,
-  "Overlap [%] (Experiment02)":4.9,
-  "Adj. p-value (Experiment01)":0.476744186,
-  "Adj. p-value (Experiment02)":0.1346469622,
-  "Score (Experiment01)":1.4721000195,
-  "Score (Experiment02)":2.0743000507
- },
- {
-  "Signature ID":"PERT-P100-DIA2_EPZ004777",
-  "Overlap [%] (Experiment01)":8.7,
-  "Overlap [%] (Experiment02)":8.7,
-  "Adj. p-value (Experiment01)":0.8705179283,
-  "Adj. p-value (Experiment02)":0.2653476331,
-  "Score (Experiment01)":-0.3115000129,
-  "Score (Experiment02)":1.6482000351
- },
- {
-  "Signature ID":"PERT-P100-DIA2_ENDOTHELIN",
-  "Overlap [%] (Experiment01)":4.9,
-  "Overlap [%] (Experiment02)":4.9,
-  "Adj. p-value (Experiment01)":0.4340190064,
-  "Adj. p-value (Experiment02)":0.1002222222,
-  "Score (Experiment01)":1.6103999615,
-  "Score (Experiment02)":2.185199976
- },
- {
-  "Signature ID":"PERT-P100-DIA2_DOXORUBICIN",
-  "Overlap [%] (Experiment01)":4.5,
-  "Overlap [%] (Experiment02)":4.5,
-  "Adj. p-value (Experiment01)":0.4913492063,
-  "Adj. p-value (Experiment02)":0.1515400411,
-  "Score (Experiment01)":1.2798999548,
-  "Score (Experiment02)":2.0457999706
- },
- {
-  "Signature ID":"PERT-P100-DIA2_DMSO",
-  "Overlap [%] (Experiment01)":5.8,
-  "Overlap [%] (Experiment02)":5.8,
-  "Adj. p-value (Experiment01)":0.1766070245,
-  "Adj. p-value (Experiment02)":0.0202169625,
-  "Score (Experiment01)":2.6414000988,
-  "Score (Experiment02)":3.9284999371
- },
- {
-  "Signature ID":"PERT-P100-DIA2_DAUNORUBICIN",
-  "Overlap [%] (Experiment01)":7.3,
-  "Overlap [%] (Experiment02)":7.3,
-  "Adj. p-value (Experiment01)":0.0324110672,
-  "Adj. p-value (Experiment02)":0.0157935285,
-  "Score (Experiment01)":3.5139000416,
-  "Score (Experiment02)":3.4535999298
- },
- {
-  "Signature ID":"PERT-P100-DIA2_CRIZOTINIB",
-  "Overlap [%] (Experiment01)":4.3,
-  "Overlap [%] (Experiment02)":4.3,
-  "Adj. p-value (Experiment01)":0.4340190064,
-  "Adj. p-value (Experiment02)":0.5216111111,
-  "Score (Experiment01)":1.6578999758,
-  "Score (Experiment02)":0.9172000289
- },
- {
-  "Signature ID":"PERT-P100-DIA2_COMPOUND_E",
-  "Overlap [%] (Experiment01)":6.2,
-  "Overlap [%] (Experiment02)":6.2,
-  "Adj. p-value (Experiment01)":0.2529476282,
-  "Adj. p-value (Experiment02)":0.0058571429,
-  "Score (Experiment01)":2.1228001118,
-  "Score (Experiment02)":4.3927001953
- },
- {
-  "Signature ID":"PERT-P100-DIA2_CERITINIB",
-  "Overlap [%] (Experiment01)":7.0,
-  "Overlap [%] (Experiment02)":7.0,
-  "Adj. p-value (Experiment01)":0.4586618368,
-  "Adj. p-value (Experiment02)":0.0752984389,
-  "Score (Experiment01)":1.6254999638,
-  "Score (Experiment02)":2.4744999409
- },
- {
-  "Signature ID":"PERT-P100-DIA2_BOSUTINIB",
-  "Overlap [%] (Experiment01)":5.8,
-  "Overlap [%] (Experiment02)":5.8,
-  "Adj. p-value (Experiment01)":0.5546988653,
-  "Adj. p-value (Experiment02)":0.0058571429,
-  "Score (Experiment01)":-1.1154999733,
-  "Score (Experiment02)":4.4043998718
- },
- {
-  "Signature ID":"PERT-P100-DIA2_AXITINIB",
-  "Overlap [%] (Experiment01)":6.1,
-  "Overlap [%] (Experiment02)":6.1,
-  "Adj. p-value (Experiment01)":0.2367734724,
-  "Adj. p-value (Experiment02)":0.0908687943,
-  "Score (Experiment01)":2.2841000557,
-  "Score (Experiment02)":2.3952999115
- },
- {
-  "Signature ID":"KINASE-PSP_CK2A1\/CSNK2A1",
-  "Overlap [%] (Experiment01)":2.1,
-  "Overlap [%] (Experiment02)":2.1,
-  "Adj. p-value (Experiment01)":0.0324110672,
-  "Adj. p-value (Experiment02)":0.0752984389,
-  "Score (Experiment01)":3.531899929,
-  "Score (Experiment02)":2.5875000954
- },
- {
-  "Signature ID":"KINASE-PSP_CDK2",
-  "Overlap [%] (Experiment01)":3.1,
-  "Overlap [%] (Experiment02)":3.1,
-  "Adj. p-value (Experiment01)":0.5203528866,
-  "Adj. p-value (Experiment02)":0.0058571429,
-  "Score (Experiment01)":-1.2573000193,
-  "Score (Experiment02)":-3.9470999241
- },
- {
-  "Signature ID":"KINASE-PSP_CDK1",
-  "Overlap [%] (Experiment01)":1.5,
-  "Overlap [%] (Experiment02)":1.5,
-  "Adj. p-value (Experiment01)":0.2529476282,
-  "Adj. p-value (Experiment02)":0.0058571429,
-  "Score (Experiment01)":-2.1466999054,
-  "Score (Experiment02)":-5.6375999451
- },
- {
-  "Signature ID":"KINASE-iKiP_MAPK8.JNK1",
-  "Overlap [%] (Experiment01)":3.4,
-  "Overlap [%] (Experiment02)":3.4,
-  "Adj. p-value (Experiment01)":0.8705179283,
-  "Adj. p-value (Experiment02)":0.0157935285,
-  "Score (Experiment01)":0.2099000067,
-  "Score (Experiment02)":-3.6043999195
- },
- {
-  "Signature ID":"KINASE-iKiP_MAPK3.ERK1",
-  "Overlap [%] (Experiment01)":3.6,
-  "Overlap [%] (Experiment02)":3.6,
-  "Adj. p-value (Experiment01)":0.4913492063,
-  "Adj. p-value (Experiment02)":0.0341192788,
-  "Score (Experiment01)":1.3072999716,
-  "Score (Experiment02)":-3.0011999607
- },
- {
-  "Signature ID":"KINASE-iKiP_MAPK13",
-  "Overlap [%] (Experiment01)":4.1,
-  "Overlap [%] (Experiment02)":4.1,
-  "Adj. p-value (Experiment01)":0.4913492063,
-  "Adj. p-value (Experiment02)":0.0678006142,
-  "Score (Experiment01)":1.2752000093,
-  "Score (Experiment02)":-2.7929000854
- },
- {
-  "Signature ID":"KINASE-iKiP_MAPK12",
-  "Overlap [%] (Experiment01)":3.3,
-  "Overlap [%] (Experiment02)":3.3,
-  "Adj. p-value (Experiment01)":0.4913492063,
-  "Adj. p-value (Experiment02)":0.0058571429,
-  "Score (Experiment01)":1.4170999527,
-  "Score (Experiment02)":-3.9593000412
- },
- {
-  "Signature ID":"KINASE-iKiP_MAPK1.ERK2",
-  "Overlap [%] (Experiment01)":3.6,
-  "Overlap [%] (Experiment02)":3.6,
-  "Adj. p-value (Experiment01)":0.7879251701,
-  "Adj. p-value (Experiment02)":0.0058571429,
-  "Score (Experiment01)":0.5218999982,
-  "Score (Experiment02)":-4.3633999825
- },
- {
-  "Signature ID":"KINASE-iKiP_DYRK2",
-  "Overlap [%] (Experiment01)":3.0,
-  "Overlap [%] (Experiment02)":3.0,
-  "Adj. p-value (Experiment01)":0.8705179283,
-  "Adj. p-value (Experiment02)":0.306317614,
-  "Score (Experiment01)":0.2368000001,
-  "Score (Experiment02)":-1.453099966
- },
- {
-  "Signature ID":"KINASE-iKiP_CSNK2A2.CK2A2",
-  "Overlap [%] (Experiment01)":3.7,
-  "Overlap [%] (Experiment02)":3.7,
-  "Adj. p-value (Experiment01)":0.1995767196,
-  "Adj. p-value (Experiment02)":0.0929554656,
-  "Score (Experiment01)":2.5706999302,
-  "Score (Experiment02)":2.4054999352
- }
+  {
+    "Signature ID": "PERT-P100-DIA2_VORINOSTAT",
+    "Overlap (Experiment01)": 5.4,
+    "Overlap (Experiment02)": 5.4,
+    "Score (Experiment01)": 3.6752998829,
+    "Score (Experiment02)": 2.9630000591,
+    "-log(p) (Experiment01)": 1.4875866884,
+    "-log(p) (Experiment02)": 1.3686383155
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_TBB",
+    "Overlap (Experiment01)": 8.2,
+    "Overlap (Experiment02)": 8.2,
+    "Score (Experiment01)": 0.9785000086,
+    "Score (Experiment02)": 1.7835999727,
+    "-log(p) (Experiment01)": 0.240001012,
+    "-log(p) (Experiment02)": 0.6946828736
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_STAUROSPORINE",
+    "Overlap (Experiment01)": 4.9,
+    "Overlap (Experiment02)": 4.9,
+    "Score (Experiment01)": 2.4323999882,
+    "Score (Experiment02)": 3.7044000626,
+    "-log(p) (Experiment01)": 0.5922399649,
+    "-log(p) (Experiment02)": 1.6336326501
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_SP600125",
+    "Overlap (Experiment01)": 8.9,
+    "Overlap (Experiment02)": 8.9,
+    "Score (Experiment01)": 1.2095999718,
+    "Score (Experiment02)": 0.271600008,
+    "-log(p) (Experiment01)": 0.2886992327,
+    "-log(p) (Experiment02)": 0.0618268018
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_SOTRASTAURIN",
+    "Overlap (Experiment01)": 6.5,
+    "Overlap (Experiment02)": 6.5,
+    "Score (Experiment01)": 1.1380000114,
+    "Score (Experiment02)": 0.1662999988,
+    "-log(p) (Experiment01)": 0.2886992327,
+    "-log(p) (Experiment02)": 0.0541906581
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_SEMAGACESTAT",
+    "Overlap (Experiment01)": 5.6,
+    "Overlap (Experiment02)": 5.6,
+    "Score (Experiment01)": 0.4065000117,
+    "Score (Experiment02)": -0.3391000032,
+    "-log(p) (Experiment01)": 0.0815407648,
+    "-log(p) (Experiment02)": 0.0843908355
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_RGFP966",
+    "Overlap (Experiment01)": 6.2,
+    "Overlap (Experiment02)": 6.2,
+    "Score (Experiment01)": 2.1343998909,
+    "Score (Experiment02)": 2.3703999519,
+    "-log(p) (Experiment01)": 0.5904596484,
+    "-log(p) (Experiment02)": 1.2439914947
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_PS-1145",
+    "Overlap (Experiment01)": 7.2,
+    "Overlap (Experiment02)": 7.2,
+    "Score (Experiment01)": -1.6565999985,
+    "Score (Experiment02)": 3.0659999847,
+    "-log(p) (Experiment01)": 0.3699761715,
+    "-log(p) (Experiment02)": 1.4724353443
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_PRAVASTATIN",
+    "Overlap (Experiment01)": 6.2,
+    "Overlap (Experiment02)": 6.2,
+    "Score (Experiment01)": -2.4245998859,
+    "Score (Experiment02)": -0.8519999981,
+    "-log(p) (Experiment01)": 0.5922399649,
+    "-log(p) (Experiment02)": 0.2373275061
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_PONATINIB",
+    "Overlap (Experiment01)": 5.1,
+    "Overlap (Experiment02)": 5.1,
+    "Score (Experiment01)": 2.0806999207,
+    "Score (Experiment02)": 2.6296999454,
+    "-log(p) (Experiment01)": 0.5085205952,
+    "-log(p) (Experiment02)": 1.1776576971
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_OLMESARTAN",
+    "Overlap (Experiment01)": 5.2,
+    "Overlap (Experiment02)": 5.2,
+    "Score (Experiment01)": -0.4395000041,
+    "Score (Experiment02)": 2.5253000259,
+    "-log(p) (Experiment01)": 0.0815407648,
+    "-log(p) (Experiment02)": 1.1679653744
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_OKADAIC_ACID",
+    "Overlap (Experiment01)": 8.1,
+    "Overlap (Experiment02)": 8.1,
+    "Score (Experiment01)": -0.9463000298,
+    "Score (Experiment02)": 2.2527999878,
+    "-log(p) (Experiment01)": 0.210801353,
+    "-log(p) (Experiment02)": 0.9831130058
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_MILRINONE",
+    "Overlap (Experiment01)": 4.7,
+    "Overlap (Experiment02)": 4.7,
+    "Score (Experiment01)": 0.7462999821,
+    "Score (Experiment02)": 3.7653000355,
+    "-log(p) (Experiment01)": 0.1743096643,
+    "-log(p) (Experiment02)": 2.2903061303
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_LENALIDOMIDE",
+    "Overlap (Experiment01)": 5.3,
+    "Overlap (Experiment02)": 5.3,
+    "Score (Experiment01)": 0.1816000044,
+    "Score (Experiment02)": 1.3840999603,
+    "-log(p) (Experiment01)": 0.0481470123,
+    "-log(p) (Experiment02)": 0.4589479017
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_KN-62",
+    "Overlap (Experiment01)": 5.0,
+    "Overlap (Experiment02)": 5.0,
+    "Score (Experiment01)": 4.62169981,
+    "Score (Experiment02)": 2.8835999966,
+    "-log(p) (Experiment01)": 1.55275722,
+    "-log(p) (Experiment02)": 1.4400382902
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_IMATINIB",
+    "Overlap (Experiment01)": 5.9,
+    "Overlap (Experiment02)": 5.9,
+    "Score (Experiment01)": 0.8190000057,
+    "Score (Experiment02)": 2.6071000099,
+    "-log(p) (Experiment01)": 0.1837349721,
+    "-log(p) (Experiment02)": 1.0947863194
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_GSK1210151A",
+    "Overlap (Experiment01)": 6.8,
+    "Overlap (Experiment02)": 6.8,
+    "Score (Experiment01)": 3.6138999462,
+    "Score (Experiment02)": 0.6207000017,
+    "-log(p) (Experiment01)": 1.55275722,
+    "-log(p) (Experiment02)": 0.1662044536
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_GEFITINIB",
+    "Overlap (Experiment01)": 4.9,
+    "Overlap (Experiment02)": 4.9,
+    "Score (Experiment01)": 1.5695999861,
+    "Score (Experiment02)": 2.7030000687,
+    "-log(p) (Experiment01)": 0.3699761715,
+    "-log(p) (Experiment02)": 1.299810141
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_FLECAINIDE",
+    "Overlap (Experiment01)": 5.9,
+    "Overlap (Experiment02)": 5.9,
+    "Score (Experiment01)": 0.793200016,
+    "Score (Experiment02)": 3.094700098,
+    "-log(p) (Experiment01)": 0.1743096643,
+    "-log(p) (Experiment02)": 1.4724353443
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_FLAVOPIRIDOL",
+    "Overlap (Experiment01)": 7.3,
+    "Overlap (Experiment02)": 7.3,
+    "Score (Experiment01)": -1.548699975,
+    "Score (Experiment02)": -1.2898000479,
+    "-log(p) (Experiment01)": 0.3699761715,
+    "-log(p) (Experiment02)": 0.4508728075
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_ERLOTINIB",
+    "Overlap (Experiment01)": 4.9,
+    "Overlap (Experiment02)": 4.9,
+    "Score (Experiment01)": 1.4574999809,
+    "Score (Experiment02)": 1.9988000393,
+    "-log(p) (Experiment01)": 0.3172634569,
+    "-log(p) (Experiment02)": 0.8103231097
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_EPZ004777",
+    "Overlap (Experiment01)": 8.7,
+    "Overlap (Experiment02)": 8.7,
+    "Score (Experiment01)": -0.3384999931,
+    "Score (Experiment02)": 1.6055999994,
+    "-log(p) (Experiment01)": 0.0815407648,
+    "-log(p) (Experiment02)": 0.5957009313
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_ENDOTHELIN",
+    "Overlap (Experiment01)": 4.9,
+    "Overlap (Experiment02)": 4.9,
+    "Score (Experiment01)": 1.622699976,
+    "Score (Experiment02)": 2.15989995,
+    "-log(p) (Experiment01)": 0.3699761715,
+    "-log(p) (Experiment02)": 0.9715473676
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_DOXORUBICIN",
+    "Overlap (Experiment01)": 4.5,
+    "Overlap (Experiment02)": 4.5,
+    "Score (Experiment01)": 1.2861000299,
+    "Score (Experiment02)": 2.0409998894,
+    "-log(p) (Experiment01)": 0.2943940561,
+    "-log(p) (Experiment02)": 0.8103231097
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_DMSO",
+    "Overlap (Experiment01)": 5.8,
+    "Overlap (Experiment02)": 5.8,
+    "Score (Experiment01)": 2.4798998833,
+    "Score (Experiment02)": 3.935199976,
+    "-log(p) (Experiment01)": 0.5922399649,
+    "-log(p) (Experiment02)": 2.2903061303
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_DAUNORUBICIN",
+    "Overlap (Experiment01)": 7.3,
+    "Overlap (Experiment02)": 7.3,
+    "Score (Experiment01)": 3.4609999657,
+    "Score (Experiment02)": 3.5276999474,
+    "-log(p) (Experiment01)": 1.55275722,
+    "-log(p) (Experiment02)": 1.8021894913
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_CRIZOTINIB",
+    "Overlap (Experiment01)": 4.3,
+    "Overlap (Experiment02)": 4.3,
+    "Score (Experiment01)": 1.6288000345,
+    "Score (Experiment02)": 0.9599999785,
+    "-log(p) (Experiment01)": 0.3699761715,
+    "-log(p) (Experiment02)": 0.2709881563
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_COMPOUND_E",
+    "Overlap (Experiment01)": 6.2,
+    "Overlap (Experiment02)": 6.2,
+    "Score (Experiment01)": 2.113699913,
+    "Score (Experiment02)": 4.5433001518,
+    "-log(p) (Experiment01)": 0.5125314006,
+    "-log(p) (Experiment02)": 2.2903061303
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_CERITINIB",
+    "Overlap (Experiment01)": 7.0,
+    "Overlap (Experiment02)": 7.0,
+    "Score (Experiment01)": 1.5248999596,
+    "Score (Experiment02)": 2.5457999706,
+    "-log(p) (Experiment01)": 0.3699761715,
+    "-log(p) (Experiment02)": 1.1776576971
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_BOSUTINIB",
+    "Overlap (Experiment01)": 5.8,
+    "Overlap (Experiment02)": 5.8,
+    "Score (Experiment01)": -1.1269999743,
+    "Score (Experiment02)": 4.4320001602,
+    "-log(p) (Experiment01)": 0.2783023218,
+    "-log(p) (Experiment02)": 2.2903061303
+  },
+  {
+    "Signature ID": "PERT-P100-DIA2_AXITINIB",
+    "Overlap (Experiment01)": 6.1,
+    "Overlap (Experiment02)": 6.1,
+    "Score (Experiment01)": 2.1631999016,
+    "Score (Experiment02)": 2.5039999485,
+    "-log(p) (Experiment01)": 0.5403774417,
+    "-log(p) (Experiment02)": 1.1679653744
+  },
+  {
+    "Signature ID": "KINASE-PSP_CK2A1\/CSNK2A1",
+    "Overlap (Experiment01)": 2.1,
+    "Overlap (Experiment02)": 2.1,
+    "Score (Experiment01)": 3.4110999107,
+    "Score (Experiment02)": 2.5611999035,
+    "-log(p) (Experiment01)": 1.4875866884,
+    "-log(p) (Experiment02)": 1.1776576971
+  },
+  {
+    "Signature ID": "KINASE-PSP_CDK2",
+    "Overlap (Experiment01)": 3.1,
+    "Overlap (Experiment02)": 3.1,
+    "Score (Experiment01)": -1.3035999537,
+    "Score (Experiment02)": -4.1338000298,
+    "-log(p) (Experiment01)": 0.2943940561,
+    "-log(p) (Experiment02)": 2.2903061303
+  },
+  {
+    "Signature ID": "KINASE-PSP_CDK1",
+    "Overlap (Experiment01)": 1.5,
+    "Overlap (Experiment02)": 1.5,
+    "Score (Experiment01)": -2.1717000008,
+    "Score (Experiment02)": -5.3161001205,
+    "-log(p) (Experiment01)": 0.5403774417,
+    "-log(p) (Experiment02)": 2.2903061303
+  },
+  {
+    "Signature ID": "KINASE-iKiP_MAPK8.JNK1",
+    "Overlap (Experiment01)": 3.4,
+    "Overlap (Experiment02)": 3.4,
+    "Score (Experiment01)": 0.2131000012,
+    "Score (Experiment02)": -3.6171998978,
+    "-log(p) (Experiment01)": 0.0481470123,
+    "-log(p) (Experiment02)": 2.2903061303
+  },
+  {
+    "Signature ID": "KINASE-iKiP_MAPK3.ERK1",
+    "Overlap (Experiment01)": 3.6,
+    "Overlap (Experiment02)": 3.6,
+    "Score (Experiment01)": 1.2108999491,
+    "Score (Experiment02)": -2.844399929,
+    "-log(p) (Experiment01)": 0.2886992327,
+    "-log(p) (Experiment02)": 1.2691711146
+  },
+  {
+    "Signature ID": "KINASE-iKiP_MAPK13",
+    "Overlap (Experiment01)": 4.1,
+    "Overlap (Experiment02)": 4.1,
+    "Score (Experiment01)": 1.3645999432,
+    "Score (Experiment02)": -2.9052000046,
+    "-log(p) (Experiment01)": 0.299947013,
+    "-log(p) (Experiment02)": 1.299810141
+  },
+  {
+    "Signature ID": "KINASE-iKiP_MAPK12",
+    "Overlap (Experiment01)": 3.3,
+    "Overlap (Experiment02)": 3.3,
+    "Score (Experiment01)": 1.5731999874,
+    "Score (Experiment02)": -4.0315999985,
+    "-log(p) (Experiment01)": 0.3699761715,
+    "-log(p) (Experiment02)": 2.0298784747
+  },
+  {
+    "Signature ID": "KINASE-iKiP_MAPK1.ERK2",
+    "Overlap (Experiment01)": 3.6,
+    "Overlap (Experiment02)": 3.6,
+    "Score (Experiment01)": 0.5310999751,
+    "Score (Experiment02)": -4.676199913,
+    "-log(p) (Experiment01)": 0.0917501388,
+    "-log(p) (Experiment02)": 2.2903061303
+  },
+  {
+    "Signature ID": "KINASE-iKiP_DYRK2",
+    "Overlap (Experiment01)": 3.0,
+    "Overlap (Experiment02)": 3.0,
+    "Score (Experiment01)": 0.2313999981,
+    "Score (Experiment02)": -1.5305000544,
+    "-log(p) (Experiment01)": 0.0550073581,
+    "-log(p) (Experiment02)": 0.4952735171
+  },
+  {
+    "Signature ID": "KINASE-iKiP_CSNK2A2.CK2A2",
+    "Overlap (Experiment01)": 3.7,
+    "Overlap (Experiment02)": 3.7,
+    "Score (Experiment01)": 2.6238000393,
+    "Score (Experiment02)": 2.3742001057,
+    "-log(p) (Experiment01)": 0.6478836803,
+    "-log(p) (Experiment02)": 1.0228385316
+  }
 ]
