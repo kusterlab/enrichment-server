@@ -7,10 +7,22 @@ import kinact
 
 
 def preprocess_ksea(filepath: Path) -> Path:
+    output_dir = filepath.parent
     input_json = json.load(open(filepath))
     input_df = pd.DataFrame.from_dict(input_json)
 
-    output_dir = filepath.parent
+    # Todo: Merge with preprocess_ssgsea function
+    idcolumn = 'Site' if 'Site' in input_df else 'id'
+
+    def abs_max_signed(group):
+        idx = group.abs().idxmax()
+        return group.loc[idx] if pd.notna(idx) else float('nan')
+
+    experiment_columns = [col for col in input_df.columns if col != idcolumn]
+    input_df_grouped = input_df.groupby(idcolumn)
+    unique_values = [input_df_grouped[exp].apply(abs_max_signed) for exp in experiment_columns]
+    input_df = pd.DataFrame(unique_values).T.reset_index()
+
     Path.mkdir(output_dir, parents=True, exist_ok=True)
 
     output_csv = output_dir / f'{filepath.stem}.csv'

@@ -38,7 +38,7 @@ def handle_ssgsea_request(ssgsea_type, ssc_input_type='flanking') -> werkzeug.wr
     filepath = post_request_processed
 
     # Preprocess the json input into a gct file
-    ssgsea_input = ssgsea.preprocess_ssgsea(filepath, ssgsea_type == 'gc')
+    ssgsea_input = ssgsea.preprocess_ssgsea(filepath, ssgsea_type != 'gcr')
 
     ssgsea_combined_output = ssgsea.run_ssgsea(ssgsea_input, ssgsea_type, ssc_input_type)
 
