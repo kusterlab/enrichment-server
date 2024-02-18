@@ -70,6 +70,8 @@ def postprocess_ssgsea(output_gct: Path) -> Path:
     else:
         gct_parsed = parse_gct.parse(output_gct)
         experiment_names = gct_parsed.data_df.columns
+        # Sanitize experiment names - R turns '-' into '.'
+        experiment_names = [name.replace('-', '.') for name in experiment_names]
         gct_df_joined = gct_parsed.row_metadata_df[[f'Signature.set.overlap.percent.{exp}' for exp in experiment_names]
                                                    + [f'fdr.pvalue.{exp}' for exp in experiment_names]
                                                    ].join(gct_parsed.data_df).reset_index()

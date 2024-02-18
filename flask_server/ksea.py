@@ -51,8 +51,8 @@ def perform_ksea(filepath: Path) -> Path:
             scores, p_values = kinact.ksea.ksea_mean(
                 data_fc=input_df[experiment],
                 interactions=adjacency_matrix,
-                mP=input_df.values.mean(),
-                delta=input_df.values.std())
+                mP=input_df[experiment].mean(),
+                delta=input_df[experiment].std())
             res = pd.DataFrame({f'Score ({experiment})': scores, f'-log(p) ({experiment})': -np.log10(p_values)})
             ksea_results.append(res)
         except ZeroDivisionError:

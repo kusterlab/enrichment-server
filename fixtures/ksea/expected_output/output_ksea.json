@@ -1,479 +1,479 @@
 [
- {
-  "Gene":"CDC7",
-  "Score (Experiment_1)":0.1441784287,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.4763753967,
-  "-log(p) (Experiment_2)":0.4619970786,
-  "Score (Experiment_3)":0.0043511081,
-  "-log(p) (Experiment_3)":0.3050556634
- },
- {
-  "Gene":"CHEK1",
-  "Score (Experiment_1)":-0.3935767543,
-  "-log(p) (Experiment_1)":0.6081870015,
-  "Score (Experiment_2)":0.5384547887,
-  "-log(p) (Experiment_2)":0.6684781714,
-  "Score (Experiment_3)":-0.3100511208,
-  "-log(p) (Experiment_3)":0.3374630316
- },
- {
-  "Gene":"PRKY",
-  "Score (Experiment_1)":-0.1387027251,
-  "-log(p) (Experiment_1)":0.3793828132,
-  "Score (Experiment_2)":0.2320641744,
-  "-log(p) (Experiment_2)":0.4546329142,
-  "Score (Experiment_3)":-0.1819004162,
-  "-log(p) (Experiment_3)":0.3183709455
- },
- {
-  "Gene":"RPS6KA5",
-  "Score (Experiment_1)":-1.447071015,
-  "-log(p) (Experiment_1)":7.2579490039,
-  "Score (Experiment_2)":0.0645291779,
-  "-log(p) (Experiment_2)":0.3878702978,
-  "Score (Experiment_3)":-0.0679177753,
-  "-log(p) (Experiment_3)":0.3050556634
- },
- {
-  "Gene":"PAK4",
-  "Score (Experiment_1)":-0.169357416,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.0300086933,
-  "-log(p) (Experiment_2)":0.3164410137,
-  "Score (Experiment_3)":-0.399569927,
-  "-log(p) (Experiment_3)":0.3374630316
- },
- {
-  "Gene":"PRKCG",
-  "Score (Experiment_1)":-0.2358289019,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":0.2086121624,
-  "-log(p) (Experiment_2)":0.4368076016,
-  "Score (Experiment_3)":0.0364904095,
-  "-log(p) (Experiment_3)":0.3050556634
- },
- {
-  "Gene":"PRKCB",
-  "Score (Experiment_1)":-0.0852561315,
-  "-log(p) (Experiment_1)":0.3253613857,
-  "Score (Experiment_2)":0.1554848706,
-  "-log(p) (Experiment_2)":0.4235580482,
-  "Score (Experiment_3)":-0.0495206643,
-  "-log(p) (Experiment_3)":0.3050556634
- },
- {
-  "Gene":"CDK1",
-  "Score (Experiment_1)":0.0142593219,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":0.0120137862,
-  "-log(p) (Experiment_2)":0.3908143017,
-  "Score (Experiment_3)":-0.1441545451,
-  "-log(p) (Experiment_3)":0.3374630316
- },
- {
-  "Gene":"PIM1",
-  "Score (Experiment_1)":-0.5273057074,
-  "-log(p) (Experiment_1)":0.7476368708,
-  "Score (Experiment_2)":-0.004352279,
-  "-log(p) (Experiment_2)":0.3287483835,
-  "Score (Experiment_3)":-0.0097364192,
-  "-log(p) (Experiment_3)":0.3050556634
- },
- {
-  "Gene":"CDK4",
-  "Score (Experiment_1)":0.0313988933,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.2263043917,
-  "-log(p) (Experiment_2)":0.4480080768,
-  "Score (Experiment_3)":-0.1329497851,
-  "-log(p) (Experiment_3)":0.3183709455
- },
- {
-  "Gene":"PRKCA",
-  "Score (Experiment_1)":0.0051912465,
-  "-log(p) (Experiment_1)":0.3641136549,
-  "Score (Experiment_2)":-0.1069138413,
-  "-log(p) (Experiment_2)":0.348816353,
-  "Score (Experiment_3)":0.0697345485,
-  "-log(p) (Experiment_3)":0.3183709455
- },
- {
-  "Gene":"PRKACA",
-  "Score (Experiment_1)":-0.1551649845,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":0.0172279448,
-  "-log(p) (Experiment_2)":0.3908143017,
-  "Score (Experiment_3)":-0.1642412107,
-  "-log(p) (Experiment_3)":0.3374630316
- },
- {
-  "Gene":"CSNK2A2",
-  "Score (Experiment_1)":0.2551634584,
-  "-log(p) (Experiment_1)":0.7896011138,
-  "Score (Experiment_2)":-0.0849820616,
-  "-log(p) (Experiment_2)":0.3287483835,
-  "Score (Experiment_3)":-0.3401179631,
-  "-log(p) (Experiment_3)":0.3374630316
- },
- {
-  "Gene":"CDK11B",
-  "Score (Experiment_1)":0.0549738715,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.3538408494,
-  "-log(p) (Experiment_2)":0.4619970786,
-  "Score (Experiment_3)":-0.2905111106,
-  "-log(p) (Experiment_3)":0.3374630316
- },
- {
-  "Gene":"RPS6KB1",
-  "Score (Experiment_1)":-1.5140522609,
-  "-log(p) (Experiment_1)":9.016315846,
-  "Score (Experiment_2)":0.1507806235,
-  "-log(p) (Experiment_2)":0.4368076016,
-  "Score (Experiment_3)":-0.0374513899,
-  "-log(p) (Experiment_3)":0.3050556634
- },
- {
-  "Gene":"CDK2",
-  "Score (Experiment_1)":0.0087891606,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.1967098112,
-  "-log(p) (Experiment_2)":0.4619970786,
-  "Score (Experiment_3)":-0.0316516167,
-  "-log(p) (Experiment_3)":0.3050556634
- },
- {
-  "Gene":"MAPK3",
-  "Score (Experiment_1)":-0.6142658759,
-  "-log(p) (Experiment_1)":2.3687854759,
-  "Score (Experiment_2)":0.1180793101,
-  "-log(p) (Experiment_2)":0.4388217512,
-  "Score (Experiment_3)":-0.0805654105,
-  "-log(p) (Experiment_3)":0.3050556634
- },
- {
-  "Gene":"MAPK1",
-  "Score (Experiment_1)":-0.8307832456,
-  "-log(p) (Experiment_1)":6.6635186277,
-  "Score (Experiment_2)":-0.0348685683,
-  "-log(p) (Experiment_2)":0.3164410137,
-  "Score (Experiment_3)":-0.1573166937,
-  "-log(p) (Experiment_3)":0.3183709455
- },
- {
-  "Gene":"AKT1",
-  "Score (Experiment_1)":-0.8519390632,
-  "-log(p) (Experiment_1)":6.9483257319,
-  "Score (Experiment_2)":0.1657614697,
-  "-log(p) (Experiment_2)":0.4619970786,
-  "Score (Experiment_3)":-0.085784005,
-  "-log(p) (Experiment_3)":0.3050556634
- },
- {
-  "Gene":"MTOR",
-  "Score (Experiment_1)":-1.2115835029,
-  "-log(p) (Experiment_1)":10.9452901787,
-  "Score (Experiment_2)":0.0628683417,
-  "-log(p) (Experiment_2)":0.4235580482,
-  "Score (Experiment_3)":-0.2617450676,
-  "-log(p) (Experiment_3)":0.3374630316
- },
- {
-  "Gene":"MAPK8",
-  "Score (Experiment_1)":-0.156171105,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":0.1876031116,
-  "-log(p) (Experiment_2)":0.4480080768,
-  "Score (Experiment_3)":-0.1961149284,
-  "-log(p) (Experiment_3)":0.3183709455
- },
- {
-  "Gene":"CDK8",
-  "Score (Experiment_1)":0.0481021376,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.2861360698,
-  "-log(p) (Experiment_2)":0.4546329142,
-  "Score (Experiment_3)":-0.2205650965,
-  "-log(p) (Experiment_3)":0.3183709455
- },
- {
-  "Gene":"GSK3A",
-  "Score (Experiment_1)":-0.0351589958,
-  "-log(p) (Experiment_1)":0.3158350029,
-  "Score (Experiment_2)":-0.2448197448,
-  "-log(p) (Experiment_2)":0.4235580482,
-  "Score (Experiment_3)":-0.0504050144,
-  "-log(p) (Experiment_3)":0.3050556634
- },
- {
-  "Gene":"GSK3B",
-  "Score (Experiment_1)":-0.177227708,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.2890668827,
-  "-log(p) (Experiment_2)":0.4619970786,
-  "Score (Experiment_3)":-0.6904140121,
-  "-log(p) (Experiment_3)":1.6246077976
- },
- {
-  "Gene":"CDK7",
-  "Score (Experiment_1)":0.1196846342,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.2999433241,
-  "-log(p) (Experiment_2)":0.4619970786,
-  "Score (Experiment_3)":-0.1415640492,
-  "-log(p) (Experiment_3)":0.3183709455
- },
- {
-  "Gene":"CDK9",
-  "Score (Experiment_1)":0.0426752973,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.2624120606,
-  "-log(p) (Experiment_2)":0.4480080768,
-  "Score (Experiment_3)":-0.1376438296,
-  "-log(p) (Experiment_3)":0.3183709455
- },
- {
-  "Gene":"RPS6KA3",
-  "Score (Experiment_1)":-1.1439381564,
-  "-log(p) (Experiment_1)":5.2790934147,
-  "Score (Experiment_2)":0.1051566934,
-  "-log(p) (Experiment_2)":0.4235580482,
-  "Score (Experiment_3)":-0.0592557818,
-  "-log(p) (Experiment_3)":0.3050556634
- },
- {
-  "Gene":"PRKX",
-  "Score (Experiment_1)":-0.1387027251,
-  "-log(p) (Experiment_1)":0.3793828132,
-  "Score (Experiment_2)":0.2320641744,
-  "-log(p) (Experiment_2)":0.4546329142,
-  "Score (Experiment_3)":-0.1819004162,
-  "-log(p) (Experiment_3)":0.3183709455
- },
- {
-  "Gene":"PLK1",
-  "Score (Experiment_1)":0.0165238693,
-  "-log(p) (Experiment_1)":0.3492212598,
-  "Score (Experiment_2)":0.0324432868,
-  "-log(p) (Experiment_2)":0.3353227921,
-  "Score (Experiment_3)":0.168584101,
-  "-log(p) (Experiment_3)":0.3183709455
- },
- {
-  "Gene":"CSNK2A1",
-  "Score (Experiment_1)":0.1661367,
-  "-log(p) (Experiment_1)":0.8929003523,
-  "Score (Experiment_2)":-0.1195771715,
-  "-log(p) (Experiment_2)":0.4235580482,
-  "Score (Experiment_3)":-0.1204824299,
-  "-log(p) (Experiment_3)":0.3183709455
- },
- {
-  "Gene":"CDK3",
-  "Score (Experiment_1)":-0.032427419,
-  "-log(p) (Experiment_1)":0.3158350029,
-  "Score (Experiment_2)":-0.3243002791,
-  "-log(p) (Experiment_2)":0.4619970786,
-  "Score (Experiment_3)":-0.2521820528,
-  "-log(p) (Experiment_3)":0.3374630316
- },
- {
-  "Gene":"CDK6",
-  "Score (Experiment_1)":0.0469344872,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.2877638575,
-  "-log(p) (Experiment_2)":0.4619970786,
-  "Score (Experiment_3)":-0.1370377929,
-  "-log(p) (Experiment_3)":0.3183709455
- },
- {
-  "Gene":"CDK5",
-  "Score (Experiment_1)":0.0427574556,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.0840109989,
-  "-log(p) (Experiment_2)":0.3287483835,
-  "Score (Experiment_3)":-0.2345737714,
-  "-log(p) (Experiment_3)":0.3374630316
- },
- {
-  "Gene":"CDK16",
-  "Score (Experiment_1)":0.1378751796,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.2749898969,
-  "-log(p) (Experiment_2)":0.4546329142,
-  "Score (Experiment_3)":-0.1373415647,
-  "-log(p) (Experiment_3)":0.3183709455
- },
- {
-  "Gene":"CDK17",
-  "Score (Experiment_1)":0.0549738715,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.3538408494,
-  "-log(p) (Experiment_2)":0.4619970786,
-  "Score (Experiment_3)":-0.2905111106,
-  "-log(p) (Experiment_3)":0.3374630316
- },
- {
-  "Gene":"PRKCE",
-  "Score (Experiment_1)":-0.4571262308,
-  "-log(p) (Experiment_1)":0.6822589462,
-  "Score (Experiment_2)":0.0440262751,
-  "-log(p) (Experiment_2)":0.348816353,
-  "Score (Experiment_3)":-0.1301835776,
-  "-log(p) (Experiment_3)":0.3050556634
- },
- {
-  "Gene":"PRKCD",
-  "Score (Experiment_1)":-0.5392267594,
-  "-log(p) (Experiment_1)":1.390188164,
-  "Score (Experiment_2)":0.4504158493,
-  "-log(p) (Experiment_2)":0.6684781714,
-  "Score (Experiment_3)":0.0173399758,
-  "-log(p) (Experiment_3)":0.3050556634
- },
- {
-  "Gene":"CDK18",
-  "Score (Experiment_1)":0.0549738715,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.3538408494,
-  "-log(p) (Experiment_2)":0.4619970786,
-  "Score (Experiment_3)":-0.2905111106,
-  "-log(p) (Experiment_3)":0.3374630316
- },
- {
-  "Gene":"PRKAA1",
-  "Score (Experiment_1)":-0.1962890683,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.004608244,
-  "-log(p) (Experiment_2)":0.3287483835,
-  "Score (Experiment_3)":-0.6334166884,
-  "-log(p) (Experiment_3)":0.563556732
- },
- {
-  "Gene":"PAK1",
-  "Score (Experiment_1)":-0.3110164125,
-  "-log(p) (Experiment_1)":0.390991789,
-  "Score (Experiment_2)":0.0993951683,
-  "-log(p) (Experiment_2)":0.4167132325,
-  "Score (Experiment_3)":-0.6117483467,
-  "-log(p) (Experiment_3)":0.5763792167
- },
- {
-  "Gene":"ROCK1",
-  "Score (Experiment_1)":-0.1253458926,
-  "-log(p) (Experiment_1)":0.3641136549,
-  "Score (Experiment_2)":-0.0505280571,
-  "-log(p) (Experiment_2)":0.3062819694,
-  "Score (Experiment_3)":0.325375503,
-  "-log(p) (Experiment_3)":0.3374630316
- },
- {
-  "Gene":"CDK13",
-  "Score (Experiment_1)":0.0549738715,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.3538408494,
-  "-log(p) (Experiment_2)":0.4619970786,
-  "Score (Experiment_3)":-0.2905111106,
-  "-log(p) (Experiment_3)":0.3374630316
- },
- {
-  "Gene":"PDK1",
-  "Score (Experiment_1)":-0.1901196369,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":0.254624785,
-  "-log(p) (Experiment_2)":0.4619970786,
-  "Score (Experiment_3)":0.0622919382,
-  "-log(p) (Experiment_3)":0.3183709455
- },
- {
-  "Gene":"CDK10",
-  "Score (Experiment_1)":0.0549738715,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.3538408494,
-  "-log(p) (Experiment_2)":0.4619970786,
-  "Score (Experiment_3)":-0.2905111106,
-  "-log(p) (Experiment_3)":0.3374630316
- },
- {
-  "Gene":"PRKD1",
-  "Score (Experiment_1)":-0.2795197422,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.1899149615,
-  "-log(p) (Experiment_2)":0.4227790194,
-  "Score (Experiment_3)":-0.2879029348,
-  "-log(p) (Experiment_3)":0.3374630316
- },
- {
-  "Gene":"RPS6KA2",
-  "Score (Experiment_1)":-1.3475496884,
-  "-log(p) (Experiment_1)":4.6956987807,
-  "Score (Experiment_2)":0.0963510073,
-  "-log(p) (Experiment_2)":0.3908143017,
-  "Score (Experiment_3)":-0.073550912,
-  "-log(p) (Experiment_3)":0.3050556634
- },
- {
-  "Gene":"RPS6KA1",
-  "Score (Experiment_1)":-1.4641246007,
-  "-log(p) (Experiment_1)":10.3774458067,
-  "Score (Experiment_2)":0.0954569211,
-  "-log(p) (Experiment_2)":0.4235580482,
-  "Score (Experiment_3)":-0.058755504,
-  "-log(p) (Experiment_3)":0.3050556634
- },
- {
-  "Gene":"MAPK14",
-  "Score (Experiment_1)":-0.663263452,
-  "-log(p) (Experiment_1)":1.3441782502,
-  "Score (Experiment_2)":-0.1000288144,
-  "-log(p) (Experiment_2)":0.3287483835,
-  "Score (Experiment_3)":-0.6139144764,
-  "-log(p) (Experiment_3)":0.5675984453
- },
- {
-  "Gene":"CDK20",
-  "Score (Experiment_1)":0.0481021376,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.2000462862,
-  "-log(p) (Experiment_2)":0.4235580482,
-  "Score (Experiment_3)":-0.2541972218,
-  "-log(p) (Experiment_3)":0.3374630316
- },
- {
-  "Gene":"AURKB",
-  "Score (Experiment_1)":-0.0323191631,
-  "-log(p) (Experiment_1)":0.3158350029,
-  "Score (Experiment_2)":-0.2252803962,
-  "-log(p) (Experiment_2)":0.4235580482,
-  "Score (Experiment_3)":0.0881164933,
-  "-log(p) (Experiment_3)":0.3183709455
- },
- {
-  "Gene":"CDK19",
-  "Score (Experiment_1)":0.100520352,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.3096107432,
-  "-log(p) (Experiment_2)":0.4546329142,
-  "Score (Experiment_3)":-0.2555999661,
-  "-log(p) (Experiment_3)":0.3374630316
- },
- {
-  "Gene":"CDK12",
-  "Score (Experiment_1)":0.0549738715,
-  "-log(p) (Experiment_1)":0.3886241662,
-  "Score (Experiment_2)":-0.3538408494,
-  "-log(p) (Experiment_2)":0.4619970786,
-  "Score (Experiment_3)":-0.2905111106,
-  "-log(p) (Experiment_3)":0.3374630316
- },
- {
-  "Gene":"TBK1",
-  "Score (Experiment_1)":0.3598476269,
-  "-log(p) (Experiment_1)":0.6081870015,
-  "Score (Experiment_2)":-0.5733537874,
-  "-log(p) (Experiment_2)":0.4619970786,
-  "Score (Experiment_3)":-0.0356179368,
-  "-log(p) (Experiment_3)":0.3050556634
- }
+  {
+    "Gene": "CDC7",
+    "Score (Experiment_1)": 0.1441784287,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.4763753967,
+    "-log(p) (Experiment_2)": 0.4619320474,
+    "Score (Experiment_3)": 0.0043511081,
+    "-log(p) (Experiment_3)": 0.3050553732
+  },
+  {
+    "Gene": "CHEK1",
+    "Score (Experiment_1)": -0.3935767543,
+    "-log(p) (Experiment_1)": 0.6081050184,
+    "Score (Experiment_2)": 0.5384547887,
+    "-log(p) (Experiment_2)": 0.6682731208,
+    "Score (Experiment_3)": -0.3100511208,
+    "-log(p) (Experiment_3)": 0.3374241565
+  },
+  {
+    "Gene": "PRKY",
+    "Score (Experiment_1)": -0.1387027251,
+    "-log(p) (Experiment_1)": 0.3793714517,
+    "Score (Experiment_2)": 0.2320641744,
+    "-log(p) (Experiment_2)": 0.4545813112,
+    "Score (Experiment_3)": -0.1819004162,
+    "-log(p) (Experiment_3)": 0.3183565476
+  },
+  {
+    "Gene": "RPS6KA5",
+    "Score (Experiment_1)": -1.447071015,
+    "-log(p) (Experiment_1)": 7.2568848414,
+    "Score (Experiment_2)": 0.0645291779,
+    "-log(p) (Experiment_2)": 0.3878545626,
+    "Score (Experiment_3)": -0.0679177753,
+    "-log(p) (Experiment_3)": 0.3050553732
+  },
+  {
+    "Gene": "PAK4",
+    "Score (Experiment_1)": -0.169357416,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.0300086933,
+    "-log(p) (Experiment_2)": 0.3164392693,
+    "Score (Experiment_3)": -0.399569927,
+    "-log(p) (Experiment_3)": 0.3374241565
+  },
+  {
+    "Gene": "PRKCG",
+    "Score (Experiment_1)": -0.2358289019,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": 0.2086121624,
+    "-log(p) (Experiment_2)": 0.4367692992,
+    "Score (Experiment_3)": 0.0364904095,
+    "-log(p) (Experiment_3)": 0.3050553732
+  },
+  {
+    "Gene": "PRKCB",
+    "Score (Experiment_1)": -0.0852561315,
+    "-log(p) (Experiment_1)": 0.3253576349,
+    "Score (Experiment_2)": 0.1554848706,
+    "-log(p) (Experiment_2)": 0.4235323823,
+    "Score (Experiment_3)": -0.0495206643,
+    "-log(p) (Experiment_3)": 0.3050553732
+  },
+  {
+    "Gene": "CDK1",
+    "Score (Experiment_1)": 0.0142593219,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": 0.0120137862,
+    "-log(p) (Experiment_2)": 0.3907973109,
+    "Score (Experiment_3)": -0.1441545451,
+    "-log(p) (Experiment_3)": 0.3374241565
+  },
+  {
+    "Gene": "PIM1",
+    "Score (Experiment_1)": -0.5273057074,
+    "-log(p) (Experiment_1)": 0.7475281187,
+    "Score (Experiment_2)": -0.004352279,
+    "-log(p) (Experiment_2)": 0.3287443641,
+    "Score (Experiment_3)": -0.0097364192,
+    "-log(p) (Experiment_3)": 0.3050553732
+  },
+  {
+    "Gene": "CDK4",
+    "Score (Experiment_1)": 0.0313988933,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.2263043917,
+    "-log(p) (Experiment_2)": 0.4479632877,
+    "Score (Experiment_3)": -0.1329497851,
+    "-log(p) (Experiment_3)": 0.3183565476
+  },
+  {
+    "Gene": "PRKCA",
+    "Score (Experiment_1)": 0.0051912465,
+    "-log(p) (Experiment_1)": 0.3641052433,
+    "Score (Experiment_2)": -0.1069138413,
+    "-log(p) (Experiment_2)": 0.348805988,
+    "Score (Experiment_3)": 0.0697345485,
+    "-log(p) (Experiment_3)": 0.3183565476
+  },
+  {
+    "Gene": "PRKACA",
+    "Score (Experiment_1)": -0.1551649845,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": 0.0172279448,
+    "-log(p) (Experiment_2)": 0.3907973109,
+    "Score (Experiment_3)": -0.1642412107,
+    "-log(p) (Experiment_3)": 0.3374241565
+  },
+  {
+    "Gene": "CSNK2A2",
+    "Score (Experiment_1)": 0.2551634584,
+    "-log(p) (Experiment_1)": 0.7894833159,
+    "Score (Experiment_2)": -0.0849820616,
+    "-log(p) (Experiment_2)": 0.3287443641,
+    "Score (Experiment_3)": -0.3401179631,
+    "-log(p) (Experiment_3)": 0.3374241565
+  },
+  {
+    "Gene": "CDK11B",
+    "Score (Experiment_1)": 0.0549738715,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.3538408494,
+    "-log(p) (Experiment_2)": 0.4619320474,
+    "Score (Experiment_3)": -0.2905111106,
+    "-log(p) (Experiment_3)": 0.3374241565
+  },
+  {
+    "Gene": "RPS6KB1",
+    "Score (Experiment_1)": -1.5140522609,
+    "-log(p) (Experiment_1)": 9.0149877994,
+    "Score (Experiment_2)": 0.1507806235,
+    "-log(p) (Experiment_2)": 0.4367692992,
+    "Score (Experiment_3)": -0.0374513899,
+    "-log(p) (Experiment_3)": 0.3050553732
+  },
+  {
+    "Gene": "CDK2",
+    "Score (Experiment_1)": 0.0087891606,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.1967098112,
+    "-log(p) (Experiment_2)": 0.4619320474,
+    "Score (Experiment_3)": -0.0316516167,
+    "-log(p) (Experiment_3)": 0.3050553732
+  },
+  {
+    "Gene": "MAPK3",
+    "Score (Experiment_1)": -0.6142658759,
+    "-log(p) (Experiment_1)": 2.3684426515,
+    "Score (Experiment_2)": 0.1180793101,
+    "-log(p) (Experiment_2)": 0.4387797949,
+    "Score (Experiment_3)": -0.0805654105,
+    "-log(p) (Experiment_3)": 0.3050553732
+  },
+  {
+    "Gene": "MAPK1",
+    "Score (Experiment_1)": -0.8307832456,
+    "-log(p) (Experiment_1)": 6.6625620011,
+    "Score (Experiment_2)": -0.0348685683,
+    "-log(p) (Experiment_2)": 0.3164392693,
+    "Score (Experiment_3)": -0.1573166937,
+    "-log(p) (Experiment_3)": 0.3183565476
+  },
+  {
+    "Gene": "AKT1",
+    "Score (Experiment_1)": -0.8519390632,
+    "-log(p) (Experiment_1)": 6.9473183429,
+    "Score (Experiment_2)": 0.1657614697,
+    "-log(p) (Experiment_2)": 0.4619320474,
+    "Score (Experiment_3)": -0.085784005,
+    "-log(p) (Experiment_3)": 0.3050553732
+  },
+  {
+    "Gene": "MTOR",
+    "Score (Experiment_1)": -1.2115835029,
+    "-log(p) (Experiment_1)": 10.94362346,
+    "Score (Experiment_2)": 0.0628683417,
+    "-log(p) (Experiment_2)": 0.4235323823,
+    "Score (Experiment_3)": -0.2617450676,
+    "-log(p) (Experiment_3)": 0.3374241565
+  },
+  {
+    "Gene": "MAPK8",
+    "Score (Experiment_1)": -0.156171105,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": 0.1876031116,
+    "-log(p) (Experiment_2)": 0.4479632877,
+    "Score (Experiment_3)": -0.1961149284,
+    "-log(p) (Experiment_3)": 0.3183565476
+  },
+  {
+    "Gene": "CDK8",
+    "Score (Experiment_1)": 0.0481021376,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.2861360698,
+    "-log(p) (Experiment_2)": 0.4545813112,
+    "Score (Experiment_3)": -0.2205650965,
+    "-log(p) (Experiment_3)": 0.3183565476
+  },
+  {
+    "Gene": "GSK3A",
+    "Score (Experiment_1)": -0.0351589958,
+    "-log(p) (Experiment_1)": 0.3158339227,
+    "Score (Experiment_2)": -0.2448197448,
+    "-log(p) (Experiment_2)": 0.4235323823,
+    "Score (Experiment_3)": -0.0504050144,
+    "-log(p) (Experiment_3)": 0.3050553732
+  },
+  {
+    "Gene": "GSK3B",
+    "Score (Experiment_1)": -0.177227708,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.2890668827,
+    "-log(p) (Experiment_2)": 0.4619320474,
+    "Score (Experiment_3)": -0.6904140121,
+    "-log(p) (Experiment_3)": 1.6242368428
+  },
+  {
+    "Gene": "CDK7",
+    "Score (Experiment_1)": 0.1196846342,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.2999433241,
+    "-log(p) (Experiment_2)": 0.4619320474,
+    "Score (Experiment_3)": -0.1415640492,
+    "-log(p) (Experiment_3)": 0.3183565476
+  },
+  {
+    "Gene": "CDK9",
+    "Score (Experiment_1)": 0.0426752973,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.2624120606,
+    "-log(p) (Experiment_2)": 0.4479632877,
+    "Score (Experiment_3)": -0.1376438296,
+    "-log(p) (Experiment_3)": 0.3183565476
+  },
+  {
+    "Gene": "RPS6KA3",
+    "Score (Experiment_1)": -1.1439381564,
+    "-log(p) (Experiment_1)": 5.2783384017,
+    "Score (Experiment_2)": 0.1051566934,
+    "-log(p) (Experiment_2)": 0.4235323823,
+    "Score (Experiment_3)": -0.0592557818,
+    "-log(p) (Experiment_3)": 0.3050553732
+  },
+  {
+    "Gene": "PRKX",
+    "Score (Experiment_1)": -0.1387027251,
+    "-log(p) (Experiment_1)": 0.3793714517,
+    "Score (Experiment_2)": 0.2320641744,
+    "-log(p) (Experiment_2)": 0.4545813112,
+    "Score (Experiment_3)": -0.1819004162,
+    "-log(p) (Experiment_3)": 0.3183565476
+  },
+  {
+    "Gene": "PLK1",
+    "Score (Experiment_1)": 0.0165238693,
+    "-log(p) (Experiment_1)": 0.3492148613,
+    "Score (Experiment_2)": 0.0324432868,
+    "-log(p) (Experiment_2)": 0.3353144457,
+    "Score (Experiment_3)": 0.168584101,
+    "-log(p) (Experiment_3)": 0.3183565476
+  },
+  {
+    "Gene": "CSNK2A1",
+    "Score (Experiment_1)": 0.1661367,
+    "-log(p) (Experiment_1)": 0.8927655195,
+    "Score (Experiment_2)": -0.1195771715,
+    "-log(p) (Experiment_2)": 0.4235323823,
+    "Score (Experiment_3)": -0.1204824299,
+    "-log(p) (Experiment_3)": 0.3183565476
+  },
+  {
+    "Gene": "CDK3",
+    "Score (Experiment_1)": -0.032427419,
+    "-log(p) (Experiment_1)": 0.3158339227,
+    "Score (Experiment_2)": -0.3243002791,
+    "-log(p) (Experiment_2)": 0.4619320474,
+    "Score (Experiment_3)": -0.2521820528,
+    "-log(p) (Experiment_3)": 0.3374241565
+  },
+  {
+    "Gene": "CDK6",
+    "Score (Experiment_1)": 0.0469344872,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.2877638575,
+    "-log(p) (Experiment_2)": 0.4619320474,
+    "Score (Experiment_3)": -0.1370377929,
+    "-log(p) (Experiment_3)": 0.3183565476
+  },
+  {
+    "Gene": "CDK5",
+    "Score (Experiment_1)": 0.0427574556,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.0840109989,
+    "-log(p) (Experiment_2)": 0.3287443641,
+    "Score (Experiment_3)": -0.2345737714,
+    "-log(p) (Experiment_3)": 0.3374241565
+  },
+  {
+    "Gene": "CDK16",
+    "Score (Experiment_1)": 0.1378751796,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.2749898969,
+    "-log(p) (Experiment_2)": 0.4545813112,
+    "Score (Experiment_3)": -0.1373415647,
+    "-log(p) (Experiment_3)": 0.3183565476
+  },
+  {
+    "Gene": "CDK17",
+    "Score (Experiment_1)": 0.0549738715,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.3538408494,
+    "-log(p) (Experiment_2)": 0.4619320474,
+    "Score (Experiment_3)": -0.2905111106,
+    "-log(p) (Experiment_3)": 0.3374241565
+  },
+  {
+    "Gene": "PRKCE",
+    "Score (Experiment_1)": -0.4571262308,
+    "-log(p) (Experiment_1)": 0.6821617047,
+    "Score (Experiment_2)": 0.0440262751,
+    "-log(p) (Experiment_2)": 0.348805988,
+    "Score (Experiment_3)": -0.1301835776,
+    "-log(p) (Experiment_3)": 0.3050553732
+  },
+  {
+    "Gene": "PRKCD",
+    "Score (Experiment_1)": -0.5392267594,
+    "-log(p) (Experiment_1)": 1.3899801792,
+    "Score (Experiment_2)": 0.4504158493,
+    "-log(p) (Experiment_2)": 0.6682731208,
+    "Score (Experiment_3)": 0.0173399758,
+    "-log(p) (Experiment_3)": 0.3050553732
+  },
+  {
+    "Gene": "CDK18",
+    "Score (Experiment_1)": 0.0549738715,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.3538408494,
+    "-log(p) (Experiment_2)": 0.4619320474,
+    "Score (Experiment_3)": -0.2905111106,
+    "-log(p) (Experiment_3)": 0.3374241565
+  },
+  {
+    "Gene": "PRKAA1",
+    "Score (Experiment_1)": -0.1962890683,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.004608244,
+    "-log(p) (Experiment_2)": 0.3287443641,
+    "Score (Experiment_3)": -0.6334166884,
+    "-log(p) (Experiment_3)": 0.5634034261
+  },
+  {
+    "Gene": "PAK1",
+    "Score (Experiment_1)": -0.3110164125,
+    "-log(p) (Experiment_1)": 0.3909375744,
+    "Score (Experiment_2)": 0.0993951683,
+    "-log(p) (Experiment_2)": 0.4166905732,
+    "Score (Experiment_3)": -0.6117483467,
+    "-log(p) (Experiment_3)": 0.5761860152
+  },
+  {
+    "Gene": "ROCK1",
+    "Score (Experiment_1)": -0.1253458926,
+    "-log(p) (Experiment_1)": 0.3641052433,
+    "Score (Experiment_2)": -0.0505280571,
+    "-log(p) (Experiment_2)": 0.3062815902,
+    "Score (Experiment_3)": 0.325375503,
+    "-log(p) (Experiment_3)": 0.3374241565
+  },
+  {
+    "Gene": "CDK13",
+    "Score (Experiment_1)": 0.0549738715,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.3538408494,
+    "-log(p) (Experiment_2)": 0.4619320474,
+    "Score (Experiment_3)": -0.2905111106,
+    "-log(p) (Experiment_3)": 0.3374241565
+  },
+  {
+    "Gene": "PDK1",
+    "Score (Experiment_1)": -0.1901196369,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": 0.254624785,
+    "-log(p) (Experiment_2)": 0.4619320474,
+    "Score (Experiment_3)": 0.0622919382,
+    "-log(p) (Experiment_3)": 0.3183565476
+  },
+  {
+    "Gene": "CDK10",
+    "Score (Experiment_1)": 0.0549738715,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.3538408494,
+    "-log(p) (Experiment_2)": 0.4619320474,
+    "Score (Experiment_3)": -0.2905111106,
+    "-log(p) (Experiment_3)": 0.3374241565
+  },
+  {
+    "Gene": "PRKD1",
+    "Score (Experiment_1)": -0.2795197422,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.1899149615,
+    "-log(p) (Experiment_2)": 0.4227546172,
+    "Score (Experiment_3)": -0.2879029348,
+    "-log(p) (Experiment_3)": 0.3374241565
+  },
+  {
+    "Gene": "RPS6KA2",
+    "Score (Experiment_1)": -1.3475496884,
+    "-log(p) (Experiment_1)": 4.6950323479,
+    "Score (Experiment_2)": 0.0963510073,
+    "-log(p) (Experiment_2)": 0.3907973109,
+    "Score (Experiment_3)": -0.073550912,
+    "-log(p) (Experiment_3)": 0.3050553732
+  },
+  {
+    "Gene": "RPS6KA1",
+    "Score (Experiment_1)": -1.4641246007,
+    "-log(p) (Experiment_1)": 10.3759015464,
+    "Score (Experiment_2)": 0.0954569211,
+    "-log(p) (Experiment_2)": 0.4235323823,
+    "Score (Experiment_3)": -0.058755504,
+    "-log(p) (Experiment_3)": 0.3050553732
+  },
+  {
+    "Gene": "MAPK14",
+    "Score (Experiment_1)": -0.663263452,
+    "-log(p) (Experiment_1)": 1.3439815249,
+    "Score (Experiment_2)": -0.1000288144,
+    "-log(p) (Experiment_2)": 0.3287443641,
+    "Score (Experiment_3)": -0.6139144764,
+    "-log(p) (Experiment_3)": 0.5674288427
+  },
+  {
+    "Gene": "CDK20",
+    "Score (Experiment_1)": 0.0481021376,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.2000462862,
+    "-log(p) (Experiment_2)": 0.4235323823,
+    "Score (Experiment_3)": -0.2541972218,
+    "-log(p) (Experiment_3)": 0.3374241565
+  },
+  {
+    "Gene": "AURKB",
+    "Score (Experiment_1)": -0.0323191631,
+    "-log(p) (Experiment_1)": 0.3158339227,
+    "Score (Experiment_2)": -0.2252803962,
+    "-log(p) (Experiment_2)": 0.4235323823,
+    "Score (Experiment_3)": 0.0881164933,
+    "-log(p) (Experiment_3)": 0.3183565476
+  },
+  {
+    "Gene": "CDK19",
+    "Score (Experiment_1)": 0.100520352,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.3096107432,
+    "-log(p) (Experiment_2)": 0.4545813112,
+    "Score (Experiment_3)": -0.2555999661,
+    "-log(p) (Experiment_3)": 0.3374241565
+  },
+  {
+    "Gene": "CDK12",
+    "Score (Experiment_1)": 0.0549738715,
+    "-log(p) (Experiment_1)": 0.3886102268,
+    "Score (Experiment_2)": -0.3538408494,
+    "-log(p) (Experiment_2)": 0.4619320474,
+    "Score (Experiment_3)": -0.2905111106,
+    "-log(p) (Experiment_3)": 0.3374241565
+  },
+  {
+    "Gene": "TBK1",
+    "Score (Experiment_1)": 0.3598476269,
+    "-log(p) (Experiment_1)": 0.6081050184,
+    "Score (Experiment_2)": -0.5733537874,
+    "-log(p) (Experiment_2)": 0.4619320474,
+    "Score (Experiment_3)": -0.0356179368,
+    "-log(p) (Experiment_3)": 0.3050553732
+  }
 ]
