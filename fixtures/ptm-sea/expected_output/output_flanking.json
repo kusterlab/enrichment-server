@@ -3,711 +3,711 @@
     "Signature ID": "PERT-P100-DIA2_ZEBULARINE",
     "Overlap (Experiment01)": 7.5,
     "Overlap (Experiment02)": 7.5,
-    "Score (Experiment01)": -0.976000011,
-    "Score (Experiment02)": 0.1926999986,
-    "-log(p) (Experiment01)": 0.2158287297,
-    "-log(p) (Experiment02)": 0.0251867219
+    "adj p-val (Experiment01)": 0.6184465031,
+    "adj p-val (Experiment02)": 0.9351576899,
+    "Score (Experiment01)": -0.993900001,
+    "Score (Experiment02)": 0.1974000037
   },
   {
     "Signature ID": "PERT-P100-DIA2_VORINOSTAT",
     "Overlap (Experiment01)": 7.4,
     "Overlap (Experiment02)": 7.4,
-    "Score (Experiment01)": 4.0321002007,
-    "Score (Experiment02)": 3.8949999809,
-    "-log(p) (Experiment01)": 1.1068747365,
-    "-log(p) (Experiment02)": 1.9152499695
+    "adj p-val (Experiment01)": 0.0405,
+    "adj p-val (Experiment02)": 0.0257333475,
+    "Score (Experiment01)": 4.1009001732,
+    "Score (Experiment02)": 3.8578999043
   },
   {
     "Signature ID": "PERT-P100-DIA2_VERTEPORFIN",
     "Overlap (Experiment01)": 5.6,
     "Overlap (Experiment02)": 5.6,
-    "Score (Experiment01)": -1.1539000273,
-    "Score (Experiment02)": 1.6626000404,
-    "-log(p) (Experiment01)": 0.2289865558,
-    "-log(p) (Experiment02)": 0.534920985
+    "adj p-val (Experiment01)": 0.5978985425,
+    "adj p-val (Experiment02)": 0.2612704918,
+    "Score (Experiment01)": -1.1396000385,
+    "Score (Experiment02)": 1.6857000589
   },
   {
     "Signature ID": "PERT-P100-DIA2_UNC1215",
     "Overlap (Experiment01)": 8.8,
     "Overlap (Experiment02)": 8.8,
-    "Score (Experiment01)": 1.3722000122,
-    "Score (Experiment02)": 4.2231001854,
-    "-log(p) (Experiment01)": 0.2341160581,
-    "-log(p) (Experiment02)": 2.1329076663
+    "adj p-val (Experiment01)": 0.5902636917,
+    "adj p-val (Experiment02)": 0.0081,
+    "Score (Experiment01)": 1.328799963,
+    "Score (Experiment02)": 4.2013001442
   },
   {
     "Signature ID": "PERT-P100-DIA2_TRICHOSTATIN_A",
     "Overlap (Experiment01)": 6.7,
     "Overlap (Experiment02)": 6.7,
-    "Score (Experiment01)": 0.7736999989,
-    "Score (Experiment02)": 1.80400002,
-    "-log(p) (Experiment01)": 0.1522549362,
-    "-log(p) (Experiment02)": 0.6478174819
+    "adj p-val (Experiment01)": 0.6918073714,
+    "adj p-val (Experiment02)": 0.2910677618,
+    "Score (Experiment01)": 0.7759000063,
+    "Score (Experiment02)": 1.6356999874
   },
   {
     "Signature ID": "PERT-P100-DIA2_TRETINOIN",
     "Overlap (Experiment01)": 5.3,
     "Overlap (Experiment02)": 5.3,
-    "Score (Experiment01)": 1.7438999414,
-    "Score (Experiment02)": 1.9076999426,
-    "-log(p) (Experiment01)": 0.4028449334,
-    "-log(p) (Experiment02)": 0.6560495406
+    "adj p-val (Experiment01)": 0.3864995547,
+    "adj p-val (Experiment02)": 0.19968142,
+    "Score (Experiment01)": 1.847200036,
+    "Score (Experiment02)": 1.8144999743
   },
   {
     "Signature ID": "PERT-P100-DIA2_TRAMETINIB",
     "Overlap (Experiment01)": 6.5,
     "Overlap (Experiment02)": 6.5,
-    "Score (Experiment01)": -1.0303000212,
-    "Score (Experiment02)": 0.0527000017,
-    "-log(p) (Experiment01)": 0.2232004026,
-    "-log(p) (Experiment02)": 0.0073305413
+    "adj p-val (Experiment01)": 0.5902636917,
+    "adj p-val (Experiment02)": 1.0,
+    "Score (Experiment01)": -1.0877000093,
+    "Score (Experiment02)": 0.0513000004
   },
   {
     "Signature ID": "PERT-P100-DIA2_TBB",
     "Overlap (Experiment01)": 10.3,
     "Overlap (Experiment02)": 10.3,
-    "Score (Experiment01)": 1.0621000528,
-    "Score (Experiment02)": 1.5032000542,
-    "-log(p) (Experiment01)": 0.2232004026,
-    "-log(p) (Experiment02)": 0.4805785045
+    "adj p-val (Experiment01)": 0.5902636917,
+    "adj p-val (Experiment02)": 0.3667986046,
+    "Score (Experiment01)": 1.1325000525,
+    "Score (Experiment02)": 1.486700058
   },
   {
     "Signature ID": "PERT-P100-DIA2_TACROLIMUS",
     "Overlap (Experiment01)": 7.1,
     "Overlap (Experiment02)": 7.1,
-    "Score (Experiment01)": -2.288599968,
-    "Score (Experiment02)": 1.986899972,
-    "-log(p) (Experiment01)": 0.5984707603,
-    "-log(p) (Experiment02)": 0.6935749724
+    "adj p-val (Experiment01)": 0.2648707568,
+    "adj p-val (Experiment02)": 0.1817318894,
+    "Score (Experiment01)": -2.2567999363,
+    "Score (Experiment02)": 1.9766000509
   },
   {
     "Signature ID": "PERT-P100-DIA2_STAUROSPORINE",
     "Overlap (Experiment01)": 5.7,
     "Overlap (Experiment02)": 5.7,
-    "Score (Experiment01)": 2.4337000847,
-    "Score (Experiment02)": 3.834800005,
-    "-log(p) (Experiment01)": 0.5984707603,
-    "-log(p) (Experiment02)": 1.7128990096
+    "adj p-val (Experiment01)": 0.2648707568,
+    "adj p-val (Experiment02)": 0.0126879699,
+    "Score (Experiment01)": 2.2790000439,
+    "Score (Experiment02)": 3.7130000591
   },
   {
     "Signature ID": "PERT-P100-DIA2_SP600125",
     "Overlap (Experiment01)": 10.1,
     "Overlap (Experiment02)": 10.1,
-    "Score (Experiment01)": 0.560199976,
-    "Score (Experiment02)": 0.2824999988,
-    "-log(p) (Experiment01)": 0.1028286465,
-    "-log(p) (Experiment02)": 0.0339133773
+    "adj p-val (Experiment01)": 0.7761038961,
+    "adj p-val (Experiment02)": 0.9351576899,
+    "Score (Experiment01)": 0.5442000031,
+    "Score (Experiment02)": 0.2635999918
   },
   {
     "Signature ID": "PERT-P100-DIA2_SOTRASTAURIN",
     "Overlap (Experiment01)": 8.2,
     "Overlap (Experiment02)": 8.2,
-    "Score (Experiment01)": 0.2763000131,
-    "Score (Experiment02)": -0.2535000145,
-    "-log(p) (Experiment01)": 0.0280287236,
-    "-log(p) (Experiment02)": 0.0288594244
+    "adj p-val (Experiment01)": 0.9408390411,
+    "adj p-val (Experiment02)": 0.9351576899,
+    "Score (Experiment01)": 0.2843999863,
+    "Score (Experiment02)": -0.2515999973
   },
   {
     "Signature ID": "PERT-P100-DIA2_SEMAGACESTAT",
     "Overlap (Experiment01)": 6.7,
     "Overlap (Experiment02)": 6.7,
-    "Score (Experiment01)": -0.1791000068,
-    "Score (Experiment02)": -1.2238999605,
-    "-log(p) (Experiment01)": 0.0180791457,
-    "-log(p) (Experiment02)": 0.3601903272
+    "adj p-val (Experiment01)": 0.9614309211,
+    "adj p-val (Experiment02)": 0.4554363192,
+    "Score (Experiment01)": -0.1801999956,
+    "Score (Experiment02)": -1.2275999784
   },
   {
     "Signature ID": "PERT-P100-DIA2_SELUMETINIB",
     "Overlap (Experiment01)": 5.6,
     "Overlap (Experiment02)": 5.6,
-    "Score (Experiment01)": 1.170699954,
-    "Score (Experiment02)": 2.2667999268,
-    "-log(p) (Experiment01)": 0.2289865558,
-    "-log(p) (Experiment02)": 0.880488165
+    "adj p-val (Experiment01)": 0.5902636917,
+    "adj p-val (Experiment02)": 0.1309973046,
+    "Score (Experiment01)": 1.1493999958,
+    "Score (Experiment02)": 2.230700016
   },
   {
     "Signature ID": "PERT-P100-DIA2_SCH_900776",
     "Overlap (Experiment01)": 5.0,
     "Overlap (Experiment02)": 5.0,
-    "Score (Experiment01)": 2.2295999527,
-    "Score (Experiment02)": 2.5710999966,
-    "-log(p) (Experiment01)": 0.5345170527,
-    "-log(p) (Experiment02)": 1.1373793618
+    "adj p-val (Experiment01)": 0.2648707568,
+    "adj p-val (Experiment02)": 0.091075867,
+    "Score (Experiment01)": 2.1040999889,
+    "Score (Experiment02)": 2.4849998951
   },
   {
     "Signature ID": "PERT-P100-DIA2_SALERMIDE",
     "Overlap (Experiment01)": 9.3,
     "Overlap (Experiment02)": 9.3,
-    "Score (Experiment01)": 0.704400003,
-    "Score (Experiment02)": -0.6901999712,
-    "-log(p) (Experiment01)": 0.1301057567,
-    "-log(p) (Experiment02)": 0.1744606646
+    "adj p-val (Experiment01)": 0.7186408683,
+    "adj p-val (Experiment02)": 0.6799632353,
+    "Score (Experiment01)": 0.6761000156,
+    "Score (Experiment02)": -0.692900002
   },
   {
     "Signature ID": "PERT-P100-DIA2_ROSCOVITINE",
     "Overlap (Experiment01)": 7.7,
     "Overlap (Experiment02)": 7.7,
-    "Score (Experiment01)": 1.9934999943,
-    "Score (Experiment02)": 2.7513000965,
-    "-log(p) (Experiment01)": 0.4797453985,
-    "-log(p) (Experiment02)": 1.1373793618
+    "adj p-val (Experiment01)": 0.2648707568,
+    "adj p-val (Experiment02)": 0.0522580645,
+    "Score (Experiment01)": 2.1856999397,
+    "Score (Experiment02)": 2.8380999565
   },
   {
     "Signature ID": "PERT-P100-DIA2_RO4929097",
     "Overlap (Experiment01)": 5.6,
     "Overlap (Experiment02)": 5.6,
-    "Score (Experiment01)": 0.5873000026,
-    "Score (Experiment02)": 2.5868000984,
-    "-log(p) (Experiment01)": 0.1142293619,
-    "-log(p) (Experiment02)": 1.059738417
+    "adj p-val (Experiment01)": 0.7415251677,
+    "adj p-val (Experiment02)": 0.0666666667,
+    "Score (Experiment01)": 0.6093999743,
+    "Score (Experiment02)": 2.6189000607
   },
   {
     "Signature ID": "PERT-P100-DIA2_RGFP966",
     "Overlap (Experiment01)": 8.1,
     "Overlap (Experiment02)": 8.1,
-    "Score (Experiment01)": 2.0855998993,
-    "Score (Experiment02)": 1.4357000589,
-    "-log(p) (Experiment01)": 0.5345170527,
-    "-log(p) (Experiment02)": 0.4749771664
+    "adj p-val (Experiment01)": 0.2648707568,
+    "adj p-val (Experiment02)": 0.3801242236,
+    "Score (Experiment01)": 1.9854999781,
+    "Score (Experiment02)": 1.3961000443
   },
   {
     "Signature ID": "PERT-P100-DIA2_RESVERATROL",
     "Overlap (Experiment01)": 8.5,
     "Overlap (Experiment02)": 8.5,
-    "Score (Experiment01)": 1.0825999975,
-    "Score (Experiment02)": 2.6089999676,
-    "-log(p) (Experiment01)": 0.2232004026,
-    "-log(p) (Experiment02)": 1.1001151529
+    "adj p-val (Experiment01)": 0.6150168729,
+    "adj p-val (Experiment02)": 0.0851287441,
+    "Score (Experiment01)": 1.0448000431,
+    "Score (Experiment02)": 2.5885999203
   },
   {
     "Signature ID": "PERT-P100-DIA2_REGORAFENIB",
     "Overlap (Experiment01)": 4.0,
     "Overlap (Experiment02)": 4.0,
-    "Score (Experiment01)": 1.7187000513,
-    "Score (Experiment02)": 3.5227999687,
-    "-log(p) (Experiment01)": 0.4028449334,
-    "-log(p) (Experiment02)": 1.5616313343
+    "adj p-val (Experiment01)": 0.4956022945,
+    "adj p-val (Experiment02)": 0.0207055215,
+    "Score (Experiment01)": 1.5413999557,
+    "Score (Experiment02)": 3.5099000931
   },
   {
     "Signature ID": "PERT-P100-DIA2_PS-1145",
     "Overlap (Experiment01)": 8.3,
     "Overlap (Experiment02)": 8.3,
-    "Score (Experiment01)": -0.1221000031,
-    "Score (Experiment02)": 2.5501000881,
-    "-log(p) (Experiment01)": 0.0161199962,
-    "-log(p) (Experiment02)": 1.0266862357
+    "adj p-val (Experiment01)": 0.963981715,
+    "adj p-val (Experiment02)": 0.0941422594,
+    "Score (Experiment01)": -0.1213999987,
+    "Score (Experiment02)": 2.6006999016
   },
   {
     "Signature ID": "PERT-P100-DIA2_PRAVASTATIN",
     "Overlap (Experiment01)": 6.7,
     "Overlap (Experiment02)": 6.7,
-    "Score (Experiment01)": -2.4121000767,
-    "Score (Experiment02)": -0.2951999903,
-    "-log(p) (Experiment01)": 0.5984707603,
-    "-log(p) (Experiment02)": 0.0307199451
+    "adj p-val (Experiment01)": 0.2648707568,
+    "adj p-val (Experiment02)": 0.9308603041,
+    "Score (Experiment01)": -2.2232999802,
+    "Score (Experiment02)": -0.2915999889
   },
   {
     "Signature ID": "PERT-P100-DIA2_PONATINIB",
     "Overlap (Experiment01)": 5.6,
     "Overlap (Experiment02)": 5.6,
-    "Score (Experiment01)": 1.7798999548,
-    "Score (Experiment02)": 2.5527999401,
-    "-log(p) (Experiment01)": 0.4028449334,
-    "-log(p) (Experiment02)": 1.059738417
+    "adj p-val (Experiment01)": 0.4227342159,
+    "adj p-val (Experiment02)": 0.0912270302,
+    "Score (Experiment01)": 1.7144999504,
+    "Score (Experiment02)": 2.5297999382
   },
   {
     "Signature ID": "PERT-P100-DIA2_PAZOPANIB",
     "Overlap (Experiment01)": 5.1,
     "Overlap (Experiment02)": 5.1,
-    "Score (Experiment01)": 2.7915000916,
-    "Score (Experiment02)": 4.5872001648,
-    "-log(p) (Experiment01)": 0.7518269659,
-    "-log(p) (Experiment02)": 2.1329076663
+    "adj p-val (Experiment01)": 0.1232251521,
+    "adj p-val (Experiment02)": 0.0081,
+    "Score (Experiment01)": 2.8589999676,
+    "Score (Experiment02)": 4.4409999847
   },
   {
     "Signature ID": "PERT-P100-DIA2_OSI-027",
     "Overlap (Experiment01)": 7.6,
     "Overlap (Experiment02)": 7.6,
-    "Score (Experiment01)": 2.2732000351,
-    "Score (Experiment02)": -0.147300005,
-    "-log(p) (Experiment01)": 0.5984707603,
-    "-log(p) (Experiment02)": 0.0251867219
+    "adj p-val (Experiment01)": 0.2648707568,
+    "adj p-val (Experiment02)": 0.9385259092,
+    "Score (Experiment01)": 2.3777000904,
+    "Score (Experiment02)": -0.1589999944
   },
   {
     "Signature ID": "PERT-P100-DIA2_OLMESARTAN",
     "Overlap (Experiment01)": 5.7,
     "Overlap (Experiment02)": 5.7,
-    "Score (Experiment01)": -0.6930000186,
-    "Score (Experiment02)": 2.1182000637,
-    "-log(p) (Experiment01)": 0.1442638727,
-    "-log(p) (Experiment02)": 0.902968114
+    "adj p-val (Experiment01)": 0.7149139222,
+    "adj p-val (Experiment02)": 0.1313351246,
+    "Score (Experiment01)": -0.7069000006,
+    "Score (Experiment02)": 2.2539000511
   },
   {
     "Signature ID": "PERT-P100-DIA2_OKADAIC_ACID",
     "Overlap (Experiment01)": 9.2,
     "Overlap (Experiment02)": 9.2,
-    "Score (Experiment01)": -1.1690000296,
-    "Score (Experiment02)": 2.0264999866,
-    "-log(p) (Experiment01)": 0.2289865558,
-    "-log(p) (Experiment02)": 0.7120100165
+    "adj p-val (Experiment01)": 0.5978985425,
+    "adj p-val (Experiment02)": 0.1569767442,
+    "Score (Experiment01)": -1.0950000286,
+    "Score (Experiment02)": 2.0697000027
   },
   {
     "Signature ID": "PERT-P100-DIA2_MOMELOTINIB",
     "Overlap (Experiment01)": 6.6,
     "Overlap (Experiment02)": 6.6,
-    "Score (Experiment01)": 2.8682000637,
-    "Score (Experiment02)": -0.4742999971,
-    "-log(p) (Experiment01)": 0.8846065813,
-    "-log(p) (Experiment02)": 0.0818663446
+    "adj p-val (Experiment01)": 0.1232251521,
+    "adj p-val (Experiment02)": 0.8333333333,
+    "Score (Experiment01)": 2.8852000237,
+    "Score (Experiment02)": -0.4607000053
   },
   {
     "Signature ID": "PERT-P100-DIA2_MILRINONE",
     "Overlap (Experiment01)": 5.2,
     "Overlap (Experiment02)": 5.2,
-    "Score (Experiment01)": 0.5155000091,
-    "Score (Experiment02)": 3.4804999828,
-    "-log(p) (Experiment01)": 0.1028286465,
-    "-log(p) (Experiment02)": 1.9152499695
+    "adj p-val (Experiment01)": 0.7761038961,
+    "adj p-val (Experiment02)": 0.0207055215,
+    "Score (Experiment01)": 0.5335999727,
+    "Score (Experiment02)": 3.5260000229
   },
   {
     "Signature ID": "PERT-P100-DIA2_LENALIDOMIDE",
     "Overlap (Experiment01)": 7.4,
     "Overlap (Experiment02)": 7.4,
-    "Score (Experiment01)": 1.7713999748,
-    "Score (Experiment02)": 2.5817000866,
-    "-log(p) (Experiment01)": 0.4028449334,
-    "-log(p) (Experiment02)": 1.059738417
+    "adj p-val (Experiment01)": 0.4409363092,
+    "adj p-val (Experiment02)": 0.0999177632,
+    "Score (Experiment01)": 1.7380000353,
+    "Score (Experiment02)": 2.5478999615
   },
   {
     "Signature ID": "PERT-P100-DIA2_LAPATINIB",
     "Overlap (Experiment01)": 5.8,
     "Overlap (Experiment02)": 5.8,
-    "Score (Experiment01)": 0.5975999832,
-    "Score (Experiment02)": 1.3187999725,
-    "-log(p) (Experiment01)": 0.1142293619,
-    "-log(p) (Experiment02)": 0.3891913348
+    "adj p-val (Experiment01)": 0.7591064482,
+    "adj p-val (Experiment02)": 0.3784558871,
+    "Score (Experiment01)": 0.5868999958,
+    "Score (Experiment02)": 1.3404999971
   },
   {
     "Signature ID": "PERT-P100-DIA2_KN-62",
     "Overlap (Experiment01)": 6.0,
     "Overlap (Experiment02)": 6.0,
-    "Score (Experiment01)": 4.8688998222,
-    "Score (Experiment02)": 3.6354999542,
-    "-log(p) (Experiment01)": 1.1068747365,
-    "-log(p) (Experiment02)": 1.9152499695
+    "adj p-val (Experiment01)": 0.0405,
+    "adj p-val (Experiment02)": 0.0125874126,
+    "Score (Experiment01)": 4.7203001976,
+    "Score (Experiment02)": 3.6129000187
   },
   {
     "Signature ID": "PERT-P100-DIA2_IMATINIB",
     "Overlap (Experiment01)": 5.9,
     "Overlap (Experiment02)": 5.9,
-    "Score (Experiment01)": 0.8698999882,
-    "Score (Experiment02)": 2.538599968,
-    "-log(p) (Experiment01)": 0.1703507539,
-    "-log(p) (Experiment02)": 1.0618618574
+    "adj p-val (Experiment01)": 0.637270393,
+    "adj p-val (Experiment02)": 0.0829918033,
+    "Score (Experiment01)": 0.8835999966,
+    "Score (Experiment02)": 2.5982000828
   },
   {
     "Signature ID": "PERT-P100-DIA2_GSK1210151A",
     "Overlap (Experiment01)": 8.1,
     "Overlap (Experiment02)": 8.1,
-    "Score (Experiment01)": 2.5443000793,
-    "Score (Experiment02)": 1.1287000179,
-    "-log(p) (Experiment01)": 0.5984707603,
-    "-log(p) (Experiment02)": 0.3339799559
+    "adj p-val (Experiment01)": 0.2648707568,
+    "adj p-val (Experiment02)": 0.4649350649,
+    "Score (Experiment01)": 2.4772999287,
+    "Score (Experiment02)": 1.1697000265
   },
   {
     "Signature ID": "PERT-P100-DIA2_GOSSYPETIN",
     "Overlap (Experiment01)": 7.1,
     "Overlap (Experiment02)": 7.1,
-    "Score (Experiment01)": 1.4653999805,
-    "Score (Experiment02)": 0.9208999872,
-    "-log(p) (Experiment01)": 0.284685976,
-    "-log(p) (Experiment02)": 0.2450592961
+    "adj p-val (Experiment01)": 0.4956022945,
+    "adj p-val (Experiment02)": 0.5484171883,
+    "Score (Experiment01)": 1.4658999443,
+    "Score (Experiment02)": 0.9302999973
   },
   {
     "Signature ID": "PERT-P100-DIA2_GEFITINIB",
     "Overlap (Experiment01)": 5.4,
     "Overlap (Experiment02)": 5.4,
-    "Score (Experiment01)": 2.7987000942,
-    "Score (Experiment02)": 3.1317999363,
-    "-log(p) (Experiment01)": 0.8139660813,
-    "-log(p) (Experiment02)": 1.2825665709
+    "adj p-val (Experiment01)": 0.2449742039,
+    "adj p-val (Experiment02)": 0.0342813611,
+    "Score (Experiment01)": 2.8912000656,
+    "Score (Experiment02)": 3.1670000553
   },
   {
     "Signature ID": "PERT-P100-DIA2_FLECAINIDE",
     "Overlap (Experiment01)": 6.9,
     "Overlap (Experiment02)": 6.9,
-    "Score (Experiment01)": 2.0727000237,
-    "Score (Experiment02)": 3.97239995,
-    "-log(p) (Experiment01)": 0.5345170527,
-    "-log(p) (Experiment02)": 2.1329076663
+    "adj p-val (Experiment01)": 0.2789256198,
+    "adj p-val (Experiment02)": 0.0081,
+    "Score (Experiment01)": 2.0824000835,
+    "Score (Experiment02)": 4.345099926
   },
   {
     "Signature ID": "PERT-P100-DIA2_FLAVOPIRIDOL",
     "Overlap (Experiment01)": 7.8,
     "Overlap (Experiment02)": 7.8,
-    "Score (Experiment01)": -0.9909999967,
-    "Score (Experiment02)": -0.9380000234,
-    "-log(p) (Experiment01)": 0.2232004026,
-    "-log(p) (Experiment02)": 0.2450592961
+    "adj p-val (Experiment01)": 0.637270393,
+    "adj p-val (Experiment02)": 0.5481982806,
+    "Score (Experiment01)": -0.9304000139,
+    "Score (Experiment02)": -0.8963999748
   },
   {
     "Signature ID": "PERT-P100-DIA2_ERLOTINIB",
     "Overlap (Experiment01)": 5.8,
     "Overlap (Experiment02)": 5.8,
-    "Score (Experiment01)": 1.5434000492,
-    "Score (Experiment02)": 2.9342999458,
-    "-log(p) (Experiment01)": 0.303752854,
-    "-log(p) (Experiment02)": 1.1877295665
+    "adj p-val (Experiment01)": 0.5101744186,
+    "adj p-val (Experiment02)": 0.0567580193,
+    "Score (Experiment01)": 1.516800046,
+    "Score (Experiment02)": 2.9798998833
   },
   {
     "Signature ID": "PERT-P100-DIA2_EPZ004777",
     "Overlap (Experiment01)": 10.3,
     "Overlap (Experiment02)": 10.3,
-    "Score (Experiment01)": -0.9362999797,
-    "Score (Experiment02)": 0.1291999966,
-    "-log(p) (Experiment01)": 0.1972328133,
-    "-log(p) (Experiment02)": 0.0251867219
+    "adj p-val (Experiment01)": 0.637270393,
+    "adj p-val (Experiment02)": 0.9385259092,
+    "Score (Experiment01)": -0.9383999705,
+    "Score (Experiment02)": 0.1307000071
   },
   {
     "Signature ID": "PERT-P100-DIA2_ENDOTHELIN",
     "Overlap (Experiment01)": 5.4,
     "Overlap (Experiment02)": 5.4,
-    "Score (Experiment01)": 1.2590999603,
-    "Score (Experiment02)": 1.9286999702,
-    "-log(p) (Experiment01)": 0.2289865558,
-    "-log(p) (Experiment02)": 0.7170079444
+    "adj p-val (Experiment01)": 0.5902636917,
+    "adj p-val (Experiment02)": 0.1722589792,
+    "Score (Experiment01)": 1.2782000303,
+    "Score (Experiment02)": 2.0083999634
   },
   {
     "Signature ID": "PERT-P100-DIA2_DOXORUBICIN",
     "Overlap (Experiment01)": 5.3,
     "Overlap (Experiment02)": 5.3,
-    "Score (Experiment01)": 1.1261999607,
-    "Score (Experiment02)": 2.3973999023,
-    "-log(p) (Experiment01)": 0.2289865558,
-    "-log(p) (Experiment02)": 0.9508677554
+    "adj p-val (Experiment01)": 0.5902636917,
+    "adj p-val (Experiment02)": 0.1239922441,
+    "Score (Experiment01)": 1.1714999676,
+    "Score (Experiment02)": 2.2899999619
   },
   {
     "Signature ID": "PERT-P100-DIA2_DMSO",
     "Overlap (Experiment01)": 6.8,
     "Overlap (Experiment02)": 6.8,
-    "Score (Experiment01)": 2.2757999897,
-    "Score (Experiment02)": 3.8905000687,
-    "-log(p) (Experiment01)": 0.5984707603,
-    "-log(p) (Experiment02)": 1.7128990096
+    "adj p-val (Experiment01)": 0.2648707568,
+    "adj p-val (Experiment02)": 0.0125874126,
+    "Score (Experiment01)": 2.2894999981,
+    "Score (Experiment02)": 3.8654000759
   },
   {
     "Signature ID": "PERT-P100-DIA2_DECITABINE",
     "Overlap (Experiment01)": 8.7,
     "Overlap (Experiment02)": 8.7,
-    "Score (Experiment01)": 2.3299000263,
-    "Score (Experiment02)": 1.4836000204,
-    "-log(p) (Experiment01)": 0.5984707603,
-    "-log(p) (Experiment02)": 0.4805785045
+    "adj p-val (Experiment01)": 0.2648707568,
+    "adj p-val (Experiment02)": 0.3181461115,
+    "Score (Experiment01)": 2.2125000954,
+    "Score (Experiment02)": 1.5899000168
   },
   {
     "Signature ID": "PERT-P100-DIA2_DAUNORUBICIN",
     "Overlap (Experiment01)": 8.0,
     "Overlap (Experiment02)": 8.0,
-    "Score (Experiment01)": 3.5350000858,
-    "Score (Experiment02)": 3.0913000107,
-    "-log(p) (Experiment01)": 1.0923827027,
-    "-log(p) (Experiment02)": 1.3663653011
+    "adj p-val (Experiment01)": 0.1184210526,
+    "adj p-val (Experiment02)": 0.0314227524,
+    "Score (Experiment01)": 3.4058001041,
+    "Score (Experiment02)": 3.0622999668
   },
   {
     "Signature ID": "PERT-P100-DIA2_DACTOLISIB",
     "Overlap (Experiment01)": 6.9,
     "Overlap (Experiment02)": 6.9,
-    "Score (Experiment01)": -1.1360000372,
-    "Score (Experiment02)": 2.4381999969,
-    "-log(p) (Experiment01)": 0.2289865558,
-    "-log(p) (Experiment02)": 1.0266862357
+    "adj p-val (Experiment01)": 0.5902636917,
+    "adj p-val (Experiment02)": 0.1053468208,
+    "Score (Experiment01)": -1.1464999914,
+    "Score (Experiment02)": 2.4776000977
   },
   {
     "Signature ID": "PERT-P100-DIA2_CRIZOTINIB",
     "Overlap (Experiment01)": 4.7,
     "Overlap (Experiment02)": 4.7,
-    "Score (Experiment01)": 1.2893999815,
-    "Score (Experiment02)": 0.6212000251,
-    "-log(p) (Experiment01)": 0.2289865558,
-    "-log(p) (Experiment02)": 0.1198060391
+    "adj p-val (Experiment01)": 0.5902636917,
+    "adj p-val (Experiment02)": 0.7067682654,
+    "Score (Experiment01)": 1.339400053,
+    "Score (Experiment02)": 0.6299999952
   },
   {
     "Signature ID": "PERT-P100-DIA2_CPI-169",
     "Overlap (Experiment01)": 6.5,
     "Overlap (Experiment02)": 6.5,
-    "Score (Experiment01)": 2.0278000832,
-    "Score (Experiment02)": 2.8891000748,
-    "-log(p) (Experiment01)": 0.5345170527,
-    "-log(p) (Experiment02)": 1.3663653011
+    "adj p-val (Experiment01)": 0.2648707568,
+    "adj p-val (Experiment02)": 0.0398687449,
+    "Score (Experiment01)": 2.1300001144,
+    "Score (Experiment02)": 2.9416000843
   },
   {
     "Signature ID": "PERT-P100-DIA2_COMPOUND_E",
     "Overlap (Experiment01)": 7.2,
     "Overlap (Experiment02)": 7.2,
-    "Score (Experiment01)": 2.2269001007,
-    "Score (Experiment02)": 2.6140999794,
-    "-log(p) (Experiment01)": 0.5984707603,
-    "-log(p) (Experiment02)": 1.0175142476
+    "adj p-val (Experiment01)": 0.2648707568,
+    "adj p-val (Experiment02)": 0.0960903652,
+    "Score (Experiment01)": 2.3032000065,
+    "Score (Experiment02)": 2.4544000626
   },
   {
     "Signature ID": "PERT-P100-DIA2_CERITINIB",
     "Overlap (Experiment01)": 7.0,
     "Overlap (Experiment02)": 7.0,
-    "Score (Experiment01)": 1.546200037,
-    "Score (Experiment02)": 2.481400013,
-    "-log(p) (Experiment01)": 0.303752854,
-    "-log(p) (Experiment02)": 1.0241431302
+    "adj p-val (Experiment01)": 0.5409579464,
+    "adj p-val (Experiment02)": 0.1006261181,
+    "Score (Experiment01)": 1.4771000147,
+    "Score (Experiment02)": 2.3413999081
   },
   {
     "Signature ID": "PERT-P100-DIA2_CC-401",
     "Overlap (Experiment01)": 7.1,
     "Overlap (Experiment02)": 7.1,
-    "Score (Experiment01)": -0.703700006,
-    "Score (Experiment02)": 1.0554000139,
-    "-log(p) (Experiment01)": 0.1442638727,
-    "-log(p) (Experiment02)": 0.2817138675
+    "adj p-val (Experiment01)": 0.7137330754,
+    "adj p-val (Experiment02)": 0.4989580141,
+    "Score (Experiment01)": -0.7055000067,
+    "Score (Experiment02)": 1.0695999861
   },
   {
     "Signature ID": "PERT-P100-DIA2_CALPAIN_INHIBITOR_II",
     "Overlap (Experiment01)": 7.2,
     "Overlap (Experiment02)": 7.2,
-    "Score (Experiment01)": 2.4542000294,
-    "Score (Experiment02)": -0.2275999933,
-    "-log(p) (Experiment01)": 0.5984707603,
-    "-log(p) (Experiment02)": 0.0288594244
+    "adj p-val (Experiment01)": 0.2648707568,
+    "adj p-val (Experiment02)": 0.9351576899,
+    "Score (Experiment01)": 2.3194000721,
+    "Score (Experiment02)": -0.2201000005
   },
   {
     "Signature ID": "PERT-P100-DIA2_CABOZANTINIB",
     "Overlap (Experiment01)": 5.3,
     "Overlap (Experiment02)": 5.3,
-    "Score (Experiment01)": 1.1040999889,
-    "Score (Experiment02)": 1.8583999872,
-    "-log(p) (Experiment01)": 0.2289865558,
-    "-log(p) (Experiment02)": 0.6885898485
+    "adj p-val (Experiment01)": 0.6150168729,
+    "adj p-val (Experiment02)": 0.2066326531,
+    "Score (Experiment01)": 1.0599999428,
+    "Score (Experiment02)": 1.9048999548
   },
   {
     "Signature ID": "PERT-P100-DIA2_BOSUTINIB",
     "Overlap (Experiment01)": 6.2,
     "Overlap (Experiment02)": 6.2,
-    "Score (Experiment01)": -1.2677999735,
-    "Score (Experiment02)": 4.4165000916,
-    "-log(p) (Experiment01)": 0.2289865558,
-    "-log(p) (Experiment02)": 2.1329076663
+    "adj p-val (Experiment01)": 0.5902636917,
+    "adj p-val (Experiment02)": 0.0081,
+    "Score (Experiment01)": -1.1518000364,
+    "Score (Experiment02)": 4.4580998421
   },
   {
     "Signature ID": "PERT-P100-DIA2_BIX-01338",
     "Overlap (Experiment01)": 7.6,
     "Overlap (Experiment02)": 7.6,
-    "Score (Experiment01)": 2.9579999447,
-    "Score (Experiment02)": 1.2798000574,
-    "-log(p) (Experiment01)": 0.9231715001,
-    "-log(p) (Experiment02)": 0.3601903272
+    "adj p-val (Experiment01)": 0.1232251521,
+    "adj p-val (Experiment02)": 0.4554363192,
+    "Score (Experiment01)": 2.8973999023,
+    "Score (Experiment02)": 1.2725000381
   },
   {
     "Signature ID": "PERT-P100-DIA2_AXITINIB",
     "Overlap (Experiment01)": 7.2,
     "Overlap (Experiment02)": 7.2,
-    "Score (Experiment01)": 2.1612999439,
-    "Score (Experiment02)": 2.7172999382,
-    "-log(p) (Experiment01)": 0.5345170527,
-    "-log(p) (Experiment02)": 1.105885489
+    "adj p-val (Experiment01)": 0.2648707568,
+    "adj p-val (Experiment02)": 0.0851287441,
+    "Score (Experiment01)": 2.3506000042,
+    "Score (Experiment02)": 2.6040999889
   },
   {
     "Signature ID": "PERT-P100-DIA2_AR_A014418",
     "Overlap (Experiment01)": 6.3,
     "Overlap (Experiment02)": 6.3,
-    "Score (Experiment01)": -1.1404999495,
-    "Score (Experiment02)": 2.1740999222,
-    "-log(p) (Experiment01)": 0.2289865558,
-    "-log(p) (Experiment02)": 0.81149266
+    "adj p-val (Experiment01)": 0.5902636917,
+    "adj p-val (Experiment02)": 0.140499911,
+    "Score (Experiment01)": -1.1585999727,
+    "Score (Experiment02)": 2.2058000565
   },
   {
     "Signature ID": "PERT-P100-DIA2_AFURESERTIB",
     "Overlap (Experiment01)": 6.2,
     "Overlap (Experiment02)": 6.2,
-    "Score (Experiment01)": 1.7095999718,
-    "Score (Experiment02)": 2.0622999668,
-    "-log(p) (Experiment01)": 0.4028449334,
-    "-log(p) (Experiment02)": 0.8096957185
+    "adj p-val (Experiment01)": 0.399330493,
+    "adj p-val (Experiment02)": 0.1668565919,
+    "Score (Experiment01)": 1.8609999418,
+    "Score (Experiment02)": 2.116300106
   },
   {
     "Signature ID": "KINASE-PSP_CK2A1\/CSNK2A1",
     "Overlap (Experiment01)": 2.3,
     "Overlap (Experiment02)": 2.3,
-    "Score (Experiment01)": 3.9158000946,
-    "Score (Experiment02)": 2.682199955,
-    "-log(p) (Experiment01)": 1.0923827027,
-    "-log(p) (Experiment02)": 1.1778748118
+    "adj p-val (Experiment01)": 0.0549898167,
+    "adj p-val (Experiment02)": 0.0851287441,
+    "Score (Experiment01)": 4.1511998177,
+    "Score (Experiment02)": 2.8169000149
   },
   {
     "Signature ID": "KINASE-PSP_CDK2",
     "Overlap (Experiment01)": 3.6,
     "Overlap (Experiment02)": 3.6,
-    "Score (Experiment01)": -0.690599978,
-    "Score (Experiment02)": -3.7502999306,
-    "-log(p) (Experiment01)": 0.136577044,
-    "-log(p) (Experiment02)": 2.1329076663
+    "adj p-val (Experiment01)": 0.7192622951,
+    "adj p-val (Experiment02)": 0.0125874126,
+    "Score (Experiment01)": -0.6815999746,
+    "Score (Experiment02)": -3.4667000771
   },
   {
     "Signature ID": "KINASE-PSP_CDK1",
     "Overlap (Experiment01)": 2.6,
     "Overlap (Experiment02)": 2.6,
-    "Score (Experiment01)": -1.2078000307,
-    "Score (Experiment02)": -6.0805997849,
-    "-log(p) (Experiment01)": 0.2289865558,
-    "-log(p) (Experiment02)": 2.1329076663
+    "adj p-val (Experiment01)": 0.5902636917,
+    "adj p-val (Experiment02)": 0.0081,
+    "Score (Experiment01)": -1.2454999685,
+    "Score (Experiment02)": -5.9668998718
   },
   {
     "Signature ID": "KINASE-PSP_Akt1\/AKT1",
     "Overlap (Experiment01)": 2.8,
     "Overlap (Experiment02)": 2.8,
-    "Score (Experiment01)": -3.2839999199,
-    "Score (Experiment02)": -2.1642999649,
-    "-log(p) (Experiment01)": 1.0243268497,
-    "-log(p) (Experiment02)": 0.8091854841
+    "adj p-val (Experiment01)": 0.1235294118,
+    "adj p-val (Experiment02)": 0.1697571643,
+    "Score (Experiment01)": -3.3080000877,
+    "Score (Experiment02)": -2.0669000149
   },
   {
     "Signature ID": "KINASE-iKiP_RPS6KA5.MSK1",
     "Overlap (Experiment01)": 5.1,
     "Overlap (Experiment02)": 5.1,
-    "Score (Experiment01)": -1.3453999758,
-    "Score (Experiment02)": 2.684499979,
-    "-log(p) (Experiment01)": 0.2289865558,
-    "-log(p) (Experiment02)": 1.254303347
+    "adj p-val (Experiment01)": 0.5902636917,
+    "adj p-val (Experiment02)": 0.0851287441,
+    "Score (Experiment01)": -1.2522000074,
+    "Score (Experiment02)": 2.723400116
   },
   {
     "Signature ID": "KINASE-iKiP_PRKACA",
     "Overlap (Experiment01)": 5.3,
     "Overlap (Experiment02)": 5.3,
-    "Score (Experiment01)": -2.1918001175,
-    "Score (Experiment02)": 2.6184999943,
-    "-log(p) (Experiment01)": 0.5345170527,
-    "-log(p) (Experiment02)": 1.0343164474
+    "adj p-val (Experiment01)": 0.2648707568,
+    "adj p-val (Experiment02)": 0.0851287441,
+    "Score (Experiment01)": -2.2212998867,
+    "Score (Experiment02)": 2.6338000298
   },
   {
     "Signature ID": "KINASE-iKiP_PLK3",
     "Overlap (Experiment01)": 4.3,
     "Overlap (Experiment02)": 4.3,
-    "Score (Experiment01)": -0.983799994,
-    "Score (Experiment02)": 3.0431001186,
-    "-log(p) (Experiment01)": 0.2232004026,
-    "-log(p) (Experiment02)": 1.7128990096
+    "adj p-val (Experiment01)": 0.6150168729,
+    "adj p-val (Experiment02)": 0.0257333475,
+    "Score (Experiment01)": -1.0170999765,
+    "Score (Experiment02)": 3.0940001011
   },
   {
     "Signature ID": "KINASE-iKiP_PAK2",
     "Overlap (Experiment01)": 6.6,
     "Overlap (Experiment02)": 6.6,
-    "Score (Experiment01)": -3.1503000259,
-    "Score (Experiment02)": 1.796200037,
-    "-log(p) (Experiment01)": 0.9409343949,
-    "-log(p) (Experiment02)": 0.6478174819
+    "adj p-val (Experiment01)": 0.1232251521,
+    "adj p-val (Experiment02)": 0.2825231911,
+    "Score (Experiment01)": -3.0527999401,
+    "Score (Experiment02)": 1.7016999722
   },
   {
     "Signature ID": "KINASE-iKiP_PAK1",
     "Overlap (Experiment01)": 6.9,
     "Overlap (Experiment02)": 6.9,
-    "Score (Experiment01)": -1.8767999411,
-    "Score (Experiment02)": 2.031899929,
-    "-log(p) (Experiment01)": 0.4399794467,
-    "-log(p) (Experiment02)": 0.7120100165
+    "adj p-val (Experiment01)": 0.399330493,
+    "adj p-val (Experiment02)": 0.1882965932,
+    "Score (Experiment01)": -1.7924000025,
+    "Score (Experiment02)": 1.9472999573
   },
   {
     "Signature ID": "KINASE-iKiP_MAPK8.JNK1",
     "Overlap (Experiment01)": 5.0,
     "Overlap (Experiment02)": 5.0,
-    "Score (Experiment01)": 0.1335999966,
-    "Score (Experiment02)": -3.277299881,
-    "-log(p) (Experiment01)": 0.0161199962,
-    "-log(p) (Experiment02)": 1.4714999689
+    "adj p-val (Experiment01)": 0.963981715,
+    "adj p-val (Experiment02)": 0.0314227524,
+    "Score (Experiment01)": 0.1371999979,
+    "Score (Experiment02)": -3.1682999134
   },
   {
     "Signature ID": "KINASE-iKiP_MAPK3.ERK1",
     "Overlap (Experiment01)": 3.6,
     "Overlap (Experiment02)": 3.6,
-    "Score (Experiment01)": 1.238499999,
-    "Score (Experiment02)": -2.8587999344,
-    "-log(p) (Experiment01)": 0.2289865558,
-    "-log(p) (Experiment02)": 1.17266582
+    "adj p-val (Experiment01)": 0.5902636917,
+    "adj p-val (Experiment02)": 0.0257333475,
+    "Score (Experiment01)": 1.2408000231,
+    "Score (Experiment02)": -2.9842998981
   },
   {
     "Signature ID": "KINASE-iKiP_MAPK13",
     "Overlap (Experiment01)": 5.3,
     "Overlap (Experiment02)": 5.3,
-    "Score (Experiment01)": 0.1856999993,
-    "Score (Experiment02)": -2.7149999142,
-    "-log(p) (Experiment01)": 0.0197739153,
-    "-log(p) (Experiment02)": 1.0934216852
+    "adj p-val (Experiment01)": 0.9614309211,
+    "adj p-val (Experiment02)": 0.0489130435,
+    "Score (Experiment01)": 0.1696999967,
+    "Score (Experiment02)": -2.8975000381
   },
   {
     "Signature ID": "KINASE-iKiP_MAPK12",
     "Overlap (Experiment01)": 4.9,
     "Overlap (Experiment02)": 4.9,
-    "Score (Experiment01)": 1.7378000021,
-    "Score (Experiment02)": -4.9906001091,
-    "-log(p) (Experiment01)": 0.4028449334,
-    "-log(p) (Experiment02)": 2.1329076663
+    "adj p-val (Experiment01)": 0.3864995547,
+    "adj p-val (Experiment02)": 0.0081,
+    "Score (Experiment01)": 1.8445999622,
+    "Score (Experiment02)": -4.7670001984
   },
   {
     "Signature ID": "KINASE-iKiP_MAPK10.JNK3",
     "Overlap (Experiment01)": 6.7,
     "Overlap (Experiment02)": 6.7,
-    "Score (Experiment01)": -0.2166000009,
-    "Score (Experiment02)": -4.0406999588,
-    "-log(p) (Experiment01)": 0.0197739153,
-    "-log(p) (Experiment02)": 2.1329076663
+    "adj p-val (Experiment01)": 0.9142011834,
+    "adj p-val (Experiment02)": 0.0081,
+    "Score (Experiment01)": -0.2460999936,
+    "Score (Experiment02)": -4.1626000404
   },
   {
     "Signature ID": "KINASE-iKiP_MAPK1.ERK2",
     "Overlap (Experiment01)": 4.2,
     "Overlap (Experiment02)": 4.2,
-    "Score (Experiment01)": 0.4614000022,
-    "Score (Experiment02)": -4.7175002098,
-    "-log(p) (Experiment01)": 0.0933740568,
-    "-log(p) (Experiment02)": 2.1329076663
+    "adj p-val (Experiment01)": 0.8234671185,
+    "adj p-val (Experiment02)": 0.0081,
+    "Score (Experiment01)": 0.4557999969,
+    "Score (Experiment02)": -4.4253997803
   },
   {
     "Signature ID": "KINASE-iKiP_DYRK4",
     "Overlap (Experiment01)": 4.8,
     "Overlap (Experiment02)": 4.8,
-    "Score (Experiment01)": 1.1841000319,
-    "Score (Experiment02)": -0.1975000054,
-    "-log(p) (Experiment01)": 0.2289865558,
-    "-log(p) (Experiment02)": 0.0288594244
+    "adj p-val (Experiment01)": 0.5902636917,
+    "adj p-val (Experiment02)": 0.9351576899,
+    "Score (Experiment01)": 1.1275000572,
+    "Score (Experiment02)": -0.1873999983
   },
   {
     "Signature ID": "KINASE-iKiP_DYRK3",
     "Overlap (Experiment01)": 3.1,
     "Overlap (Experiment02)": 3.1,
-    "Score (Experiment01)": -0.1596000046,
-    "Score (Experiment02)": -1.162899971,
-    "-log(p) (Experiment01)": 0.0161199962,
-    "-log(p) (Experiment02)": 0.3387471676
+    "adj p-val (Experiment01)": 0.9614309211,
+    "adj p-val (Experiment02)": 0.4720982143,
+    "Score (Experiment01)": -0.1552000046,
+    "Score (Experiment02)": -1.1342999935
   },
   {
     "Signature ID": "KINASE-iKiP_DYRK2",
     "Overlap (Experiment01)": 4.0,
     "Overlap (Experiment02)": 4.0,
-    "Score (Experiment01)": 0.0274999999,
-    "Score (Experiment02)": -1.7872999907,
-    "-log(p) (Experiment01)": 0.0,
-    "-log(p) (Experiment02)": 0.5995634873
+    "adj p-val (Experiment01)": 1.0,
+    "adj p-val (Experiment02)": 0.2612704918,
+    "Score (Experiment01)": 0.0282000005,
+    "Score (Experiment02)": -1.7075999975
   },
   {
     "Signature ID": "KINASE-iKiP_CSNK2A2.CK2A2",
     "Overlap (Experiment01)": 5.9,
     "Overlap (Experiment02)": 5.9,
-    "Score (Experiment01)": 2.9435999393,
-    "Score (Experiment02)": 4.4411001205,
-    "-log(p) (Experiment01)": 0.9604531595,
-    "-log(p) (Experiment02)": 2.1329076663
+    "adj p-val (Experiment01)": 0.1301204819,
+    "adj p-val (Experiment02)": 0.0081,
+    "Score (Experiment01)": 3.1916999817,
+    "Score (Experiment02)": 4.3752999306
   },
   {
     "Signature ID": "KINASE-iKiP_CDK1-CCNB1",
     "Overlap (Experiment01)": 4.0,
     "Overlap (Experiment02)": 4.0,
-    "Score (Experiment01)": 1.0370999575,
-    "Score (Experiment02)": -3.75,
-    "-log(p) (Experiment01)": 0.2232004026,
-    "-log(p) (Experiment02)": 2.1329076663
+    "adj p-val (Experiment01)": 0.6276001675,
+    "adj p-val (Experiment02)": 0.0081,
+    "Score (Experiment01)": 0.9603999853,
+    "Score (Experiment02)": -3.7920999527
   }
 ]

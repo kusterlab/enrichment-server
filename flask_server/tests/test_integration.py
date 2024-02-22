@@ -33,7 +33,7 @@ class TestClass:
             res['Gene'] == exp['Gene'] and
             all(round(res[f'Score (Experiment_{i})'], 5) == round(exp[f'Score (Experiment_{i})'], 5) for i in
                 [1, 2, 3]) and
-            all(round(res[f'-log(p) (Experiment_{i})'], 5) == round(exp[f'-log(p) (Experiment_{i})'], 5) for i in
+            all(round(res[f'adj p-val (Experiment_{i})'], 5) == round(exp[f'adj p-val (Experiment_{i})'], 5) for i in
                 [1, 2, 3])
             for res, exp in zip(self.actual_result, self.expected_result))
 

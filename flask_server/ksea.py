@@ -53,7 +53,7 @@ def perform_ksea(filepath: Path) -> Path:
                 interactions=adjacency_matrix,
                 mP=input_df[experiment].mean(),
                 delta=input_df[experiment].std())
-            res = pd.DataFrame({f'Score ({experiment})': scores, f'-log(p) ({experiment})': -np.log10(p_values)})
+            res = pd.DataFrame({f'Score ({experiment})': scores, f'adj p-val ({experiment})': p_values})
             ksea_results.append(res)
         except ZeroDivisionError:
             continue

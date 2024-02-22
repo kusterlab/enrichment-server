@@ -76,17 +76,10 @@ def postprocess_ssgsea(output_gct: Path) -> Path:
                                                    + [f'fdr.pvalue.{exp}' for exp in experiment_names]
                                                    ].join(gct_parsed.data_df).reset_index()
 
-        # Log Transform p values
-        for exp in experiment_names:
-            gct_df_joined[f'-log(p) ({exp})'] = -np.log10(gct_df_joined[f'fdr.pvalue.{exp}'])
-
-        # Drop non-transformed p value columns
-        gct_df_joined.drop(columns=[f'fdr.pvalue.{exp}' for exp in experiment_names], inplace=True)
-
         gct_df_joined.columns = (['Signature ID']
                                  + [f'Overlap ({exp})' for exp in experiment_names]
-                                 + [f'Score ({exp})' for exp in experiment_names]
-                                 + [f'-log(p) ({exp})' for exp in experiment_names])
+                                 + [f'adj p-val ({exp})' for exp in experiment_names]
+                                 + [f'Score ({exp})' for exp in experiment_names])
 
         gct_df_joined.to_json(path_or_buf=output_json, orient='records',
                               # indent=1  # For DEBUG
