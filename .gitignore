@@ -5,3 +5,4 @@ ssGSEA2.0
 RokaiApp
 flask_server/.gitignore
 **/__pycache__
+flask_server/logs

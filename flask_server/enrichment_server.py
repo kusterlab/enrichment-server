@@ -8,6 +8,7 @@ from flask import Flask, request, send_file, jsonify, make_response
 import flask.wrappers
 import ssgsea
 import ksea
+import phonemes
 
 app = Flask(__name__)
 
@@ -64,6 +65,24 @@ def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
     # TODO: Delete everything when done to not accumulate files? Or: Keep the final output file, and use it as a cache?
     return send_response(send_file(ksea_result, as_attachment=False))
 
+
+@app.route('/phonemes', methods=['POST'])
+def handle_phonemes_request() -> werkzeug.wrappers.Response | str:
+    post_request_processed = process_post_request(request)
+
+    if type(post_request_processed) is str:
+        return post_request_processed
+
+    filepath = post_request_processed
+
+    preprocessed_filepath = phonemes.preprocess_phonemes(filepath)
+
+    #This should just contain an external command that runs an R script, which executes PHONEMeS with default params
+    phonemes_result = phonemes.run_phonemes(preprocessed_filepath)
+    cytoscape_result = phonemes.run_cytoscape(phonemes_result)
+    pathway_skeleton_json = phonemes.create_pathway_skeleton(cytoscape_result)
+
+    return send_response(send_file(pathway_skeleton_json, as_attachment=False))
 
 def process_post_request(post_request: werkzeug.Request) -> Path | str:
     request_url = urlparse(request.base_url)
