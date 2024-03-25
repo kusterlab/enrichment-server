@@ -77,7 +77,10 @@ for (experiment in experiment_names) {
   Ws2s <- Ws2s | NetworkData$net$Wsite2site.sd
   Ws2s <- Ws2s | NetworkData$net$Wsite2site.coev
   Ws2s <- Ws2s[validSites, validSites]
+  #Fix: Skip experiments with too few valid values
+  tryCatch({
   rc <- rokai_core(Xv, Sx, wk2s, Wk2k, Ws2s)
+  }, error = function(e) e)
   rokai_result_experiment <- data.frame(phospho_data[valids, 'Site'][order(indices[valids])], rc$Xs)
   names(rokai_result_experiment) <- c('Site', experiment)
   rokai_result_all[[length(rokai_result_all) + 1]] <- rokai_result_experiment
