@@ -15,6 +15,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
 RUN apt-get install -y curl libcurl4-openssl-dev libssl-dev libomp5 python3-poetry git r-base #Will install R=4.3.2
+#Make sure python3.11 is installed, the gitlab pipeline would sometimes default to python3.12
+RUN apt-get install -y python3.11
 
 ##Set Up PTM-SEA
 RUN git clone -b master --single-branch https://github.com/broadinstitute/ssGSEA2.0.git
