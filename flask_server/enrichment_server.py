@@ -12,10 +12,12 @@ import phonemes
 
 app = Flask(__name__)
 
+VERSION = '0.0.1'
+
 
 @app.route('/', methods=['GET'])
 def get_status() -> flask.wrappers.Response:
-    return send_response(jsonify(status=200))
+    return send_response(jsonify(status=200, version=VERSION))
 
 
 # TODO: In the second route, the ssgsea_type actually can only be ssc. Can I enforce this?
