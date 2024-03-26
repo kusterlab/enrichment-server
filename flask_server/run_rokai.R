@@ -47,45 +47,45 @@ phospho_data_all$ID <- gsub('_\\D', '_', phospho_data_all$Site)
 
 rokai_result_all <- list()
 for (experiment in experiment_names) {
-  #Preprocess
-  valids <- !is.na(phospho_data_all[, experiment])
-  phospho_data <- phospho_data_all[valids, c('Site', 'ID', experiment)]
-  indices <- match(phospho_data$ID, NetworkData$Site$Identifier)
-  valids <- !is.na(indices);
-  X <- rep(NA, nrow(NetworkData$Site))
-  X[indices[valids]] <- phospho_data[valids, experiment]
-  validSites <- !is.na(X)
-  Xv <- X[validSites]
-  #Normalize
-  Xv <- (Xv - mean(Xv)) / sd(Xv)
-  Sx <- rep(sd(Xv), length(Xv))
-  ds <- (list("Xv" = Xv, "Sx" = Sx, "validSites" = validSites))
-  ### Run RoKAI
-  Wk2s <- NetworkData$net$Wkin2site.psp
-  nSite <- ncol(Wk2s) #I think it was already set to that value but let's be on the safe side
-  wk2s <- Wk2s[, validSites];
-  nSubs <- (wk2s %*% rep(1, length(Xv)))
-  #Use all components
-  ropts <- list("ppi" = TRUE, "sd" = TRUE, "coev" = TRUE)
-  Wk2k <- NetworkData$net$Wkin2kin * 1e-3
-  Ws2s <- Matrix::sparseMatrix(
-    i = c(),
-    j = c(),
-    x = TRUE,
-    dims = c(nSite, nSite)
-  )
-  Ws2s <- Ws2s | NetworkData$net$Wsite2site.sd
-  Ws2s <- Ws2s | NetworkData$net$Wsite2site.coev
-  Ws2s <- Ws2s[validSites, validSites]
   #Fix: Skip experiments with too few valid values
   tryCatch({
-  rc <- rokai_core(Xv, Sx, wk2s, Wk2k, Ws2s)
+    #Preprocess
+    valids <- !is.na(phospho_data_all[, experiment])
+    phospho_data <- phospho_data_all[valids, c('Site', 'ID', experiment)]
+    indices <- match(phospho_data$ID, NetworkData$Site$Identifier)
+    valids <- !is.na(indices);
+    X <- rep(NA, nrow(NetworkData$Site))
+    X[indices[valids]] <- phospho_data[valids, experiment]
+    validSites <- !is.na(X)
+    Xv <- X[validSites]
+    #Normalize
+    Xv <- (Xv - mean(Xv)) / sd(Xv)
+    Sx <- rep(sd(Xv), length(Xv))
+    ds <- (list("Xv" = Xv, "Sx" = Sx, "validSites" = validSites))
+    ### Run RoKAI
+    Wk2s <- NetworkData$net$Wkin2site.psp
+    nSite <- ncol(Wk2s) #I think it was already set to that value but let's be on the safe side
+    wk2s <- Wk2s[, validSites];
+    nSubs <- (wk2s %*% rep(1, length(Xv)))
+    #Use all components
+    ropts <- list("ppi" = TRUE, "sd" = TRUE, "coev" = TRUE)
+    Wk2k <- NetworkData$net$Wkin2kin * 1e-3
+    Ws2s <- Matrix::sparseMatrix(
+      i = c(),
+      j = c(),
+      x = TRUE,
+      dims = c(nSite, nSite)
+    )
+    Ws2s <- Ws2s | NetworkData$net$Wsite2site.sd
+    Ws2s <- Ws2s | NetworkData$net$Wsite2site.coev
+    Ws2s <- Ws2s[validSites, validSites]
+    rc <- rokai_core(Xv, Sx, wk2s, Wk2k, Ws2s)
+    rokai_result_experiment <- data.frame(phospho_data[valids, 'Site'][order(indices[valids])], rc$Xs)
+    names(rokai_result_experiment) <- c('Site', experiment)
+    rokai_result_all[[length(rokai_result_all) + 1]] <- rokai_result_experiment
   }, error = function(e) e)
-  rokai_result_experiment <- data.frame(phospho_data[valids, 'Site'][order(indices[valids])], rc$Xs)
-  names(rokai_result_experiment) <- c('Site', experiment)
-  rokai_result_all[[length(rokai_result_all) + 1]] <- rokai_result_experiment
 }
 
 rokai_result_singledf <- Reduce(function(x, y) merge(x, y, by = 'Site', all = TRUE), rokai_result_all)
 
-write.csv(rokai_result_singledf, output_csv, quote=F, row.names = F)
+write.csv(rokai_result_singledf, output_csv, quote = F, row.names = F)
