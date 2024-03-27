@@ -58,7 +58,6 @@ WORKDIR /app/flask_server
 ENV DISPLAY=:1
 
 #Start Xvfb for headless Cytoscape, then run the python server
-#TODO: Make this an array again, figure out how it understands the '&'
 ENTRYPOINT Xvfb :1 -screen 0 1024x768x24 & poetry run python enrichment_server.py
 
 EXPOSE 4321
