@@ -19,6 +19,11 @@ RUN apt-get install -y curl libcurl4-openssl-dev libssl-dev libomp5 libopenblas-
 #Make sure python3.11 is installed, the gitlab pipeline would sometimes default to python3.12
 RUN apt-get install -y python3.11
 
+#Fix for missing libssl
+RUN curl http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb --output libssl.deb
+RUN dpkg -i libssl.deb
+RUN rm libssl.deb
+
 ##Set Up PTM-SEA
 RUN git clone -b master --single-branch https://github.com/broadinstitute/ssGSEA2.0.git
 WORKDIR /app/ssGSEA2.0
@@ -49,6 +54,11 @@ RUN poetry install -C flask_server
 
 WORKDIR /app/flask_server
 
-CMD ["poetry", "run", "python", "enrichment_server.py"]
+#Tell Cytoscape to use the Xvfb virtual display
+ENV DISPLAY=:1
+
+#Start Xvfb for headless Cytoscape, then run the python server
+#TODO: Make this an array again, figure out how it understands the '&'
+ENTRYPOINT Xvfb :1 -screen 0 1024x768x24 & poetry run python enrichment_server.py
 
 EXPOSE 4321

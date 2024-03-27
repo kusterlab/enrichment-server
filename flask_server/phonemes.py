@@ -68,7 +68,10 @@ def run_cytoscape(filepath: Path) -> Path:
         try:
             p4c.cytoscape_ping()
             not_found = False
-        except (requests.exceptions.ConnectionError, requests.exceptions.HTTPError):
+        except (
+                requests.exceptions.RequestException,
+                requests.exceptions.ConnectionError,
+                requests.exceptions.HTTPError):
             time.sleep(.5)
 
     network = phonemes_df.rename(
