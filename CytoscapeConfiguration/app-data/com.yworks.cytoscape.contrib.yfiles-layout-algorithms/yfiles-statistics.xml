@@ -1,0 +1,15 @@
+<statistics version="1">
+  <unpublished>
+    <entry algorithm="yfiles.HierarchicLayout" count="22" nodes="5520" edges="10680" duration="27866"/>
+  </unpublished>
+  <published last="2024-01-18">
+    <entry algorithm="yfiles.CircularLayout" count="2" nodes="70" edges="116" duration="42"/>
+    <entry algorithm="yfiles.HierarchicLayout" count="17" nodes="6372" edges="9659" duration="1063583"/>
+    <entry algorithm="yfiles.HierarchicLayoutSelectedNodes" count="3" nodes="105" edges="174" duration="143"/>
+    <entry algorithm="yfiles.OrganicEdgeRouter" count="1" nodes="35" edges="58" duration="33"/>
+    <entry algorithm="yfiles.OrganicLayout" count="2" nodes="70" edges="116" duration="96"/>
+    <entry algorithm="yfiles.OrthogonalEdgeRouter" count="1" nodes="35" edges="58" duration="198"/>
+    <entry algorithm="yfiles.RemoveOverlaps" count="2" nodes="70" edges="116" duration="9"/>
+    <entry algorithm="yfiles.TreeLayout" count="1" nodes="35" edges="58" duration="29"/>
+  </published>
+</statistics>

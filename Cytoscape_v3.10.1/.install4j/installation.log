@@ -1,0 +1,933 @@
+[INFO] Logger started at 2024-01-17 08:04:11
+[INFO] Executable name: /home/jmueller/Downloads/Cytoscape_3_10_1_unix.sh
+[INFO] install4j version: 10.0.4 (build 10066)
+[INFO] Properties: 
+-- listing properties --
+java.specification.version=17
+install4j.launcherId=749
+sun.jnu.encoding=UTF-8
+java.class.path=i4jruntime.jar:launcher0.jar
+sun.awt.enableExtraMouseButtons=true
+java.vm.vendor=Private Build
+sun.arch.data.model=64
+install4j.exeDir=/home/jmueller/Downloads/
+sun.font.fontmanager=sun.awt.X11FontManager
+java.vendor.url=Unknown
+user.timezone=Europe/Berlin
+java.vm.specification.version=17
+os.name=Linux
+sun.java.launcher=SUN_STANDARD
+user.country=US
+sun.boot.library.path=/usr/lib/jvm/java-17-openjdk-amd64/lib
+sun.java.command=install4j.Installer4261306261
+jdk.debug=release
+sun.cpu.endian=little
+user.home=/home/jmueller
+user.language=en
+jdk.http.auth.tunneling.disabledSchemes=
+sun.stderr.encoding=UTF-8
+java.specification.vendor=Oracle Corporation
+java.version.date=2023-10-17
+java.home=/usr/lib/jvm/java-17-openjdk-amd64
+file.separator=/
+java.vm.compressedOopsMode=Zero based
+line.separator=
+
+sun.stdout.encoding=UTF-8
+java.vm.specification.vendor=Oracle Corporation
+java.specification.name=Java Platform API Specification
+jdk.lang.Process.allowAmbiguousCommands=false
+exe4j.moduleName=/home/jmueller/Downloads/Cytoscape_3_...
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+java.runtime.version=17.0.9+9-Ubuntu-120.04
+user.name=jmueller
+path.separator=:
+java.net.useSystemProxies=true
+os.version=5.15.0-91-generic
+java.runtime.name=OpenJDK Runtime Environment
+file.encoding=UTF-8
+java.vm.name=OpenJDK 64-Bit Server VM
+install4j.jvmDir=/usr/lib/jvm/java-17-openjdk-amd64
+install4j.cwd=/home/jmueller/Downloads
+install4j.appDir=/home/jmueller/Downloads/
+java.vendor.url.bug=Unknown
+java.io.tmpdir=/tmp
+java.version=17.0.9
+user.dir=/home/jmueller/Downloads/Cytoscape_3_...
+os.arch=amd64
+java.vm.specification.name=Java Virtual Machine Specification
+exe4j.totalDataLength=236176415
+native.encoding=UTF-8
+java.library.path=/home/jmueller/Downloads/Cytoscape_3_...
+java.vm.info=mixed mode, sharing
+java.vendor=Private Build
+java.vm.version=17.0.9+9-Ubuntu-120.04
+sun.io.unicode.encoding=UnicodeLittle
+java.class.version=61.0
+install4j.swt=false
+[INFO] Variable changed: sys.resolveUserSpecificInstallationDir=true[class java.lang.String]
+[INFO] com.install4j.runtime.beans.actions.misc.RequestPrivilegesAction [ID 343]: Execute action
+       Property linuxPrivilegeRequirement: None
+       Property failIfNotObtainedLinux: false
+       Property failIfNotObtainedMac: false
+       Property failIfNotObtainedWin: false
+       Property failIfNotRootUnix: false
+       Property obtainIfAdminMac: false
+       Property obtainIfAdminWin: true
+       Property obtainIfNormalMac: true
+       Property obtainIfNormalWin: true
+       Property rollbackSupported: false
+       Property updateInstallationDirectory: true
+       Execute action successful after 2 ms
+[INFO] com.install4j.runtime.beans.screens.StartupScreen [ID 5]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.WelcomeScreen [ID 6]: Show screen
+[INFO] com.install4j.runtime.beans.screens.WelcomeScreen [ID 6]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.LicenseScreen [ID 7]: Show screen
+[INFO] com.install4j.runtime.beans.screens.LicenseScreen [ID 7]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.InstallationDirectoryScreen [ID 8]: Show screen
+       checking writable with maximum
+[INFO] com.install4j.runtime.beans.screens.InstallationDirectoryScreen [ID 8]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 715]: Show screen
+       Variable changed: createDesktopLinkAction=true[class java.lang.Boolean]
+       Variable changed: sys.fileAssociation.extensions=[][class [Ljava.lang.String;]
+       Variable changed: sys.fileAssociation.launchers=[][class [Ljava.lang.String;]
+       Variable changed: ShareStatistics=false[class java.lang.Boolean]
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 715]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 654]: Show screen
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 654]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.InstallationScreen [ID 10]: Show screen
+[INFO] com.install4j.runtime.beans.actions.control.RunScriptAction [ID 279]: Execute action
+       Property rollbackScript: null
+       Property script: com.install4j.script.I4jScript_Internal_52
+       Property rollbackSupported: false
+       Variable changed: vmoptions=[-Xms2048M, -Xmx14915M, -Xss5M][class [Ljava.lang.String;]
+       Execute action successful after 9 ms
+[INFO] com.install4j.runtime.beans.actions.InstallFilesAction [ID 11]: Execute action
+       Property directoryResolverScript: null
+       Property fileFilterScript: null
+       Property sizeCalculatorScript: null
+       Property acceptAllCertificates: false
+       Property checkFreeSpace: true
+       Property delay: false
+       Property installRuntime: true
+       Property rollbackSupported: true
+       Property saveDownloadedFiles: false
+       Property showFileNames: true
+       Property triggerReboot: true
+       Property validateApplicationId: false
+       Component Unix Installation Component[235]; Selected: true
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/Cytoscape.png; size: 18927 bytes; exists: false
+       File options set to: [fileTime: Tue Aug 22 01:15:56 CEST 2023, mode: 644, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/uninstall.png; size: 6648 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/uninstall; size: 16779 bytes; exists: false
+       File options set to: [fileTime: Tue Aug 22 01:15:56 CEST 2023, mode: 700, overwriteMode: If newer otherwise ask, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/LargestSubnetwork-1.3.jar; size: 11256 bytes; exists: false
+       File options set to: [fileTime: Tue Aug 22 01:15:56 CEST 2023, mode: 755, overwriteMode: Always ask except for update, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/aMatReader-1.2.0.jar; size: 181657 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/analyzer-4.4.8.jar; size: 436294 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/biopax-3.4.0.jar; size: 4969164 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/copycatLayout-1.3.1.jar; size: 5819852 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/core-apps-meta-3.8.0.jar; size: 4164 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/cx-support-2.8.0.jar; size: 4861364 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/cy-ndex-2-3.7.0.jar; size: 8222647 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/cy-rest-3.13.2.jar; size: 15299480 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/cyBrowser-1.3.12.jar; size: 1339225 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/cyChart-0.3.1.jar; size: 1367615 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/diffusion-1.6.3.jar; size: 5737753 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/enhancedGraphics-1.5.5.jar; size: 145996 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/enrichment-2.0.5.jar; size: 3619358 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/file-transfer-1.3.jar; size: 340014 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/idmapper-3.9.0.jar; size: 1552070 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/json-3.7.0.jar; size: 3237802 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/mapSourceAndTarget-0.2.1.jar; size: 12069 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/network-merge-3.9.4.jar; size: 149955 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/opencl-layout-3.10.1.jar; size: 25114 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/psi-mi-3.4.0.jar; size: 190611 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/sbml-3.4.1.jar; size: 3808673 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/webservice-biomart-client-3.4.0.jar; size: 75220 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/apps/webservice-psicquic-client-3.6.0.jar; size: 247587 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/cytoscape.sh; size: 2871 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/BUILDING.md; size: 1986 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/CytoscapeSplashScreen.png; size: 16171 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/CytoscapeSplashScreen.svg; size: 10799 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/README.md; size: 5060 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/RELEASE-NOTES.md; size: 94372 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/bin/inc; size: 9469 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/bin/karaf; size: 13004 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/cytoscape_logo_512.png; size: 63892 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/data/tmp/README; size: 847 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/all.policy; size: 1035 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/config.properties; size: 16979 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/custom.properties; size: 2681 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/distribution.info; size: 1144 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/equinox-debug.properties; size: 4616 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/java.util.logging.properties; size: 1121 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/jetty.xml; size: 4437 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/jmx.acl.cfg; size: 3528 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/jmx.acl.java.lang.Memory.cfg; size: 1117 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/jmx.acl.org.apache.karaf.bundle.cfg; size: 1664 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/jmx.acl.org.apache.karaf.config.cfg; size: 3316 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/jmx.acl.org.apache.karaf.security.jmx.cfg; size: 1262 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/jmx.acl.osgi.compendium.cm.cfg; size: 3664 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/jre.properties; size: 24239 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/keys.properties; size: 2098 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.apache.felix.eventadmin.impl.EventAdmin.cfg; size: 1075 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.apache.karaf.command.acl.bundle.cfg; size: 1737 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.apache.karaf.command.acl.config.cfg; size: 2025 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.apache.karaf.command.acl.feature.cfg; size: 1141 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.apache.karaf.command.acl.jaas.cfg; size: 1154 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.apache.karaf.command.acl.kar.cfg; size: 1219 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.apache.karaf.command.acl.scope_bundle.cfg; size: 1376 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.apache.karaf.command.acl.shell.cfg; size: 1118 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.apache.karaf.command.acl.system.cfg; size: 1384 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.apache.karaf.features.cfg; size: 718 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.apache.karaf.features.repos.cfg; size: 3702 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.apache.karaf.features.xml; size: 1176 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.apache.karaf.jaas.cfg; size: 1965 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.apache.karaf.kar.cfg; size: 1369 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.apache.karaf.log.cfg; size: 1914 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.apache.karaf.management.cfg; size: 3259 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.apache.karaf.shell.cfg; size: 4339 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.cytoscape.cfg; size: 42 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.ops4j.pax.logging.cfg; size: 8155 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/org.ops4j.pax.url.mvn.cfg; size: 4046 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/profile.cfg; size: 1449 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/scripts/shell.completion.script; size: 12413 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/shell.init.script; size: 2440 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/startup.properties; size: 1110 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/system.properties; size: 807 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/etc/users.properties; size: 1456 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/README.md; size: 1080 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-blueprint-example/README.md; size: 2233 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-blueprint-example/karaf-blueprint-example-client/pom.xml; size: 2358 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-blueprint-example/karaf-blueprint-example-client/src/main/java/org/apache/karaf/examples/blueprint/client/ClientService.java; size: 1056 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-blueprint-example/karaf-blueprint-example-client/src/main/java/org/apache/karaf/examples/blueprint/client/ClientServiceImpl.java; size: 1591 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-blueprint-example/karaf-blueprint-example-client/src/main/java/org/apache/karaf/examples/blueprint/client/Display.java; size: 3067 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-blueprint-example/karaf-blueprint-example-client/src/main/resources/OSGI-INF/blueprint/client.xml; size: 1579 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-blueprint-example/karaf-blueprint-example-common/pom.xml; size: 1975 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-blueprint-example/karaf-blueprint-example-common/src/main/java/org/apache/karaf/examples/blueprint/common/Booking.java; size: 1638 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-blueprint-example/karaf-blueprint-example-common/src/main/java/org/apache/karaf/examples/blueprint/common/BookingService.java; size: 1073 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-blueprint-example/karaf-blueprint-example-common/src/main/java/org/apache/karaf/examples/blueprint/common/package-info.java; size: 946 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-blueprint-example/karaf-blueprint-example-features/pom.xml; size: 3967 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-blueprint-example/karaf-blueprint-example-features/src/main/feature/feature.xml; size: 2058 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-blueprint-example/karaf-blueprint-example-provider/pom.xml; size: 2482 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-blueprint-example/karaf-blueprint-example-provider/src/main/java/org/apache/karaf/examples/blueprint/provider/internal/BookingServiceImpl.java; size: 1510 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-blueprint-example/karaf-blueprint-example-provider/src/main/resources/OSGI-INF/blueprint/provider.xml; size: 1205 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-blueprint-example/pom.xml; size: 1849 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-branding-example/README.md; size: 3163 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-branding-example/pom.xml; size: 2082 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-branding-example/src/main/resources/org/apache/karaf/branding/branding.properties; size: 1244 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-bundle-example/README.md; size: 2288 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-bundle-example/karaf-bundle-example-client/pom.xml; size: 2520 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-bundle-example/karaf-bundle-example-client/src/main/java/org/apache/karaf/examples/bundle/client/Activator.java; size: 2613 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-bundle-example/karaf-bundle-example-client/src/main/java/org/apache/karaf/examples/bundle/client/ClientService.java; size: 1050 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-bundle-example/karaf-bundle-example-client/src/main/java/org/apache/karaf/examples/bundle/client/ClientServiceImpl.java; size: 1582 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-bundle-example/karaf-bundle-example-client/src/main/java/org/apache/karaf/examples/bundle/client/Display.java; size: 3040 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-bundle-example/karaf-bundle-example-client/src/main/java/org/apache/karaf/examples/bundle/client/package-info.java; size: 896 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-bundle-example/karaf-bundle-example-common/pom.xml; size: 1966 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-bundle-example/karaf-bundle-example-common/src/main/java/org/apache/karaf/examples/bundle/common/Booking.java; size: 1635 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-bundle-example/karaf-bundle-example-common/src/main/java/org/apache/karaf/examples/bundle/common/BookingService.java; size: 1070 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-bundle-example/karaf-bundle-example-common/src/main/java/org/apache/karaf/examples/bundle/common/package-info.java; size: 943 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-bundle-example/karaf-bundle-example-features/pom.xml; size: 3958 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-bundle-example/karaf-bundle-example-features/src/main/feature/feature.xml; size: 1844 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-bundle-example/karaf-bundle-example-provider/pom.xml; size: 2524 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-bundle-example/karaf-bundle-example-provider/src/main/java/org/apache/karaf/examples/bundle/provider/internal/Activator.java; size: 1952 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-bundle-example/karaf-bundle-example-provider/src/main/java/org/apache/karaf/examples/bundle/provider/internal/BookingServiceImpl.java; size: 1581 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-bundle-example/pom.xml; size: 1831 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-camel-example/README.md; size: 3860 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-camel-example/karaf-camel-example-blueprint/pom.xml; size: 2572 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-camel-example/karaf-camel-example-blueprint/src/main/resources/OSGI-INF/blueprint/route.xml; size: 4128 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-camel-example/karaf-camel-example-features/pom.xml; size: 3955 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-camel-example/karaf-camel-example-features/src/main/feature/feature.xml; size: 2236 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-camel-example/karaf-camel-example-java/pom.xml; size: 2630 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-camel-example/karaf-camel-example-java/src/main/java/org/apache/karaf/examples/camel/java/CamelComponent.java; size: 5600 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-camel-example/pom.xml; size: 1703 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-cdi-example/README.md; size: 2454 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-cdi-example/karaf-cdi-example-api/pom.xml; size: 1738 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-cdi-example/karaf-cdi-example-api/src/main/java/org/apache/karaf/examples/cdi/api/MyService.java; size: 919 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-cdi-example/karaf-cdi-example-consumer/pom.xml; size: 2785 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-cdi-example/karaf-cdi-example-consumer/src/main/java/org/apache/karaf/examples/cdi/consumer/MyConsumerBean.java; size: 1384 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-cdi-example/karaf-cdi-example-features/pom.xml; size: 3949 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-cdi-example/karaf-cdi-example-features/src/main/feature/feature.xml; size: 1804 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-cdi-example/karaf-cdi-example-provider/pom.xml; size: 2785 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-cdi-example/karaf-cdi-example-provider/src/main/java/org/apache/karaf/examples/cdi/provider/MyServiceBean.java; size: 1190 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-cdi-example/pom.xml; size: 1742 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-command-example/README.md; size: 2532 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-command-example/karaf-command-example-api/pom.xml; size: 1969 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-command-example/karaf-command-example-api/src/main/java/org/apache/karaf/examples/command/api/Booking.java; size: 1402 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-command-example/karaf-command-example-api/src/main/java/org/apache/karaf/examples/command/api/BookingService.java; size: 1106 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-command-example/karaf-command-example-api/src/main/java/org/apache/karaf/examples/command/api/package-info.java; size: 941 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-command-example/karaf-command-example-command/pom.xml; size: 3347 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-command-example/karaf-command-example-command/src/main/java/org/apache/karaf/examples/command/command/AddCommand.java; size: 2324 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-command-example/karaf-command-example-command/src/main/java/org/apache/karaf/examples/command/command/ListCommand.java; size: 1887 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-command-example/karaf-command-example-command/src/main/java/org/apache/karaf/examples/command/command/RemoveCommand.java; size: 1907 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-command-example/karaf-command-example-command/src/main/java/org/apache/karaf/examples/command/completers/BookingIdCompleter.java; size: 1862 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-command-example/karaf-command-example-features/pom.xml; size: 3967 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-command-example/karaf-command-example-features/src/main/feature/feature.xml; size: 1949 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-command-example/karaf-command-example-provider/pom.xml; size: 3261 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-command-example/karaf-command-example-provider/src/main/java/org/apache/karaf/examples/command/provider/Activator.java; size: 1437 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-command-example/karaf-command-example-provider/src/main/java/org/apache/karaf/examples/command/provider/BookingServiceMemoryImpl.java; size: 1675 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-command-example/pom.xml; size: 1771 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-config-example/README.md; size: 7793 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-config-example/karaf-config-example-blueprint/pom.xml; size: 1766 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-config-example/karaf-config-example-blueprint/src/main/java/org/apache/karaf/example/config/blueprint/DisplayBean.java; size: 1141 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-config-example/karaf-config-example-blueprint/src/main/resources/OSGI-INF/blueprint/config.xml; size: 1427 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-config-example/karaf-config-example-features/pom.xml; size: 3965 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-config-example/karaf-config-example-features/src/main/feature/feature.xml; size: 2935 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-config-example/karaf-config-example-listener/pom.xml; size: 2311 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-config-example/karaf-config-example-listener/src/main/java/org/apache/karaf/example/config/listener/Activator.java; size: 2299 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-config-example/karaf-config-example-managed-factory/pom.xml; size: 2325 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-config-example/karaf-config-example-managed-factory/src/main/java/org/apache/karaf/example/config/managedfactory/Activator.java; size: 2805 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-config-example/karaf-config-example-managed/pom.xml; size: 2309 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-config-example/karaf-config-example-managed/src/main/java/org/apache/karaf/example/config/managed/Activator.java; size: 2224 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-config-example/karaf-config-example-scr/pom.xml; size: 1961 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-config-example/karaf-config-example-scr/src/main/java/org/apache/karaf/example/config/scr/MyComponent.java; size: 1585 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-config-example/karaf-config-example-static/pom.xml; size: 2307 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-config-example/karaf-config-example-static/src/main/java/org/apache/karaf/example/config/Activator.java; size: 2590 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-config-example/pom.xml; size: 1937 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-deployer-example/README.md; size: 1928 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-deployer-example/pom.xml; size: 2762 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-deployer-example/src/main/java/org/apache/karaf/examples/deployer/ExampleDeployer.java; size: 1863 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-docker-example/README.md; size: 14177 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-docker-example/karaf-docker-example-app/pom.xml; size: 3355 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-docker-example/karaf-docker-example-app/src/main/java/org/apache/karaf/examples/docker/ExampleServlet.java; size: 2151 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-docker-example/karaf-docker-example-dynamic-dist/pom.xml; size: 7636 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-docker-example/karaf-docker-example-static-dist/k8s/karaf-docker-example-static-dist.yaml; size: 1156 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-docker-example/karaf-docker-example-static-dist/pom.xml; size: 6358 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-docker-example/pom.xml; size: 1712 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-dump-example/README.md; size: 2147 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-dump-example/pom.xml; size: 2667 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-dump-example/src/main/java/org/apache/karaf/examples/dump/ScreenshotDumpProvider.java; size: 2224 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-dump-example/src/main/java/org/apache/karaf/examples/dump/package-info.java; size: 879 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-http-resource-example/README.md; size: 2653 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-http-resource-example/karaf-http-resource-example-features/pom.xml; size: 3979 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-http-resource-example/karaf-http-resource-example-features/src/main/feature/feature.xml; size: 1408 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-http-resource-example/karaf-http-resource-example-whiteboard/pom.xml; size: 1989 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-http-resource-example/karaf-http-resource-example-whiteboard/src/main/java/org/apache/karaf/examples/http/resource/whiteboard/ExampleResource.java; size: 875 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-http-resource-example/karaf-http-resource-example-whiteboard/src/main/resources/resources/index.html; size: 918 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-http-resource-example/pom.xml; size: 1685 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-itest-example/README.md; size: 1622 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-itest-example/pom.xml; size: 5238 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-itest-example/src/test/java/org/apache/karaf/examples/itests/ExampleITest.java; size: 1945 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-itest-example/src/test/java/org/apache/karaf/examples/itests/ExampleWithConfigITest.java; size: 1770 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-itest-example/src/test/resources/etc/users.properties; size: 1454 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jaas-example/README.md; size: 3446 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jaas-example/karaf-jaas-example-app/pom.xml; size: 2930 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jaas-example/karaf-jaas-example-app/src/main/java/org/apache/karaf/examples/jaas/app/JaasExampleCommand.java; size: 1931 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jaas-example/karaf-jaas-example-app/src/main/java/org/apache/karaf/examples/jaas/app/SecuredService.java; size: 967 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jaas-example/karaf-jaas-example-app/src/main/java/org/apache/karaf/examples/jaas/app/SecuredServiceImpl.java; size: 2000 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jaas-example/karaf-jaas-example-app/src/main/java/org/apache/karaf/examples/jaas/app/package-info.java; size: 883 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jaas-example/karaf-jaas-example-features/pom.xml; size: 3146 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jaas-example/karaf-jaas-example-features/src/main/feature/feature.xml; size: 1869 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jaas-example/karaf-jaas-example-wab/pom.xml; size: 2427 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jaas-example/karaf-jaas-example-wab/src/main/java/org/apache/karaf/examples/jaas/wab/ExampleServlet.java; size: 2161 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jaas-example/karaf-jaas-example-wab/src/main/webapp/WEB-INF/web.xml; size: 1726 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jaas-example/karaf-jaas-example-war/pom.xml; size: 1519 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jaas-example/karaf-jaas-example-war/src/main/webapp/WEB-INF/web.xml; size: 1823 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jaas-example/karaf-jaas-example-war/src/main/webapp/index.jsp; size: 1071 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jaas-example/pom.xml; size: 1738 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jdbc-example/README.md; size: 2784 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jdbc-example/karaf-jdbc-example-api/pom.xml; size: 1954 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jdbc-example/karaf-jdbc-example-api/src/main/java/org/apache/karaf/examples/jdbc/api/Booking.java; size: 1399 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jdbc-example/karaf-jdbc-example-api/src/main/java/org/apache/karaf/examples/jdbc/api/BookingService.java; size: 1103 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jdbc-example/karaf-jdbc-example-api/src/main/java/org/apache/karaf/examples/jdbc/api/package-info.java; size: 883 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jdbc-example/karaf-jdbc-example-command/pom.xml; size: 3320 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jdbc-example/karaf-jdbc-example-command/src/main/java/org/apache/karaf/examples/jdbc/command/AddCommand.java; size: 2315 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jdbc-example/karaf-jdbc-example-command/src/main/java/org/apache/karaf/examples/jdbc/command/GetCommand.java; size: 2200 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jdbc-example/karaf-jdbc-example-command/src/main/java/org/apache/karaf/examples/jdbc/command/ListCommand.java; size: 1878 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jdbc-example/karaf-jdbc-example-command/src/main/java/org/apache/karaf/examples/jdbc/command/RemoveCommand.java; size: 1898 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jdbc-example/karaf-jdbc-example-command/src/main/java/org/apache/karaf/examples/jdbc/completers/BookingIdCompleter.java; size: 1853 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jdbc-example/karaf-jdbc-example-features/pom.xml; size: 3952 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jdbc-example/karaf-jdbc-example-features/src/main/feature/feature.xml; size: 2886 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jdbc-example/karaf-jdbc-example-provider/pom.xml; size: 2875 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jdbc-example/karaf-jdbc-example-provider/src/main/java/org/apache/karaf/examples/jdbc/provider/BookingServiceJdbcImpl.java; size: 9174 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jdbc-example/pom.xml; size: 1747 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jms-example/README.md; size: 2857 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jms-example/karaf-jms-example-command/pom.xml; size: 3186 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jms-example/karaf-jms-example-command/src/main/java/org/apache/karaf/examples/jms/command/ConsumeCommand.java; size: 2070 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jms-example/karaf-jms-example-command/src/main/java/org/apache/karaf/examples/jms/command/SendCommand.java; size: 2062 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jms-example/karaf-jms-example-features/pom.xml; size: 3949 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jms-example/karaf-jms-example-features/src/main/feature/feature.xml; size: 2367 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jms-example/pom.xml; size: 1643 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/README.md; size: 3897 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-command/pom.xml; size: 3318 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-command/src/main/java/org/apache/karaf/examples/jpa/command/AddCommand.java; size: 1780 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-command/src/main/java/org/apache/karaf/examples/jpa/command/GetCommand.java; size: 2188 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-command/src/main/java/org/apache/karaf/examples/jpa/command/ListCommand.java; size: 1867 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-command/src/main/java/org/apache/karaf/examples/jpa/command/RemoveCommand.java; size: 1891 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-command/src/main/java/org/apache/karaf/examples/jpa/completers/BookingIdCompleter.java; size: 1842 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-features/pom.xml; size: 3950 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-features/src/main/feature/feature.xml; size: 4676 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-api/pom.xml; size: 2496 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-api/src/main/java/org/apache/karaf/examples/jpa/Booking.java; size: 1563 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-api/src/main/java/org/apache/karaf/examples/jpa/BookingService.java; size: 1134 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-blueprint/karaf-jpa-example-provider-blueprint-eclipselink/pom.xml; size: 3037 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-blueprint/karaf-jpa-example-provider-blueprint-eclipselink/src/main/java/org/apache/karaf/examples/jpa/provider/blueprint/eclipselink/BookingServiceImpl.java; size: 2941 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-blueprint/karaf-jpa-example-provider-blueprint-eclipselink/src/main/resources/META-INF/persistence.xml; size: 2073 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-blueprint/karaf-jpa-example-provider-blueprint-eclipselink/src/main/resources/OSGI-INF/blueprint/blueprint.xml; size: 1579 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-blueprint/karaf-jpa-example-provider-blueprint-hibernate/pom.xml; size: 3033 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-blueprint/karaf-jpa-example-provider-blueprint-hibernate/src/main/java/org/apache/karaf/examples/jpa/provider/blueprint/hibernate/BookingServiceImpl.java; size: 2937 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-blueprint/karaf-jpa-example-provider-blueprint-hibernate/src/main/resources/META-INF/persistence.xml; size: 1983 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-blueprint/karaf-jpa-example-provider-blueprint-hibernate/src/main/resources/OSGI-INF/blueprint/blueprint.xml; size: 1577 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-blueprint/karaf-jpa-example-provider-blueprint-openjpa/pom.xml; size: 3029 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-blueprint/karaf-jpa-example-provider-blueprint-openjpa/src/main/java/org/apache/karaf/examples/jpa/provider/blueprint/openjpa/BookingServiceImpl.java; size: 2933 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-blueprint/karaf-jpa-example-provider-blueprint-openjpa/src/main/resources/META-INF/persistence.xml; size: 1928 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-blueprint/karaf-jpa-example-provider-blueprint-openjpa/src/main/resources/OSGI-INF/blueprint/blueprint.xml; size: 1575 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-blueprint/pom.xml; size: 1804 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-ds/karaf-jpa-example-provider-ds-eclipselink/pom.xml; size: 3906 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-ds/karaf-jpa-example-provider-ds-eclipselink/src/main/java/org/apache/karaf/examples/jpa/provider/ds/eclipselink/BookingServiceImpl.java; size: 2849 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-ds/karaf-jpa-example-provider-ds-eclipselink/src/main/resources/META-INF/persistence.xml; size: 2073 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-ds/karaf-jpa-example-provider-ds-hibernate/pom.xml; size: 3902 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-ds/karaf-jpa-example-provider-ds-hibernate/src/main/java/org/apache/karaf/examples/jpa/provider/ds/hibernate/BookingServiceImpl.java; size: 2847 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-ds/karaf-jpa-example-provider-ds-hibernate/src/main/resources/META-INF/persistence.xml; size: 1983 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-ds/karaf-jpa-example-provider-ds-openjpa/pom.xml; size: 3898 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-ds/karaf-jpa-example-provider-ds-openjpa/src/main/java/org/apache/karaf/examples/jpa/provider/ds/openjpa/BookingServiceImpl.java; size: 2843 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-ds/karaf-jpa-example-provider-ds-openjpa/src/main/resources/META-INF/persistence.xml; size: 1928 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/karaf-jpa-example-provider-ds/pom.xml; size: 1786 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/karaf-jpa-example-provider/pom.xml; size: 1730 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-jpa-example/pom.xml; size: 1694 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-log-appender-example/README.md; size: 2105 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-log-appender-example/karaf-log-appender-example-core/pom.xml; size: 2509 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-log-appender-example/karaf-log-appender-example-core/src/main/java/org/apache/karaf/examples/log/ExampleLogAppender.java; size: 1395 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-log-appender-example/karaf-log-appender-example-features/pom.xml; size: 3976 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-log-appender-example/karaf-log-appender-example-features/src/main/feature/feature.xml; size: 1425 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-log-appender-example/pom.xml; size: 1675 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-maven-example/README.md; size: 3853 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-maven-example/karaf-maven-example-assembly/pom.xml; size: 3476 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-maven-example/karaf-maven-example-client/pom.xml; size: 2455 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-maven-example/karaf-maven-example-deploy/pom.xml; size: 3097 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-maven-example/karaf-maven-example-deploy/src/main/java/org/apache/karaf/examples/maven/Activator.java; size: 1213 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-maven-example/karaf-maven-example-kar/pom.xml; size: 1858 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-maven-example/karaf-maven-example-kar/src/main/feature/features-repo.xml; size: 1148 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-maven-example/karaf-maven-example-run-bundle/pom.xml; size: 3588 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-maven-example/karaf-maven-example-run-bundle/src/main/java/org/apache/karaf/examples/maven/Activator.java; size: 1213 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-maven-example/karaf-maven-example-run/pom.xml; size: 2366 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-maven-example/pom.xml; size: 2017 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/README.md; size: 2563 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-api/pom.xml; size: 1957 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-api/src/main/java/org/apache/karaf/examples/mbean/api/Booking.java; size: 1400 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-api/src/main/java/org/apache/karaf/examples/mbean/api/BookingService.java; size: 1104 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-api/src/main/java/org/apache/karaf/examples/mbean/api/package-info.java; size: 884 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-blueprint/pom.xml; size: 2007 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-blueprint/src/main/java/org/apache/karaf/examples/mbean/blueprint/BookingMBean.java; size: 1169 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-blueprint/src/main/java/org/apache/karaf/examples/mbean/blueprint/BookingMBeanImpl.java; size: 3051 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-blueprint/src/main/resources/OSGI-INF/blueprint/jmx.xml; size: 1508 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-features/pom.xml; size: 3955 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-features/src/main/feature/feature.xml; size: 2575 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-provider/pom.xml; size: 3303 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-provider/src/main/java/org/apache/karaf/examples/mbean/provider/Activator.java; size: 1433 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-provider/src/main/java/org/apache/karaf/examples/mbean/provider/BookingServiceMemoryImpl.java; size: 1688 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-scr/pom.xml; size: 2162 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-scr/src/main/java/org/apache/karaf/examples/mbean/scr/BookingMBean.java; size: 1163 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-scr/src/main/java/org/apache/karaf/examples/mbean/scr/BookingMBeanImpl.java; size: 3276 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-simple/pom.xml; size: 3518 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-simple/src/main/java/org/apache/karaf/examples/mbean/simple/Activator.java; size: 1828 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-simple/src/main/java/org/apache/karaf/examples/mbean/simple/BookingMBean.java; size: 1166 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/karaf-mbean-example-simple/src/main/java/org/apache/karaf/examples/mbean/simple/BookingMBeanImpl.java; size: 3048 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-mbean-example/pom.xml; size: 1856 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/README.md; size: 2863 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-dynamic/pom.xml; size: 5882 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/pom.xml; size: 2102 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/activemq/broker.profile/profile.cfg; size: 973 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/activemq/client.profile/profile.cfg; size: 890 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/camel.profile/profile.cfg; size: 998 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/default.profile/jetty.xml; size: 2975 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/default.profile/org.ops4j.pax.web.cfg; size: 1036 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/default.profile/profile.cfg; size: 1261 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/default.profile/version.cfg; size: 1037 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/karaf.profile/org.ops4j.pax.logging.cfg; size: 4495 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/karaf.profile/org.ops4j.pax.logging.cfg#static; size: 4495 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/karaf.profile/profile.cfg; size: 2068 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/loanbroker/bank1.profile/bank1.xml; size: 1869 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/loanbroker/bank1.profile/profile.cfg; size: 911 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/loanbroker/bank2.profile/bank2.xml; size: 1856 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/loanbroker/bank2.profile/profile.cfg; size: 911 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/loanbroker/bank3.profile/bank3.xml; size: 1858 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/loanbroker/bank3.profile/profile.cfg; size: 911 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/loanbroker/base.profile/profile.cfg; size: 931 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/loanbroker/broker.profile/loanBroker.xml; size: 3366 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-registry/src/main/resources/loanbroker/broker.profile/profile.cfg; size: 923 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/karaf-profile-example-static/pom.xml; size: 6496 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-profile-example/pom.xml; size: 1804 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-redis-example/README.md; size: 2298 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-redis-example/karaf-redis-example-api/pom.xml; size: 1957 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-redis-example/karaf-redis-example-api/src/main/java/org/apache/karaf/examples/redis/api/Booking.java; size: 1584 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-redis-example/karaf-redis-example-api/src/main/java/org/apache/karaf/examples/redis/api/BookingService.java; size: 979 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-redis-example/karaf-redis-example-api/src/main/java/org/apache/karaf/examples/redis/api/package-info.java; size: 892 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-redis-example/karaf-redis-example-command/pom.xml; size: 3315 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-redis-example/karaf-redis-example-command/src/main/java/org/apache/karaf/examples/redis/command/AddBookingCommand.java; size: 1893 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-redis-example/karaf-redis-example-command/src/main/java/org/apache/karaf/examples/redis/command/ListBookingCommand.java; size: 1876 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-redis-example/karaf-redis-example-features/pom.xml; size: 3150 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-redis-example/karaf-redis-example-features/src/main/feature/feature.xml; size: 1932 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-redis-example/karaf-redis-example-service/pom.xml; size: 3816 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-redis-example/karaf-redis-example-service/src/main/java/org/apache/karaf/examples/redis/service/BookingServiceImpl.java; size: 2189 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-redis-example/karaf-redis-example-service/src/main/java/org/apache/karaf/examples/redis/service/RedisConfig.java; size: 1080 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-redis-example/pom.xml; size: 1752 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/README.md; size: 4129 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-api/pom.xml; size: 1969 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-api/src/main/java/org/apache/karaf/examples/rest/api/Booking.java; size: 1398 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-api/src/main/java/org/apache/karaf/examples/rest/api/BookingService.java; size: 1146 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-blueprint/pom.xml; size: 2524 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-blueprint/src/main/java/org/apache/karaf/examples/rest/blueprint/BookingServiceRest.java; size: 2243 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-blueprint/src/main/resources/OSGI-INF/blueprint/rest.xml; size: 1994 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-client/karaf-rest-example-client-cxf/pom.xml; size: 3064 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-client/karaf-rest-example-client-cxf/src/main/java/org/apache/karaf/examples/rest/client/cxf/AddBookingCommand.java; size: 2548 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-client/karaf-rest-example-client-cxf/src/main/java/org/apache/karaf/examples/rest/client/cxf/ListAllBookingCommand.java; size: 2839 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-client/karaf-rest-example-client-cxf/src/main/java/org/apache/karaf/examples/rest/client/cxf/ListBookingCommand.java; size: 2174 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-client/karaf-rest-example-client-http/pom.xml; size: 3002 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-client/karaf-rest-example-client-http/src/main/java/org/apache/karaf/examples/rest/client/http/AddBookingCommand.java; size: 2978 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-client/karaf-rest-example-client-http/src/main/java/org/apache/karaf/examples/rest/client/http/ListBookingCommand.java; size: 2345 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-client/karaf-rest-example-client-jersey/pom.xml; size: 3604 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-client/karaf-rest-example-client-jersey/src/main/java/org/apache/karaf/examples/rest/client/jersey/AddBookingCommand.java; size: 2528 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-client/karaf-rest-example-client-jersey/src/main/java/org/apache/karaf/examples/rest/client/jersey/ListBookingCommand.java; size: 2256 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-client/pom.xml; size: 1725 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-features/pom.xml; size: 3952 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-features/src/main/feature/feature.xml; size: 6736 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-scr/pom.xml; size: 3537 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-scr/src/main/java/org/apache/karaf/examples/rest/scr/BookingServiceRest.java; size: 3130 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-scr/src/main/java/org/apache/karaf/examples/rest/scr/RestService.java; size: 1787 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-whiteboard/pom.xml; size: 2786 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/karaf-rest-example-whiteboard/src/main/java/org/apache/karaf/examples/rest/whiteboard/BookingServiceRest.java; size: 2397 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-rest-example/pom.xml; size: 1855 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-scheduler-example/README.md; size: 2422 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-scheduler-example/karaf-scheduler-example-features/pom.xml; size: 3967 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-scheduler-example/karaf-scheduler-example-features/src/main/feature/feature.xml; size: 1689 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-scheduler-example/karaf-scheduler-example-runnable/pom.xml; size: 1973 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-scheduler-example/karaf-scheduler-example-runnable/src/main/java/org/apache/karaf/examples/scheduler/OtherService.java; size: 1311 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-scheduler-example/karaf-scheduler-example-runnable/src/main/java/org/apache/karaf/examples/scheduler/RunnableService.java; size: 1329 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-scheduler-example/pom.xml; size: 1667 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-scr-example/README.md; size: 2326 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-scr-example/karaf-scr-example-api/pom.xml; size: 2019 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-scr-example/karaf-scr-example-api/src/main/java/org/apache/karaf/examples/scr/api/Booking.java; size: 1398 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-scr-example/karaf-scr-example-api/src/main/java/org/apache/karaf/examples/scr/api/BookingService.java; size: 1102 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-scr-example/karaf-scr-example-client/pom.xml; size: 2160 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-scr-example/karaf-scr-example-client/src/main/java/org/apache/karaf/examples/scr/client/ConsoleClient.java; size: 2473 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-scr-example/karaf-scr-example-features/pom.xml; size: 3949 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-scr-example/karaf-scr-example-features/src/main/feature/feature.xml; size: 1900 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-scr-example/karaf-scr-example-provider/pom.xml; size: 2460 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-scr-example/karaf-scr-example-provider/src/main/java/org/apache/karaf/examples/scr/provider/BookingServiceMemoryImpl.java; size: 1750 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-scr-example/pom.xml; size: 1740 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/README.md; size: 3723 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/karaf-servlet-example-annotation/pom.xml; size: 2458 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/karaf-servlet-example-annotation/src/main/java/org/apache/karaf/examples/servlet/annotation/ExampleServlet.java; size: 2217 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/karaf-servlet-example-annotation/src/main/java/org/apache/karaf/examples/servlet/annotation/MultipartExampleServlet.java; size: 2398 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/karaf-servlet-example-annotation/src/main/webapp/WEB-INF/web.xml; size: 984 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/karaf-servlet-example-blueprint/pom.xml; size: 1982 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/karaf-servlet-example-blueprint/src/main/java/org/apache/karaf/examples/servlet/blueprint/ExampleServlet.java; size: 1712 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/karaf-servlet-example-blueprint/src/main/resources/OSGI-INF/blueprint/servlet.xml; size: 1304 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/karaf-servlet-example-features/pom.xml; size: 3962 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/karaf-servlet-example-features/src/main/feature/feature.xml; size: 2760 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/karaf-servlet-example-registration/pom.xml; size: 2495 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/karaf-servlet-example-registration/src/main/java/org/apache/karaf/examples/servlet/registration/Activator.java; size: 2453 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/karaf-servlet-example-registration/src/main/java/org/apache/karaf/examples/servlet/registration/ExampleServlet.java; size: 1715 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/karaf-servlet-example-scr/pom.xml; size: 2137 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/karaf-servlet-example-scr/src/main/java/org/apache/karaf/examples/servlet/scr/ExampleServlet.java; size: 1898 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/karaf-servlet-example-upload/pom.xml; size: 2143 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/karaf-servlet-example-upload/src/main/java/org/apache/karaf/examples/servlet/upload/Component.java; size: 1731 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/karaf-servlet-example-upload/src/main/java/org/apache/karaf/examples/servlet/upload/UploadServlet.java; size: 2902 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-servlet-example/pom.xml; size: 1883 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/README.md; size: 2887 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/karaf-soap-example-api/pom.xml; size: 1954 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/karaf-soap-example-api/src/main/java/org/apache/karaf/examples/soap/api/Booking.java; size: 1399 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/karaf-soap-example-api/src/main/java/org/apache/karaf/examples/soap/api/BookingService.java; size: 1107 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/karaf-soap-example-api/src/main/java/org/apache/karaf/examples/soap/api/package-info.java; size: 891 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/karaf-soap-example-blueprint/pom.xml; size: 3077 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/karaf-soap-example-blueprint/src/main/java/org/apache/karaf/examples/soap/blueprint/BookingServiceSoap.java; size: 1029 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/karaf-soap-example-blueprint/src/main/java/org/apache/karaf/examples/soap/blueprint/BookingServiceSoapImpl.java; size: 1588 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/karaf-soap-example-blueprint/src/main/resources/OSGI-INF/blueprint/soap.xml; size: 1863 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/karaf-soap-example-client/pom.xml; size: 3123 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/karaf-soap-example-client/src/main/java/org/apache/karaf/examples/soap/client/AddCommand.java; size: 2164 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/karaf-soap-example-client/src/main/java/org/apache/karaf/examples/soap/client/CxfClient.java; size: 1573 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/karaf-soap-example-client/src/main/java/org/apache/karaf/examples/soap/client/ListCommand.java; size: 2001 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/karaf-soap-example-features/pom.xml; size: 3952 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/karaf-soap-example-features/src/main/feature/feature.xml; size: 3098 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/karaf-soap-example-scr/pom.xml; size: 3912 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/karaf-soap-example-scr/src/main/java/org/apache/karaf/examples/soap/scr/BookingServiceSoap.java; size: 1023 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/karaf-soap-example-scr/src/main/java/org/apache/karaf/examples/soap/scr/BookingServiceSoapImpl.java; size: 1632 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/karaf-soap-example-scr/src/main/java/org/apache/karaf/examples/soap/scr/SoapService.java; size: 1733 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-soap-example/pom.xml; size: 1800 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-url-namespace-handler-example/README.md; size: 1969 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-url-namespace-handler-example/karaf-url-namespace-handler-example-core/pom.xml; size: 2168 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-url-namespace-handler-example/karaf-url-namespace-handler-example-core/src/main/java/org/apache/karaf/examples/url/ExampleUrlHandler.java; size: 2191 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-url-namespace-handler-example/karaf-url-namespace-handler-example-features/pom.xml; size: 4003 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-url-namespace-handler-example/karaf-url-namespace-handler-example-features/src/main/feature/feature.xml; size: 1360 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-url-namespace-handler-example/pom.xml; size: 1711 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-war-example/README.md; size: 5883 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-war-example/karaf-war-example-features/pom.xml; size: 3949 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-war-example/karaf-war-example-features/src/main/feature/feature.xml; size: 1366 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-war-example/karaf-war-example-webapp/pom.xml; size: 1522 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-war-example/karaf-war-example-webapp/src/main/webapp/WEB-INF/web.xml; size: 1167 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-war-example/karaf-war-example-webapp/src/main/webapp/index.jsp; size: 1071 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-war-example/pom.xml; size: 1642 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-websocket-example/README.md; size: 2662 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-websocket-example/pom.xml; size: 2646 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-websocket-example/src/main/java/org/apache/karaf/examples/websocket/WebSocketExample.java; size: 3114 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/karaf-websocket-example/src/main/java/org/apache/karaf/examples/websocket/WebsocketExampleServlet.java; size: 1311 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/examples/pom.xml; size: 3156 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/README; size: 1515 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/boot/README; size: 1134 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/boot/branding-3.10.1.jar; size: 3829 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/boot/karaf-launcher-3.10.1.jar; size: 316617 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/boot/org.apache.karaf.diagnostic.boot-4.3.7.jar; size: 31265 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/boot/org.apache.karaf.jaas.boot-4.3.7.jar; size: 19665 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/boot/org.apache.karaf.main-4.3.7.jar; size: 172038 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/boot/org.apache.karaf.specs.activator-4.3.7.jar; size: 12595 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/boot/osgi.core-7.0.0.jar; size: 492531 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/endorsed/README; size: 1205 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/endorsed/org.apache.karaf.specs.java.xml-4.3.7.jar; size: 58269 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/endorsed/org.apache.karaf.specs.java.xml.ws-4.3.7.jar; size: 28006 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/endorsed/org.apache.karaf.specs.locator-4.3.7.jar; size: 10389 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/ext/README; size: 1196 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/jdk9plus/istack-commons-runtime-3.0.10.jar; size: 29931 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/jdk9plus/jakarta.xml.bind-api-2.3.3.jar; size: 115638 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/jdk9plus/javax.annotation-api-1.3.2.jar; size: 26586 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/jdk9plus/jaxb-runtime-2.3.3.jar; size: 1035660 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/jdk9plus/org.apache.servicemix.specs.activation-api-1.2.1-1.2.1_3.jar; size: 69561 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/jdk9plus/txw2-2.3.3.jar; size: 71976 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/openjfx/linux/javafx-base-18.0.2-linux.jar; size: 746036 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/openjfx/linux/javafx-controls-18.0.2-linux.jar; size: 2544043 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/openjfx/linux/javafx-fxml-18.0.2-linux.jar; size: 129493 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/openjfx/linux/javafx-graphics-18.0.2-linux.jar; size: 4782750 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/openjfx/linux/javafx-media-18.0.2-linux.jar; size: 1435001 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/openjfx/linux/javafx-swing-18.0.2-linux.jar; size: 88807 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/lib/openjfx/linux/javafx-web-18.0.2-linux.jar; size: 35700602 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/README; size: 1172 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/commons-io/commons-io/2.1/commons-io-2.1.jar; size: 163151 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/javax/activation/com.springsource.javax.activation/1.1.1/com.springsource.javax.activation-1.1.1.jar; size: 70182 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar; size: 26586 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/javax/mail/mail/1.4.7/mail-1.4.7.jar; size: 521157 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar; size: 95806 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/javax/ws/rs/javax.ws.rs-api/2.1/javax.ws.rs-api-2.1.jar; size: 127509 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/javax/xml/stream/com.springsource.javax.xml.stream/1.0.1/com.springsource.javax.xml.stream-1.0.1.jar; size: 26729 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/aries/blueprint/org.apache.aries.blueprint.api/1.0.1/org.apache.aries.blueprint.api-1.0.1.jar; size: 33638 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/aries/blueprint/org.apache.aries.blueprint.cm/1.3.2/org.apache.aries.blueprint.cm-1.3.2.jar; size: 65455 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/aries/blueprint/org.apache.aries.blueprint.core.compatibility/1.0.0/org.apache.aries.blueprint.core.compatibility-1.0.0.jar; size: 8076 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/aries/blueprint/org.apache.aries.blueprint.core/1.10.3/org.apache.aries.blueprint.core-1.10.3.jar; size: 546978 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/aries/jmx/org.apache.aries.jmx.api/1.1.5/org.apache.aries.jmx.api-1.1.5.jar; size: 31552 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/aries/jmx/org.apache.aries.jmx.blueprint.api/1.2.0/org.apache.aries.jmx.blueprint.api-1.2.0.jar; size: 17840 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/aries/jmx/org.apache.aries.jmx.blueprint.core/1.2.0/org.apache.aries.jmx.blueprint.core-1.2.0.jar; size: 55614 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/aries/jmx/org.apache.aries.jmx.core/1.1.8/org.apache.aries.jmx.core-1.1.8.jar; size: 127403 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/aries/jmx/org.apache.aries.jmx.whiteboard/1.2.0/org.apache.aries.jmx.whiteboard-1.2.0.jar; size: 21175 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/aries/jpa/jpa-features/2.7.3/jpa-features-2.7.3-features.xml; size: 1504 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/aries/org.apache.aries.util/1.1.3/org.apache.aries.util-1.1.3.jar; size: 115595 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/aries/proxy/org.apache.aries.proxy/1.1.12/org.apache.aries.proxy-1.1.12.jar; size: 97770 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/aries/spifly/org.apache.aries.spifly.dynamic.bundle/1.3.2/org.apache.aries.spifly.dynamic.bundle-1.3.2.jar; size: 151892 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/felix/org.apache.felix.cm.json/1.0.6/org.apache.felix.cm.json-1.0.6.jar; size: 47891 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/felix/org.apache.felix.configadmin.plugin.interpolation/1.2.2/org.apache.felix.configadmin.plugin.interpolation-1.2.2.jar; size: 21919 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/felix/org.apache.felix.configadmin/1.9.24/org.apache.felix.configadmin-1.9.24.jar; size: 161882 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/felix/org.apache.felix.configurator/1.0.14/org.apache.felix.configurator-1.0.14.jar; size: 66268 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/felix/org.apache.felix.converter/1.0.14/org.apache.felix.converter-1.0.14.jar; size: 116605 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/felix/org.apache.felix.coordinator/1.0.2/org.apache.felix.coordinator-1.0.2.jar; size: 44411 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/felix/org.apache.felix.fileinstall/3.7.4/org.apache.felix.fileinstall-3.7.4.jar; size: 139339 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/felix/org.apache.felix.framework/6.0.5/org.apache.felix.framework-6.0.5.jar; size: 728081 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/felix/org.apache.felix.inventory/1.0.6/org.apache.felix.inventory-1.0.6.jar; size: 51410 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/felix/org.apache.felix.metatype/1.2.4/org.apache.felix.metatype-1.2.4.jar; size: 77017 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/felix/org.apache.felix.scr/2.1.30/org.apache.felix.scr-2.1.30.jar; size: 408361 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/felix/org.apache.felix.webconsole.plugins.ds/2.1.0/org.apache.felix.webconsole.plugins.ds-2.1.0.jar; size: 48463 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/felix/org.apache.felix.webconsole.plugins.event/1.1.8/org.apache.felix.webconsole.plugins.event-1.1.8.jar; size: 51543 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar; size: 16030 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/bundle/org.apache.karaf.bundle.blueprintstate/4.3.7/org.apache.karaf.bundle.blueprintstate-4.3.7.jar; size: 12274 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/bundle/org.apache.karaf.bundle.core/4.3.7/org.apache.karaf.bundle.core-4.3.7.jar; size: 155303 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/config/org.apache.karaf.config.core/4.3.7/org.apache.karaf.config.core-4.3.7.jar; size: 154657 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/deployer/org.apache.karaf.deployer.blueprint/4.3.7/org.apache.karaf.deployer.blueprint-4.3.7.jar; size: 44194 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/deployer/org.apache.karaf.deployer.features/4.3.7/org.apache.karaf.deployer.features-4.3.7.jar; size: 54817 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/deployer/org.apache.karaf.deployer.kar/4.3.7/org.apache.karaf.deployer.kar-4.3.7.jar; size: 24217 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/deployer/org.apache.karaf.deployer.wrap/4.3.7/org.apache.karaf.deployer.wrap-4.3.7.jar; size: 34837 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/diagnostic/org.apache.karaf.diagnostic.boot/4.3.7/org.apache.karaf.diagnostic.boot-4.3.7.jar; size: 31265 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/diagnostic/org.apache.karaf.diagnostic.core/4.3.7/org.apache.karaf.diagnostic.core-4.3.7.jar; size: 43837 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/features/enterprise/4.3.7/enterprise-4.3.7-features.xml; size: 17144 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/features/framework/4.3.7/framework-4.3.7-features.xml; size: 5086 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/features/org.apache.karaf.features.command/4.3.7/org.apache.karaf.features.command-4.3.7.jar; size: 74992 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/features/org.apache.karaf.features.core/4.3.7/org.apache.karaf.features.core-4.3.7.jar; size: 2758436 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/features/org.apache.karaf.features.extension/4.3.7/org.apache.karaf.features.extension-4.3.7.jar; size: 17497 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/features/specs/4.3.7/specs-4.3.7-features.xml; size: 8983 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/features/spring/4.3.7/spring-4.3.7-features.xml; size: 8604 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/features/standard/4.3.7/standard-4.3.7-features.xml; size: 77148 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/http/org.apache.karaf.http.core/4.3.7/org.apache.karaf.http.core-4.3.7.jar; size: 1409933 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/instance/org.apache.karaf.instance.core/4.3.7/org.apache.karaf.instance.core-4.3.7.jar; size: 266043 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/jaas/org.apache.karaf.jaas.boot/4.3.7/org.apache.karaf.jaas.boot-4.3.7.jar; size: 19665 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/jaas/org.apache.karaf.jaas.command/4.3.7/org.apache.karaf.jaas.command-4.3.7.jar; size: 63788 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/jaas/org.apache.karaf.jaas.config/4.3.7/org.apache.karaf.jaas.config-4.3.7.jar; size: 41793 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/jaas/org.apache.karaf.jaas.modules/4.3.7/org.apache.karaf.jaas.modules-4.3.7.jar; size: 1544248 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/kar/org.apache.karaf.kar.core/4.3.7/org.apache.karaf.kar.core-4.3.7.jar; size: 106751 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/log/org.apache.karaf.log.core/4.3.7/org.apache.karaf.log.core-4.3.7.jar; size: 99541 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/management/org.apache.karaf.management.server/4.3.7/org.apache.karaf.management.server-4.3.7.jar; size: 94571 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/org.apache.karaf.client/4.3.7/org.apache.karaf.client-4.3.7.jar; size: 118491 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/org.apache.karaf.event/4.3.7/org.apache.karaf.event-4.3.7.jar; size: 28923 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/package/org.apache.karaf.package.core/4.3.7/org.apache.karaf.package.core-4.3.7.jar; size: 57770 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/scr/org.apache.karaf.scr.management/4.3.7/org.apache.karaf.scr.management-4.3.7.jar; size: 28447 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/scr/org.apache.karaf.scr.state/4.3.7/org.apache.karaf.scr.state-4.3.7.jar; size: 11516 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/service/org.apache.karaf.service.core/4.3.7/org.apache.karaf.service.core-4.3.7.jar; size: 34423 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/services/org.apache.karaf.services.eventadmin/4.3.7/org.apache.karaf.services.eventadmin-4.3.7.jar; size: 99608 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/shell/org.apache.karaf.shell.commands/4.3.7/org.apache.karaf.shell.commands-4.3.7.jar; size: 77970 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/shell/org.apache.karaf.shell.console/4.3.7/org.apache.karaf.shell.console-4.3.7.jar; size: 211146 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/shell/org.apache.karaf.shell.core/4.3.7/org.apache.karaf.shell.core-4.3.7.jar; size: 684748 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/shell/org.apache.karaf.shell.ssh/4.3.7/org.apache.karaf.shell.ssh-4.3.7.jar; size: 103986 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/shell/org.apache.karaf.shell.table/4.3.7/org.apache.karaf.shell.table-4.3.7.jar; size: 17571 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/system/org.apache.karaf.system.core/4.3.7/org.apache.karaf.system.core-4.3.7.jar; size: 87646 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/webconsole/org.apache.karaf.webconsole.http/4.3.7/org.apache.karaf.webconsole.http-4.3.7.jar; size: 45201 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/karaf/wrapper/org.apache.karaf.wrapper.core/4.3.7/org.apache.karaf.wrapper.core-4.3.7.jar; size: 1215973 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/openjpa/openjpa-features/3.2.2/openjpa-features-3.2.2-features.xml; size: 1401 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/servicemix/bundles/org.apache.servicemix.bundles.javax-websocket-api/1.1_1/org.apache.servicemix.bundles.javax-websocket-api-1.1_1.jar; size: 114187 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/servicemix/bundles/org.apache.servicemix.bundles.jaxb-impl/2.1.6_1/org.apache.servicemix.bundles.jaxb-impl-2.1.6_1.jar; size: 884596 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/servicemix/bundles/org.apache.servicemix.bundles.xmlbeans/2.4.0_5/org.apache.servicemix.bundles.xmlbeans-2.4.0_5.jar; size: 2723819 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/servicemix/specs/org.apache.servicemix.specs.activation-api-1.1/2.9.0/org.apache.servicemix.specs.activation-api-1.1-2.9.0.jar; size: 65653 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/servicemix/specs/org.apache.servicemix.specs.jaxb-api-2.1/1.2.0/org.apache.servicemix.specs.jaxb-api-2.1-1.2.0.jar; size: 87927 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/servicemix/specs/org.apache.servicemix.specs.jaxb-api-2.2/2.9.0/org.apache.servicemix.specs.jaxb-api-2.2-2.9.0.jar; size: 121045 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/servicemix/specs/org.apache.servicemix.specs.jaxws-api-2.2/2.9.0/org.apache.servicemix.specs.jaxws-api-2.2-2.9.0.jar; size: 73842 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/servicemix/specs/org.apache.servicemix.specs.saaj-api-1.3/2.9.0/org.apache.servicemix.specs.saaj-api-1.3-2.9.0.jar; size: 49355 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/servicemix/specs/org.apache.servicemix.specs.stax-api-1.0/2.9.0/org.apache.servicemix.specs.stax-api-1.0-2.9.0.jar; size: 46944 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/sling/org.apache.sling.commons.johnzon/1.2.14/org.apache.sling.commons.johnzon-1.2.14.jar; size: 167945 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/sshd/sshd-osgi/2.8.0/sshd-osgi-2.8.0.jar; size: 1795978 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/sshd/sshd-scp/2.8.0/sshd-scp-2.8.0.jar; size: 123080 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/sshd/sshd-sftp/2.8.0/sshd-sftp-2.8.0.jar; size: 362361 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/xbean/xbean-bundleutils/4.21/xbean-bundleutils-4.21.jar; size: 74104 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/xbean/xbean-finder/4.21/xbean-finder-4.21.jar; size: 167096 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/apache/xbean/xbean-reflect/4.21/xbean-reflect-4.21.jar; size: 164340 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/bouncycastle/bcpkix-jdk15on/1.69/bcpkix-jdk15on-1.69.jar; size: 909020 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/bouncycastle/bcprov-jdk15on/1.69/bcprov-jdk15on-1.69.jar; size: 5743920 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/bouncycastle/bcutil-jdk15on/1.69/bcutil-jdk15on-1.69.jar; size: 359496 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/api-bundle/3.10.1/api-bundle-3.10.1.jar; size: 839170 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/app-impl/3.10.1/app-impl-3.10.1.jar; size: 505697 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/application-impl/3.10.1/application-impl-3.10.1.jar; size: 22111 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/cmdline/3.10.1/cmdline-3.10.1.jar; size: 2657 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/command-executor-impl/3.10.1/command-executor-impl-3.10.1.jar; size: 82718 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/core-task-impl/3.10.1/core-task-impl-3.10.1.jar; size: 1913275 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/custom-graphics-internal/3.10.1/custom-graphics-internal-3.10.1.jar; size: 530623 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/cycl-impl/3.10.1/cycl-impl-3.10.1.jar; size: 1382265 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/datasource-impl/3.10.1/datasource-impl-3.10.1.jar; size: 9603 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/ding-presentation-impl/3.10.1/ding-presentation-impl-3.10.1.jar; size: 1386835 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/distribution/application-metadata-impl/3.10.1/application-metadata-impl-3.10.1.jar; size: 2952 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/distribution/cmdline-impl/3.10.1/cmdline-impl-3.10.1.jar; size: 4073 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/distribution/diagnostics-impl/3.10.1/diagnostics-impl-3.10.1.jar; size: 35844 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/distribution/features/3.10.1/features-3.10.1-features.xml; size: 7422 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/distribution/splash-updater-impl/3.10.1/splash-updater-impl-3.10.1.jar; size: 6373 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/distribution/third-party/3.10.1/third-party-3.10.1.jar; size: 20502765 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/edge-bundler-impl/3.10.1/edge-bundler-impl-3.10.1.jar; size: 15943 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/editor-impl/3.10.1/editor-impl-3.10.1.jar; size: 78764 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/equations-functions-impl/3.10.1/equations-functions-impl-3.10.1.jar; size: 18511 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/equations-impl/3.10.1/equations-impl-3.10.1.jar; size: 139427 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/event-impl/3.10.1/event-impl-3.10.1.jar; size: 13441 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/filter2-impl/3.10.1/filter2-impl-3.10.1.jar; size: 291951 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/graphml-impl/3.10.1/graphml-impl-3.10.1.jar; size: 25093 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/group-impl/3.10.1/group-impl-3.10.1.jar; size: 133041 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/gui-cmdline-parser-impl/3.10.1/gui-cmdline-parser-impl-3.10.1.jar; size: 2982607 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/io-impl/3.10.1/io-impl-3.10.1.jar; size: 663696 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/jobs-impl/3.10.1/jobs-impl-3.10.1.jar; size: 34959 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/layout-cytoscape-impl/3.10.1/layout-cytoscape-impl-3.10.1.jar; size: 263897 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/layout-impl/3.10.1/layout-impl-3.10.1.jar; size: 16777 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/layout-prefuse-impl/3.10.1/layout-prefuse-impl-3.10.1.jar; size: 35507 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/linkout-impl/3.10.1/linkout-impl-3.10.1.jar; size: 24316 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/manual-layout-impl/3.10.1/manual-layout-impl-3.10.1.jar; size: 89103 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/model-impl/3.10.1/model-impl-3.10.1.jar; size: 16939446 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/presentation-impl/3.10.1/presentation-impl-3.10.1.jar; size: 10323 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/property-impl/3.10.1/property-impl-3.10.1.jar; size: 13621 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/search2-impl/3.10.1/search2-impl-3.10.1.jar; size: 5866107 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/session-impl/3.10.1/session-impl-3.10.1.jar; size: 23871 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/swing-application-impl/3.10.1/swing-application-impl-3.10.1.jar; size: 4639758 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/swing-util-impl/3.10.1/swing-util-impl-3.10.1.jar; size: 140086 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/table-browser-impl/3.10.1/table-browser-impl-3.10.1.jar; size: 263680 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/table-import-impl/3.10.1/table-import-impl-3.10.1.jar; size: 16062225 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/table-presentation-impl/3.10.1/table-presentation-impl-3.10.1.jar; size: 1357271 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/util-impl/3.10.1/util-impl-3.10.1.jar; size: 46342 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/viewmodel-impl/3.10.1/viewmodel-impl-3.10.1.jar; size: 886801 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/vizmap-gui-core-impl/3.10.1/vizmap-gui-core-impl-3.10.1.jar; size: 6609 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/vizmap-gui-impl/3.10.1/vizmap-gui-impl-3.10.1.jar; size: 568401 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/vizmap-impl/3.10.1/vizmap-impl-3.10.1.jar; size: 72145 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/webservice-impl/3.10.1/webservice-impl-3.10.1.jar; size: 28830 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/work-impl/3.10.1/work-impl-3.10.1.jar; size: 31684 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/cytoscape/work-swing-impl/3.10.1/work-swing-impl-3.10.1.jar; size: 157448 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-client/9.4.46.v20220331/jetty-client-9.4.46.v20220331.jar; size: 326701 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-continuation/9.4.46.v20220331/jetty-continuation-9.4.46.v20220331.jar; size: 25381 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-deploy/9.4.46.v20220331/jetty-deploy-9.4.46.v20220331.jar; size: 64848 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-http/9.4.46.v20220331/jetty-http-9.4.46.v20220331.jar; size: 224851 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-io/9.4.46.v20220331/jetty-io-9.4.46.v20220331.jar; size: 183541 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-jaas/9.4.46.v20220331/jetty-jaas-9.4.46.v20220331.jar; size: 48490 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-jmx/9.4.46.v20220331/jetty-jmx-9.4.46.v20220331.jar; size: 42917 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-jndi/9.4.46.v20220331/jetty-jndi-9.4.46.v20220331.jar; size: 47913 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-plus/9.4.46.v20220331/jetty-plus-9.4.46.v20220331.jar; size: 66778 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-proxy/9.4.46.v20220331/jetty-proxy-9.4.46.v20220331.jar; size: 97540 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-rewrite/9.4.46.v20220331/jetty-rewrite-9.4.46.v20220331.jar; size: 44981 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-security/9.4.46.v20220331/jetty-security-9.4.46.v20220331.jar; size: 119111 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-server/9.4.46.v20220331/jetty-server-9.4.46.v20220331.jar; size: 733174 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-servlet/9.4.46.v20220331/jetty-servlet-9.4.46.v20220331.jar; size: 146785 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-servlets/9.4.46.v20220331/jetty-servlets-9.4.46.v20220331.jar; size: 107784 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-util-ajax/9.4.46.v20220331/jetty-util-ajax-9.4.46.v20220331.jar; size: 66940 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-util/9.4.46.v20220331/jetty-util-9.4.46.v20220331.jar; size: 585886 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-webapp/9.4.46.v20220331/jetty-webapp-9.4.46.v20220331.jar; size: 140595 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/jetty-xml/9.4.46.v20220331/jetty-xml-9.4.46.v20220331.jar; size: 68569 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/websocket/javax-websocket-client-impl/9.4.46.v20220331/javax-websocket-client-impl-9.4.46.v20220331.jar; size: 168056 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/websocket/javax-websocket-server-impl/9.4.46.v20220331/javax-websocket-server-impl-9.4.46.v20220331.jar; size: 47861 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/websocket/websocket-api/9.4.46.v20220331/websocket-api-9.4.46.v20220331.jar; size: 53439 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/websocket/websocket-client/9.4.46.v20220331/websocket-client-9.4.46.v20220331.jar; size: 46554 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/websocket/websocket-common/9.4.46.v20220331/websocket-common-9.4.46.v20220331.jar; size: 217628 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/websocket/websocket-server/9.4.46.v20220331/websocket-server-9.4.46.v20220331.jar; size: 45658 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/jetty/websocket/websocket-servlet/9.4.46.v20220331/websocket-servlet-9.4.46.v20220331.jar; size: 30623 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/eclipse/platform/org.eclipse.osgi/3.17.200/org.eclipse.osgi-3.17.200.jar; size: 1528289 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/hibernate/validator/hibernate-validator-osgi-karaf-features/7.0.2.Final/hibernate-validator-osgi-karaf-features-7.0.2.Final-features.xml; size: 1983 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/jline/jline/3.21.0/jline-3.21.0.jar; size: 994664 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ops4j/pax/cdi/pax-cdi-features/1.1.4/pax-cdi-features-1.1.4-features.xml; size: 8179 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ops4j/pax/jdbc/pax-jdbc-features/1.5.3/pax-jdbc-features-1.5.3-features.xml; size: 9940 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ops4j/pax/jms/pax-jms-features/1.1.0/pax-jms-features-1.1.0-features.xml; size: 5552 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ops4j/pax/logging/pax-logging-api/2.0.16/pax-logging-api-2.0.16.jar; size: 769370 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ops4j/pax/logging/pax-logging-log4j2/2.0.16/pax-logging-log4j2-2.0.16.jar; size: 2070581 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ops4j/pax/logging/pax-logging-logback/2.0.16/pax-logging-logback-2.0.16.jar; size: 764412 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ops4j/pax/transx/pax-transx-features/0.5.0/pax-transx-features-0.5.0-features.xml; size: 4006 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ops4j/pax/transx/pax-transx-features/0.5.2/pax-transx-features-0.5.2-features.xml; size: 4006 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ops4j/pax/url/pax-url-aether/2.6.10/pax-url-aether-2.6.10.jar; size: 3522114 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ops4j/pax/url/pax-url-wrap/2.6.10/pax-url-wrap-2.6.10-uber.jar; size: 2339015 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ops4j/pax/web/pax-web-api/7.3.25/pax-web-api-7.3.25.jar; size: 51445 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ops4j/pax/web/pax-web-features/7.3.25/pax-web-features-7.3.25-features.xml; size: 19467 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ops4j/pax/web/pax-web-features/7.3.25/pax-web-features-7.3.25-jettyconfig.xml; size: 4437 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ops4j/pax/web/pax-web-jetty/7.3.25/pax-web-jetty-7.3.25.jar; size: 779640 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ops4j/pax/web/pax-web-runtime/7.3.25/pax-web-runtime-7.3.25.jar; size: 303716 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ops4j/pax/web/pax-web-spi/7.3.25/pax-web-spi-7.3.25.jar; size: 364704 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/osgi/org.osgi.util.function/1.2.0/org.osgi.util.function-1.2.0.jar; size: 23641 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/osgi/org.osgi.util.promise/1.2.0/org.osgi.util.promise-1.2.0.jar; size: 83400 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ow2/asm/asm-analysis/9.2/asm-analysis-9.2.jar; size: 34257 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ow2/asm/asm-analysis/9.3/asm-analysis-9.3.jar; size: 34276 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ow2/asm/asm-commons/9.2/asm-commons-9.2.jar; size: 72642 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ow2/asm/asm-commons/9.3/asm-commons-9.3.jar; size: 72716 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ow2/asm/asm-tree/9.2/asm-tree-9.2.jar; size: 52660 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ow2/asm/asm-tree/9.3/asm-tree-9.3.jar; size: 52669 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ow2/asm/asm-util/9.2/asm-util-9.2.jar; size: 84854 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ow2/asm/asm-util/9.3/asm-util-9.3.jar; size: 85682 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ow2/asm/asm/9.2/asm-9.2.jar; size: 122004 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/framework/system/org/ow2/asm/asm/9.3/asm-9.3.jar; size: 122176 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/gen_vmoptions.sh; size: 1529 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/sampleData/BINDhuman.sif; size: 965836 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/sampleData/BINDyeast.sif; size: 1491425 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/sampleData/galExpData.csv; size: 415864 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/sampleData/galFiltered.cys; size: 95623 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/sampleData/galFiltered.sif; size: 6822 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/sampleData/importNetworkFromFile.csv; size: 16206 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/sampleData/sampleStyles.xml; size: 168670 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/sampleData/sessions/Affinity Purification.cys; size: 1123608 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/sampleData/sessions/Import & Save.cys; size: 901428 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/sampleData/sessions/Ivacaftor Coauthor.cys; size: 2068384 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/sampleData/sessions/Styles Demo.cys; size: 4759999 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/sampleData/sessions/TCGA Colorectal Cancer.cys; size: 2374304 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/sampleData/sessions/Yeast Gene Interactions.cys; size: 1160476 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/sampleData/sessions/Yeast Perturbation.cys; size: 95623 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/Cytoscape; size: 20161 bytes; exists: false
+       File options set to: [fileTime: Tue Aug 22 01:15:56 CEST 2023, mode: 755, overwriteMode: If newer otherwise ask, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/inst_jre.cfg; size: 35 bytes; exists: false
+       File options set to: [fileTime: Wed Jan 17 08:04:30 CET 2024, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/i4jruntime.jar; size: 2110284 bytes; exists: false
+       File options set to: [fileTime: Wed Jan 17 08:04:30 CET 2024, mode: 644, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/MessagesDefault; size: 34826 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/i4jparams.conf; size: 430418 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/stats.properties; size: 7147 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/i4jempty.ttf; size: 1004 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/user.jar; size: 11820 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/launcher2bfa42ba.jar; size: 768 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/launcher9f9f67a4.jar; size: 841 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/launcher0.jar; size: 723 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/user/flatlaf.jar; size: 758100 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/i4j_extf_5_1yh2kyd_1xn12x.ico; size: 82726 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/i4j_extf_3_1yh2kyd_1ozwvxf.png; size: 35698 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/i4j_extf_2_1yh2kyd_1y1kob4.png; size: 21246 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/i4j_extf_3_1yh2kyd_1ozwvxf@2x.png; size: 47940 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/i4j_extf_7_1yh2kyd_18gg8kx_dark.png; size: 8891 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/libi4jinst2.dylib; size: 67472 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/i4j_extf_7_1yh2kyd_18gg8kx.png; size: 9202 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/i4j_extf_7_1yh2kyd_18gg8kx@2x_dark.png; size: 15837 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/i4j_extf_1_1yh2kyd_zrfixt@2x.png; size: 80447 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/i4j_extf_0_1yh2kyd.utf8; size: 34826 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/i4j_extf_1_1yh2kyd_zrfixt.png; size: 21739 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/libi4jinst.dylib; size: 184384 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/i4j_extf_2_1yh2kyd_1y1kob4@2x.png; size: 87966 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/i4j_extf_7_1yh2kyd_18gg8kx@2x.png; size: 15419 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/i4j_extf_4_1yh2kyd_7k4rri.png; size: 18867 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/i4j_extf_6_1yh2kyd_1nfx65k.png; size: 18927 bytes; exists: false
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/i4j_extf_4_1yh2kyd_7k4rri@2x.png; size: 46371 bytes; exists: false
+       Execute action successful after 1139 ms
+[INFO] com.install4j.runtime.beans.actions.text.WriteTextFileAction [ID 449]: Execute action
+       Property encoding: 
+       Property file: /home/jmueller/Cytoscape_v3.10.1/Cytoscape.installoptions
+       Property text: shareStatistics=false
+shareStatisticsDate=20230821 161555
+
+       Property append: false
+       Property escaped: true
+       Property logText: true
+       Property rollbackSupported: true
+       Execute action successful after 0 ms
+[INFO] com.install4j.runtime.beans.actions.misc.AddVmOptionsAction [ID 398]: Execute action
+       Property launcherId: 3
+       Property macosVmOptionsType: Next to the application bundle
+       Property vmOptions: [-Xms2048M, -Xmx14915M, -Xss5M]
+       Property rollbackSupported: true
+       Execute action successful after 0 ms
+[INFO] com.install4j.runtime.beans.actions.desktop.CreateProgramGroupAction [ID 12]: Execute action
+       Property categories: Application
+       Property linkDirectory: 
+       Property programGroupEntryConfigs: []
+       Property programGroupName: Cytoscape_3.10.1
+       Property uninstallerMenuName: Cytoscape Uninstaller
+       Property addDefaultLauncherLinks: true
+       Property addUninstaller: true
+       Property allUsers: true
+       Property failForSymlinksNotCreated: false
+       Property rollbackSupported: true
+       Property unixMenuEntries: true
+       Property unixSymlinks: true
+       Variable changed: sys.programGroupName=Cytoscape[class java.lang.String]
+       Variable changed: sys.symlinkDir=/usr/local/bin[class java.lang.String]
+       Install file: /home/jmueller/Cytoscape_v3.10.1/.install4j/install4j_1vdhqm2-Cytoscape.desktop; size: 278 bytes; exists: false
+       File options set to: [fileTime: Wed Jan 17 08:04:30 CET 2024, mode: 755, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+[ERROR] com.install4j.runtime.beans.actions.desktop.CreateProgramGroupAction [ID 12]: could not create symbolic link: /usr/local/bin/Cytoscape
+[INFO] com.install4j.runtime.beans.actions.desktop.CreateProgramGroupAction [ID 12]: Execute action successful after 512 ms
+[INFO] com.install4j.runtime.beans.actions.desktop.RegisterAddRemoveAction [ID 13]: Execute action
+       Property icon: null
+       Property iconSource: Installer icon
+       Property itemName: Cytoscape 3.10.1
+       Property persistentProperties: {}
+       Property rollbackSupported: true
+       Execute action successful after 0 ms
+[INFO] com.install4j.runtime.beans.actions.desktop.CreateFileAssociationAction [ID 14]: Execute action
+       Property description: Open Cytoscape when double-clicking a Cytoscape Session File
+       Property extension: cys
+       Property launcherId: 3
+       Property persistentProperties: {}
+       Property unixIconFile: null
+       Property unixMimeType: 
+       Property winAdditionalParameters: null
+       Property windowsIconFile: i4j_extf_5_1yh2kyd_1xn12x.ico
+       Property restartFinder: false
+       Property rollbackSupported: true
+       Property selected: true
+       Property unix: false
+       Property windows: true
+       Nothing to do
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.actions.desktop.CreateDesktopLinkAction [ID 632]: Execute action
+       Property additionalDesktopFileEntries: 
+       Property arguments: 
+       Property description: 
+       Property file: Cytoscape
+       Property name: Cytoscape
+       Property startIn: null
+       Property unixIconFile: i4j_extf_6_1yh2kyd_1nfx65k.png
+       Property winIconFile: i4j_extf_5_1yh2kyd_1xn12x.ico
+       Property allUsers: true
+       Property macSingleBundleTarget: true
+       Property rollbackSupported: true
+       Property runAsAdministrator: false
+       Install file: /home/jmueller/Desktop/Cytoscape.desktop; size: 272 bytes; exists: false
+       File options set to: [fileTime: Wed Jan 17 08:04:30 CET 2024, mode: 755, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Execute action successful after 6 ms
+[INFO] com.install4j.runtime.beans.actions.registry.SetRegistryValueAction [ID 730]: Execute action
+       Property keyName: SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers
+       Property registryRoot: HKEY_CURRENT_USER
+       Property value: ~ DPIUNAWARE
+       Property valueName: /home/jmueller/Cytoscape_v3.10.1\Cytoscape.exe
+       Property createKey: true
+       Property rollbackSupported: true
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.screens.InstallationScreen [ID 10]: Rollback barrier reached
+       command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.FinishedScreen [ID 15]: Show screen
+[INFO] com.install4j.runtime.beans.screens.FinishedScreen [ID 15]: command: finish
+       cleaning up
+       Finished at 2024-01-17 08:04:31

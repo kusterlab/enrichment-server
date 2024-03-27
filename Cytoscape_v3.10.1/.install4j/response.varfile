@@ -1,0 +1,9 @@
+# install4j response file for Cytoscape 3.10.1
+ShareStatistics$Boolean=false
+createDesktopLinkAction$Boolean=true
+sys.adminRights$Boolean=false
+sys.component.235$Boolean=true
+sys.fileAssociation.extensions$StringArray=
+sys.fileAssociation.launchers$StringArray=
+sys.installationDir=/home/jmueller/Cytoscape_v3.10.1
+sys.languageId=en

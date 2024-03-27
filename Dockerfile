@@ -15,7 +15,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
 RUN apt-get install -y curl libcurl4-openssl-dev libssl-dev libomp5 libopenblas-dev libfontconfig1-dev \
-    libxml2-dev libharfbuzz-dev libfribidi-dev libtiff5-dev libssl-dev python3-poetry git r-base #Will install R=4.3.2
+    libxml2-dev libharfbuzz-dev libfribidi-dev libtiff5-dev libssl-dev python3-poetry openjdk-17-jre xvfb git r-base #Will install R=4.3.2
 #Make sure python3.11 is installed, the gitlab pipeline would sometimes default to python3.12
 RUN apt-get install -y python3.11
 
@@ -35,7 +35,8 @@ COPY flask_server /app/flask_server
 COPY db /app/db
 COPY fixtures /app/fixtures
 COPY CPLEX /app/CPLEX
-COPY Cytoscape_v3.10.1 /app/Cytoscape
+COPY Cytoscape_v3.10.1 /app/Cytoscape_v3.10.1
+COPY CytoscapeConfiguration /root/CytoscapeConfiguration
 
 #Install R-related stuff
 RUN Rscript -e "install.packages('packrat')"
