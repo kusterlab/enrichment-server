@@ -1,32 +1,31 @@
-
-#TODO: Untested code!
-
 args <- commandArgs(trailingOnly = TRUE)
 sites_path <- args[1]
 targets_path <- args[2]
 output_path <- args[3]
 
-pkn_path <- '../db/phonemes_PKN_KSN.csv'
-
-
+pkn_path <- '../db/phonemesPKN.csv'
+# pkn_path <- '../db/phonemes_PKN_KSN.csv'
 
 
 carnival_options <- PHONEMeS::default_carnival_options(solver = "cplex")
-carnival_options$solverPath <- "/opt/ibm/ILOG/CPLEX_Studio201/cplex/bin/x86-64_linux/cplex"
 
-phonemes_result <- PHONEMeS::run_phonemes(inputObj = read.csv(file = targets_path),
-                                  measObj = read.csv(file = sites_path),
-                                  n_steps_pruning = 3,
-                                  netObj = read.csv(file = pkn_path),
-                                  carnival_options = carnival_options)
+carnival_options$solverPath <- '../CPLEX/cplex'
+
+targets_df <- read.csv(targets_path, header = FALSE)
+targets_vector <- setNames(targets_df[[2]], targets_df[[1]])
+
+sites_df <- read.csv(sites_path)
+sites_vector <- setNames(sites_df[[2]], sites_df[[1]])
 
 
-#TODO: What happens if I just skip this? Does this just attach the stuff that I don't want?
-#phonemes_result_pps <- PHONEMeS::reattach_psites(phonemes_result)
+phonemes_result <- PHONEMeS::run_phonemes(
+  inputObj = targets_vector,
+  measObj = sites_vector,
+  n_steps_pruning = 2,
+  netObj = read.csv(file = pkn_path),
+  carnival_options = carnival_options)
 
-#TODO: Does it have to be the weighted SIF? Can I use an unweighted one instead, I don't need the weights?
-readr::write_csv(phonemes_result_pps$res$weightedSIF, output_path)
 
-#TODO: What does this do? How is it different from leaving out the reattach_psites? Could I just use it?
-phonemes_result_protein <- get_protein_network(phonemes_result)
+phonemes_result_protein <- PHONEMeS::get_protein_network(phonemes_result)
 
+readr::write_csv(phonemes_result_protein$weightedSIF, output_path)

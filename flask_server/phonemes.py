@@ -20,7 +20,7 @@ def preprocess_phonemes(filepath: Path) -> Path:
     #TODO: Iterate over experiments, perform PHONEMeS for each separately - create an input file with two experiments
     experiment_columns = [col for col in sites_df.columns if col != idcolumn]
 
-    phonemes_pkn_ksn = pd.read_csv(PHONEMES_PKN_KSN, index_col=0)
+    phonemes_pkn_ksn = pd.read_csv(PHONEMES_PKN_KSN)
     all_pkn_ksn_nodes = set(np.concatenate(
         [phonemes_pkn_ksn['source'].values, phonemes_pkn_ksn['target'].values]))
 
@@ -31,13 +31,12 @@ def preprocess_phonemes(filepath: Path) -> Path:
         pd.Series(data=-1, index=input_json['targets']['down'])
     ])
 
-
     #TODO: Here you should iterate over experiments and create a file for each one
     #Don't forget to drop NAs if a site appears in one experiment but not in another
     Path.mkdir(output_dir, parents=True, exist_ok=True)
     output_prefix = output_dir / f'{filepath.stem}'
-    sites_df.to_csv(output_prefix + '_sites.csv', index=False)
-    target_series.to_csv(output_prefix + '_targets.csv', index=True)
+    sites_df.to_csv(str(output_prefix) + '_sites.csv', index=False)
+    target_series.to_csv(str(output_prefix) + '_targets.csv', index=True, header=False)
 
     return output_prefix
 
@@ -47,8 +46,8 @@ def run_phonemes(file_prefix: Path) -> Path:
     output_path = output_dir / f'phonemes_out.sif'
     subprocess.run(["Rscript",
                     "run_phonemes.R",
-                    file_prefix + '_sites.csv',
-                    file_prefix + '_targets.csv',
+                    str(file_prefix) + '_sites.csv',
+                    str(file_prefix) + '_targets.csv',
                     output_path
                     ])
     return output_path
