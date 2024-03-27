@@ -104,7 +104,8 @@ def create_pathway_skeleton(filepath: Path) -> Path:
                          'geneNames': [nodes_dict[node['node']]],
                          'type': 'gene_protein',
                          'x': node['x'],
-                         'y': node['y']} for node in cx_unnested['cartesianLayout']],
+                         # Trial and error showed we need to downscale the y-axis a bit
+                         'y': node['y']*0.75} for node in cx_unnested['cartesianLayout']],
                      'links': [{
                          'id': f"relation-{relation['@id']}",
                          'sourceId': relation['s'],
