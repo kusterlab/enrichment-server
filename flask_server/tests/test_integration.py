@@ -1,8 +1,7 @@
 from pathlib import Path
 import json
 import pytest
-from enrichment_server import app as application
-
+from enrichment_server import app as application, VERSION
 
 @pytest.fixture()
 def app():
@@ -41,7 +40,7 @@ class TestClass:
         response = client.get('/')
         # You can do either of the following
         assert response.status == '200 OK', response.status
-        assert response.json == {'status': 200}, response.json
+        assert response.json == {'status': 200, 'version': VERSION}, response.json
 
     def test_ssgsea_ssc_flanking(self, client):
         self.input_json = Path('../fixtures/ptm-sea/input/input_flanking.json')

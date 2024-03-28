@@ -59,8 +59,6 @@ def run_phonemes(file_prefix: Path) -> Path:
 def run_cytoscape(filepath: Path) -> Path:
     phonemes_df = pd.read_csv(filepath)
 
-    # TODO: Need to get xvfb running inside the docker
-    # TODO: ...and the yworks hierarchical layout in Cytoscape
     cytoscape = subprocess.Popen(CYTOSCAPE_PATH)
     # Wait until cytoscape is ready
     not_found = True
