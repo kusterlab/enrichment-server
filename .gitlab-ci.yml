@@ -42,6 +42,7 @@ integration-test:
     name: $CONTAINER_IMAGE:latest
     entrypoint: [""]
   script:
+    - cd flask_server
     - poetry run pytest -v
   # TODO: remove allow_failure when pytest is found - I don't get why it can enter flask_server but then does not find pytest.
   allow_failure: true
