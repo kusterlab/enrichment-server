@@ -36,6 +36,14 @@ class TestClass:
                 [1, 2, 3])
             for res, exp in zip(self.actual_result, self.expected_result))
 
+    def evaluate_phonemes(self):
+        assert len(self.actual_result) == len(self.expected_result) and all(
+            res['pathway'] == exp['pathway'] and
+            set([node['geneNames'][0] for node in res['nodes']]) == set([node['geneNames'][0] for node in exp['nodes']]) and
+            len(res['links']) == len(exp['links'])
+            for res, exp in zip(self.actual_result, self.expected_result)
+        )
+
     def test_get_status(self, client):
         response = client.get('/')
         # You can do either of the following
@@ -131,3 +139,18 @@ class TestClass:
         expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea_rokai.json')
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_ksea()
+
+    def test_phonemes(self, client):
+        self.input_json = Path('../fixtures/phonemes/input/input.json')
+        self.dataset_name = 'phonemes_test'
+
+        response = client.post('/phonemes', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_json.open('rb')
+        })
+
+        self.actual_result = json.loads(response.data)
+        expected_result_file = Path('../fixtures/phonemes/expected_output/json_skeletons.json')
+        self.expected_result = json.load(open(expected_result_file))
+        self.evaluate_phonemes()

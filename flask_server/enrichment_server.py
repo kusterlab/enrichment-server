@@ -79,12 +79,11 @@ def handle_phonemes_request() -> werkzeug.wrappers.Response | str:
 
     preprocessed_filepath = phonemes.preprocess_phonemes(filepath)
 
-    #This should just contain an external command that runs an R script, which executes PHONEMeS with default params
     phonemes_result = phonemes.run_phonemes(preprocessed_filepath)
     cytoscape_result = phonemes.run_cytoscape(phonemes_result)
-    pathway_skeleton_json = phonemes.create_pathway_skeleton(cytoscape_result)
+    pathway_skeletons_json = phonemes.create_pathway_skeleton(cytoscape_result)
 
-    return send_response(send_file(pathway_skeleton_json, as_attachment=False))
+    return send_response(send_file(pathway_skeletons_json, as_attachment=False))
 
 def process_post_request(post_request: werkzeug.Request) -> Path | str:
     request_url = urlparse(request.base_url)

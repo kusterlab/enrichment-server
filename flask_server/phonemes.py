@@ -16,10 +16,11 @@ CYTOSCAPE_PATH = '../Cytoscape_v3.10.1/Cytoscape'
 def preprocess_phonemes(filepath: Path) -> Path:
     output_dir = filepath.parent
     input_json = json.load(open(filepath))
+    Path.mkdir(output_dir, parents=True, exist_ok=True)
+    output_prefix = output_dir / f'{filepath.stem}'
 
     sites_df = pd.DataFrame.from_dict(input_json['sites'])
     idcolumn = 'Site' if 'Site' in sites_df else 'id'
-    # TODO: Iterate over experiments, perform PHONEMeS for each separately - create an input file with two experiments
     experiment_columns = [col for col in sites_df.columns if col != idcolumn]
 
     phonemes_pkn_ksn = pd.read_csv(PHONEMES_PKN_KSN)
@@ -28,37 +29,44 @@ def preprocess_phonemes(filepath: Path) -> Path:
 
     sites_df = sites_df[sites_df['Site'].apply(lambda site: site in all_pkn_ksn_nodes)]
 
-    target_series = pd.concat([
-        pd.Series(data=1, index=input_json['targets']['up']),
-        pd.Series(data=-1, index=input_json['targets']['down'])
-    ])
+    # Preprocess so that each experiment gets an own 'sites' and 'targets' file.
+    # An additional output file contains the list of experiments
+    for experiment in experiment_columns:
+        target_series = pd.concat([
+            pd.Series(data=1, index=input_json['targets'][experiment]['up']),
+            pd.Series(data=-1, index=input_json['targets'][experiment]['down'])
+        ])
 
-    # TODO: Here you should iterate over experiments and create a file for each one
-    # Don't forget to drop NAs if a site appears in one experiment but not in another
-    Path.mkdir(output_dir, parents=True, exist_ok=True)
-    output_prefix = output_dir / f'{filepath.stem}'
-    sites_df.to_csv(str(output_prefix) + '_sites.csv', index=False)
-    target_series.to_csv(str(output_prefix) + '_targets.csv', index=True, header=False)
+        sites_df[[idcolumn, experiment]].dropna().to_csv(f'{output_prefix}_{experiment}_sites.csv', index=False)
+        target_series.to_csv(f'{output_prefix}_{experiment}_targets.csv', index=True, header=False)
+
+    # Create a file containing the experiment names
+    with open(str(output_prefix) + '_experiments.csv', 'w') as experiment_outfile:
+        experiment_outfile.write(','.join(experiment_columns))
 
     return output_prefix
 
 
 def run_phonemes(file_prefix: Path) -> Path:
-    # TODO: Iterate experiments again
     output_dir = file_prefix.parent
-    output_path = output_dir / f'phonemes_out.sif'
-    subprocess.run(["Rscript",
-                    "run_phonemes.R",
-                    str(file_prefix) + '_sites.csv',
-                    str(file_prefix) + '_targets.csv',
-                    output_path
-                    ])
-    return output_path
+
+    experiment_file = output_dir / 'input_experiments.csv'
+    with open(experiment_file) as infile:
+        experiments = infile.read().split(',')
+
+    for experiment in experiments:
+        output_path = output_dir / f'{experiment}_phonemes_out.sif'
+        subprocess.run(["Rscript",
+                        "run_phonemes.R",
+                        f'{file_prefix}_{experiment}_sites.csv',
+                        f'{file_prefix}_{experiment}_targets.csv',
+                        output_path
+                        ])
+
+    return output_dir
 
 
-def run_cytoscape(filepath: Path) -> Path:
-    phonemes_df = pd.read_csv(filepath)
-
+def run_cytoscape(phonemes_outputfolder: Path) -> Path:
     cytoscape = subprocess.Popen(CYTOSCAPE_PATH)
     # Wait until cytoscape is ready
     not_found = True
@@ -72,48 +80,63 @@ def run_cytoscape(filepath: Path) -> Path:
                 requests.exceptions.HTTPError):
             time.sleep(.5)
 
-    network = phonemes_df.rename(
-        columns={"Node1": "source", "Node2": "target", "Weight": "weight", "Sign": "sign"})
+    experiment_file = phonemes_outputfolder / 'input_experiments.csv'
+    with open(experiment_file) as infile:
+        experiments = infile.read().split(',')
 
-    nodes_values = network[["source", "target"]].values.ravel()
-    nodes_data = pd.unique(nodes_values)
-    nodes = pd.DataFrame(data=nodes_data, columns=["id"])
-    p4c.create_network_from_data_frames(nodes=nodes, edges=network, collection="phonemes2cytoscape",
-                                        # TODO: Put experiment name
-                                        title='Experiment01')
-    p4c.layout_network()
-    output_dir = filepath.parent
-    output_path = output_dir / f'cytoscape_out.cx'
-    p4c.export_network(filename=str(output_path), type='CX', overwrite_file=True)
-    return output_path
+    for experiment in experiments:
+        filepath = phonemes_outputfolder / f'{experiment}_phonemes_out.sif'
+        phonemes_df = pd.read_csv(filepath)
+        network = phonemes_df.rename(
+            columns={"Node1": "source", "Node2": "target", "Weight": "weight", "Sign": "sign"})
+
+        nodes_values = network[["source", "target"]].values.ravel()
+        nodes_data = pd.unique(nodes_values)
+        nodes = pd.DataFrame(data=nodes_data, columns=["id"])
+        p4c.create_network_from_data_frames(nodes=nodes, edges=network, collection="phonemes2cytoscape",
+                                            # TODO: Put experiment name
+                                            title=experiment)
+        p4c.layout_network()
+        output_path = phonemes_outputfolder / f'{experiment}_cytoscape_out.cx'
+        p4c.export_network(filename=str(output_path), type='CX', overwrite_file=True)
+
+    cytoscape.kill()
+    return phonemes_outputfolder
 
 
-def create_pathway_skeleton(filepath: Path) -> Path:
-    # TODO: One final time: Iterate experiments
-    with open(filepath) as infile:
-        cx_json = json.load(infile)
+def create_pathway_skeleton(cytoscape_outputfolder: Path) -> Path:
+    experiment_file = cytoscape_outputfolder / 'input_experiments.csv'
+    with open(experiment_file) as infile:
+        experiments = infile.read().split(',')
 
-    # For some reason this is in a singleton-list format, so we extract all of those nested keys into one single json object
-    cx_unnested = {key: val for singleton in cx_json for key, val in singleton.items()}
-    nodes_dict = {entry['@id']: entry['n'] for entry in cx_unnested['nodes']}
-    skeleton_json = {'pathway': {'name': 'Experiment01'},
-                     'nodes': [{
-                         'id': node['node'],
-                         'geneNames': [nodes_dict[node['node']]],
-                         'type': 'gene_protein',
-                         'x': node['x'],
-                         # Trial and error showed we need to downscale the y-axis a bit
-                         'y': node['y']*0.75} for node in cx_unnested['cartesianLayout']],
-                     'links': [{
-                         'id': f"relation-{relation['@id']}",
-                         'sourceId': relation['s'],
-                         'targetId': relation['t'],
-                         'types': ['other']
-                     }
-                         for relation in cx_unnested['edges']]}
-    output_dir = filepath.parent
-    output_path = output_dir / f'json_skeleton.json'
+    pathway_skeleton_list = []
+    for experiment in experiments:
+        filepath = cytoscape_outputfolder / f'{experiment}_cytoscape_out.cx'
+        with open(filepath) as infile:
+            cx_json = json.load(infile)
+
+        # For some reason this is in a singleton-list format, so we extract all of those nested keys into one single json object
+        cx_unnested = {key: val for singleton in cx_json for key, val in singleton.items()}
+        nodes_dict = {entry['@id']: entry['n'] for entry in cx_unnested['nodes']}
+        skeleton_json = {'pathway': {'name': experiment},
+                         'nodes': [{
+                             'id': node['node'],
+                             'geneNames': [nodes_dict[node['node']]],
+                             'type': 'gene_protein',
+                             'x': node['x'],
+                             # Trial and error showed we need to downscale the y-axis a bit
+                             'y': node['y'] * 0.75} for node in cx_unnested['cartesianLayout']],
+                         'links': [{
+                             'id': f"relation-{relation['@id']}",
+                             'sourceId': relation['s'],
+                             'targetId': relation['t'],
+                             'types': ['other']
+                         }
+                             for relation in cx_unnested['edges']]}
+        pathway_skeleton_list.append(skeleton_json)
+
+    output_path = cytoscape_outputfolder / f'json_skeletons.json'
     with open(output_path, 'w') as outfile:
-        json.dump(skeleton_json, outfile)
+        json.dump(pathway_skeleton_list, outfile)
 
     return output_path
