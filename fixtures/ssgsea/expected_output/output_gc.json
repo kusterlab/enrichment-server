@@ -387,33 +387,6 @@
     "Score (Experiment02)": 0.072800003
   },
   {
-    "Signature ID": "KEGG_MEDICUS_REFERENCE_DNA_REPLICATION_LICENSING",
-    "Overlap (Experiment01)": 50.0,
-    "Overlap (Experiment02)": 50.0,
-    "adj p-val (Experiment01)": 0.7375654605,
-    "adj p-val (Experiment02)": 0.0281428571,
-    "Score (Experiment01)": -1.2930999994,
-    "Score (Experiment02)": -5.5194001198
-  },
-  {
-    "Signature ID": "KEGG_MEDICUS_REFERENCE_NUCLEAR_EXPORT_OF_MRNA",
-    "Overlap (Experiment01)": 46.7,
-    "Overlap (Experiment02)": 46.7,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.8770936184,
-    "Score (Experiment01)": 0.5643000007,
-    "Score (Experiment02)": -0.6427000165
-  },
-  {
-    "Signature ID": "KEGG_MEDICUS_REFERENCE_TRANSLATION_INITIATION",
-    "Overlap (Experiment01)": 18.5,
-    "Overlap (Experiment02)": 18.5,
-    "adj p-val (Experiment01)": 0.9390165034,
-    "adj p-val (Experiment02)": 0.5631557232,
-    "Score (Experiment01)": -0.3461999893,
-    "Score (Experiment02)": -1.6517000198
-  },
-  {
     "Signature ID": "WP_10Q11_21Q11_23_COPY_NUMBER_VARIATION_SYNDROME",
     "Overlap (Experiment01)": 18.0,
     "Overlap (Experiment02)": 18.0,

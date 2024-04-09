@@ -1,6 +1,7 @@
 # How to send a request:
 # curl -X POST -F file=@<input_file> -F session_id=ABCDEF12345  -F dataset_name=FooBar http://127.0.0.1:1234/<route>
 from pathlib import Path
+import shutil
 from urllib.parse import urlparse
 import werkzeug.wrappers
 from werkzeug.utils import secure_filename
@@ -45,8 +46,7 @@ def handle_ssgsea_request(ssgsea_type, ssc_input_type='flanking') -> werkzeug.wr
 
     ssgsea_combined_output = ssgsea.run_ssgsea(ssgsea_input, ssgsea_type, ssc_input_type)
 
-    # TODO: Delete everything when done to not accumulate files? Or: Keep the final output file, and use it as a cache?
-    return send_response(send_file(ssgsea.postprocess_ssgsea(ssgsea_combined_output), as_attachment=False))
+    return send_response(send_file(ssgsea.postprocess_ssgsea(ssgsea_combined_output), as_attachment=False), filepath.parent)
 
 
 @app.route('/ksea', methods=['POST'])
@@ -64,8 +64,7 @@ def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
         preprocessed_filepath = ksea.run_rokai(preprocessed_filepath)
 
     ksea_result = ksea.perform_ksea(preprocessed_filepath)
-    # TODO: Delete everything when done to not accumulate files? Or: Keep the final output file, and use it as a cache?
-    return send_response(send_file(ksea_result, as_attachment=False))
+    return send_response(send_file(ksea_result, as_attachment=False), filepath.parent)
 
 
 @app.route('/phonemes', methods=['POST'])
@@ -83,7 +82,7 @@ def handle_phonemes_request() -> werkzeug.wrappers.Response | str:
     cytoscape_result = phonemes.run_cytoscape(phonemes_result)
     pathway_skeletons_json = phonemes.create_pathway_skeleton(cytoscape_result)
 
-    return send_response(send_file(pathway_skeletons_json, as_attachment=False))
+    return send_response(send_file(pathway_skeletons_json, as_attachment=False), filepath.parent)
 
 def process_post_request(post_request: werkzeug.Request) -> Path | str:
     request_url = urlparse(request.base_url)
@@ -113,11 +112,13 @@ def process_post_request(post_request: werkzeug.Request) -> Path | str:
     return input_filepath
 
 
-def send_response(result) -> flask.Response:
+def send_response(result, output_folder=None) -> flask.Response:
     response = make_response(result)
     # TODO: I added this for cross-origin resource sharing, but is it unsafe?
     # Maybe using flask-cors (https://flask-cors.readthedocs.io/en/latest/)
     response.headers.add('Access-Control-Allow-Origin', '*')
+    if output_folder:
+        shutil.rmtree(output_folder)
     return response
 
 
