@@ -1,5 +1,5 @@
 #How to start shell inside docker: docker run -it --entrypoint /bin/bash enrichment_server
-#How to run tests: docker run -it --entrypoint poetry enrichment_server run pytest -v
+#How to run tests: docker run -it --entrypoint Xvfb enrichment_server :1 -screen 0 1024x768x24 & poetry run pytest -v
 #How to run it as a server: docker run --network host enrichment_server #TODO: It feels like I should not have to use '--network host', but I get a connection refused error if I don't.
 
 #TODO: Find a slimmer image
