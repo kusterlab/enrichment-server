@@ -21,7 +21,7 @@ sites_vector <- setNames(sites_df[[2]], sites_df[[1]])
 phonemes_result <- PHONEMeS::run_phonemes(
   inputObj = targets_vector,
   measObj = sites_vector,
-  n_steps_pruning = 2,
+  n_steps_pruning = 3,
   netObj = read.csv(file = pkn_path),
   carnival_options = carnival_options)
 
