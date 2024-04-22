@@ -40,7 +40,7 @@ integration-test:
   stage: test
   image:
     name: $CONTAINER_IMAGE:latest
-    entrypoint: [""]
+    entrypoint: ["/bin/sh"]
   script:
     - cd flask_server
     - poetry run pytest -v
