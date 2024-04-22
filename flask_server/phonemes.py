@@ -133,6 +133,11 @@ def create_pathway_skeleton(cytoscape_outputfolder: Path) -> Path:
                              'types': ['other']
                          }
                              for relation in cx_unnested['edges']]}
+        #Make sure all 'y's are positive by getting the minimum and subtracting it from all
+        miny = min([node['y'] for node in skeleton_json['nodes']])
+        for node in skeleton_json['nodes']:
+            node['y'] -= miny - 10 #The additional 10 makes sure the minimum y is 10, so in the visible range.
+
         pathway_skeleton_list.append(skeleton_json)
 
     output_path = cytoscape_outputfolder / f'json_skeletons.json'
