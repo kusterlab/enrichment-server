@@ -1,9 +1,10 @@
 #How to start shell inside docker: docker run -it --entrypoint /bin/bash enrichment_server
-#How to run tests: docker run -it --entrypoint Xvfb enrichment_server :1 -screen 0 1024x768x24 & poetry run pytest -v
+#How to run tests: docker run -it --entrypoint /bin/sh enrichment_server -c "Xvfb :1 -screen 0 1024x768x24 & poetry run pytest -v"
+#How to run a single test: docker run -it --entrypoint /bin/sh enrichment_server -c "Xvfb :1 -screen 0 400x200x8 & poetry run pytest -k phonemes"
 #How to run it as a server: docker run --network host enrichment_server #TODO: It feels like I should not have to use '--network host', but I get a connection refused error if I don't.
 
-#TODO: Find a slimmer image
-FROM ubuntu:23.10
+#We need R 4.3.2
+FROM rocker/r-ver:4.3.2
 
 MAINTAINER Julian Müller "julian2.mueller@tum.de"
 
@@ -15,9 +16,16 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
 RUN apt-get install -y curl libcurl4-openssl-dev libssl-dev libomp5 libopenblas-dev libfontconfig1-dev \
-    libxml2-dev libharfbuzz-dev libfribidi-dev libtiff5-dev libssl-dev python3-poetry openjdk-17-jre xvfb git r-base #Will install R=4.3.2
+    libxml2-dev libharfbuzz-dev libfribidi-dev libtiff5-dev libssl-dev openjdk-17-jre xvfb git
 #Make sure python3.11 is installed, the gitlab pipeline would sometimes default to python3.12
 RUN apt-get install -y python3.11
+#Get Poetry
+RUN curl -sSL 'https://install.python-poetry.org' | python3.11 -
+#Add it to Path for the docker
+ENV PATH="${PATH}:/root/.local/bin:/root/.poetry/bin"
+#Add it to Path in case someone logs into an interactive shell
+RUN echo 'export PATH="/root/.local/bin:$PATH"' >> ~/.bashrc
+
 
 #Fix for missing libssl
 RUN curl http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb --output libssl.deb
