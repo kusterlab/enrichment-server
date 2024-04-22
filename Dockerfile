@@ -3,7 +3,7 @@
 #How to run it as a server: docker run --network host enrichment_server #TODO: It feels like I should not have to use '--network host', but I get a connection refused error if I don't.
 
 #TODO: Find a slimmer image
-FROM ubuntu:24.04
+FROM ubuntu:23.10
 
 MAINTAINER Julian Müller "julian2.mueller@tum.de"
 
