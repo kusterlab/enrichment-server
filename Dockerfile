@@ -1,6 +1,5 @@
 #How to start shell inside docker: docker run -it --entrypoint /bin/bash enrichment_server
 #How to run tests: docker run -it --entrypoint /bin/sh enrichment_server -c "Xvfb :1 -screen 0 1024x768x24 & poetry run pytest -v"
-#How to run a single test: docker run -it --entrypoint /bin/sh enrichment_server -c "Xvfb :1 -screen 0 400x200x8 & poetry run pytest -k phonemes"
 #How to run it as a server: docker run --network host enrichment_server #TODO: It feels like I should not have to use '--network host', but I get a connection refused error if I don't.
 
 #We need R 4.3.2
@@ -17,7 +16,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
 RUN apt-get install -y curl libcurl4-openssl-dev libssl-dev libomp5 libopenblas-dev libfontconfig1-dev \
     libxml2-dev libharfbuzz-dev libfribidi-dev libtiff5-dev libssl-dev openjdk-17-jre xvfb git
-#Make sure python3.11 is installed, the gitlab pipeline would sometimes default to python3.12
+#We need python to install poetry
 RUN apt-get install -y python3.11
 #Get Poetry
 RUN curl -sSL 'https://install.python-poetry.org' | python3.11 -
@@ -61,6 +60,10 @@ RUN poetry install -C flask_server
 
 
 WORKDIR /app/flask_server
+#Bug: the package stringi is broken in packrat after switching to the rocker image
+#So remove it and install it again
+RUN Rscript -e "remove.packages('stringi')"
+RUN Rscript -e "install.packages('stringi')"
 
 #Tell Cytoscape to use the Xvfb virtual display
 ENV DISPLAY=:1
