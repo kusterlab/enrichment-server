@@ -1,0 +1,31 @@
+Package: PHONEMeS
+Title: tool to run PHONEMeS on phosphoproteomic data
+Version: 2.0.1
+Authors: E. Gjerga, C.D.A. Terfve, A. Dugourd, L. Tobalina, S.
+        Müller-Dott
+Maintainer: S. Müller-Dott <sophia.mueller-dott@uni-heidelberg.de>
+Description: This package runs CARNIVAL for phosphoproteomic data with a prior knowledge network 
+    consisting of protein-protein and protein-phosphosite interactions form OmnipathR.
+License: GPL-3 + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Depends: R (>= 3.5.0)
+Imports: CARNIVAL, magrittr, dplyr, igraph, tidyr
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+BiocViews: CellBiology, Pathways, Network, Proteomics
+RemoteType: github
+RemoteHost: api.github.com
+RemoteRepo: PHONEMeS
+RemoteUsername: saezlab
+RemoteRef: HEAD
+RemoteSha: f4dfc9a0fac024bed309cbe6426a7f738cfd5792
+GithubRepo: PHONEMeS
+GithubUsername: saezlab
+GithubRef: HEAD
+GithubSHA1: f4dfc9a0fac024bed309cbe6426a7f738cfd5792
+NeedsCompilation: no
+Packaged: 2024-01-16 15:03:55 UTC; jmueller
+Built: R 4.3.2; ; 2024-01-16 15:03:55 UTC; unix

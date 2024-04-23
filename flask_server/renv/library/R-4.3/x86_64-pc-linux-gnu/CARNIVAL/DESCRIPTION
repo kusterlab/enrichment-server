@@ -1,0 +1,66 @@
+Package: CARNIVAL
+Title: A CAusal Reasoning tool for Network Identification (from gene
+        expression data) using Integer VALue programming
+Version: 2.12.0
+Authors@R: c(
+    person(given = "Enio",
+           family = "Gjerga",
+           role = c("aut"),
+           email = "enio.gjerga@gmail.com",
+           comment = c(ORCID = "0000-0002-3060-5786")),
+    person(given = "Panuwat",
+           family = "Trairatphisan",
+           role = "aut"),
+    person(given = "Anika",
+           family = "Liu",
+           role = "ctb"),
+    person(given = "Alberto",
+           family = "Valdeolivas",
+           role = "ctb"),
+    person(given = "Nikolas",
+           family = "Peschke",
+           role = "ctb"),
+    person(given = "Aurelien",
+           family = "Dugourd",
+           role = "ctb"),
+    person(given = "Attila",
+           family = "Gabor",
+           role = "cre",
+           email = "attila.gabor@uni-heidelberg.de"),
+    person(given = "Olga",
+           family = "Ivanova",
+           role = "aut",
+           email = "olga.ivanova@bioquant.uni-heidelberg.de")
+           )
+Description: An upgraded causal reasoning tool from Melas et al in R with updated assignments of TFs' weights from PROGENy scores.
+             Optimization parameters can be freely adjusted and multiple solutions can be obtained and aggregated.
+URL: https://github.com/saezlab/CARNIVAL
+BugReports: https://github.com/saezlab/CARNIVAL/issues
+Depends: R (>= 4.0)
+Imports: readr, stringr, lpSolve, igraph, dplyr, tibble, tidyr, rjson,
+        rmarkdown
+biocViews: Transcriptomics, GeneExpression, Network
+License: GPL-3
+Encoding: UTF-8
+Suggests: RefManageR, BiocStyle, covr, knitr, testthat (>= 3.0.0),
+        sessioninfo
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+Config/testthat/edition: 3
+git_url: https://git.bioconductor.org/packages/CARNIVAL
+git_branch: RELEASE_3_18
+git_last_commit: 564b0ac
+git_last_commit_date: 2023-10-24
+Date/Publication: 2023-10-24
+NeedsCompilation: no
+Packaged: 2023-10-24 20:33:29 UTC; biocbuild
+Author: Enio Gjerga [aut] (<https://orcid.org/0000-0002-3060-5786>),
+  Panuwat Trairatphisan [aut],
+  Anika Liu [ctb],
+  Alberto Valdeolivas [ctb],
+  Nikolas Peschke [ctb],
+  Aurelien Dugourd [ctb],
+  Attila Gabor [cre],
+  Olga Ivanova [aut]
+Maintainer: Attila Gabor <attila.gabor@uni-heidelberg.de>
+Built: R 4.3.2; ; 2024-01-16 15:03:52 UTC; unix

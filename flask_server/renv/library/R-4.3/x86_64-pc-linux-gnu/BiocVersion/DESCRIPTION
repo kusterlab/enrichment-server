@@ -1,0 +1,30 @@
+Package: BiocVersion
+Version: 3.18.1
+Title: Set the appropriate version of Bioconductor packages
+Description: This package provides repository information for the appropriate
+    version of Bioconductor. 
+Authors@R: c(
+    person("Martin", "Morgan", email = "martin.morgan@roswellpark.org",
+        role = "aut"),
+    person("Marcel", "Ramos", email = "marcel.ramos@roswellpark.org",
+        role = "ctb"),
+    person("Bioconductor", "Package Maintainer",
+        email  = "maintainer@bioconductor.org",
+        role = c("ctb", "cre")))
+biocViews: Infrastructure
+Depends: R (>= 4.3.0)
+License: Artistic-2.0
+Encoding: UTF-8
+RoxygenNote: 6.0.1
+git_url: https://git.bioconductor.org/packages/BiocVersion
+git_branch: RELEASE_3_18
+git_last_commit: 70680b8
+git_last_commit_date: 2023-11-15
+Date/Publication: 2023-11-15
+NeedsCompilation: no
+Packaged: 2023-11-15 21:05:30 UTC; biocbuild
+Author: Martin Morgan [aut],
+  Marcel Ramos [ctb],
+  Bioconductor Package Maintainer [ctb, cre]
+Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
+Built: R 4.3.2; ; 2024-01-16 15:01:38 UTC; unix

@@ -1,0 +1,22 @@
+benchmark_regulatory_psites
+                        benchmark_regulatory_psites
+check_carnival_options
+                        Check CARNIVAL Options
+default_carnival_options
+                        Setting Default CARNIVAL Options
+extract_subnetwork      extract_subnetwork
+get_protein_network     get_protein_network
+phonemesKSN             The KSN used as prior knowledge network when
+                        running vanilla Phonemes. The KSN contains
+                        kinase-substrate interactions via a
+                        phosphorylation site
+phonemesPKN             The main PKN used in Phonemes to link
+                        deregulated phosphosites to perturbed kinases.
+                        It combines kinase-substrate and
+                        protein-protein interactions.
+process_phosphositeplus_regpsites
+                        process_phosphositeplus_regpsites
+reattach_psites         Reattach_psites
+regulatory_psites       regulatory_psites
+run_phonemes            Run PHONEMeS
+run_vanilla_phonemes    Run vanilla PHONEMeS (PHONEMeS v1.0.0)

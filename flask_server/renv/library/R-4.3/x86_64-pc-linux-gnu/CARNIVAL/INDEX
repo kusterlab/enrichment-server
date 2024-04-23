@@ -1,0 +1,28 @@
+checkOptionsValidity    Checks if provided option names are valid.
+defaultCbcSolveCarnivalOptions
+                        Sets default CARNIVAL options for cbc.
+defaultCplexCarnivalOptions
+                        Sets default CARNIVAL options for cplex.
+defaultCplexSpecificOptions
+                        Sets default options from cplex documentation.
+defaultLpSolveCarnivalOptions
+                        Sets default CARNIVAL options for lpSolve.
+generateLpFileCarnival
+                        'generateLpFileCarnival'
+getOptionsList          Returns the list of options needed/supported
+                        for each solver.
+getSupportedSolvers     Returns the list of supported solvers.
+isInputValidCarnival    Checks validity of all inputs of CARNIVAL
+parseCplexLog           Parses the cplex log file and reads some basic
+                        information.
+runCARNIVAL             'runCARNIVAL'
+runFromLpCarnival       'runCarnivalFromLp'
+runInverseCarnival      'runInverseCarnival'
+runVanillaCarnival      'runVanillaCarnival'
+setCarnivalOptions      Sets CARNIVAL options for the solver.
+suggestedCbcSpecificOptions
+                        Suggests cbc specific options.
+suggestedCplexSpecificOptions
+                        Suggests cplex specific options.s
+writeCplexCommandFileFromJson
+                        writeCplexCommandFileFromJson
