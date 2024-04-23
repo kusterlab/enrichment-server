@@ -51,19 +51,14 @@ COPY Cytoscape_v3.10.1 /app/Cytoscape_v3.10.1
 COPY CytoscapeConfiguration /root/CytoscapeConfiguration
 
 #Install R-related stuff
-RUN Rscript -e "install.packages('packrat')"
-RUN Rscript -e "packrat::restore('/app/flask_server')"
+RUN Rscript -e "install.packages('renv')"
+RUN Rscript -e "renv::restore('/app/flask_server')"
 
 WORKDIR /app
 #Install Python-related stuff
 RUN poetry install -C flask_server
 
-
 WORKDIR /app/flask_server
-#Bug: the package stringi is broken in packrat after switching to the rocker image
-#So remove it and install it again
-RUN Rscript -e "remove.packages('stringi')"
-RUN Rscript -e "install.packages('stringi')"
 
 #Tell Cytoscape to use the Xvfb virtual display
 ENV DISPLAY=:1
