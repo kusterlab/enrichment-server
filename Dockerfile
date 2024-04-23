@@ -31,10 +31,12 @@ RUN curl http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.
 RUN dpkg -i libssl.deb
 RUN rm libssl.deb
 
-##Set Up PTM-SEA
+#Set Up PTM-SEA
 RUN git clone -b master --single-branch https://github.com/broadinstitute/ssGSEA2.0.git
 WORKDIR /app/ssGSEA2.0
 RUN git checkout 4b5198fb5a19759eec2625ba5dde03fc861d96ac
+#Fix a sloppy line from ssGSEA by hard-coding the script directory
+RUN sed -i '8,13d; 6i script.dir<-"../ssGSEA2.0"' ssgsea-cli.R
 
 #Set Up RoKAI
 WORKDIR /app

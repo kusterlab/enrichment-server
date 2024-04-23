@@ -1,0 +1,37 @@
+attribute               Attribute plot
+brier                   Brier Score
+check.func              check loss function
+conditional.quantile    Conditional Quantile Plot
+crps                    Continuous Ranked Probability Score
+crpsDecomposition       Decompostion of Continuous Ranked Probability
+                        Score
+disc.dat                Discrimination plot dataset.
+discrimination.plot     Discrimination plot
+fss                     Fractional Skill Score
+leps                    Linear Error in Probability Space (LEPS)
+lines.roc               Add lines to ROC or attribute diagrams
+measurement.error       Skill score with measurement error.
+multi.cont              Multiple Contingency Table Statistics
+observation.error       Observation Error
+performance.diagram     Performance Diagram
+pop                     Probability of precipitation (pop) data.
+precip.ensemble         An ensemble of precipitation forecasts
+predcomp.test           Time Series Prediction Comparison Test
+prob.frcs.dat           Probablisitic Forecast Dataset.
+probcont2disc           Converts continuous probability values into
+                        binned discrete probability forecasts.
+qrel.plot               Quantile Reliability Plot
+quantile2disc           Convert Continuous Forecast Values to Discrete
+                        Forecast Values.
+quantileScore           Quantile Score
+rcrv                    Reduced centered random variable
+reliability.plot        Reliability Plot
+roc.area                Area under curve (AUC) calculation for Response
+                        Operating Characteristic curve.
+roc.plot                Relative operating characteristic curve.
+rps                     Ranked Probability Score
+table.stats             Verification statistics for a 2 by 2
+                        Contingency Table
+table.stats.boot        Percentile bootstrap for 2 by 2 table
+value                   Forecast Value Function
+verify                  Verification function
