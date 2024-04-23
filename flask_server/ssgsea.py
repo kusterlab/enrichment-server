@@ -58,7 +58,7 @@ def run_ssgsea(filepath: Path, ssgsea_type, ssc_input_type) -> Path:
                     "-d", database,
                     "-w", "0.75",
                     "-e", "FALSE",
-                    ])
+                    ], cwd="../ssGSEA2.0" )
     return Path(str(output_prefix) + '-combined.gct')
 
 
