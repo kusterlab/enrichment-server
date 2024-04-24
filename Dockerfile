@@ -55,14 +55,14 @@ COPY CytoscapeConfiguration /root/CytoscapeConfiguration
 #Install R-related stuff
 RUN Rscript -e "install.packages('renv')"
 RUN Rscript -e "renv::restore('/app/flask_server')"
-#Stringi is broken for some reason, reinstall it
-RUN Rscript -e "install.packages('stringi')"
 
 WORKDIR /app
 #Install Python-related stuff
 RUN poetry install -C flask_server
 
 WORKDIR /app/flask_server
+#Stringi is broken in the renv for some reason, reinstall it
+RUN Rscript -e "install.packages('stringi')"
 
 #Tell Cytoscape to use the Xvfb virtual display
 ENV DISPLAY=:1
