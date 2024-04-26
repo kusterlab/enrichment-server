@@ -10,10 +10,11 @@ import flask.wrappers
 import ssgsea
 import ksea
 import phonemes
+import motif_enrichment
 
 app = Flask(__name__)
 
-VERSION = '0.0.2'
+VERSION = '0.0.3'
 
 
 @app.route('/', methods=['GET'])
@@ -46,7 +47,8 @@ def handle_ssgsea_request(ssgsea_type, ssc_input_type='flanking') -> werkzeug.wr
 
     ssgsea_combined_output = ssgsea.run_ssgsea(ssgsea_input, ssgsea_type, ssc_input_type)
 
-    return send_response(send_file(ssgsea.postprocess_ssgsea(ssgsea_combined_output), as_attachment=False), filepath.parent)
+    return send_response(send_file(ssgsea.postprocess_ssgsea(ssgsea_combined_output), as_attachment=False),
+                         filepath.parent)
 
 
 @app.route('/ksea', methods=['POST'])
@@ -84,6 +86,20 @@ def handle_phonemes_request() -> werkzeug.wrappers.Response | str:
 
     return send_response(send_file(pathway_skeletons_json, as_attachment=False), filepath.parent)
 
+
+@app.route('/motif_enrichment', methods=['POST'])
+def handle_motif_enrichment_request() -> werkzeug.wrappers.Response | str:
+    post_request_processed = process_post_request(request)
+
+    if type(post_request_processed) is str:
+        return post_request_processed
+
+    filepath = post_request_processed
+    motif_enrichment_result = motif_enrichment.run_motif_enrichment(filepath)
+
+    return send_response(send_file(motif_enrichment_result, as_attachment=False), filepath.parent)
+
+
 def process_post_request(post_request: werkzeug.Request) -> Path | str:
     request_url = urlparse(request.base_url)
 
@@ -112,7 +128,7 @@ def process_post_request(post_request: werkzeug.Request) -> Path | str:
     return input_filepath
 
 
-def send_response(result, output_folder=None) -> flask.Response:
+def send_response(result: werkzeug.wrappers.Response, output_folder=None) -> flask.Response:
     response = make_response(result)
     # TODO: I added this for cross-origin resource sharing, but is it unsafe?
     # Maybe using flask-cors (https://flask-cors.readthedocs.io/en/latest/)

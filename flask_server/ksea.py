@@ -2,7 +2,6 @@ from pathlib import Path
 import json
 import subprocess
 import pandas as pd
-import numpy as np
 import kinact
 
 

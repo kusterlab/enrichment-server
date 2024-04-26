@@ -1,0 +1,592 @@
+[
+  {
+    "Modified sequence": "RES(ph)ES(ph)SRSS(ph)R",
+    "Proteins": "A0A0U1RR71;A1L390;A1L390-2;A1L390-3",
+    "Experiment01": "down"
+  },
+  {
+    "Modified sequence": "QQS(ph)DHDAER",
+    "Proteins": "Q15149;Q15149-2;Q15149-3;Q15149-4;Q15149-5;Q15149-6;Q15149-7;Q15149-8;Q15149-9",
+    "Experiment01": "down"
+  },
+  {
+    "Modified sequence": "RESSSS(ph)AER",
+    "Proteins": "E9PCX8;Q68CZ2;Q68CZ2-2",
+    "Experiment01": "down"
+  },
+  {
+    "Modified sequence": "KRS(ph)TQERPR",
+    "Proteins": "Q8IVM0-2",
+    "Experiment01": "down"
+  },
+  {
+    "Modified sequence": "RNTSAS(ph)DEDER",
+    "Proteins": "C9JTC6;Q32MZ4;Q32MZ4-2;Q32MZ4-4",
+    "Experiment01": "up"
+  },
+  {
+    "Modified sequence": "GDGGGDGGGGGPS(ph)R",
+    "Proteins": "Q9UPU5",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "SSS(ph)TSESGDSDNMR",
+    "Proteins": "H0YM23;O75179;O75179-2;O75179-4;O75179-6;O75179-7",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RNT(ph)SAS(ph)DEDER",
+    "Proteins": "C9JTC6;Q32MZ4;Q32MZ4-2;Q32MZ4-4",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "TES(ph)SPGSR",
+    "Proteins": "P41162;P41162-2",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RRT(ph)VDEDPDERR",
+    "Proteins": "K7ELQ4;P17544;P17544-1;P17544-2;P17544-3;P17544-4",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "ERAPS(ph)ER",
+    "Proteins": "Q92997;Q92997-2",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RKCS(ph)QTQCPR",
+    "Proteins": "H3BRN3;H3BT57;H3BUJ5;H3BVD2;P29590;P29590-11;P29590-12;P29590-2;P29590-3;P29590-4;P29590-5;P29590-8;P29590-9",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RRDS(ph)DYKR",
+    "Proteins": "C9J9P7;C9JFQ5;C9JR02;F8W910;F8WE23;P52756;P52756-2;P52756-3;P52756-4;P52756-5",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KGGSTSSS(ph)PSR",
+    "Proteins": "A0A494C1L1;C9JXK0;Q14739",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "NTSAS(ph)DEDER",
+    "Proteins": "C9JTC6;Q32MZ4;Q32MZ4-2;Q32MZ4-4",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RDS(ph)ASYR",
+    "Proteins": "A0A1X7SBZ2;A0A5H1ZRQ2;Q92841;Q92841-1;Q92841-2;Q92841-3",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "EQQPSS(ph)ASER",
+    "Proteins": "P12270",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "S(ph)AQEPAR",
+    "Proteins": "A0A1B0GX60;M0QXK0;M0QYT3;M0QZD0;M0R080;M0R128;M0R1D6;P25685;P25685-2",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "SQPS(ph)ETER",
+    "Proteins": "P26006",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "SRT(ph)PSASNDDQQE",
+    "Proteins": "O43765",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RRT(ph)VDEDPDER",
+    "Proteins": "K7ELQ4;P17544;P17544-1;P17544-2;P17544-3;P17544-4",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KASVHS(ph)SGR",
+    "Proteins": "Q9Y5B9",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KAS(ph)ANAR",
+    "Proteins": "Q92922",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "DGQSS(ph)PQPS(ph)PR",
+    "Proteins": "A0A0U1RQQ1;Q5VZK9;Q5VZK9-2",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "SRT(ph)PS(ph)ASNDDQQE",
+    "Proteins": "O43765",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "T(ph)SCSGSGERES(ph)PER",
+    "Proteins": "C9JQZ3;C9K022;Q9H8Y5",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RRS(ph)TPAPK",
+    "Proteins": "E7EMW7;O95071;O95071-2",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "QSSSSAGDS(ph)DGEREDSAAER",
+    "Proteins": "I3L3Z2;Q9BRA0",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "GSSEEDEDART(ph)PDR",
+    "Proteins": "H7C2Z0;Q8NC56",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "S(ph)YS(ph)SERR",
+    "Proteins": "A0A0A0MT33;Q9UPN6;Q9UPN6-2",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RKPS(ph)EEAR",
+    "Proteins": "Q6UWE0;Q6UWE0-2",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "HRS(ph)NS(ph)FSDER",
+    "Proteins": "Q09666",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KASCST(ph)AGSGSR",
+    "Proteins": "Q96L34;Q96L34-2",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "AASEDMTS(ph)DEER",
+    "Proteins": "A0A0A0MQR4;I3L2J0;Q96RK0",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "S(ph)RTPS(ph)ASNDDQQE",
+    "Proteins": "O43765",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RS(ph)VGSDE",
+    "Proteins": "C9JBX5;E9PAL7;P43307;P43307-2",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RVNS(ph)NGK",
+    "Proteins": "Q8N108;Q8N108-12;Q8N108-13;Q8N108-17",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "EEEADMSS(ph)PTQR",
+    "Proteins": "E9PDI4;O00515",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KGS(ph)SGAPQTSR",
+    "Proteins": "Q5T5P2;Q5T5P2-3;Q5T5P2-7;Q5T5P2-8",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KCS(ph)QTQCPR",
+    "Proteins": "H3BRN3;H3BT57;H3BUJ5;H3BVD2;P29590;P29590-11;P29590-12;P29590-2;P29590-3;P29590-4;P29590-5;P29590-8;P29590-9",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KT(ph)PSRPGS(ph)R",
+    "Proteins": "A0A0U1RQJ2;A0A494C073;A0A494C1U5;E9PHM6;F6QMI7;F8W9J4;Q03001;Q03001-14;Q03001-8",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KRS(ph)EGEEK",
+    "Proteins": "H3BM79;H3BNB8;H3BRV2;H3BSX7;H3BVH0;Q9H8T0;Q9H8T0-2",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "ERLNS(ph)SENGEDR",
+    "Proteins": "E1B6W4;H0YGP9;Q7L4I2;Q7L4I2-2",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "SS(ph)DGGSEEPPDR",
+    "Proteins": "Q9HCD6;Q9HCD6-2;Q9HCD6-3;Q9HCD6-4",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KMS(ph)VMGR",
+    "Proteins": "H0YCT3;Q7Z3K3;Q7Z3K3-2;Q7Z3K3-3;Q7Z3K3-5;Q7Z3K3-6;Q7Z3K3-7",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KDSGS(ph)PNPAR",
+    "Proteins": "A0A087WUS5;A0A0B4J1R1;A0A494C1T8;H0YBG3;H0YBT0;P01106;P01106-2",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KENGVNS(ph)PR",
+    "Proteins": "H7C5L8;Q13625;Q13625-3",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "S(ph)SGQLS(ph)GR",
+    "Proteins": "Q9P206;Q9P206-2;Q9P206-3",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RHS(ph)EVETDSKK",
+    "Proteins": "Q9NX58",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RTPS(ph)AGK",
+    "Proteins": "P46013;P46013-2",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "TRS(ph)HRDS(ph)EDI",
+    "Proteins": "P46013;P46013-2",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "TPS(ph)ASNDDQQE",
+    "Proteins": "O43765",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RPEGPGAQAPSS(ph)PR",
+    "Proteins": "P40222",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RES(ph)GRPIKPPR",
+    "Proteins": "A0A0G2JHL0;A0A0G2JK44;A0A140T9E9;A0A140T9F7;A0A140T9V2;E9PIQ3;H0Y6K2;H0YDJ7;P25440;P25440-2;P25440-3;P25440-4;U3KPW0;U3KQA6",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RPSASS(ph)PNNNTAAK",
+    "Proteins": "A0A087WW48;E7ET14;O75151",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RNS(ph)VAS(ph)PTS(ph)PTR",
+    "Proteins": "Q96HB5;Q96HB5-2;Q96HB5-3;Q96HB5-4;Q96HB5-5",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "S(ph)GNSDSIER",
+    "Proteins": "A0A0A0MRW7;A0A5F9ZGW5;A0A5F9ZI51;C9J8U3;Q7Z2E3;Q7Z2E3-10;Q7Z2E3-11;Q7Z2E3-13;Q7Z2E3-4;Q7Z2E3-5;Q7Z2E3-7;Q7Z2E3-8;Q7Z2E3-9",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RPS(ph)AAAK",
+    "Proteins": "Q8N201",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RPS(ph)AAAK",
+    "Proteins": "Q8N201",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KADGPPGPHDGGDRPS(ph)AEAR",
+    "Proteins": "Q4KMP7;Q4KMP7-2",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RTAS(ph)VK",
+    "Proteins": "B1AKL4;Q9NRA8;Q9NRA8-3",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RDS(ph)FDDR",
+    "Proteins": "A0A0R4J2E8;A8MXP9;D6R991;D6REM6;P43243",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "T(ph)VDEDPDERR",
+    "Proteins": "K7ELQ4;P17544;P17544-1;P17544-2;P17544-3;P17544-4",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "S(ph)VGGDS(ph)DTEDMR",
+    "Proteins": "A0A087X0F1;Q9UK61;Q9UK61-2;Q9UK61-3;Q9UK61-4",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "EGS(ph)LSSQDSR",
+    "Proteins": "Q12923;Q12923-2;Q12923-3;Q12923-4",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "DEDGESGGQRS(ph)EAEEGEVR",
+    "Proteins": "A0A0C4DH22;A0A1B0GTW6;H7C2K6;Q9H4G0;Q9H4G0-2;Q9H4G0-3;Q9H4G0-4",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "DRS(ph)VS(ph)VDSGEQR",
+    "Proteins": "A0A087WZX0;Q86UU0;Q86UU0-2;Q86UU0-3;Q86UU0-4",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KAS(ph)QQSNQIQTQR",
+    "Proteins": "H0YMH7;H0YNU2;H0YNW9;Q05D32;Q05D32-2",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KRS(ph)EGFSMDR",
+    "Proteins": "K7ERA4;Q7Z4V5;Q7Z4V5-2;Q7Z4V5-3;Q7Z4V5-4",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "SSSDS(ph)DDEEKKHEK",
+    "Proteins": "O95391",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RAS(ph)HTLLPSHR",
+    "Proteins": "E7EQT4;Q9UKV3;Q9UKV3-5;S4R3H4",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KSS(ph)VNGSSATSSG",
+    "Proteins": "P35226;R4GMX3",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "ASVRGS(ph)S(ph)EEDEDART(ph)PDR",
+    "Proteins": "H7C2Z0;Q8NC56",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "TVS(ph)AS(ph)ESEDR",
+    "Proteins": "H3BNE2;Q9ULG6;Q9ULG6-2;Q9ULG6-3;Q9ULG6-4;Q9ULG6-5",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "RPAS(ph)VSSSAAVEHEQR",
+    "Proteins": "Q7Z5L9;Q7Z5L9-2",
+    "Experiment01": "down",
+    "Experiment02": "down"
+  },
+  {
+    "Modified sequence": "RNDS(ph)GDHSDHMHYYQGK",
+    "Proteins": "E9PGM9;F8WCA5;P78332;P78332-2",
+    "Experiment01": "down",
+    "Experiment02": "down"
+  },
+  {
+    "Modified sequence": "AKPPSSS(ph)STCTDSATR",
+    "Proteins": "A0A087WYP9;A6NFV8;D6RAR7;D6RJC6;Q96EV8;Q96EV8-3",
+    "Experiment01": "down",
+    "Experiment02": "down"
+  },
+  {
+    "Modified sequence": "QLS(ph)DQQDEER",
+    "Proteins": "H7C1E6;Q8NDI1;Q8NDI1-2;Q8NDI1-3",
+    "Experiment01": "down",
+    "Experiment02": "down"
+  },
+  {
+    "Modified sequence": "KGS(ph)VSHDTVQPR",
+    "Proteins": "E9PMG1;F2Z3L2;H0YDT0;Q96D71;Q96D71-2;Q96D71-3;Q96D71-4",
+    "Experiment01": "down",
+    "Experiment02": "down"
+  },
+  {
+    "Modified sequence": "THSAGT(ph)SPTITHQK",
+    "Proteins": "P35568",
+    "Experiment01": "up",
+    "Experiment02": "down"
+  },
+  {
+    "Modified sequence": "KGSSAVGSDS(ph)D",
+    "Proteins": "A0A096LPB9;Q68E01;Q68E01-2;Q68E01-3;Q68E01-4",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "S(ph)QSS(ph)S(ph)QFR",
+    "Proteins": "Q16537;Q16537-2",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "EECKS(ph)PK",
+    "Proteins": "H7C5E4;Q8IZH2;Q8IZH2-2",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "SSDKPIRT(ph)PSR",
+    "Proteins": "Q99961;Q99961-2;Q99961-3",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "SNS(ph)FSDER",
+    "Proteins": "Q09666",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KLSDHS(ph)VR",
+    "Proteins": "Q96Q42;Q96Q42-2;Q96Q42-3",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KGSSAVGS(ph)DS(ph)D",
+    "Proteins": "A0A096LPB9;Q68E01;Q68E01-2;Q68E01-3;Q68E01-4",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "LNS(ph)SENGEDR",
+    "Proteins": "E1B6W4;H0YGP9;Q7L4I2;Q7L4I2-2",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "EEASS(ph)PGAGEGPAEEGTR",
+    "Proteins": "A0A494C1T9;J3KPS2;Q6ZRV2",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KGS(ph)STDYQESMDTDKDDPHGR",
+    "Proteins": "A0A669KBF4;E9PKG7;E9PL54;O00327;O00327-3;O00327-4;O00327-5;O00327-6;O00327-8",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "GPGAPAASS(ph)PTRK",
+    "Proteins": "E7ET48;E9PIR9;Q8N1P7",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "KLES(ph)TESR",
+    "Proteins": "A0A0C4DGC5;P02545;P02545-2;P02545-3;P02545-4;P02545-5;P02545-6;Q3BDU5;Q5TCI8",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "AASEDMTS(ph)DEER",
+    "Proteins": "A0A0A0MQR4;I3L2J0;Q96RK0",
+    "Experiment01": "up",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "(ac)S(ph)GGGVIR",
+    "Proteins": "J3KSW7;J3KTL2;J3QQV5;Q07955;Q07955-2;Q07955-3",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "EEEADMSS(ph)PTQR",
+    "Proteins": "E9PDI4;O00515",
+    "Experiment01": "down",
+    "Experiment02": "up"
+  },
+  {
+    "Modified sequence": "S(ph)NS(ph)FSDER",
+    "Proteins": "Q09666",
+    "Experiment01": "down",
+    "Experiment02": "down"
+  },
+  {
+    "Modified sequence": "EEEADMSS(ph)PTQR",
+    "Proteins": "E9PDI4;O00515",
+    "Experiment01": "down",
+    "Experiment02": "down"
+  },
+  {
+    "Modified sequence": "HRNPS(ph)TADAYNSHLKE",
+    "Proteins": "A0A087WYH0;J3KRC8;Q96N06;Q96N06-2",
+    "Experiment01": "down",
+    "Experiment02": "down"
+  },
+  {
+    "Modified sequence": "RGS(ph)IDSPK",
+    "Proteins": "F5H212;P15822",
+    "Experiment01": "up",
+    "Experiment02": "down"
+  },
+  {
+    "Modified sequence": "RKS(ph)LSDSESDDSK",
+    "Proteins": "Q13185;S4R2Y4",
+    "Experiment01": "down",
+    "Experiment02": "down"
+  }
+]

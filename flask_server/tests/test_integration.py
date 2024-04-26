@@ -3,6 +3,7 @@ import json
 import pytest
 from enrichment_server import app as application, VERSION
 
+
 @pytest.fixture()
 def app():
     yield application
@@ -39,9 +40,15 @@ class TestClass:
     def evaluate_phonemes(self):
         assert len(self.actual_result) == len(self.expected_result) and all(
             res['pathway'] == exp['pathway'] and
-            set([node['geneNames'][0] for node in res['nodes']]) == set([node['geneNames'][0] for node in exp['nodes']]) and
+            set([node['geneNames'][0] for node in res['nodes']]) == set(
+                [node['geneNames'][0] for node in exp['nodes']]) and
             len(res['links']) == len(exp['links'])
             for res, exp in zip(self.actual_result, self.expected_result)
+        )
+
+    def evaluate_motif_enrichment(self):
+        assert len(self.actual_result) == len(self.expected_result) and all(
+            res == exp for res, exp in zip(self.actual_result, self.expected_result)
         )
 
     def test_get_status(self, client):
@@ -154,3 +161,18 @@ class TestClass:
         expected_result_file = Path('../fixtures/phonemes/expected_output/json_skeletons.json')
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_phonemes()
+
+    def test_motif_enrichment(self, client):
+        self.input_json = Path('../fixtures/motif_enrichment/input/input.json')
+        self.dataset_name = 'motif_enrichment_test'
+
+        response = client.post('/motif_enrichment', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_json.open('rb')
+        })
+
+        self.actual_result = json.loads(response.data)
+        expected_result_file = Path('../fixtures/motif_enrichment/expected_output/output.json')
+        self.expected_result = json.load(open(expected_result_file))
+        self.evaluate_motif_enrichment()
