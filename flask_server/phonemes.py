@@ -136,7 +136,7 @@ def create_pathway_skeleton(cytoscape_outputfolder: Path) -> Path:
         #Make sure all 'y's are positive by getting the minimum and subtracting it from all
         miny = min([node['y'] for node in skeleton_json['nodes']])
         for node in skeleton_json['nodes']:
-            node['y'] -= miny - 10 #The additional 10 makes sure the minimum y is 10, so in the visible range.
+            node['y'] -= miny - 100 #The additional 100 makes sure the minimum y is 100, so should be well within the visible range.
 
         pathway_skeleton_list.append(skeleton_json)
 
