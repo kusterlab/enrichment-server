@@ -51,6 +51,13 @@ class TestClass:
             res == exp for res, exp in zip(self.actual_result, self.expected_result)
         )
 
+    def evaluate_kea3(self):
+        for key in self.expected_result.keys():
+            assert len(self.actual_result[key]['MeanRank']) == len(self.expected_result[key]['MeanRank'])
+            assert len(self.actual_result[key]['TopRank']) == len(self.expected_result[key]['TopRank'])
+            assert self.actual_result[key]['MeanRank'] == self.expected_result[key]['MeanRank']
+            assert self.actual_result[key]['TopRank'] == self.expected_result[key]['TopRank']
+
     def test_get_status(self, client):
         response = client.get('/')
         # You can do either of the following
@@ -176,3 +183,18 @@ class TestClass:
         expected_result_file = Path('../fixtures/motif_enrichment/expected_output/output.json')
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_motif_enrichment()
+
+    def test_kea3_enrichment(self, client):
+        self.input_json = Path('../fixtures/kea3/input/input.json')
+        self.dataset_name = 'kea3_test'
+
+        response = client.post('/kea3', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_json.open('rb')
+        })
+
+        self.actual_result = json.loads(response.data)
+        expected_result_file = Path('../fixtures/kea3/expected_output/output.json')
+        self.expected_result = json.load(open(expected_result_file))
+        self.evaluate_kea3()

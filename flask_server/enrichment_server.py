@@ -11,10 +11,11 @@ from modules.ssgsea import ssgsea
 from modules.ksea import ksea
 from modules.phonemes import phonemes
 from modules.motif_enrichment import motif_enrichment
+from modules.kea3 import kea3
 
 app = Flask(__name__)
 
-VERSION = '0.0.3'
+VERSION = '0.0.4'
 
 
 @app.route('/', methods=['GET'])
@@ -100,6 +101,19 @@ def handle_motif_enrichment_request() -> werkzeug.wrappers.Response | str:
     return send_response(send_file(motif_enrichment_result, as_attachment=False), filepath.parent)
 
 
+@app.route('/kea3', methods=['POST'])
+def handle_kea3_enrichment_request() -> werkzeug.wrappers.Response | str:
+    post_request_processed = process_post_request(request)
+
+    if type(post_request_processed) is str:
+        return post_request_processed
+
+    filepath = post_request_processed
+    kea3_result = kea3.run_kea3_api(filepath)
+
+    return send_response(send_file(kea3_result, as_attachment=False), filepath.parent)
+
+
 def process_post_request(post_request: werkzeug.Request) -> Path | str:
     request_url = urlparse(request.base_url)
 
@@ -133,8 +147,8 @@ def send_response(result: werkzeug.wrappers.Response, output_folder=None) -> fla
     # TODO: I added this for cross-origin resource sharing, but is it unsafe?
     # Maybe using flask-cors (https://flask-cors.readthedocs.io/en/latest/)
     response.headers.add('Access-Control-Allow-Origin', '*')
-    if output_folder:
-        shutil.rmtree(output_folder)
+    # if output_folder:
+    #     shutil.rmtree(output_folder)
     return response
 
 
