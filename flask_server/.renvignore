@@ -1,0 +1,7 @@
+*.ipynb
+*.py
+.ipynb_checkpoints
+logs
+__pycache__
+.pytest_cache
+tests
