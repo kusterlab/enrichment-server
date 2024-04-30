@@ -1,4 +1,4 @@
-# TODO: Give FB Credit for the logic
+# This script mostly uses code written by Florian P. Bayer <f.bayer@tum.de>
 
 import json
 from collections import defaultdict
@@ -34,7 +34,7 @@ def run_motif_enrichment(filepath: Path) -> Path:
 
     # TODO: Maybe add more lowercase letters in context for multiphospho-peptides
     input_df = pa.addPeptideAndPsitePositions(input_df, PHOSPHOSITE_FASTA, pspInput=True, context_left=5,
-                                              context_right=5)
+                                              context_right=5, retain_other_mods=True)
 
     # Explode for multiple phosphos becomming individual rows
     input_df['Site sequence context'] = input_df['Site sequence context'].str.split(';')
