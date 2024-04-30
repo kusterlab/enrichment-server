@@ -7,10 +7,10 @@ import werkzeug.wrappers
 from werkzeug.utils import secure_filename
 from flask import Flask, request, send_file, jsonify, make_response
 import flask.wrappers
-import ssgsea
-import ksea
-import phonemes
-import motif_enrichment
+from modules.ssgsea import ssgsea
+from modules.ksea import ksea
+from modules.phonemes import phonemes
+from modules.motif_enrichment import motif_enrichment
 
 app = Flask(__name__)
 
