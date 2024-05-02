@@ -58,6 +58,14 @@ class TestClass:
             assert self.actual_result[key]['MeanRank'] == self.expected_result[key]['MeanRank']
             assert self.actual_result[key]['TopRank'] == self.expected_result[key]['TopRank']
 
+    def evaluate_kstar(self):
+        for phospho_type in ['ST', 'Y']:
+            assert len(self.actual_result[phospho_type]) == len(self.expected_result[phospho_type])
+            for actual_elem, expected_elem in zip(self.actual_result[phospho_type], self.expected_result[phospho_type]):
+                assert actual_elem['Kinase'] == expected_elem['Kinase']
+                assert round(actual_elem['Experiment01'], 5) == round(expected_elem['Experiment01'], 5)
+                assert round(actual_elem['Experiment02'], 5) == round(expected_elem['Experiment02'], 5)
+
     def test_get_status(self, client):
         response = client.get('/')
         # You can do either of the following
@@ -184,7 +192,7 @@ class TestClass:
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_motif_enrichment()
 
-    def test_kea3_enrichment(self, client):
+    def test_kea3(self, client):
         self.input_json = Path('../fixtures/kea3/input/input.json')
         self.dataset_name = 'kea3_test'
 
@@ -198,3 +206,18 @@ class TestClass:
         expected_result_file = Path('../fixtures/kea3/expected_output/output.json')
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_kea3()
+
+    def test_kstar(self, client):
+        self.input_json = Path('../fixtures/kstar/input/input.json')
+        self.dataset_name = 'kstar_test'
+
+        response = client.post('/kstar', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_json.open('rb')
+        })
+
+        self.actual_result = json.loads(response.data)
+        expected_result_file = Path('../fixtures/kstar/expected_output/output.json')
+        self.expected_result = json.load(open(expected_result_file))
+        self.evaluate_kstar()

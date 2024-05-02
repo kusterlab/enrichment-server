@@ -63,6 +63,10 @@ RUN poetry install -C flask_server
 WORKDIR /app/flask_server
 #Stringi is broken in the renv for some reason, reinstall it
 RUN Rscript -e "install.packages('stringi')"
+#The KSTAR Python Package needs some initial setting up
+RUN poetry run python -c "from kstar import config; \
+    config.install_resource_files(); \
+    config.NETWORK_DIR, config.NETWORK_Y_PICKLES, config.NETWORK_ST_PICKLES = config.update_network_directory('../db/kstar/NetworKIN')"
 
 #Tell Cytoscape to use the Xvfb virtual display
 ENV DISPLAY=:1
