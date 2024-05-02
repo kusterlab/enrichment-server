@@ -3,6 +3,7 @@ import json
 import pickle
 
 import pandas as pd
+import psite_annotation as pa
 from kstar import helpers, calculate, mapping, config
 
 
@@ -11,7 +12,18 @@ def run_kstar(filepath: Path) -> Path:
     input_json = json.load(open(filepath))
     input_df = pd.DataFrame.from_dict(input_json)
     data_columns = [col for col in input_df if
-                    col not in ['Sequence', 'Uniprot_Accession'] and not col.startswith('KSTAR')]
+                    col not in ['Modified sequence', 'Proteins']]
+
+    # We need to convert the sequences into +/-7 flanking format with modified residues in lowercase
+    input_df = pa.addPeptideAndPsitePositions(input_df, '../db/Phosphosite_seq.fasta', pspInput=True,
+                                              context_left=7, context_right=7, retain_other_mods=True)
+
+    input_df['Uniprot_Accession'] = input_df['Matched proteins'].apply(lambda prot: prot.split(';')[0])
+
+    input_df['Sequence'] = input_df['Site sequence context'].apply(lambda prot: prot.split(';')[0])
+
+    input_df = input_df[['Uniprot_Accession', 'Sequence'] + data_columns]
+
     # KSTAR automatically recognizes data columns if you prepend them with 'data:'
     input_df = input_df.rename({col: f'data:{col}' for col in data_columns}, axis=1)
     # Map the data to KinPred
