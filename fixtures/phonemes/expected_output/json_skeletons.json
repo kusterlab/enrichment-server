@@ -1,1 +1,1241 @@
-[{"pathway": {"name": "Experiment01"}, "nodes": [{"id": 353, "geneNames": ["PRKDC"], "type": "gene_protein", "x": 29.448529411764696, "y": -436.9852941176471}, {"id": 356, "geneNames": ["GSK3B"], "type": "gene_protein", "x": -83.0514705882353, "y": 133.01470588235296}, {"id": 359, "geneNames": ["MAPK14"], "type": "gene_protein", "x": -21.176470588235304, "y": -31.985294117647044}, {"id": 362, "geneNames": ["MAPK3"], "type": "gene_protein", "x": 40.698529411764696, "y": 39.264705882352956}, {"id": 365, "geneNames": ["MAPK1"], "type": "gene_protein", "x": 74.4485294117647, "y": 346.7647058823529}, {"id": 335, "geneNames": ["ABL1"], "type": "gene_protein", "x": 48.198529411764696, "y": -376.9852941176471}, {"id": 368, "geneNames": ["MAPK8"], "type": "gene_protein", "x": -45.551470588235304, "y": 418.0147058823529}, {"id": 338, "geneNames": ["EGFR"], "type": "gene_protein", "x": 10.698529411764696, "y": -316.9852941176471}, {"id": 371, "geneNames": ["MAPKAPK2"], "type": "gene_protein", "x": 21.948529411764696, "y": 133.01470588235296}, {"id": 341, "geneNames": ["MTOR"], "type": "gene_protein", "x": 141.9485294117647, "y": 204.26470588235296}, {"id": 374, "geneNames": ["TSC2"], "type": "gene_protein", "x": 126.9485294117647, "y": 133.01470588235296}, {"id": 344, "geneNames": ["MAP2K1"], "type": "gene_protein", "x": -21.176470588235304, "y": -91.98529411764704}, {"id": 377, "geneNames": ["PLK1"], "type": "gene_protein", "x": -47.426470588235304, "y": 204.26470588235296}, {"id": 347, "geneNames": ["PIK3CA"], "type": "gene_protein", "x": -41.801470588235304, "y": -234.48529411764704}, {"id": 380, "geneNames": ["SGK1"], "type": "gene_protein", "x": 21.948529411764696, "y": 275.5147058823529}, {"id": 350, "geneNames": ["PIK3R1"], "type": "gene_protein", "x": -146.8014705882353, "y": -234.48529411764704}, {"id": 383, "geneNames": ["PDPK1"], "type": "gene_protein", "x": -109.3014705882353, "y": -163.23529411764704}], "links": [{"id": "relation-455", "sourceId": 383, "targetId": 380, "types": ["other"]}, {"id": "relation-452", "sourceId": 383, "targetId": 377, "types": ["other"]}, {"id": "relation-449", "sourceId": 383, "targetId": 344, "types": ["other"]}, {"id": "relation-470", "sourceId": 380, "targetId": 365, "types": ["other"]}, {"id": "relation-473", "sourceId": 374, "targetId": 341, "types": ["other"]}, {"id": "relation-443", "sourceId": 371, "targetId": 377, "types": ["other"]}, {"id": "relation-416", "sourceId": 365, "targetId": 368, "types": ["other"]}, {"id": "relation-413", "sourceId": 365, "targetId": 338, "types": ["other"]}, {"id": "relation-440", "sourceId": 362, "targetId": 371, "types": ["other"]}, {"id": "relation-437", "sourceId": 362, "targetId": 374, "types": ["other"]}, {"id": "relation-434", "sourceId": 362, "targetId": 356, "types": ["other"]}, {"id": "relation-431", "sourceId": 362, "targetId": 338, "types": ["other"]}, {"id": "relation-428", "sourceId": 359, "targetId": 371, "types": ["other"]}, {"id": "relation-425", "sourceId": 359, "targetId": 362, "types": ["other"]}, {"id": "relation-422", "sourceId": 359, "targetId": 365, "types": ["other"]}, {"id": "relation-419", "sourceId": 359, "targetId": 356, "types": ["other"]}, {"id": "relation-467", "sourceId": 353, "targetId": 335, "types": ["other"]}, {"id": "relation-464", "sourceId": 350, "targetId": 383, "types": ["other"]}, {"id": "relation-461", "sourceId": 350, "targetId": 368, "types": ["other"]}, {"id": "relation-458", "sourceId": 347, "targetId": 383, "types": ["other"]}, {"id": "relation-410", "sourceId": 344, "targetId": 362, "types": ["other"]}, {"id": "relation-407", "sourceId": 344, "targetId": 359, "types": ["other"]}, {"id": "relation-404", "sourceId": 344, "targetId": 356, "types": ["other"]}, {"id": "relation-446", "sourceId": 341, "targetId": 380, "types": ["other"]}, {"id": "relation-401", "sourceId": 338, "targetId": 353, "types": ["other"]}, {"id": "relation-398", "sourceId": 338, "targetId": 350, "types": ["other"]}, {"id": "relation-395", "sourceId": 338, "targetId": 347, "types": ["other"]}, {"id": "relation-392", "sourceId": 338, "targetId": 344, "types": ["other"]}, {"id": "relation-389", "sourceId": 335, "targetId": 341, "types": ["other"]}, {"id": "relation-386", "sourceId": 335, "targetId": 338, "types": ["other"]}]}, {"pathway": {"name": "Experiment02"}, "nodes": [{"id": 673, "geneNames": ["RPS6KB2"], "type": "gene_protein", "x": 64.6875, "y": -79.6875}, {"id": 652, "geneNames": ["AKT1"], "type": "gene_protein", "x": -6.5625, "y": 29.0625}, {"id": 655, "geneNames": ["GSK3B"], "type": "gene_protein", "x": -111.5625, "y": 100.3125}, {"id": 658, "geneNames": ["MAP3K8"], "type": "gene_protein", "x": -6.5625, "y": 100.3125}, {"id": 661, "geneNames": ["SRPK2"], "type": "gene_protein", "x": 98.4375, "y": 100.3125}, {"id": 664, "geneNames": ["IRS1"], "type": "gene_protein", "x": -6.5625, "y": -19.6875}, {"id": 667, "geneNames": ["MTOR"], "type": "gene_protein", "x": 12.1875, "y": -150.9375}, {"id": 670, "geneNames": ["RPS6KA2"], "type": "gene_protein", "x": -44.0625, "y": -79.6875}], "links": [{"id": "relation-700", "sourceId": 670, "targetId": 664, "types": ["other"]}, {"id": "relation-697", "sourceId": 670, "targetId": 655, "types": ["other"]}, {"id": "relation-694", "sourceId": 667, "targetId": 673, "types": ["other"]}, {"id": "relation-691", "sourceId": 667, "targetId": 670, "types": ["other"]}, {"id": "relation-688", "sourceId": 667, "targetId": 664, "types": ["other"]}, {"id": "relation-685", "sourceId": 664, "targetId": 652, "types": ["other"]}, {"id": "relation-682", "sourceId": 652, "targetId": 661, "types": ["other"]}, {"id": "relation-679", "sourceId": 652, "targetId": 658, "types": ["other"]}, {"id": "relation-676", "sourceId": 652, "targetId": 655, "types": ["other"]}]}]
+[
+  {
+    "pathway": {
+      "name": "Experiment01"
+    },
+    "nodes": [
+      {
+        "id": 192,
+        "geneNames": [
+          "MYC"
+        ],
+        "type": "gene_protein",
+        "x": 175.29207766439902,
+        "y": 992.5,
+        "uniprotAccs": [
+          "P01106"
+        ]
+      },
+      {
+        "id": 225,
+        "geneNames": [
+          "SGK1"
+        ],
+        "type": "gene_protein",
+        "x": -96.98530328798188,
+        "y": 100.0,
+        "uniprotAccs": [
+          "O00141"
+        ]
+      },
+      {
+        "id": 162,
+        "geneNames": [
+          "EGFR"
+        ],
+        "type": "gene_protein",
+        "x": 23.01469671201812,
+        "y": 276.25,
+        "uniprotAccs": [
+          "P00533"
+        ]
+      },
+      {
+        "id": 195,
+        "geneNames": [
+          "MAPK14"
+        ],
+        "type": "gene_protein",
+        "x": -249.79760487528347,
+        "y": 606.25,
+        "uniprotAccs": [
+          "Q16539"
+        ]
+      },
+      {
+        "id": 228,
+        "geneNames": [
+          "PDPK1"
+        ],
+        "type": "gene_protein",
+        "x": 253.32739512471653,
+        "y": 463.75,
+        "uniprotAccs": [
+          "O15530"
+        ]
+      },
+      {
+        "id": 165,
+        "geneNames": [
+          "MTOR"
+        ],
+        "type": "gene_protein",
+        "x": 306.542077664399,
+        "y": 898.75,
+        "uniprotAccs": [
+          "P42345"
+        ]
+      },
+      {
+        "id": 198,
+        "geneNames": [
+          "MAPK1"
+        ],
+        "type": "gene_protein",
+        "x": 8.014696712018122,
+        "y": 193.75,
+        "uniprotAccs": [
+          "P28482"
+        ]
+      },
+      {
+        "id": 231,
+        "geneNames": [
+          "CARHSP1"
+        ],
+        "type": "gene_protein",
+        "x": -411.9853032879819,
+        "y": 193.75,
+        "uniprotAccs": [
+          "Q9Y2V2"
+        ]
+      },
+      {
+        "id": 168,
+        "geneNames": [
+          "GAB1"
+        ],
+        "type": "gene_protein",
+        "x": -86.67260487528347,
+        "y": 370.0,
+        "uniprotAccs": [
+          "Q13480"
+        ]
+      },
+      {
+        "id": 201,
+        "geneNames": [
+          "MAPK3"
+        ],
+        "type": "gene_protein",
+        "x": -129.79760487528347,
+        "y": 677.5,
+        "uniprotAccs": [
+          "P27361"
+        ]
+      },
+      {
+        "id": 234,
+        "geneNames": [
+          "FOXO3"
+        ],
+        "type": "gene_protein",
+        "x": -96.98530328798188,
+        "y": 193.75,
+        "uniprotAccs": [
+          "O43524"
+        ]
+      },
+      {
+        "id": 171,
+        "geneNames": [
+          "MAP2K1"
+        ],
+        "type": "gene_protein",
+        "x": -191.67260487528347,
+        "y": 535.0,
+        "uniprotAccs": [
+          "Q02750"
+        ]
+      },
+      {
+        "id": 204,
+        "geneNames": [
+          "MAPK8"
+        ],
+        "type": "gene_protein",
+        "x": 359.042077664399,
+        "y": 463.75,
+        "uniprotAccs": [
+          "P45983"
+        ]
+      },
+      {
+        "id": 237,
+        "geneNames": [
+          "NDRG1"
+        ],
+        "type": "gene_protein",
+        "x": -201.98530328798188,
+        "y": 193.75,
+        "uniprotAccs": [
+          "Q92597"
+        ]
+      },
+      {
+        "id": 174,
+        "geneNames": [
+          "PIK3CA"
+        ],
+        "type": "gene_protein",
+        "x": 228.32739512471653,
+        "y": 370.0,
+        "uniprotAccs": [
+          "P42336"
+        ]
+      },
+      {
+        "id": 207,
+        "geneNames": [
+          "MAPKAPK2"
+        ],
+        "type": "gene_protein",
+        "x": -85.33292233560093,
+        "y": 805.0,
+        "uniprotAccs": [
+          "P49137"
+        ]
+      },
+      {
+        "id": 240,
+        "geneNames": [
+          "PLEC"
+        ],
+        "type": "gene_protein",
+        "x": -306.9853032879819,
+        "y": 193.75,
+        "uniprotAccs": [
+          "Q15149"
+        ]
+      },
+      {
+        "id": 177,
+        "geneNames": [
+          "PIK3R1"
+        ],
+        "type": "gene_protein",
+        "x": 333.32739512471653,
+        "y": 370.0,
+        "uniprotAccs": [
+          "P27986"
+        ]
+      },
+      {
+        "id": 210,
+        "geneNames": [
+          "TSC2"
+        ],
+        "type": "gene_protein",
+        "x": 201.54207766439902,
+        "y": 805.0,
+        "uniprotAccs": [
+          "P49815"
+        ]
+      },
+      {
+        "id": 180,
+        "geneNames": [
+          "PRKDC"
+        ],
+        "type": "gene_protein",
+        "x": 123.32739512471653,
+        "y": 370.0,
+        "uniprotAccs": [
+          "P78527"
+        ]
+      },
+      {
+        "id": 213,
+        "geneNames": [
+          "HSPB1"
+        ],
+        "type": "gene_protein",
+        "x": -113.45792233560093,
+        "y": 898.75,
+        "uniprotAccs": [
+          "P04792"
+        ]
+      },
+      {
+        "id": 183,
+        "geneNames": [
+          "SHC1"
+        ],
+        "type": "gene_protein",
+        "x": 18.32739512471653,
+        "y": 370.0,
+        "uniprotAccs": [
+          "P29353"
+        ]
+      },
+      {
+        "id": 216,
+        "geneNames": [
+          "PLK1"
+        ],
+        "type": "gene_protein",
+        "x": 201.54207766439902,
+        "y": 898.75,
+        "uniprotAccs": [
+          "P53350"
+        ]
+      },
+      {
+        "id": 186,
+        "geneNames": [
+          "GSK3B"
+        ],
+        "type": "gene_protein",
+        "x": -234.17260487528347,
+        "y": 805.0,
+        "uniprotAccs": [
+          "P49841"
+        ]
+      },
+      {
+        "id": 155,
+        "geneNames": [
+          "ABL1"
+        ],
+        "type": "gene_protein",
+        "x": 104.57739512471653,
+        "y": 463.75,
+        "uniprotAccs": [
+          "P00519"
+        ]
+      },
+      {
+        "id": 219,
+        "geneNames": [
+          "RIPK1"
+        ],
+        "type": "gene_protein",
+        "x": 96.54207766439913,
+        "y": 898.75,
+        "uniprotAccs": [
+          "Q13546"
+        ]
+      },
+      {
+        "id": 189,
+        "geneNames": [
+          "CTTN"
+        ],
+        "type": "gene_protein",
+        "x": -218.45792233560093,
+        "y": 898.75,
+        "uniprotAccs": [
+          "Q14247"
+        ]
+      },
+      {
+        "id": 222,
+        "geneNames": [
+          "ZFP36"
+        ],
+        "type": "gene_protein",
+        "x": -8.457922335600927,
+        "y": 898.75,
+        "uniprotAccs": [
+          "P16415",
+          "P26651"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "id": "relation-363",
+        "sourceId": 228,
+        "targetId": 225,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-360",
+        "sourceId": 228,
+        "targetId": 216,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-357",
+        "sourceId": 228,
+        "targetId": 171,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-393",
+        "sourceId": 225,
+        "targetId": 240,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-390",
+        "sourceId": 225,
+        "targetId": 237,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-387",
+        "sourceId": 225,
+        "targetId": 234,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-384",
+        "sourceId": 225,
+        "targetId": 231,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-381",
+        "sourceId": 225,
+        "targetId": 198,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-375",
+        "sourceId": 216,
+        "targetId": 192,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-396",
+        "sourceId": 210,
+        "targetId": 165,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-348",
+        "sourceId": 207,
+        "targetId": 222,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-345",
+        "sourceId": 207,
+        "targetId": 219,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-342",
+        "sourceId": 207,
+        "targetId": 216,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-339",
+        "sourceId": 207,
+        "targetId": 213,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-336",
+        "sourceId": 204,
+        "targetId": 192,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-333",
+        "sourceId": 201,
+        "targetId": 192,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-330",
+        "sourceId": 201,
+        "targetId": 207,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-327",
+        "sourceId": 201,
+        "targetId": 189,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-324",
+        "sourceId": 201,
+        "targetId": 210,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-321",
+        "sourceId": 201,
+        "targetId": 186,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-318",
+        "sourceId": 201,
+        "targetId": 162,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-300",
+        "sourceId": 198,
+        "targetId": 189,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-297",
+        "sourceId": 198,
+        "targetId": 204,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-294",
+        "sourceId": 198,
+        "targetId": 162,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-315",
+        "sourceId": 195,
+        "targetId": 192,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-312",
+        "sourceId": 195,
+        "targetId": 207,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-309",
+        "sourceId": 195,
+        "targetId": 201,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-306",
+        "sourceId": 195,
+        "targetId": 198,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-303",
+        "sourceId": 195,
+        "targetId": 186,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-276",
+        "sourceId": 186,
+        "targetId": 192,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-273",
+        "sourceId": 186,
+        "targetId": 189,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-378",
+        "sourceId": 180,
+        "targetId": 155,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-372",
+        "sourceId": 177,
+        "targetId": 228,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-369",
+        "sourceId": 177,
+        "targetId": 204,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-366",
+        "sourceId": 174,
+        "targetId": 228,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-291",
+        "sourceId": 171,
+        "targetId": 201,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-288",
+        "sourceId": 171,
+        "targetId": 198,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-285",
+        "sourceId": 171,
+        "targetId": 195,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-282",
+        "sourceId": 171,
+        "targetId": 186,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-279",
+        "sourceId": 171,
+        "targetId": 189,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-354",
+        "sourceId": 165,
+        "targetId": 225,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-351",
+        "sourceId": 165,
+        "targetId": 192,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-270",
+        "sourceId": 162,
+        "targetId": 183,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-267",
+        "sourceId": 162,
+        "targetId": 180,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-264",
+        "sourceId": 162,
+        "targetId": 177,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-261",
+        "sourceId": 162,
+        "targetId": 174,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-258",
+        "sourceId": 162,
+        "targetId": 171,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-255",
+        "sourceId": 162,
+        "targetId": 168,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-252",
+        "sourceId": 155,
+        "targetId": 165,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-243",
+        "sourceId": 155,
+        "targetId": 162,
+        "types": [
+          "other"
+        ]
+      }
+    ]
+  },
+  {
+    "pathway": {
+      "name": "Experiment02"
+    },
+    "nodes": [
+      {
+        "id": 672,
+        "geneNames": [
+          "MAP3K8"
+        ],
+        "type": "gene_protein",
+        "x": -535.4891304347826,
+        "y": 441.25,
+        "uniprotAccs": [
+          "P41279"
+        ]
+      },
+      {
+        "id": 705,
+        "geneNames": [
+          "RPS6KB2"
+        ],
+        "type": "gene_protein",
+        "x": -154.23913043478262,
+        "y": 171.25000000000003,
+        "uniprotAccs": [
+          "Q9UBS0"
+        ]
+      },
+      {
+        "id": 675,
+        "geneNames": [
+          "METTL1"
+        ],
+        "type": "gene_protein",
+        "x": -325.4891304347826,
+        "y": 441.25,
+        "uniprotAccs": [
+          "Q9UBP6"
+        ]
+      },
+      {
+        "id": 708,
+        "geneNames": [
+          "RPS6"
+        ],
+        "type": "gene_protein",
+        "x": -135.48913043478262,
+        "y": 242.50000000000003,
+        "uniprotAccs": [
+          "P62753"
+        ]
+      },
+      {
+        "id": 645,
+        "geneNames": [
+          "AKT1"
+        ],
+        "type": "gene_protein",
+        "x": -5.4891304347826235,
+        "y": 291.25,
+        "uniprotAccs": [
+          "P31749"
+        ]
+      },
+      {
+        "id": 678,
+        "geneNames": [
+          "MISP"
+        ],
+        "type": "gene_protein",
+        "x": 829.5108695652174,
+        "y": 441.25,
+        "uniprotAccs": [
+          "Q8IVT2"
+        ]
+      },
+      {
+        "id": 711,
+        "geneNames": [
+          "EIF4B"
+        ],
+        "type": "gene_protein",
+        "x": -430.4891304347826,
+        "y": 512.5,
+        "uniprotAccs": [
+          "P23588"
+        ]
+      },
+      {
+        "id": 648,
+        "geneNames": [
+          "ARHGAP19"
+        ],
+        "type": "gene_protein",
+        "x": 724.5108695652174,
+        "y": 441.25,
+        "uniprotAccs": [
+          "Q14CB8"
+        ]
+      },
+      {
+        "id": 681,
+        "geneNames": [
+          "NDRG2"
+        ],
+        "type": "gene_protein",
+        "x": 619.5108695652174,
+        "y": 441.25,
+        "uniprotAccs": [
+          "Q9UN36"
+        ]
+      },
+      {
+        "id": 651,
+        "geneNames": [
+          "BRAF"
+        ],
+        "type": "gene_protein",
+        "x": 514.5108695652174,
+        "y": 441.25,
+        "uniprotAccs": [
+          "P15056"
+        ]
+      },
+      {
+        "id": 684,
+        "geneNames": [
+          "PFKFB2"
+        ],
+        "type": "gene_protein",
+        "x": 409.5108695652174,
+        "y": 441.25,
+        "uniprotAccs": [
+          "O60825"
+        ]
+      },
+      {
+        "id": 654,
+        "geneNames": [
+          "CCT2"
+        ],
+        "type": "gene_protein",
+        "x": 304.5108695652174,
+        "y": 441.25,
+        "uniprotAccs": [
+          "P78371"
+        ]
+      },
+      {
+        "id": 687,
+        "geneNames": [
+          "SRPK2"
+        ],
+        "type": "gene_protein",
+        "x": -430.4891304347826,
+        "y": 441.25,
+        "uniprotAccs": [
+          "P78362"
+        ]
+      },
+      {
+        "id": 657,
+        "geneNames": [
+          "EPHA2"
+        ],
+        "type": "gene_protein",
+        "x": 199.51086956521738,
+        "y": 441.25,
+        "uniprotAccs": [
+          "P29317"
+        ]
+      },
+      {
+        "id": 690,
+        "geneNames": [
+          "TSC2"
+        ],
+        "type": "gene_protein",
+        "x": 94.51086956521738,
+        "y": 441.25,
+        "uniprotAccs": [
+          "P49815"
+        ]
+      },
+      {
+        "id": 660,
+        "geneNames": [
+          "FOXO1"
+        ],
+        "type": "gene_protein",
+        "x": -10.489130434782624,
+        "y": 441.25,
+        "uniprotAccs": [
+          "Q12778"
+        ]
+      },
+      {
+        "id": 693,
+        "geneNames": [
+          "EIF4EBP1"
+        ],
+        "type": "gene_protein",
+        "x": -587.9891304347826,
+        "y": 512.5,
+        "uniprotAccs": [
+          "Q13541"
+        ]
+      },
+      {
+        "id": 663,
+        "geneNames": [
+          "FOXO4"
+        ],
+        "type": "gene_protein",
+        "x": -115.48913043478262,
+        "y": 441.25,
+        "uniprotAccs": [
+          "P98177"
+        ]
+      },
+      {
+        "id": 696,
+        "geneNames": [
+          "IRS1"
+        ],
+        "type": "gene_protein",
+        "x": -5.4891304347826235,
+        "y": 242.50000000000003,
+        "uniprotAccs": [
+          "P35568"
+        ]
+      },
+      {
+        "id": 666,
+        "geneNames": [
+          "GSK3B"
+        ],
+        "type": "gene_protein",
+        "x": -640.4891304347826,
+        "y": 441.25,
+        "uniprotAccs": [
+          "P49841"
+        ]
+      },
+      {
+        "id": 699,
+        "geneNames": [
+          "MTOR"
+        ],
+        "type": "gene_protein",
+        "x": -49.23913043478262,
+        "y": 100.0,
+        "uniprotAccs": [
+          "P42345"
+        ]
+      },
+      {
+        "id": 669,
+        "geneNames": [
+          "LMO7"
+        ],
+        "type": "gene_protein",
+        "x": -220.48913043478262,
+        "y": 441.25,
+        "uniprotAccs": [
+          "Q8WWI1"
+        ]
+      },
+      {
+        "id": 702,
+        "geneNames": [
+          "RPS6KA2"
+        ],
+        "type": "gene_protein",
+        "x": -49.23913043478262,
+        "y": 171.25000000000003,
+        "uniprotAccs": [
+          "Q15349"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "id": "relation-786",
+        "sourceId": 705,
+        "targetId": 708,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-783",
+        "sourceId": 702,
+        "targetId": 708,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-780",
+        "sourceId": 702,
+        "targetId": 696,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-777",
+        "sourceId": 702,
+        "targetId": 666,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-774",
+        "sourceId": 699,
+        "targetId": 705,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-771",
+        "sourceId": 699,
+        "targetId": 702,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-768",
+        "sourceId": 699,
+        "targetId": 696,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-762",
+        "sourceId": 696,
+        "targetId": 645,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-789",
+        "sourceId": 687,
+        "targetId": 711,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-765",
+        "sourceId": 672,
+        "targetId": 693,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-759",
+        "sourceId": 666,
+        "targetId": 693,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-756",
+        "sourceId": 645,
+        "targetId": 690,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-753",
+        "sourceId": 645,
+        "targetId": 687,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-750",
+        "sourceId": 645,
+        "targetId": 684,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-747",
+        "sourceId": 645,
+        "targetId": 681,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-744",
+        "sourceId": 645,
+        "targetId": 678,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-741",
+        "sourceId": 645,
+        "targetId": 675,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-738",
+        "sourceId": 645,
+        "targetId": 672,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-735",
+        "sourceId": 645,
+        "targetId": 669,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-732",
+        "sourceId": 645,
+        "targetId": 666,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-729",
+        "sourceId": 645,
+        "targetId": 663,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-726",
+        "sourceId": 645,
+        "targetId": 660,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-723",
+        "sourceId": 645,
+        "targetId": 657,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-720",
+        "sourceId": 645,
+        "targetId": 654,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-717",
+        "sourceId": 645,
+        "targetId": 651,
+        "types": [
+          "other"
+        ]
+      },
+      {
+        "id": "relation-714",
+        "sourceId": 645,
+        "targetId": 648,
+        "types": [
+          "other"
+        ]
+      }
+    ]
+  }
+]
