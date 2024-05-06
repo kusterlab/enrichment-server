@@ -1,5 +1,6 @@
 import subprocess
 import json
+from collections import defaultdict
 from pathlib import Path
 import requests
 import time
@@ -11,6 +12,8 @@ PHONEMES_PKN = Path('../db/phonemesPKN.csv')
 PHONEMES_KSN = Path('../db/phonemesKSN.csv')
 PHONEMES_PKN_KSN = Path('../db/phonemes_PKN_KSN.csv')
 CYTOSCAPE_PATH = '../Cytoscape_v3.10.1/Cytoscape'
+UNIPROT_MAPPING_ENDPOINT = 'https://rest.uniprot.org/idmapping/run'
+UNIPROT_RESULT_ENDPOINT = 'https://rest.uniprot.org/idmapping/stream/'
 
 
 def preprocess_phonemes(filepath: Path) -> Path:
@@ -133,15 +136,50 @@ def create_pathway_skeleton(cytoscape_outputfolder: Path) -> Path:
                              'types': ['other']
                          }
                              for relation in cx_unnested['edges']]}
-        #Make sure all 'y's are positive by getting the minimum and subtracting it from all
+        # Make sure all 'y's are positive by getting the minimum and subtracting it from all
         miny = min([node['y'] for node in skeleton_json['nodes']])
         for node in skeleton_json['nodes']:
-            node['y'] -= miny - 100 #The additional 100 makes sure the minimum y is 100, so should be well within the visible range.
+            node[
+                'y'] -= miny - 100  # The additional 100 makes sure the minimum y is 100, so should be well within the visible range.
 
         pathway_skeleton_list.append(skeleton_json)
+
+    pathway_skeleton_list = add_uniprot_accs(pathway_skeleton_list)
 
     output_path = cytoscape_outputfolder / f'json_skeletons.json'
     with open(output_path, 'w') as outfile:
         json.dump(pathway_skeleton_list, outfile)
 
     return output_path
+
+
+def add_uniprot_accs(skeletons):
+    all_gene_names = {geneName for pathway in skeletons for node in pathway['nodes'] for geneName in
+                      node['geneNames']}
+    payload = {
+        'from': 'Gene_Name',
+        'to': 'UniProtKB-Swiss-Prot',
+        'ids': ','.join(all_gene_names),
+        'taxId': 9606
+    }
+
+    request = requests.post(UNIPROT_MAPPING_ENDPOINT, payload)
+    jobid = json.loads(request.text).get('jobId')
+    job_finished = False
+    while not job_finished:
+        result_response = json.loads(requests.get(UNIPROT_RESULT_ENDPOINT + jobid).text)
+        job_finished = (result_response.get('results') is not None)
+        if not job_finished:
+            print('Job pending: {}'.format(jobid))
+        # Be nice to Uniprot and wait a second before asking again
+        time.sleep(1)
+
+    query_result = defaultdict(list)
+    for query in result_response['results']:
+        query_result[query['from']].append(query['to'])
+
+    for pathway in skeletons:
+        for node in pathway['nodes']:
+            node['uniprotAccs'] = query_result.get(node['geneNames'][0])
+
+    return skeletons

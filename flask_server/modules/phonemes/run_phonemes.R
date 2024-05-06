@@ -25,7 +25,11 @@ phonemes_result <- PHONEMeS::run_phonemes(
   netObj = read.csv(file = pkn_path),
   carnival_options = carnival_options)
 
+#We only want to return a network of proteins. Therefore, replace all p-sites by the proteins they sit on
+phonemes_result$res$weightedSIF$Node2 <- sub("_.*", "", phonemes_result$res$weightedSIF$Node2)
+#Drop duplicates and limit to the columns that we actually use
+phonemes_result$res$weightedSIF <- dplyr::distinct(phonemes_result$res$weightedSIF,Node1,Node2)
+#Drop Self-Links, PTMNavigator cannot display them
+phonemes_result$res$weightedSIF <- dplyr::filter(phonemes_result$res$weightedSIF, Node1 != Node2)
 
-phonemes_result_protein <- PHONEMeS::get_protein_network(phonemes_result)
-
-readr::write_csv(phonemes_result_protein$weightedSIF, output_path)
+readr::write_csv(phonemes_result$res$weightedSIF, output_path)

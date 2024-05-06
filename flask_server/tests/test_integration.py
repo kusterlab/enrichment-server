@@ -42,6 +42,8 @@ class TestClass:
             res['pathway'] == exp['pathway'] and
             set([node['geneNames'][0] for node in res['nodes']]) == set(
                 [node['geneNames'][0] for node in exp['nodes']]) and
+            set([node['uniprotAccs'][0] for node in res['nodes']]) == set(
+                [node['uniprotAccs'][0] for node in exp['nodes']]) and
             len(res['links']) == len(exp['links'])
             for res, exp in zip(self.actual_result, self.expected_result)
         )
