@@ -40,24 +40,32 @@ def run_kstar(filepath: Path) -> Path:
     networks = {}
     networks['ST'] = pickle.load(open(config.NETWORK_ST_PICKLE, "rb"))
     networks['Y'] = pickle.load(open(config.NETWORK_Y_PICKLE, "rb"))
-    kinact_dict = calculate.enrichment_analysis(exp_mapper.experiment, activity_log, networks,
-                                                phospho_types=['ST', 'Y'],
-                                                # We already filtered for regulations, so 0 is an acceptable threshold
-                                                agg='mean', threshold=0,
-                                                # We expect kinase inhibition, so check for values smaller than the threshold
-                                                greater=False, PROCESSES=4)
-    # Post Process and convert into JSON
-    st_result_dict = kinact_dict['ST'].activities.rename({
-        # Trim away the 'data:'
-        col: col[5:] for col in kinact_dict['ST'].activities.columns
-    }, axis=1).reset_index(names='Kinase').to_dict(orient='records')
 
-    y_result_dict = kinact_dict['Y'].activities.rename({
-        # Trim away the 'data:'
-        col: col[5:] for col in kinact_dict['Y'].activities.columns
-    }, axis=1).reset_index(names='Kinase').to_dict(orient='records')
+    # Test if there is enough evidence to perform ST and/or Y enrichment, only then perform it
+    result = dict()
+    for phospho_type in ['ST', 'Y']:
+        kinact = calculate.KinaseActivity(exp_mapper.experiment,
+                                          activity_log,
+                                          phospho_type=phospho_type)
+        threshold_test = kinact.test_threshold(agg='mean',
+                                               threshold=0,
+                                               greater=False,
+                                               return_evidence_sizes=True)
 
-    result = {'ST': st_result_dict, 'Y': y_result_dict}
+        if threshold_test.min() > 0:
+            kinact_dict = calculate.enrichment_analysis(exp_mapper.experiment, activity_log, networks,
+                                                        phospho_types=[phospho_type],
+                                                        # We already filtered for regulations, so 0 is an acceptable threshold
+                                                        agg='mean', threshold=0,
+                                                        # We expect kinase inhibition, so check for values smaller than the threshold
+                                                        greater=False, PROCESSES=4)
+            # Post Process and convert into JSON
+            result_dict = kinact_dict[phospho_type].activities.rename({
+                # Trim away the 'data:'
+                col: col[5:] for col in kinact_dict[phospho_type].activities.columns
+            }, axis=1).reset_index(names='Kinase').to_dict(orient='records')
+
+            result[phospho_type] = result_dict
 
     output_json = output_dir / f'kstar_result.json'
     with open(output_json, 'w') as outfile:

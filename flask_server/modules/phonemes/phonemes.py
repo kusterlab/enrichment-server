@@ -88,20 +88,23 @@ def run_cytoscape(phonemes_outputfolder: Path) -> Path:
         experiments = infile.read().split(',')
 
     for experiment in experiments:
-        filepath = phonemes_outputfolder / f'{experiment}_phonemes_out.sif'
-        phonemes_df = pd.read_csv(filepath)
-        network = phonemes_df.rename(
-            columns={"Node1": "source", "Node2": "target", "Weight": "weight", "Sign": "sign"})
+        try:
+            filepath = phonemes_outputfolder / f'{experiment}_phonemes_out.sif'
+            phonemes_df = pd.read_csv(filepath)
+            network = phonemes_df.rename(
+                columns={"Node1": "source", "Node2": "target", "Weight": "weight", "Sign": "sign"})
 
-        nodes_values = network[["source", "target"]].values.ravel()
-        nodes_data = pd.unique(nodes_values)
-        nodes = pd.DataFrame(data=nodes_data, columns=["id"])
-        p4c.create_network_from_data_frames(nodes=nodes, edges=network, collection="phonemes2cytoscape",
-                                            # TODO: Put experiment name
-                                            title=experiment)
-        p4c.layout_network()
-        output_path = phonemes_outputfolder / f'{experiment}_cytoscape_out.cx'
-        p4c.export_network(filename=str(output_path), type='CX', overwrite_file=True)
+            nodes_values = network[["source", "target"]].values.ravel()
+            nodes_data = pd.unique(nodes_values)
+            nodes = pd.DataFrame(data=nodes_data, columns=["id"])
+            p4c.create_network_from_data_frames(nodes=nodes, edges=network, collection="phonemes2cytoscape",
+                                                title=experiment)
+            p4c.layout_network()
+            output_path = phonemes_outputfolder / f'{experiment}_cytoscape_out.cx'
+            p4c.export_network(filename=str(output_path), type='CX', overwrite_file=True)
+        except FileNotFoundError:
+            cytoscape.kill()
+            raise
 
     cytoscape.kill()
     return phonemes_outputfolder
