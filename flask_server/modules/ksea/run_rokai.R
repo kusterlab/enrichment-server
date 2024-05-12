@@ -67,8 +67,8 @@ for (experiment in experiment_names) {
     nSite <- ncol(Wk2s) #I think it was already set to that value but let's be on the safe side
     wk2s <- Wk2s[, validSites];
     nSubs <- (wk2s %*% rep(1, length(Xv)))
-    #Use all components
-    ropts <- list("ppi" = TRUE, "sd" = TRUE, "coev" = TRUE)
+
+    #Add 'ppi' network
     Wk2k <- NetworkData$net$Wkin2kin * 1e-3
     Ws2s <- Matrix::sparseMatrix(
       i = c(),
@@ -76,7 +76,9 @@ for (experiment in experiment_names) {
       x = TRUE,
       dims = c(nSite, nSite)
     )
+    #Add 'sd' network
     Ws2s <- Ws2s | NetworkData$net$Wsite2site.sd
+    #Add 'coev' network
     Ws2s <- Ws2s | NetworkData$net$Wsite2site.coev
     Ws2s <- Ws2s[validSites, validSites]
     rc <- rokai_core(Xv, Sx, wk2s, Wk2k, Ws2s)
