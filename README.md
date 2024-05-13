@@ -444,15 +444,16 @@ As a threshold for retaining phosphorylation sites, we use a fixed value of 0, i
 Thus, the user needs to make sure to filter out non-significant regulations before using the endpoint.  
 For reasons of performance, this endpoint only performs the hypergeometric tests for calculating enrichment scores
 and p-values. The subsequent random analysis and Mann-Whitney-U test steps are omitted since they require significantly
-more processing power and time.
+more processing power and time.  
+
 <i>Endpoint</i>
 
 `/kstar`
 
 <i>Reference</i>
 
-Code: https://www.nature.com/articles/s41467-022-32017-5  
-Publication: https://github.com/NaegleLab/KSTAR
+Code: https://github.com/NaegleLab/KSTAR    
+Publication: https://www.nature.com/articles/s41467-022-32017-5  
 
 <i>Input</i>
 
