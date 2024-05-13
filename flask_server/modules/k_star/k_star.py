@@ -2,6 +2,7 @@ from pathlib import Path
 import json
 import pickle
 
+import numpy as np
 import pandas as pd
 import psite_annotation as pa
 from kstar import helpers, calculate, mapping, config
@@ -42,30 +43,34 @@ def run_kstar(filepath: Path) -> Path:
     networks['Y'] = pickle.load(open(config.NETWORK_Y_PICKLE, "rb"))
 
     # Test if there is enough evidence to perform ST and/or Y enrichment, only then perform it
-    result = dict()
+    result = dict(ST=[], Y=[])
     for phospho_type in ['ST', 'Y']:
-        kinact = calculate.KinaseActivity(exp_mapper.experiment,
-                                          activity_log,
-                                          phospho_type=phospho_type)
-        threshold_test = kinact.test_threshold(agg='mean',
-                                               threshold=0,
-                                               greater=False,
-                                               return_evidence_sizes=True)
+        for direction in ['up', 'down']:
+            kinact = calculate.KinaseActivity(exp_mapper.experiment,
+                                              activity_log,
+                                              phospho_type=phospho_type)
+            threshold_test = kinact.test_threshold(agg='mean',
+                                                   threshold=0,
+                                                   greater=(direction == 'up'),
+                                                   return_evidence_sizes=True)
 
-        if threshold_test.min() > 0:
-            kinact_dict = calculate.enrichment_analysis(exp_mapper.experiment, activity_log, networks,
-                                                        phospho_types=[phospho_type],
-                                                        # We already filtered for regulations, so 0 is an acceptable threshold
-                                                        agg='mean', threshold=0,
-                                                        # We expect kinase inhibition, so check for values smaller than the threshold
-                                                        greater=False, PROCESSES=4)
-            # Post Process and convert into JSON
-            result_dict = kinact_dict[phospho_type].activities.rename({
-                # Trim away the 'data:'
-                col: col[5:] for col in kinact_dict[phospho_type].activities.columns
-            }, axis=1).reset_index(names='Kinase').to_dict(orient='records')
+            if threshold_test.min() > 0:
+                kinact_dict = calculate.enrichment_analysis(exp_mapper.experiment, activity_log, networks,
+                                                            phospho_types=[phospho_type],
+                                                            # We already filtered for regulations, so 0 is an acceptable threshold
+                                                            agg='mean', threshold=0,
+                                                            # We expect kinase inhibition, so check for values smaller than the threshold
+                                                            greater=(direction == 'up'), PROCESSES=4)
 
-            result[phospho_type] = result_dict
+                result_df = np.log10(kinact_dict[phospho_type].activities) * (-1 if direction == 'up' else 1)
+
+                # Post Process and convert into JSON
+                result_list = result_df.rename({
+                    # Trim away the 'data:'
+                    col: col[5:] for col in kinact_dict[phospho_type].activities.columns
+                }, axis=1).reset_index(names='Kinase').to_dict(orient='records')
+
+                result[phospho_type] += result_list
 
     output_json = output_dir / f'kstar_result.json'
     with open(output_json, 'w') as outfile:

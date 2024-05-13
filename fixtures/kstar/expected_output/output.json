@@ -2,955 +2,1905 @@
   "ST": [
     {
       "Kinase": "ACVR2A",
-      "Experiment01": 0.7122386413132433,
-      "Experiment02": 0.6604404437261566
+      "Experiment01": 0.1831088804831314,
+      "Experiment02": 0.13796319441698818
     },
     {
       "Kinase": "ACVR2B",
-      "Experiment01": 0.7044200165125989,
-      "Experiment02": 0.6352807095889668
+      "Experiment01": 0.18270268301069137,
+      "Experiment02": 0.12413646965396191
     },
     {
       "Kinase": "AKT1",
-      "Experiment01": 0.18020670987165918,
-      "Experiment02": 0.42144055075413045
+      "Experiment01": 0.1756695824831597,
+      "Experiment02": 0.39538045195072535
     },
     {
       "Kinase": "AKT2",
-      "Experiment01": 0.2277076336450003,
-      "Experiment02": 0.3977591320125071
+      "Experiment01": 0.17559981783045564,
+      "Experiment02": 0.3656457137741422
     },
     {
       "Kinase": "AKT3",
-      "Experiment01": 0.07518448265228325,
-      "Experiment02": 0.23436095158142123
+      "Experiment01": -0.0,
+      "Experiment02": 0.41403107453751326
     },
     {
       "Kinase": "ATM",
-      "Experiment01": 0.974920805542849,
-      "Experiment02": 0.8534181939299275
+      "Experiment01": 0.4994284708922482,
+      "Experiment02": 0.04947573878745388
     },
     {
       "Kinase": "ATR",
-      "Experiment01": 0.9748779294349942,
-      "Experiment02": 0.9670031237986276
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "AURKA",
-      "Experiment01": 0.8794239062642297,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": 0.3858095651674829
     },
     {
       "Kinase": "BCKDK",
-      "Experiment01": 0.5170430980849061,
-      "Experiment02": 0.5398828517054048
+      "Experiment01": 0.18614433663282381,
+      "Experiment02": 0.13013385835900598
     },
     {
       "Kinase": "CAMK1",
-      "Experiment01": 0.5370292905201357,
-      "Experiment02": 0.5425620236744554
+      "Experiment01": 0.18306593164930535,
+      "Experiment02": 0.1314177232583481
     },
     {
       "Kinase": "CAMK1D",
-      "Experiment01": 0.7139280508893818,
-      "Experiment02": 0.6555961393444973
+      "Experiment01": 0.18663472660457037,
+      "Experiment02": 0.13642109616541312
     },
     {
       "Kinase": "CAMK1G",
-      "Experiment01": 0.6885465073002689,
-      "Experiment02": 0.5454453785739564
+      "Experiment01": 0.1831088804831314,
+      "Experiment02": 0.1328362263059373
     },
     {
       "Kinase": "CAMK2A",
-      "Experiment01": 0.29324983793698245,
-      "Experiment02": 0.4371646642968209
+      "Experiment01": 0.17746014763730827,
+      "Experiment02": 0.14810959157096817
     },
     {
       "Kinase": "CAMK2B",
-      "Experiment01": 0.6918286803577167,
-      "Experiment02": 0.6557075075480088
+      "Experiment01": 0.180893787794353,
+      "Experiment02": 0.14810959157096817
     },
     {
       "Kinase": "CAMK2D",
-      "Experiment01": 0.472470532706513,
-      "Experiment02": 0.43163713529908143
+      "Experiment01": 0.191106902968913,
+      "Experiment02": 0.24882209164919153
     },
     {
       "Kinase": "CAMK2G",
-      "Experiment01": 0.5303552217313854,
-      "Experiment02": 0.6441363597397953
+      "Experiment01": 0.16518169240846658,
+      "Experiment02": 0.1367746806036342
     },
     {
       "Kinase": "CAMK4",
-      "Experiment01": 0.4845271165069436,
-      "Experiment02": 0.539750714735215
+      "Experiment01": -0.0,
+      "Experiment02": 0.13122936697041448
     },
     {
       "Kinase": "CDC42BPA",
-      "Experiment01": 0.6859636098678284,
-      "Experiment02": 0.6746596513734884
+      "Experiment01": 0.16524737077363616,
+      "Experiment02": 0.12886710215985908
     },
     {
       "Kinase": "CDC42BPB",
-      "Experiment01": 0.6991529299335333,
-      "Experiment02": 0.6456940243203715
+      "Experiment01": 0.17407234765633858,
+      "Experiment02": 0.13112588968326055
     },
     {
       "Kinase": "CDC42BPG",
-      "Experiment01": 0.4704766887248595,
-      "Experiment02": 0.6238909343459462
+      "Experiment01": 0.1829873014990094,
+      "Experiment02": 0.14785095143863183
     },
     {
       "Kinase": "CDK1",
-      "Experiment01": 0.5240414224528522,
-      "Experiment02": 0.6440938715077302
+      "Experiment01": 0.18260297632330866,
+      "Experiment02": 0.13948790317895937
     },
     {
       "Kinase": "CDK2",
-      "Experiment01": 0.5290819884972185,
-      "Experiment02": 0.4529942070573733
+      "Experiment01": 0.3298789329943522,
+      "Experiment02": 0.13013385835900598
     },
     {
       "Kinase": "CDK3",
-      "Experiment01": 0.2973501017870448,
-      "Experiment02": 0.32906019990747204
+      "Experiment01": 0.18635717481463723,
+      "Experiment02": 0.4042405541527969
     },
     {
       "Kinase": "CDK4",
-      "Experiment01": 0.15490835227131583,
-      "Experiment02": 0.022597387150054563
+      "Experiment01": 0.5256916215042158,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "CDK5",
-      "Experiment01": 0.16800451529360316,
-      "Experiment02": 0.24814556016848965
+      "Experiment01": 0.18277083240068856,
+      "Experiment02": 0.38913578441971775
     },
     {
       "Kinase": "CDK6",
-      "Experiment01": 0.3214458101919526,
-      "Experiment02": 0.4563316325600012
+      "Experiment01": -0.0,
+      "Experiment02": 0.1422925231608267
     },
     {
       "Kinase": "CDK7",
-      "Experiment01": 0.893429376511367,
-      "Experiment02": 0.8562995981854198
+      "Experiment01": 0.18289408702589674,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "CHUK",
-      "Experiment01": 0.703389229674289,
-      "Experiment02": 0.6721396314009543
+      "Experiment01": 0.17032386393813853,
+      "Experiment02": 0.1253119716304201
     },
     {
       "Kinase": "CLK1",
-      "Experiment01": 0.3120684366766931,
-      "Experiment02": 0.2415490947185437
+      "Experiment01": 0.18897665189662732,
+      "Experiment02": 0.132601195721031
     },
     {
       "Kinase": "CLK2",
-      "Experiment01": 0.3047718588574704,
-      "Experiment02": 0.443813415516267
+      "Experiment01": 0.180831876943746,
+      "Experiment02": 0.3799689806764448
     },
     {
       "Kinase": "CLK3",
-      "Experiment01": 0.49467660738382657,
-      "Experiment02": 0.5408986778606479
+      "Experiment01": 0.17414107708636947,
+      "Experiment02": 0.134938256020404
     },
     {
       "Kinase": "CLK4",
-      "Experiment01": 0.32355812485866187,
-      "Experiment02": 0.41259266742622913
+      "Experiment01": 0.17211153820745645,
+      "Experiment02": 0.13926166700551146
     },
     {
       "Kinase": "CSNK1A1",
-      "Experiment01": 0.8843380825536624,
-      "Experiment02": 0.8459991799699562
+      "Experiment01": 0.2055726128726262,
+      "Experiment02": 0.13241117317789086
     },
     {
       "Kinase": "CSNK1A1L",
-      "Experiment01": 0.7342135024635713,
-      "Experiment02": 0.8343360972396456
+      "Experiment01": 0.18650795631140057,
+      "Experiment02": 0.13524613710144534
     },
     {
       "Kinase": "CSNK1D",
-      "Experiment01": 0.976315011224304,
-      "Experiment02": 0.9683885895037969
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "CSNK1E",
-      "Experiment01": 0.8638898250897771,
-      "Experiment02": 0.6767861960862013
+      "Experiment01": 0.18459568021162762,
+      "Experiment02": 0.12050405303429498
     },
     {
       "Kinase": "CSNK1G1",
-      "Experiment01": 0.8729488055887653,
-      "Experiment02": 0.8433052367632053
+      "Experiment01": 0.18675945336540856,
+      "Experiment02": 0.13033632509305096
     },
     {
       "Kinase": "CSNK1G2",
-      "Experiment01": 0.7163130624991687,
-      "Experiment02": 0.6619449493229614
+      "Experiment01": 0.180831876943746,
+      "Experiment02": 0.12533475932903854
     },
     {
       "Kinase": "CSNK1G3",
-      "Experiment01": 0.8725924487090702,
-      "Experiment02": 0.7509631734817905
+      "Experiment01": 0.18325229864014014,
+      "Experiment02": 0.133832930092739
     },
     {
       "Kinase": "CSNK2A1",
-      "Experiment01": 0.9766465053687862,
-      "Experiment02": 0.9682423119849302
+      "Experiment01": 0.19506904786853585,
+      "Experiment02": 0.13655583461015586
     },
     {
       "Kinase": "CSNK2A2",
-      "Experiment01": 0.8917447843672479,
-      "Experiment02": 0.8562995981854198
+      "Experiment01": 0.5255184761482052,
+      "Experiment02": 0.13754632680755327
     },
     {
       "Kinase": "DAPK1",
-      "Experiment01": 0.8852230928094942,
-      "Experiment02": 0.9610076022128888
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "DAPK2",
-      "Experiment01": 0.9704031591979114,
-      "Experiment02": 0.9643255941985286
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "DAPK3",
-      "Experiment01": 0.9728881874693331,
-      "Experiment02": 0.9625616969903281
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "DMPK",
-      "Experiment01": 0.5140556344175521,
-      "Experiment02": 0.6531318198804941
+      "Experiment01": 0.18646622567491314,
+      "Experiment02": 0.14810959157096817
     },
     {
       "Kinase": "EIF2AK2",
-      "Experiment01": 0.8750148562426618,
-      "Experiment02": 0.44237941733079905
+      "Experiment01": 1.0023088266289428,
+      "Experiment02": 0.13543316403855546
     },
     {
       "Kinase": "GRK1",
-      "Experiment01": 0.8801242163279941,
-      "Experiment02": 0.846191314646541
+      "Experiment01": 0.18260297632330866,
+      "Experiment02": 0.12763696782565245
     },
     {
       "Kinase": "GRK2",
-      "Experiment01": 0.8797698343350926,
-      "Experiment02": 0.9673328757769585
+      "Experiment01": -0.0,
+      "Experiment02": 0.1407799573761964
     },
     {
       "Kinase": "GRK3",
-      "Experiment01": 0.735472936952462,
-      "Experiment02": 0.833303836940582
+      "Experiment01": 0.1868519005612249,
+      "Experiment02": 0.12747444722401755
     },
     {
       "Kinase": "GRK4",
-      "Experiment01": 0.881764767469128,
-      "Experiment02": 0.8422053436418396
+      "Experiment01": 0.18900958599431014,
+      "Experiment02": 0.12394008358153588
     },
     {
       "Kinase": "GRK5",
-      "Experiment01": 0.8784754709911187,
-      "Experiment02": 0.8481236008957644
+      "Experiment01": 0.18115380625041988,
+      "Experiment02": 0.12760581089132092
     },
     {
       "Kinase": "GRK6",
-      "Experiment01": 0.7117398714664216,
-      "Experiment02": 0.7540413049009127
+      "Experiment01": 0.18260297632330866,
+      "Experiment02": 0.13043756271825685
     },
     {
       "Kinase": "GRK7",
-      "Experiment01": 0.8753430134513691,
-      "Experiment02": 0.8470821757320579
+      "Experiment01": 0.18468753120185272,
+      "Experiment02": 0.12886710215985908
     },
     {
       "Kinase": "GSK3A",
-      "Experiment01": 0.7066022834842943,
-      "Experiment02": 0.8267911314935095
+      "Experiment01": 0.1669211100628357,
+      "Experiment02": 0.13636832367914012
     },
     {
       "Kinase": "GSK3B",
-      "Experiment01": 0.7300224612330538,
-      "Experiment02": 0.6746596513734884
+      "Experiment01": 0.1866833153660224,
+      "Experiment02": 0.13636832367914012
     },
     {
       "Kinase": "HIPK1",
-      "Experiment01": 0.6834270208954517,
-      "Experiment02": 0.6541290288986417
+      "Experiment01": 0.1828047661967945,
+      "Experiment02": 0.1340103938077877
     },
     {
       "Kinase": "HIPK2",
-      "Experiment01": 0.7117356319120965,
-      "Experiment02": 0.6669283700555629
+      "Experiment01": 0.17414107708636947,
+      "Experiment02": 0.12535352440749703
     },
     {
       "Kinase": "ICK",
-      "Experiment01": 0.3120684366766931,
-      "Experiment02": 0.41303521403631366
+      "Experiment01": 0.1703207850204277,
+      "Experiment02": 0.14369553722025352
     },
     {
       "Kinase": "IKBKB",
-      "Experiment01": 0.9743209058995581,
-      "Experiment02": 0.9143117792201799
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "MAK",
-      "Experiment01": 0.4012032956433744,
-      "Experiment02": 0.4511062309593948
+      "Experiment01": 0.17746014763730827,
+      "Experiment02": 0.13963999076090886
     },
     {
       "Kinase": "MAP2K1",
-      "Experiment01": 0.5440993944727597,
-      "Experiment02": 0.6410998920560171
+      "Experiment01": -0.0,
+      "Experiment02": 0.1253119716304201
     },
     {
       "Kinase": "MAP2K2",
-      "Experiment01": 0.705582069346963,
-      "Experiment02": 0.6638971013156225
+      "Experiment01": -0.0,
+      "Experiment02": 0.12152628746456635
     },
     {
       "Kinase": "MAP2K3",
-      "Experiment01": 0.7090275340346952,
-      "Experiment02": 0.8357131815445551
+      "Experiment01": 0.16881212732964795,
+      "Experiment02": 0.12394008358153588
     },
     {
       "Kinase": "MAP2K4",
-      "Experiment01": 0.7164518806806418,
-      "Experiment02": 0.6626237537291633
+      "Experiment01": 0.17532447995448164,
+      "Experiment02": 0.12886710215985908
     },
     {
       "Kinase": "MAP2K5",
-      "Experiment01": 0.721116042793122,
-      "Experiment02": 0.6666864377152758
+      "Experiment01": 0.1867209728135783,
+      "Experiment02": 0.12638706670403327
     },
     {
       "Kinase": "MAP2K6",
-      "Experiment01": 0.7347675206209019,
-      "Experiment02": 0.8463050374354273
+      "Experiment01": -0.0,
+      "Experiment02": 0.12046727179089546
     },
     {
       "Kinase": "MAP2K7",
-      "Experiment01": 0.7337158130949784,
-      "Experiment02": 0.6792394574885384
+      "Experiment01": 0.07480738726152474,
+      "Experiment02": 0.10853316226344545
     },
     {
       "Kinase": "MAP4K4",
-      "Experiment01": 0.8911775346560928,
-      "Experiment02": 0.8656063915626069
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "MAPK1",
-      "Experiment01": 0.011560673690152033,
-      "Experiment02": 0.008006712321672542
+      "Experiment01": 0.19697233429457256,
+      "Experiment02": 0.3984985364035399
     },
     {
       "Kinase": "MAPK10",
-      "Experiment01": 0.29796640319061163,
-      "Experiment02": 0.266508541602278
+      "Experiment01": 0.17379837052762165,
+      "Experiment02": 0.13789619691158625
     },
     {
       "Kinase": "MAPK11",
-      "Experiment01": 0.23109409779477308,
-      "Experiment02": 0.23348152259820706
+      "Experiment01": 0.18459568021162762,
+      "Experiment02": 0.13642109616541312
     },
     {
       "Kinase": "MAPK12",
-      "Experiment01": 0.1569312824206098,
-      "Experiment02": 0.12684702007262544
+      "Experiment01": 0.1671408641335267,
+      "Experiment02": 0.13948090739810082
     },
     {
       "Kinase": "MAPK13",
-      "Experiment01": 0.07649028829478707,
-      "Experiment02": 0.12098375786575723
+      "Experiment01": 0.18872665317862972,
+      "Experiment02": 0.40801454698806167
     },
     {
       "Kinase": "MAPK14",
-      "Experiment01": 0.1482818019725473,
-      "Experiment02": 0.11286065658192634
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "MAPK3",
-      "Experiment01": 0.06476643423396355,
-      "Experiment02": 0.0527201603133151
+      "Experiment01": 0.19931272327067792,
+      "Experiment02": 0.38570022875005316
     },
     {
       "Kinase": "MAPK7",
-      "Experiment01": 0.0049714204762334995,
-      "Experiment02": 0.007231044016321573
+      "Experiment01": -0.0,
+      "Experiment02": 0.12165002253422515
     },
     {
       "Kinase": "MAPK8",
-      "Experiment01": 0.1625813999943254,
-      "Experiment02": 0.17361101644361684
+      "Experiment01": 0.18325229864014014,
+      "Experiment02": 0.14225466248389582
     },
     {
       "Kinase": "MAPK9",
-      "Experiment01": 0.1649994562631863,
-      "Experiment02": 0.13477585783090434
+      "Experiment01": 0.18306593164930535,
+      "Experiment02": 0.13122936697041448
     },
     {
       "Kinase": "MINK1",
-      "Experiment01": 0.88998997738803,
-      "Experiment02": 0.8599838651417784
+      "Experiment01": -0.0,
+      "Experiment02": 0.11705664432598241
     },
     {
       "Kinase": "MOK",
-      "Experiment01": 0.2871986237671613,
-      "Experiment02": 0.2655439306245643
+      "Experiment01": 0.18289408702589674,
+      "Experiment02": 0.3682782425933313
     },
     {
       "Kinase": "NEK1",
-      "Experiment01": 0.7028417393904767,
-      "Experiment02": 0.6509481060176988
+      "Experiment01": 0.183117796697577,
+      "Experiment02": 0.12767937215817793
     },
     {
       "Kinase": "NEK11",
-      "Experiment01": 0.5124974251506687,
-      "Experiment02": 0.6403508168772952
+      "Experiment01": 0.19098877001654213,
+      "Experiment02": 0.14397479928466458
     },
     {
       "Kinase": "NEK2",
-      "Experiment01": 0.7284593618208428,
-      "Experiment02": 0.8467755449013536
+      "Experiment01": 0.17243192839579866,
+      "Experiment02": 0.1340103938077877
     },
     {
       "Kinase": "NEK3",
-      "Experiment01": 0.7035464228512847,
-      "Experiment02": 0.6489115449210758
+      "Experiment01": 0.19098877001654213,
+      "Experiment02": 0.13948090739810082
     },
     {
       "Kinase": "NEK4",
-      "Experiment01": 0.5282813245194429,
-      "Experiment02": 0.4529782311665167
+      "Experiment01": 0.17229488049148697,
+      "Experiment02": 0.13636832367914012
     },
     {
       "Kinase": "NLK",
-      "Experiment01": 0.29733852136442873,
-      "Experiment02": 0.4496922215410631
+      "Experiment01": 0.18646622567491314,
+      "Experiment02": 0.13948090739810082
     },
     {
       "Kinase": "NRK",
-      "Experiment01": 0.8774459779744058,
-      "Experiment02": 0.8500203140069824
+      "Experiment01": -0.0,
+      "Experiment02": 0.056103938118252636
     },
     {
       "Kinase": "PAK1",
-      "Experiment01": 0.1616169503410944,
-      "Experiment02": 0.25635106031446503
+      "Experiment01": 0.1757280404814504,
+      "Experiment02": 0.3708907491788078
     },
     {
       "Kinase": "PAK2",
-      "Experiment01": 0.29655520270597213,
-      "Experiment02": 0.2455294843050075
+      "Experiment01": 0.19319728443982995,
+      "Experiment02": 0.14082715932666356
     },
     {
       "Kinase": "PAK3",
-      "Experiment01": 0.07371265639737032,
-      "Experiment02": 0.13058464840293083
+      "Experiment01": 0.16512075753307984,
+      "Experiment02": 0.4042405541527969
     },
     {
       "Kinase": "PAK4",
-      "Experiment01": 0.140227760632593,
-      "Experiment02": 0.2352940874912589
+      "Experiment01": 0.1722264425888611,
+      "Experiment02": 0.38028859944291876
     },
     {
       "Kinase": "PAK5",
-      "Experiment01": 0.1649994562631863,
-      "Experiment02": 0.26905900048504483
+      "Experiment01": -0.0,
+      "Experiment02": 0.1407894261755718
     },
     {
       "Kinase": "PAK6",
-      "Experiment01": 0.15116375011369101,
-      "Experiment02": 0.2617364926282463
+      "Experiment01": 0.07473908390620285,
+      "Experiment02": 0.13963999076090886
     },
     {
       "Kinase": "PDK1",
-      "Experiment01": 0.8679579403018134,
-      "Experiment02": 0.7596186797630516
+      "Experiment01": 0.16528980065478457,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "PIM1",
-      "Experiment01": 0.28473572873263764,
-      "Experiment02": 0.43241262274315606
+      "Experiment01": 0.16504363556266588,
+      "Experiment02": 0.1407217493086495
     },
     {
       "Kinase": "PIM2",
-      "Experiment01": 0.03344426174098995,
-      "Experiment02": 0.10538558315132925
+      "Experiment01": 0.1829873014990094,
+      "Experiment02": 0.4491477007111321
     },
     {
       "Kinase": "PIM3",
-      "Experiment01": 0.15801869344042552,
-      "Experiment02": 0.25709774956155856
+      "Experiment01": 0.16537002643965912,
+      "Experiment02": 0.35752335097743393
     },
     {
       "Kinase": "PNCK",
-      "Experiment01": 0.7039167586032966,
-      "Experiment02": 0.6590526339683749
+      "Experiment01": 0.1866833153660224,
+      "Experiment02": 0.1377656726172742
     },
     {
       "Kinase": "PRKAA1",
-      "Experiment01": 0.48000928282654304,
-      "Experiment02": 0.4434436873358907
+      "Experiment01": 0.1668313052362693,
+      "Experiment02": 0.3489555348930813
     },
     {
       "Kinase": "PRKAA2",
-      "Experiment01": 0.7103054814092384,
-      "Experiment02": 0.6626517322339428
+      "Experiment01": 0.183117796697577,
+      "Experiment02": 0.12763696782565245
     },
     {
       "Kinase": "PRKACA",
-      "Experiment01": 0.030420305538364438,
-      "Experiment02": 0.12208824988182095
+      "Experiment01": -0.0,
+      "Experiment02": 0.38570022875005316
     },
     {
       "Kinase": "PRKACB",
-      "Experiment01": 0.1676100577760165,
-      "Experiment02": 0.42447339859975863
+      "Experiment01": -0.0,
+      "Experiment02": 0.38570022875005316
     },
     {
       "Kinase": "PRKACG",
-      "Experiment01": 0.23031931195173064,
-      "Experiment02": 0.42732411004385096
+      "Experiment01": 0.16537002643965912,
+      "Experiment02": 0.35691776544746695
     },
     {
       "Kinase": "PRKCA",
-      "Experiment01": 0.7303373230442742,
-      "Experiment02": 0.7528543023840252
+      "Experiment01": 0.16511928478624616,
+      "Experiment02": 0.1264904245142057
     },
     {
       "Kinase": "PRKCB",
-      "Experiment01": 0.7339626197880538,
-      "Experiment02": 0.8583480688043585
+      "Experiment01": -0.0,
+      "Experiment02": 0.133819753813883
     },
     {
       "Kinase": "PRKCD",
-      "Experiment01": 0.7087354913795398,
-      "Experiment02": 0.6736195357254321
+      "Experiment01": 0.17218074470615258,
+      "Experiment02": 0.12900308407414596
     },
     {
       "Kinase": "PRKCE",
-      "Experiment01": 0.9717231376589002,
-      "Experiment02": 0.9658091476293293
+      "Experiment01": 0.16343536376376555,
+      "Experiment02": 0.12754013752045143
     },
     {
       "Kinase": "PRKCG",
-      "Experiment01": 0.6915941730635193,
-      "Experiment02": 0.647711571926874
+      "Experiment01": 0.1703244726749277,
+      "Experiment02": 0.13013385835900598
     },
     {
       "Kinase": "PRKCH",
-      "Experiment01": 0.7156698229981054,
-      "Experiment02": 0.6691815893990356
+      "Experiment01": 0.16520339139857548,
+      "Experiment02": 0.1289402087888258
     },
     {
       "Kinase": "PRKCI",
-      "Experiment01": 0.8816419097907101,
-      "Experiment02": 0.8486542560102124
+      "Experiment01": 0.17218074470615258,
+      "Experiment02": 0.12535352440749703
     },
     {
       "Kinase": "PRKCQ",
-      "Experiment01": 0.7202635664051287,
-      "Experiment02": 0.7585288811716226
+      "Experiment01": 0.1722264425888611,
+      "Experiment02": 0.11813962473222345
     },
     {
       "Kinase": "PRKCZ",
-      "Experiment01": 0.7182845257971506,
-      "Experiment02": 0.6737153550160859
+      "Experiment01": 0.16519642019280487,
+      "Experiment02": 0.12394008358153588
     },
     {
       "Kinase": "PRKD1",
-      "Experiment01": 0.2984786397500646,
-      "Experiment02": 0.4472749676606423
+      "Experiment01": 0.1701660357888052,
+      "Experiment02": 0.4012343390353622
     },
     {
       "Kinase": "PRKD2",
-      "Experiment01": 0.6959049516350391,
-      "Experiment02": 0.6461616258666911
+      "Experiment01": 0.18279433639074325,
+      "Experiment02": 0.13772971691669642
     },
     {
       "Kinase": "PRKD3",
-      "Experiment01": 0.7152865771751835,
-      "Experiment02": 0.663575877908315
+      "Experiment01": 0.16876138210281139,
+      "Experiment02": 0.12886710215985908
     },
     {
       "Kinase": "PRKDC",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "PRKG1",
-      "Experiment01": 0.7358247940228095,
-      "Experiment02": 0.6663008782116022
+      "Experiment01": 0.1794765387192974,
+      "Experiment02": 0.12761124028662751
     },
     {
       "Kinase": "PRKG2",
-      "Experiment01": 0.48843510045466604,
-      "Experiment02": 0.8321912774952801
+      "Experiment01": -0.0,
+      "Experiment02": 0.3708907491788078
     },
     {
       "Kinase": "ROCK1",
-      "Experiment01": 0.5167683092154514,
-      "Experiment02": 0.6632843672538289
+      "Experiment01": 0.17066193273755603,
+      "Experiment02": 0.38889754321860603
     },
     {
       "Kinase": "ROCK2",
-      "Experiment01": 0.49292449273040295,
-      "Experiment02": 0.6688097115101156
+      "Experiment01": 0.20571548061843103,
+      "Experiment02": 0.42045081454112726
     },
     {
       "Kinase": "RPS6KA1",
-      "Experiment01": 0.3011256771387867,
-      "Experiment02": 0.24111355686603275
+      "Experiment01": 0.5002349177906167,
+      "Experiment02": 0.13543316403855546
     },
     {
       "Kinase": "RPS6KA3",
-      "Experiment01": 0.4012032956433744,
-      "Experiment02": 0.44237941733079905
+      "Experiment01": 0.1722264425888611,
+      "Experiment02": 0.13778752531667496
     },
     {
       "Kinase": "RPS6KB1",
-      "Experiment01": 0.16122037557833113,
-      "Experiment02": 0.05836971356456533
+      "Experiment01": 0.9736756561662363,
+      "Experiment02": 0.139419151761655
     },
     {
       "Kinase": "RPS6KB2",
-      "Experiment01": 0.11566094193218877,
-      "Experiment02": 0.05229943111863671
+      "Experiment01": 0.5686326047064465,
+      "Experiment02": 0.39538045195072535
     },
     {
       "Kinase": "SGK1",
-      "Experiment01": 0.29675424199915124,
-      "Experiment02": 0.2587881406790763
+      "Experiment01": 0.16511928478624616,
+      "Experiment02": 0.12763696782565245
     },
     {
       "Kinase": "SGK2",
-      "Experiment01": 0.27975484089134606,
-      "Experiment02": 0.40316613508455135
+      "Experiment01": 0.18671769855714976,
+      "Experiment02": 0.1407799573761964
     },
     {
       "Kinase": "SGK3",
-      "Experiment01": 0.45506708027451237,
-      "Experiment02": 0.4243568316982506
+      "Experiment01": 0.18614433663282381,
+      "Experiment02": 0.13798505705774228
     },
     {
       "Kinase": "SLK",
-      "Experiment01": 0.887891061183974,
-      "Experiment02": 0.9620199119904201
+      "Experiment01": -0.0,
+      "Experiment02": 0.11589524522799703
     },
     {
       "Kinase": "STK10",
-      "Experiment01": 0.8896296807479733,
-      "Experiment02": 0.8639082585395743
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "STK11",
-      "Experiment01": 0.7118550514585364,
-      "Experiment02": 0.8527157756079513
+      "Experiment01": -0.0,
+      "Experiment02": 0.1276769244112458
     },
     {
       "Kinase": "STK24",
-      "Experiment01": 0.8828770576080831,
-      "Experiment02": 0.8534745936035639
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "STK25",
-      "Experiment01": 0.8990612329872111,
-      "Experiment02": 0.8559471888458645
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "STK26",
-      "Experiment01": 0.8978773666275508,
-      "Experiment02": 0.8616858518247592
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "STK3",
-      "Experiment01": 0.9714266517835812,
-      "Experiment02": 0.9640177253273116
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "STK4",
-      "Experiment01": 0.9734265475226697,
-      "Experiment02": 0.9638734709348256
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "TGFBR2",
-      "Experiment01": 0.5303552217313854,
-      "Experiment02": 0.6626517322339428
+      "Experiment01": 0.17407155752012257,
+      "Experiment02": 0.13774374884895077
     },
     {
       "Kinase": "TLK1",
-      "Experiment01": 0.882261984815498,
-      "Experiment02": 0.8490548138319618
+      "Experiment01": 0.18872336376595394,
+      "Experiment02": 0.133832930092739
     },
     {
       "Kinase": "TLK2",
-      "Experiment01": 0.8788680620946925,
-      "Experiment02": 0.8299719357413535
+      "Experiment01": 0.1888590968993199,
+      "Experiment02": 0.13160731152635613
     },
     {
       "Kinase": "TNIK",
-      "Experiment01": 0.9741686614066178,
-      "Experiment02": 0.9603418166532709
+      "Experiment01": 0.1703246472852949,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "TTK",
-      "Experiment01": 0.8957297981406759,
-      "Experiment02": 0.9651120153528178
+      "Experiment01": -0.0,
+      "Experiment02": 0.12177999773767631
+    },
+    {
+      "Kinase": "ACVR2A",
+      "Experiment01": -0.14737446810367036,
+      "Experiment02": -0.18016633948361746
+    },
+    {
+      "Kinase": "ACVR2B",
+      "Experiment01": -0.15216831179411586,
+      "Experiment02": -0.19703433189322794
+    },
+    {
+      "Kinase": "AKT1",
+      "Experiment01": -0.7442290424025514,
+      "Experiment02": -0.3752636791658153
+    },
+    {
+      "Kinase": "AKT2",
+      "Experiment01": -0.6426224099016347,
+      "Experiment02": -0.40037984075212035
+    },
+    {
+      "Kinase": "AKT3",
+      "Experiment01": -1.1238717843269959,
+      "Experiment02": -0.6301147472845868
+    },
+    {
+      "Kinase": "ATM",
+      "Experiment01": -0.01103066134005793,
+      "Experiment02": -0.06883810270105034
+    },
+    {
+      "Kinase": "ATR",
+      "Experiment01": -0.011049761626375476,
+      "Experiment02": -0.014572122973549203
+    },
+    {
+      "Kinase": "AURKA",
+      "Experiment01": -0.055801732692296664,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "BCKDK",
+      "Experiment01": -0.2864732548164138,
+      "Experiment02": -0.26770046680175524
+    },
+    {
+      "Kinase": "CAMK1",
+      "Experiment01": -0.27000202647110405,
+      "Experiment02": -0.2655506077101018
+    },
+    {
+      "Kinase": "CAMK1D",
+      "Experiment01": -0.1463455538767607,
+      "Experiment02": -0.18336361255473874
+    },
+    {
+      "Kinase": "CAMK1G",
+      "Experiment01": -0.16206672035733247,
+      "Experiment02": -0.26324873356628264
+    },
+    {
+      "Kinase": "CAMK2A",
+      "Experiment01": -0.5327622192229828,
+      "Experiment02": -0.3593549490121227
+    },
+    {
+      "Kinase": "CAMK2B",
+      "Experiment01": -0.16000143789420657,
+      "Experiment02": -0.1832898438338549
+    },
+    {
+      "Kinase": "CAMK2D",
+      "Experiment01": -0.32562527261933166,
+      "Experiment02": -0.3648811984615671
+    },
+    {
+      "Kinase": "CAMK2G",
+      "Experiment01": -0.27543315084744907,
+      "Experiment02": -0.1910221854137622
+    },
+    {
+      "Kinase": "CAMK4",
+      "Experiment01": -0.314681912690014,
+      "Experiment02": -0.2678067739027555
+    },
+    {
+      "Kinase": "CDC42BPA",
+      "Experiment01": -0.1636989228541662,
+      "Experiment02": -0.17091526243968222
+    },
+    {
+      "Kinase": "CDC42BPB",
+      "Experiment01": -0.1554278180141652,
+      "Experiment02": -0.18997323282398412
+    },
+    {
+      "Kinase": "CDC42BPG",
+      "Experiment01": -0.3274618902154012,
+      "Experiment02": -0.20489132498373416
+    },
+    {
+      "Kinase": "CDK1",
+      "Experiment01": -0.2806343831847904,
+      "Experiment02": -0.19105083309535018
+    },
+    {
+      "Kinase": "CDK2",
+      "Experiment01": -0.27647702287432047,
+      "Experiment02": -0.34390735176002274
+    },
+    {
+      "Kinase": "CDK3",
+      "Experiment01": -0.5267319084996817,
+      "Experiment02": -0.4827246427917305
+    },
+    {
+      "Kinase": "CDK4",
+      "Experiment01": -0.8099251655361241,
+      "Experiment02": -1.6459417737691484
+    },
+    {
+      "Kinase": "CDK5",
+      "Experiment01": -0.7746790460078021,
+      "Experiment02": -0.605293490813525
+    },
+    {
+      "Kinase": "CDK6",
+      "Experiment01": -0.4928922305724972,
+      "Experiment02": -0.3407194252223041
+    },
+    {
+      "Kinase": "CDK7",
+      "Experiment01": -0.048939771757805076,
+      "Experiment02": -0.06737425976882376
+    },
+    {
+      "Kinase": "CHUK",
+      "Experiment01": -0.15280428590368728,
+      "Experiment02": -0.17254049651812048
+    },
+    {
+      "Kinase": "CLK1",
+      "Experiment01": -0.5057501546616058,
+      "Experiment02": -0.6169945858300294
+    },
+    {
+      "Kinase": "CLK2",
+      "Experiment01": -0.5160251361091315,
+      "Experiment02": -0.35279957412602986
+    },
+    {
+      "Kinase": "CLK3",
+      "Experiment01": -0.30567862637389703,
+      "Experiment02": -0.26688408011927167
+    },
+    {
+      "Kinase": "CLK4",
+      "Experiment01": -0.4900476901487443,
+      "Experiment02": -0.3844784945514858
+    },
+    {
+      "Kinase": "CSNK1A1",
+      "Experiment01": -0.053381672410182227,
+      "Experiment02": -0.07263005792397365
+    },
+    {
+      "Kinase": "CSNK1A1L",
+      "Experiment01": -0.13417763291906584,
+      "Experiment02": -0.07865896642114147
+    },
+    {
+      "Kinase": "CSNK1D",
+      "Experiment01": -0.01041003319051769,
+      "Experiment02": -0.013950336480131288
+    },
+    {
+      "Kinase": "CSNK1E",
+      "Experiment01": -0.06354164109351285,
+      "Experiment02": -0.16954850786609033
+    },
+    {
+      "Kinase": "CSNK1G1",
+      "Experiment01": -0.059011224910965554,
+      "Experiment02": -0.07401520277938135
+    },
+    {
+      "Kinase": "CSNK1G2",
+      "Experiment01": -0.1448971290876673,
+      "Experiment02": -0.179178127175706
+    },
+    {
+      "Kinase": "CSNK1G3",
+      "Experiment01": -0.059188549655607256,
+      "Experiment02": -0.12438135986106992
+    },
+    {
+      "Kinase": "CSNK2A1",
+      "Experiment01": -0.010262599584795008,
+      "Experiment02": -0.014015942703126392
+    },
+    {
+      "Kinase": "CSNK2A2",
+      "Experiment01": -0.04975942208172832,
+      "Experiment02": -0.06737425976882376
+    },
+    {
+      "Kinase": "DAPK1",
+      "Experiment01": -0.05294726515946611,
+      "Experiment02": -0.01727317675804266
+    },
+    {
+      "Kinase": "DAPK2",
+      "Experiment01": -0.013047798270928179,
+      "Experiment02": -0.015776306460923258
+    },
+    {
+      "Kinase": "DAPK3",
+      "Experiment01": -0.011937069654985309,
+      "Experiment02": -0.01657142410132457
+    },
+    {
+      "Kinase": "DMPK",
+      "Experiment01": -0.28898987631011147,
+      "Experiment02": -0.18499915736329822
+    },
+    {
+      "Kinase": "EIF2AK2",
+      "Experiment01": -0.0579845733440436,
+      "Experiment02": -0.3542050877332077
+    },
+    {
+      "Kinase": "GRK1",
+      "Experiment01": -0.05545602937396332,
+      "Experiment02": -0.07253143660391889
+    },
+    {
+      "Kinase": "GRK2",
+      "Experiment01": -0.05563093325073387,
+      "Experiment02": -0.014424052042744563
+    },
+    {
+      "Kinase": "GRK3",
+      "Experiment01": -0.13343330328784345,
+      "Experiment02": -0.0791966184644145
+    },
+    {
+      "Kinase": "GRK4",
+      "Experiment01": -0.054647258196737235,
+      "Experiment02": -0.07458200738642347
+    },
+    {
+      "Kinase": "GRK5",
+      "Experiment01": -0.05627036047708415,
+      "Experiment02": -0.07154085142802298
+    },
+    {
+      "Kinase": "GRK6",
+      "Experiment01": -0.14767870443747572,
+      "Experiment02": -0.12260486368033821
+    },
+    {
+      "Kinase": "GRK7",
+      "Experiment01": -0.057821730225986814,
+      "Experiment02": -0.07207445656911844
+    },
+    {
+      "Kinase": "GSK3A",
+      "Experiment01": -0.15082496341543014,
+      "Experiment02": -0.08260419044350131
+    },
+    {
+      "Kinase": "GSK3B",
+      "Experiment01": -0.13666377735967636,
+      "Experiment02": -0.17091526243968222
+    },
+    {
+      "Kinase": "HIPK1",
+      "Experiment01": -0.1653078543435162,
+      "Experiment02": -0.1843365773460146
+    },
+    {
+      "Kinase": "HIPK2",
+      "Experiment01": -0.14768129136650224,
+      "Experiment02": -0.1759208080026669
+    },
+    {
+      "Kinase": "ICK",
+      "Experiment01": -0.5057501546616058,
+      "Experiment02": -0.3840129202329181
+    },
+    {
+      "Kinase": "IKBKB",
+      "Experiment01": -0.011297978739919815,
+      "Experiment02": -0.03890568511302665
+    },
+    {
+      "Kinase": "MAK",
+      "Experiment01": -0.3966355081694329,
+      "Experiment02": -0.34572117411578307
+    },
+    {
+      "Kinase": "MAP2K1",
+      "Experiment01": -0.2643217574193766,
+      "Experiment02": -0.1930742962397747
+    },
+    {
+      "Kinase": "MAP2K2",
+      "Experiment01": -0.1514524642745023,
+      "Experiment02": -0.17789922755036558
+    },
+    {
+      "Kinase": "MAP2K3",
+      "Experiment01": -0.1493368993061487,
+      "Experiment02": -0.07794274773480547
+    },
+    {
+      "Kinase": "MAP2K4",
+      "Experiment01": -0.14481297296606865,
+      "Experiment02": -0.17873299959110672
+    },
+    {
+      "Kinase": "MAP2K5",
+      "Experiment01": -0.14199484250726999,
+      "Experiment02": -0.17607837956069256
+    },
+    {
+      "Kinase": "MAP2K6",
+      "Experiment01": -0.1338500493271342,
+      "Experiment02": -0.07247307407959963
+    },
+    {
+      "Kinase": "MAP2K7",
+      "Experiment01": -0.13447212087904153,
+      "Experiment02": -0.16797709356533105
+    },
+    {
+      "Kinase": "MAP4K4",
+      "Experiment01": -0.0500357699911124,
+      "Experiment02": -0.06267954543283541
+    },
+    {
+      "Kinase": "MAPK1",
+      "Experiment01": -1.9370168569716808,
+      "Experiment02": -2.0965457752588628
+    },
+    {
+      "Kinase": "MAPK10",
+      "Experiment01": -0.525832701465642,
+      "Experiment02": -0.5742888672704693
+    },
+    {
+      "Kinase": "MAPK11",
+      "Experiment01": -0.6362111463767732,
+      "Experiment02": -0.6317474831970525
+    },
+    {
+      "Kinase": "MAPK12",
+      "Experiment01": -0.8042904762443075,
+      "Experiment02": -0.8967197308956725
+    },
+    {
+      "Kinase": "MAPK13",
+      "Experiment01": -1.116393702202309,
+      "Experiment02": -0.9172729300368362
+    },
+    {
+      "Kinase": "MAPK14",
+      "Experiment01": -0.8289121449112986,
+      "Experiment02": -0.9474574274925407
+    },
+    {
+      "Kinase": "MAPK3",
+      "Experiment01": -1.1886500127059043,
+      "Experiment02": -1.278023277794125
+    },
+    {
+      "Kinase": "MAPK7",
+      "Experiment01": -2.3035195032489946,
+      "Experiment02": -2.140798994850109
+    },
+    {
+      "Kinase": "MAPK8",
+      "Experiment01": -0.788929141041349,
+      "Experiment02": -0.760422720237442
+    },
+    {
+      "Kinase": "MAPK9",
+      "Experiment01": -0.7825174869514688,
+      "Experiment02": -0.8703878952623196
+    },
+    {
+      "Kinase": "MINK1",
+      "Experiment01": -0.05061488412989851,
+      "Experiment02": -0.06550969683274178
+    },
+    {
+      "Kinase": "MOK",
+      "Experiment01": -0.5418176455291791,
+      "Experiment02": -0.5758636205351233
+    },
+    {
+      "Kinase": "NEK1",
+      "Experiment01": -0.15314245513249783,
+      "Experiment02": -0.18645363227432113
+    },
+    {
+      "Kinase": "NEK11",
+      "Experiment01": -0.2903083122149699,
+      "Experiment02": -0.19358203212291994
+    },
+    {
+      "Kinase": "NEK2",
+      "Experiment01": -0.13759467097599432,
+      "Experiment02": -0.07223169300945076
+    },
+    {
+      "Kinase": "NEK3",
+      "Experiment01": -0.15270724076942888,
+      "Experiment02": -0.1878144991485117
+    },
+    {
+      "Kinase": "NEK4",
+      "Experiment01": -0.2771347419564691,
+      "Experiment02": -0.3439226684318121
+    },
+    {
+      "Kinase": "NLK",
+      "Experiment01": -0.5267488226071494,
+      "Experiment02": -0.3470846244867839
+    },
+    {
+      "Kinase": "NRK",
+      "Experiment01": -0.05677961240040861,
+      "Experiment02": -0.07057069527897948
+    },
+    {
+      "Kinase": "PAK1",
+      "Experiment01": -0.7915130924874394,
+      "Experiment02": -0.591164881899147
+    },
+    {
+      "Kinase": "PAK2",
+      "Experiment01": -0.5278944523870978,
+      "Experiment02": -0.609896348338964
+    },
+    {
+      "Kinase": "PAK3",
+      "Experiment01": -1.1324579377633266,
+      "Experiment02": -0.8841078759382406
+    },
+    {
+      "Kinase": "PAK4",
+      "Experiment01": -0.8531660013758526,
+      "Experiment02": -0.6283889857104294
+    },
+    {
+      "Kinase": "PAK5",
+      "Experiment01": -0.7825174869514688,
+      "Experiment02": -0.5701524754791872
+    },
+    {
+      "Kinase": "PAK6",
+      "Experiment01": -0.8205523425192445,
+      "Experiment02": -0.5821357216009146
+    },
+    {
+      "Kinase": "PDK1",
+      "Experiment01": -0.06150131945185129,
+      "Experiment02": -0.11940436407947977
+    },
+    {
+      "Kinase": "PIM1",
+      "Experiment01": -0.5455580340196653,
+      "Experiment02": -0.3641016368563664
+    },
+    {
+      "Kinase": "PIM2",
+      "Experiment01": -1.4756783863566763,
+      "Experiment02": -0.9772187969609561
+    },
+    {
+      "Kinase": "PIM3",
+      "Experiment01": -0.8012915334392277,
+      "Experiment02": -0.5899017248245625
+    },
+    {
+      "Kinase": "PNCK",
+      "Experiment01": -0.1524786951429695,
+      "Experiment02": -0.18107989992917542
+    },
+    {
+      "Kinase": "PRKAA1",
+      "Experiment01": -0.31875036378824245,
+      "Experiment02": -0.3531615231424302
+    },
+    {
+      "Kinase": "PRKAA2",
+      "Experiment01": -0.1485548338756009,
+      "Experiment02": -0.17871466240707495
+    },
+    {
+      "Kinase": "PRKACA",
+      "Experiment01": -1.5168364282528,
+      "Experiment02": -0.9133261317720964
+    },
+    {
+      "Kinase": "PRKACB",
+      "Experiment01": -0.7756999242166899,
+      "Experiment02": -0.37214952144672275
+    },
+    {
+      "Kinase": "PRKACG",
+      "Experiment01": -0.6376696455249596,
+      "Experiment02": -0.3692426031724845
+    },
+    {
+      "Kinase": "PRKCA",
+      "Experiment01": -0.13647650467418315,
+      "Experiment02": -0.12328906336506831
+    },
+    {
+      "Kinase": "PRKCB",
+      "Experiment01": -0.13432605784028823,
+      "Experiment02": -0.06633656563896952
+    },
+    {
+      "Kinase": "PRKCD",
+      "Experiment01": -0.14951581850933668,
+      "Experiment02": -0.1715853262965194
+    },
+    {
+      "Kinase": "PRKCE",
+      "Experiment01": -0.012457456179339745,
+      "Experiment02": -0.015108685510401927
+    },
+    {
+      "Kinase": "PRKCG",
+      "Experiment01": -0.1601486744742003,
+      "Experiment02": -0.18861834383063272
+    },
+    {
+      "Kinase": "PRKCH",
+      "Experiment01": -0.14528729490245781,
+      "Experiment02": -0.17445601590509227
+    },
+    {
+      "Kinase": "PRKCI",
+      "Experiment01": -0.05470777334910762,
+      "Experiment02": -0.07126920644565346
+    },
+    {
+      "Kinase": "PRKCQ",
+      "Experiment01": -0.14250855288871686,
+      "Experiment02": -0.12002787869442148
+    },
+    {
+      "Kinase": "PRKCZ",
+      "Experiment01": -0.14370348959245366,
+      "Experiment02": -0.17152355429084068
+    },
+    {
+      "Kinase": "PRKD1",
+      "Experiment01": -0.52508674316311,
+      "Experiment02": -0.34942540701639485
+    },
+    {
+      "Kinase": "PRKD2",
+      "Experiment01": -0.15745007331943664,
+      "Experiment02": -0.18965883735706734
+    },
+    {
+      "Kinase": "PRKD3",
+      "Experiment01": -0.14551992470175418,
+      "Experiment02": -0.1781094096906549
+    },
+    {
+      "Kinase": "PRKDC",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "PRKG1",
+      "Experiment01": -0.13322558246592328,
+      "Experiment02": -0.17632961431373148
+    },
+    {
+      "Kinase": "PRKG2",
+      "Experiment01": -0.3111931338630631,
+      "Experiment02": -0.07977684052038535
+    },
+    {
+      "Kinase": "ROCK1",
+      "Experiment01": -0.28670412727856764,
+      "Experiment02": -0.178300238334678
+    },
+    {
+      "Kinase": "ROCK2",
+      "Experiment01": -0.3072196018221756,
+      "Experiment02": -0.17469742931211332
+    },
+    {
+      "Kinase": "RPS6KA1",
+      "Experiment01": -0.5212522103981402,
+      "Experiment02": -0.6177783702671481
+    },
+    {
+      "Kinase": "RPS6KA3",
+      "Experiment01": -0.3966355081694329,
+      "Experiment02": -0.3542050877332077
+    },
+    {
+      "Kinase": "RPS6KB1",
+      "Experiment01": -0.792580071451351,
+      "Experiment02": -1.2338124378811013
+    },
+    {
+      "Kinase": "RPS6KB2",
+      "Experiment01": -0.9368132751632717,
+      "Experiment02": -1.2815030350979384
+    },
+    {
+      "Kinase": "SGK1",
+      "Experiment01": -0.5276030642397361,
+      "Experiment02": -0.5870556296866735
+    },
+    {
+      "Kinase": "SGK2",
+      "Experiment01": -0.5532223896817957,
+      "Experiment02": -0.3945159546468112
+    },
+    {
+      "Kinase": "SGK3",
+      "Experiment01": -0.341924580385131,
+      "Experiment02": -0.37226880174709087
+    },
+    {
+      "Kinase": "SLK",
+      "Experiment01": -0.05164031623599843,
+      "Experiment02": -0.01681593879579682
+    },
+    {
+      "Kinase": "STK10",
+      "Experiment01": -0.05079073613742993,
+      "Experiment02": -0.06353237433299778
+    },
+    {
+      "Kinase": "STK11",
+      "Experiment01": -0.14760842877927444,
+      "Experiment02": -0.0691957023080028
+    },
+    {
+      "Kinase": "STK24",
+      "Experiment01": -0.054099768585267126,
+      "Experiment02": -0.06880940251879018
+    },
+    {
+      "Kinase": "STK25",
+      "Experiment01": -0.046210728463838356,
+      "Experiment02": -0.06755303006626023
+    },
+    {
+      "Kinase": "STK26",
+      "Experiment01": -0.046782975842585624,
+      "Experiment02": -0.06465103775522693
+    },
+    {
+      "Kinase": "STK3",
+      "Experiment01": -0.012589985520425118,
+      "Experiment02": -0.015914980681122026
+    },
+    {
+      "Kinase": "STK4",
+      "Experiment01": -0.011696813747551075,
+      "Experiment02": -0.015979972820601016
+    },
+    {
+      "Kinase": "TGFBR2",
+      "Experiment01": -0.27543315084744907,
+      "Experiment02": -0.17871466240707495
+    },
+    {
+      "Kinase": "TLK1",
+      "Experiment01": -0.05440243338863949,
+      "Experiment02": -0.07106427138582824
+    },
+    {
+      "Kinase": "TLK2",
+      "Experiment01": -0.056076317423403625,
+      "Experiment02": -0.08093659239347864
+    },
+    {
+      "Kinase": "TNIK",
+      "Experiment01": -0.011365845609137988,
+      "Experiment02": -0.017574160018460513
+    },
+    {
+      "Kinase": "TTK",
+      "Experiment01": -0.04782297792039513,
+      "Experiment02": -0.015422277509707275
     }
   ],
   "Y": [
     {
       "Kinase": "ABL1",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "ABL2",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "BLK",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "BMX",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "BTK",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "CSF1R",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "EGFR",
-      "Experiment01": 0.25454582958599237,
-      "Experiment02": 0.2550584070677486
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "EPHA1",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "EPHA2",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "EPHA3",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "EPHA4",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "EPHA5",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "EPHA6",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "EPHA7",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "EPHA8",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "EPHB1",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "EPHB2",
-      "Experiment01": 1.0,
-      "Experiment02": 0.2972852350569086
+      "Experiment01": 0.25523020390764467,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "EPHB3",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "EPHB4",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "EPHB6",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "ERBB2",
-      "Experiment01": 0.232033186180916,
-      "Experiment02": 0.25470356963041824
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "ERBB3",
-      "Experiment01": 0.2543786205471418,
-      "Experiment02": 0.2547873608328246
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "ERBB4",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "FGR",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "FLT1",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "FLT3",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "FRK",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "FYN",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "HCK",
-      "Experiment01": 1.0,
-      "Experiment02": 0.6489695986893128
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "IGF1R",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "INSR",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "INSRR",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "ITK",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "KDR",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "KIT",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "LCK",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "MET",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "MST1R",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "NTRK1",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "NTRK2",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "NTRK3",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "PDGFRA",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "PDGFRB",
-      "Experiment01": 1.0,
-      "Experiment02": 0.29703025935891725
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "PTK6",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "SRC",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "SRMS",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "TEC",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "TXK",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "TYK2",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
     },
     {
       "Kinase": "YES1",
-      "Experiment01": 1.0,
-      "Experiment02": 1.0
+      "Experiment01": -0.0,
+      "Experiment02": -0.0
+    },
+    {
+      "Kinase": "ABL1",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "ABL2",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "BLK",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "BMX",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "BTK",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "CSF1R",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "EGFR",
+      "Experiment01": -0.5942340139384784,
+      "Experiment02": -0.593360356967304
+    },
+    {
+      "Kinase": "EPHA1",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "EPHA2",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "EPHA3",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "EPHA4",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "EPHA5",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "EPHA6",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "EPHA7",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "EPHA8",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "EPHB1",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "EPHB2",
+      "Experiment01": 0.0,
+      "Experiment02": -0.5268266598920847
+    },
+    {
+      "Kinase": "EPHB3",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "EPHB4",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "EPHB6",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "ERBB2",
+      "Experiment01": -0.6344498963826771,
+      "Experiment02": -0.5939649684249612
+    },
+    {
+      "Kinase": "ERBB3",
+      "Experiment01": -0.5945193921139271,
+      "Experiment02": -0.5938221197303548
+    },
+    {
+      "Kinase": "ERBB4",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "FGR",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "FLT1",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "FLT3",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "FRK",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "FYN",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "HCK",
+      "Experiment01": 0.0,
+      "Experiment02": -0.18777564746884912
+    },
+    {
+      "Kinase": "IGF1R",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "INSR",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "INSRR",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "ITK",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "KDR",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "KIT",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "LCK",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "MET",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "MST1R",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "NTRK1",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "NTRK2",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "NTRK3",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "PDGFRA",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "PDGFRB",
+      "Experiment01": 0.0,
+      "Experiment02": -0.5271993055541666
+    },
+    {
+      "Kinase": "PTK6",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "SRC",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "SRMS",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "TEC",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "TXK",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "TYK2",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
+    },
+    {
+      "Kinase": "YES1",
+      "Experiment01": 0.0,
+      "Experiment02": 0.0
     }
   ]
 }
