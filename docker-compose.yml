@@ -1,3 +1,5 @@
+#Run locally: CI_REGISTRY=gitlab.lrz.de:5005 CI_PROJECT_NAMESPACE=proteomics/container CI_PROJECT_NAME=enrichment-server CI_COMMIT_REF_SLUG=latest  docker compose up
+
 version: '3.6'
 
 services:
@@ -11,6 +13,8 @@ services:
       - CI_DEPLOY_TAG
       - CI_DEPLOY_NETWORK
       - CI_PUBLISH
+      - PRODUCTION=1
+      - PORT=4321
     build: . #TODO: CI prints 'Ignoring unsupported options: build', not sure if I need this
     image: "${CI_REGISTRY}/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}:${CI_COMMIT_REF_SLUG}"
     ports:

@@ -1,5 +1,6 @@
 # How to send a request:
 # curl -X POST -F file=@<input_file> -F session_id=ABCDEF12345  -F dataset_name=FooBar http://127.0.0.1:1234/<route>
+import os
 from pathlib import Path
 import shutil
 from urllib.parse import urlparse
@@ -193,5 +194,4 @@ if __name__ == '__main__':
     # # GUBED
     # memory_limit_half()
 
-    # TODO: What is the best way to switch debug off for deployment?
-    app.run(debug=True, host='0.0.0.0', port=4321)
+    app.run(debug=os.getenv("PRODUCTION", '0') != '1', host='0.0.0.0', port=int(os.getenv("PORT", '4321')))
