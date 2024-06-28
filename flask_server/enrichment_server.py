@@ -18,7 +18,7 @@ from modules.k_star import k_star
 
 app = Flask(__name__)
 
-VERSION = '0.0.4'
+VERSION = '0.1.0'
 
 
 @app.route('/', methods=['GET'])

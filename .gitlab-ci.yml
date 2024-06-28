@@ -5,10 +5,10 @@ variables:
   # hotfix for https://gitlab.com/gitlab-org/gitlab-ce/issues/64959
   DOCKER_TLS_CERTDIR: ""
   # SELECT ONE OF INTERNAL,EXTERNAL
-  CI_DEPLOY_NETWORK: INTERNAL
+  CI_DEPLOY_NETWORK: EXTERNAL
   CI_DEPLOY_TAG: none
   # SELECT ONE OF public,private
-  CI_PUBLISH: private
+  CI_PUBLISH: public
   CONTAINER_IMAGE: $CI_REGISTRY/$CI_PROJECT_PATH
 
 
