@@ -13,11 +13,23 @@ WORKDIR /app
 ARG DEBIAN_FRONTEND=noninteractive
 
 
-RUN apt-get update
-RUN apt-get install -y curl libcurl4-openssl-dev libssl-dev libomp5 libopenblas-dev libfontconfig1-dev \
-    libxml2-dev libharfbuzz-dev libfribidi-dev libtiff5-dev libssl-dev openjdk-17-jre xvfb git
-#We need python to install poetry
-RUN apt-get install -y python3.11
+RUN apt-get update && apt-get install -y \
+    curl \
+    libcurl4-openssl-dev \
+    libssl-dev \
+    libomp5 \
+    libopenblas-dev \
+    libfontconfig1-dev \
+    libxml2-dev \
+    libharfbuzz-dev \
+    libfribidi-dev \
+    libtiff5-dev \
+    libssl-dev \
+    openjdk-17-jre \
+    xvfb \
+    git \
+    python3.11 \
+    && rm -rf /var/lib/apt/lists/*
 #Get Poetry
 RUN curl -sSL 'https://install.python-poetry.org' | python3.11 -
 #Add it to Path for the docker
