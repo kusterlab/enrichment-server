@@ -179,8 +179,8 @@ def find_upstream_kinase(seq, Q, P, top_n=15, threshold=-np.inf, threshold_type=
     sort_type = str_to_int_map[sort_type]
 
     # Fast return for pY
-    if seq[len(seq) // 2] == 'y':
-        return ('', '', '', '')
+    # if seq[len(seq) // 2] == 'y':
+    #     return ('', '', '', '')
     # score all kinases
     result = {}
     for kinase in Q.keys():
