@@ -15,7 +15,7 @@ services:
       - CI_PUBLISH
       - PRODUCTION=1
       - PORT=4321
-    build: . #TODO: CI prints 'Ignoring unsupported options: build', not sure if I need this
+    build: .
     image: "${CI_REGISTRY}/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}:${CI_COMMIT_REF_SLUG}"
     networks:
       - INTERNAL

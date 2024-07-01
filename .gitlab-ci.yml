@@ -47,6 +47,8 @@ integration-test:
     - poetry run pytest -v
   # TODO: remove allow_failure when pytest is found - I don't get why it can enter flask_server but then does not find pytest.
   allow_failure: true
+  only:
+    - main
 
 deploy-to-swarm:
   stage: deploy

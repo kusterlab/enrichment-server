@@ -26,7 +26,6 @@ def get_status() -> flask.wrappers.Response:
     return send_response(jsonify(status=200, version=VERSION))
 
 
-# TODO: In the second route, the ssgsea_type actually can only be ssc. Can I enforce this?
 @app.route('/ssgsea/<string:ssgsea_type>', methods=['POST'])
 @app.route('/ssgsea/<string:ssgsea_type>/<string:ssc_input_type>', methods=['POST'])
 def handle_ssgsea_request(ssgsea_type, ssc_input_type='flanking') -> werkzeug.wrappers.Response | str:
@@ -160,8 +159,6 @@ def process_post_request(post_request: werkzeug.Request) -> Path | str:
 
 def send_response(result: werkzeug.wrappers.Response, output_folder=None) -> flask.Response:
     response = make_response(result)
-    # TODO: I added this for cross-origin resource sharing, but is it unsafe?
-    # Maybe using flask-cors (https://flask-cors.readthedocs.io/en/latest/)
     response.headers.add('Access-Control-Allow-Origin', '*')
     if output_folder:
         shutil.rmtree(output_folder)
@@ -169,29 +166,4 @@ def send_response(result: werkzeug.wrappers.Response, output_folder=None) -> fla
 
 
 if __name__ == '__main__':
-    # # DEBUG: Limit memory usage
-    # import resource
-    # import sys
-    #
-    #
-    # def memory_limit_half():
-    #     """Limit max memory usage to half."""
-    #     soft, hard = resource.getrlimit(resource.RLIMIT_AS)
-    #     # Convert KiB to bytes, and divide in two to half
-    #     resource.setrlimit(resource.RLIMIT_AS, (int(get_memory() * 1024 / 2), hard))
-    #
-    #
-    # def get_memory():
-    #     with open('/proc/meminfo', 'r') as mem:
-    #         free_memory = 0
-    #         for i in mem:
-    #             sline = i.split()
-    #             if str(sline[0]) in ('MemFree:', 'Buffers:', 'Cached:'):
-    #                 free_memory += int(sline[1])
-    #     return free_memory  # KiB
-    #
-    #
-    # # GUBED
-    # memory_limit_half()
-
     app.run(debug=os.getenv("PRODUCTION", '0') != '1', host='0.0.0.0', port=int(os.getenv("PORT", '4321')))
