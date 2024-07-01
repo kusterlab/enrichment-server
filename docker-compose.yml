@@ -40,6 +40,7 @@ services:
         - "traefik.frontend.rule=PathPrefixStrip:/${CI_COMMIT_REF_SLUG}_${CI_PROJECT_NAME}/"
         - "traefik.backend.loadbalancer.sticky=true"
         - "traefik.tags=${CI_COMMIT_REF_SLUG},${CI_DEPLOY_TAG},${CI_PUBLISH}"
+        - "traefik.docker.network=docker_external"
       resources:
         limits:
           memory: 8192M
