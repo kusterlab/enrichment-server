@@ -4,6 +4,7 @@ Developed and Maintained by Julian Müller (julian2.mueller@tum.de).
 
 ## Usage
 
+(If you want to host an instance of the Enrichment Server yourself, please read the section **Hosting** below.)  
 The Enrichment Server is currently running at this address: https://enrichment.kusterlab.org/main_enrichment-server/.
 The currently implemented services are described below. You can use each one of them by sending a POST request
 and attaching your input data in JSON format, as well as a session ID and a dataset name
@@ -479,3 +480,13 @@ E.g.:
 -o output_kstar.json`
 
 </details>
+
+## Hosting
+To run the Enrichment Server yourself, you need to obtain a few files that are not in this repository (either because they are too large for Github or require a license):
+
+- Get a licensed copy of IBM CPLEX, which is required to run PHONEMeS (free for academic use): https://www.ibm.com/products/ilog-cplex-optimization-studio. 
+Create a folder `CPLEX` in the same folder as this README file and place the executable file `cplex` in there. 
+- To run KSTAR, obtain the NetworKIN pre-pruned network here: https://figshare.com/articles/dataset/NETWORKS/14944305. Create a folder `db/kstar` and place the `NetworKIN` folder there.
+
+If you don't need the PHONEMeS and/or KSTAR endpoints, you can also skip these steps.  
+Now, you can simply build and run the docker container. 
