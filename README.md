@@ -4,8 +4,7 @@ Developed and Maintained by Julian Müller (julian2.mueller@tum.de).
 
 ## Usage
 
-The Enrichment Server is currently running internally on `atlas` (http://10.152.171.101:4321)
-and `ucc-ml` (http://131.159.152.7:4321).
+The Enrichment Server is currently running at this address: https://enrichment.kusterlab.org/main_enrichment-server/.
 The currently implemented services are described below. You can use each one of them by sending a POST request
 and attaching your input data in JSON format, as well as a session ID and a dataset name
 (those are needed for PTMNavigator, you can use whatever - maybe I will implement defaults for that at some point).  
