@@ -44,6 +44,7 @@ integration-test:
   script:
     - pwd
     - cd /app/flask_server
+    - Xvfb :1 -screen 0 1024x768x24 &
     - poetry run pytest -v
   # TODO: remove allow_failure when pytest is found - I don't get why it can enter flask_server but then does not find pytest.
   allow_failure: true
