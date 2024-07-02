@@ -55,10 +55,11 @@ class TestClass:
 
     def evaluate_kea3(self):
         for key in self.expected_result.keys():
-            assert len(self.actual_result[key]['MeanRank']) == len(self.expected_result[key]['MeanRank'])
-            assert len(self.actual_result[key]['TopRank']) == len(self.expected_result[key]['TopRank'])
-            assert self.actual_result[key]['MeanRank'] == self.expected_result[key]['MeanRank']
-            assert self.actual_result[key]['TopRank'] == self.expected_result[key]['TopRank']
+            for ranktype in 'MeanRank', 'TopRank':
+                assert len(self.actual_result[key][ranktype]) == len(self.expected_result[key][ranktype])
+                for rank_actual, rank_expected in zip(self.actual_result[key][ranktype], self.expected_result[key][ranktype]):
+                    assert rank_actual['TF'] == rank_expected['TF']
+                    assert rank_actual['Score'] == rank_expected['Score']
 
     def evaluate_kstar(self):
         for phospho_type in ['ST', 'Y']:
@@ -84,7 +85,7 @@ class TestClass:
             "file": self.input_json.open('rb')
         })
 
-        self.actual_result = json.loads(response.data)
+        self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/ptm-sea/expected_output/output_flanking.json')
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_ssgsea()
@@ -99,7 +100,7 @@ class TestClass:
             "file": self.input_json.open('rb')
         })
 
-        self.actual_result = json.loads(response.data)
+        self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/ptm-sea/expected_output/output_uniprot.json')
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_ssgsea()
@@ -114,7 +115,7 @@ class TestClass:
             "file": self.input_json.open('rb')
         })
 
-        self.actual_result = json.loads(response.data)
+        self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/ssgsea/expected_output/output_gc.json')
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_ssgsea()
@@ -129,7 +130,7 @@ class TestClass:
             "file": self.input_json.open('rb')
         })
 
-        self.actual_result = json.loads(response.data)
+        self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/ssgsea/expected_output/output_gcr.json')
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_ssgsea()
@@ -144,7 +145,7 @@ class TestClass:
             "file": self.input_json.open('rb')
         })
 
-        self.actual_result = json.loads(response.data)
+        self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea.json')
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_ksea()
@@ -159,25 +160,10 @@ class TestClass:
             "file": self.input_json.open('rb')
         })
 
-        self.actual_result = json.loads(response.data)
+        self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea_rokai.json')
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_ksea()
-
-    def test_phonemes(self, client):
-        self.input_json = Path('../fixtures/phonemes/input/input.json')
-        self.dataset_name = 'phonemes_test'
-
-        response = client.post('/phonemes', data={
-            "session_id": self.session_id,
-            "dataset_name": self.dataset_name,
-            "file": self.input_json.open('rb')
-        })
-
-        self.actual_result = json.loads(response.data)
-        expected_result_file = Path('../fixtures/phonemes/expected_output/json_skeletons.json')
-        self.expected_result = json.load(open(expected_result_file))
-        self.evaluate_phonemes()
 
     def test_motif_enrichment(self, client):
         self.input_json = Path('../fixtures/motif_enrichment/input/input.json')
@@ -189,7 +175,7 @@ class TestClass:
             "file": self.input_json.open('rb')
         })
 
-        self.actual_result = json.loads(response.data)
+        self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/motif_enrichment/expected_output/output.json')
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_motif_enrichment()
@@ -204,7 +190,7 @@ class TestClass:
             "file": self.input_json.open('rb')
         })
 
-        self.actual_result = json.loads(response.data)
+        self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/kea3/expected_output/output.json')
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_kea3()
@@ -219,7 +205,23 @@ class TestClass:
             "file": self.input_json.open('rb')
         })
 
-        self.actual_result = json.loads(response.data)
+        self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/kstar/expected_output/output.json')
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_kstar()
+
+#Run PHONEMeS last because it takes the longest
+    def test_phonemes(self, client):
+        self.input_json = Path('../fixtures/phonemes/input/input.json')
+        self.dataset_name = 'phonemes_test'
+
+        response = client.post('/phonemes', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_json.open('rb')
+        })
+
+        self.actual_result = json.loads(response.data)['Result']
+        expected_result_file = Path('../fixtures/phonemes/expected_output/json_skeletons.json')
+        self.expected_result = json.load(open(expected_result_file))
+        self.evaluate_phonemes()
