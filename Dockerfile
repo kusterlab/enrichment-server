@@ -65,16 +65,15 @@ COPY Cytoscape_v3.10.1 /app/Cytoscape_v3.10.1
 COPY CytoscapeConfiguration /root/CytoscapeConfiguration
 
 #Install R-related stuff
+WORKDIR /app/flask_server
 RUN Rscript -e "install.packages('renv')"
-RUN Rscript -e "renv::restore('/app/flask_server')"
+RUN Rscript -e "renv::restore()"
 
 WORKDIR /app
 #Install Python-related stuff
 RUN poetry install -C flask_server
 
 WORKDIR /app/flask_server
-#Stringi is broken in the renv for some reason, reinstall it
-RUN Rscript -e "install.packages('stringi')"
 #The KSTAR Python Package needs some initial setting up
 RUN poetry run python -c "from kstar import config; \
     config.install_resource_files(); \

@@ -20,7 +20,7 @@ Author: Deepayan Sarkar [aut, cre] (<https://orcid.org/0000-0003-4107-1553>), Fe
 Maintainer: Deepayan Sarkar <deepayan.sarkar@r-project.org>
 Repository: CRAN
 Date/Publication: 2024-03-20 06:10:02 UTC
-Built: R 4.3.2; x86_64-pc-linux-gnu; 2024-04-30 09:17:44 UTC; unix
+Built: R 4.3.2; x86_64-pc-linux-gnu; 2024-07-02 09:23:03 UTC; unix
 RemoteType: standard
 RemotePkgRef: lattice
 RemoteRef: lattice
