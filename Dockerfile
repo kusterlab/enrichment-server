@@ -68,6 +68,8 @@ COPY CytoscapeConfiguration /root/CytoscapeConfiguration
 WORKDIR /app/flask_server
 RUN Rscript -e "install.packages('renv')"
 RUN Rscript -e "renv::restore()"
+#Stringi is broken in the renv for some reason, reinstall it (else it is missing libicui18n.so.66)
+RUN Rscript -e "install.packages('stringi')"
 
 WORKDIR /app
 #Install Python-related stuff
