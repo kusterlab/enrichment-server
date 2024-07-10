@@ -3,6 +3,7 @@
 import os
 from pathlib import Path
 import shutil
+import json
 from urllib.parse import urlparse
 import werkzeug.wrappers
 from werkzeug.utils import secure_filename
@@ -18,7 +19,7 @@ from modules.k_star import k_star
 
 app = Flask(__name__)
 
-VERSION = '0.1.0'
+VERSION = '0.1.1'
 
 
 @app.route('/', methods=['GET'])
@@ -26,6 +27,7 @@ def get_status() -> flask.wrappers.Response:
     return send_response(jsonify(status=200, version=VERSION))
 
 
+# TODO: In the second route, the ssgsea_type actually can only be ssc. Can I enforce this?
 @app.route('/ssgsea/<string:ssgsea_type>', methods=['POST'])
 @app.route('/ssgsea/<string:ssgsea_type>/<string:ssc_input_type>', methods=['POST'])
 def handle_ssgsea_request(ssgsea_type, ssc_input_type='flanking') -> werkzeug.wrappers.Response | str:
@@ -50,7 +52,7 @@ def handle_ssgsea_request(ssgsea_type, ssc_input_type='flanking') -> werkzeug.wr
 
     ssgsea_combined_output = ssgsea.run_ssgsea(ssgsea_input, ssgsea_type, ssc_input_type)
 
-    return send_response(send_file(ssgsea.postprocess_ssgsea(ssgsea_combined_output), as_attachment=False),
+    return send_response(postprocess_request_response(ssgsea.postprocess_ssgsea(ssgsea_combined_output)),
                          filepath.parent)
 
 
@@ -69,7 +71,7 @@ def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
         preprocessed_filepath = ksea.run_rokai(preprocessed_filepath)
 
     ksea_result = ksea.perform_ksea(preprocessed_filepath)
-    return send_response(send_file(ksea_result, as_attachment=False), filepath.parent)
+    return send_response(postprocess_request_response(ksea_result), filepath.parent)
 
 
 @app.route('/phonemes', methods=['POST'])
@@ -87,7 +89,7 @@ def handle_phonemes_request() -> werkzeug.wrappers.Response | str:
     cytoscape_result = phonemes.run_cytoscape(phonemes_result)
     pathway_skeletons_json = phonemes.create_pathway_skeleton(cytoscape_result)
 
-    return send_response(send_file(pathway_skeletons_json, as_attachment=False), filepath.parent)
+    return send_response(postprocess_request_response(pathway_skeletons_json), filepath.parent)
 
 
 @app.route('/motif_enrichment', methods=['POST'])
@@ -100,7 +102,7 @@ def handle_motif_enrichment_request() -> werkzeug.wrappers.Response | str:
     filepath = post_request_processed
     motif_enrichment_result = motif_enrichment.run_motif_enrichment(filepath)
 
-    return send_response(send_file(motif_enrichment_result, as_attachment=False), filepath.parent)
+    return send_response(postprocess_request_response(motif_enrichment_result), filepath.parent)
 
 
 @app.route('/kea3', methods=['POST'])
@@ -113,7 +115,7 @@ def handle_kea3_request() -> werkzeug.wrappers.Response | str:
     filepath = post_request_processed
     kea3_result = kea3.run_kea3_api(filepath)
 
-    return send_response(send_file(kea3_result, as_attachment=False), filepath.parent)
+    return send_response(postprocess_request_response(kea3_result), filepath.parent)
 
 
 @app.route('/kstar', methods=['POST'])
@@ -126,7 +128,7 @@ def handle_kstar_request() -> werkzeug.wrappers.Response | str:
     filepath = post_request_processed
     kstar_result = k_star.run_kstar(filepath)
 
-    return send_response(send_file(kstar_result, as_attachment=False), filepath.parent)
+    return send_response(postprocess_request_response(kstar_result), filepath.parent)
 
 
 def process_post_request(post_request: werkzeug.Request) -> Path | str:
@@ -157,6 +159,14 @@ def process_post_request(post_request: werkzeug.Request) -> Path | str:
     return input_filepath
 
 
+def postprocess_request_response(result_path: Path) -> werkzeug.wrappers.Response:
+    result_raw = json.load(open(result_path))
+    result_with_log = {'Log': {'Version': VERSION}, 'Result': result_raw}
+    with open(result_path, 'w') as outfile:
+        json.dump(result_with_log, outfile)
+    return send_file(result_path, as_attachment=False)
+
+
 def send_response(result: werkzeug.wrappers.Response, output_folder=None) -> flask.Response:
     response = make_response(result)
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -166,4 +176,29 @@ def send_response(result: werkzeug.wrappers.Response, output_folder=None) -> fla
 
 
 if __name__ == '__main__':
+    # # DEBUG: Limit memory usage
+    # import resource
+    # import sys
+    #
+    #
+    # def memory_limit_half():
+    #     """Limit max memory usage to half."""
+    #     soft, hard = resource.getrlimit(resource.RLIMIT_AS)
+    #     # Convert KiB to bytes, and divide in two to half
+    #     resource.setrlimit(resource.RLIMIT_AS, (int(get_memory() * 1024 / 2), hard))
+    #
+    #
+    # def get_memory():
+    #     with open('/proc/meminfo', 'r') as mem:
+    #         free_memory = 0
+    #         for i in mem:
+    #             sline = i.split()
+    #             if str(sline[0]) in ('MemFree:', 'Buffers:', 'Cached:'):
+    #                 free_memory += int(sline[1])
+    #     return free_memory  # KiB
+    #
+    #
+    # # GUBED
+    # memory_limit_half()
+
     app.run(debug=os.getenv("PRODUCTION", '0') != '1', host='0.0.0.0', port=int(os.getenv("PORT", '4321')))

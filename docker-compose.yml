@@ -15,7 +15,7 @@ services:
       - CI_PUBLISH
       - PRODUCTION=1
       - PORT=4321
-    build: .
+    build: . #TODO: CI prints 'Ignoring unsupported options: build', not sure if I need this
     image: "${CI_REGISTRY}/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}:${CI_COMMIT_REF_SLUG}"
     networks:
       - INTERNAL
@@ -40,6 +40,7 @@ services:
         - "traefik.frontend.rule=PathPrefixStrip:/${CI_COMMIT_REF_SLUG}_${CI_PROJECT_NAME}/"
         - "traefik.backend.loadbalancer.sticky=true"
         - "traefik.tags=${CI_COMMIT_REF_SLUG},${CI_DEPLOY_TAG},${CI_PUBLISH}"
+        - "traefik.docker.network=EXTERNAL"
       resources:
         limits:
           memory: 8192M
