@@ -4,8 +4,7 @@ Developed and Maintained by Julian Müller (julian2.mueller@tum.de).
 
 ## Usage
 
-The Enrichment Server is currently running internally on `atlas` (http://10.152.171.101:4321)
-and `ucc-ml` (http://131.159.152.7:4321).
+The Enrichment Server is currently running here: https://enrichment.kusterlab.org/main_enrichment-server/
 The currently implemented services are described below. You can use each one of them by sending a POST request
 and attaching your input data in JSON format, as well as a session ID and a dataset name
 (those are needed for PTMNavigator, you can use whatever - maybe I will implement defaults for that at some point).  
@@ -65,12 +64,12 @@ Publication: https://www.mcponline.org/article/S1535-9476(20)31860-0/fulltext
 
 `curl -X POST -F file=@fixtures/ptm-sea/input/input_flanking.json
 -F session_id=ABCDEF12345
--F dataset_name=ptm-sea http://10.152.171.101:4321/ssgsea/ssc/flanking
+-F dataset_name=ptm-sea https://enrichment.kusterlab.org/main_enrichment-server/ssgsea/ssc/flanking
 -o output_ptmsea_flanking.json`
 
 `curl -X POST -F file=@fixtures/ptm-sea/input/input_uniprot.json
 -F session_id=ABCDEF12345
--F dataset_name=ptm-sea http://10.152.171.101:4321/ssgsea/ssc/uniprot
+-F dataset_name=ptm-sea https://enrichment.kusterlab.org/main_enrichment-server/ssgsea/ssc/uniprot
 -o output_ptmsea_uniprot.json`
 </details>  
 
@@ -118,7 +117,7 @@ E.g.:
 
 `curl -X POST -F file=@fixtures/ssgsea/input/input.json
 -F session_id=ABCDEF12345
--F dataset_name=genecentric http://10.152.171.101:4321/ssgsea/gc
+-F dataset_name=genecentric https://enrichment.kusterlab.org/main_enrichment-server/ssgsea/gc
 -o output_gc.json`
 </details>
 
@@ -163,7 +162,7 @@ E.g.:
 
 `curl -X POST -F file=@fixtures/ssgsea/input/input.json
 -F session_id=ABCDEF12345
--F dataset_name=genecentricredundant http://10.152.171.101:4321/ssgsea/gcr
+-F dataset_name=genecentricredundant https://enrichment.kusterlab.org/main_enrichment-server/ssgsea/gcr
 -o output_gcr.json`
 </details>
 
@@ -210,7 +209,7 @@ A list of phosphosites, encoded in the format `<Uniprot_Acc>_<Res><Position>`, a
 
 `curl -X POST -F file=@fixtures/ksea/input/input.json
 -F session_id=ABCDEF12345
--F dataset_name=ksea http://10.152.171.101:4321/ksea
+-F dataset_name=ksea https://enrichment.kusterlab.org/main_enrichment-server/ksea
 -o output_ksea.json`
 
 </details>
@@ -256,7 +255,7 @@ E.g.:
 
 `curl -X POST -F file=@fixtures/ksea/input/input.json
 -F session_id=ABCDEF12345
--F dataset_name=ksea_rokai http://10.152.171.101:4321/ksea/rokai
+-F dataset_name=ksea_rokai https://enrichment.kusterlab.org/main_enrichment-server/ksea/rokai
 -o output_ksea_rokai.json`
 
 </details>
@@ -333,7 +332,7 @@ E.g.:
 
 `curl -X POST -F file=@fixtures/phonemes/input/input.json
 -F session_id=ABCDEF12345
--F dataset_name=phonemes http://10.152.171.101:4321/phonemes
+-F dataset_name=phonemes https://enrichment.kusterlab.org/main_enrichment-server/phonemes
 -o output_phonemes.json`
 
 </details>
@@ -379,7 +378,7 @@ E.g.:
 
 `curl -X POST -F file=@fixtures/motif_enrichment/input/input.json
 -F session_id=ABCDEF12345
--F dataset_name=motif_enrichment http://10.152.171.101:4321/motif_enrichment
+-F dataset_name=motif_enrichment https://enrichment.kusterlab.org/main_enrichment-server/motif_enrichment
 -o output_motif_enrichment.json`
 
 </details>
@@ -427,7 +426,7 @@ E.g.:
 
 `curl -X POST -F file=@fixtures/kea3/input/input.json
 -F session_id=ABCDEF12345
--F dataset_name=kea3 http://10.152.171.101:4321/kea3
+-F dataset_name=kea3 https://enrichment.kusterlab.org/main_enrichment-server/kea3
 -o output_kea3.json`
 
 </details>
@@ -476,7 +475,7 @@ E.g.:
 
 `curl -X POST -F file=@fixtures/kstar/input/input.json
 -F session_id=ABCDEF12345
--F dataset_name=kstar http://10.152.171.101:4321/kstar
+-F dataset_name=kstar https://enrichment.kusterlab.org/main_enrichment-server/kstar
 -o output_kstar.json`
 
 </details>
