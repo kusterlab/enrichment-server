@@ -7,16 +7,40 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import psite_annotation as pa
-from scipy import interpolate
 from scipy.stats import fisher_exact
 import statsmodels.api as sm
 
-PHOSPHOSITE_FASTA = '../db/Phosphosite_seq.fasta'
-ODDS_PATH = '../db/kinase_library/Motif_Odds_Ratios.txt'
-QUANTILE_MATRIX_PATH = '../db/kinase_library/Kinase_Score_Quantile_Matrix.txt'
+from tqdm import tqdm
+
+tqdm.pandas()
+
+PHOSPHOSITE_FASTA = "../db/Phosphosite_seq.fasta"
+ODDS_PATH = "../db/kinase_library/Motif_Odds_Ratios.txt"
+QUANTILE_MATRIX_PATH = "../db/kinase_library/Kinase_Score_Quantile_Matrix.txt"
+
+MOTIF_COLS = [
+    "Top Motif Kinases",
+    "Top Motif Scores",
+    "Top Motif Percentiles",
+    "Top Motif Totals",
+]
 
 
 def run_motif_enrichment(filepath: Path) -> Path:
+    input_json = json.load(open(filepath))
+    input_df = pd.DataFrame.from_dict(input_json)
+    result_df = run_motif_enrichment_dataframe(input_df)
+
+    output_json = filepath.parent / f"motif_enrichment_result.json"
+    result_df.to_json(
+        path_or_buf=output_json,
+        orient="records",
+        # indent=1
+    )
+    return output_json
+
+
+def run_motif_enrichment_dataframe(input_df: pd.DataFrame) -> pd.DataFrame:
     ## Load the ODD ratios
     ODDS = pd.read_csv(ODDS_PATH, sep='\t', index_col=['Kinase', 'Position', 'AA'])
 
@@ -26,10 +50,8 @@ def run_motif_enrichment(filepath: Path) -> Path:
     QUANTILE_MATRIX = pd.read_csv(QUANTILE_MATRIX_PATH, sep='\t', index_col='Score').T
     QUANTILES = {}
     for kinase, q in QUANTILE_MATRIX.iterrows():
-        QUANTILES[kinase] = build_ecdf(scores=q.index, quantiles=q.values)
+        QUANTILES[kinase] = (q.index, q.values)
 
-    input_json = json.load(open(filepath))
-    input_df = pd.DataFrame.from_dict(input_json)
     experiment_columns = [col for col in input_df.columns if col not in ['Modified sequence', 'Proteins']]
 
     # TODO: Maybe add more lowercase letters in context for multiphospho-peptides
@@ -47,46 +69,52 @@ def run_motif_enrichment(filepath: Path) -> Path:
     mask = (input_df['Site sequence context'] == '')
     input_df = input_df[~mask]
 
-    enrichment_dfs = []
-    for experiment in experiment_columns:
-        input_experiment = input_df[['Site sequence context', 'Site weight', experiment]].rename(
-            {experiment: 'Regulation'}, axis=1).dropna().copy()
+    ## Annotate the Sites with the best kinases
+    input_df[MOTIF_COLS] = input_df[["Site sequence context"]].progress_apply(
+        find_upstream_kinase,
+        Q=QUANTILES,
+        P=ODDS,
+        result_type="expand",
+        axis=1,
+    )
 
-        enrichment_df_experiment = motif_enrichment_analysis(input_experiment, P=ODDS, Q=QUANTILES, site_weights=True)
+    enrichment_dfs = []
+    for experiment in tqdm(experiment_columns):
+        input_experiment = (
+            input_df[["Site sequence context", "Site weight", experiment] + MOTIF_COLS]
+            .rename({experiment: "Regulation"}, axis=1)
+            .dropna()
+            .copy()
+        )
+
+        enrichment_df_experiment = motif_enrichment_analysis(
+            input_experiment, site_weights=True
+        )
         enrichment_df_experiment = correct_for_multipletesting(enrichment_df_experiment)
         enrichment_df_experiment.columns = [f'{col} ({experiment})' for col in enrichment_df_experiment.columns]
         enrichment_dfs.append(enrichment_df_experiment)
 
-    output_json = filepath.parent / f'motif_enrichment_result.json'
-    pd.concat(enrichment_dfs, axis=1).reset_index(names='Kinase').to_json(path_or_buf=output_json,
-                                                                          orient='records',
-                                                                          # indent=1
-                                                                          )
-    return output_json
+    return pd.concat(enrichment_dfs, axis=1).reset_index(names="Kinase")
 
 
-def build_ecdf(scores, quantiles):
-    """
-    Build a empirical cumulative distribution function (ecdf) based on precomputed scores and quantiles
-
-    Parameter
-    ---------
-    scores : array like
-        input scores
-    quantiles : array like
-        input qunatiles
-
-    Return
-    ------
-    ecdf function that maps x->cumprop
-    """
-    # Return the ecdf as function
-    f = interpolate.interp1d(scores, quantiles, kind='linear')
-    return f
+def quantile(s, Q_kinase):
+    scores, quantiles = Q_kinase
+    index = np.searchsorted(scores, s)
+    if index + 1 >= len(scores):
+        quantile = quantiles[-1]
+    else:
+        y1 = quantiles[index]
+        y2 = quantiles[index + 1]
+        x1 = scores[index]
+        x2 = scores[index + 1]
+        quantile = y1 + (s - x1) * (y2 - y1) / (x2 - x1)
+    return float(quantile)
 
 
-def motif_enrichment_analysis(df, P, Q, top_n=15, threshold=-np.inf, threshold_type='percentile',
-                              sort_type='percentile', site_weights=False):
+def motif_enrichment_analysis(
+    df,
+    site_weights=False,
+):
     """
     Motif enrichment according to the Johnson paper DOI: 10.1038/s41586-022-05575-3 as default values.
     More options by selecting different sortings, thresholds, site_weights for counting, etc..
@@ -106,19 +134,12 @@ def motif_enrichment_analysis(df, P, Q, top_n=15, threshold=-np.inf, threshold_t
     regulation_types = {'down', 'up', 'not'}
     df = df[df['Regulation'].isin(regulation_types)]
 
-    ## Annotate the Sites with the best kinases
-    cols = ['Top Motif Kinases', 'Top Motif Scores', 'Top Motif Percentiles', 'Top Motif Totals']
-
-    motif = df['Site sequence context'].apply(find_upstream_kinase, Q=Q, P=P, top_n=top_n, threshold=threshold,
-                                              threshold_type=threshold_type, sort_type=sort_type)
-    motif = pd.DataFrame(motif.tolist(), index=motif.index, columns=cols)
-    motif['Regulation'] = df['Regulation'].copy()
-
     # initialize the 'Site weight' column and if customized overwrite from input df
-    if (not site_weights) or ('Site weight' not in df):
-        motif['Site weight'] = 1
+    if (not site_weights) or ("Site weight" not in df):
+        motif = df[MOTIF_COLS + ["Regulation"]]
+        motif.loc[:, "Site weight"] = 1
     else:
-        motif['Site weight'] = df['Site weight'].copy()
+        motif = df[MOTIF_COLS + ["Regulation", "Site weight"]]
 
     ## Count total down, not, up sites
     total_regulations = motif.groupby('Regulation')['Site weight'].sum().to_dict()
@@ -178,40 +199,51 @@ def find_upstream_kinase(seq, Q, P, top_n=15, threshold=-np.inf, threshold_type=
     threshold_type = str_to_int_map[threshold_type]
     sort_type = str_to_int_map[sort_type]
 
-    # Fast return for pY
-    # if seq[len(seq) // 2] == 'y':
-    #     return ('', '', '', '')
-    # score all kinases
-    result = {}
+    scores = []
+    kinases = []
     for kinase in Q.keys():
-        s = score(seq, kinase, P, motif_size=5, sig_digits=3)
-        if not np.isfinite(s):
+        s = score(seq["Site sequence context"], kinase, P, motif_size=5)
+        if s <= 0:
             continue
-        q = round(float(Q[kinase](s)), 3)
-        t = round(s * q, 3)
-        result[kinase] = (s, q, t)
+        scores.append(s)
+        kinases.append(kinase)
+    scores = np.log2(np.array(scores))
+
+    quantiles = []
+    for kinase, s in zip(kinases, scores):
+        quantiles.append(quantile(s, Q[kinase]))
+    quantiles = np.array(quantiles)
+    totals = scores * quantiles
+
+    result = {k: (s, q, t) for k, s, q, t in zip(kinases, scores, quantiles, totals)}
     # Sort by sort_type, then filter threshold_type > threshold, and then take the topN of the list
     out = sorted(result.items(), key=lambda item: item[1][sort_type], reverse=True)
-    out = [(k, tpl) for k, tpl in out if tpl[threshold_type] > threshold]
+    out = [(k, *tpl) for k, tpl in out if tpl[threshold_type] > threshold]
     out = out[:top_n]
-    # Transofrom to ; seperated lists
-    kinases = ';'.join(k for k, tpl in out)  # kinase
-    scores = ';'.join(str(tpl[0]) for k, tpl in out)  # [0] score
-    percentiles = ';'.join(str(tpl[1]) for k, tpl in out)  # [1] percentile
-    totals = ';'.join(str(tpl[2]) for k, tpl in out)  # [2] total = s*q
+
+    kinases, scores, quantiles, totals = zip(*out)
+    scores = np.round(scores, 3)
+    quantiles = np.round(quantiles, 3)
+    totals = np.round(totals, 3)
+
+    # Transform to ; separated lists
+    kinases = ';'.join(kinases)  # kinase
+    scores = ';'.join(map(str, scores))  # [0] score
+    percentiles = ';'.join(map(str, quantiles))  # [1] percentile
+    totals = ';'.join(map(str, totals))  # [2] total = s*q
     return (kinases, scores, percentiles, totals)
 
 
-def score(seq, kinase, P, motif_size=5, sig_digits=4):
+def score(seq, kinase, P, motif_size=5):
     """
     Score the motife based on the AA positional ODDS matrix given a sequence and a kinase
     """
     assert len(seq) == (2 * motif_size + 1)
-    score = []
+    score = 1.0
     for i, aa in enumerate(seq):
         pos = i - motif_size
-        score.append(P.get((kinase, pos, aa), np.nan))
-    return round(np.log2(np.nanprod(score)), sig_digits)
+        score *= P.get((kinase, pos, aa), 1.0)
+    return score
 
 
 def kinase_motif_enrichment_test(counts, total_regulations):
