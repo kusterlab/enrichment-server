@@ -479,3 +479,19 @@ E.g.:
 -o output_kstar.json`
 
 </details>
+
+## Hosting
+If you would like to host an instance of the Enrichment Server yourself, there are two preliminary steps: 
+
+- Download **CPLEX** _(required for the PHONEMeS endpoint)_: Obtain a license for IBM CPLEX (free for academic use) 
+and download it from here: https://www.ibm.com/products/ilog-cplex-optimization-studio.
+Then, create a folder `CPLEX` at the top level of this repository and put the `cplex` executable file inside it.
+- Download pre-pruned **NetworKIN** networks _(required for the KSTAR endpoint)_: Download the networks from here: 
+https://figshare.com/articles/dataset/NETWORKS/14944305?file=28768155 and unzip it.
+Then, create a folder `kstar` inside the `db` subfolder of this repository and copy the `NetworKIN` folder there.
+
+If you don't want to make use of the PHONEMeS or KSTAR endpoint(s), you can also skip these steps.
+
+Now you can just build and run the docker container:  
+`docker build -t enrichment_server .`  
+`docker run --network host enrichment_server`
