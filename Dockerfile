@@ -1,5 +1,5 @@
 #How to start shell inside docker: docker run -it --entrypoint /bin/bash enrichment_server
-#How to run tests: docker run -it --entrypoint /bin/sh enrichment_server -c "Xvfb :1 -screen 0 1024x768x24 & poetry run pytest -v"
+#How to run tests: docker run -it --entrypoint /bin/sh enrichment_server -c "Xvfb :1 -screen 0 1024x768x24 & poetry run python -m pytest -v"
 #How to run it as a server: docker run --network host enrichment_server
 
 #We need R 4.3.2
@@ -71,8 +71,6 @@ COPY flask_server/renv.lock /app/flask_server/renv.lock
 WORKDIR /app/flask_server
 RUN Rscript -e "install.packages('renv')"
 RUN Rscript -e "renv::restore()"
-#Stringi is broken in the renv for some reason, reinstall it (else it is missing libicui18n.so.66)
-RUN Rscript -e "install.packages('stringi')"
 
 #Install Python-related stuff
 COPY flask_server/poetry.lock /app/flask_server/poetry.lock
@@ -88,6 +86,9 @@ RUN poetry run python -c "from kstar import config; \
 
 #Copy rest of the flask_server directory including the modules and tests
 COPY flask_server /app/flask_server
+#Stringi is broken in the renv for some reason, reinstall it (else it is missing libicui18n.so.66)
+#And it is important that we do this only after flask_server has been copied, else it will be overwritten by the broken version
+RUN Rscript -e "install.packages('stringi')"
 
 #Tell Cytoscape to use the Xvfb virtual display
 ENV DISPLAY=:1
