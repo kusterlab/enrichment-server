@@ -195,7 +195,7 @@ def find_upstream_kinase(seq: pd.Series, Q, P, top_n=15, threshold=-np.inf, thre
     (kinases, scores, percentiles, totals)
     each is a string with semicolon sorted values
     """
-    if len(seq["Site sequence context"]) == 0:
+    if len(seq) == 0:
         return ("", "", "", "")
     
     # Map the different parameter options
