@@ -163,7 +163,7 @@ def motif_enrichment_analysis(
     return enrichment
 
 
-def find_upstream_kinase(seq, Q, P, top_n=15, threshold=-np.inf, threshold_type='percentile', sort_type='percentile'):
+def find_upstream_kinase(seq: pd.Series, Q, P, top_n=15, threshold=-np.inf, threshold_type='percentile', sort_type='percentile'):
     """
     Score all kinases against input sequence based on Q-Matrix and P-Matrix.
     Percentile is the standard metic according to Johnson et al. and has the best perfromace in my hands as well.
@@ -190,7 +190,7 @@ def find_upstream_kinase(seq, Q, P, top_n=15, threshold=-np.inf, threshold_type=
     (kinases, scores, percentiles, totals)
     each is a string with semicolon sorted values
     """
-    if len(seq) == 0:
+    if len(seq["Site sequence context"]) == 0:
         return ("", "", "", "")
     
     # Map the different parameter options
