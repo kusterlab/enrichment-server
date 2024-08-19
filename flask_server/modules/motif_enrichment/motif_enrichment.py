@@ -190,6 +190,9 @@ def find_upstream_kinase(seq, Q, P, top_n=15, threshold=-np.inf, threshold_type=
     (kinases, scores, percentiles, totals)
     each is a string with semicolon sorted values
     """
+    if len(seq) == 0:
+        return ("", "", "", "")
+    
     # Map the different parameter options
     str_to_int_map = {'score': 0, 'percentile': 1, 'total': 2, }
     if threshold_type not in str_to_int_map:
@@ -220,6 +223,9 @@ def find_upstream_kinase(seq, Q, P, top_n=15, threshold=-np.inf, threshold_type=
     out = sorted(result.items(), key=lambda item: item[1][sort_type], reverse=True)
     out = [(k, *tpl) for k, tpl in out if tpl[threshold_type] > threshold]
     out = out[:top_n]
+
+    if len(out) == 0:
+        return ("", "", "", "")
 
     kinases, scores, quantiles, totals = zip(*out)
     scores = np.round(scores, 3)
