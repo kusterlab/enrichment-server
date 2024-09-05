@@ -52,11 +52,16 @@ def run_motif_enrichment_dataframe(input_df: pd.DataFrame) -> pd.DataFrame:
     for kinase, q in QUANTILE_MATRIX.iterrows():
         QUANTILES[kinase] = (q.index, q.values)
 
-    experiment_columns = [col for col in input_df.columns if col not in ['Modified sequence', 'Proteins']]
+    experiment_columns = [col for col in input_df.columns if
+                          col not in ['Modified sequence', 'Proteins', 'Site positions']]
 
-    # TODO: Maybe add more lowercase letters in context for multiphospho-peptides
-    input_df = pa.addPeptideAndPsitePositions(input_df, PHOSPHOSITE_FASTA, pspInput=True, context_left=5,
-                                              context_right=5, retain_other_mods=True)
+    if 'Modified sequence' in input_df:
+        input_df = pa.addPeptideAndPsitePositions(input_df, PHOSPHOSITE_FASTA, pspInput=True, context_left=5,
+                                                  context_right=5, retain_other_mods=True)
+    else:
+        input_df = pa.addSiteSequenceContext(input_df, PHOSPHOSITE_FASTA, pspInput=True, context_left=5,
+                                             context_right=5,
+                                             retain_other_mods=True)
 
     # Explode for multiple phosphos becomming individual rows
     input_df['Site sequence context'] = input_df['Site sequence context'].str.split(';')
