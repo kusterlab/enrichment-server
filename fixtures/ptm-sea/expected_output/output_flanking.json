@@ -1,713 +1,876 @@
-[
-  {
-    "Signature ID": "PERT-P100-DIA2_ZEBULARINE",
-    "Overlap (Experiment01)": 7.5,
-    "Overlap (Experiment02)": 7.5,
-    "adj p-val (Experiment01)": 0.6184465031,
-    "adj p-val (Experiment02)": 0.9351576899,
-    "Score (Experiment01)": -0.993900001,
-    "Score (Experiment02)": 0.1974000037
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_VORINOSTAT",
-    "Overlap (Experiment01)": 7.4,
-    "Overlap (Experiment02)": 7.4,
-    "adj p-val (Experiment01)": 0.0405,
-    "adj p-val (Experiment02)": 0.0257333475,
-    "Score (Experiment01)": 4.1009001732,
-    "Score (Experiment02)": 3.8578999043
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_VERTEPORFIN",
-    "Overlap (Experiment01)": 5.6,
-    "Overlap (Experiment02)": 5.6,
-    "adj p-val (Experiment01)": 0.5978985425,
-    "adj p-val (Experiment02)": 0.2612704918,
-    "Score (Experiment01)": -1.1396000385,
-    "Score (Experiment02)": 1.6857000589
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_UNC1215",
-    "Overlap (Experiment01)": 8.8,
-    "Overlap (Experiment02)": 8.8,
-    "adj p-val (Experiment01)": 0.5902636917,
-    "adj p-val (Experiment02)": 0.0081,
-    "Score (Experiment01)": 1.328799963,
-    "Score (Experiment02)": 4.2013001442
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_TRICHOSTATIN_A",
-    "Overlap (Experiment01)": 6.7,
-    "Overlap (Experiment02)": 6.7,
-    "adj p-val (Experiment01)": 0.6918073714,
-    "adj p-val (Experiment02)": 0.2910677618,
-    "Score (Experiment01)": 0.7759000063,
-    "Score (Experiment02)": 1.6356999874
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_TRETINOIN",
-    "Overlap (Experiment01)": 5.3,
-    "Overlap (Experiment02)": 5.3,
-    "adj p-val (Experiment01)": 0.3864995547,
-    "adj p-val (Experiment02)": 0.19968142,
-    "Score (Experiment01)": 1.847200036,
-    "Score (Experiment02)": 1.8144999743
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_TRAMETINIB",
-    "Overlap (Experiment01)": 6.5,
-    "Overlap (Experiment02)": 6.5,
-    "adj p-val (Experiment01)": 0.5902636917,
-    "adj p-val (Experiment02)": 1.0,
-    "Score (Experiment01)": -1.0877000093,
-    "Score (Experiment02)": 0.0513000004
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_TBB",
-    "Overlap (Experiment01)": 10.3,
-    "Overlap (Experiment02)": 10.3,
-    "adj p-val (Experiment01)": 0.5902636917,
-    "adj p-val (Experiment02)": 0.3667986046,
-    "Score (Experiment01)": 1.1325000525,
-    "Score (Experiment02)": 1.486700058
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_TACROLIMUS",
-    "Overlap (Experiment01)": 7.1,
-    "Overlap (Experiment02)": 7.1,
-    "adj p-val (Experiment01)": 0.2648707568,
-    "adj p-val (Experiment02)": 0.1817318894,
-    "Score (Experiment01)": -2.2567999363,
-    "Score (Experiment02)": 1.9766000509
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_STAUROSPORINE",
-    "Overlap (Experiment01)": 5.7,
-    "Overlap (Experiment02)": 5.7,
-    "adj p-val (Experiment01)": 0.2648707568,
-    "adj p-val (Experiment02)": 0.0126879699,
-    "Score (Experiment01)": 2.2790000439,
-    "Score (Experiment02)": 3.7130000591
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_SP600125",
-    "Overlap (Experiment01)": 10.1,
-    "Overlap (Experiment02)": 10.1,
-    "adj p-val (Experiment01)": 0.7761038961,
-    "adj p-val (Experiment02)": 0.9351576899,
-    "Score (Experiment01)": 0.5442000031,
-    "Score (Experiment02)": 0.2635999918
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_SOTRASTAURIN",
-    "Overlap (Experiment01)": 8.2,
-    "Overlap (Experiment02)": 8.2,
-    "adj p-val (Experiment01)": 0.9408390411,
-    "adj p-val (Experiment02)": 0.9351576899,
-    "Score (Experiment01)": 0.2843999863,
-    "Score (Experiment02)": -0.2515999973
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_SEMAGACESTAT",
-    "Overlap (Experiment01)": 6.7,
-    "Overlap (Experiment02)": 6.7,
-    "adj p-val (Experiment01)": 0.9614309211,
-    "adj p-val (Experiment02)": 0.4554363192,
-    "Score (Experiment01)": -0.1801999956,
-    "Score (Experiment02)": -1.2275999784
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_SELUMETINIB",
-    "Overlap (Experiment01)": 5.6,
-    "Overlap (Experiment02)": 5.6,
-    "adj p-val (Experiment01)": 0.5902636917,
-    "adj p-val (Experiment02)": 0.1309973046,
-    "Score (Experiment01)": 1.1493999958,
-    "Score (Experiment02)": 2.230700016
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_SCH_900776",
-    "Overlap (Experiment01)": 5.0,
-    "Overlap (Experiment02)": 5.0,
-    "adj p-val (Experiment01)": 0.2648707568,
-    "adj p-val (Experiment02)": 0.091075867,
-    "Score (Experiment01)": 2.1040999889,
-    "Score (Experiment02)": 2.4849998951
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_SALERMIDE",
-    "Overlap (Experiment01)": 9.3,
-    "Overlap (Experiment02)": 9.3,
-    "adj p-val (Experiment01)": 0.7186408683,
-    "adj p-val (Experiment02)": 0.6799632353,
-    "Score (Experiment01)": 0.6761000156,
-    "Score (Experiment02)": -0.692900002
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_ROSCOVITINE",
-    "Overlap (Experiment01)": 7.7,
-    "Overlap (Experiment02)": 7.7,
-    "adj p-val (Experiment01)": 0.2648707568,
-    "adj p-val (Experiment02)": 0.0522580645,
-    "Score (Experiment01)": 2.1856999397,
-    "Score (Experiment02)": 2.8380999565
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_RO4929097",
-    "Overlap (Experiment01)": 5.6,
-    "Overlap (Experiment02)": 5.6,
-    "adj p-val (Experiment01)": 0.7415251677,
-    "adj p-val (Experiment02)": 0.0666666667,
-    "Score (Experiment01)": 0.6093999743,
-    "Score (Experiment02)": 2.6189000607
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_RGFP966",
-    "Overlap (Experiment01)": 8.1,
-    "Overlap (Experiment02)": 8.1,
-    "adj p-val (Experiment01)": 0.2648707568,
-    "adj p-val (Experiment02)": 0.3801242236,
-    "Score (Experiment01)": 1.9854999781,
-    "Score (Experiment02)": 1.3961000443
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_RESVERATROL",
-    "Overlap (Experiment01)": 8.5,
-    "Overlap (Experiment02)": 8.5,
-    "adj p-val (Experiment01)": 0.6150168729,
-    "adj p-val (Experiment02)": 0.0851287441,
-    "Score (Experiment01)": 1.0448000431,
-    "Score (Experiment02)": 2.5885999203
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_REGORAFENIB",
-    "Overlap (Experiment01)": 4.0,
-    "Overlap (Experiment02)": 4.0,
-    "adj p-val (Experiment01)": 0.4956022945,
-    "adj p-val (Experiment02)": 0.0207055215,
-    "Score (Experiment01)": 1.5413999557,
-    "Score (Experiment02)": 3.5099000931
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_PS-1145",
-    "Overlap (Experiment01)": 8.3,
-    "Overlap (Experiment02)": 8.3,
-    "adj p-val (Experiment01)": 0.963981715,
-    "adj p-val (Experiment02)": 0.0941422594,
-    "Score (Experiment01)": -0.1213999987,
-    "Score (Experiment02)": 2.6006999016
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_PRAVASTATIN",
-    "Overlap (Experiment01)": 6.7,
-    "Overlap (Experiment02)": 6.7,
-    "adj p-val (Experiment01)": 0.2648707568,
-    "adj p-val (Experiment02)": 0.9308603041,
-    "Score (Experiment01)": -2.2232999802,
-    "Score (Experiment02)": -0.2915999889
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_PONATINIB",
-    "Overlap (Experiment01)": 5.6,
-    "Overlap (Experiment02)": 5.6,
-    "adj p-val (Experiment01)": 0.4227342159,
-    "adj p-val (Experiment02)": 0.0912270302,
-    "Score (Experiment01)": 1.7144999504,
-    "Score (Experiment02)": 2.5297999382
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_PAZOPANIB",
-    "Overlap (Experiment01)": 5.1,
-    "Overlap (Experiment02)": 5.1,
-    "adj p-val (Experiment01)": 0.1232251521,
-    "adj p-val (Experiment02)": 0.0081,
-    "Score (Experiment01)": 2.8589999676,
-    "Score (Experiment02)": 4.4409999847
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_OSI-027",
-    "Overlap (Experiment01)": 7.6,
-    "Overlap (Experiment02)": 7.6,
-    "adj p-val (Experiment01)": 0.2648707568,
-    "adj p-val (Experiment02)": 0.9385259092,
-    "Score (Experiment01)": 2.3777000904,
-    "Score (Experiment02)": -0.1589999944
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_OLMESARTAN",
-    "Overlap (Experiment01)": 5.7,
-    "Overlap (Experiment02)": 5.7,
-    "adj p-val (Experiment01)": 0.7149139222,
-    "adj p-val (Experiment02)": 0.1313351246,
-    "Score (Experiment01)": -0.7069000006,
-    "Score (Experiment02)": 2.2539000511
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_OKADAIC_ACID",
-    "Overlap (Experiment01)": 9.2,
-    "Overlap (Experiment02)": 9.2,
-    "adj p-val (Experiment01)": 0.5978985425,
-    "adj p-val (Experiment02)": 0.1569767442,
-    "Score (Experiment01)": -1.0950000286,
-    "Score (Experiment02)": 2.0697000027
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_MOMELOTINIB",
-    "Overlap (Experiment01)": 6.6,
-    "Overlap (Experiment02)": 6.6,
-    "adj p-val (Experiment01)": 0.1232251521,
-    "adj p-val (Experiment02)": 0.8333333333,
-    "Score (Experiment01)": 2.8852000237,
-    "Score (Experiment02)": -0.4607000053
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_MILRINONE",
-    "Overlap (Experiment01)": 5.2,
-    "Overlap (Experiment02)": 5.2,
-    "adj p-val (Experiment01)": 0.7761038961,
-    "adj p-val (Experiment02)": 0.0207055215,
-    "Score (Experiment01)": 0.5335999727,
-    "Score (Experiment02)": 3.5260000229
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_LENALIDOMIDE",
-    "Overlap (Experiment01)": 7.4,
-    "Overlap (Experiment02)": 7.4,
-    "adj p-val (Experiment01)": 0.4409363092,
-    "adj p-val (Experiment02)": 0.0999177632,
-    "Score (Experiment01)": 1.7380000353,
-    "Score (Experiment02)": 2.5478999615
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_LAPATINIB",
-    "Overlap (Experiment01)": 5.8,
-    "Overlap (Experiment02)": 5.8,
-    "adj p-val (Experiment01)": 0.7591064482,
-    "adj p-val (Experiment02)": 0.3784558871,
-    "Score (Experiment01)": 0.5868999958,
-    "Score (Experiment02)": 1.3404999971
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_KN-62",
-    "Overlap (Experiment01)": 6.0,
-    "Overlap (Experiment02)": 6.0,
-    "adj p-val (Experiment01)": 0.0405,
-    "adj p-val (Experiment02)": 0.0125874126,
-    "Score (Experiment01)": 4.7203001976,
-    "Score (Experiment02)": 3.6129000187
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_IMATINIB",
-    "Overlap (Experiment01)": 5.9,
-    "Overlap (Experiment02)": 5.9,
-    "adj p-val (Experiment01)": 0.637270393,
-    "adj p-val (Experiment02)": 0.0829918033,
-    "Score (Experiment01)": 0.8835999966,
-    "Score (Experiment02)": 2.5982000828
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_GSK1210151A",
-    "Overlap (Experiment01)": 8.1,
-    "Overlap (Experiment02)": 8.1,
-    "adj p-val (Experiment01)": 0.2648707568,
-    "adj p-val (Experiment02)": 0.4649350649,
-    "Score (Experiment01)": 2.4772999287,
-    "Score (Experiment02)": 1.1697000265
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_GOSSYPETIN",
-    "Overlap (Experiment01)": 7.1,
-    "Overlap (Experiment02)": 7.1,
-    "adj p-val (Experiment01)": 0.4956022945,
-    "adj p-val (Experiment02)": 0.5484171883,
-    "Score (Experiment01)": 1.4658999443,
-    "Score (Experiment02)": 0.9302999973
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_GEFITINIB",
-    "Overlap (Experiment01)": 5.4,
-    "Overlap (Experiment02)": 5.4,
-    "adj p-val (Experiment01)": 0.2449742039,
-    "adj p-val (Experiment02)": 0.0342813611,
-    "Score (Experiment01)": 2.8912000656,
-    "Score (Experiment02)": 3.1670000553
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_FLECAINIDE",
-    "Overlap (Experiment01)": 6.9,
-    "Overlap (Experiment02)": 6.9,
-    "adj p-val (Experiment01)": 0.2789256198,
-    "adj p-val (Experiment02)": 0.0081,
-    "Score (Experiment01)": 2.0824000835,
-    "Score (Experiment02)": 4.345099926
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_FLAVOPIRIDOL",
-    "Overlap (Experiment01)": 7.8,
-    "Overlap (Experiment02)": 7.8,
-    "adj p-val (Experiment01)": 0.637270393,
-    "adj p-val (Experiment02)": 0.5481982806,
-    "Score (Experiment01)": -0.9304000139,
-    "Score (Experiment02)": -0.8963999748
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_ERLOTINIB",
-    "Overlap (Experiment01)": 5.8,
-    "Overlap (Experiment02)": 5.8,
-    "adj p-val (Experiment01)": 0.5101744186,
-    "adj p-val (Experiment02)": 0.0567580193,
-    "Score (Experiment01)": 1.516800046,
-    "Score (Experiment02)": 2.9798998833
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_EPZ004777",
-    "Overlap (Experiment01)": 10.3,
-    "Overlap (Experiment02)": 10.3,
-    "adj p-val (Experiment01)": 0.637270393,
-    "adj p-val (Experiment02)": 0.9385259092,
-    "Score (Experiment01)": -0.9383999705,
-    "Score (Experiment02)": 0.1307000071
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_ENDOTHELIN",
-    "Overlap (Experiment01)": 5.4,
-    "Overlap (Experiment02)": 5.4,
-    "adj p-val (Experiment01)": 0.5902636917,
-    "adj p-val (Experiment02)": 0.1722589792,
-    "Score (Experiment01)": 1.2782000303,
-    "Score (Experiment02)": 2.0083999634
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_DOXORUBICIN",
-    "Overlap (Experiment01)": 5.3,
-    "Overlap (Experiment02)": 5.3,
-    "adj p-val (Experiment01)": 0.5902636917,
-    "adj p-val (Experiment02)": 0.1239922441,
-    "Score (Experiment01)": 1.1714999676,
-    "Score (Experiment02)": 2.2899999619
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_DMSO",
-    "Overlap (Experiment01)": 6.8,
-    "Overlap (Experiment02)": 6.8,
-    "adj p-val (Experiment01)": 0.2648707568,
-    "adj p-val (Experiment02)": 0.0125874126,
-    "Score (Experiment01)": 2.2894999981,
-    "Score (Experiment02)": 3.8654000759
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_DECITABINE",
-    "Overlap (Experiment01)": 8.7,
-    "Overlap (Experiment02)": 8.7,
-    "adj p-val (Experiment01)": 0.2648707568,
-    "adj p-val (Experiment02)": 0.3181461115,
-    "Score (Experiment01)": 2.2125000954,
-    "Score (Experiment02)": 1.5899000168
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_DAUNORUBICIN",
-    "Overlap (Experiment01)": 8.0,
-    "Overlap (Experiment02)": 8.0,
-    "adj p-val (Experiment01)": 0.1184210526,
-    "adj p-val (Experiment02)": 0.0314227524,
-    "Score (Experiment01)": 3.4058001041,
-    "Score (Experiment02)": 3.0622999668
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_DACTOLISIB",
-    "Overlap (Experiment01)": 6.9,
-    "Overlap (Experiment02)": 6.9,
-    "adj p-val (Experiment01)": 0.5902636917,
-    "adj p-val (Experiment02)": 0.1053468208,
-    "Score (Experiment01)": -1.1464999914,
-    "Score (Experiment02)": 2.4776000977
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_CRIZOTINIB",
-    "Overlap (Experiment01)": 4.7,
-    "Overlap (Experiment02)": 4.7,
-    "adj p-val (Experiment01)": 0.5902636917,
-    "adj p-val (Experiment02)": 0.7067682654,
-    "Score (Experiment01)": 1.339400053,
-    "Score (Experiment02)": 0.6299999952
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_CPI-169",
-    "Overlap (Experiment01)": 6.5,
-    "Overlap (Experiment02)": 6.5,
-    "adj p-val (Experiment01)": 0.2648707568,
-    "adj p-val (Experiment02)": 0.0398687449,
-    "Score (Experiment01)": 2.1300001144,
-    "Score (Experiment02)": 2.9416000843
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_COMPOUND_E",
-    "Overlap (Experiment01)": 7.2,
-    "Overlap (Experiment02)": 7.2,
-    "adj p-val (Experiment01)": 0.2648707568,
-    "adj p-val (Experiment02)": 0.0960903652,
-    "Score (Experiment01)": 2.3032000065,
-    "Score (Experiment02)": 2.4544000626
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_CERITINIB",
-    "Overlap (Experiment01)": 7.0,
-    "Overlap (Experiment02)": 7.0,
-    "adj p-val (Experiment01)": 0.5409579464,
-    "adj p-val (Experiment02)": 0.1006261181,
-    "Score (Experiment01)": 1.4771000147,
-    "Score (Experiment02)": 2.3413999081
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_CC-401",
-    "Overlap (Experiment01)": 7.1,
-    "Overlap (Experiment02)": 7.1,
-    "adj p-val (Experiment01)": 0.7137330754,
-    "adj p-val (Experiment02)": 0.4989580141,
-    "Score (Experiment01)": -0.7055000067,
-    "Score (Experiment02)": 1.0695999861
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_CALPAIN_INHIBITOR_II",
-    "Overlap (Experiment01)": 7.2,
-    "Overlap (Experiment02)": 7.2,
-    "adj p-val (Experiment01)": 0.2648707568,
-    "adj p-val (Experiment02)": 0.9351576899,
-    "Score (Experiment01)": 2.3194000721,
-    "Score (Experiment02)": -0.2201000005
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_CABOZANTINIB",
-    "Overlap (Experiment01)": 5.3,
-    "Overlap (Experiment02)": 5.3,
-    "adj p-val (Experiment01)": 0.6150168729,
-    "adj p-val (Experiment02)": 0.2066326531,
-    "Score (Experiment01)": 1.0599999428,
-    "Score (Experiment02)": 1.9048999548
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_BOSUTINIB",
-    "Overlap (Experiment01)": 6.2,
-    "Overlap (Experiment02)": 6.2,
-    "adj p-val (Experiment01)": 0.5902636917,
-    "adj p-val (Experiment02)": 0.0081,
-    "Score (Experiment01)": -1.1518000364,
-    "Score (Experiment02)": 4.4580998421
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_BIX-01338",
-    "Overlap (Experiment01)": 7.6,
-    "Overlap (Experiment02)": 7.6,
-    "adj p-val (Experiment01)": 0.1232251521,
-    "adj p-val (Experiment02)": 0.4554363192,
-    "Score (Experiment01)": 2.8973999023,
-    "Score (Experiment02)": 1.2725000381
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_AXITINIB",
-    "Overlap (Experiment01)": 7.2,
-    "Overlap (Experiment02)": 7.2,
-    "adj p-val (Experiment01)": 0.2648707568,
-    "adj p-val (Experiment02)": 0.0851287441,
-    "Score (Experiment01)": 2.3506000042,
-    "Score (Experiment02)": 2.6040999889
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_AR_A014418",
-    "Overlap (Experiment01)": 6.3,
-    "Overlap (Experiment02)": 6.3,
-    "adj p-val (Experiment01)": 0.5902636917,
-    "adj p-val (Experiment02)": 0.140499911,
-    "Score (Experiment01)": -1.1585999727,
-    "Score (Experiment02)": 2.2058000565
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_AFURESERTIB",
-    "Overlap (Experiment01)": 6.2,
-    "Overlap (Experiment02)": 6.2,
-    "adj p-val (Experiment01)": 0.399330493,
-    "adj p-val (Experiment02)": 0.1668565919,
-    "Score (Experiment01)": 1.8609999418,
-    "Score (Experiment02)": 2.116300106
-  },
-  {
-    "Signature ID": "KINASE-PSP_CK2A1\/CSNK2A1",
-    "Overlap (Experiment01)": 2.3,
-    "Overlap (Experiment02)": 2.3,
-    "adj p-val (Experiment01)": 0.0549898167,
-    "adj p-val (Experiment02)": 0.0851287441,
-    "Score (Experiment01)": 4.1511998177,
-    "Score (Experiment02)": 2.8169000149
-  },
-  {
-    "Signature ID": "KINASE-PSP_CDK2",
-    "Overlap (Experiment01)": 3.6,
-    "Overlap (Experiment02)": 3.6,
-    "adj p-val (Experiment01)": 0.7192622951,
-    "adj p-val (Experiment02)": 0.0125874126,
-    "Score (Experiment01)": -0.6815999746,
-    "Score (Experiment02)": -3.4667000771
-  },
-  {
-    "Signature ID": "KINASE-PSP_CDK1",
-    "Overlap (Experiment01)": 2.6,
-    "Overlap (Experiment02)": 2.6,
-    "adj p-val (Experiment01)": 0.5902636917,
-    "adj p-val (Experiment02)": 0.0081,
-    "Score (Experiment01)": -1.2454999685,
-    "Score (Experiment02)": -5.9668998718
-  },
-  {
-    "Signature ID": "KINASE-PSP_Akt1\/AKT1",
-    "Overlap (Experiment01)": 2.8,
-    "Overlap (Experiment02)": 2.8,
-    "adj p-val (Experiment01)": 0.1235294118,
-    "adj p-val (Experiment02)": 0.1697571643,
-    "Score (Experiment01)": -3.3080000877,
-    "Score (Experiment02)": -2.0669000149
-  },
-  {
-    "Signature ID": "KINASE-iKiP_RPS6KA5.MSK1",
-    "Overlap (Experiment01)": 5.1,
-    "Overlap (Experiment02)": 5.1,
-    "adj p-val (Experiment01)": 0.5902636917,
-    "adj p-val (Experiment02)": 0.0851287441,
-    "Score (Experiment01)": -1.2522000074,
-    "Score (Experiment02)": 2.723400116
-  },
-  {
-    "Signature ID": "KINASE-iKiP_PRKACA",
-    "Overlap (Experiment01)": 5.3,
-    "Overlap (Experiment02)": 5.3,
-    "adj p-val (Experiment01)": 0.2648707568,
-    "adj p-val (Experiment02)": 0.0851287441,
-    "Score (Experiment01)": -2.2212998867,
-    "Score (Experiment02)": 2.6338000298
-  },
-  {
-    "Signature ID": "KINASE-iKiP_PLK3",
-    "Overlap (Experiment01)": 4.3,
-    "Overlap (Experiment02)": 4.3,
-    "adj p-val (Experiment01)": 0.6150168729,
-    "adj p-val (Experiment02)": 0.0257333475,
-    "Score (Experiment01)": -1.0170999765,
-    "Score (Experiment02)": 3.0940001011
-  },
-  {
-    "Signature ID": "KINASE-iKiP_PAK2",
-    "Overlap (Experiment01)": 6.6,
-    "Overlap (Experiment02)": 6.6,
-    "adj p-val (Experiment01)": 0.1232251521,
-    "adj p-val (Experiment02)": 0.2825231911,
-    "Score (Experiment01)": -3.0527999401,
-    "Score (Experiment02)": 1.7016999722
-  },
-  {
-    "Signature ID": "KINASE-iKiP_PAK1",
-    "Overlap (Experiment01)": 6.9,
-    "Overlap (Experiment02)": 6.9,
-    "adj p-val (Experiment01)": 0.399330493,
-    "adj p-val (Experiment02)": 0.1882965932,
-    "Score (Experiment01)": -1.7924000025,
-    "Score (Experiment02)": 1.9472999573
-  },
-  {
-    "Signature ID": "KINASE-iKiP_MAPK8.JNK1",
-    "Overlap (Experiment01)": 5.0,
-    "Overlap (Experiment02)": 5.0,
-    "adj p-val (Experiment01)": 0.963981715,
-    "adj p-val (Experiment02)": 0.0314227524,
-    "Score (Experiment01)": 0.1371999979,
-    "Score (Experiment02)": -3.1682999134
-  },
-  {
-    "Signature ID": "KINASE-iKiP_MAPK3.ERK1",
-    "Overlap (Experiment01)": 3.6,
-    "Overlap (Experiment02)": 3.6,
-    "adj p-val (Experiment01)": 0.5902636917,
-    "adj p-val (Experiment02)": 0.0257333475,
-    "Score (Experiment01)": 1.2408000231,
-    "Score (Experiment02)": -2.9842998981
-  },
-  {
-    "Signature ID": "KINASE-iKiP_MAPK13",
-    "Overlap (Experiment01)": 5.3,
-    "Overlap (Experiment02)": 5.3,
-    "adj p-val (Experiment01)": 0.9614309211,
-    "adj p-val (Experiment02)": 0.0489130435,
-    "Score (Experiment01)": 0.1696999967,
-    "Score (Experiment02)": -2.8975000381
-  },
-  {
-    "Signature ID": "KINASE-iKiP_MAPK12",
-    "Overlap (Experiment01)": 4.9,
-    "Overlap (Experiment02)": 4.9,
-    "adj p-val (Experiment01)": 0.3864995547,
-    "adj p-val (Experiment02)": 0.0081,
-    "Score (Experiment01)": 1.8445999622,
-    "Score (Experiment02)": -4.7670001984
-  },
-  {
-    "Signature ID": "KINASE-iKiP_MAPK10.JNK3",
-    "Overlap (Experiment01)": 6.7,
-    "Overlap (Experiment02)": 6.7,
-    "adj p-val (Experiment01)": 0.9142011834,
-    "adj p-val (Experiment02)": 0.0081,
-    "Score (Experiment01)": -0.2460999936,
-    "Score (Experiment02)": -4.1626000404
-  },
-  {
-    "Signature ID": "KINASE-iKiP_MAPK1.ERK2",
-    "Overlap (Experiment01)": 4.2,
-    "Overlap (Experiment02)": 4.2,
-    "adj p-val (Experiment01)": 0.8234671185,
-    "adj p-val (Experiment02)": 0.0081,
-    "Score (Experiment01)": 0.4557999969,
-    "Score (Experiment02)": -4.4253997803
-  },
-  {
-    "Signature ID": "KINASE-iKiP_DYRK4",
-    "Overlap (Experiment01)": 4.8,
-    "Overlap (Experiment02)": 4.8,
-    "adj p-val (Experiment01)": 0.5902636917,
-    "adj p-val (Experiment02)": 0.9351576899,
-    "Score (Experiment01)": 1.1275000572,
-    "Score (Experiment02)": -0.1873999983
-  },
-  {
-    "Signature ID": "KINASE-iKiP_DYRK3",
-    "Overlap (Experiment01)": 3.1,
-    "Overlap (Experiment02)": 3.1,
-    "adj p-val (Experiment01)": 0.9614309211,
-    "adj p-val (Experiment02)": 0.4720982143,
-    "Score (Experiment01)": -0.1552000046,
-    "Score (Experiment02)": -1.1342999935
-  },
-  {
-    "Signature ID": "KINASE-iKiP_DYRK2",
-    "Overlap (Experiment01)": 4.0,
-    "Overlap (Experiment02)": 4.0,
-    "adj p-val (Experiment01)": 1.0,
-    "adj p-val (Experiment02)": 0.2612704918,
-    "Score (Experiment01)": 0.0282000005,
-    "Score (Experiment02)": -1.7075999975
-  },
-  {
-    "Signature ID": "KINASE-iKiP_CSNK2A2.CK2A2",
-    "Overlap (Experiment01)": 5.9,
-    "Overlap (Experiment02)": 5.9,
-    "adj p-val (Experiment01)": 0.1301204819,
-    "adj p-val (Experiment02)": 0.0081,
-    "Score (Experiment01)": 3.1916999817,
-    "Score (Experiment02)": 4.3752999306
-  },
-  {
-    "Signature ID": "KINASE-iKiP_CDK1-CCNB1",
-    "Overlap (Experiment01)": 4.0,
-    "Overlap (Experiment02)": 4.0,
-    "adj p-val (Experiment01)": 0.6276001675,
-    "adj p-val (Experiment02)": 0.0081,
-    "Score (Experiment01)": 0.9603999853,
-    "Score (Experiment02)": -3.7920999527
-  }
-]
+{
+  "Log": {
+    "Version": "0.1.2"
+  },
+  "Result": [
+    {
+      "Signature ID": "PERT-P100-DIA2_ZEBULARINE",
+      "Percent Overlap (Experiment01)": 7.5,
+      "Percent Overlap (Experiment02)": 7.5,
+      "adj p-val (Experiment01)": 0.6248141264,
+      "adj p-val (Experiment02)": 0.9421975662,
+      "Overlap (Experiment01)": "AGSQRAPSAKKPSTG-p;u|AADEDWDSELEDDLL-p;u|AIRVRSHSMETMVGG-p;u|AKDIDISSPEFKIKI-p;d|ARLGSQHSPGRTASL-p;d|CNLSRVDSTTCLFPV-p;d|ARRQQDPSPGSNLGG-p;d|AIQGPEDSPSRQSRR-p;d|AQPRVPLTPTRGTSS-p;d|ARDERSDSRAQAVSE-p;d",
+      "Overlap (Experiment02)": "AADEDWDSELEDDLL-p;u|AIRVRSHSMETMVGG-p;u|AGSQRAPSAKKPSTG-p;u|ARLGSQHSPGRTASL-p;d|ARRQQDPSPGSNLGG-p;d|CNLSRVDSTTCLFPV-p;d|AIQGPEDSPSRQSRR-p;d|ARDERSDSRAQAVSE-p;d|AQPRVPLTPTRGTSS-p;d|AKDIDISSPEFKIKI-p;d",
+      "Score (Experiment01)": -0.9864000082,
+      "Score (Experiment02)": 0.1938000023
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_VORINOSTAT",
+      "Percent Overlap (Experiment01)": 7.4,
+      "Percent Overlap (Experiment02)": 7.4,
+      "adj p-val (Experiment01)": 0.027,
+      "adj p-val (Experiment02)": 0.0110882957,
+      "Overlap (Experiment01)": "AAYGTHLSPHVPHRV-p;u|APKGILRTPDTIRRF-p;u|ARESLCDSPHQNLSR-p;u|ALLKMTISQQEFGRT-p;u|ASPSRTRSPDVISSA-p;u|ASARVENSPQVDGSP-p;u|ARLGSQHSPGRTASL-p;u|ATLRRAKSFTCSEKP-p;u|AAEPGAGSQHLEVRD-p;u|CSSEVVLSGDDEEYQ-p;u|AGGSAALSPSKKRKN-p;u|ASKLPLVTPHTQCRL-p;u|ASLTVPLSPQVVRSK-p;u|CNVLHPQSPNNSNRQ-p;u|ASEKHRGSADYSMEA-p;u|AGIMITASHNPKQDN-p;u|_MSDQDHSMDEMTAV-p;u|AIRVRSHSMETMVGG-p;u|ALALRARSTSATDTH-p;d|APPRRKGSQITQQST-p;d|AEPGDGDSDTTKKKK-p;d|ATLKKQPSHMEAAHF-p;d|ADNDITPYLVSRFYR-p;d|APRTPHPSPAHSSRK-p;d|ANLLSGKSPRKSAEP-p;d|ARRQQDPSPGSNLGG-p;d|AIQGPEDSPSRQSRR-p;d|ARLQAKESPQRKKRK-p;d|AAASQPPSKRKRRWD-p;d|ARVLRSKSLCHDEIE-p;d|AGYVPIRTPARKLTA-p;d|AQPRVPLTPTRGTSS-p;d|APKFSPVTPKFTPVA-p;d|ASKRAPSSPVAKPGP-p;d|AVERVTKSPGETSKP-p;d|APVINNGSPTILGKR-p;d|AKVLNKKTPESKPTI-p;d|APAPAEKTPVKKKAR-p;d|ASQSRPNSSALETLG-p;d|AKSPEAKSPLQSQPH-p;d|AAASVRQSPGPALAR-p;d",
+      "Overlap (Experiment02)": "APKGILRTPDTIRRF-p;u|AGIMITASHNPKQDN-p;u|ASARVENSPQVDGSP-p;u|ASEKHRGSADYSMEA-p;u|CSSEVVLSGDDEEYQ-p;u|ASPSRTRSPDVISSA-p;u|ASLTVPLSPQVVRSK-p;u|ARLGSQHSPGRTASL-p;u|ARESLCDSPHQNLSR-p;u|AAEPGAGSQHLEVRD-p;u|ATLRRAKSFTCSEKP-p;u|_MSDQDHSMDEMTAV-p;u|ASKLPLVTPHTQCRL-p;u|ALLKMTISQQEFGRT-p;u|AAYGTHLSPHVPHRV-p;u|CNVLHPQSPNNSNRQ-p;u|AIRVRSHSMETMVGG-p;u|AGGSAALSPSKKRKN-p;u|ALALRARSTSATDTH-p;d|APPRRKGSQITQQST-p;d|ADNDITPYLVSRFYR-p;d|APRTPHPSPAHSSRK-p;d|ARRQQDPSPGSNLGG-p;d|AGYVPIRTPARKLTA-p;d|ATLKKQPSHMEAAHF-p;d|AIQGPEDSPSRQSRR-p;d|AEPGDGDSDTTKKKK-p;d|ASQSRPNSSALETLG-p;d|AAASVRQSPGPALAR-p;d|AAASQPPSKRKRRWD-p;d|AQPRVPLTPTRGTSS-p;d|ARLQAKESPQRKKRK-p;d|AVERVTKSPGETSKP-p;d|AKSPEAKSPLQSQPH-p;d|APKFSPVTPKFTPVA-p;d|ARVLRSKSLCHDEIE-p;d|ASKRAPSSPVAKPGP-p;d|AKVLNKKTPESKPTI-p;d|APVINNGSPTILGKR-p;d|ANLLSGKSPRKSAEP-p;d|APAPAEKTPVKKKAR-p;d",
+      "Score (Experiment01)": 4.1132001877,
+      "Score (Experiment02)": 3.7425000668
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_VERTEPORFIN",
+      "Percent Overlap (Experiment01)": 5.6,
+      "Percent Overlap (Experiment02)": 5.6,
+      "adj p-val (Experiment01)": 0.5802865613,
+      "adj p-val (Experiment02)": 0.2708451907,
+      "Overlap (Experiment01)": "AGSRRRFSDSEGEET-p;d|ASPSRTRSPDVISSA-p;d|ATLKKQPSHMEAAHF-p;d|AAEPGAGSQHLEVRD-p;d|CPGPPPPSPEPLARL-p;d|ARGAPPGSPEPPALL-p;d|AQDLCRASPEPPGPE-p;d|ASVARHPSREQLIDY-p;d|ASKRAPSSPVAKPGP-p;d|ADIGKKHSDPHLLER-p;d|AAPSKPASAKKGKAE-p;d",
+      "Overlap (Experiment02)": "AGSRRRFSDSEGEET-p;d|ASPSRTRSPDVISSA-p;d|ASVARHPSREQLIDY-p;d|ATLKKQPSHMEAAHF-p;d|AAEPGAGSQHLEVRD-p;d|AQDLCRASPEPPGPE-p;d|ARGAPPGSPEPPALL-p;d|CPGPPPPSPEPLARL-p;d|ADIGKKHSDPHLLER-p;d|ASKRAPSSPVAKPGP-p;d|AAPSKPASAKKGKAE-p;d",
+      "Score (Experiment01)": -1.2105000019,
+      "Score (Experiment02)": 1.6506999731
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_UNC1215",
+      "Percent Overlap (Experiment01)": 8.8,
+      "Percent Overlap (Experiment02)": 8.8,
+      "adj p-val (Experiment01)": 0.5447848831,
+      "adj p-val (Experiment02)": 0.00675,
+      "Overlap (Experiment01)": "ALAGRSPSPASGRRG-p;u|ASPSRTRSPDVISSA-p;u|CQNPRKQSLPATSIP-p;u|AGIMITASHNPKQDN-p;u|AADEDWDSELEDDLL-p;u|_MSDQDHSMDEMTAV-p;u|ADALTEPSPDIEGEI-p;u|AGGSAALSPSKKRKN-p;d|AIQGPEDSPSRQSRR-p;d|ATKNRVPSAGDVEKA-p;d",
+      "Overlap (Experiment02)": "AADEDWDSELEDDLL-p;u|CQNPRKQSLPATSIP-p;u|ALAGRSPSPASGRRG-p;u|AGIMITASHNPKQDN-p;u|ASPSRTRSPDVISSA-p;u|_MSDQDHSMDEMTAV-p;u|ADALTEPSPDIEGEI-p;u|AIQGPEDSPSRQSRR-p;d|ATKNRVPSAGDVEKA-p;d|AGGSAALSPSKKRKN-p;d",
+      "Score (Experiment01)": 1.4191000462,
+      "Score (Experiment02)": 4.1791000366
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_TRICHOSTATIN_A",
+      "Percent Overlap (Experiment01)": 6.7,
+      "Percent Overlap (Experiment02)": 6.7,
+      "adj p-val (Experiment01)": 0.7485148515,
+      "adj p-val (Experiment02)": 0.2643356643,
+      "Overlap (Experiment01)": "ALALRARSTSATDTH-p;u|AGGSAALSPSKKRKN-p;u|AGSQRAPSAKKPSTG-p;u|ANITRQNSSSSDSGG-p;u|ASEKHRGSADYSMEA-p;u|ADAYMTRSLNPALDG-p;d|ACPYYHNSKDRRRSP-p;d|AGMKRAMSLNTLNVD-p;d|AALGLQDSDDEDAAV-p;d|ARAERTASEINFDKL-p;d|ARLQAKESPQRKKRK-p;d|APAPAEKTPVKKKAR-p;d|ARDERSDSRAQAVSE-p;d",
+      "Overlap (Experiment02)": "ALALRARSTSATDTH-p;u|ASEKHRGSADYSMEA-p;u|ANITRQNSSSSDSGG-p;u|AGGSAALSPSKKRKN-p;u|AGSQRAPSAKKPSTG-p;u|AALGLQDSDDEDAAV-p;d|ADAYMTRSLNPALDG-p;d|AGMKRAMSLNTLNVD-p;d|ACPYYHNSKDRRRSP-p;d|ARDERSDSRAQAVSE-p;d|ARLQAKESPQRKKRK-p;d|ARAERTASEINFDKL-p;d|APAPAEKTPVKKKAR-p;d",
+      "Score (Experiment01)": 0.711499989,
+      "Score (Experiment02)": 1.660599947
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_TRETINOIN",
+      "Percent Overlap (Experiment01)": 5.3,
+      "Percent Overlap (Experiment02)": 5.3,
+      "adj p-val (Experiment01)": 0.3457082853,
+      "adj p-val (Experiment02)": 0.1993464052,
+      "Overlap (Experiment01)": "AALGLQDSDDEDAAV-p;u|AAEPGAGSQHLEVRD-p;u|CNLSRVDSTTCLFPV-p;u|CQNPRKQSLPATSIP-p;u|AQDLCRASPEPPGPE-p;u|CNVLHPQSPNNSNRQ-p;u|ALAQKRLSENAFDLE-p;u|ADALTEPSPDIEGEI-p;u|ATQCLVKSPEVKLMD-p;u|AQKLPDLSPVENKEH-p;u|APVINNGSPTILGKR-p;d|APADGKLSGSKAKTW-p;d",
+      "Overlap (Experiment02)": "CQNPRKQSLPATSIP-p;u|AALGLQDSDDEDAAV-p;u|CNLSRVDSTTCLFPV-p;u|AAEPGAGSQHLEVRD-p;u|AQDLCRASPEPPGPE-p;u|ADALTEPSPDIEGEI-p;u|ALAQKRLSENAFDLE-p;u|CNVLHPQSPNNSNRQ-p;u|AQKLPDLSPVENKEH-p;u|ATQCLVKSPEVKLMD-p;u|APADGKLSGSKAKTW-p;d|APVINNGSPTILGKR-p;d",
+      "Score (Experiment01)": 1.8622000217,
+      "Score (Experiment02)": 1.8387999535
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_TRAMETINIB",
+      "Percent Overlap (Experiment01)": 6.5,
+      "Percent Overlap (Experiment02)": 6.5,
+      "adj p-val (Experiment01)": 0.6050933786,
+      "adj p-val (Experiment02)": 0.9818181818,
+      "Overlap (Experiment01)": "AAYGTHLSPHVPHRV-p;u|CRALPRGSPHSDLKE-p;u|AALLSPGSPKRRRCA-p;u|AYRYRSDSQDEVEKG-p;u|AKQTGIETPNKSGKT-p;d|ARLGSQHSPGRTASL-p;d|AQTSRRPSQGPPARS-p;d|ACQAAKLSPRDTAKQ-p;d|AIQGPEDSPSRQSRR-p;d|AALDALNTDDENDEE-p;d|AAAGAGCSPRPKYQA-p;d|AVTSVAGSPARCSRI-p;d|ASVARHPSREQLIDY-p;d|ASQSRPNSSALETLG-p;d",
+      "Overlap (Experiment02)": "CRALPRGSPHSDLKE-p;u|AYRYRSDSQDEVEKG-p;u|AAYGTHLSPHVPHRV-p;u|AALLSPGSPKRRRCA-p;u|AVTSVAGSPARCSRI-p;d|ASVARHPSREQLIDY-p;d|ARLGSQHSPGRTASL-p;d|AALDALNTDDENDEE-p;d|AQTSRRPSQGPPARS-p;d|AIQGPEDSPSRQSRR-p;d|ASQSRPNSSALETLG-p;d|ACQAAKLSPRDTAKQ-p;d|AAAGAGCSPRPKYQA-p;d|AKQTGIETPNKSGKT-p;d",
+      "Score (Experiment01)": -1.0282000303,
+      "Score (Experiment02)": 0.0502999984
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_TBB",
+      "Percent Overlap (Experiment01)": 10.3,
+      "Percent Overlap (Experiment02)": 10.3,
+      "adj p-val (Experiment01)": 0.595972238,
+      "adj p-val (Experiment02)": 0.3239150387,
+      "Overlap (Experiment01)": "ARESLCDSPHQNLSR-p;u|AALGLQDSDDEDAAV-p;u|CNLSRVDSTTCLFPV-p;u|AQDLCRASPEPPGPE-p;u|AIQGPEDSPSRQSRR-p;u|ARSSLGQSASETEED-p;u|ATQCLVKSPEVKLMD-p;u|ADVTRRLSEDYGVLK-p;u|ADNDITPYLVSRFYR-p;d|ASNPSADSPLHRGVH-p;d|AERKKRLSIIGPTSR-p;d|AAAGAGCSPRPKYQA-p;d|APAPAEKTPVKKKAR-p;d|ADIGKKHSDPHLLER-p;d|APADGKLSGSKAKTW-p;d",
+      "Overlap (Experiment02)": "ADVTRRLSEDYGVLK-p;u|AALGLQDSDDEDAAV-p;u|ARSSLGQSASETEED-p;u|CNLSRVDSTTCLFPV-p;u|ARESLCDSPHQNLSR-p;u|AQDLCRASPEPPGPE-p;u|AIQGPEDSPSRQSRR-p;u|ATQCLVKSPEVKLMD-p;u|ASNPSADSPLHRGVH-p;d|ADNDITPYLVSRFYR-p;d|AERKKRLSIIGPTSR-p;d|APADGKLSGSKAKTW-p;d|ADIGKKHSDPHLLER-p;d|AAAGAGCSPRPKYQA-p;d|APAPAEKTPVKKKAR-p;d",
+      "Score (Experiment01)": 1.1110999584,
+      "Score (Experiment02)": 1.4731999636
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_TACROLIMUS",
+      "Percent Overlap (Experiment01)": 7.1,
+      "Percent Overlap (Experiment02)": 7.1,
+      "adj p-val (Experiment01)": 0.2809998221,
+      "adj p-val (Experiment02)": 0.2007836239,
+      "Overlap (Experiment01)": "AALGLQDSDDEDAAV-p;u|AAEPGAGSQHLEVRD-p;u|ADNDITPYLVSRFYR-p;u|CNLSRVDSTTCLFPV-p;u|AIQGPEDSPSRQSRR-p;u|CAGGRTWSPTACGGK-p;u|AKPPRHLTPEPDIVA-p;u|ALAQKRLSENAFDLE-p;u|ATQCLVKSPEVKLMD-p;u|ASAPAKGTPGKGATP-p;d|AKQTGIETPNKSGKT-p;d|ATASRRGSPAPANPG-p;d|ATVTRSQSLNIRTTQ-p;d|AAAGAGCSPRPKYQA-p;d",
+      "Overlap (Experiment02)": "AALGLQDSDDEDAAV-p;u|ADNDITPYLVSRFYR-p;u|CNLSRVDSTTCLFPV-p;u|AKPPRHLTPEPDIVA-p;u|AAEPGAGSQHLEVRD-p;u|AIQGPEDSPSRQSRR-p;u|CAGGRTWSPTACGGK-p;u|ALAQKRLSENAFDLE-p;u|ATQCLVKSPEVKLMD-p;u|ATASRRGSPAPANPG-p;d|ATVTRSQSLNIRTTQ-p;d|AAAGAGCSPRPKYQA-p;d|AKQTGIETPNKSGKT-p;d|ASAPAKGTPGKGATP-p;d",
+      "Score (Experiment01)": -2.2567000389,
+      "Score (Experiment02)": 1.8817000389
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_STAUROSPORINE",
+      "Percent Overlap (Experiment01)": 5.7,
+      "Percent Overlap (Experiment02)": 5.7,
+      "adj p-val (Experiment01)": 0.2809998221,
+      "adj p-val (Experiment02)": 0.00675,
+      "Overlap (Experiment01)": "ALAGRSPSPASGRRG-p;u|AAYGTHLSPHVPHRV-p;u|ASPSRTRSPDVISSA-p;u|CAPSPDRSPELSSSR-p;u|AALGLQDSDDEDAAV-p;u|AGGSAALSPSKKRKN-p;u|ATASRRGSPAPANPG-p;u|ACAVTDLSDDSDFDE-p;u|CNLSRVDSTTCLFPV-p;u|CAGVKSSTPPGESYF-p;u|ANSKSEGSPVLPHEP-p;u|AQTSRRPSQGPPARS-p;u|AKLTVENSPKQEAGI-p;u|AADEDWDSELEDDLL-p;u|AIRVRSHSMETMVGG-p;u|AERVLMKSPSPALHP-p;u|AENGLLMTPCYTANF-p;u|AGALSYVSPNTSKCP-p;d|ADQTPGATPKKLSSW-p;d|AAARLPPSPTRCQQI-p;d|___MSEKSVEAAAEL-p;d|ANLLSGKSPRKSAEP-p;d|CGLGQENSDNEHLVE-p;d|ASIEKGGSLPKVEAK-p;d|AIQGPEDSPSRQSRR-p;d|AAAGAGCSPRPKYQA-p;d|ARSSLGQSASETEED-p;d|AAYGDLSSEEEEENE-p;d|ARVLRSKSLCHDEIE-p;d|ASKRAPSSPVAKPGP-p;d|AKVLNKKTPESKPTI-p;d|APAPAEKTPVKKKAR-p;d|AAPSKPASAKKGKAE-p;d|AAASVRQSPGPALAR-p;d",
+      "Overlap (Experiment02)": "ACAVTDLSDDSDFDE-p;u|AADEDWDSELEDDLL-p;u|ALAGRSPSPASGRRG-p;u|ATASRRGSPAPANPG-p;u|AALGLQDSDDEDAAV-p;u|CAGVKSSTPPGESYF-p;u|ASPSRTRSPDVISSA-p;u|CAPSPDRSPELSSSR-p;u|CNLSRVDSTTCLFPV-p;u|ANSKSEGSPVLPHEP-p;u|AQTSRRPSQGPPARS-p;u|AKLTVENSPKQEAGI-p;u|AAYGTHLSPHVPHRV-p;u|AERVLMKSPSPALHP-p;u|AIRVRSHSMETMVGG-p;u|AENGLLMTPCYTANF-p;u|AGGSAALSPSKKRKN-p;u|AAYGDLSSEEEEENE-p;d|CGLGQENSDNEHLVE-p;d|___MSEKSVEAAAEL-p;d|ARSSLGQSASETEED-p;d|AAARLPPSPTRCQQI-p;d|AIQGPEDSPSRQSRR-p;d|ASIEKGGSLPKVEAK-p;d|AAASVRQSPGPALAR-p;d|ADQTPGATPKKLSSW-p;d|AAAGAGCSPRPKYQA-p;d|ARVLRSKSLCHDEIE-p;d|AGALSYVSPNTSKCP-p;d|ASKRAPSSPVAKPGP-p;d|AKVLNKKTPESKPTI-p;d|AAPSKPASAKKGKAE-p;d|ANLLSGKSPRKSAEP-p;d|APAPAEKTPVKKKAR-p;d",
+      "Score (Experiment01)": 2.3861999512,
+      "Score (Experiment02)": 4.0542998314
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_SP600125",
+      "Percent Overlap (Experiment01)": 10.1,
+      "Percent Overlap (Experiment02)": 10.1,
+      "adj p-val (Experiment01)": 0.7952778914,
+      "adj p-val (Experiment02)": 0.9421975662,
+      "Overlap (Experiment01)": "ASPSRTRSPDVISSA-p;u|AAARLPPSPTRCQQI-p;u|CNLSRVDSTTCLFPV-p;u|AKVLNKKTPESKPTI-p;u|ALAGRSPSPASGRRG-p;d|AFSGEGQSLRKKGRK-p;d|ARLGSQHSPGRTASL-p;d|AAEPGAGSQHLEVRD-p;d|ASVGKSKTPLVARKK-p;d|CFSRPSMSPTPLDRC-p;d|AIQGPEDSPSRQSRR-p;d|AAASQPPSKRKRRWD-p;d|AQPRVPLTPTRGTSS-p;d|ASKRAPSSPVAKPGP-p;d|ASQSRPNSSALETLG-p;d|AALLSPGSPKRRRCA-p;d",
+      "Overlap (Experiment02)": "ASPSRTRSPDVISSA-p;u|CNLSRVDSTTCLFPV-p;u|AAARLPPSPTRCQQI-p;u|AKVLNKKTPESKPTI-p;u|ALAGRSPSPASGRRG-p;d|CFSRPSMSPTPLDRC-p;d|ARLGSQHSPGRTASL-p;d|AAEPGAGSQHLEVRD-p;d|AIQGPEDSPSRQSRR-p;d|ASQSRPNSSALETLG-p;d|AAASQPPSKRKRRWD-p;d|AQPRVPLTPTRGTSS-p;d|ASVGKSKTPLVARKK-p;d|AFSGEGQSLRKKGRK-p;d|AALLSPGSPKRRRCA-p;d|ASKRAPSSPVAKPGP-p;d",
+      "Score (Experiment01)": 0.527700007,
+      "Score (Experiment02)": 0.2649999857
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_SOTRASTAURIN",
+      "Percent Overlap (Experiment01)": 8.2,
+      "Percent Overlap (Experiment02)": 8.2,
+      "adj p-val (Experiment01)": 0.8948329854,
+      "adj p-val (Experiment02)": 0.9421975662,
+      "Overlap (Experiment01)": "AALGLQDSDDEDAAV-p;u|CNLSRVDSTTCLFPV-p;u|CQNPRKQSLPATSIP-p;u|AIQGPEDSPSRQSRR-p;u|AVQGGGATPVVGAVQ-p;u|APELLLHSPARSAMC-p;u|AKPPRHLTPEPDIVA-p;u|ATQCLVKSPEVKLMD-p;u|ARLGSQHSPGRTASL-p;d|ADNDITPYLVSRFYR-p;d|AAARLPPSPTRCQQI-p;d|AAAGAGCSPRPKYQA-p;d|ADVTRRLSEDYGVLK-p;d|APADGKLSGSKAKTW-p;d",
+      "Overlap (Experiment02)": "CQNPRKQSLPATSIP-p;u|AALGLQDSDDEDAAV-p;u|CNLSRVDSTTCLFPV-p;u|AKPPRHLTPEPDIVA-p;u|AVQGGGATPVVGAVQ-p;u|AIQGPEDSPSRQSRR-p;u|APELLLHSPARSAMC-p;u|ATQCLVKSPEVKLMD-p;u|ADVTRRLSEDYGVLK-p;d|ADNDITPYLVSRFYR-p;d|ARLGSQHSPGRTASL-p;d|AAARLPPSPTRCQQI-p;d|APADGKLSGSKAKTW-p;d|AAAGAGCSPRPKYQA-p;d",
+      "Score (Experiment01)": 0.3037999868,
+      "Score (Experiment02)": -0.2520999908
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_SEMAGACESTAT",
+      "Percent Overlap (Experiment01)": 6.7,
+      "Percent Overlap (Experiment02)": 6.7,
+      "adj p-val (Experiment01)": 0.9305133536,
+      "adj p-val (Experiment02)": 0.4139172783,
+      "Overlap (Experiment01)": "APRTHPYSPKIDGTR-p;u|APRTHPYSPKSEAPR-p;u|AGGSAALSPSKKRKN-p;u|CQNPRKQSLPATSIP-p;u|AKLFRFASENDLPEW-p;u|ATQCLVKSPEVKLMD-p;u|AGSARSFSPKSPLEL-p;d|AQDLCRASPEPPGPE-p;d|AERKKRLSIIGPTSR-p;d|ASGRGAESPFEEKSG-p;d|ADEEEEDSDDDVEPI-p;d|CRAEEGKSPFRESSG-p;d",
+      "Overlap (Experiment02)": "CQNPRKQSLPATSIP-p;u|APRTHPYSPKSEAPR-p;u|APRTHPYSPKIDGTR-p;u|AKLFRFASENDLPEW-p;u|AGGSAALSPSKKRKN-p;u|ATQCLVKSPEVKLMD-p;u|CRAEEGKSPFRESSG-p;d|ASGRGAESPFEEKSG-p;d|ADEEEEDSDDDVEPI-p;d|AQDLCRASPEPPGPE-p;d|AERKKRLSIIGPTSR-p;d|AGSARSFSPKSPLEL-p;d",
+      "Score (Experiment01)": -0.1923000067,
+      "Score (Experiment02)": -1.2387000322
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_SELUMETINIB",
+      "Percent Overlap (Experiment01)": 5.6,
+      "Percent Overlap (Experiment02)": 5.6,
+      "adj p-val (Experiment01)": 0.5940158404,
+      "adj p-val (Experiment02)": 0.1603828067,
+      "Overlap (Experiment01)": "AALGLQDSDDEDAAV-p;u|AGGSAALSPSKKRKN-p;u|ASKLPLVTPHTQCRL-p;u|AERVLMKSPSPALHP-p;u|ALPPKIGTPTRPCPL-p;u|ARGAPPGSPEPPALL-p;d|ADALPEHSPAKTSAV-p;d|ASKRAPSSPVAKPGP-p;d|APVINNGSPTILGKR-p;d|APAPAEKTPVKKKAR-p;d|AKSPEAKSPLQSQPH-p;d",
+      "Overlap (Experiment02)": "AALGLQDSDDEDAAV-p;u|ALPPKIGTPTRPCPL-p;u|ASKLPLVTPHTQCRL-p;u|AERVLMKSPSPALHP-p;u|AGGSAALSPSKKRKN-p;u|ARGAPPGSPEPPALL-p;d|AKSPEAKSPLQSQPH-p;d|ADALPEHSPAKTSAV-p;d|ASKRAPSSPVAKPGP-p;d|APVINNGSPTILGKR-p;d|APAPAEKTPVKKKAR-p;d",
+      "Score (Experiment01)": 1.1445000172,
+      "Score (Experiment02)": 2.0836999416
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_SCH_900776",
+      "Percent Overlap (Experiment01)": 5.0,
+      "Percent Overlap (Experiment02)": 5.0,
+      "adj p-val (Experiment01)": 0.3457082853,
+      "adj p-val (Experiment02)": 0.051145589,
+      "Overlap (Experiment01)": "AALGLQDSDDEDAAV-p;u|ASKLPLVTPHTQCRL-p;u|CSNSGRLSGPAELRS-p;d|ARGAPPGSPEPPALL-p;d|ANSKSEGSPVLPHEP-p;d|AIQGPEDSPSRQSRR-p;d|AVERVTKSPGETSKP-p;d|APAPAEKTPVKKKAR-p;d|ADIGKKHSDPHLLER-p;d|CNISERKSPGVEIKS-p;d",
+      "Overlap (Experiment02)": "AALGLQDSDDEDAAV-p;u|ASKLPLVTPHTQCRL-p;u|ANSKSEGSPVLPHEP-p;d|CSNSGRLSGPAELRS-p;d|ARGAPPGSPEPPALL-p;d|AIQGPEDSPSRQSRR-p;d|CNISERKSPGVEIKS-p;d|ADIGKKHSDPHLLER-p;d|AVERVTKSPGETSKP-p;d|APAPAEKTPVKKKAR-p;d",
+      "Score (Experiment01)": 1.9991999865,
+      "Score (Experiment02)": 2.5882000923
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_SALERMIDE",
+      "Percent Overlap (Experiment01)": 9.3,
+      "Percent Overlap (Experiment02)": 9.3,
+      "adj p-val (Experiment01)": 0.7485148515,
+      "adj p-val (Experiment02)": 0.7340085288,
+      "Overlap (Experiment01)": "ALALRARSTSATDTH-p;u|AGGSAALSPSKKRKN-p;u|ASLTVPLSPQVVRSK-p;u|AGIMITASHNPKQDN-p;u|AIRVRSHSMETMVGG-p;u|ADALTEPSPDIEGEI-p;u|AALGLQDSDDEDAAV-p;d|ADNDITPYLVSRFYR-p;d|AQDLCRASPEPPGPE-p;d|AIEDEMESDENEDLI-p;d|APADGKLSGSKAKTW-p;d",
+      "Overlap (Experiment02)": "ALALRARSTSATDTH-p;u|AGIMITASHNPKQDN-p;u|ASLTVPLSPQVVRSK-p;u|ADALTEPSPDIEGEI-p;u|AIRVRSHSMETMVGG-p;u|AGGSAALSPSKKRKN-p;u|AALGLQDSDDEDAAV-p;d|ADNDITPYLVSRFYR-p;d|AIEDEMESDENEDLI-p;d|AQDLCRASPEPPGPE-p;d|APADGKLSGSKAKTW-p;d",
+      "Score (Experiment01)": 0.6783000231,
+      "Score (Experiment02)": -0.668900013
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_ROSCOVITINE",
+      "Percent Overlap (Experiment01)": 7.7,
+      "Percent Overlap (Experiment02)": 7.7,
+      "adj p-val (Experiment01)": 0.2809998221,
+      "adj p-val (Experiment02)": 0.0557424683,
+      "Overlap (Experiment01)": "APRTHPYSPKIDGTR-p;u|AALGLQDSDDEDAAV-p;u|APRTHPYSPKSEAPR-p;u|ADNDITPYLVSRFYR-p;u|CNLSRVDSTTCLFPV-p;u|AIQGPEDSPSRQSRR-p;u|AKLTVENSPKQEAGI-p;u|AKPPRHLTPEPDIVA-p;u|ATQCLVKSPEVKLMD-p;u|AAKKTKKSLESINSR-p;u|ADEEEEDSDDDVEPI-p;d|ASKRAPSSPVAKPGP-p;d|AKRRKLNSGGGLSEE-p;d",
+      "Overlap (Experiment02)": "AALGLQDSDDEDAAV-p;u|ADNDITPYLVSRFYR-p;u|CNLSRVDSTTCLFPV-p;u|APRTHPYSPKSEAPR-p;u|AAKKTKKSLESINSR-p;u|AKPPRHLTPEPDIVA-p;u|AKLTVENSPKQEAGI-p;u|APRTHPYSPKIDGTR-p;u|AIQGPEDSPSRQSRR-p;u|ATQCLVKSPEVKLMD-p;u|ADEEEEDSDDDVEPI-p;d|AKRRKLNSGGGLSEE-p;d|ASKRAPSSPVAKPGP-p;d",
+      "Score (Experiment01)": 2.1261999607,
+      "Score (Experiment02)": 2.7451999187
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_RO4929097",
+      "Percent Overlap (Experiment01)": 5.6,
+      "Percent Overlap (Experiment02)": 5.6,
+      "adj p-val (Experiment01)": 0.7952778914,
+      "adj p-val (Experiment02)": 0.0602409639,
+      "Overlap (Experiment01)": "ADNDITPYLVSRFYR-p;u|AQDLCRASPEPPGPE-p;u|ASDKEGMSPAKRTKL-p;u|AERVLMKSPSPALHP-p;u|CNLSRVDSTTCLFPV-p;d|CSNSGRLSGPAELRS-p;d|ALRPRRGSHPKAELD-p;d|ASVARHPSREQLIDY-p;d|ADIGKKHSDPHLLER-p;d|AAPSKPASAKKGKAE-p;d|AKKKLAATPKKAKKP-p;d",
+      "Overlap (Experiment02)": "ASDKEGMSPAKRTKL-p;u|ADNDITPYLVSRFYR-p;u|AQDLCRASPEPPGPE-p;u|AERVLMKSPSPALHP-p;u|ASVARHPSREQLIDY-p;d|CNLSRVDSTTCLFPV-p;d|ALRPRRGSHPKAELD-p;d|CSNSGRLSGPAELRS-p;d|ADIGKKHSDPHLLER-p;d|AAPSKPASAKKGKAE-p;d|AKKKLAATPKKAKKP-p;d",
+      "Score (Experiment01)": 0.5500000119,
+      "Score (Experiment02)": 2.652299881
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_RGFP966",
+      "Percent Overlap (Experiment01)": 8.1,
+      "Percent Overlap (Experiment02)": 8.1,
+      "adj p-val (Experiment01)": 0.286653185,
+      "adj p-val (Experiment02)": 0.3403838073,
+      "Overlap (Experiment01)": "ARESLCDSPHQNLSR-p;u|APRTHPYSPKIDGTR-p;u|APRTHPYSPKSEAPR-p;u|ADNDITPYLVSRFYR-p;u|AGGSAALSPSKKRKN-p;u|AGVMITASHNRKEDN-p;u|AAMRRSFSADNFIGI-p;u|ALAPAKESPRKGAAP-p;u|AKLTVENSPKQEAGI-p;u|AAKKTKKSLESINSR-p;u|AKRRKLNSGGGLSEE-p;u|AERKKRLSIIGPTSR-p;d|AKKKLAATPKKAKKP-p;d",
+      "Overlap (Experiment02)": "AGVMITASHNRKEDN-p;u|ADNDITPYLVSRFYR-p;u|AAMRRSFSADNFIGI-p;u|APRTHPYSPKSEAPR-p;u|ARESLCDSPHQNLSR-p;u|AAKKTKKSLESINSR-p;u|AKLTVENSPKQEAGI-p;u|APRTHPYSPKIDGTR-p;u|AGGSAALSPSKKRKN-p;u|AKRRKLNSGGGLSEE-p;u|ALAPAKESPRKGAAP-p;u|AERKKRLSIIGPTSR-p;d|AKKKLAATPKKAKKP-p;d",
+      "Score (Experiment01)": 2.0043001175,
+      "Score (Experiment02)": 1.4550000429
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_RESVERATROL",
+      "Percent Overlap (Experiment01)": 8.5,
+      "Percent Overlap (Experiment02)": 8.5,
+      "adj p-val (Experiment01)": 0.6050933786,
+      "adj p-val (Experiment02)": 0.0821501014,
+      "Overlap (Experiment01)": "ATLRRAKSFTCSEKP-p;u|AAEPGAGSQHLEVRD-p;u|ADNDITPYLVSRFYR-p;u|AGGSAALSPSKKRKN-p;u|ASLTVPLSPQVVRSK-p;u|AADEDWDSELEDDLL-p;u|ARLGSQHSPGRTASL-p;d|ALAPAKESPRKGAAP-p;d|AIQGPEDSPSRQSRR-p;d|ARLQAKESPQRKKRK-p;d|AMLRERGTPPVDPKL-p;d",
+      "Overlap (Experiment02)": "AADEDWDSELEDDLL-p;u|ADNDITPYLVSRFYR-p;u|ASLTVPLSPQVVRSK-p;u|AAEPGAGSQHLEVRD-p;u|ATLRRAKSFTCSEKP-p;u|AGGSAALSPSKKRKN-p;u|ARLGSQHSPGRTASL-p;d|AMLRERGTPPVDPKL-p;d|AIQGPEDSPSRQSRR-p;d|ARLQAKESPQRKKRK-p;d|ALAPAKESPRKGAAP-p;d",
+      "Score (Experiment01)": 1.0249999762,
+      "Score (Experiment02)": 2.5406999588
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_REGORAFENIB",
+      "Percent Overlap (Experiment01)": 4.0,
+      "Percent Overlap (Experiment02)": 4.0,
+      "adj p-val (Experiment01)": 0.4585084034,
+      "adj p-val (Experiment02)": 0.0180360721,
+      "Overlap (Experiment01)": "AAYGTHLSPHVPHRV-p;u|ADNDITPYLVSRFYR-p;u|ACAVTDLSDDSDFDE-p;u|AQPPRTQTPPLGQTP-p;u|CGVVKFESPEVAERA-p;u|AGALSYVSPNTSKCP-p;d|ARLGSQHSPGRTASL-p;d|AAAGAGCSPRPKYQA-p;d|ASQSRPNSSALETLG-p;d|AAASVRQSPGPALAR-p;d",
+      "Overlap (Experiment02)": "ACAVTDLSDDSDFDE-p;u|ADNDITPYLVSRFYR-p;u|CGVVKFESPEVAERA-p;u|AQPPRTQTPPLGQTP-p;u|AAYGTHLSPHVPHRV-p;u|ARLGSQHSPGRTASL-p;d|ASQSRPNSSALETLG-p;d|AAASVRQSPGPALAR-p;d|AAAGAGCSPRPKYQA-p;d|AGALSYVSPNTSKCP-p;d",
+      "Score (Experiment01)": 1.5963000059,
+      "Score (Experiment02)": 3.3657999039
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_PS-1145",
+      "Percent Overlap (Experiment01)": 8.3,
+      "Percent Overlap (Experiment02)": 8.3,
+      "adj p-val (Experiment01)": 0.9705049552,
+      "adj p-val (Experiment02)": 0.0628881988,
+      "Overlap (Experiment01)": "AALGLQDSDDEDAAV-p;u|CAGVKSSTPPGESYF-p;u|AQTSRRPSQGPPARS-p;u|CNVLHPQSPNNSNRQ-p;u|AGIMITASHNPKQDN-p;u|AERVLMKSPSPALHP-p;u|ALALRARSTSATDTH-p;d|ADQTPGATPKKLSSW-p;d|ARGAPPGSPEPPALL-p;d|ATDSRGHSPAFLQPQ-p;d|AAASQPPSKRKRRWD-p;d|AVERVTKSPGETSKP-p;d|APRRRAVSMDNSNKY-p;d|APAPAEKTPVKKKAR-p;d|ADIGKKHSDPHLLER-p;d",
+      "Overlap (Experiment02)": "AGIMITASHNPKQDN-p;u|AALGLQDSDDEDAAV-p;u|CAGVKSSTPPGESYF-p;u|AQTSRRPSQGPPARS-p;u|CNVLHPQSPNNSNRQ-p;u|AERVLMKSPSPALHP-p;u|ALALRARSTSATDTH-p;d|ARGAPPGSPEPPALL-p;d|AAASQPPSKRKRRWD-p;d|ADQTPGATPKKLSSW-p;d|ADIGKKHSDPHLLER-p;d|ATDSRGHSPAFLQPQ-p;d|AVERVTKSPGETSKP-p;d|APRRRAVSMDNSNKY-p;d|APAPAEKTPVKKKAR-p;d",
+      "Score (Experiment01)": -0.1207000017,
+      "Score (Experiment02)": 2.5618999004
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_PRAVASTATIN",
+      "Percent Overlap (Experiment01)": 6.7,
+      "Percent Overlap (Experiment02)": 6.7,
+      "adj p-val (Experiment01)": 0.2809998221,
+      "adj p-val (Experiment02)": 0.9421975662,
+      "Overlap (Experiment01)": "AGGSAALSPSKKRKN-p;u|AAARLPPSPTRCQQI-p;u|AQDLCRASPEPPGPE-p;u|ALPPKIGTPTRPCPL-p;u|AAKKTKKSLESINSR-p;u|ALALRARSTSATDTH-p;d|ALLLLRNSPQPLRRA-p;d|ASSNKDFTPNRDKKT-p;d|ADQTPGATPKKLSSW-p;d|ATLKKQPSHMEAAHF-p;d|ANLLSGKSPRKSAEP-p;d|CRAEEGKSPFRESSG-p;d|APAPAEKTPVKKKAR-p;d",
+      "Overlap (Experiment02)": "ALPPKIGTPTRPCPL-p;u|AAKKTKKSLESINSR-p;u|AQDLCRASPEPPGPE-p;u|AAARLPPSPTRCQQI-p;u|AGGSAALSPSKKRKN-p;u|ALALRARSTSATDTH-p;d|ALLLLRNSPQPLRRA-p;d|CRAEEGKSPFRESSG-p;d|ATLKKQPSHMEAAHF-p;d|ASSNKDFTPNRDKKT-p;d|ADQTPGATPKKLSSW-p;d|ANLLSGKSPRKSAEP-p;d|APAPAEKTPVKKKAR-p;d",
+      "Score (Experiment01)": -2.2495000362,
+      "Score (Experiment02)": -0.2779999971
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_PONATINIB",
+      "Percent Overlap (Experiment01)": 5.6,
+      "Percent Overlap (Experiment02)": 5.6,
+      "adj p-val (Experiment01)": 0.4087511977,
+      "adj p-val (Experiment02)": 0.1065789474,
+      "Overlap (Experiment01)": "AAYGTHLSPHVPHRV-p;u|CAPSPDRSPELSSSR-p;u|CSSEVVLSGDDEEYQ-p;u|CGVVKFESPEVAERA-p;u|AGALSYVSPNTSKCP-p;d|ARLGSQHSPGRTASL-p;d|AARPAGATLERPKTL-p;d|ADEGESESEDDDLKP-p;d|AAAGAGCSPRPKYQA-p;d|AVERVTKSPGETSKP-p;d|ASQSRPNSSALETLG-p;d|AAASVRQSPGPALAR-p;d",
+      "Overlap (Experiment02)": "CGVVKFESPEVAERA-p;u|CSSEVVLSGDDEEYQ-p;u|CAPSPDRSPELSSSR-p;u|AAYGTHLSPHVPHRV-p;u|AARPAGATLERPKTL-p;d|ARLGSQHSPGRTASL-p;d|ADEGESESEDDDLKP-p;d|ASQSRPNSSALETLG-p;d|AAASVRQSPGPALAR-p;d|AVERVTKSPGETSKP-p;d|AAAGAGCSPRPKYQA-p;d|AGALSYVSPNTSKCP-p;d",
+      "Score (Experiment01)": 1.8229000568,
+      "Score (Experiment02)": 2.2885000706
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_PAZOPANIB",
+      "Percent Overlap (Experiment01)": 5.1,
+      "Percent Overlap (Experiment02)": 5.1,
+      "adj p-val (Experiment01)": 0.1451612903,
+      "adj p-val (Experiment02)": 0.00675,
+      "Overlap (Experiment01)": "AALGLQDSDDEDAAV-p;u|ADNDITPYLVSRFYR-p;u|AGIMITASHNPKQDN-p;u|CNLSRVDSTTCLFPV-p;d|AKKTTQRSREDLSAL-p;d|ASKRAPSSPVAKPGP-p;d|AVERVTKSPGETSKP-p;d|AKSPEAKSPLQSQPH-p;d|AIDSDAESPAKRVCQ-p;d|AAPSKPASAKKGKAE-p;d",
+      "Overlap (Experiment02)": "AGIMITASHNPKQDN-p;u|AALGLQDSDDEDAAV-p;u|ADNDITPYLVSRFYR-p;u|CNLSRVDSTTCLFPV-p;d|AKKTTQRSREDLSAL-p;d|AVERVTKSPGETSKP-p;d|AKSPEAKSPLQSQPH-p;d|ASKRAPSSPVAKPGP-p;d|AAPSKPASAKKGKAE-p;d|AIDSDAESPAKRVCQ-p;d",
+      "Score (Experiment01)": 2.8361001015,
+      "Score (Experiment02)": 4.2923998833
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_OSI-027",
+      "Percent Overlap (Experiment01)": 7.6,
+      "Percent Overlap (Experiment02)": 7.6,
+      "adj p-val (Experiment01)": 0.2809998221,
+      "adj p-val (Experiment02)": 0.9421975662,
+      "Overlap (Experiment01)": "ALALRARSTSATDTH-p;u|AKDIDISSPEFKIKI-p;u|ASHYKSKSPTISDKT-p;u|AQDLCRASPEPPGPE-p;u|ADALTEPSPDIEGEI-p;u|ADNDITPYLVSRFYR-p;d|AESLLLDSPAVAKSG-p;d|AKLFRFASENDLPEW-p;d|AQPRVPLTPTRGTSS-p;d|ARDERSDSRAQAVSE-p;d",
+      "Overlap (Experiment02)": "ALALRARSTSATDTH-p;u|AQDLCRASPEPPGPE-p;u|ADALTEPSPDIEGEI-p;u|ASHYKSKSPTISDKT-p;u|AKDIDISSPEFKIKI-p;u|ADNDITPYLVSRFYR-p;d|AESLLLDSPAVAKSG-p;d|AKLFRFASENDLPEW-p;d|ARDERSDSRAQAVSE-p;d|AQPRVPLTPTRGTSS-p;d",
+      "Score (Experiment01)": 2.2602000237,
+      "Score (Experiment02)": -0.1517000049
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_OLMESARTAN",
+      "Percent Overlap (Experiment01)": 5.7,
+      "Percent Overlap (Experiment02)": 5.7,
+      "adj p-val (Experiment01)": 0.7246753247,
+      "adj p-val (Experiment02)": 0.1580838323,
+      "Overlap (Experiment01)": "AAYGTHLSPHVPHRV-p;u|CSSEVVLSGDDEEYQ-p;u|ANSKSEGSPVLPHEP-p;u|AQPPRTQTPPLGQTP-p;u|CADVRRNSVERPAEP-p;u|CGVVKFESPEVAERA-p;u|ALAGRSPSPASGRRG-p;d|AGALSYVSPNTSKCP-p;d|ARLGSQHSPGRTASL-p;d|ARVLRSKSLCHDEIE-p;d|APAPAEKTPVKKKAR-p;d",
+      "Overlap (Experiment02)": "CGVVKFESPEVAERA-p;u|CSSEVVLSGDDEEYQ-p;u|ANSKSEGSPVLPHEP-p;u|CADVRRNSVERPAEP-p;u|AQPPRTQTPPLGQTP-p;u|AAYGTHLSPHVPHRV-p;u|ALAGRSPSPASGRRG-p;d|ARLGSQHSPGRTASL-p;d|ARVLRSKSLCHDEIE-p;d|AGALSYVSPNTSKCP-p;d|APAPAEKTPVKKKAR-p;d",
+      "Score (Experiment01)": -0.6931999922,
+      "Score (Experiment02)": 2.1586999893
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_OKADAIC_ACID",
+      "Percent Overlap (Experiment01)": 9.2,
+      "Percent Overlap (Experiment02)": 9.2,
+      "adj p-val (Experiment01)": 0.5802865613,
+      "adj p-val (Experiment02)": 0.1829842631,
+      "Overlap (Experiment01)": "ARESLCDSPHQNLSR-p;u|AALGLQDSDDEDAAV-p;u|ADNDITPYLVSRFYR-p;u|CNLSRVDSTTCLFPV-p;u|CQNPRKQSLPATSIP-p;u|AAMRRSFSADNFIGI-p;u|AQDLCRASPEPPGPE-p;u|AIQGPEDSPSRQSRR-p;u|ARSSLGQSASETEED-p;u|APELLLHSPARSAMC-p;u|AKPPRHLTPEPDIVA-p;u|ATQCLVKSPEVKLMD-p;u|AAKKTKKSLESINSR-p;u|ASPKVTRSPPETAAP-p;d|AALSRAHSPALGVHS-p;d|AERKKRLSIIGPTSR-p;d|AVIPINGSPRTPRRG-p;d",
+      "Overlap (Experiment02)": "CQNPRKQSLPATSIP-p;u|AALGLQDSDDEDAAV-p;u|ADNDITPYLVSRFYR-p;u|AAMRRSFSADNFIGI-p;u|ARSSLGQSASETEED-p;u|CNLSRVDSTTCLFPV-p;u|ARESLCDSPHQNLSR-p;u|AAKKTKKSLESINSR-p;u|AKPPRHLTPEPDIVA-p;u|AQDLCRASPEPPGPE-p;u|AIQGPEDSPSRQSRR-p;u|APELLLHSPARSAMC-p;u|ATQCLVKSPEVKLMD-p;u|AERKKRLSIIGPTSR-p;d|AALSRAHSPALGVHS-p;d|ASPKVTRSPPETAAP-p;d|AVIPINGSPRTPRRG-p;d",
+      "Score (Experiment01)": -1.225900054,
+      "Score (Experiment02)": 1.9792000055
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_MOMELOTINIB",
+      "Percent Overlap (Experiment01)": 6.6,
+      "Percent Overlap (Experiment02)": 6.6,
+      "adj p-val (Experiment01)": 0.2191558442,
+      "adj p-val (Experiment02)": 0.833592233,
+      "Overlap (Experiment01)": "APVVRTPSIQPSLLP-p;u|AALGLQDSDDEDAAV-p;u|ADNDITPYLVSRFYR-p;u|AQDLCRASPEPPGPE-p;u|AVQGGGATPVVGAVQ-p;u|AKLFRFASENDLPEW-p;u|AKPPRHLTPEPDIVA-p;u|ALAQKRLSENAFDLE-p;u|ATQCLVKSPEVKLMD-p;u|ARSSLGQSASETEED-p;d|ADVTRRLSEDYGVLK-p;d|APADGKLSGSKAKTW-p;d",
+      "Overlap (Experiment02)": "AALGLQDSDDEDAAV-p;u|ADNDITPYLVSRFYR-p;u|AKPPRHLTPEPDIVA-p;u|AVQGGGATPVVGAVQ-p;u|AQDLCRASPEPPGPE-p;u|APVVRTPSIQPSLLP-p;u|AKLFRFASENDLPEW-p;u|ALAQKRLSENAFDLE-p;u|ATQCLVKSPEVKLMD-p;u|ADVTRRLSEDYGVLK-p;d|ARSSLGQSASETEED-p;d|APADGKLSGSKAKTW-p;d",
+      "Score (Experiment01)": 2.7539000511,
+      "Score (Experiment02)": -0.4954000115
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_MILRINONE",
+      "Percent Overlap (Experiment01)": 5.2,
+      "Percent Overlap (Experiment02)": 5.2,
+      "adj p-val (Experiment01)": 0.7952778914,
+      "adj p-val (Experiment02)": 0.00675,
+      "Overlap (Experiment01)": "AAYGTHLSPHVPHRV-p;u|CSSEVVLSGDDEEYQ-p;u|ATASRRGSPAPANPG-p;u|ACAVTDLSDDSDFDE-p;u|AQTSRRPSQGPPARS-p;u|AGIMITASHNPKQDN-p;u|AGALSYVSPNTSKCP-p;d|ADQTPGATPKKLSSW-p;d|ARLGSQHSPGRTASL-p;d|ATIKTKRSIQFVDWC-p;d|AKVLNKKTPESKPTI-p;d",
+      "Overlap (Experiment02)": "ACAVTDLSDDSDFDE-p;u|ATASRRGSPAPANPG-p;u|AGIMITASHNPKQDN-p;u|CSSEVVLSGDDEEYQ-p;u|AQTSRRPSQGPPARS-p;u|AAYGTHLSPHVPHRV-p;u|ATIKTKRSIQFVDWC-p;d|ARLGSQHSPGRTASL-p;d|ADQTPGATPKKLSSW-p;d|AGALSYVSPNTSKCP-p;d|AKVLNKKTPESKPTI-p;d",
+      "Score (Experiment01)": 0.506099999,
+      "Score (Experiment02)": 3.7109999657
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_LENALIDOMIDE",
+      "Percent Overlap (Experiment01)": 7.4,
+      "Percent Overlap (Experiment02)": 7.4,
+      "adj p-val (Experiment01)": 0.4450297366,
+      "adj p-val (Experiment02)": 0.1218932039,
+      "Overlap (Experiment01)": "APVVRTPSIQPSLLP-p;u|AALGLQDSDDEDAAV-p;u|ADNDITPYLVSRFYR-p;u|AQDLCRASPEPPGPE-p;u|ASKLPLVTPHTQCRL-p;u|AERVLMKSPSPALHP-p;u|ASPSRTRSPDVISSA-p;d|CSNSGRLSGPAELRS-p;d|AIQGPEDSPSRQSRR-p;d|AKSLGEKSPAASGAR-p;d|AQPRVPLTPTRGTSS-p;d|AAPPFLGSPVPFGGF-p;d|ASKRAPSSPVAKPGP-p;d|AKSPEAKSPLQSQPH-p;d",
+      "Overlap (Experiment02)": "AALGLQDSDDEDAAV-p;u|ADNDITPYLVSRFYR-p;u|AQDLCRASPEPPGPE-p;u|APVVRTPSIQPSLLP-p;u|ASKLPLVTPHTQCRL-p;u|AERVLMKSPSPALHP-p;u|ASPSRTRSPDVISSA-p;d|AAPPFLGSPVPFGGF-p;d|CSNSGRLSGPAELRS-p;d|AIQGPEDSPSRQSRR-p;d|AQPRVPLTPTRGTSS-p;d|AKSPEAKSPLQSQPH-p;d|AKSLGEKSPAASGAR-p;d|ASKRAPSSPVAKPGP-p;d",
+      "Score (Experiment01)": 1.7735999823,
+      "Score (Experiment02)": 2.4604001045
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_LAPATINIB",
+      "Percent Overlap (Experiment01)": 5.8,
+      "Percent Overlap (Experiment02)": 5.8,
+      "adj p-val (Experiment01)": 0.762494581,
+      "adj p-val (Experiment02)": 0.4052738337,
+      "Overlap (Experiment01)": "APVVRTPSIQPSLLP-p;u|CAPSPDRSPELSSSR-p;u|AMAARPHSIDGRVVE-p;u|CRALPRGSPHSDLKE-p;u|AAGRPFNTYPRADTD-p;u|AQGGQTQSPTKSHTP-p;d|AGALSYVSPNTSKCP-p;d|ARLGSQHSPGRTASL-p;d|AGRLRSFSMQDLRSI-p;d|AAAGAGCSPRPKYQA-p;d|AAASVRQSPGPALAR-p;d|ADVTRRLSEDYGVLK-p;d",
+      "Overlap (Experiment02)": "CAPSPDRSPELSSSR-p;u|AMAARPHSIDGRVVE-p;u|CRALPRGSPHSDLKE-p;u|APVVRTPSIQPSLLP-p;u|AAGRPFNTYPRADTD-p;u|ADVTRRLSEDYGVLK-p;d|ARLGSQHSPGRTASL-p;d|AQGGQTQSPTKSHTP-p;d|AGRLRSFSMQDLRSI-p;d|AAASVRQSPGPALAR-p;d|AAAGAGCSPRPKYQA-p;d|AGALSYVSPNTSKCP-p;d",
+      "Score (Experiment01)": 0.6298999786,
+      "Score (Experiment02)": 1.3092000484
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_KN-62",
+      "Percent Overlap (Experiment01)": 6.0,
+      "Percent Overlap (Experiment02)": 6.0,
+      "adj p-val (Experiment01)": 0.027,
+      "adj p-val (Experiment02)": 0.00675,
+      "Overlap (Experiment01)": "AALGLQDSDDEDAAV-p;u|AAEPGAGSQHLEVRD-p;u|AGGSAALSPSKKRKN-p;u|CNLSRVDSTTCLFPV-p;u|CQNPRKQSLPATSIP-p;u|AQDLCRASPEPPGPE-p;u|ALIAQLPSPAIDHEQ-p;u|AIQGPEDSPSRQSRR-p;d|APVINNGSPTILGKR-p;d|ASSVGVLSPQKKSPP-p;d|_____MSSPPEGKLE-p;d|AKKKLAATPKKAKKP-p;d",
+      "Overlap (Experiment02)": "CQNPRKQSLPATSIP-p;u|AALGLQDSDDEDAAV-p;u|CNLSRVDSTTCLFPV-p;u|AAEPGAGSQHLEVRD-p;u|AQDLCRASPEPPGPE-p;u|ALIAQLPSPAIDHEQ-p;u|AGGSAALSPSKKRKN-p;u|AIQGPEDSPSRQSRR-p;d|ASSVGVLSPQKKSPP-p;d|_____MSSPPEGKLE-p;d|APVINNGSPTILGKR-p;d|AKKKLAATPKKAKKP-p;d",
+      "Score (Experiment01)": 4.7225999832,
+      "Score (Experiment02)": 3.764300108
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_IMATINIB",
+      "Percent Overlap (Experiment01)": 5.9,
+      "Percent Overlap (Experiment02)": 5.9,
+      "adj p-val (Experiment01)": 0.6475409836,
+      "adj p-val (Experiment02)": 0.0869824603,
+      "Overlap (Experiment01)": "ARESLCDSPHQNLSR-p;u|CSSEVVLSGDDEEYQ-p;u|ATASRRGSPAPANPG-p;u|ALGAVIASSKKAKRD-p;u|AQGLRPESPPPAGPL-p;u|AYRYRSDSQDEVEKG-p;u|AGALSYVSPNTSKCP-p;d|AIQGPEDSPSRQSRR-p;d|AAAGAGCSPRPKYQA-p;d|AAASVRQSPGPALAR-p;d",
+      "Overlap (Experiment02)": "ATASRRGSPAPANPG-p;u|CSSEVVLSGDDEEYQ-p;u|AQGLRPESPPPAGPL-p;u|ARESLCDSPHQNLSR-p;u|AYRYRSDSQDEVEKG-p;u|ALGAVIASSKKAKRD-p;u|AIQGPEDSPSRQSRR-p;d|AAASVRQSPGPALAR-p;d|AAAGAGCSPRPKYQA-p;d|AGALSYVSPNTSKCP-p;d",
+      "Score (Experiment01)": 0.8831999898,
+      "Score (Experiment02)": 2.5329999924
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_GSK1210151A",
+      "Percent Overlap (Experiment01)": 8.1,
+      "Percent Overlap (Experiment02)": 8.1,
+      "adj p-val (Experiment01)": 0.2809998221,
+      "adj p-val (Experiment02)": 0.4947224858,
+      "Overlap (Experiment01)": "ASHYKSKSPTISDKT-p;u|ASPSRTRSPDVISSA-p;u|ATLRRAKSFTCSEKP-p;u|AGGSAALSPSKKRKN-p;u|AGRLRSFSMQDLRSI-p;u|ASEKHRGSADYSMEA-p;u|ADAYMTRSLNPALDG-p;d|AQDLCRASPEPPGPE-p;d|ARLQAKESPQRKKRK-p;d|AQPRVPLTPTRGTSS-p;d|ASMDKHPSPRTQHIQ-p;d|ASTASELSPKSKARP-p;d",
+      "Overlap (Experiment02)": "ASEKHRGSADYSMEA-p;u|ASPSRTRSPDVISSA-p;u|ATLRRAKSFTCSEKP-p;u|AGRLRSFSMQDLRSI-p;u|ASHYKSKSPTISDKT-p;u|AGGSAALSPSKKRKN-p;u|ASMDKHPSPRTQHIQ-p;d|AQDLCRASPEPPGPE-p;d|ADAYMTRSLNPALDG-p;d|AQPRVPLTPTRGTSS-p;d|ARLQAKESPQRKKRK-p;d|ASTASELSPKSKARP-p;d",
+      "Score (Experiment01)": 2.4649999142,
+      "Score (Experiment02)": 1.0834000111
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_GOSSYPETIN",
+      "Percent Overlap (Experiment01)": 7.1,
+      "Percent Overlap (Experiment02)": 7.1,
+      "adj p-val (Experiment01)": 0.526858809,
+      "adj p-val (Experiment02)": 0.5789363044,
+      "Overlap (Experiment01)": "ANGLRAESLDDQMLS-p;u|AALGLQDSDDEDAAV-p;u|AAEPGAGSQHLEVRD-p;u|CNLSRVDSTTCLFPV-p;u|AVQGGGATPVVGAVQ-p;u|AKLFRFASENDLPEW-p;u|ATQCLVKSPEVKLMD-p;u|ASPSRTRSPDVISSA-p;d|ARSSLGQSASETEED-p;d|ASKRAPSSPVAKPGP-p;d|_____MSSPPEGKLE-p;d",
+      "Overlap (Experiment02)": "AALGLQDSDDEDAAV-p;u|CNLSRVDSTTCLFPV-p;u|AAEPGAGSQHLEVRD-p;u|AVQGGGATPVVGAVQ-p;u|AKLFRFASENDLPEW-p;u|ANGLRAESLDDQMLS-p;u|ATQCLVKSPEVKLMD-p;u|ASPSRTRSPDVISSA-p;d|ARSSLGQSASETEED-p;d|_____MSSPPEGKLE-p;d|ASKRAPSSPVAKPGP-p;d",
+      "Score (Experiment01)": 1.4869999886,
+      "Score (Experiment02)": 0.9194999933
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_GEFITINIB",
+      "Percent Overlap (Experiment01)": 5.4,
+      "Percent Overlap (Experiment02)": 5.4,
+      "adj p-val (Experiment01)": 0.1803643725,
+      "adj p-val (Experiment02)": 0.051145589,
+      "Overlap (Experiment01)": "AAYGTHLSPHVPHRV-p;u|CAPSPDRSPELSSSR-p;u|AAEPGAGSQHLEVRD-p;u|CSSEVVLSGDDEEYQ-p;u|ADNDITPYLVSRFYR-p;u|CKAGIIASARAGETR-p;u|AGALSYVSPNTSKCP-p;d|ATIKTKRSIQFVDWC-p;d|AIQGPEDSPSRQSRR-p;d|AKVLNKKTPESKPTI-p;d|AAPSKPASAKKGKAE-p;d",
+      "Overlap (Experiment02)": "ADNDITPYLVSRFYR-p;u|CSSEVVLSGDDEEYQ-p;u|CAPSPDRSPELSSSR-p;u|AAEPGAGSQHLEVRD-p;u|CKAGIIASARAGETR-p;u|AAYGTHLSPHVPHRV-p;u|ATIKTKRSIQFVDWC-p;d|AIQGPEDSPSRQSRR-p;d|AGALSYVSPNTSKCP-p;d|AKVLNKKTPESKPTI-p;d|AAPSKPASAKKGKAE-p;d",
+      "Score (Experiment01)": 2.8743999004,
+      "Score (Experiment02)": 3.1156001091
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_FLECAINIDE",
+      "Percent Overlap (Experiment01)": 6.9,
+      "Percent Overlap (Experiment02)": 6.9,
+      "adj p-val (Experiment01)": 0.2956893204,
+      "adj p-val (Experiment02)": 0.0180360721,
+      "Overlap (Experiment01)": "AAYGTHLSPHVPHRV-p;u|ASPSRTRSPDVISSA-p;u|ASARVENSPQVDGSP-p;u|CSSEVVLSGDDEEYQ-p;u|ADNDITPYLVSRFYR-p;u|______MSEKSVEAA-p;u|AQGLRPESPPPAGPL-p;u|AGALSYVSPNTSKCP-p;d|ADQTPGATPKKLSSW-p;d|CGLGQENSDNEHLVE-p;d|AIQGPEDSPSRQSRR-p;d|AKSLGEKSPAASGAR-p;d|AAPPFLGSPVPFGGF-p;d|AAPSKPASAKKGKAE-p;d",
+      "Overlap (Experiment02)": "______MSEKSVEAA-p;u|ASARVENSPQVDGSP-p;u|ADNDITPYLVSRFYR-p;u|CSSEVVLSGDDEEYQ-p;u|ASPSRTRSPDVISSA-p;u|AQGLRPESPPPAGPL-p;u|AAYGTHLSPHVPHRV-p;u|CGLGQENSDNEHLVE-p;d|AAPPFLGSPVPFGGF-p;d|AIQGPEDSPSRQSRR-p;d|ADQTPGATPKKLSSW-p;d|AGALSYVSPNTSKCP-p;d|AKSLGEKSPAASGAR-p;d|AAPSKPASAKKGKAE-p;d",
+      "Score (Experiment01)": 2.0864999294,
+      "Score (Experiment02)": 4.0824999809
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_FLAVOPIRIDOL",
+      "Percent Overlap (Experiment01)": 7.8,
+      "Percent Overlap (Experiment02)": 7.8,
+      "adj p-val (Experiment01)": 0.6050933786,
+      "adj p-val (Experiment02)": 0.5662466247,
+      "Overlap (Experiment01)": "ADNDITPYLVSRFYR-p;u|AGGSAALSPSKKRKN-p;u|AQDLCRASPEPPGPE-p;u|AERVLMKSPSPALHP-p;u|ALAGRSPSPASGRRG-p;d|ALALRARSTSATDTH-p;d|AKDIDISSPEFKIKI-p;d|AEPGDGDSDTTKKKK-p;d|ASSNKDFTPNRDKKT-p;d|ARGAPPGSPEPPALL-p;d|AHAAREDSLPEESSA-p;d|AAYGDLSSEEEEENE-p;d|AAASQPPSKRKRRWD-p;d|AVERVTKSPGETSKP-p;d|AAPSKPASAKKGKAE-p;d",
+      "Overlap (Experiment02)": "ADNDITPYLVSRFYR-p;u|AQDLCRASPEPPGPE-p;u|AERVLMKSPSPALHP-p;u|AGGSAALSPSKKRKN-p;u|ALALRARSTSATDTH-p;d|ALAGRSPSPASGRRG-p;d|AAYGDLSSEEEEENE-p;d|ARGAPPGSPEPPALL-p;d|AHAAREDSLPEESSA-p;d|ASSNKDFTPNRDKKT-p;d|AEPGDGDSDTTKKKK-p;d|AAASQPPSKRKRRWD-p;d|AKDIDISSPEFKIKI-p;d|AVERVTKSPGETSKP-p;d|AAPSKPASAKKGKAE-p;d",
+      "Score (Experiment01)": -0.9991999865,
+      "Score (Experiment02)": -0.9341999888
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_ERLOTINIB",
+      "Percent Overlap (Experiment01)": 5.8,
+      "Percent Overlap (Experiment02)": 5.8,
+      "adj p-val (Experiment01)": 0.5244023904,
+      "adj p-val (Experiment02)": 0.051145589,
+      "Overlap (Experiment01)": "ARESLCDSPHQNLSR-p;u|CSSEVVLSGDDEEYQ-p;u|ADNDITPYLVSRFYR-p;u|ATASRRGSPAPANPG-p;u|ANSKSEGSPVLPHEP-p;u|AQTSRRPSQGPPARS-p;u|AKSLGEKSPAASGAR-p;u|ASAPAKGTPGKGATP-p;d|ADQTPGATPKKLSSW-p;d|ATIKTKRSIQFVDWC-p;d|AIQGPEDSPSRQSRR-p;d|APAPAEKTPVKKKAR-p;d|ADIGKKHSDPHLLER-p;d",
+      "Overlap (Experiment02)": "ATASRRGSPAPANPG-p;u|ADNDITPYLVSRFYR-p;u|CSSEVVLSGDDEEYQ-p;u|ANSKSEGSPVLPHEP-p;u|ARESLCDSPHQNLSR-p;u|AQTSRRPSQGPPARS-p;u|AKSLGEKSPAASGAR-p;u|ATIKTKRSIQFVDWC-p;d|AIQGPEDSPSRQSRR-p;d|ADQTPGATPKKLSSW-p;d|ADIGKKHSDPHLLER-p;d|ASAPAKGTPGKGATP-p;d|APAPAEKTPVKKKAR-p;d",
+      "Score (Experiment01)": 1.4938999414,
+      "Score (Experiment02)": 2.9149000645
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_EPZ004777",
+      "Percent Overlap (Experiment01)": 10.3,
+      "Percent Overlap (Experiment02)": 10.3,
+      "adj p-val (Experiment01)": 0.6232076659,
+      "adj p-val (Experiment02)": 0.9553846154,
+      "Overlap (Experiment01)": "ASPSRTRSPDVISSA-p;u|ADNDITPYLVSRFYR-p;u|AGGSAALSPSKKRKN-p;u|AQDLCRASPEPPGPE-p;u|AGSQRAPSAKKPSTG-p;u|ANITRQNSSSSDSGG-p;u|AIRVRSHSMETMVGG-p;u|ASKKPLLSPIPELPE-p;u|APADGKLSGSKAKTW-p;u|ACPYYHNSKDRRRSP-p;d|AALGLQDSDDEDAAV-p;d|AVIPINGSPRTPRRG-p;d|APKFSPVTPKFTPVA-p;d",
+      "Overlap (Experiment02)": "ADNDITPYLVSRFYR-p;u|ASPSRTRSPDVISSA-p;u|ANITRQNSSSSDSGG-p;u|AQDLCRASPEPPGPE-p;u|ASKKPLLSPIPELPE-p;u|APADGKLSGSKAKTW-p;u|AIRVRSHSMETMVGG-p;u|AGGSAALSPSKKRKN-p;u|AGSQRAPSAKKPSTG-p;u|AALGLQDSDDEDAAV-p;d|ACPYYHNSKDRRRSP-p;d|AVIPINGSPRTPRRG-p;d|APKFSPVTPKFTPVA-p;d",
+      "Score (Experiment01)": -0.9524000287,
+      "Score (Experiment02)": 0.1196999997
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_ENDOTHELIN",
+      "Percent Overlap (Experiment01)": 5.4,
+      "Percent Overlap (Experiment02)": 5.4,
+      "adj p-val (Experiment01)": 0.560035057,
+      "adj p-val (Experiment02)": 0.1829842631,
+      "Overlap (Experiment01)": "AAYGTHLSPHVPHRV-p;u|ASPSRTRSPDVISSA-p;u|CAPSPDRSPELSSSR-p;u|AAEPGAGSQHLEVRD-p;u|CSSEVVLSGDDEEYQ-p;u|AGGSAALSPSKKRKN-p;u|CGVVKFESPEVAERA-p;u|AGALSYVSPNTSKCP-p;d|ARLGSQHSPGRTASL-p;d|AQDLCRASPEPPGPE-p;d|AAASVRQSPGPALAR-p;d",
+      "Overlap (Experiment02)": "CGVVKFESPEVAERA-p;u|CSSEVVLSGDDEEYQ-p;u|ASPSRTRSPDVISSA-p;u|CAPSPDRSPELSSSR-p;u|AAEPGAGSQHLEVRD-p;u|AAYGTHLSPHVPHRV-p;u|AGGSAALSPSKKRKN-p;u|ARLGSQHSPGRTASL-p;d|AQDLCRASPEPPGPE-p;d|AAASVRQSPGPALAR-p;d|AGALSYVSPNTSKCP-p;d",
+      "Score (Experiment01)": 1.3278000355,
+      "Score (Experiment02)": 1.9292000532
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_DOXORUBICIN",
+      "Percent Overlap (Experiment01)": 5.3,
+      "Percent Overlap (Experiment02)": 5.3,
+      "adj p-val (Experiment01)": 0.5802865613,
+      "adj p-val (Experiment02)": 0.1128308311,
+      "Overlap (Experiment01)": "AAYGTHLSPHVPHRV-p;u|CAPSPDRSPELSSSR-p;u|ASARVENSPQVDGSP-p;u|AGGSAALSPSKKRKN-p;u|ATASRRGSPAPANPG-p;u|ANSKSEGSPVLPHEP-p;u|ARARRTESFHSYRDF-p;u|AQGGQTQSPTKSHTP-p;d|AGALSYVSPNTSKCP-p;d|ARLGSQHSPGRTASL-p;d|ARDERYRSDIHTEAV-p;d|AAAGAGCSPRPKYQA-p;d|AAASVRQSPGPALAR-p;d",
+      "Overlap (Experiment02)": "ATASRRGSPAPANPG-p;u|ASARVENSPQVDGSP-p;u|CAPSPDRSPELSSSR-p;u|ANSKSEGSPVLPHEP-p;u|AAYGTHLSPHVPHRV-p;u|ARARRTESFHSYRDF-p;u|AGGSAALSPSKKRKN-p;u|ARLGSQHSPGRTASL-p;d|AQGGQTQSPTKSHTP-p;d|AAASVRQSPGPALAR-p;d|ARDERYRSDIHTEAV-p;d|AAAGAGCSPRPKYQA-p;d|AGALSYVSPNTSKCP-p;d",
+      "Score (Experiment01)": 1.1971000433,
+      "Score (Experiment02)": 2.3912000656
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_DMSO",
+      "Percent Overlap (Experiment01)": 6.8,
+      "Percent Overlap (Experiment02)": 6.8,
+      "adj p-val (Experiment01)": 0.2809998221,
+      "adj p-val (Experiment02)": 0.0110882957,
+      "Overlap (Experiment01)": "AAYGTHLSPHVPHRV-p;u|APKGILRTPDTIRRF-p;u|ARESLCDSPHQNLSR-p;u|ASPSRTRSPDVISSA-p;u|CAPSPDRSPELSSSR-p;u|ATLRRAKSFTCSEKP-p;u|AAEPGAGSQHLEVRD-p;u|CSSEVVLSGDDEEYQ-p;u|ADNDITPYLVSRFYR-p;u|AGAGEPQSPDELLPK-p;u|AMAARPHSIDGRVVE-p;u|CNLSRVDSTTCLFPV-p;u|CKAGIIASARAGETR-p;u|ANSKSEGSPVLPHEP-p;u|AKSLGEKSPAASGAR-p;u|AERVLMKSPSPALHP-p;u|ATQCLVKSPEVKLMD-p;u|AAKKTKKSLESINSR-p;u|ADAYMTRSLNPALDG-p;d|AGALSYVSPNTSKCP-p;d|AEPGDGDSDTTKKKK-p;d|AAPAHRGTPDTDLEV-p;d|ADQTPGATPKKLSSW-p;d|AKQTGIETPNKSGKT-p;d|ARLGSQHSPGRTASL-p;d|AERKKRLSIIGPTSR-p;d|ATIKTKRSIQFVDWC-p;d|AIQGPEDSPSRQSRR-p;d|ARLQAKESPQRKKRK-p;d|ARAGKSMSAEDLLER-p;d|AAAGAGCSPRPKYQA-p;d|APELLLHSPARSAMC-p;d|AAASQPPSKRKRRWD-p;d|AQPRVPLTPTRGTSS-p;d|APAPAEKTPVKKKAR-p;d|ADIGKKHSDPHLLER-p;d|ASQSRPNSSALETLG-p;d|AAPSKPASAKKGKAE-p;d|AAASVRQSPGPALAR-p;d|APADGKLSGSKAKTW-p;d",
+      "Overlap (Experiment02)": "APKGILRTPDTIRRF-p;u|AGAGEPQSPDELLPK-p;u|ADNDITPYLVSRFYR-p;u|CSSEVVLSGDDEEYQ-p;u|ASPSRTRSPDVISSA-p;u|CAPSPDRSPELSSSR-p;u|AMAARPHSIDGRVVE-p;u|CNLSRVDSTTCLFPV-p;u|ANSKSEGSPVLPHEP-p;u|ARESLCDSPHQNLSR-p;u|AAKKTKKSLESINSR-p;u|AAEPGAGSQHLEVRD-p;u|ATLRRAKSFTCSEKP-p;u|CKAGIIASARAGETR-p;u|AAYGTHLSPHVPHRV-p;u|AERVLMKSPSPALHP-p;u|ATQCLVKSPEVKLMD-p;u|AKSLGEKSPAASGAR-p;u|AAPAHRGTPDTDLEV-p;d|ATIKTKRSIQFVDWC-p;d|ARLGSQHSPGRTASL-p;d|ADAYMTRSLNPALDG-p;d|AERKKRLSIIGPTSR-p;d|ARAGKSMSAEDLLER-p;d|AIQGPEDSPSRQSRR-p;d|AEPGDGDSDTTKKKK-p;d|ASQSRPNSSALETLG-p;d|AAASVRQSPGPALAR-p;d|AAASQPPSKRKRRWD-p;d|ADQTPGATPKKLSSW-p;d|AQPRVPLTPTRGTSS-p;d|APADGKLSGSKAKTW-p;d|ADIGKKHSDPHLLER-p;d|ARLQAKESPQRKKRK-p;d|APELLLHSPARSAMC-p;d|AAAGAGCSPRPKYQA-p;d|AGALSYVSPNTSKCP-p;d|AAPSKPASAKKGKAE-p;d|AKQTGIETPNKSGKT-p;d|APAPAEKTPVKKKAR-p;d",
+      "Score (Experiment01)": 2.3580000401,
+      "Score (Experiment02)": 3.7418999672
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_DECITABINE",
+      "Percent Overlap (Experiment01)": 8.7,
+      "Percent Overlap (Experiment02)": 8.7,
+      "adj p-val (Experiment01)": 0.2809998221,
+      "adj p-val (Experiment02)": 0.3147901399,
+      "Overlap (Experiment01)": "ARLGSQHSPGRTASL-p;u|ATLRRAKSFTCSEKP-p;u|ADNDITPYLVSRFYR-p;u|AGGSAALSPSKKRKN-p;u|ANITRQNSSSSDSGG-p;u|ASEKHRGSADYSMEA-p;u|_MSDQDHSMDEMTAV-p;u|AIRVRSHSMETMVGG-p;u|APADGKLSGSKAKTW-p;u|ARLQAKESPQRKKRK-p;d|CKMSDTGSPGMQRRR-p;d|AQPRVPLTPTRGTSS-p;d|AAASVRQSPGPALAR-p;d",
+      "Overlap (Experiment02)": "ADNDITPYLVSRFYR-p;u|ASEKHRGSADYSMEA-p;u|ANITRQNSSSSDSGG-p;u|ARLGSQHSPGRTASL-p;u|ATLRRAKSFTCSEKP-p;u|_MSDQDHSMDEMTAV-p;u|APADGKLSGSKAKTW-p;u|AIRVRSHSMETMVGG-p;u|AGGSAALSPSKKRKN-p;u|CKMSDTGSPGMQRRR-p;d|AAASVRQSPGPALAR-p;d|AQPRVPLTPTRGTSS-p;d|ARLQAKESPQRKKRK-p;d",
+      "Score (Experiment01)": 2.1256999969,
+      "Score (Experiment02)": 1.5189000368
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_DAUNORUBICIN",
+      "Percent Overlap (Experiment01)": 8.0,
+      "Percent Overlap (Experiment02)": 8.0,
+      "adj p-val (Experiment01)": 0.085443038,
+      "adj p-val (Experiment02)": 0.0669421488,
+      "Overlap (Experiment01)": "AAYGTHLSPHVPHRV-p;u|ASPKVTRSPPETAAP-p;u|ALLKMTISQQEFGRT-p;u|ASPSRTRSPDVISSA-p;u|CAPSPDRSPELSSSR-p;u|AAEPGAGSQHLEVRD-p;u|CSSEVVLSGDDEEYQ-p;u|ADNDITPYLVSRFYR-p;u|AAARLPPSPTRCQQI-p;u|______MSEKSVEAA-p;u|CKAGIIASARAGETR-p;u|CGVVKFESPEVAERA-p;u|AGALSYVSPNTSKCP-p;d|ARLGSQHSPGRTASL-p;d|CGLGQENSDNEHLVE-p;d|AIQGPEDSPSRQSRR-p;d|AKSLGEKSPAASGAR-p;d|AQQPKKPSPQPSSPR-p;d|AKVLNKKTPESKPTI-p;d|APAPAEKTPVKKKAR-p;d|AAASVRQSPGPALAR-p;d",
+      "Overlap (Experiment02)": "______MSEKSVEAA-p;u|ADNDITPYLVSRFYR-p;u|CGVVKFESPEVAERA-p;u|CSSEVVLSGDDEEYQ-p;u|ASPSRTRSPDVISSA-p;u|CAPSPDRSPELSSSR-p;u|AAEPGAGSQHLEVRD-p;u|AAARLPPSPTRCQQI-p;u|CKAGIIASARAGETR-p;u|ALLKMTISQQEFGRT-p;u|ASPKVTRSPPETAAP-p;u|AAYGTHLSPHVPHRV-p;u|AQQPKKPSPQPSSPR-p;d|CGLGQENSDNEHLVE-p;d|ARLGSQHSPGRTASL-p;d|AIQGPEDSPSRQSRR-p;d|AAASVRQSPGPALAR-p;d|AGALSYVSPNTSKCP-p;d|AKSLGEKSPAASGAR-p;d|AKVLNKKTPESKPTI-p;d|APAPAEKTPVKKKAR-p;d",
+      "Score (Experiment01)": 3.3106999397,
+      "Score (Experiment02)": 3.1426000595
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_DACTOLISIB",
+      "Percent Overlap (Experiment01)": 6.9,
+      "Percent Overlap (Experiment02)": 6.9,
+      "adj p-val (Experiment01)": 0.6017688679,
+      "adj p-val (Experiment02)": 0.090850059,
+      "Overlap (Experiment01)": "CNLSRVDSTTCLFPV-p;u|AEVRKALSRQEMQEV-p;u|AENGLLMTPCYTANF-p;u|ASAPAKGTPGKGATP-p;d|ARGAPPGSPEPPALL-p;d|AQDLCRASPEPPGPE-p;d|AIQGPEDSPSRQSRR-p;d|ARVLRSKSLCHDEIE-p;d|AVERVTKSPGETSKP-p;d|AKPPRHLTPEPDIVA-p;d|AEPGEKGSARKAGPA-p;d",
+      "Overlap (Experiment02)": "AEVRKALSRQEMQEV-p;u|CNLSRVDSTTCLFPV-p;u|AENGLLMTPCYTANF-p;u|AKPPRHLTPEPDIVA-p;d|AQDLCRASPEPPGPE-p;d|ARGAPPGSPEPPALL-p;d|AIQGPEDSPSRQSRR-p;d|AVERVTKSPGETSKP-p;d|AEPGEKGSARKAGPA-p;d|ARVLRSKSLCHDEIE-p;d|ASAPAKGTPGKGATP-p;d",
+      "Score (Experiment01)": -1.1256999969,
+      "Score (Experiment02)": 2.4539999962
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_CRIZOTINIB",
+      "Percent Overlap (Experiment01)": 4.7,
+      "Percent Overlap (Experiment02)": 4.7,
+      "adj p-val (Experiment01)": 0.5802865613,
+      "adj p-val (Experiment02)": 0.7629253784,
+      "Overlap (Experiment01)": "AAYGTHLSPHVPHRV-p;u|AAEPGAGSQHLEVRD-p;u|AGGSAALSPSKKRKN-p;u|ATASRRGSPAPANPG-p;u|CKAGIIASARAGETR-p;u|AEPGDGDSDTTKKKK-p;d|ARLGSQHSPGRTASL-p;d|ARDERYRSDIHTEAV-p;d|AIQGPEDSPSRQSRR-p;d|AVTSVAGSPARCSRI-p;d|AKVLNKKTPESKPTI-p;d",
+      "Overlap (Experiment02)": "ATASRRGSPAPANPG-p;u|AAEPGAGSQHLEVRD-p;u|CKAGIIASARAGETR-p;u|AAYGTHLSPHVPHRV-p;u|AGGSAALSPSKKRKN-p;u|AVTSVAGSPARCSRI-p;d|ARLGSQHSPGRTASL-p;d|AIQGPEDSPSRQSRR-p;d|AEPGDGDSDTTKKKK-p;d|ARDERYRSDIHTEAV-p;d|AKVLNKKTPESKPTI-p;d",
+      "Score (Experiment01)": 1.2683000565,
+      "Score (Experiment02)": 0.6039999723
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_CPI-169",
+      "Percent Overlap (Experiment01)": 6.5,
+      "Percent Overlap (Experiment02)": 6.5,
+      "adj p-val (Experiment01)": 0.3063244287,
+      "adj p-val (Experiment02)": 0.0488933602,
+      "Overlap (Experiment01)": "ARESLCDSPHQNLSR-p;u|ASPSRTRSPDVISSA-p;u|AAEPGAGSQHLEVRD-p;u|CQNPRKQSLPATSIP-p;u|CSNSGRLSGPAELRS-p;u|AALGLQDSDDEDAAV-p;d|AGGSAALSPSKKRKN-p;d|AQDLCRASPEPPGPE-p;d|AESLLLDSPAVAKSG-p;d|AEEAAGASPAKANGQ-p;d|APAPAEKTPVKKKAR-p;d",
+      "Overlap (Experiment02)": "CQNPRKQSLPATSIP-p;u|ASPSRTRSPDVISSA-p;u|ARESLCDSPHQNLSR-p;u|AAEPGAGSQHLEVRD-p;u|CSNSGRLSGPAELRS-p;u|AALGLQDSDDEDAAV-p;d|AESLLLDSPAVAKSG-p;d|AQDLCRASPEPPGPE-p;d|AGGSAALSPSKKRKN-p;d|AEEAAGASPAKANGQ-p;d|APAPAEKTPVKKKAR-p;d",
+      "Score (Experiment01)": 2.1514999866,
+      "Score (Experiment02)": 3.0027999878
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_COMPOUND_E",
+      "Percent Overlap (Experiment01)": 7.2,
+      "Percent Overlap (Experiment02)": 7.2,
+      "adj p-val (Experiment01)": 0.2809998221,
+      "adj p-val (Experiment02)": 0.0974942554,
+      "Overlap (Experiment01)": "AALGLQDSDDEDAAV-p;u|CNLSRVDSTTCLFPV-p;u|CQNPRKQSLPATSIP-p;u|AQDLCRASPEPPGPE-p;u|ALAPAKESPRKGAAP-p;u|AIQGPEDSPSRQSRR-p;u|AKLFRFASENDLPEW-p;u|ATQCLVKSPEVKLMD-p;u|AGRLRSFSMQDLRSI-p;d|AERKKRLSIIGPTSR-p;d|AKSLGEKSPAASGAR-p;d|APAPAEKTPVKKKAR-p;d|AAEERRKSHEAEVLK-p;d|APADGKLSGSKAKTW-p;d",
+      "Overlap (Experiment02)": "CQNPRKQSLPATSIP-p;u|AALGLQDSDDEDAAV-p;u|CNLSRVDSTTCLFPV-p;u|AQDLCRASPEPPGPE-p;u|AKLFRFASENDLPEW-p;u|AIQGPEDSPSRQSRR-p;u|ATQCLVKSPEVKLMD-p;u|ALAPAKESPRKGAAP-p;u|AERKKRLSIIGPTSR-p;d|AGRLRSFSMQDLRSI-p;d|APADGKLSGSKAKTW-p;d|AAEERRKSHEAEVLK-p;d|AKSLGEKSPAASGAR-p;d|APAPAEKTPVKKKAR-p;d",
+      "Score (Experiment01)": 2.2181999683,
+      "Score (Experiment02)": 2.5164000988
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_CERITINIB",
+      "Percent Overlap (Experiment01)": 7.0,
+      "Percent Overlap (Experiment02)": 7.0,
+      "adj p-val (Experiment01)": 0.5219846022,
+      "adj p-val (Experiment02)": 0.145443663,
+      "Overlap (Experiment01)": "AAYGTHLSPHVPHRV-p;u|CAPSPDRSPELSSSR-p;u|AAEPGAGSQHLEVRD-p;u|CSSEVVLSGDDEEYQ-p;u|AMAARPHSIDGRVVE-p;u|ASVSGPNSPSETRRE-p;u|CGVVKFESPEVAERA-p;u|AGALSYVSPNTSKCP-p;d|ADQTPGATPKKLSSW-p;d|ATIKTKRSIQFVDWC-p;d|AAAGAGCSPRPKYQA-p;d|AAAAAGDSDSWDADA-p;d|AADEDWDSELEDDLL-p;d|AVERVTKSPGETSKP-p;d|AAASVRQSPGPALAR-p;d",
+      "Overlap (Experiment02)": "CGVVKFESPEVAERA-p;u|CSSEVVLSGDDEEYQ-p;u|CAPSPDRSPELSSSR-p;u|AMAARPHSIDGRVVE-p;u|AAEPGAGSQHLEVRD-p;u|ASVSGPNSPSETRRE-p;u|AAYGTHLSPHVPHRV-p;u|AADEDWDSELEDDLL-p;d|ATIKTKRSIQFVDWC-p;d|AAAAAGDSDSWDADA-p;d|AAASVRQSPGPALAR-p;d|ADQTPGATPKKLSSW-p;d|AVERVTKSPGETSKP-p;d|AAAGAGCSPRPKYQA-p;d|AGALSYVSPNTSKCP-p;d",
+      "Score (Experiment01)": 1.4872000217,
+      "Score (Experiment02)": 2.369699955
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_CC-401",
+      "Percent Overlap (Experiment01)": 7.1,
+      "Percent Overlap (Experiment02)": 7.1,
+      "adj p-val (Experiment01)": 0.7246753247,
+      "adj p-val (Experiment02)": 0.4984615385,
+      "Overlap (Experiment01)": "AGGSAALSPSKKRKN-p;u|CNLSRVDSTTCLFPV-p;u|AQDLCRASPEPPGPE-p;u|AQTSRRPSQGPPARS-p;u|AGIMITASHNPKQDN-p;u|AERVLMKSPSPALHP-p;u|AAKKTKKSLESINSR-p;u|AEPGDGDSDTTKKKK-p;d|ARLGSQHSPGRTASL-p;d|AVERVTKSPGETSKP-p;d|AKSPEAKSPLQSQPH-p;d",
+      "Overlap (Experiment02)": "AGIMITASHNPKQDN-p;u|CNLSRVDSTTCLFPV-p;u|AAKKTKKSLESINSR-p;u|AQTSRRPSQGPPARS-p;u|AQDLCRASPEPPGPE-p;u|AERVLMKSPSPALHP-p;u|AGGSAALSPSKKRKN-p;u|ARLGSQHSPGRTASL-p;d|AEPGDGDSDTTKKKK-p;d|AVERVTKSPGETSKP-p;d|AKSPEAKSPLQSQPH-p;d",
+      "Score (Experiment01)": -0.7304999828,
+      "Score (Experiment02)": 1.0549000502
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_CALPAIN_INHIBITOR_II",
+      "Percent Overlap (Experiment01)": 7.2,
+      "Percent Overlap (Experiment02)": 7.2,
+      "adj p-val (Experiment01)": 0.2809998221,
+      "adj p-val (Experiment02)": 0.9421975662,
+      "Overlap (Experiment01)": "ARESLCDSPHQNLSR-p;u|AALGLQDSDDEDAAV-p;u|AAEPGAGSQHLEVRD-p;u|CNLSRVDSTTCLFPV-p;u|AAMRRSFSADNFIGI-p;u|AQDLCRASPEPPGPE-p;u|ALAPAKESPRKGAAP-p;u|AIQGPEDSPSRQSRR-p;u|ADNDITPYLVSRFYR-p;d|APADGKLSGSKAKTW-p;d",
+      "Overlap (Experiment02)": "AALGLQDSDDEDAAV-p;u|AAMRRSFSADNFIGI-p;u|CNLSRVDSTTCLFPV-p;u|ARESLCDSPHQNLSR-p;u|AAEPGAGSQHLEVRD-p;u|AQDLCRASPEPPGPE-p;u|AIQGPEDSPSRQSRR-p;u|ALAPAKESPRKGAAP-p;u|ADNDITPYLVSRFYR-p;d|APADGKLSGSKAKTW-p;d",
+      "Score (Experiment01)": 2.4042999744,
+      "Score (Experiment02)": -0.2375999987
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_CABOZANTINIB",
+      "Percent Overlap (Experiment01)": 5.3,
+      "Percent Overlap (Experiment02)": 5.3,
+      "adj p-val (Experiment01)": 0.595972238,
+      "adj p-val (Experiment02)": 0.1829842631,
+      "Overlap (Experiment01)": "CAPSPDRSPELSSSR-p;u|CSSEVVLSGDDEEYQ-p;u|AGGSAALSPSKKRKN-p;u|AMAARPHSIDGRVVE-p;u|CGVVKFESPEVAERA-p;u|AGALSYVSPNTSKCP-p;d|ADNDITPYLVSRFYR-p;d|AQDLCRASPEPPGPE-p;d|AIRVRSHSMETMVGG-p;d|AAASVRQSPGPALAR-p;d",
+      "Overlap (Experiment02)": "CGVVKFESPEVAERA-p;u|CSSEVVLSGDDEEYQ-p;u|CAPSPDRSPELSSSR-p;u|AMAARPHSIDGRVVE-p;u|AGGSAALSPSKKRKN-p;u|ADNDITPYLVSRFYR-p;d|AQDLCRASPEPPGPE-p;d|AAASVRQSPGPALAR-p;d|AIRVRSHSMETMVGG-p;d|AGALSYVSPNTSKCP-p;d",
+      "Score (Experiment01)": 1.1341999769,
+      "Score (Experiment02)": 1.9682999849
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_BOSUTINIB",
+      "Percent Overlap (Experiment01)": 6.2,
+      "Percent Overlap (Experiment02)": 6.2,
+      "adj p-val (Experiment01)": 0.560035057,
+      "adj p-val (Experiment02)": 0.00675,
+      "Overlap (Experiment01)": "AAYGTHLSPHVPHRV-p;u|CAPSPDRSPELSSSR-p;u|CQNPRKQSLPATSIP-p;u|AEVQRRLSPPECLNA-p;u|CKAGIIASARAGETR-p;u|ANSKSEGSPVLPHEP-p;u|ADLVRDRTPPHLLYS-p;u|AERNQRGSFEAPRYE-p;u|AREIRRFSFCCSPEP-p;u|AVGGERRSLESCLLD-p;u|ALKPRPKSPSSGSGG-p;u|AGALSYVSPNTSKCP-p;d|ADQTPGATPKKLSSW-p;d|APYGERMSPNQLCSV-p;d|ARDERYRSDIHTEAV-p;d|AAAAAGDSDSWDADA-p;d",
+      "Overlap (Experiment02)": "CQNPRKQSLPATSIP-p;u|ALKPRPKSPSSGSGG-p;u|AREIRRFSFCCSPEP-p;u|ADLVRDRTPPHLLYS-p;u|CAPSPDRSPELSSSR-p;u|AEVQRRLSPPECLNA-p;u|ANSKSEGSPVLPHEP-p;u|AERNQRGSFEAPRYE-p;u|AVGGERRSLESCLLD-p;u|CKAGIIASARAGETR-p;u|AAYGTHLSPHVPHRV-p;u|AAAAAGDSDSWDADA-p;d|APYGERMSPNQLCSV-p;d|ADQTPGATPKKLSSW-p;d|ARDERYRSDIHTEAV-p;d|AGALSYVSPNTSKCP-p;d",
+      "Score (Experiment01)": -1.3336000443,
+      "Score (Experiment02)": 4.2013001442
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_BIX-01338",
+      "Percent Overlap (Experiment01)": 7.6,
+      "Percent Overlap (Experiment02)": 7.6,
+      "adj p-val (Experiment01)": 0.1381578947,
+      "adj p-val (Experiment02)": 0.4235761089,
+      "Overlap (Experiment01)": "ASPSRTRSPDVISSA-p;u|ARLGSQHSPGRTASL-p;u|ATLRRAKSFTCSEKP-p;u|AGGSAALSPSKKRKN-p;u|ANITRQNSSSSDSGG-p;u|ASEKHRGSADYSMEA-p;u|_MSDQDHSMDEMTAV-p;u|AIRVRSHSMETMVGG-p;u|APRRRAVSMDNSNKY-p;d|AAKKTKKSLESINSR-p;d",
+      "Overlap (Experiment02)": "ASEKHRGSADYSMEA-p;u|ASPSRTRSPDVISSA-p;u|ANITRQNSSSSDSGG-p;u|ARLGSQHSPGRTASL-p;u|ATLRRAKSFTCSEKP-p;u|_MSDQDHSMDEMTAV-p;u|AIRVRSHSMETMVGG-p;u|AGGSAALSPSKKRKN-p;u|AAKKTKKSLESINSR-p;d|APRRRAVSMDNSNKY-p;d",
+      "Score (Experiment01)": 2.8996999264,
+      "Score (Experiment02)": 1.2867000103
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_AXITINIB",
+      "Percent Overlap (Experiment01)": 7.2,
+      "Percent Overlap (Experiment02)": 7.2,
+      "adj p-val (Experiment01)": 0.2809998221,
+      "adj p-val (Experiment02)": 0.0924657534,
+      "Overlap (Experiment01)": "AAYGTHLSPHVPHRV-p;u|CAPSPDRSPELSSSR-p;u|AAEPGAGSQHLEVRD-p;u|CSSEVVLSGDDEEYQ-p;u|ADNDITPYLVSRFYR-p;u|AGGSAALSPSKKRKN-p;u|AMAARPHSIDGRVVE-p;u|ANSKSEGSPVLPHEP-p;u|CRALPRGSPHSDLKE-p;u|AREPGGRSPAFVQLA-p;u|AKSLGEKSPAASGAR-p;u|CGVVKFESPEVAERA-p;u|AGALSYVSPNTSKCP-p;d|ARLGSQHSPGRTASL-p;d|ARDERYRSDIHTEAV-p;d|AQTSRRPSQGPPARS-p;d|AIQGPEDSPSRQSRR-p;d|AIRVRSHSMETMVGG-p;d|ASQSRPNSSALETLG-p;d|AAASVRQSPGPALAR-p;d",
+      "Overlap (Experiment02)": "ADNDITPYLVSRFYR-p;u|CGVVKFESPEVAERA-p;u|CSSEVVLSGDDEEYQ-p;u|CAPSPDRSPELSSSR-p;u|AMAARPHSIDGRVVE-p;u|CRALPRGSPHSDLKE-p;u|ANSKSEGSPVLPHEP-p;u|AAEPGAGSQHLEVRD-p;u|AREPGGRSPAFVQLA-p;u|AAYGTHLSPHVPHRV-p;u|AGGSAALSPSKKRKN-p;u|AKSLGEKSPAASGAR-p;u|ARLGSQHSPGRTASL-p;d|AQTSRRPSQGPPARS-p;d|AIQGPEDSPSRQSRR-p;d|ASQSRPNSSALETLG-p;d|AAASVRQSPGPALAR-p;d|ARDERYRSDIHTEAV-p;d|AIRVRSHSMETMVGG-p;d|AGALSYVSPNTSKCP-p;d",
+      "Score (Experiment01)": 2.3382000923,
+      "Score (Experiment02)": 2.4504001141
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_AR_A014418",
+      "Percent Overlap (Experiment01)": 6.3,
+      "Percent Overlap (Experiment02)": 6.3,
+      "adj p-val (Experiment01)": 0.5802865613,
+      "adj p-val (Experiment02)": 0.1580838323,
+      "Overlap (Experiment01)": "ALAGRSPSPASGRRG-p;u|ASDKEGMSPAKRTKL-p;u|AENGLLMTPCYTANF-p;u|AGSRRRFSDSEGEET-p;d|AEPGDGDSDTTKKKK-p;d|CNLSRVDSTTCLFPV-p;d|ANSKSEGSPVLPHEP-p;d|AIQGPEDSPSRQSRR-p;d|ASKRAPSSPVAKPGP-p;d|AAPSKPASAKKGKAE-p;d",
+      "Overlap (Experiment02)": "ASDKEGMSPAKRTKL-p;u|ALAGRSPSPASGRRG-p;u|AENGLLMTPCYTANF-p;u|AGSRRRFSDSEGEET-p;d|CNLSRVDSTTCLFPV-p;d|ANSKSEGSPVLPHEP-p;d|AIQGPEDSPSRQSRR-p;d|AEPGDGDSDTTKKKK-p;d|ASKRAPSSPVAKPGP-p;d|AAPSKPASAKKGKAE-p;d",
+      "Score (Experiment01)": -1.1713000536,
+      "Score (Experiment02)": 2.1700999737
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_AFURESERTIB",
+      "Percent Overlap (Experiment01)": 6.2,
+      "Percent Overlap (Experiment02)": 6.2,
+      "adj p-val (Experiment01)": 0.3607287449,
+      "adj p-val (Experiment02)": 0.1580838323,
+      "Overlap (Experiment01)": "AALGLQDSDDEDAAV-p;u|AGGSAALSPSKKRKN-p;u|CQNPRKQSLPATSIP-p;u|AQTSRRPSQGPPARS-p;u|CNLSRVDSTTCLFPV-p;d|AQDLCRASPEPPGPE-p;d|CFSRPSMSPTPLDRC-p;d|AAAAAGDSDSWDADA-p;d|ASKRAPSSPVAKPGP-p;d|AVERVTKSPGETSKP-p;d",
+      "Overlap (Experiment02)": "CQNPRKQSLPATSIP-p;u|AALGLQDSDDEDAAV-p;u|AQTSRRPSQGPPARS-p;u|AGGSAALSPSKKRKN-p;u|CFSRPSMSPTPLDRC-p;d|CNLSRVDSTTCLFPV-p;d|AQDLCRASPEPPGPE-p;d|AAAAAGDSDSWDADA-p;d|AVERVTKSPGETSKP-p;d|ASKRAPSSPVAKPGP-p;d",
+      "Score (Experiment01)": 1.8107000589,
+      "Score (Experiment02)": 2.2276000977
+    },
+    {
+      "Signature ID": "KINASE-PSP_CK2A1/CSNK2A1",
+      "Percent Overlap (Experiment01)": 2.3,
+      "Percent Overlap (Experiment02)": 2.3,
+      "adj p-val (Experiment01)": 0.027,
+      "adj p-val (Experiment02)": 0.081335509,
+      "Overlap (Experiment01)": "AGEKEAKSD______-p;u|______MSDNDDIEV-p;u|AGSTDENTDSEEHQE-p;u|AVEEDAESEDEEEED-p;u|CEEEFSDSEEEGEGG-p;u|AWQEECPSDSEEDEG-p;u|ATCHSEDSDLEID__-p;u|AFIVISDSDGEEPKE-p;u|CQTAEADSESDHEVP-p;u|APIILSDSEEEEMII-p;u|AGSEEISSEDDELVE-p;u|AQGPSGSSEWEDEQS-p;u|AALIQDQSEEEEEEE-p;u",
+      "Overlap (Experiment02)": "AALIQDQSEEEEEEE-p;u|AVEEDAESEDEEEED-p;u|AWQEECPSDSEEDEG-p;u|AFIVISDSDGEEPKE-p;u|AGSTDENTDSEEHQE-p;u|APIILSDSEEEEMII-p;u|AGSEEISSEDDELVE-p;u|CQTAEADSESDHEVP-p;u|CEEEFSDSEEEGEGG-p;u|______MSDNDDIEV-p;u|AQGPSGSSEWEDEQS-p;u|ATCHSEDSDLEID__-p;u|AGEKEAKSD______-p;u",
+      "Score (Experiment01)": 4.0942997932,
+      "Score (Experiment02)": 2.6716001034
+    },
+    {
+      "Signature ID": "KINASE-PSP_CDK2",
+      "Percent Overlap (Experiment01)": 3.6,
+      "Percent Overlap (Experiment02)": 3.6,
+      "adj p-val (Experiment01)": 0.7324680118,
+      "adj p-val (Experiment02)": 0.0110882957,
+      "Overlap (Experiment01)": "ADQTPGATPKKLSSW-p;u|CLKLQPLSPVPSDIE-p;u|AGQEEPGTPPSSPLS-p;u|CIAGSPLTPRRVTEV-p;u|ARKRHAPSPEPAVQG-p;u|AKPEPSPSPRITRKS-p;u|APRPVPGSPARDAPA-p;u|AKLTVENSPKQEAGI-p;u|APLNIPGTPVLEDFP-p;u|AGYVPIRTPARKLTA-p;u|AVIPINGSPRTPRRG-p;u|ARSPARISPHIKDGE-p;u|APAPAEKTPVKKKAR-p;u|ADALKLRSPRGSPDG-p;u|APSVSHVSPRKNPSV-p;u",
+      "Overlap (Experiment02)": "CIAGSPLTPRRVTEV-p;u|CLKLQPLSPVPSDIE-p;u|ARSPARISPHIKDGE-p;u|AGYVPIRTPARKLTA-p;u|AKLTVENSPKQEAGI-p;u|ADALKLRSPRGSPDG-p;u|APRPVPGSPARDAPA-p;u|APLNIPGTPVLEDFP-p;u|ADQTPGATPKKLSSW-p;u|AVIPINGSPRTPRRG-p;u|APSVSHVSPRKNPSV-p;u|ARKRHAPSPEPAVQG-p;u|AGQEEPGTPPSSPLS-p;u|AKPEPSPSPRITRKS-p;u|APAPAEKTPVKKKAR-p;u",
+      "Score (Experiment01)": -0.6930000186,
+      "Score (Experiment02)": -4.0076999664
+    },
+    {
+      "Signature ID": "KINASE-PSP_CDK1",
+      "Percent Overlap (Experiment01)": 2.6,
+      "Percent Overlap (Experiment02)": 2.6,
+      "adj p-val (Experiment01)": 0.5802865613,
+      "adj p-val (Experiment02)": 0.00675,
+      "Overlap (Experiment01)": "AALSRAHSPALGVHS-p;u|ATGTGTFSPGASPGS-p;u|ANLLSGKSPRKSAEP-p;u|AVQSPRRSPRISFFL-p;u|AKKIKLQTPNTFPKR-p;u|AQPPRTQTPPLGQTP-p;u|AQGPLLPSPARGLKF-p;u|AKPEPSPSPRITRKS-p;u|AKLTVENSPKQEAGI-p;u|APAEDVDTPPRKKKR-p;u|AGFFRVESPVKLFSG-p;u|AVIPINGSPRTPRRG-p;u|CNKTLAPSPKSPGDF-p;u|APQTQHVSPMRQVEP-p;u|AVERVTKSPGETSKP-p;u|APAPAEKTPVKKKAR-p;u|ATSDTLESPPKIIPK-p;u",
+      "Overlap (Experiment02)": "APQTQHVSPMRQVEP-p;u|AKLTVENSPKQEAGI-p;u|ATGTGTFSPGASPGS-p;u|AQPPRTQTPPLGQTP-p;u|AALSRAHSPALGVHS-p;u|AQGPLLPSPARGLKF-p;u|APAEDVDTPPRKKKR-p;u|AVQSPRRSPRISFFL-p;u|AVIPINGSPRTPRRG-p;u|AVERVTKSPGETSKP-p;u|AKKIKLQTPNTFPKR-p;u|CNKTLAPSPKSPGDF-p;u|AGFFRVESPVKLFSG-p;u|ATSDTLESPPKIIPK-p;u|ANLLSGKSPRKSAEP-p;u|AKPEPSPSPRITRKS-p;u|APAPAEKTPVKKKAR-p;u",
+      "Score (Experiment01)": -1.2673000097,
+      "Score (Experiment02)": -5.9695000648
+    },
+    {
+      "Signature ID": "KINASE-PSP_Akt1/AKT1",
+      "Percent Overlap (Experiment01)": 2.8,
+      "Percent Overlap (Experiment02)": 2.8,
+      "adj p-val (Experiment01)": 0.085443038,
+      "adj p-val (Experiment02)": 0.1580838323,
+      "Overlap (Experiment01)": "ATRKRRWSAPESRKL-p;u|ANLNRSTSVPENPKS-p;u|AVDLPAVSEKDIQDL-p;u|AFRCRSISVSEHVVR-p;u|APRRRAVSMDNSNKY-p;u|ASPARRASAILPGVL-p;u|ARRNRKRSIKYDSLL-p;u|AFGARRNTIDSTSSF-p;u|CRRRRLGSVMRPTED-p;u|AKRPRVTSGGVSESP-p;u",
+      "Overlap (Experiment02)": "ANLNRSTSVPENPKS-p;u|AVDLPAVSEKDIQDL-p;u|ASPARRASAILPGVL-p;u|ATRKRRWSAPESRKL-p;u|CRRRRLGSVMRPTED-p;u|AFRCRSISVSEHVVR-p;u|AFGARRNTIDSTSSF-p;u|ARRNRKRSIKYDSLL-p;u|APRRRAVSMDNSNKY-p;u|AKRPRVTSGGVSESP-p;u",
+      "Score (Experiment01)": -3.3592998981,
+      "Score (Experiment02)": -2.1535000801
+    },
+    {
+      "Signature ID": "KINASE-iKiP_RPS6KA5.MSK1",
+      "Percent Overlap (Experiment01)": 5.1,
+      "Percent Overlap (Experiment02)": 5.1,
+      "adj p-val (Experiment01)": 0.560035057,
+      "adj p-val (Experiment02)": 0.0652317154,
+      "Overlap (Experiment01)": "AKDLLHPSPEEEKRK-p;u|AGVMITASHNRKEDN-p;u|AAKSADGSAPAGEGE-p;u|AREIRRFSFCCSPEP-p;u|AAVPFLASDNEEEED-p;u|AVKMLAESDESGDEE-p;u|AASVRQNSATESADS-p;u|CADVRRNSVERPAEP-p;u|AALGSRGSCSTEVEK-p;u|ADVTRRLSEDYGVLK-p;u",
+      "Overlap (Experiment02)": "ADVTRRLSEDYGVLK-p;u|AAKSADGSAPAGEGE-p;u|AREIRRFSFCCSPEP-p;u|AGVMITASHNRKEDN-p;u|AASVRQNSATESADS-p;u|AVKMLAESDESGDEE-p;u|AALGSRGSCSTEVEK-p;u|CADVRRNSVERPAEP-p;u|AAVPFLASDNEEEED-p;u|AKDLLHPSPEEEKRK-p;u",
+      "Score (Experiment01)": -1.3578000069,
+      "Score (Experiment02)": 2.7488000393
+    },
+    {
+      "Signature ID": "KINASE-iKiP_PRKACA",
+      "Percent Overlap (Experiment01)": 5.3,
+      "Percent Overlap (Experiment02)": 5.3,
+      "adj p-val (Experiment01)": 0.2923728814,
+      "adj p-val (Experiment02)": 0.0869824603,
+      "Overlap (Experiment01)": "AMEPGNGSLDLGGDS-p;u|AIRNAMGSLASQATK-p;u|AGALRRNSLTGEEGQ-p;u|AREIRRFSFCCSPEP-p;u|ARRPRARSVDALDDL-p;u|CARRNLGSINTELQD-p;u|CADVRRNSVERPAEP-p;u|ANASRARSEQFINLR-p;u|AVRLRGRSFAGNLNT-p;u|ADVTRRLSEDYGVLK-p;u",
+      "Overlap (Experiment02)": "CARRNLGSINTELQD-p;u|ADVTRRLSEDYGVLK-p;u|AREIRRFSFCCSPEP-p;u|AMEPGNGSLDLGGDS-p;u|ANASRARSEQFINLR-p;u|ARRPRARSVDALDDL-p;u|AGALRRNSLTGEEGQ-p;u|CADVRRNSVERPAEP-p;u|AIRNAMGSLASQATK-p;u|AVRLRGRSFAGNLNT-p;u",
+      "Score (Experiment01)": -2.1429998875,
+      "Score (Experiment02)": 2.496999979
+    },
+    {
+      "Signature ID": "KINASE-iKiP_PLK3",
+      "Percent Overlap (Experiment01)": 4.3,
+      "Percent Overlap (Experiment02)": 4.3,
+      "adj p-val (Experiment01)": 0.6050933786,
+      "adj p-val (Experiment02)": 0.0419602155,
+      "Overlap (Experiment01)": "CDEEFSDSEDEGEGG-p;u|AIPVESDTDDEGAPR-p;u|ADEEEEDSDDDVEPI-p;u|AADEDWDSELEDDLL-p;u|CEGTEINSDDEQESK-p;u|_MSDQDHSMDEMTAV-p;u|AKEEKEESDDEAAVE-p;u|ADPPAENSSAPEAEQ-p;u|AEEYLEQSEEKLWLG-p;u|AIHTFVQSGSHLAAR-p;u",
+      "Overlap (Experiment02)": "ADPPAENSSAPEAEQ-p;u|AADEDWDSELEDDLL-p;u|AKEEKEESDDEAAVE-p;u|AEEYLEQSEEKLWLG-p;u|AIPVESDTDDEGAPR-p;u|ADEEEEDSDDDVEPI-p;u|_MSDQDHSMDEMTAV-p;u|CDEEFSDSEDEGEGG-p;u|AIHTFVQSGSHLAAR-p;u|CEGTEINSDDEQESK-p;u",
+      "Score (Experiment01)": -1.068500042,
+      "Score (Experiment02)": 2.9758999348
+    },
+    {
+      "Signature ID": "KINASE-iKiP_PAK2",
+      "Percent Overlap (Experiment01)": 6.6,
+      "Percent Overlap (Experiment02)": 6.6,
+      "adj p-val (Experiment01)": 0.0828220859,
+      "adj p-val (Experiment02)": 0.2541436464,
+      "Overlap (Experiment01)": "AETNSRVSGVDGYET-p;u|ASSNSRKSLSPGVSR-p;u|AHESRRDSIVAELDR-p;u|AREIRRFSFCCSPEP-p;u|AAVPFLASDNEEEED-p;u|ANASRARSEQFINLR-p;u|ASQSRPNSSALETLG-p;u|AVRLRGRSFAGNLNT-p;u|APEGRPDSGVPSLRA-p;u|ADVTRRLSEDYGVLK-p;u",
+      "Overlap (Experiment02)": "ADVTRRLSEDYGVLK-p;u|ASSNSRKSLSPGVSR-p;u|AREIRRFSFCCSPEP-p;u|AHESRRDSIVAELDR-p;u|ANASRARSEQFINLR-p;u|AETNSRVSGVDGYET-p;u|AAVPFLASDNEEEED-p;u|ASQSRPNSSALETLG-p;u|APEGRPDSGVPSLRA-p;u|AVRLRGRSFAGNLNT-p;u",
+      "Score (Experiment01)": -3.2074999809,
+      "Score (Experiment02)": 1.7678999901
+    },
+    {
+      "Signature ID": "KINASE-iKiP_PAK1",
+      "Percent Overlap (Experiment01)": 6.9,
+      "Percent Overlap (Experiment02)": 6.9,
+      "adj p-val (Experiment01)": 0.3249516441,
+      "adj p-val (Experiment02)": 0.1860594059,
+      "Overlap (Experiment01)": "ATSPISPTENNTTPP-p;u|AETNSRVSGVDGYET-p;u|CNLSRVDSTTCLFPV-p;u|ASSNSRKSLSPGVSR-p;u|AREIRRFSFCCSPEP-p;u|CADVRRNSVERPAEP-p;u|AIHTFVQSGSHLAAR-p;u|ASQSRPNSSALETLG-p;u|AVRLRGRSFAGNLNT-p;u|ADVTRRLSEDYGVLK-p;u",
+      "Overlap (Experiment02)": "ADVTRRLSEDYGVLK-p;u|ASSNSRKSLSPGVSR-p;u|AREIRRFSFCCSPEP-p;u|CNLSRVDSTTCLFPV-p;u|AETNSRVSGVDGYET-p;u|ATSPISPTENNTTPP-p;u|AIHTFVQSGSHLAAR-p;u|CADVRRNSVERPAEP-p;u|ASQSRPNSSALETLG-p;u|AVRLRGRSFAGNLNT-p;u",
+      "Score (Experiment01)": -1.9895000458,
+      "Score (Experiment02)": 2.0025000572
+    },
+    {
+      "Signature ID": "KINASE-iKiP_MAPK8.JNK1",
+      "Percent Overlap (Experiment01)": 5.0,
+      "Percent Overlap (Experiment02)": 5.0,
+      "adj p-val (Experiment01)": 0.9571183533,
+      "adj p-val (Experiment02)": 0.0180360721,
+      "Overlap (Experiment01)": "AVDEGSISPRTLSAI-p;u|ALEAVTPSPSFQQRH-p;u|APVQPQQSPAAAPGG-p;u|ARLQEKLSPPYSSPQ-p;u|AFEQKTLTPDQWARE-p;u|ALPCVAESPTVHVEV-p;u|AAKQEARSDKSPDLA-p;u|AMPQPVPTA______-p;u|CPRSASASPLTPCSV-p;u|AIQGPEDSPSRQSRR-p;u|AGARPLTSPESLSRD-p;u|AEGEAVRTPQSVTAK-p;u|ADALPEHSPAKTSAV-p;u|AAAMNLASPRTAVAP-p;u|AELKDTQSPSTCSEG-p;u|CGVVKFESPEVAERA-p;u|AQKLQLDSPEDAEFI-p;u|AASPKSPTAALNESL-p;u|ADEEIPRSPFKVKVL-p;u",
+      "Overlap (Experiment02)": "CGVVKFESPEVAERA-p;u|AGARPLTSPESLSRD-p;u|AVDEGSISPRTLSAI-p;u|ARLQEKLSPPYSSPQ-p;u|ALPCVAESPTVHVEV-p;u|ALEAVTPSPSFQQRH-p;u|AMPQPVPTA______-p;u|AQKLQLDSPEDAEFI-p;u|AIQGPEDSPSRQSRR-p;u|APVQPQQSPAAAPGG-p;u|AFEQKTLTPDQWARE-p;u|AAKQEARSDKSPDLA-p;u|CPRSASASPLTPCSV-p;u|ADEEIPRSPFKVKVL-p;u|AAAMNLASPRTAVAP-p;u|ADALPEHSPAKTSAV-p;u|AEGEAVRTPQSVTAK-p;u|AASPKSPTAALNESL-p;u|AELKDTQSPSTCSEG-p;u",
+      "Score (Experiment01)": 0.1357000023,
+      "Score (Experiment02)": -3.3485000134
+    },
+    {
+      "Signature ID": "KINASE-iKiP_MAPK3.ERK1",
+      "Percent Overlap (Experiment01)": 3.6,
+      "Percent Overlap (Experiment02)": 3.6,
+      "adj p-val (Experiment01)": 0.560035057,
+      "adj p-val (Experiment02)": 0.0557424683,
+      "Overlap (Experiment01)": "AAISQLRSPRVKESI-p;u|APVQPQQSPAAAPGG-p;u|ARLQEKLSPPYSSPQ-p;u|AFEQKTLTPDQWARE-p;u|ALPCVAESPTVHVEV-p;u|APTLHPYSPLSPKGR-p;u|AIQGPEDSPSRQSRR-p;u|APLNIPGTPVLEDFP-p;u|ADALPEHSPAKTSAV-p;u|ASELACPTPKEDGLA-p;u|AVSAAPGSAAPAAGS-p;u",
+      "Overlap (Experiment02)": "ARLQEKLSPPYSSPQ-p;u|AVSAAPGSAAPAAGS-p;u|ALPCVAESPTVHVEV-p;u|AIQGPEDSPSRQSRR-p;u|APVQPQQSPAAAPGG-p;u|AFEQKTLTPDQWARE-p;u|ASELACPTPKEDGLA-p;u|APLNIPGTPVLEDFP-p;u|APTLHPYSPLSPKGR-p;u|ADALPEHSPAKTSAV-p;u|AAISQLRSPRVKESI-p;u",
+      "Score (Experiment01)": 1.350399971,
+      "Score (Experiment02)": -2.9609999657
+    },
+    {
+      "Signature ID": "KINASE-iKiP_MAPK13",
+      "Percent Overlap (Experiment01)": 5.3,
+      "Percent Overlap (Experiment02)": 5.3,
+      "adj p-val (Experiment01)": 0.9571183533,
+      "adj p-val (Experiment02)": 0.0557424683,
+      "Overlap (Experiment01)": "AVDEGSISPRTLSAI-p;u|ALAAGADSPKTEEAR-p;u|AKDLLHPSPEEEKRK-p;u|APVQPQQSPAAAPGG-p;u|AQAPTSDSPVAEDAS-p;u|ARLQEKLSPPYSSPQ-p;u|AFEQKTLTPDQWARE-p;u|AGVMITASHNRKEDN-p;u|AEKSYQNSPSSDDGI-p;u|ASDNDFVTPEPRRTT-p;u|AEGEAVRTPQSVTAK-p;u|APLNIPGTPVLEDFP-p;u|AGRRFIVSPVPESRL-p;u|ADALPEHSPAKTSAV-p;u|CPHIVVGTPGRILAL-p;u|AAAMNLASPRTAVAP-p;u|AELKDTQSPSTCSEG-p;u|ASELACPTPKEDGLA-p;u|AYKVGNESPVQELKQ-p;u|ADALTEPSPDIEGEI-p;u|AVSAAPGSAAPAAGS-p;u|ADEEIPRSPFKVKVL-p;u",
+      "Overlap (Experiment02)": "AGVMITASHNRKEDN-p;u|AEKSYQNSPSSDDGI-p;u|AVDEGSISPRTLSAI-p;u|AYKVGNESPVQELKQ-p;u|ARLQEKLSPPYSSPQ-p;u|ALAAGADSPKTEEAR-p;u|AVSAAPGSAAPAAGS-p;u|AQAPTSDSPVAEDAS-p;u|CPHIVVGTPGRILAL-p;u|ADALTEPSPDIEGEI-p;u|AGRRFIVSPVPESRL-p;u|APVQPQQSPAAAPGG-p;u|AFEQKTLTPDQWARE-p;u|ASELACPTPKEDGLA-p;u|APLNIPGTPVLEDFP-p;u|ADEEIPRSPFKVKVL-p;u|AAAMNLASPRTAVAP-p;u|AKDLLHPSPEEEKRK-p;u|ADALPEHSPAKTSAV-p;u|AEGEAVRTPQSVTAK-p;u|ASDNDFVTPEPRRTT-p;u|AELKDTQSPSTCSEG-p;u",
+      "Score (Experiment01)": 0.1706999987,
+      "Score (Experiment02)": -2.8761999607
+    },
+    {
+      "Signature ID": "KINASE-iKiP_MAPK12",
+      "Percent Overlap (Experiment01)": 4.9,
+      "Percent Overlap (Experiment02)": 4.9,
+      "adj p-val (Experiment01)": 0.4450297366,
+      "adj p-val (Experiment02)": 0.00675,
+      "Overlap (Experiment01)": "AAISQLRSPRVKESI-p;u|AAAVGRESPGAAATS-p;u|AVDEGSISPRTLSAI-p;u|AKDLLHPSPEEEKRK-p;u|AGQEEPGTPPSSPLS-p;u|AQAPTSDSPVAEDAS-p;u|ARLQEKLSPPYSSPQ-p;u|AFEQKTLTPDQWARE-p;u|ALPCVAESPTVHVEV-p;u|CNLSRVDSTTCLFPV-p;u|AKGNKSPSPPDGSPA-p;u|APTLHPYSPLSPKGR-p;u|AIQGPEDSPSRQSRR-p;u|AEGEAVRTPQSVTAK-p;u|CSTSESLSPVKQAPR-p;u|AGRRFIVSPVPESRL-p;u|ADALPEHSPAKTSAV-p;u|AELKDTQSPSTCSEG-p;u|APAPAEKTPVKKKAR-p;u|ADEEIPRSPFKVKVL-p;u|AEKEVPWSPSAEKAS-p;u",
+      "Overlap (Experiment02)": "AAAVGRESPGAAATS-p;u|AVDEGSISPRTLSAI-p;u|ARLQEKLSPPYSSPQ-p;u|CNLSRVDSTTCLFPV-p;u|AQAPTSDSPVAEDAS-p;u|AKGNKSPSPPDGSPA-p;u|ALPCVAESPTVHVEV-p;u|AIQGPEDSPSRQSRR-p;u|AGRRFIVSPVPESRL-p;u|AFEQKTLTPDQWARE-p;u|ADEEIPRSPFKVKVL-p;u|APTLHPYSPLSPKGR-p;u|AKDLLHPSPEEEKRK-p;u|ADALPEHSPAKTSAV-p;u|AEGEAVRTPQSVTAK-p;u|AEKEVPWSPSAEKAS-p;u|AAISQLRSPRVKESI-p;u|CSTSESLSPVKQAPR-p;u|AELKDTQSPSTCSEG-p;u|AGQEEPGTPPSSPLS-p;u|APAPAEKTPVKKKAR-p;u",
+      "Score (Experiment01)": 1.6847000122,
+      "Score (Experiment02)": -5.3222999573
+    },
+    {
+      "Signature ID": "KINASE-iKiP_MAPK10.JNK3",
+      "Percent Overlap (Experiment01)": 6.7,
+      "Percent Overlap (Experiment02)": 6.7,
+      "adj p-val (Experiment01)": 0.920820781,
+      "adj p-val (Experiment02)": 0.00675,
+      "Overlap (Experiment01)": "AKDLLHPSPEEEKRK-p;u|AFEQKTLTPDQWARE-p;u|ALPCVAESPTVHVEV-p;u|AIQGPEDSPSRQSRR-p;u|AEGEAVRTPQSVTAK-p;u|AGRRFIVSPVPESRL-p;u|ADALPEHSPAKTSAV-p;u|ADTTSPETPDSSASK-p;u|AAAMNLASPRTAVAP-p;u|AELKDTQSPSTCSEG-p;u|AQKLQLDSPEDAEFI-p;u",
+      "Overlap (Experiment02)": "ALPCVAESPTVHVEV-p;u|AQKLQLDSPEDAEFI-p;u|AIQGPEDSPSRQSRR-p;u|AGRRFIVSPVPESRL-p;u|AFEQKTLTPDQWARE-p;u|ADTTSPETPDSSASK-p;u|AAAMNLASPRTAVAP-p;u|AKDLLHPSPEEEKRK-p;u|ADALPEHSPAKTSAV-p;u|AEGEAVRTPQSVTAK-p;u|AELKDTQSPSTCSEG-p;u",
+      "Score (Experiment01)": -0.2316000015,
+      "Score (Experiment02)": -4.2683000565
+    },
+    {
+      "Signature ID": "KINASE-iKiP_MAPK1.ERK2",
+      "Percent Overlap (Experiment01)": 4.2,
+      "Percent Overlap (Experiment02)": 4.2,
+      "adj p-val (Experiment01)": 0.7952778914,
+      "adj p-val (Experiment02)": 0.00675,
+      "Overlap (Experiment01)": "AAISQLRSPRVKESI-p;u|AVDEGSISPRTLSAI-p;u|ADQTPGATPKKLSSW-p;u|AKDLLHPSPEEEKRK-p;u|ALEAVTPSPSFQQRH-p;u|APVQPQQSPAAAPGG-p;u|AFEQKTLTPDQWARE-p;u|ALPCVAESPTVHVEV-p;u|AMPQPVPTA______-p;u|AIQGPEDSPSRQSRR-p;u|AEGEAVRTPQSVTAK-p;u|ADALPEHSPAKTSAV-p;u|ADLRDNYSPGWKFNH-p;u|AELKDTQSPSTCSEG-p;u|ASELACPTPKEDGLA-p;u|AIHTFVQSGSHLAAR-p;u|AVSAAPGSAAPAAGS-p;u|AASPKSPTAALNESL-p;u|ADEEIPRSPFKVKVL-p;u",
+      "Overlap (Experiment02)": "AVDEGSISPRTLSAI-p;u|ADLRDNYSPGWKFNH-p;u|AVSAAPGSAAPAAGS-p;u|ALPCVAESPTVHVEV-p;u|ALEAVTPSPSFQQRH-p;u|AMPQPVPTA______-p;u|AIHTFVQSGSHLAAR-p;u|AIQGPEDSPSRQSRR-p;u|APVQPQQSPAAAPGG-p;u|AFEQKTLTPDQWARE-p;u|ASELACPTPKEDGLA-p;u|ADEEIPRSPFKVKVL-p;u|ADQTPGATPKKLSSW-p;u|AKDLLHPSPEEEKRK-p;u|ADALPEHSPAKTSAV-p;u|AEGEAVRTPQSVTAK-p;u|AAISQLRSPRVKESI-p;u|AASPKSPTAALNESL-p;u|AELKDTQSPSTCSEG-p;u",
+      "Score (Experiment01)": 0.4932999909,
+      "Score (Experiment02)": -4.6185002327
+    },
+    {
+      "Signature ID": "KINASE-iKiP_DYRK4",
+      "Percent Overlap (Experiment01)": 4.8,
+      "Percent Overlap (Experiment02)": 4.8,
+      "adj p-val (Experiment01)": 0.6007379249,
+      "adj p-val (Experiment02)": 0.9421975662,
+      "Overlap (Experiment01)": "AAAVGRESPGAAATS-p;u|AKDLLHPSPEEEKRK-p;u|ASAERSCTPSPDQIS-p;u|ALPCVAESPTVHVEV-p;u|AAKQEARSDKSPDLA-p;u|AKGNKSPSPPDGSPA-p;u|ARRQQDPSPGSNLGG-p;u|AREIRRFSFCCSPEP-p;u|AQYNRHDSPEDVKRR-p;u|AGRRFIVSPVPESRL-p;u|AELKDTQSPSTCSEG-p;u|ARAVLSDSPQLSEGK-p;u|ARRKGAASPVLQEDH-p;u",
+      "Overlap (Experiment02)": "ARRKGAASPVLQEDH-p;u|AAAVGRESPGAAATS-p;u|AREIRRFSFCCSPEP-p;u|ARRQQDPSPGSNLGG-p;u|AQYNRHDSPEDVKRR-p;u|ASAERSCTPSPDQIS-p;u|AKGNKSPSPPDGSPA-p;u|ALPCVAESPTVHVEV-p;u|AGRRFIVSPVPESRL-p;u|AAKQEARSDKSPDLA-p;u|ARAVLSDSPQLSEGK-p;u|AKDLLHPSPEEEKRK-p;u|AELKDTQSPSTCSEG-p;u",
+      "Score (Experiment01)": 1.0821000338,
+      "Score (Experiment02)": -0.199300006
+    },
+    {
+      "Signature ID": "KINASE-iKiP_DYRK3",
+      "Percent Overlap (Experiment01)": 3.1,
+      "Percent Overlap (Experiment02)": 3.1,
+      "adj p-val (Experiment01)": 0.9571183533,
+      "adj p-val (Experiment02)": 0.4719387755,
+      "Overlap (Experiment01)": "AKDLLHPSPEEEKRK-p;u|ASAERSCTPSPDQIS-p;u|AAKQEARSDKSPDLA-p;u|AKGNKSPSPPDGSPA-p;u|ARRQQDPSPGSNLGG-p;u|ATESGAQSAPLPMEG-p;u|AAVPFLASDNEEEED-p;u|ARTASTPTPPQTGGG-p;u|AYSFSSDSPLDSSPK-p;u|APEGRPDSGVPSLRA-p;u",
+      "Overlap (Experiment02)": "ATESGAQSAPLPMEG-p;u|ARRQQDPSPGSNLGG-p;u|ASAERSCTPSPDQIS-p;u|AKGNKSPSPPDGSPA-p;u|AAVPFLASDNEEEED-p;u|AAKQEARSDKSPDLA-p;u|APEGRPDSGVPSLRA-p;u|ARTASTPTPPQTGGG-p;u|AYSFSSDSPLDSSPK-p;u|AKDLLHPSPEEEKRK-p;u",
+      "Score (Experiment01)": -0.1590999961,
+      "Score (Experiment02)": -1.1055999994
+    },
+    {
+      "Signature ID": "KINASE-iKiP_DYRK2",
+      "Percent Overlap (Experiment01)": 4.0,
+      "Percent Overlap (Experiment02)": 4.0,
+      "adj p-val (Experiment01)": 1.0,
+      "adj p-val (Experiment02)": 0.24572697,
+      "Overlap (Experiment01)": "AAAVGRESPGAAATS-p;u|AKDLLHPSPEEEKRK-p;u|ALEAVTPSPSFQQRH-p;u|AFEQKTLTPDQWARE-p;u|ASDNDFVTPEPRRTT-p;u|AAKSADGSAPAGEGE-p;u|ATESGAQSAPLPMEG-p;u|AQYNRHDSPEDVKRR-p;u|AGVTLPPTPSGSRTK-p;u|AEGEAVRTPQSVTAK-p;u|ALRNRSNTPILVDGK-p;u|AGRRFIVSPVPESRL-p;u|AQAAAPASVPAQAPK-p;u|APAPAEKTPVKKKAR-p;u|AVSAAPGSAAPAAGS-p;u|APEGRPDSGVPSLRA-p;u",
+      "Overlap (Experiment02)": "ATESGAQSAPLPMEG-p;u|AAAVGRESPGAAATS-p;u|AAKSADGSAPAGEGE-p;u|ALRNRSNTPILVDGK-p;u|AQYNRHDSPEDVKRR-p;u|AVSAAPGSAAPAAGS-p;u|ALEAVTPSPSFQQRH-p;u|AGRRFIVSPVPESRL-p;u|AQAAAPASVPAQAPK-p;u|AFEQKTLTPDQWARE-p;u|APEGRPDSGVPSLRA-p;u|AGVTLPPTPSGSRTK-p;u|AKDLLHPSPEEEKRK-p;u|AEGEAVRTPQSVTAK-p;u|ASDNDFVTPEPRRTT-p;u|APAPAEKTPVKKKAR-p;u",
+      "Score (Experiment01)": 0.0281000007,
+      "Score (Experiment02)": -1.7178000212
+    },
+    {
+      "Signature ID": "KINASE-iKiP_CSNK2A2.CK2A2",
+      "Percent Overlap (Experiment01)": 5.9,
+      "Percent Overlap (Experiment02)": 5.9,
+      "adj p-val (Experiment01)": 0.1110501782,
+      "adj p-val (Experiment02)": 0.00675,
+      "Overlap (Experiment01)": "ASSGDHPTDTEMKEE-p;u|ARRPDPDSDEDEDYE-p;u|ALQDTDDSDDDPVLI-p;u|CEEEFSDSEEEGEGG-p;u|AMDNHSDSEEELAAF-p;u|CDEEFSDSEDEGEGG-p;u|AIPVESDTDDEGAPR-p;u|ATCHSEDSDLEID__-p;u|ADTFEDLSDVEGGGS-p;u|ATPSRKRSVAVSDEE-p;u|AGGAGFGTDGDDQEA-p;u|AERGSGGSSGDELRE-p;u|AALDALNTDDENDEE-p;u|ARSSLGQSASETEED-p;u|ADEEEEDSDDDVEPI-p;u|CEGTEINSDDEQESK-p;u|AKEEKEESDDEAAVE-p;u|AALIQDQSEEEEEEE-p;u|ASDSEADSDTEVPKD-p;u",
+      "Overlap (Experiment02)": "AERGSGGSSGDELRE-p;u|ASDSEADSDTEVPKD-p;u|ADTFEDLSDVEGGGS-p;u|AALIQDQSEEEEEEE-p;u|AMDNHSDSEEELAAF-p;u|AKEEKEESDDEAAVE-p;u|ARRPDPDSDEDEDYE-p;u|ASSGDHPTDTEMKEE-p;u|AGGAGFGTDGDDQEA-p;u|ALQDTDDSDDDPVLI-p;u|ARSSLGQSASETEED-p;u|AIPVESDTDDEGAPR-p;u|AALDALNTDDENDEE-p;u|CEEEFSDSEEEGEGG-p;u|ADEEEEDSDDDVEPI-p;u|ATPSRKRSVAVSDEE-p;u|ATCHSEDSDLEID__-p;u|CDEEFSDSEDEGEGG-p;u|CEGTEINSDDEQESK-p;u",
+      "Score (Experiment01)": 3.0401000977,
+      "Score (Experiment02)": 4.2611999512
+    },
+    {
+      "Signature ID": "KINASE-iKiP_CDK1-CCNB1",
+      "Percent Overlap (Experiment01)": 4.0,
+      "Percent Overlap (Experiment02)": 4.0,
+      "adj p-val (Experiment01)": 0.6248141264,
+      "adj p-val (Experiment02)": 0.00675,
+      "Overlap (Experiment01)": "AAISQLRSPRVKESI-p;u|AKDLLHPSPEEEKRK-p;u|APVQPQQSPAAAPGG-p;u|AEKSYQNSPSSDDGI-p;u|AGVTLPPTPSGSRTK-p;u|CSTSESLSPVKQAPR-p;u|AGRRFIVSPVPESRL-p;u|ADALPEHSPAKTSAV-p;u|ASELACPTPKEDGLA-p;u|APAPAEKTPVKKKAR-p;u",
+      "Overlap (Experiment02)": "AEKSYQNSPSSDDGI-p;u|AGRRFIVSPVPESRL-p;u|APVQPQQSPAAAPGG-p;u|ASELACPTPKEDGLA-p;u|AGVTLPPTPSGSRTK-p;u|AKDLLHPSPEEEKRK-p;u|ADALPEHSPAKTSAV-p;u|AAISQLRSPRVKESI-p;u|CSTSESLSPVKQAPR-p;u|APAPAEKTPVKKKAR-p;u",
+      "Score (Experiment01)": 0.9653999805,
+      "Score (Experiment02)": -3.9384000301
+    }
+  ]
+}

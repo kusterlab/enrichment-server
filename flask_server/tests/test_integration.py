@@ -25,7 +25,10 @@ class TestClass:
         assert len(self.actual_result) == len(self.expected_result) and all(
             res['Signature ID'] == exp['Signature ID'] and
             res['Overlap (Experiment01)'] == exp['Overlap (Experiment01)'] and
-            res['Overlap (Experiment02)'] == exp['Overlap (Experiment02)']
+            res['Overlap (Experiment02)'] == exp['Overlap (Experiment02)'] and
+            res['Percent Overlap (Experiment01)'] == exp['Percent Overlap (Experiment01)'] and
+            res['Percent Overlap (Experiment02)'] == exp['Percent Overlap (Experiment02)']
+
             for res, exp in zip(self.actual_result, self.expected_result))
 
     def evaluate_ksea(self):
@@ -87,7 +90,7 @@ class TestClass:
 
         self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/ptm-sea/expected_output/output_flanking.json')
-        self.expected_result = json.load(open(expected_result_file))
+        self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ssgsea()
 
     def test_ssgsea_ssc_uniprot(self, client):
@@ -102,7 +105,7 @@ class TestClass:
 
         self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/ptm-sea/expected_output/output_uniprot.json')
-        self.expected_result = json.load(open(expected_result_file))
+        self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ssgsea()
 
     def test_ssgsea_gc(self, client):
@@ -117,7 +120,7 @@ class TestClass:
 
         self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/ssgsea/expected_output/output_gc.json')
-        self.expected_result = json.load(open(expected_result_file))
+        self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ssgsea()
 
     def test_ssgsea_gcr(self, client):
@@ -132,7 +135,7 @@ class TestClass:
 
         self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/ssgsea/expected_output/output_gcr.json')
-        self.expected_result = json.load(open(expected_result_file))
+        self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ssgsea()
 
     def test_ksea(self, client):

@@ -1,1748 +1,2141 @@
-[
-  {
-    "Signature ID": "KEGG_ACUTE_MYELOID_LEUKEMIA",
-    "Overlap (Experiment01)": 21.1,
-    "Overlap (Experiment02)": 21.1,
-    "adj p-val (Experiment01)": 0.6777192212,
-    "adj p-val (Experiment02)": 0.868185349,
-    "Score (Experiment01)": -1.6139999628,
-    "Score (Experiment02)": 0.7541000247
-  },
-  {
-    "Signature ID": "KEGG_ADHERENS_JUNCTION",
-    "Overlap (Experiment01)": 17.8,
-    "Overlap (Experiment02)": 17.8,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.6670543838,
-    "Score (Experiment01)": 0.4278999865,
-    "Score (Experiment02)": 1.4793000221
-  },
-  {
-    "Signature ID": "KEGG_ALZHEIMERS_DISEASE",
-    "Overlap (Experiment01)": 9.0,
-    "Overlap (Experiment02)": 9.0,
-    "adj p-val (Experiment01)": 0.9862563776,
-    "adj p-val (Experiment02)": 0.972878886,
-    "Score (Experiment01)": -0.0366000012,
-    "Score (Experiment02)": 0.0653000027
-  },
-  {
-    "Signature ID": "KEGG_ARRHYTHMOGENIC_RIGHT_VENTRICULAR_CARDIOMYOPATHY_ARVC",
-    "Overlap (Experiment01)": 13.5,
-    "Overlap (Experiment02)": 13.5,
-    "adj p-val (Experiment01)": 0.490673026,
-    "adj p-val (Experiment02)": 0.972878886,
-    "Score (Experiment01)": -2.0330998898,
-    "Score (Experiment02)": 0.136800006
-  },
-  {
-    "Signature ID": "KEGG_AXON_GUIDANCE",
-    "Overlap (Experiment01)": 10.1,
-    "Overlap (Experiment02)": 10.1,
-    "adj p-val (Experiment01)": 0.397979798,
-    "adj p-val (Experiment02)": 0.1161145821,
-    "Score (Experiment01)": -2.3849999905,
-    "Score (Experiment02)": -3.3032999039
-  },
-  {
-    "Signature ID": "KEGG_CALCIUM_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 10.1,
-    "Overlap (Experiment02)": 10.1,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.8952661477,
-    "Score (Experiment01)": -0.5792000294,
-    "Score (Experiment02)": 0.5415999889
-  },
-  {
-    "Signature ID": "KEGG_CELL_CYCLE",
-    "Overlap (Experiment01)": 20.0,
-    "Overlap (Experiment02)": 20.0,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.0281428571,
-    "Score (Experiment01)": -0.6201999784,
-    "Score (Experiment02)": -4.1146001816
-  },
-  {
-    "Signature ID": "KEGG_CHEMOKINE_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 9.5,
-    "Overlap (Experiment02)": 9.5,
-    "adj p-val (Experiment01)": 0.7495982227,
-    "adj p-val (Experiment02)": 0.9140264404,
-    "Score (Experiment01)": -1.279399991,
-    "Score (Experiment02)": -0.3693999946
-  },
-  {
-    "Signature ID": "KEGG_CHRONIC_MYELOID_LEUKEMIA",
-    "Overlap (Experiment01)": 20.5,
-    "Overlap (Experiment02)": 20.5,
-    "adj p-val (Experiment01)": 0.4855115758,
-    "adj p-val (Experiment02)": 0.9007255305,
-    "Score (Experiment01)": -2.2716999054,
-    "Score (Experiment02)": -0.5097000003
-  },
-  {
-    "Signature ID": "KEGG_ENDOCYTOSIS",
-    "Overlap (Experiment01)": 16.6,
-    "Overlap (Experiment02)": 16.6,
-    "adj p-val (Experiment01)": 0.7558310914,
-    "adj p-val (Experiment02)": 0.5489444007,
-    "Score (Experiment01)": -1.2750999928,
-    "Score (Experiment02)": -1.7342000008
-  },
-  {
-    "Signature ID": "KEGG_ENDOMETRIAL_CANCER",
-    "Overlap (Experiment01)": 21.2,
-    "Overlap (Experiment02)": 21.2,
-    "adj p-val (Experiment01)": 0.9324784538,
-    "adj p-val (Experiment02)": 0.5631557232,
-    "Score (Experiment01)": 0.4325999916,
-    "Score (Experiment02)": 1.6136000156
-  },
-  {
-    "Signature ID": "KEGG_ERBB_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 21.8,
-    "Overlap (Experiment02)": 21.8,
-    "adj p-val (Experiment01)": 0.9921722114,
-    "adj p-val (Experiment02)": 0.995951417,
-    "Score (Experiment01)": -0.0115999999,
-    "Score (Experiment02)": 0.0248000007
-  },
-  {
-    "Signature ID": "KEGG_FC_GAMMA_R_MEDIATED_PHAGOCYTOSIS",
-    "Overlap (Experiment01)": 16.7,
-    "Overlap (Experiment02)": 16.7,
-    "adj p-val (Experiment01)": 0.6934726846,
-    "adj p-val (Experiment02)": 0.5361727169,
-    "Score (Experiment01)": -1.3504999876,
-    "Score (Experiment02)": -1.8387000561
-  },
-  {
-    "Signature ID": "KEGG_FOCAL_ADHESION",
-    "Overlap (Experiment01)": 14.1,
-    "Overlap (Experiment02)": 14.1,
-    "adj p-val (Experiment01)": 0.7588232462,
-    "adj p-val (Experiment02)": 0.8825917733,
-    "Score (Experiment01)": -1.2244000435,
-    "Score (Experiment02)": 0.6337000132
-  },
-  {
-    "Signature ID": "KEGG_GLIOMA",
-    "Overlap (Experiment01)": 15.4,
-    "Overlap (Experiment02)": 15.4,
-    "adj p-val (Experiment01)": 0.774218107,
-    "adj p-val (Experiment02)": 0.6670543838,
-    "Score (Experiment01)": -1.1024999619,
-    "Score (Experiment02)": -1.4332000017
-  },
-  {
-    "Signature ID": "KEGG_GLYCOLYSIS_GLUCONEOGENESIS",
-    "Overlap (Experiment01)": 19.4,
-    "Overlap (Experiment02)": 19.4,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.8223730185,
-    "Score (Experiment01)": -0.4532000124,
-    "Score (Experiment02)": 0.9588000178
-  },
-  {
-    "Signature ID": "KEGG_GNRH_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 11.9,
-    "Overlap (Experiment02)": 11.9,
-    "adj p-val (Experiment01)": 0.6934726846,
-    "adj p-val (Experiment02)": 0.8399392475,
-    "Score (Experiment01)": -1.4687000513,
-    "Score (Experiment02)": 0.9742000103
-  },
-  {
-    "Signature ID": "KEGG_HUNTINGTONS_DISEASE",
-    "Overlap (Experiment01)": 10.4,
-    "Overlap (Experiment02)": 10.4,
-    "adj p-val (Experiment01)": 0.6934726846,
-    "adj p-val (Experiment02)": 0.1021784232,
-    "Score (Experiment01)": 1.477699995,
-    "Score (Experiment02)": 3.5574998856
-  },
-  {
-    "Signature ID": "KEGG_INSULIN_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 19.7,
-    "Overlap (Experiment02)": 19.7,
-    "adj p-val (Experiment01)": 0.490673026,
-    "adj p-val (Experiment02)": 0.9007255305,
-    "Score (Experiment01)": -2.2506000996,
-    "Score (Experiment02)": -0.5389000177
-  },
-  {
-    "Signature ID": "KEGG_LEUKOCYTE_TRANSENDOTHELIAL_MIGRATION",
-    "Overlap (Experiment01)": 13.8,
-    "Overlap (Experiment02)": 13.8,
-    "adj p-val (Experiment01)": 0.7218635491,
-    "adj p-val (Experiment02)": 0.5246641964,
-    "Score (Experiment01)": -1.3529000282,
-    "Score (Experiment02)": -1.8353999853
-  },
-  {
-    "Signature ID": "KEGG_LONG_TERM_POTENTIATION",
-    "Overlap (Experiment01)": 14.3,
-    "Overlap (Experiment02)": 14.3,
-    "adj p-val (Experiment01)": 0.5136503067,
-    "adj p-val (Experiment02)": 0.9533616945,
-    "Score (Experiment01)": -2.0241000652,
-    "Score (Experiment02)": -0.2524999976
-  },
-  {
-    "Signature ID": "KEGG_MAPK_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 15.4,
-    "Overlap (Experiment02)": 15.4,
-    "adj p-val (Experiment01)": 0.197,
-    "adj p-val (Experiment02)": 0.8770936184,
-    "Score (Experiment01)": -4.7045001984,
-    "Score (Experiment02)": -0.5877000093
-  },
-  {
-    "Signature ID": "KEGG_MTOR_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 25.0,
-    "Overlap (Experiment02)": 25.0,
-    "adj p-val (Experiment01)": 0.490673026,
-    "adj p-val (Experiment02)": 0.356584136,
-    "Score (Experiment01)": -2.1094999313,
-    "Score (Experiment02)": -2.497699976
-  },
-  {
-    "Signature ID": "KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY",
-    "Overlap (Experiment01)": 9.5,
-    "Overlap (Experiment02)": 9.5,
-    "adj p-val (Experiment01)": 0.7609296103,
-    "adj p-val (Experiment02)": 0.868185349,
-    "Score (Experiment01)": -1.2023999691,
-    "Score (Experiment02)": -0.7827000022
-  },
-  {
-    "Signature ID": "KEGG_NEUROTROPHIN_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 21.4,
-    "Overlap (Experiment02)": 21.4,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.868185349,
-    "Score (Experiment01)": -0.622600019,
-    "Score (Experiment02)": 0.7240999937
-  },
-  {
-    "Signature ID": "KEGG_NON_SMALL_CELL_LUNG_CANCER",
-    "Overlap (Experiment01)": 20.4,
-    "Overlap (Experiment02)": 20.4,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.868185349,
-    "Score (Experiment01)": -0.5523999929,
-    "Score (Experiment02)": 0.7008000016
-  },
-  {
-    "Signature ID": "KEGG_OOCYTE_MEIOSIS",
-    "Overlap (Experiment01)": 10.6,
-    "Overlap (Experiment02)": 10.6,
-    "adj p-val (Experiment01)": 0.9778326944,
-    "adj p-val (Experiment02)": 0.0281428571,
-    "Score (Experiment01)": 0.1017000005,
-    "Score (Experiment02)": -4.3480000496
-  },
-  {
-    "Signature ID": "KEGG_PATHOGENIC_ESCHERICHIA_COLI_INFECTION",
-    "Overlap (Experiment01)": 17.9,
-    "Overlap (Experiment02)": 17.9,
-    "adj p-val (Experiment01)": 0.3158892128,
-    "adj p-val (Experiment02)": 0.850510729,
-    "Score (Experiment01)": 2.9951000214,
-    "Score (Experiment02)": -0.8970999718
-  },
-  {
-    "Signature ID": "KEGG_PATHWAYS_IN_CANCER",
-    "Overlap (Experiment01)": 11.7,
-    "Overlap (Experiment02)": 11.7,
-    "adj p-val (Experiment01)": 0.4423652695,
-    "adj p-val (Experiment02)": 0.9140264404,
-    "Score (Experiment01)": -2.3984000683,
-    "Score (Experiment02)": -0.3170999885
-  },
-  {
-    "Signature ID": "KEGG_PROGESTERONE_MEDIATED_OOCYTE_MATURATION",
-    "Overlap (Experiment01)": 15.3,
-    "Overlap (Experiment02)": 15.3,
-    "adj p-val (Experiment01)": 0.5181339978,
-    "adj p-val (Experiment02)": 0.3103339635,
-    "Score (Experiment01)": -1.9522999525,
-    "Score (Experiment02)": -2.8118000031
-  },
-  {
-    "Signature ID": "KEGG_PROSTATE_CANCER",
-    "Overlap (Experiment01)": 22.5,
-    "Overlap (Experiment02)": 22.5,
-    "adj p-val (Experiment01)": 0.9324784538,
-    "adj p-val (Experiment02)": 0.9051337211,
-    "Score (Experiment01)": -0.3698000014,
-    "Score (Experiment02)": -0.4873000085
-  },
-  {
-    "Signature ID": "KEGG_PURINE_METABOLISM",
-    "Overlap (Experiment01)": 6.9,
-    "Overlap (Experiment02)": 6.9,
-    "adj p-val (Experiment01)": 0.6785866477,
-    "adj p-val (Experiment02)": 0.7204806688,
-    "Score (Experiment01)": -1.6089999676,
-    "Score (Experiment02)": -1.2365000248
-  },
-  {
-    "Signature ID": "KEGG_REGULATION_OF_ACTIN_CYTOSKELETON",
-    "Overlap (Experiment01)": 19.7,
-    "Overlap (Experiment02)": 19.7,
-    "adj p-val (Experiment01)": 0.3158892128,
-    "adj p-val (Experiment02)": 0.1161145821,
-    "Score (Experiment01)": -2.8303000927,
-    "Score (Experiment02)": -3.0759000778
-  },
-  {
-    "Signature ID": "KEGG_RENAL_CELL_CARCINOMA",
-    "Overlap (Experiment01)": 21.4,
-    "Overlap (Experiment02)": 21.4,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.974333611,
-    "Score (Experiment01)": 0.628000021,
-    "Score (Experiment02)": 0.0559
-  },
-  {
-    "Signature ID": "KEGG_RIBOSOME",
-    "Overlap (Experiment01)": 17.0,
-    "Overlap (Experiment02)": 17.0,
-    "adj p-val (Experiment01)": 0.9353758497,
-    "adj p-val (Experiment02)": 0.5462495556,
-    "Score (Experiment01)": -0.3391000032,
-    "Score (Experiment02)": -1.7764999866
-  },
-  {
-    "Signature ID": "KEGG_RNA_DEGRADATION",
-    "Overlap (Experiment01)": 16.9,
-    "Overlap (Experiment02)": 16.9,
-    "adj p-val (Experiment01)": 0.490673026,
-    "adj p-val (Experiment02)": 0.7521818182,
-    "Score (Experiment01)": 2.1452999115,
-    "Score (Experiment02)": -1.0851999521
-  },
-  {
-    "Signature ID": "KEGG_SPLICEOSOME",
-    "Overlap (Experiment01)": 28.3,
-    "Overlap (Experiment02)": 28.3,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.0395582329,
-    "Score (Experiment01)": -0.4713000059,
-    "Score (Experiment02)": 3.9391000271
-  },
-  {
-    "Signature ID": "KEGG_TIGHT_JUNCTION",
-    "Overlap (Experiment01)": 23.5,
-    "Overlap (Experiment02)": 23.5,
-    "adj p-val (Experiment01)": 0.7609296103,
-    "adj p-val (Experiment02)": 0.8952661477,
-    "Score (Experiment01)": -1.1541999578,
-    "Score (Experiment02)": 0.591899991
-  },
-  {
-    "Signature ID": "KEGG_T_CELL_RECEPTOR_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 15.7,
-    "Overlap (Experiment02)": 15.7,
-    "adj p-val (Experiment01)": 0.6934726846,
-    "adj p-val (Experiment02)": 0.7204806688,
-    "Score (Experiment01)": -1.5458999872,
-    "Score (Experiment02)": -1.2450000048
-  },
-  {
-    "Signature ID": "KEGG_UBIQUITIN_MEDIATED_PROTEOLYSIS",
-    "Overlap (Experiment01)": 8.9,
-    "Overlap (Experiment02)": 8.9,
-    "adj p-val (Experiment01)": 0.6934726846,
-    "adj p-val (Experiment02)": 0.3103339635,
-    "Score (Experiment01)": -1.4932999611,
-    "Score (Experiment02)": -2.5304999352
-  },
-  {
-    "Signature ID": "KEGG_VASCULAR_SMOOTH_MUSCLE_CONTRACTION",
-    "Overlap (Experiment01)": 13.0,
-    "Overlap (Experiment02)": 13.0,
-    "adj p-val (Experiment01)": 0.774218107,
-    "adj p-val (Experiment02)": 0.8770936184,
-    "Score (Experiment01)": -1.144299984,
-    "Score (Experiment02)": 0.6431000233
-  },
-  {
-    "Signature ID": "KEGG_VASOPRESSIN_REGULATED_WATER_REABSORPTION",
-    "Overlap (Experiment01)": 25.0,
-    "Overlap (Experiment02)": 25.0,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.356584136,
-    "Score (Experiment01)": -0.4363999963,
-    "Score (Experiment02)": 2.2990999222
-  },
-  {
-    "Signature ID": "KEGG_WNT_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 7.9,
-    "Overlap (Experiment02)": 7.9,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.972878886,
-    "Score (Experiment01)": -0.4738000035,
-    "Score (Experiment02)": 0.072800003
-  },
-  {
-    "Signature ID": "WP_10Q11_21Q11_23_COPY_NUMBER_VARIATION_SYNDROME",
-    "Overlap (Experiment01)": 18.0,
-    "Overlap (Experiment02)": 18.0,
-    "adj p-val (Experiment01)": 0.7206052632,
-    "adj p-val (Experiment02)": 0.972878886,
-    "Score (Experiment01)": -1.3934999704,
-    "Score (Experiment02)": 0.1464000046
-  },
-  {
-    "Signature ID": "WP_15Q11Q13_COPY_NUMBER_VARIATION",
-    "Overlap (Experiment01)": 18.6,
-    "Overlap (Experiment02)": 18.6,
-    "adj p-val (Experiment01)": 0.9921722114,
-    "adj p-val (Experiment02)": 0.5726744186,
-    "Score (Experiment01)": 0.0390000008,
-    "Score (Experiment02)": 1.5178999901
-  },
-  {
-    "Signature ID": "WP_16P11_2_PROXIMAL_DELETION_SYNDROME",
-    "Overlap (Experiment01)": 15.8,
-    "Overlap (Experiment02)": 15.8,
-    "adj p-val (Experiment01)": 0.397979798,
-    "adj p-val (Experiment02)": 0.670101794,
-    "Score (Experiment01)": 2.5167000294,
-    "Score (Experiment02)": 1.3474999666
-  },
-  {
-    "Signature ID": "WP_17Q12_COPY_NUMBER_VARIATION_SYNDROME",
-    "Overlap (Experiment01)": 11.0,
-    "Overlap (Experiment02)": 11.0,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.9533616945,
-    "Score (Experiment01)": 0.5964000225,
-    "Score (Experiment02)": 0.2450000048
-  },
-  {
-    "Signature ID": "WP_22Q11_2_COPY_NUMBER_VARIATION_SYNDROME",
-    "Overlap (Experiment01)": 13.4,
-    "Overlap (Experiment02)": 13.4,
-    "adj p-val (Experiment01)": 0.3158892128,
-    "adj p-val (Experiment02)": 0.5246641964,
-    "Score (Experiment01)": 2.6120998859,
-    "Score (Experiment02)": 1.9023000002
-  },
-  {
-    "Signature ID": "WP_2Q37_COPY_NUMBER_VARIATION_SYNDROME",
-    "Overlap (Experiment01)": 8.3,
-    "Overlap (Experiment02)": 8.3,
-    "adj p-val (Experiment01)": 0.5136503067,
-    "adj p-val (Experiment02)": 0.4324054674,
-    "Score (Experiment01)": -2.0476000309,
-    "Score (Experiment02)": -2.2265999317
-  },
-  {
-    "Signature ID": "WP_3Q29_COPY_NUMBER_VARIATION_SYNDROME",
-    "Overlap (Experiment01)": 20.3,
-    "Overlap (Experiment02)": 20.3,
-    "adj p-val (Experiment01)": 0.8744195575,
-    "adj p-val (Experiment02)": 0.9051337211,
-    "Score (Experiment01)": 0.8500000238,
-    "Score (Experiment02)": 0.4555000067
-  },
-  {
-    "Signature ID": "WP_4_HYDROXYTAMOXIFEN_DEXAMETHASONE_AND_RETINOIC_ACIDS_REGULATION_OF_P27_EXPRESSION",
-    "Overlap (Experiment01)": 61.1,
-    "Overlap (Experiment02)": 61.1,
-    "adj p-val (Experiment01)": 0.3158892128,
-    "adj p-val (Experiment02)": 0.1645781119,
-    "Score (Experiment01)": -2.9031999111,
-    "Score (Experiment02)": -2.9888000488
-  },
-  {
-    "Signature ID": "WP_5Q35_COPY_NUMBER_VARIATION",
-    "Overlap (Experiment01)": 12.6,
-    "Overlap (Experiment02)": 12.6,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.8462923351,
-    "Score (Experiment01)": 0.5748000145,
-    "Score (Experiment02)": -0.9635000229
-  },
-  {
-    "Signature ID": "WP_7Q11_23_COPY_NUMBER_VARIATION_SYNDROME",
-    "Overlap (Experiment01)": 20.6,
-    "Overlap (Experiment02)": 20.6,
-    "adj p-val (Experiment01)": 0.6934726846,
-    "adj p-val (Experiment02)": 0.4331151065,
-    "Score (Experiment01)": -1.6884000301,
-    "Score (Experiment02)": -2.1480998993
-  },
-  {
-    "Signature ID": "WP_ADIPOGENESIS",
-    "Overlap (Experiment01)": 13.7,
-    "Overlap (Experiment02)": 13.7,
-    "adj p-val (Experiment01)": 0.5016977929,
-    "adj p-val (Experiment02)": 0.868185349,
-    "Score (Experiment01)": -2.0650999546,
-    "Score (Experiment02)": 0.7324000001
-  },
-  {
-    "Signature ID": "WP_AGE_RAGE_PATHWAY",
-    "Overlap (Experiment01)": 15.2,
-    "Overlap (Experiment02)": 15.2,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.3450875857,
-    "Score (Experiment01)": 0.4110000134,
-    "Score (Experiment02)": 2.5387001038
-  },
-  {
-    "Signature ID": "WP_ALZHEIMER_39_S_DISEASE",
-    "Overlap (Experiment01)": 15.7,
-    "Overlap (Experiment02)": 15.7,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.972878886,
-    "Score (Experiment01)": -0.4636999965,
-    "Score (Experiment02)": 0.0931999981
-  },
-  {
-    "Signature ID": "WP_ALZHEIMER_39_S_DISEASE_AND_MIRNA_EFFECTS",
-    "Overlap (Experiment01)": 15.4,
-    "Overlap (Experiment02)": 15.4,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.972878886,
-    "Score (Experiment01)": -0.4629999995,
-    "Score (Experiment02)": 0.0908999965
-  },
-  {
-    "Signature ID": "WP_AMP_ACTIVATED_PROTEIN_KINASE_SIGNALING",
-    "Overlap (Experiment01)": 22.4,
-    "Overlap (Experiment02)": 22.4,
-    "adj p-val (Experiment01)": 0.7609296103,
-    "adj p-val (Experiment02)": 0.729494538,
-    "Score (Experiment01)": -1.1694999933,
-    "Score (Experiment02)": -1.2010999918
-  },
-  {
-    "Signature ID": "WP_ANDROGEN_RECEPTOR_NETWORK_IN_PROSTATE_CANCER",
-    "Overlap (Experiment01)": 26.6,
-    "Overlap (Experiment02)": 26.6,
-    "adj p-val (Experiment01)": 0.7609296103,
-    "adj p-val (Experiment02)": 0.9140264404,
-    "Score (Experiment01)": -1.2035000324,
-    "Score (Experiment02)": -0.3495000005
-  },
-  {
-    "Signature ID": "WP_ANDROGEN_RECEPTOR_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 21.8,
-    "Overlap (Experiment02)": 21.8,
-    "adj p-val (Experiment01)": 0.6934726846,
-    "adj p-val (Experiment02)": 0.3628639335,
-    "Score (Experiment01)": 1.5999000072,
-    "Score (Experiment02)": 2.3217999935
-  },
-  {
-    "Signature ID": "WP_ANGIOPOIETIN_LIKE_PROTEIN_8_REGULATORY_PATHWAY",
-    "Overlap (Experiment01)": 23.5,
-    "Overlap (Experiment02)": 23.5,
-    "adj p-val (Experiment01)": 0.6934726846,
-    "adj p-val (Experiment02)": 0.7204806688,
-    "Score (Experiment01)": -1.3946000338,
-    "Score (Experiment02)": -1.2446000576
-  },
-  {
-    "Signature ID": "WP_APOPTOSIS",
-    "Overlap (Experiment01)": 11.4,
-    "Overlap (Experiment02)": 11.4,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.8462923351,
-    "Score (Experiment01)": -0.4541000128,
-    "Score (Experiment02)": -0.8913999796
-  },
-  {
-    "Signature ID": "WP_APOPTOSIS_MODULATION_AND_SIGNALING",
-    "Overlap (Experiment01)": 10.9,
-    "Overlap (Experiment02)": 10.9,
-    "adj p-val (Experiment01)": 0.9014267623,
-    "adj p-val (Experiment02)": 0.9140264404,
-    "Score (Experiment01)": 0.8205999732,
-    "Score (Experiment02)": -0.3917999864
-  },
-  {
-    "Signature ID": "WP_APOPTOSIS_RELATED_NETWORK_DUE_TO_ALTERED_NOTCH3_IN_OVARIAN_CANCER",
-    "Overlap (Experiment01)": 24.5,
-    "Overlap (Experiment02)": 24.5,
-    "adj p-val (Experiment01)": 0.3158892128,
-    "adj p-val (Experiment02)": 0.6670543838,
-    "Score (Experiment01)": -3.132600069,
-    "Score (Experiment02)": -1.4203000069
-  },
-  {
-    "Signature ID": "WP_ARRHYTHMOGENIC_RIGHT_VENTRICULAR_CARDIOMYOPATHY",
-    "Overlap (Experiment01)": 13.5,
-    "Overlap (Experiment02)": 13.5,
-    "adj p-val (Experiment01)": 0.490673026,
-    "adj p-val (Experiment02)": 0.972878886,
-    "Score (Experiment01)": -2.173899889,
-    "Score (Experiment02)": 0.1361999959
-  },
-  {
-    "Signature ID": "WP_ATM_SIGNALING_IN_DEVELOPMENT_AND_DISEASE",
-    "Overlap (Experiment01)": 44.4,
-    "Overlap (Experiment02)": 44.4,
-    "adj p-val (Experiment01)": 0.4653543307,
-    "adj p-val (Experiment02)": 0.972878886,
-    "Score (Experiment01)": 2.2825000286,
-    "Score (Experiment02)": -0.1039000005
-  },
-  {
-    "Signature ID": "WP_ATM_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 30.0,
-    "Overlap (Experiment02)": 30.0,
-    "adj p-val (Experiment01)": 0.5181339978,
-    "adj p-val (Experiment02)": 0.9140264404,
-    "Score (Experiment01)": 1.9991999865,
-    "Score (Experiment02)": -0.3632999957
-  },
-  {
-    "Signature ID": "WP_A_NETWORK_MAP_OF_MACROPHAGE_STIMULATING_PROTEIN_MSP_SIGNALING",
-    "Overlap (Experiment01)": 25.6,
-    "Overlap (Experiment02)": 25.6,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.972878886,
-    "Score (Experiment01)": -0.4948000014,
-    "Score (Experiment02)": 0.1204999983
-  },
-  {
-    "Signature ID": "WP_BDNF_TRKB_SIGNALING",
-    "Overlap (Experiment01)": 42.4,
-    "Overlap (Experiment02)": 42.4,
-    "adj p-val (Experiment01)": 0.490673026,
-    "adj p-val (Experiment02)": 0.4851392663,
-    "Score (Experiment01)": -2.1656000614,
-    "Score (Experiment02)": -1.9448000193
-  },
-  {
-    "Signature ID": "WP_BRAIN_DERIVED_NEUROTROPHIC_FACTOR_BDNF_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 25.5,
-    "Overlap (Experiment02)": 25.5,
-    "adj p-val (Experiment01)": 0.490673026,
-    "adj p-val (Experiment02)": 0.9140264404,
-    "Score (Experiment01)": -2.3166999817,
-    "Score (Experiment02)": -0.3844000101
-  },
-  {
-    "Signature ID": "WP_BREAST_CANCER_PATHWAY",
-    "Overlap (Experiment01)": 13.0,
-    "Overlap (Experiment02)": 13.0,
-    "adj p-val (Experiment01)": 0.7609296103,
-    "adj p-val (Experiment02)": 0.9140264404,
-    "Score (Experiment01)": 1.1157000065,
-    "Score (Experiment02)": -0.3738000095
-  },
-  {
-    "Signature ID": "WP_B_CELL_RECEPTOR_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 25.0,
-    "Overlap (Experiment02)": 25.0,
-    "adj p-val (Experiment01)": 0.6934726846,
-    "adj p-val (Experiment02)": 0.8928073405,
-    "Score (Experiment01)": -1.5010000467,
-    "Score (Experiment02)": -0.578700006
-  },
-  {
-    "Signature ID": "WP_CALCIUM_REGULATION_IN_CARDIAC_CELLS",
-    "Overlap (Experiment01)": 6.6,
-    "Overlap (Experiment02)": 6.6,
-    "adj p-val (Experiment01)": 0.9014267623,
-    "adj p-val (Experiment02)": 0.972878886,
-    "Score (Experiment01)": 0.7781999707,
-    "Score (Experiment02)": 0.1067000031
-  },
-  {
-    "Signature ID": "WP_CAMKK2_PATHWAY",
-    "Overlap (Experiment01)": 33.3,
-    "Overlap (Experiment02)": 33.3,
-    "adj p-val (Experiment01)": 0.340021575,
-    "adj p-val (Experiment02)": 0.4331151065,
-    "Score (Experiment01)": -2.5302000046,
-    "Score (Experiment02)": -2.1073000431
-  },
-  {
-    "Signature ID": "WP_CARDIAC_HYPERTROPHIC_RESPONSE",
-    "Overlap (Experiment01)": 18.2,
-    "Overlap (Experiment02)": 18.2,
-    "adj p-val (Experiment01)": 0.7570670753,
-    "adj p-val (Experiment02)": 0.934168204,
-    "Score (Experiment01)": -1.2233999968,
-    "Score (Experiment02)": 0.2854000032
-  },
-  {
-    "Signature ID": "WP_CELL_CYCLE",
-    "Overlap (Experiment01)": 20.8,
-    "Overlap (Experiment02)": 20.8,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.0395582329,
-    "Score (Experiment01)": -0.6270999908,
-    "Score (Experiment02)": -4.3157000542
-  },
-  {
-    "Signature ID": "WP_CHEMOKINE_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 10.9,
-    "Overlap (Experiment02)": 10.9,
-    "adj p-val (Experiment01)": 0.7375654605,
-    "adj p-val (Experiment02)": 0.9140264404,
-    "Score (Experiment01)": -1.2921999693,
-    "Score (Experiment02)": -0.3738999963
-  },
-  {
-    "Signature ID": "WP_CILIARY_LANDSCAPE",
-    "Overlap (Experiment01)": 13.5,
-    "Overlap (Experiment02)": 13.5,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.356584136,
-    "Score (Experiment01)": -0.5753999949,
-    "Score (Experiment02)": -2.4082999229
-  },
-  {
-    "Signature ID": "WP_CILIOPATHIES",
-    "Overlap (Experiment01)": 7.1,
-    "Overlap (Experiment02)": 7.1,
-    "adj p-val (Experiment01)": 0.9921722114,
-    "adj p-val (Experiment02)": 0.4331151065,
-    "Score (Experiment01)": -0.0109000001,
-    "Score (Experiment02)": -2.1373999119
-  },
-  {
-    "Signature ID": "WP_CIRCADIAN_RHYTHM_GENES",
-    "Overlap (Experiment01)": 12.9,
-    "Overlap (Experiment02)": 12.9,
-    "adj p-val (Experiment01)": 0.9778326944,
-    "adj p-val (Experiment02)": 0.4374881875,
-    "Score (Experiment01)": 0.1729000062,
-    "Score (Experiment02)": 2.1126000881
-  },
-  {
-    "Signature ID": "WP_CKAP4_SIGNALING_PATHWAY_MAP",
-    "Overlap (Experiment01)": 11.7,
-    "Overlap (Experiment02)": 11.7,
-    "adj p-val (Experiment01)": 0.6777192212,
-    "adj p-val (Experiment02)": 0.8751275895,
-    "Score (Experiment01)": -1.6780999899,
-    "Score (Experiment02)": -0.7226999998
-  },
-  {
-    "Signature ID": "WP_CLEAR_CELL_RENAL_CELL_CARCINOMA_PATHWAYS",
-    "Overlap (Experiment01)": 20.0,
-    "Overlap (Experiment02)": 20.0,
-    "adj p-val (Experiment01)": 0.490673026,
-    "adj p-val (Experiment02)": 0.5462495556,
-    "Score (Experiment01)": -2.0922000408,
-    "Score (Experiment02)": -1.7733999491
-  },
-  {
-    "Signature ID": "WP_CLOCK_CONTROLLED_AUTOPHAGY_IN_BONE_METABOLISM",
-    "Overlap (Experiment01)": 12.5,
-    "Overlap (Experiment02)": 12.5,
-    "adj p-val (Experiment01)": 0.9827811436,
-    "adj p-val (Experiment02)": 0.8751275895,
-    "Score (Experiment01)": -0.0854000002,
-    "Score (Experiment02)": 0.7292000055
-  },
-  {
-    "Signature ID": "WP_CORTICOTROPIN_RELEASING_HORMONE_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 15.1,
-    "Overlap (Experiment02)": 15.1,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.5246641964,
-    "Score (Experiment01)": 0.5802999735,
-    "Score (Experiment02)": 1.9194999933
-  },
-  {
-    "Signature ID": "WP_CYTOPLASMIC_RIBOSOMAL_PROTEINS",
-    "Overlap (Experiment01)": 18.2,
-    "Overlap (Experiment02)": 18.2,
-    "adj p-val (Experiment01)": 0.7767215771,
-    "adj p-val (Experiment02)": 0.414711897,
-    "Score (Experiment01)": -1.1096999645,
-    "Score (Experiment02)": -2.1554000378
-  },
-  {
-    "Signature ID": "WP_DNA_DAMAGE_RESPONSE",
-    "Overlap (Experiment01)": 24.6,
-    "Overlap (Experiment02)": 24.6,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.7470017637,
-    "Score (Experiment01)": 0.6482999921,
-    "Score (Experiment02)": -1.1914999485
-  },
-  {
-    "Signature ID": "WP_DNA_DAMAGE_RESPONSE_ONLY_ATM_DEPENDENT",
-    "Overlap (Experiment01)": 12.7,
-    "Overlap (Experiment02)": 12.7,
-    "adj p-val (Experiment01)": 0.9778326944,
-    "adj p-val (Experiment02)": 0.1161145821,
-    "Score (Experiment01)": -0.1472000033,
-    "Score (Experiment02)": 3.1168999672
-  },
-  {
-    "Signature ID": "WP_DNA_IR_DAMAGE_AND_CELLULAR_RESPONSE_VIA_ATR",
-    "Overlap (Experiment01)": 37.0,
-    "Overlap (Experiment02)": 37.0,
-    "adj p-val (Experiment01)": 0.6777192212,
-    "adj p-val (Experiment02)": 0.972878886,
-    "Score (Experiment01)": 1.700600028,
-    "Score (Experiment02)": -0.0925000012
-  },
-  {
-    "Signature ID": "WP_DNA_IR_DOUBLE_STRAND_BREAKS_AND_CELLULAR_RESPONSE_VIA_ATM",
-    "Overlap (Experiment01)": 41.8,
-    "Overlap (Experiment02)": 41.8,
-    "adj p-val (Experiment01)": 0.490673026,
-    "adj p-val (Experiment02)": 0.7487876272,
-    "Score (Experiment01)": 2.0799999237,
-    "Score (Experiment02)": -1.2015000582
-  },
-  {
-    "Signature ID": "WP_DNA_REPAIR_PATHWAYS_FULL_NETWORK",
-    "Overlap (Experiment01)": 17.5,
-    "Overlap (Experiment02)": 17.5,
-    "adj p-val (Experiment01)": 0.340021575,
-    "adj p-val (Experiment02)": 0.2907319953,
-    "Score (Experiment01)": 2.5738999844,
-    "Score (Experiment02)": -2.8248000145
-  },
-  {
-    "Signature ID": "WP_DNA_REPLICATION",
-    "Overlap (Experiment01)": 28.6,
-    "Overlap (Experiment02)": 28.6,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.0281428571,
-    "Score (Experiment01)": -0.5849000216,
-    "Score (Experiment02)": -6.0247001648
-  },
-  {
-    "Signature ID": "WP_DYRK1A_INVOLVEMENT_REGARDING_CELL_PROLIFERATION_IN_BRAIN_DEVELOPMENT",
-    "Overlap (Experiment01)": 22.6,
-    "Overlap (Experiment02)": 22.6,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.8525618743,
-    "Score (Experiment01)": 0.4923000038,
-    "Score (Experiment02)": 0.8741999865
-  },
-  {
-    "Signature ID": "WP_EBOLA_VIRUS_INFECTION_IN_HOST",
-    "Overlap (Experiment01)": 12.4,
-    "Overlap (Experiment02)": 12.4,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.9140264404,
-    "Score (Experiment01)": -0.6538000107,
-    "Score (Experiment02)": -0.3379999995
-  },
-  {
-    "Signature ID": "WP_ECTODERM_DIFFERENTIATION",
-    "Overlap (Experiment01)": 8.5,
-    "Overlap (Experiment02)": 8.5,
-    "adj p-val (Experiment01)": 0.6965452092,
-    "adj p-val (Experiment02)": 0.7521818182,
-    "Score (Experiment01)": -1.4048999548,
-    "Score (Experiment02)": -1.1308000088
-  },
-  {
-    "Signature ID": "WP_EGFR_TYROSINE_KINASE_INHIBITOR_RESISTANCE",
-    "Overlap (Experiment01)": 21.4,
-    "Overlap (Experiment02)": 21.4,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.8622484147,
-    "Score (Experiment01)": 0.6897000074,
-    "Score (Experiment02)": 0.8550000191
-  },
-  {
-    "Signature ID": "WP_EGF_EGFR_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 28.3,
-    "Overlap (Experiment02)": 28.3,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.7522187822,
-    "Score (Experiment01)": -0.481400013,
-    "Score (Experiment02)": 1.0135999918
-  },
-  {
-    "Signature ID": "WP_EMBRYONIC_STEM_CELL_PLURIPOTENCY_PATHWAYS",
-    "Overlap (Experiment01)": 11.2,
-    "Overlap (Experiment02)": 11.2,
-    "adj p-val (Experiment01)": 0.6934726846,
-    "adj p-val (Experiment02)": 0.7521818182,
-    "Score (Experiment01)": -1.4714000225,
-    "Score (Experiment02)": -1.1052999496
-  },
-  {
-    "Signature ID": "WP_ENDODERM_DIFFERENTIATION",
-    "Overlap (Experiment01)": 16.1,
-    "Overlap (Experiment02)": 16.1,
-    "adj p-val (Experiment01)": 0.6934726846,
-    "adj p-val (Experiment02)": 0.1021784232,
-    "Score (Experiment01)": -1.4988000393,
-    "Score (Experiment02)": -3.1603000164
-  },
-  {
-    "Signature ID": "WP_ENDOMETRIAL_CANCER",
-    "Overlap (Experiment01)": 19.0,
-    "Overlap (Experiment02)": 19.0,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.8825917733,
-    "Score (Experiment01)": -0.5055000186,
-    "Score (Experiment02)": 0.6287999749
-  },
-  {
-    "Signature ID": "WP_ENERGY_METABOLISM",
-    "Overlap (Experiment01)": 22.9,
-    "Overlap (Experiment02)": 22.9,
-    "adj p-val (Experiment01)": 0.2753319357,
-    "adj p-val (Experiment02)": 0.356584136,
-    "Score (Experiment01)": 3.1640000343,
-    "Score (Experiment02)": 2.3076999187
-  },
-  {
-    "Signature ID": "WP_EPITHELIAL_TO_MESENCHYMAL_TRANSITION_IN_COLORECTAL_CANCER",
-    "Overlap (Experiment01)": 9.9,
-    "Overlap (Experiment02)": 9.9,
-    "adj p-val (Experiment01)": 0.490673026,
-    "adj p-val (Experiment02)": 0.8952661477,
-    "Score (Experiment01)": 2.2253000736,
-    "Score (Experiment02)": -0.5368999839
-  },
-  {
-    "Signature ID": "WP_ERBB_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 21.1,
-    "Overlap (Experiment02)": 21.1,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.9270416481,
-    "Score (Experiment01)": 0.6729999781,
-    "Score (Experiment02)": 0.2838999927
-  },
-  {
-    "Signature ID": "WP_FACTORS_AND_PATHWAYS_AFFECTING_INSULIN_LIKE_GROWTH_FACTOR_IGF1_AKT_SIGNALING",
-    "Overlap (Experiment01)": 27.8,
-    "Overlap (Experiment02)": 27.8,
-    "adj p-val (Experiment01)": 0.6965452092,
-    "adj p-val (Experiment02)": 0.9140264404,
-    "Score (Experiment01)": 1.380300045,
-    "Score (Experiment02)": -0.407799989
-  },
-  {
-    "Signature ID": "WP_FAS_LIGAND_PATHWAY_AND_STRESS_INDUCTION_OF_HEAT_SHOCK_PROTEINS",
-    "Overlap (Experiment01)": 39.5,
-    "Overlap (Experiment02)": 39.5,
-    "adj p-val (Experiment01)": 0.7375654605,
-    "adj p-val (Experiment02)": 0.8525618743,
-    "Score (Experiment01)": -1.2734999657,
-    "Score (Experiment02)": -0.8252000213
-  },
-  {
-    "Signature ID": "WP_FOCAL_ADHESION",
-    "Overlap (Experiment01)": 14.1,
-    "Overlap (Experiment02)": 14.1,
-    "adj p-val (Experiment01)": 0.774218107,
-    "adj p-val (Experiment02)": 0.8828029114,
-    "Score (Experiment01)": -1.0453000069,
-    "Score (Experiment02)": 0.5633999705
-  },
-  {
-    "Signature ID": "WP_FOCAL_ADHESION_PI3K_AKT_MTOR_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 11.6,
-    "Overlap (Experiment02)": 11.6,
-    "adj p-val (Experiment01)": 0.9921722114,
-    "adj p-val (Experiment02)": 0.972878886,
-    "Score (Experiment01)": 0.0163000003,
-    "Score (Experiment02)": -0.110799998
-  },
-  {
-    "Signature ID": "WP_FRAGILE_X_SYNDROME",
-    "Overlap (Experiment01)": 21.5,
-    "Overlap (Experiment02)": 21.5,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.7522187822,
-    "Score (Experiment01)": 0.7501000166,
-    "Score (Experiment02)": 1.0630999804
-  },
-  {
-    "Signature ID": "WP_G1_TO_S_CELL_CYCLE_CONTROL",
-    "Overlap (Experiment01)": 21.9,
-    "Overlap (Experiment02)": 21.9,
-    "adj p-val (Experiment01)": 0.7609296103,
-    "adj p-val (Experiment02)": 0.0281428571,
-    "Score (Experiment01)": 1.1799999475,
-    "Score (Experiment02)": -4.5029001236
-  },
-  {
-    "Signature ID": "WP_GASTRIN_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 22.6,
-    "Overlap (Experiment02)": 22.6,
-    "adj p-val (Experiment01)": 0.9778326944,
-    "adj p-val (Experiment02)": 0.3450875857,
-    "Score (Experiment01)": -0.1630000025,
-    "Score (Experiment02)": 2.4525001049
-  },
-  {
-    "Signature ID": "WP_GLIOBLASTOMA_SIGNALING_PATHWAYS",
-    "Overlap (Experiment01)": 28.0,
-    "Overlap (Experiment02)": 28.0,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.9533616945,
-    "Score (Experiment01)": 0.5939000249,
-    "Score (Experiment02)": 0.2107000053
-  },
-  {
-    "Signature ID": "WP_GLYCOLYSIS_AND_GLUCONEOGENESIS",
-    "Overlap (Experiment01)": 26.7,
-    "Overlap (Experiment02)": 26.7,
-    "adj p-val (Experiment01)": 0.8418803419,
-    "adj p-val (Experiment02)": 0.7522187822,
-    "Score (Experiment01)": 0.9714999795,
-    "Score (Experiment02)": 1.1181999445
-  },
-  {
-    "Signature ID": "WP_G_PROTEIN_SIGNALING_PATHWAYS",
-    "Overlap (Experiment01)": 17.6,
-    "Overlap (Experiment02)": 17.6,
-    "adj p-val (Experiment01)": 0.6934726846,
-    "adj p-val (Experiment02)": 0.7487876272,
-    "Score (Experiment01)": 1.5097999573,
-    "Score (Experiment02)": -1.1490000486
-  },
-  {
-    "Signature ID": "WP_HEAD_AND_NECK_SQUAMOUS_CELL_CARCINOMA",
-    "Overlap (Experiment01)": 23.0,
-    "Overlap (Experiment02)": 23.0,
-    "adj p-val (Experiment01)": 0.9505974265,
-    "adj p-val (Experiment02)": 0.7521818182,
-    "Score (Experiment01)": -0.2617000043,
-    "Score (Experiment02)": -1.0908999443
-  },
-  {
-    "Signature ID": "WP_HEPATITIS_B_INFECTION",
-    "Overlap (Experiment01)": 11.9,
-    "Overlap (Experiment02)": 11.9,
-    "adj p-val (Experiment01)": 0.9783651102,
-    "adj p-val (Experiment02)": 0.670101794,
-    "Score (Experiment01)": -0.0865999982,
-    "Score (Experiment02)": 1.3572000265
-  },
-  {
-    "Signature ID": "WP_HEPATOCYTE_GROWTH_FACTOR_RECEPTOR_SIGNALING",
-    "Overlap (Experiment01)": 32.4,
-    "Overlap (Experiment02)": 32.4,
-    "adj p-val (Experiment01)": 0.8803462411,
-    "adj p-val (Experiment02)": 0.868185349,
-    "Score (Experiment01)": -0.8862000108,
-    "Score (Experiment02)": 0.7595000267
-  },
-  {
-    "Signature ID": "WP_HIPPO_MERLIN_SIGNALING_DYSREGULATION",
-    "Overlap (Experiment01)": 13.2,
-    "Overlap (Experiment02)": 13.2,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.4324054674,
-    "Score (Experiment01)": -0.4029999971,
-    "Score (Experiment02)": -2.1558001041
-  },
-  {
-    "Signature ID": "WP_HIPPO_SIGNALING_REGULATION_PATHWAYS",
-    "Overlap (Experiment01)": 15.3,
-    "Overlap (Experiment02)": 15.3,
-    "adj p-val (Experiment01)": 0.8276988913,
-    "adj p-val (Experiment02)": 0.850510729,
-    "Score (Experiment01)": 0.9478999972,
-    "Score (Experiment02)": 0.9369999766
-  },
-  {
-    "Signature ID": "WP_HISTONE_MODIFICATIONS",
-    "Overlap (Experiment01)": 24.6,
-    "Overlap (Experiment02)": 24.6,
-    "adj p-val (Experiment01)": 0.9778326944,
-    "adj p-val (Experiment02)": 0.1161145821,
-    "Score (Experiment01)": -0.1784999967,
-    "Score (Experiment02)": -3.3756000996
-  },
-  {
-    "Signature ID": "WP_IL_1_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 18.5,
-    "Overlap (Experiment02)": 18.5,
-    "adj p-val (Experiment01)": 0.5773335666,
-    "adj p-val (Experiment02)": 0.670101794,
-    "Score (Experiment01)": -1.9394999743,
-    "Score (Experiment02)": -1.3904999495
-  },
-  {
-    "Signature ID": "WP_IL_24_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 13.5,
-    "Overlap (Experiment02)": 13.5,
-    "adj p-val (Experiment01)": 0.9778326944,
-    "adj p-val (Experiment02)": 0.5631557232,
-    "Score (Experiment01)": -0.2459000051,
-    "Score (Experiment02)": -1.6147999763
-  },
-  {
-    "Signature ID": "WP_IL_2_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 27.0,
-    "Overlap (Experiment02)": 27.0,
-    "adj p-val (Experiment01)": 0.9921722114,
-    "adj p-val (Experiment02)": 0.5631557232,
-    "Score (Experiment01)": 0.0280000009,
-    "Score (Experiment02)": 1.6272000074
-  },
-  {
-    "Signature ID": "WP_IL_5_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 27.0,
-    "Overlap (Experiment02)": 27.0,
-    "adj p-val (Experiment01)": 0.954809202,
-    "adj p-val (Experiment02)": 0.5726744186,
-    "Score (Experiment01)": -0.2967999876,
-    "Score (Experiment02)": 1.5880000591
-  },
-  {
-    "Signature ID": "WP_INSULIN_SIGNALING",
-    "Overlap (Experiment01)": 21.9,
-    "Overlap (Experiment02)": 21.9,
-    "adj p-val (Experiment01)": 0.9324784538,
-    "adj p-val (Experiment02)": 0.9140264404,
-    "Score (Experiment01)": -0.4244999886,
-    "Score (Experiment02)": -0.4304000139
-  },
-  {
-    "Signature ID": "WP_INTEGRIN_MEDIATED_CELL_ADHESION",
-    "Overlap (Experiment01)": 20.6,
-    "Overlap (Experiment02)": 20.6,
-    "adj p-val (Experiment01)": 0.397979798,
-    "adj p-val (Experiment02)": 0.614808882,
-    "Score (Experiment01)": -2.4124999046,
-    "Score (Experiment02)": -1.5120999813
-  },
-  {
-    "Signature ID": "WP_INTERFERON_TYPE_I_SIGNALING_PATHWAYS",
-    "Overlap (Experiment01)": 27.8,
-    "Overlap (Experiment02)": 27.8,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.307012987,
-    "Score (Experiment01)": -0.4963000119,
-    "Score (Experiment02)": -2.8006000519
-  },
-  {
-    "Signature ID": "WP_JOUBERT_SYNDROME",
-    "Overlap (Experiment01)": 14.5,
-    "Overlap (Experiment02)": 14.5,
-    "adj p-val (Experiment01)": 0.6541312741,
-    "adj p-val (Experiment02)": 0.3628639335,
-    "Score (Experiment01)": 1.7215000391,
-    "Score (Experiment02)": -2.2511000633
-  },
-  {
-    "Signature ID": "WP_KIT_RECEPTOR_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 24.5,
-    "Overlap (Experiment02)": 24.5,
-    "adj p-val (Experiment01)": 0.6934726846,
-    "adj p-val (Experiment02)": 0.9051337211,
-    "Score (Experiment01)": -1.4667999744,
-    "Score (Experiment02)": 0.4726999998
-  },
-  {
-    "Signature ID": "WP_LEPTIN_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 22.5,
-    "Overlap (Experiment02)": 22.5,
-    "adj p-val (Experiment01)": 0.6934726846,
-    "adj p-val (Experiment02)": 0.974333611,
-    "Score (Experiment01)": -1.4599000216,
-    "Score (Experiment02)": 0.058600001
-  },
-  {
-    "Signature ID": "WP_MAPK_CASCADE",
-    "Overlap (Experiment01)": 30.3,
-    "Overlap (Experiment02)": 30.3,
-    "adj p-val (Experiment01)": 0.8744195575,
-    "adj p-val (Experiment02)": 0.8825917733,
-    "Score (Experiment01)": -0.8697000146,
-    "Score (Experiment02)": -0.5785999894
-  },
-  {
-    "Signature ID": "WP_MAPK_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 15.8,
-    "Overlap (Experiment02)": 15.8,
-    "adj p-val (Experiment01)": 0.3626813948,
-    "adj p-val (Experiment02)": 0.868185349,
-    "Score (Experiment01)": -2.4941000938,
-    "Score (Experiment02)": 0.7141000032
-  },
-  {
-    "Signature ID": "WP_MEASLES_VIRUS_INFECTION",
-    "Overlap (Experiment01)": 7.4,
-    "Overlap (Experiment02)": 7.4,
-    "adj p-val (Experiment01)": 0.9778326944,
-    "adj p-val (Experiment02)": 0.5556455727,
-    "Score (Experiment01)": 0.198300004,
-    "Score (Experiment02)": -1.6966999769
-  },
-  {
-    "Signature ID": "WP_MECHANOREGULATION_AND_PATHOLOGY_OF_YAP_TAZ_VIA_HIPPO_AND_NON_HIPPO_MECHANISMS",
-    "Overlap (Experiment01)": 21.3,
-    "Overlap (Experiment02)": 21.3,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.8773987512,
-    "Score (Experiment01)": -0.7070000172,
-    "Score (Experiment02)": 0.6370000243
-  },
-  {
-    "Signature ID": "WP_MECP2_AND_ASSOCIATED_RETT_SYNDROME",
-    "Overlap (Experiment01)": 19.2,
-    "Overlap (Experiment02)": 19.2,
-    "adj p-val (Experiment01)": 0.6934726846,
-    "adj p-val (Experiment02)": 0.5246641964,
-    "Score (Experiment01)": 1.4423999786,
-    "Score (Experiment02)": 1.8653000593
-  },
-  {
-    "Signature ID": "WP_MELANOMA",
-    "Overlap (Experiment01)": 14.7,
-    "Overlap (Experiment02)": 14.7,
-    "adj p-val (Experiment01)": 0.774218107,
-    "adj p-val (Experiment02)": 0.9270416481,
-    "Score (Experiment01)": -1.0799000263,
-    "Score (Experiment02)": 0.2705000043
-  },
-  {
-    "Signature ID": "WP_MESODERMAL_COMMITMENT_PATHWAY",
-    "Overlap (Experiment01)": 15.0,
-    "Overlap (Experiment02)": 15.0,
-    "adj p-val (Experiment01)": 0.9778326944,
-    "adj p-val (Experiment02)": 0.1997971602,
-    "Score (Experiment01)": -0.1014999971,
-    "Score (Experiment02)": -2.915899992
-  },
-  {
-    "Signature ID": "WP_METABOLIC_EPILEPTIC_DISORDERS",
-    "Overlap (Experiment01)": 16.3,
-    "Overlap (Experiment02)": 16.3,
-    "adj p-val (Experiment01)": 0.6934726846,
-    "adj p-val (Experiment02)": 0.5300728079,
-    "Score (Experiment01)": 1.5398000479,
-    "Score (Experiment02)": 1.9426000118
-  },
-  {
-    "Signature ID": "WP_METABOLIC_REPROGRAMMING_IN_COLON_CANCER",
-    "Overlap (Experiment01)": 26.2,
-    "Overlap (Experiment02)": 26.2,
-    "adj p-val (Experiment01)": 0.9778326944,
-    "adj p-val (Experiment02)": 0.9114712572,
-    "Score (Experiment01)": 0.2434999943,
-    "Score (Experiment02)": -0.3526000082
-  },
-  {
-    "Signature ID": "WP_MET_IN_TYPE_1_PAPILLARY_RENAL_CELL_CARCINOMA",
-    "Overlap (Experiment01)": 27.1,
-    "Overlap (Experiment02)": 27.1,
-    "adj p-val (Experiment01)": 0.7570670753,
-    "adj p-val (Experiment02)": 0.9270416481,
-    "Score (Experiment01)": -1.2366000414,
-    "Score (Experiment02)": -0.3169000149
-  },
-  {
-    "Signature ID": "WP_MICRORNAS_IN_CARDIOMYOCYTE_HYPERTROPHY",
-    "Overlap (Experiment01)": 9.6,
-    "Overlap (Experiment02)": 9.6,
-    "adj p-val (Experiment01)": 0.7767215771,
-    "adj p-val (Experiment02)": 0.972878886,
-    "Score (Experiment01)": 1.0491000414,
-    "Score (Experiment02)": -0.1308999956
-  },
-  {
-    "Signature ID": "WP_MICROTUBULE_CYTOSKELETON_REGULATION",
-    "Overlap (Experiment01)": 26.1,
-    "Overlap (Experiment02)": 26.1,
-    "adj p-val (Experiment01)": 0.3158892128,
-    "adj p-val (Experiment02)": 0.8652852418,
-    "Score (Experiment01)": -3.0876998901,
-    "Score (Experiment02)": 0.7809000015
-  },
-  {
-    "Signature ID": "WP_MIRNA_REGULATION_OF_DNA_DAMAGE_RESPONSE",
-    "Overlap (Experiment01)": 21.9,
-    "Overlap (Experiment02)": 21.9,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.7320180483,
-    "Score (Experiment01)": 0.7290999889,
-    "Score (Experiment02)": -1.1928999424
-  },
-  {
-    "Signature ID": "WP_MRNA_PROCESSING",
-    "Overlap (Experiment01)": 30.2,
-    "Overlap (Experiment02)": 30.2,
-    "adj p-val (Experiment01)": 0.5717538846,
-    "adj p-val (Experiment02)": 0.0281428571,
-    "Score (Experiment01)": 1.9124000072,
-    "Score (Experiment02)": 4.704199791
-  },
-  {
-    "Signature ID": "WP_MYOMETRIAL_RELAXATION_AND_CONTRACTION_PATHWAYS",
-    "Overlap (Experiment01)": 10.9,
-    "Overlap (Experiment02)": 10.9,
-    "adj p-val (Experiment01)": 0.7767215771,
-    "adj p-val (Experiment02)": 0.5726744186,
-    "Score (Experiment01)": 1.0343999863,
-    "Score (Experiment02)": 1.5985000134
-  },
-  {
-    "Signature ID": "WP_NETWORK_MAP_OF_SARS_COV_2_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 6.9,
-    "Overlap (Experiment02)": 6.9,
-    "adj p-val (Experiment01)": 0.9459210399,
-    "adj p-val (Experiment02)": 0.5489444007,
-    "Score (Experiment01)": -0.2673999965,
-    "Score (Experiment02)": -1.7760000229
-  },
-  {
-    "Signature ID": "WP_NEUROINFLAMMATION_AND_GLUTAMATERGIC_SIGNALING",
-    "Overlap (Experiment01)": 8.6,
-    "Overlap (Experiment02)": 8.6,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.6889431829,
-    "Score (Experiment01)": 0.6553999782,
-    "Score (Experiment02)": -1.3295999765
-  },
-  {
-    "Signature ID": "WP_NF1_COPY_NUMBER_VARIATION_SYNDROME",
-    "Overlap (Experiment01)": 16.7,
-    "Overlap (Experiment02)": 16.7,
-    "adj p-val (Experiment01)": 0.9324784538,
-    "adj p-val (Experiment02)": 0.116183062,
-    "Score (Experiment01)": 0.4442999959,
-    "Score (Experiment02)": -2.9008998871
-  },
-  {
-    "Signature ID": "WP_NONALCOHOLIC_FATTY_LIVER_DISEASE",
-    "Overlap (Experiment01)": 9.7,
-    "Overlap (Experiment02)": 9.7,
-    "adj p-val (Experiment01)": 0.6208660773,
-    "adj p-val (Experiment02)": 0.6435856574,
-    "Score (Experiment01)": -1.8457000256,
-    "Score (Experiment02)": -1.3995000124
-  },
-  {
-    "Signature ID": "WP_NON_SMALL_CELL_LUNG_CANCER",
-    "Overlap (Experiment01)": 16.7,
-    "Overlap (Experiment02)": 16.7,
-    "adj p-val (Experiment01)": 0.9778326944,
-    "adj p-val (Experiment02)": 0.7472469206,
-    "Score (Experiment01)": 0.1404999942,
-    "Score (Experiment02)": 1.1970000267
-  },
-  {
-    "Signature ID": "WP_NOTCH_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 22.2,
-    "Overlap (Experiment02)": 22.2,
-    "adj p-val (Experiment01)": 0.5704108834,
-    "adj p-val (Experiment02)": 0.0281428571,
-    "Score (Experiment01)": 1.8934999704,
-    "Score (Experiment02)": 4.2839999199
-  },
-  {
-    "Signature ID": "WP_NUCLEAR_RECEPTORS_META_PATHWAY",
-    "Overlap (Experiment01)": 6.1,
-    "Overlap (Experiment02)": 6.1,
-    "adj p-val (Experiment01)": 0.340021575,
-    "adj p-val (Experiment02)": 0.9270416481,
-    "Score (Experiment01)": -2.6482999325,
-    "Score (Experiment02)": -0.2874000072
-  },
-  {
-    "Signature ID": "WP_NUCLEOTIDE_EXCISION_REPAIR_IN_XERODERMA_PIGMENTOSUM",
-    "Overlap (Experiment01)": 16.0,
-    "Overlap (Experiment02)": 16.0,
-    "adj p-val (Experiment01)": 0.3158892128,
-    "adj p-val (Experiment02)": 0.5462495556,
-    "Score (Experiment01)": 2.9874999523,
-    "Score (Experiment02)": -1.7062000036
-  },
-  {
-    "Signature ID": "WP_ONCOSTATIN_M_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 25.0,
-    "Overlap (Experiment02)": 25.0,
-    "adj p-val (Experiment01)": 0.9778326944,
-    "adj p-val (Experiment02)": 0.7472469206,
-    "Score (Experiment01)": -0.1203999966,
-    "Score (Experiment02)": 1.2096999884
-  },
-  {
-    "Signature ID": "WP_OREXIN_RECEPTOR_PATHWAY",
-    "Overlap (Experiment01)": 14.8,
-    "Overlap (Experiment02)": 14.8,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.5246641964,
-    "Score (Experiment01)": 0.6391999722,
-    "Score (Experiment02)": -1.8650000095
-  },
-  {
-    "Signature ID": "WP_OVERLAP_BETWEEN_SIGNAL_TRANSDUCTION_PATHWAYS_CONTRIBUTING_TO_LMNA_LAMINOPATHIES",
-    "Overlap (Experiment01)": 21.1,
-    "Overlap (Experiment02)": 21.1,
-    "adj p-val (Experiment01)": 0.3158892128,
-    "adj p-val (Experiment02)": 0.7973661349,
-    "Score (Experiment01)": -3.0276999474,
-    "Score (Experiment02)": -1.0104999542
-  },
-  {
-    "Signature ID": "WP_P53_TRANSCRIPTIONAL_GENE_NETWORK",
-    "Overlap (Experiment01)": 13.5,
-    "Overlap (Experiment02)": 13.5,
-    "adj p-val (Experiment01)": 0.6934726846,
-    "adj p-val (Experiment02)": 0.972878886,
-    "Score (Experiment01)": -1.4318000078,
-    "Score (Experiment02)": -0.1186999977
-  },
-  {
-    "Signature ID": "WP_PANCREATIC_ADENOCARCINOMA_PATHWAY",
-    "Overlap (Experiment01)": 16.9,
-    "Overlap (Experiment02)": 16.9,
-    "adj p-val (Experiment01)": 0.9778326944,
-    "adj p-val (Experiment02)": 0.974333611,
-    "Score (Experiment01)": 0.1468999982,
-    "Score (Experiment02)": 0.0483999997
-  },
-  {
-    "Signature ID": "WP_PARKIN_UBIQUITIN_PROTEASOMAL_SYSTEM_PATHWAY",
-    "Overlap (Experiment01)": 14.1,
-    "Overlap (Experiment02)": 14.1,
-    "adj p-val (Experiment01)": 0.340021575,
-    "adj p-val (Experiment02)": 0.5462495556,
-    "Score (Experiment01)": -2.9832999706,
-    "Score (Experiment02)": -1.8048000336
-  },
-  {
-    "Signature ID": "WP_PATHOGENIC_ESCHERICHIA_COLI_INFECTION",
-    "Overlap (Experiment01)": 18.2,
-    "Overlap (Experiment02)": 18.2,
-    "adj p-val (Experiment01)": 0.3158892128,
-    "adj p-val (Experiment02)": 0.8525618743,
-    "Score (Experiment01)": 2.8747000694,
-    "Score (Experiment02)": -0.9070000052
-  },
-  {
-    "Signature ID": "WP_PATHWAYS_AFFECTED_IN_ADENOID_CYSTIC_CARCINOMA",
-    "Overlap (Experiment01)": 38.5,
-    "Overlap (Experiment02)": 38.5,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.868185349,
-    "Score (Experiment01)": 0.6626999974,
-    "Score (Experiment02)": 0.7470999956
-  },
-  {
-    "Signature ID": "WP_PHYSICO_CHEMICAL_FEATURES_AND_TOXICITY_ASSOCIATED_PATHWAYS",
-    "Overlap (Experiment01)": 21.2,
-    "Overlap (Experiment02)": 21.2,
-    "adj p-val (Experiment01)": 0.9778326944,
-    "adj p-val (Experiment02)": 0.5489444007,
-    "Score (Experiment01)": -0.0636000037,
-    "Score (Experiment02)": 1.7407000065
-  },
-  {
-    "Signature ID": "WP_PI3K_AKT_MTOR_SIGNALING_PATHWAY_AND_THERAPEUTIC_OPPORTUNITIES_IN_PROSTATE_CANCER",
-    "Overlap (Experiment01)": 34.4,
-    "Overlap (Experiment02)": 34.4,
-    "adj p-val (Experiment01)": 0.9324784538,
-    "adj p-val (Experiment02)": 0.972878886,
-    "Score (Experiment01)": 0.3625999987,
-    "Score (Experiment02)": 0.1932000071
-  },
-  {
-    "Signature ID": "WP_PI3K_AKT_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 10.6,
-    "Overlap (Experiment02)": 10.6,
-    "adj p-val (Experiment01)": 0.8574189121,
-    "adj p-val (Experiment02)": 0.8751275895,
-    "Score (Experiment01)": 0.8398000002,
-    "Score (Experiment02)": -0.6827999949
-  },
-  {
-    "Signature ID": "WP_PLEURAL_MESOTHELIOMA",
-    "Overlap (Experiment01)": 15.3,
-    "Overlap (Experiment02)": 15.3,
-    "adj p-val (Experiment01)": 0.7609296103,
-    "adj p-val (Experiment02)": 0.4851392663,
-    "Score (Experiment01)": -1.174200058,
-    "Score (Experiment02)": -1.9927999973
-  },
-  {
-    "Signature ID": "WP_PRADER_WILLI_AND_ANGELMAN_SYNDROME",
-    "Overlap (Experiment01)": 22.2,
-    "Overlap (Experiment02)": 22.2,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.4324054674,
-    "Score (Experiment01)": -0.4955999851,
-    "Score (Experiment02)": -2.3482999802
-  },
-  {
-    "Signature ID": "WP_PRIMARY_FOCAL_SEGMENTAL_GLOMERULOSCLEROSIS_FSGS",
-    "Overlap (Experiment01)": 18.1,
-    "Overlap (Experiment02)": 18.1,
-    "adj p-val (Experiment01)": 0.3158892128,
-    "adj p-val (Experiment02)": 0.868185349,
-    "Score (Experiment01)": -2.9467000961,
-    "Score (Experiment02)": -0.7394999862
-  },
-  {
-    "Signature ID": "WP_PRIMARY_OVARIAN_INSUFFICIENCY",
-    "Overlap (Experiment01)": 9.2,
-    "Overlap (Experiment02)": 9.2,
-    "adj p-val (Experiment01)": 0.6304917079,
-    "adj p-val (Experiment02)": 0.4331151065,
-    "Score (Experiment01)": 1.7815999985,
-    "Score (Experiment02)": -2.0889999866
-  },
-  {
-    "Signature ID": "WP_PROLACTIN_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 23.0,
-    "Overlap (Experiment02)": 23.0,
-    "adj p-val (Experiment01)": 0.3158892128,
-    "adj p-val (Experiment02)": 0.868185349,
-    "Score (Experiment01)": -2.8949000835,
-    "Score (Experiment02)": -0.8048999906
-  },
-  {
-    "Signature ID": "WP_RAC1_PAK1_P38_MMP2_PATHWAY",
-    "Overlap (Experiment01)": 20.6,
-    "Overlap (Experiment02)": 20.6,
-    "adj p-val (Experiment01)": 0.9778326944,
-    "adj p-val (Experiment02)": 0.7521818182,
-    "Score (Experiment01)": 0.1089000031,
-    "Score (Experiment02)": 1.1166000366
-  },
-  {
-    "Signature ID": "WP_RAS_SIGNALING",
-    "Overlap (Experiment01)": 11.4,
-    "Overlap (Experiment02)": 11.4,
-    "adj p-val (Experiment01)": 0.7609296103,
-    "adj p-val (Experiment02)": 0.8525618743,
-    "Score (Experiment01)": -1.1126999855,
-    "Score (Experiment02)": -0.8470000029
-  },
-  {
-    "Signature ID": "WP_REGULATION_OF_ACTIN_CYTOSKELETON",
-    "Overlap (Experiment01)": 20.7,
-    "Overlap (Experiment02)": 20.7,
-    "adj p-val (Experiment01)": 0.490673026,
-    "adj p-val (Experiment02)": 0.1161145821,
-    "Score (Experiment01)": -2.2650001049,
-    "Score (Experiment02)": -3.5938999653
-  },
-  {
-    "Signature ID": "WP_RETINOBLASTOMA_GENE_IN_CANCER",
-    "Overlap (Experiment01)": 30.3,
-    "Overlap (Experiment02)": 30.3,
-    "adj p-val (Experiment01)": 0.774218107,
-    "adj p-val (Experiment02)": 0.5631557232,
-    "Score (Experiment01)": 1.1098999977,
-    "Score (Experiment02)": -1.7188999653
-  },
-  {
-    "Signature ID": "WP_RETT_SYNDROME_CAUSING_GENES",
-    "Overlap (Experiment01)": 22.9,
-    "Overlap (Experiment02)": 22.9,
-    "adj p-val (Experiment01)": 0.397979798,
-    "adj p-val (Experiment02)": 0.0395582329,
-    "Score (Experiment01)": 2.3931000233,
-    "Score (Experiment02)": 3.4100999832
-  },
-  {
-    "Signature ID": "WP_SMITH_MAGENIS_AND_POTOCKI_LUPSKI_SYNDROME_COPY_NUMBER_VARIATION",
-    "Overlap (Experiment01)": 16.4,
-    "Overlap (Experiment02)": 16.4,
-    "adj p-val (Experiment01)": 0.9778326944,
-    "adj p-val (Experiment02)": 0.8770936184,
-    "Score (Experiment01)": -0.128700003,
-    "Score (Experiment02)": 0.6103000045
-  },
-  {
-    "Signature ID": "WP_SPLICING_FACTOR_NOVA_REGULATED_SYNAPTIC_PROTEINS",
-    "Overlap (Experiment01)": 23.8,
-    "Overlap (Experiment02)": 23.8,
-    "adj p-val (Experiment01)": 0.2753319357,
-    "adj p-val (Experiment02)": 0.670101794,
-    "Score (Experiment01)": -3.4972000122,
-    "Score (Experiment02)": -1.3897000551
-  },
-  {
-    "Signature ID": "WP_STEROL_REGULATORY_ELEMENT_BINDING_PROTEINS_SREBP_SIGNALING",
-    "Overlap (Experiment01)": 21.7,
-    "Overlap (Experiment02)": 21.7,
-    "adj p-val (Experiment01)": 0.8744195575,
-    "adj p-val (Experiment02)": 0.8825917733,
-    "Score (Experiment01)": -0.8924000263,
-    "Score (Experiment02)": 0.6083999872
-  },
-  {
-    "Signature ID": "WP_SUDDEN_INFANT_DEATH_SYNDROME_SIDS_SUSCEPTIBILITY_PATHWAYS",
-    "Overlap (Experiment01)": 13.8,
-    "Overlap (Experiment02)": 13.8,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.6841247342,
-    "Score (Experiment01)": 0.5478000045,
-    "Score (Experiment02)": 1.3164000511
-  },
-  {
-    "Signature ID": "WP_TARGET_OF_RAPAMYCIN_SIGNALING",
-    "Overlap (Experiment01)": 36.1,
-    "Overlap (Experiment02)": 36.1,
-    "adj p-val (Experiment01)": 0.9778326944,
-    "adj p-val (Experiment02)": 0.5489444007,
-    "Score (Experiment01)": -0.1335999966,
-    "Score (Experiment02)": -1.7008999586
-  },
-  {
-    "Signature ID": "WP_TAR_SYNDROME",
-    "Overlap (Experiment01)": 17.5,
-    "Overlap (Experiment02)": 17.5,
-    "adj p-val (Experiment01)": 0.5728732639,
-    "adj p-val (Experiment02)": 0.621946182,
-    "Score (Experiment01)": 1.9434000254,
-    "Score (Experiment02)": -1.4842000008
-  },
-  {
-    "Signature ID": "WP_TGF_BETA_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 20.5,
-    "Overlap (Experiment02)": 20.5,
-    "adj p-val (Experiment01)": 0.9390165034,
-    "adj p-val (Experiment02)": 0.4324054674,
-    "Score (Experiment01)": 0.3671000004,
-    "Score (Experiment02)": 2.2537999153
-  },
-  {
-    "Signature ID": "WP_THERMOGENESIS",
-    "Overlap (Experiment01)": 20.4,
-    "Overlap (Experiment02)": 20.4,
-    "adj p-val (Experiment01)": 0.9778326944,
-    "adj p-val (Experiment02)": 0.8223730185,
-    "Score (Experiment01)": -0.1975000054,
-    "Score (Experiment02)": 0.9850999713
-  },
-  {
-    "Signature ID": "WP_THYROID_HORMONES_PRODUCTION_AND_PERIPHERAL_DOWNSTREAM_SIGNALING_EFFECTS",
-    "Overlap (Experiment01)": 15.1,
-    "Overlap (Experiment02)": 15.1,
-    "adj p-val (Experiment01)": 0.6777192212,
-    "adj p-val (Experiment02)": 0.9140264404,
-    "Score (Experiment01)": -1.6842999458,
-    "Score (Experiment02)": -0.3987999856
-  },
-  {
-    "Signature ID": "WP_THYROID_STIMULATING_HORMONE_TSH_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 27.6,
-    "Overlap (Experiment02)": 27.6,
-    "adj p-val (Experiment01)": 0.7767215771,
-    "adj p-val (Experiment02)": 0.9140264404,
-    "Score (Experiment01)": -1.0094000101,
-    "Score (Experiment02)": -0.3630000055
-  },
-  {
-    "Signature ID": "WP_TNF_ALPHA_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 22.5,
-    "Overlap (Experiment02)": 22.5,
-    "adj p-val (Experiment01)": 0.9459210399,
-    "adj p-val (Experiment02)": 0.868185349,
-    "Score (Experiment01)": 0.3411999941,
-    "Score (Experiment02)": 0.826399982
-  },
-  {
-    "Signature ID": "WP_TRANSLATION_FACTORS",
-    "Overlap (Experiment01)": 34.0,
-    "Overlap (Experiment02)": 34.0,
-    "adj p-val (Experiment01)": 0.8401234008,
-    "adj p-val (Experiment02)": 0.5726744186,
-    "Score (Experiment01)": -0.9276999831,
-    "Score (Experiment02)": -1.5801000595
-  },
-  {
-    "Signature ID": "WP_TRANSLATION_INHIBITORS_IN_CHRONICALLY_ACTIVATED_PDGFRA_CELLS",
-    "Overlap (Experiment01)": 30.4,
-    "Overlap (Experiment02)": 30.4,
-    "adj p-val (Experiment01)": 0.9324784538,
-    "adj p-val (Experiment02)": 0.356584136,
-    "Score (Experiment01)": 0.3774999976,
-    "Score (Experiment02)": -2.2943000793
-  },
-  {
-    "Signature ID": "WP_TROP2_REGULATORY_SIGNALING",
-    "Overlap (Experiment01)": 26.7,
-    "Overlap (Experiment02)": 26.7,
-    "adj p-val (Experiment01)": 0.6161570435,
-    "adj p-val (Experiment02)": 0.5371506476,
-    "Score (Experiment01)": 1.7879999876,
-    "Score (Experiment02)": -1.8236999512
-  },
-  {
-    "Signature ID": "WP_T_CELL_ACTIVATION_SARS_COV_2",
-    "Overlap (Experiment01)": 17.0,
-    "Overlap (Experiment02)": 17.0,
-    "adj p-val (Experiment01)": 0.9391314458,
-    "adj p-val (Experiment02)": 0.7807380158,
-    "Score (Experiment01)": -0.3079000115,
-    "Score (Experiment02)": 1.0420999527
-  },
-  {
-    "Signature ID": "WP_T_CELL_ANTIGEN_RECEPTOR_TCR_PATHWAY_DURING_STAPHYLOCOCCUS_AUREUS_INFECTION",
-    "Overlap (Experiment01)": 21.0,
-    "Overlap (Experiment02)": 21.0,
-    "adj p-val (Experiment01)": 0.7375654605,
-    "adj p-val (Experiment02)": 0.8724941725,
-    "Score (Experiment01)": -1.2740000486,
-    "Score (Experiment02)": -0.6772000194
-  },
-  {
-    "Signature ID": "WP_T_CELL_RECEPTOR_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 24.0,
-    "Overlap (Experiment02)": 24.0,
-    "adj p-val (Experiment01)": 0.6934726846,
-    "adj p-val (Experiment02)": 0.972878886,
-    "Score (Experiment01)": -1.4400000572,
-    "Score (Experiment02)": 0.1064999998
-  },
-  {
-    "Signature ID": "WP_VASOPRESSIN_REGULATED_WATER_REABSORPTION",
-    "Overlap (Experiment01)": 25.0,
-    "Overlap (Experiment02)": 25.0,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.4324054674,
-    "Score (Experiment01)": -0.4205000103,
-    "Score (Experiment02)": 2.2084999084
-  },
-  {
-    "Signature ID": "WP_VEGFA_VEGFR2_SIGNALING",
-    "Overlap (Experiment01)": 21.6,
-    "Overlap (Experiment02)": 21.6,
-    "adj p-val (Experiment01)": 0.9778326944,
-    "adj p-val (Experiment02)": 0.8295962469,
-    "Score (Experiment01)": -0.1208000034,
-    "Score (Experiment02)": 0.9045000076
-  },
-  {
-    "Signature ID": "WP_VITAMIN_D_RECEPTOR_PATHWAY",
-    "Overlap (Experiment01)": 5.9,
-    "Overlap (Experiment02)": 5.9,
-    "adj p-val (Experiment01)": 0.7767215771,
-    "adj p-val (Experiment02)": 0.9114712572,
-    "Score (Experiment01)": -1.0405999422,
-    "Score (Experiment02)": -0.5026999712
-  },
-  {
-    "Signature ID": "WP_WNT_SIGNALING",
-    "Overlap (Experiment01)": 9.7,
-    "Overlap (Experiment02)": 9.7,
-    "adj p-val (Experiment01)": 0.9249641248,
-    "adj p-val (Experiment02)": 0.9051337211,
-    "Score (Experiment01)": -0.7394999862,
-    "Score (Experiment02)": -0.5393999815
-  },
-  {
-    "Signature ID": "WP_WNT_SIGNALING_PATHWAY",
-    "Overlap (Experiment01)": 23.4,
-    "Overlap (Experiment02)": 23.4,
-    "adj p-val (Experiment01)": 0.774218107,
-    "adj p-val (Experiment02)": 0.9007255305,
-    "Score (Experiment01)": -1.108700037,
-    "Score (Experiment02)": -0.5052000284
-  }
-]
+{
+  "Log": {
+    "Version": "0.1.2"
+  },
+  "Result": [
+    {
+      "Signature ID": "KEGG_ACUTE_MYELOID_LEUKEMIA",
+      "Percent Overlap (Experiment01)": 21.1,
+      "Percent Overlap (Experiment02)": 21.1,
+      "adj p-val (Experiment01)": 0.6242801978,
+      "adj p-val (Experiment02)": 0.8749694227,
+      "Overlap (Experiment01)": "STAT5A|ARAF|MTOR|IKBKB|SOS1|RAF1|AKT1|EIF4EBP1|MAP2K2|BRAF|PML|JUP",
+      "Overlap (Experiment02)": "PML|RAF1|STAT5A|ARAF|JUP|AKT1|IKBKB|SOS1|MTOR|MAP2K2|BRAF|EIF4EBP1",
+      "Score (Experiment01)": -1.6684000492,
+      "Score (Experiment02)": 0.7549999952
+    },
+    {
+      "Signature ID": "KEGG_ADHERENS_JUNCTION",
+      "Percent Overlap (Experiment01)": 17.8,
+      "Percent Overlap (Experiment02)": 17.8,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.6546510411,
+      "Overlap (Experiment01)": "IGF1R|YES1|ACTG1|ERBB2|CSNK2A1|SSX2IP|MAP3K7|LMO7|BAIAP2|NECTIN1|TJP1|ACTN4|PARD3",
+      "Overlap (Experiment02)": "TJP1|ACTN4|NECTIN1|ERBB2|YES1|CSNK2A1|LMO7|ACTG1|IGF1R|MAP3K7|BAIAP2|SSX2IP|PARD3",
+      "Score (Experiment01)": 0.4476999938,
+      "Score (Experiment02)": 1.4197000265
+    },
+    {
+      "Signature ID": "KEGG_ALZHEIMERS_DISEASE",
+      "Percent Overlap (Experiment01)": 9.0,
+      "Percent Overlap (Experiment02)": 9.0,
+      "adj p-val (Experiment01)": 0.9971878573,
+      "adj p-val (Experiment02)": 0.9687966526,
+      "Overlap (Experiment01)": "LRP1|NDUFV3|PSEN1|PLCB3|CASP7|ATP2A3|MAPT|PPP3CA|FAS|CDK5|ATP2A2|PLCB4|GAPDH|NDUFA4|NDUFB7",
+      "Overlap (Experiment02)": "NDUFV3|PSEN1|MAPT|GAPDH|PLCB4|CASP7|FAS|LRP1|ATP2A2|PPP3CA|PLCB3|ATP2A3|NDUFA4|CDK5|NDUFB7",
+      "Score (Experiment01)": -0.0361000001,
+      "Score (Experiment02)": 0.0667999983
+    },
+    {
+      "Signature ID": "KEGG_ARRHYTHMOGENIC_RIGHT_VENTRICULAR_CARDIOMYOPATHY_ARVC",
+      "Percent Overlap (Experiment01)": 13.5,
+      "Percent Overlap (Experiment02)": 13.5,
+      "adj p-val (Experiment01)": 0.5654241448,
+      "adj p-val (Experiment02)": 0.9687966526,
+      "Overlap (Experiment01)": "PKP2|ACTG1|ITGA3|DSP|ITGB1|EMD|ATP2A2|JUP|ACTN4|LMNA",
+      "Overlap (Experiment02)": "ACTN4|PKP2|ITGA3|JUP|ATP2A2|ACTG1|EMD|ITGB1|DSP|LMNA",
+      "Score (Experiment01)": -2.048899889,
+      "Score (Experiment02)": 0.1462000012
+    },
+    {
+      "Signature ID": "KEGG_AXON_GUIDANCE",
+      "Percent Overlap (Experiment01)": 10.1,
+      "Percent Overlap (Experiment02)": 10.1,
+      "adj p-val (Experiment01)": 0.4686828919,
+      "adj p-val (Experiment02)": 0.1032601464,
+      "Overlap (Experiment01)": "SEMA4B|PAK4|PPP3CA|PAK1|ABL1|CDK5|LIMK1|PAK2|ITGB1|LIMK2|SEMA4F|NFATC2|ARHGEF12",
+      "Overlap (Experiment02)": "ABL1|PPP3CA|PAK4|ITGB1|NFATC2|PAK1|SEMA4B|PAK2|SEMA4F|LIMK2|CDK5|LIMK1|ARHGEF12",
+      "Score (Experiment01)": -2.3828001022,
+      "Score (Experiment02)": -3.1974000931
+    },
+    {
+      "Signature ID": "KEGG_CALCIUM_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 10.1,
+      "Percent Overlap (Experiment02)": 10.1,
+      "adj p-val (Experiment01)": 0.9170670116,
+      "adj p-val (Experiment02)": 0.895119787,
+      "Overlap (Experiment01)": "GRPR|SLC25A5|ERBB2|PLCB3|ATP2A3|PHKA1|PPP3CA|SLC25A6|P2RX4|ATP2B1|GNAS|ITPKB|MYLK|ATP2A2|PLCB4|PLCG1|PHKA2|ADCY9",
+      "Overlap (Experiment02)": "SLC25A5|ERBB2|SLC25A6|PHKA2|GNAS|PLCB4|ATP2B1|ATP2A2|MYLK|PPP3CA|PLCB3|GRPR|ATP2A3|P2RX4|ITPKB|PLCG1|PHKA1|ADCY9",
+      "Score (Experiment01)": -0.65200001,
+      "Score (Experiment02)": 0.5634999871
+    },
+    {
+      "Signature ID": "KEGG_CELL_CYCLE",
+      "Percent Overlap (Experiment01)": 20.0,
+      "Percent Overlap (Experiment02)": 20.0,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.02425,
+      "Overlap (Experiment01)": "MCM3|WEE1|MCM7|PKMYT1|HDAC1|ANAPC1|CDC20|CCNH|RBL2|ORC3|CDC7|PRKDC|ABL1|PCNA|CDK2|BUB3|MCM2|CDC25B|CHEK2|CCNE2|CDC45|RBL1|RB1|CDC6|ORC1",
+      "Overlap (Experiment02)": "CHEK2|BUB3|RBL2|PRKDC|ABL1|HDAC1|MCM2|CDC45|CCNH|ANAPC1|CDC7|PCNA|MCM3|CDC25B|PKMYT1|CDK2|RBL1|ORC3|CDC20|RB1|MCM7|CCNE2|WEE1|CDC6|ORC1",
+      "Score (Experiment01)": -0.5857999921,
+      "Score (Experiment02)": -4.4299001694
+    },
+    {
+      "Signature ID": "KEGG_CHEMOKINE_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 9.5,
+      "Percent Overlap (Experiment02)": 9.5,
+      "adj p-val (Experiment01)": 0.7552115726,
+      "adj p-val (Experiment02)": 0.9212476686,
+      "Overlap (Experiment01)": "FOXO3|PRKCD|PLCB3|IKBKB|PREX1|PAK1|SOS1|RAP1A|BCAR1|RAF1|AKT1|CRK|VAV2|PLCB4|BRAF|PXN|PARD3|ADCY9",
+      "Overlap (Experiment02)": "FOXO3|PRKCD|RAF1|PREX1|PXN|PLCB4|AKT1|IKBKB|SOS1|PLCB3|RAP1A|PAK1|CRK|BRAF|BCAR1|VAV2|PARD3|ADCY9",
+      "Score (Experiment01)": -1.2598999739,
+      "Score (Experiment02)": -0.3747000098
+    },
+    {
+      "Signature ID": "KEGG_CHRONIC_MYELOID_LEUKEMIA",
+      "Percent Overlap (Experiment01)": 20.5,
+      "Percent Overlap (Experiment02)": 20.5,
+      "adj p-val (Experiment01)": 0.5502168836,
+      "adj p-val (Experiment02)": 0.8959541985,
+      "Overlap (Experiment01)": "STAT5A|ARAF|HDAC1|IKBKB|SOS1|ABL1|RAF1|CBL|AKT1|CRK|MAP2K2|BRAF|MECOM|RB1|GAB2",
+      "Overlap (Experiment02)": "RAF1|STAT5A|ABL1|ARAF|HDAC1|AKT1|IKBKB|SOS1|CBL|CRK|MECOM|MAP2K2|BRAF|GAB2|RB1",
+      "Score (Experiment01)": -2.064800024,
+      "Score (Experiment02)": -0.4957000017
+    },
+    {
+      "Signature ID": "KEGG_ENDOCYTOSIS",
+      "Percent Overlap (Experiment01)": 16.6,
+      "Percent Overlap (Experiment02)": 16.6,
+      "adj p-val (Experiment01)": 0.7525578238,
+      "adj p-val (Experiment02)": 0.5477412731,
+      "Overlap (Experiment01)": "IGF1R|EPN2|EHD1|HLA-A|RAB11FIP5|RAB11FIP1|IQSEC1|AP2S1|EEA1|AGAP1|AP2A1|PIKFYVE|EHD4|SMAP2|ASAP1|RAB11B|CBL|ASAP3|PIP5K1A|HSPA8|VPS4A|IQSEC2|ARFGAP2|CHMP5|EPN3|GIT1|DNM1L|PARD3|EHD2|FGFR3",
+      "Overlap (Experiment02)": "RAB11B|AP2S1|EPN2|AP2A1|EHD1|CHMP5|EHD4|SMAP2|ASAP1|VPS4A|EEA1|ARFGAP2|DNM1L|PIKFYVE|GIT1|RAB11FIP1|CBL|IGF1R|HLA-A|IQSEC2|IQSEC1|ASAP3|HSPA8|EHD2|EPN3|AGAP1|PIP5K1A|RAB11FIP5|FGFR3|PARD3",
+      "Score (Experiment01)": -1.2884999514,
+      "Score (Experiment02)": -1.665199995
+    },
+    {
+      "Signature ID": "KEGG_ENDOMETRIAL_CANCER",
+      "Percent Overlap (Experiment01)": 21.2,
+      "Percent Overlap (Experiment02)": 21.2,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.6431184271,
+      "Overlap (Experiment01)": "FOXO3|ERBB2|ARAF|PDPK1|AXIN1|SOS1|RAF1|AKT1|MAP2K2|APC|BRAF",
+      "Overlap (Experiment02)": "FOXO3|ERBB2|RAF1|ARAF|PDPK1|AXIN1|AKT1|SOS1|MAP2K2|BRAF|APC",
+      "Score (Experiment01)": 0.4623999894,
+      "Score (Experiment02)": 1.4359999895
+    },
+    {
+      "Signature ID": "KEGG_ERBB_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 21.8,
+      "Percent Overlap (Experiment02)": 21.8,
+      "adj p-val (Experiment01)": 0.9971878573,
+      "adj p-val (Experiment02)": 0.9878787879,
+      "Overlap (Experiment01)": "GAB1|STAT5A|PAK4|ERBB2|ARAF|MTOR|PAK1|SOS1|ABL1|RAF1|CBL|AKT1|CRK|PAK2|JUN|EIF4EBP1|MAP2K2|BRAF|PLCG1",
+      "Overlap (Experiment02)": "ERBB2|RAF1|STAT5A|ABL1|ARAF|GAB1|AKT1|SOS1|PAK4|CBL|JUN|PAK1|CRK|PLCG1|PAK2|MTOR|MAP2K2|BRAF|EIF4EBP1",
+      "Score (Experiment01)": -0.0109999999,
+      "Score (Experiment02)": 0.0253999997
+    },
+    {
+      "Signature ID": "KEGG_FC_GAMMA_R_MEDIATED_PHAGOCYTOSIS",
+      "Percent Overlap (Experiment01)": 16.7,
+      "Percent Overlap (Experiment02)": 16.7,
+      "adj p-val (Experiment01)": 0.7099510445,
+      "adj p-val (Experiment02)": 0.512173658,
+      "Overlap (Experiment01)": "ARPC1A|PRKCD|PAK1|PIKFYVE|ASAP1|RAF1|ASAP3|AKT1|PIP5K1A|LIMK1|CRK|VAV2|LIMK2|PLCG1|DNM1L|GAB2",
+      "Overlap (Experiment02)": "PRKCD|RAF1|ARPC1A|ASAP1|AKT1|DNM1L|PIKFYVE|PAK1|CRK|PLCG1|ASAP3|VAV2|LIMK2|GAB2|LIMK1|PIP5K1A",
+      "Score (Experiment01)": -1.3761999607,
+      "Score (Experiment02)": -1.9632999897
+    },
+    {
+      "Signature ID": "KEGG_FOCAL_ADHESION",
+      "Percent Overlap (Experiment01)": 14.1,
+      "Percent Overlap (Experiment02)": 14.1,
+      "adj p-val (Experiment01)": 0.7525578238,
+      "adj p-val (Experiment02)": 0.8749694227,
+      "Overlap (Experiment01)": "IGF1R|FN1|ACTG1|PAK4|ERBB2|DOCK1|PDPK1|PAK1|ITGA3|FLT4|SOS1|RAP1A|BCAR1|RAF1|AKT1|ARHGAP35|CRK|PAK2|VAV2|MYLK|ARHGAP5|ITGB1|JUN|BRAF|TLN1|PXN|ACTN4|FLNB",
+      "Overlap (Experiment02)": "ACTN4|ERBB2|RAF1|FN1|FLNB|DOCK1|ITGA3|ARHGAP35|PXN|PDPK1|AKT1|MYLK|SOS1|ACTG1|RAP1A|FLT4|PAK4|JUN|IGF1R|ITGB1|PAK1|CRK|PAK2|ARHGAP5|BRAF|BCAR1|VAV2|TLN1",
+      "Score (Experiment01)": -1.2100000381,
+      "Score (Experiment02)": 0.6624000072
+    },
+    {
+      "Signature ID": "KEGG_GLIOMA",
+      "Percent Overlap (Experiment01)": 15.4,
+      "Percent Overlap (Experiment02)": 15.4,
+      "adj p-val (Experiment01)": 0.7785351295,
+      "adj p-val (Experiment02)": 0.6546510411,
+      "Overlap (Experiment01)": "IGF1R|ARAF|MTOR|SOS1|RAF1|AKT1|MAP2K2|BRAF|PLCG1|RB1",
+      "Overlap (Experiment02)": "RAF1|ARAF|AKT1|SOS1|IGF1R|PLCG1|MTOR|MAP2K2|BRAF|RB1",
+      "Score (Experiment01)": -1.0845999718,
+      "Score (Experiment02)": -1.4860999584
+    },
+    {
+      "Signature ID": "KEGG_GLYCOLYSIS_GLUCONEOGENESIS",
+      "Percent Overlap (Experiment01)": 19.4,
+      "Percent Overlap (Experiment02)": 19.4,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.7924528302,
+      "Overlap (Experiment01)": "ALDOA|PGAM1|PKM|PGK1|TPI1|DLAT|FBP2|LDHA|ACSS2|GAPDH|AKR1A1|PFKP",
+      "Overlap (Experiment02)": "AKR1A1|ALDOA|FBP2|GAPDH|LDHA|PKM|ACSS2|TPI1|PGK1|DLAT|PGAM1|PFKP",
+      "Score (Experiment01)": -0.4593000114,
+      "Score (Experiment02)": 0.9592999816
+    },
+    {
+      "Signature ID": "KEGG_GNRH_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 11.9,
+      "Percent Overlap (Experiment02)": 11.9,
+      "adj p-val (Experiment01)": 0.6242801978,
+      "adj p-val (Experiment02)": 0.8316937799,
+      "Overlap (Experiment01)": "PRKCD|PLCB3|SOS1|MAP3K3|RAF1|GNAS|ATF4|JUN|PLCB4|MAP2K2|MAP3K4|ADCY9",
+      "Overlap (Experiment02)": "PRKCD|MAP3K4|RAF1|GNAS|PLCB4|ATF4|SOS1|MAP3K3|PLCB3|JUN|MAP2K2|ADCY9",
+      "Score (Experiment01)": -1.6430000067,
+      "Score (Experiment02)": 0.9142000079
+    },
+    {
+      "Signature ID": "KEGG_HUNTINGTONS_DISEASE",
+      "Percent Overlap (Experiment01)": 10.4,
+      "Percent Overlap (Experiment02)": 10.4,
+      "adj p-val (Experiment01)": 0.6838027466,
+      "adj p-val (Experiment02)": 0.0687943262,
+      "Overlap (Experiment01)": "CREB1|SLC25A5|TFAM|NDUFV3|SP1|CREB3L4|PLCB3|AP2S1|HDAC1|AP2A1|DNAH2|SLC25A6|RCOR1|POLR2A|POLR2B|SIN3A|PLCB4|NDUFA4|NDUFB7",
+      "Overlap (Experiment02)": "SLC25A5|CREB3L4|DNAH2|SIN3A|SP1|AP2S1|NDUFV3|AP2A1|HDAC1|SLC25A6|RCOR1|TFAM|CREB1|PLCB4|PLCB3|POLR2A|NDUFA4|NDUFB7|POLR2B",
+      "Score (Experiment01)": 1.5698000193,
+      "Score (Experiment02)": 3.4551000595
+    },
+    {
+      "Signature ID": "KEGG_INSULIN_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 19.7,
+      "Percent Overlap (Experiment02)": 19.7,
+      "adj p-val (Experiment01)": 0.5502168836,
+      "adj p-val (Experiment02)": 0.8959541985,
+      "Overlap (Experiment01)": "PRKAB1|PRKAR2B|ARAF|PHKA1|TSC1|PDPK1|PRKAG2|MTOR|IKBKB|SOS1|PYGL|RAF1|FBP2|CBL|MKNK2|AKT1|CRK|TSC2|RPS6|EIF4EBP1|MAP2K2|BRAF|RPTOR|PHKA2|MKNK1|FASN|IRS1",
+      "Overlap (Experiment02)": "PYGL|PRKAG2|PRKAR2B|RAF1|FBP2|ARAF|PHKA2|TSC2|RPS6|PDPK1|MKNK2|AKT1|IKBKB|SOS1|CBL|MKNK1|CRK|IRS1|RPTOR|PHKA1|MTOR|MAP2K2|BRAF|PRKAB1|EIF4EBP1|FASN|TSC1",
+      "Score (Experiment01)": -2.1333999634,
+      "Score (Experiment02)": -0.5151000023
+    },
+    {
+      "Signature ID": "KEGG_LEUKOCYTE_TRANSENDOTHELIAL_MIGRATION",
+      "Percent Overlap (Experiment01)": 13.8,
+      "Percent Overlap (Experiment02)": 13.8,
+      "adj p-val (Experiment01)": 0.7357533369,
+      "adj p-val (Experiment02)": 0.5225285139,
+      "Overlap (Experiment01)": "OCLN|ACTG1|CLDN3|CD99|CLDN7|RAP1A|BCAR1|ARHGAP35|VAV2|ARHGAP5|ITGB1|NCF2|PLCG1|EZR|PXN|ACTN4",
+      "Overlap (Experiment02)": "ACTN4|ARHGAP35|PXN|CLDN3|ACTG1|RAP1A|ITGB1|OCLN|CD99|EZR|PLCG1|ARHGAP5|BCAR1|VAV2|CLDN7|NCF2",
+      "Score (Experiment01)": -1.3515000343,
+      "Score (Experiment02)": -1.7503999472
+    },
+    {
+      "Signature ID": "KEGG_LONG_TERM_POTENTIATION",
+      "Percent Overlap (Experiment01)": 14.3,
+      "Percent Overlap (Experiment02)": 14.3,
+      "adj p-val (Experiment01)": 0.6242801978,
+      "adj p-val (Experiment02)": 0.9431823274,
+      "Overlap (Experiment01)": "PLCB3|ARAF|PPP3CA|RAP1A|RAF1|ATF4|PLCB4|MAP2K2|BRAF|RPS6KA1",
+      "Overlap (Experiment02)": "RAF1|ARAF|PLCB4|ATF4|PPP3CA|PLCB3|RAP1A|MAP2K2|BRAF|RPS6KA1",
+      "Score (Experiment01)": -1.8078999519,
+      "Score (Experiment02)": -0.235799998
+    },
+    {
+      "Signature ID": "KEGG_MAPK_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 15.4,
+      "Percent Overlap (Experiment02)": 15.4,
+      "adj p-val (Experiment01)": 0.194,
+      "adj p-val (Experiment02)": 0.8754363559,
+      "Overlap (Experiment01)": "MAPK8IP2|RRAS|RPS6KA4|MAPT|PPP3CA|STMN1|MAP3K7|IKBKB|PAK1|DUSP3|SOS1|ATF2|MAP3K3|STK3|MAP4K4|RAP1A|RAF1|MKNK2|AKT1|ATF4|FAS|CDC25B|CRK|NF1|PAK2|MAP3K11|HSPA8|JUN|MAP2K2|MAP3K4|BRAF|ELK4|MAP3K5|MECOM|MKNK1|RASA2|HSPB1|NFATC2|FLNB|FGFR3|RPS6KA1",
+      "Overlap (Experiment02)": "NF1|MAP4K4|MAP3K4|RAF1|FLNB|MAPT|STMN1|STK3|MAPK8IP2|ELK4|FAS|ATF2|ATF4|MKNK2|AKT1|DUSP3|IKBKB|SOS1|PPP3CA|MAP3K3|RAP1A|JUN|RRAS|MKNK1|RASA2|NFATC2|MAP3K7|RPS6KA4|PAK1|CRK|MECOM|PAK2|HSPB1|MAP2K2|HSPA8|BRAF|MAP3K11|CDC25B|MAP3K5|RPS6KA1|FGFR3",
+      "Score (Experiment01)": -4.453400135,
+      "Score (Experiment02)": -0.5960000157
+    },
+    {
+      "Signature ID": "KEGG_MTOR_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 25.0,
+      "Percent Overlap (Experiment02)": 25.0,
+      "adj p-val (Experiment01)": 0.5502168836,
+      "adj p-val (Experiment02)": 0.3534537389,
+      "Overlap (Experiment01)": "EIF4B|RICTOR|TSC1|PDPK1|MTOR|AKT1|TSC2|RPS6|EIF4EBP1|BRAF|RPTOR|ULK1|RPS6KA1",
+      "Overlap (Experiment02)": "RICTOR|TSC2|RPS6|PDPK1|AKT1|RPTOR|MTOR|BRAF|EIF4B|ULK1|RPS6KA1|EIF4EBP1|TSC1",
+      "Score (Experiment01)": -2.1328999996,
+      "Score (Experiment02)": -2.5739998817
+    },
+    {
+      "Signature ID": "KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY",
+      "Percent Overlap (Experiment01)": 9.5,
+      "Percent Overlap (Experiment02)": 9.5,
+      "adj p-val (Experiment01)": 0.7552115726,
+      "adj p-val (Experiment02)": 0.8494839291,
+      "Overlap (Experiment01)": "HLA-A|TNFRSF10C|ARAF|PPP3CA|PAK1|SOS1|RAF1|FAS|VAV2|MAP2K2|BRAF|PLCG1|NFATC2",
+      "Overlap (Experiment02)": "RAF1|ARAF|FAS|SOS1|TNFRSF10C|PPP3CA|NFATC2|HLA-A|PAK1|PLCG1|MAP2K2|BRAF|VAV2",
+      "Score (Experiment01)": -1.2049000263,
+      "Score (Experiment02)": -0.8496000171
+    },
+    {
+      "Signature ID": "KEGG_NEUROTROPHIN_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 21.4,
+      "Percent Overlap (Experiment02)": 21.4,
+      "adj p-val (Experiment01)": 0.9170670116,
+      "adj p-val (Experiment02)": 0.8749694227,
+      "Overlap (Experiment01)": "FOXO3|PRKCD|GAB1|RPS6KA4|PSEN1|KIDINS220|SORT1|PDPK1|IKBKB|SOS1|MAP3K3|RAP1A|ABL1|RAF1|AKT1|ATF4|CRK|PRDM4|JUN|RIPK2|MAP2K2|BRAF|ARHGDIA|MAP3K5|PLCG1|IRS1|RPS6KA1",
+      "Overlap (Experiment02)": "FOXO3|PRKCD|ARHGDIA|RAF1|PSEN1|ABL1|GAB1|SORT1|ATF4|RIPK2|PDPK1|AKT1|IKBKB|SOS1|MAP3K3|RAP1A|KIDINS220|JUN|RPS6KA4|CRK|IRS1|PLCG1|MAP2K2|BRAF|MAP3K5|RPS6KA1|PRDM4",
+      "Score (Experiment01)": -0.6313999891,
+      "Score (Experiment02)": 0.7903000116
+    },
+    {
+      "Signature ID": "KEGG_NON_SMALL_CELL_LUNG_CANCER",
+      "Percent Overlap (Experiment01)": 20.4,
+      "Percent Overlap (Experiment02)": 20.4,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.8754363559,
+      "Overlap (Experiment01)": "FOXO3|ERBB2|ARAF|PDPK1|SOS1|RAF1|AKT1|MAP2K2|BRAF|PLCG1|RB1",
+      "Overlap (Experiment02)": "FOXO3|ERBB2|RAF1|ARAF|PDPK1|AKT1|SOS1|PLCG1|MAP2K2|BRAF|RB1",
+      "Score (Experiment01)": -0.5458999872,
+      "Score (Experiment02)": 0.6615999937
+    },
+    {
+      "Signature ID": "KEGG_OOCYTE_MEIOSIS",
+      "Percent Overlap (Experiment01)": 10.6,
+      "Percent Overlap (Experiment02)": 10.6,
+      "adj p-val (Experiment01)": 0.9838183616,
+      "adj p-val (Experiment02)": 0.02425,
+      "Overlap (Experiment01)": "IGF1R|PKMYT1|SGO1|PPP3CA|PPP2R5A|ANAPC1|SLK|CDC20|CDK2|CCNE2|RPS6KA1|ADCY9",
+      "Overlap (Experiment02)": "SLK|PPP3CA|PPP2R5A|IGF1R|SGO1|ANAPC1|PKMYT1|RPS6KA1|CDK2|CDC20|CCNE2|ADCY9",
+      "Score (Experiment01)": 0.1024999991,
+      "Score (Experiment02)": -4.2723999023
+    },
+    {
+      "Signature ID": "KEGG_PATHOGENIC_ESCHERICHIA_COLI_INFECTION",
+      "Percent Overlap (Experiment01)": 17.9,
+      "Percent Overlap (Experiment02)": 17.9,
+      "adj p-val (Experiment01)": 0.2328,
+      "adj p-val (Experiment02)": 0.8340013017,
+      "Overlap (Experiment01)": "ARPC1A|KRT18|OCLN|ARHGEF2|ACTG1|NCL|TUBB|ABL1|ITGB1|EZR",
+      "Overlap (Experiment02)": "ABL1|KRT18|ARPC1A|ACTG1|ARHGEF2|ITGB1|OCLN|EZR|TUBB|NCL",
+      "Score (Experiment01)": 3.1828999519,
+      "Score (Experiment02)": -0.91049999
+    },
+    {
+      "Signature ID": "KEGG_PATHWAYS_IN_CANCER",
+      "Percent Overlap (Experiment01)": 11.7,
+      "Percent Overlap (Experiment02)": 11.7,
+      "adj p-val (Experiment01)": 0.5246394231,
+      "adj p-val (Experiment02)": 0.9357142857,
+      "Overlap (Experiment01)": "IGF1R|FN1|STAT5A|TPR|ERBB2|CCDC6|ARAF|HDAC1|MTOR|IKBKB|AXIN1|ITGA3|SOS1|MSH6|ABL1|RAF1|CBL|RALBP1|CDK2|AKT1|EGLN2|HSP90B1|FAS|CRK|CCNE2|ITGB1|JUN|MAP2K2|APC|BRAF|PML|PLCG1|HSP90AB1|MECOM|RB1|JUP|HSP90AA1|FGFR3",
+      "Overlap (Experiment02)": "PML|TPR|ERBB2|RAF1|FN1|STAT5A|ABL1|ARAF|HDAC1|HSP90AA1|RALBP1|CCDC6|ITGA3|HSP90B1|FAS|JUP|AXIN1|AKT1|IKBKB|SOS1|CBL|JUN|IGF1R|ITGB1|MSH6|CRK|HSP90AB1|MECOM|PLCG1|MTOR|MAP2K2|BRAF|EGLN2|APC|CDK2|FGFR3|RB1|CCNE2",
+      "Score (Experiment01)": -2.2832000256,
+      "Score (Experiment02)": -0.2962000072
+    },
+    {
+      "Signature ID": "KEGG_PROGESTERONE_MEDIATED_OOCYTE_MATURATION",
+      "Percent Overlap (Experiment01)": 15.3,
+      "Percent Overlap (Experiment02)": 15.3,
+      "adj p-val (Experiment01)": 0.5654241448,
+      "adj p-val (Experiment02)": 0.3203545976,
+      "Overlap (Experiment01)": "IGF1R|PKMYT1|ARAF|ANAPC1|RAF1|CDK2|AKT1|CDC25B|BRAF|HSP90AB1|HSP90AA1|RPS6KA1|ADCY9",
+      "Overlap (Experiment02)": "RAF1|ARAF|HSP90AA1|AKT1|IGF1R|HSP90AB1|ANAPC1|BRAF|CDC25B|PKMYT1|RPS6KA1|CDK2|ADCY9",
+      "Score (Experiment01)": -2.0148999691,
+      "Score (Experiment02)": -2.6642000675
+    },
+    {
+      "Signature ID": "KEGG_PROSTATE_CANCER",
+      "Percent Overlap (Experiment01)": 22.5,
+      "Percent Overlap (Experiment02)": 22.5,
+      "adj p-val (Experiment01)": 0.9290368411,
+      "adj p-val (Experiment02)": 0.8959541985,
+      "Overlap (Experiment01)": "IGF1R|CREB1|CREB3L4|ERBB2|ARAF|PDPK1|MTOR|IKBKB|SOS1|RAF1|CDK2|AKT1|ATF4|HSP90B1|CCNE2|MAP2K2|BRAF|HSP90AB1|RB1|HSP90AA1",
+      "Overlap (Experiment02)": "CREB3L4|ERBB2|RAF1|ARAF|HSP90AA1|CREB1|HSP90B1|ATF4|PDPK1|AKT1|IKBKB|SOS1|IGF1R|HSP90AB1|MTOR|MAP2K2|BRAF|CDK2|RB1|CCNE2",
+      "Score (Experiment01)": -0.3625000119,
+      "Score (Experiment02)": -0.519200027
+    },
+    {
+      "Signature ID": "KEGG_PURINE_METABOLISM",
+      "Percent Overlap (Experiment01)": 6.9,
+      "Percent Overlap (Experiment02)": 6.9,
+      "adj p-val (Experiment01)": 0.6795937865,
+      "adj p-val (Experiment02)": 0.7423935091,
+      "Overlap (Experiment01)": "PFAS|PKM|GART|POLR2A|POLR2B|PDE4D|DCK|ATIC|NT5C|PRUNE1|ADCY9",
+      "Overlap (Experiment02)": "PFAS|ATIC|PKM|NT5C|PDE4D|PRUNE1|POLR2A|DCK|GART|POLR2B|ADCY9",
+      "Score (Experiment01)": -1.5863000154,
+      "Score (Experiment02)": -1.1366000175
+    },
+    {
+      "Signature ID": "KEGG_REGULATION_OF_ACTIN_CYTOSKELETON",
+      "Percent Overlap (Experiment01)": 19.7,
+      "Percent Overlap (Experiment02)": 19.7,
+      "adj p-val (Experiment01)": 0.2711390636,
+      "adj p-val (Experiment02)": 0.1700635547,
+      "Overlap (Experiment01)": "ARPC1A|FN1|RRAS|ACTG1|PAK4|SSH3|DOCK1|ARAF|MYH14|ARHGEF1|DIAPH3|BAIAP2|PAK1|ITGA3|PIKFYVE|SOS1|BCAR1|RAF1|ABI2|ARHGEF6|PIP5K1A|ARHGAP35|LIMK1|CRK|PAK2|VAV2|MYLK|ITGB1|LIMK2|PFN1|FGD1|MAP2K2|APC|BRAF|CYFIP1|EZR|GIT1|PXN|ACTN4|FGFR3|ARHGEF12|ARHGEF7",
+      "Overlap (Experiment02)": "ACTN4|RAF1|FN1|PFN1|DOCK1|ARAF|ITGA3|ARHGAP35|PXN|ARPC1A|MYH14|MYLK|SOS1|ACTG1|PIKFYVE|GIT1|PAK4|ARHGEF1|RRAS|SSH3|ITGB1|CYFIP1|PAK1|CRK|EZR|ARHGEF6|ABI2|PAK2|MAP2K2|ARHGEF7|BRAF|BCAR1|VAV2|LIMK2|APC|FGD1|BAIAP2|LIMK1|ARHGEF12|PIP5K1A|FGFR3|DIAPH3",
+      "Score (Experiment01)": -2.8838000298,
+      "Score (Experiment02)": -3.0833001137
+    },
+    {
+      "Signature ID": "KEGG_RENAL_CELL_CARCINOMA",
+      "Percent Overlap (Experiment01)": 21.4,
+      "Percent Overlap (Experiment02)": 21.4,
+      "adj p-val (Experiment01)": 0.9170670116,
+      "adj p-val (Experiment02)": 0.9687966526,
+      "Overlap (Experiment01)": "FLCN|GAB1|PAK4|ARAF|PAK1|SOS1|RAP1A|RAF1|AKT1|EGLN2|CRK|PAK2|JUN|MAP2K2|BRAF",
+      "Overlap (Experiment02)": "FLCN|RAF1|ARAF|GAB1|AKT1|SOS1|RAP1A|PAK4|JUN|PAK1|CRK|PAK2|MAP2K2|BRAF|EGLN2",
+      "Score (Experiment01)": 0.6542000175,
+      "Score (Experiment02)": 0.0584999993
+    },
+    {
+      "Signature ID": "KEGG_RIBOSOME",
+      "Percent Overlap (Experiment01)": 17.0,
+      "Percent Overlap (Experiment02)": 17.0,
+      "adj p-val (Experiment01)": 0.943927327,
+      "adj p-val (Experiment02)": 0.5225285139,
+      "Overlap (Experiment01)": "RPL29|RPL27A|RPL7A|RPL5|RPL18|RPL17|RPS26|RPL30|RPL15|RPS17|RPL14|RPS6|RPS10|RPL24|RPS2",
+      "Overlap (Experiment02)": "RPL27A|RPL15|RPL30|RPL5|RPS6|RPS26|RPL17|RPL7A|RPL29|RPS10|RPS17|RPS2|RPL18|RPL24|RPL14",
+      "Score (Experiment01)": -0.3307000101,
+      "Score (Experiment02)": -1.763299942
+    },
+    {
+      "Signature ID": "KEGG_RNA_DEGRADATION",
+      "Percent Overlap (Experiment01)": 16.9,
+      "Percent Overlap (Experiment02)": 16.9,
+      "adj p-val (Experiment01)": 0.5502168836,
+      "adj p-val (Experiment02)": 0.7748798766,
+      "Overlap (Experiment01)": "DCP1A|DCP1B|EDC4|DCP2|HSPD1|DIS3|DDX6|EDC3|PATL1|PARN",
+      "Overlap (Experiment02)": "DIS3|PARN|HSPD1|DCP1A|EDC4|EDC3|DDX6|DCP1B|PATL1|DCP2",
+      "Score (Experiment01)": 1.9250999689,
+      "Score (Experiment02)": -1.086400032
+    },
+    {
+      "Signature ID": "KEGG_SPLICEOSOME",
+      "Percent Overlap (Experiment01)": 28.3,
+      "Percent Overlap (Experiment02)": 28.3,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.02425,
+      "Overlap (Experiment01)": "SRSF9|RBMX|CDC5L|SF3B1|HNRNPM|CHERP|USP39|HNRNPK|XAB2|SNRPA|TRA2B|HNRNPA3|DDX42|SNRNP70|SNW1|AQR|PRPF8|DHX8|CCDC12|DDX46|SART1|WBP11|THOC2|NCBP1|U2SURP|PRPF3|HNRNPC|HSPA8|PRPF40A|ACIN1|SLU7|SNRNP200|SRSF6|ALYREF|SF3A1|HNRNPA1",
+      "Overlap (Experiment02)": "SF3A1|SNRPA|HNRNPC|CHERP|SRSF6|PRPF40A|SLU7|XAB2|USP39|SNW1|U2SURP|ALYREF|WBP11|AQR|HNRNPK|RBMX|SART1|HNRNPM|SNRNP70|SF3B1|THOC2|DDX46|SRSF9|NCBP1|PRPF3|HNRNPA3|PRPF8|DDX42|DHX8|CDC5L|CCDC12|HSPA8|TRA2B|ACIN1|SNRNP200|HNRNPA1",
+      "Score (Experiment01)": -0.46419999,
+      "Score (Experiment02)": 4.0255999565
+    },
+    {
+      "Signature ID": "KEGG_TIGHT_JUNCTION",
+      "Percent Overlap (Experiment01)": 23.5,
+      "Percent Overlap (Experiment02)": 23.5,
+      "adj p-val (Experiment01)": 0.762811831,
+      "adj p-val (Experiment02)": 0.885397,
+      "Overlap (Experiment01)": "PRKCD|OCLN|RRAS|YES1|ACTG1|ASH1L|CLDN3|CLDN7|CSNK2A1|MYH14|SPTAN1|PRKCH|TJP3|TJP2|YBX3|AKT1|MAGI1|EPB41L1|LLGL2|MAGI3|CASK|VAPA|PATJ|EPB41L2|CGN|RAB13|TJP1|EXOC4|MPDZ|ACTN4|PARD3",
+      "Overlap (Experiment02)": "TJP1|PRKCD|ACTN4|CGN|MPDZ|YES1|SPTAN1|CSNK2A1|MAGI1|CASK|CLDN3|TJP3|AKT1|MYH14|VAPA|PRKCH|TJP2|MAGI3|ACTG1|YBX3|RRAS|EPB41L2|OCLN|EXOC4|RAB13|PATJ|CLDN7|LLGL2|ASH1L|EPB41L1|PARD3",
+      "Score (Experiment01)": -1.1370999813,
+      "Score (Experiment02)": 0.6053000093
+    },
+    {
+      "Signature ID": "KEGG_T_CELL_RECEPTOR_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 15.7,
+      "Percent Overlap (Experiment02)": 15.7,
+      "adj p-val (Experiment01)": 0.6871374386,
+      "adj p-val (Experiment02)": 0.7173661231,
+      "Overlap (Experiment01)": "PAK4|PPP3CA|PDPK1|DLG1|MAP3K7|IKBKB|PAK1|SOS1|RAF1|CBL|AKT1|PAK2|VAV2|JUN|MAP2K2|PLCG1|NFATC2",
+      "Overlap (Experiment02)": "RAF1|PDPK1|AKT1|IKBKB|SOS1|PPP3CA|DLG1|PAK4|CBL|JUN|NFATC2|MAP3K7|PAK1|PLCG1|PAK2|MAP2K2|VAV2",
+      "Score (Experiment01)": -1.6039999723,
+      "Score (Experiment02)": -1.2261999846
+    },
+    {
+      "Signature ID": "KEGG_UBIQUITIN_MEDIATED_PROTEOLYSIS",
+      "Percent Overlap (Experiment01)": 8.9,
+      "Percent Overlap (Experiment02)": 8.9,
+      "adj p-val (Experiment01)": 0.6871374386,
+      "adj p-val (Experiment02)": 0.413859978,
+      "Overlap (Experiment01)": "HUWE1|TRIP12|BRCA1|ANAPC1|CDC20|UBE2O|MID1|CBL|PML|BIRC6|HERC2|HERC1",
+      "Overlap (Experiment02)": "PML|MID1|CBL|TRIP12|ANAPC1|BIRC6|HUWE1|HERC2|BRCA1|UBE2O|CDC20|HERC1",
+      "Score (Experiment01)": -1.5111999512,
+      "Score (Experiment02)": -2.4932999611
+    },
+    {
+      "Signature ID": "KEGG_VASCULAR_SMOOTH_MUSCLE_CONTRACTION",
+      "Percent Overlap (Experiment01)": 13.0,
+      "Percent Overlap (Experiment02)": 13.0,
+      "adj p-val (Experiment01)": 0.7552115726,
+      "adj p-val (Experiment02)": 0.8915284099,
+      "Overlap (Experiment01)": "PRKCD|MYL6|PLCB3|ARAF|ARHGEF1|PRKCH|RAF1|ARHGEF11|GNAS|MYLK|PLCB4|MAP2K2|BRAF|ARHGEF12|ADCY9",
+      "Overlap (Experiment02)": "PRKCD|ARHGEF11|RAF1|MYL6|ARAF|GNAS|PLCB4|MYLK|PRKCH|PLCB3|ARHGEF1|MAP2K2|BRAF|ARHGEF12|ADCY9",
+      "Score (Experiment01)": -1.2082999945,
+      "Score (Experiment02)": 0.6284999847
+    },
+    {
+      "Signature ID": "KEGG_VASOPRESSIN_REGULATED_WATER_REABSORPTION",
+      "Percent Overlap (Experiment01)": 25.0,
+      "Percent Overlap (Experiment02)": 25.0,
+      "adj p-val (Experiment01)": 0.9290368411,
+      "adj p-val (Experiment02)": 0.4417384417,
+      "Overlap (Experiment01)": "CREB1|CREB3L4|DYNC1I1|DYNC1LI2|RAB11B|DYNC1LI1|GNAS|STX4|NSF|ARHGDIA|ADCY9",
+      "Overlap (Experiment02)": "NSF|CREB3L4|DYNC1I1|RAB11B|ARHGDIA|CREB1|GNAS|STX4|DYNC1LI2|DYNC1LI1|ADCY9",
+      "Score (Experiment01)": -0.4111999869,
+      "Score (Experiment02)": 2.073800087
+    },
+    {
+      "Signature ID": "KEGG_WNT_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 7.9,
+      "Percent Overlap (Experiment02)": 7.9,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.9738916554,
+      "Overlap (Experiment01)": "PSEN1|PLCB3|CSNK2A1|PPP3CA|PPP2R5A|MAP3K7|AXIN1|LRP6|JUN|PLCB4|APC|NFATC2",
+      "Overlap (Experiment02)": "PSEN1|CSNK2A1|PLCB4|AXIN1|PPP3CA|PPP2R5A|PLCB3|JUN|NFATC2|MAP3K7|LRP6|APC",
+      "Score (Experiment01)": -0.4677000046,
+      "Score (Experiment02)": 0.0644999966
+    },
+    {
+      "Signature ID": "WP_10Q11_21Q11_23_COPY_NUMBER_VARIATION_SYNDROME",
+      "Percent Overlap (Experiment01)": 18.0,
+      "Percent Overlap (Experiment02)": 18.0,
+      "adj p-val (Experiment01)": 0.6871374386,
+      "adj p-val (Experiment02)": 0.9687966526,
+      "Overlap (Experiment01)": "SMARCA5|SF3B1|ATF2|DDX21|PCNA|EIF4ENIF1|CLOCK|RIF1|BAZ1B|SMARCC2|MYO1C",
+      "Overlap (Experiment02)": "SMARCC2|CLOCK|BAZ1B|EIF4ENIF1|SF3B1|ATF2|DDX21|SMARCA5|PCNA|RIF1|MYO1C",
+      "Score (Experiment01)": -1.4371000528,
+      "Score (Experiment02)": 0.1411000043
+    },
+    {
+      "Signature ID": "WP_15Q11Q13_COPY_NUMBER_VARIATION",
+      "Percent Overlap (Experiment01)": 18.6,
+      "Percent Overlap (Experiment02)": 18.6,
+      "adj p-val (Experiment01)": 0.9971878573,
+      "adj p-val (Experiment02)": 0.6431184271,
+      "Overlap (Experiment01)": "OCLN|FANCD2|SMC6|HDAC1|TJP3|KAT2B|UBN1|TJP2|SIN3A|CGN|TJP1",
+      "Overlap (Experiment02)": "TJP1|CGN|SIN3A|KAT2B|SMC6|HDAC1|TJP3|TJP2|OCLN|UBN1|FANCD2",
+      "Score (Experiment01)": 0.0408000015,
+      "Score (Experiment02)": 1.5061000586
+    },
+    {
+      "Signature ID": "WP_16P11_2_PROXIMAL_DELETION_SYNDROME",
+      "Percent Overlap (Experiment01)": 15.8,
+      "Percent Overlap (Experiment02)": 15.8,
+      "adj p-val (Experiment01)": 0.4170093458,
+      "adj p-val (Experiment02)": 0.7056418426,
+      "Overlap (Experiment01)": "HIRIP3|ALDOA|KMT2D|BPTF|CCT2|CCDC6|CCT8|CCT5|INO80E|PCNA|EZR|KMT2C",
+      "Overlap (Experiment02)": "ALDOA|KMT2D|HIRIP3|CCT5|CCDC6|INO80E|KMT2C|CCT2|EZR|CCT8|BPTF|PCNA",
+      "Score (Experiment01)": 2.4732999802,
+      "Score (Experiment02)": 1.3272000551
+    },
+    {
+      "Signature ID": "WP_17Q12_COPY_NUMBER_VARIATION_SYNDROME",
+      "Percent Overlap (Experiment01)": 11.0,
+      "Percent Overlap (Experiment02)": 11.0,
+      "adj p-val (Experiment01)": 0.9170670116,
+      "adj p-val (Experiment02)": 0.9379748584,
+      "Overlap (Experiment01)": "CDK12|MED1|ERBB2|LIG3|SRCIN1|DHRS11|AATF|TMEM132E|RFFL|TAF15|ARHGAP23",
+      "Overlap (Experiment02)": "AATF|ERBB2|LIG3|CDK12|DHRS11|SRCIN1|MED1|RFFL|TMEM132E|ARHGAP23|TAF15",
+      "Score (Experiment01)": 0.6262000203,
+      "Score (Experiment02)": 0.2533999979
+    },
+    {
+      "Signature ID": "WP_22Q11_2_COPY_NUMBER_VARIATION_SYNDROME",
+      "Percent Overlap (Experiment01)": 13.4,
+      "Percent Overlap (Experiment02)": 13.4,
+      "adj p-val (Experiment01)": 0.2711390636,
+      "adj p-val (Experiment02)": 0.4764243615,
+      "Overlap (Experiment01)": "HIRIP3|CBX5|NCOR1|CLDN3|SCARF2|PAK4|DROSHA|SNAP29|ARVCF|RANGAP1|FOXC1|COMT|RAF1|POLR2A|CDC45|RANBP1|SREBF2",
+      "Overlap (Experiment02)": "RANBP1|NCOR1|RAF1|SCARF2|ARVCF|FOXC1|HIRIP3|CLDN3|RANGAP1|CDC45|SNAP29|PAK4|POLR2A|COMT|DROSHA|SREBF2|CBX5",
+      "Score (Experiment01)": 2.8945000172,
+      "Score (Experiment02)": 1.9251999855
+    },
+    {
+      "Signature ID": "WP_2Q37_COPY_NUMBER_VARIATION_SYNDROME",
+      "Percent Overlap (Experiment01)": 8.3,
+      "Percent Overlap (Experiment02)": 8.3,
+      "adj p-val (Experiment01)": 0.5502168836,
+      "adj p-val (Experiment02)": 0.4782608696,
+      "Overlap (Experiment01)": "CENPA|MLPH|ING5|AGAP1|HJURP|MEF2A|JUN|RPS6|SH3BP4|LRRFIP1|MAP4|RRAGC",
+      "Overlap (Experiment02)": "MLPH|MEF2A|CENPA|RPS6|ING5|JUN|SH3BP4|LRRFIP1|AGAP1|RRAGC|MAP4|HJURP",
+      "Score (Experiment01)": -2.0141000748,
+      "Score (Experiment02)": -2.0443999767
+    },
+    {
+      "Signature ID": "WP_3Q29_COPY_NUMBER_VARIATION_SYNDROME",
+      "Percent Overlap (Experiment01)": 20.3,
+      "Percent Overlap (Experiment02)": 20.3,
+      "adj p-val (Experiment01)": 0.902971715,
+      "adj p-val (Experiment02)": 0.9059293395,
+      "Overlap (Experiment01)": "STAT5A|RNF168|SLC40A1|MYCBP2|CASP7|DLG1|AKT1|CEP350|NCBP1|PCYT1A|PAK2|JUN|PXN",
+      "Overlap (Experiment02)": "STAT5A|CEP350|PCYT1A|PXN|CASP7|NCBP1|AKT1|MYCBP2|DLG1|JUN|SLC40A1|PAK2|RNF168",
+      "Score (Experiment01)": 0.7965000272,
+      "Score (Experiment02)": 0.4519000053
+    },
+    {
+      "Signature ID": "WP_4_HYDROXYTAMOXIFEN_DEXAMETHASONE_AND_RETINOIC_ACIDS_REGULATION_OF_P27_EXPRESSION",
+      "Percent Overlap (Experiment01)": 61.1,
+      "Percent Overlap (Experiment02)": 61.1,
+      "adj p-val (Experiment01)": 0.2711390636,
+      "adj p-val (Experiment02)": 0.0888278388,
+      "Overlap (Experiment01)": "TSC1|MTOR|RAF1|MKNK2|AKT1|MAP3K11|PBK|EIF4EBP1|MAP2K2|MAP3K5|MKNK1",
+      "Overlap (Experiment02)": "RAF1|MKNK2|AKT1|MKNK1|MTOR|MAP2K2|MAP3K11|PBK|MAP3K5|EIF4EBP1|TSC1",
+      "Score (Experiment01)": -2.7460000515,
+      "Score (Experiment02)": -3.1171998978
+    },
+    {
+      "Signature ID": "WP_5Q35_COPY_NUMBER_VARIATION",
+      "Percent Overlap (Experiment01)": 12.6,
+      "Percent Overlap (Experiment02)": 12.6,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.7661578188,
+      "Overlap (Experiment01)": "IGF1R|GAB1|UIMC1|BRCA1|BABAM2|SOS1|ABL1|KIAA1191|GPRIN1|BABAM1|NSD1|JUN|ARFGAP2|PLCG1",
+      "Overlap (Experiment02)": "UIMC1|ABL1|GAB1|BABAM2|SOS1|BABAM1|ARFGAP2|JUN|IGF1R|KIAA1191|PLCG1|NSD1|BRCA1|GPRIN1",
+      "Score (Experiment01)": 0.5769000053,
+      "Score (Experiment02)": -1.0778000355
+    },
+    {
+      "Signature ID": "WP_7Q11_23_COPY_NUMBER_VARIATION_SYNDROME",
+      "Percent Overlap (Experiment01)": 20.6,
+      "Percent Overlap (Experiment02)": 20.6,
+      "adj p-val (Experiment01)": 0.6242801978,
+      "adj p-val (Experiment02)": 0.4801563178,
+      "Overlap (Experiment01)": "USF1|CLDN3|SMARCA5|SF3B1|BRD4|CLASP2|EIF2A|DDX21|PCNA|ATF4|EIF4H|FAS|LIMK1|GTF2I|MLXIPL|SQSTM1|BAZ1B|GAPDH|CLASP1|RB1|MYO1C|ULK1",
+      "Overlap (Experiment02)": "USF1|BAZ1B|CLASP1|GAPDH|EIF4H|CLDN3|SF3B1|FAS|ATF4|BRD4|GTF2I|EIF2A|CLASP2|DDX21|MLXIPL|SMARCA5|PCNA|SQSTM1|ULK1|LIMK1|MYO1C|RB1",
+      "Score (Experiment01)": -1.7502000332,
+      "Score (Experiment02)": -2.0102000237
+    },
+    {
+      "Signature ID": "WP_ADIPOGENESIS",
+      "Percent Overlap (Experiment01)": 13.7,
+      "Percent Overlap (Experiment02)": 13.7,
+      "adj p-val (Experiment01)": 0.5654241448,
+      "adj p-val (Experiment02)": 0.8749694227,
+      "Overlap (Experiment01)": "CREB1|STAT5A|NCOR1|SP1|NCOR2|RBL2|TRIB3|GTF3A|FAS|MEF2A|LPIN3|NRIP1|RBL1|ZMPSTE24|RB1|IRS1|LPIN1|LMNA",
+      "Overlap (Experiment02)": "RBL2|LPIN3|NCOR1|SP1|STAT5A|NCOR2|LPIN1|MEF2A|CREB1|FAS|ZMPSTE24|TRIB3|NRIP1|IRS1|RBL1|LMNA|RB1|GTF3A",
+      "Score (Experiment01)": -1.9421999454,
+      "Score (Experiment02)": 0.7303000093
+    },
+    {
+      "Signature ID": "WP_AGE_RAGE_PATHWAY",
+      "Percent Overlap (Experiment01)": 15.2,
+      "Percent Overlap (Experiment02)": 15.2,
+      "adj p-val (Experiment01)": 0.9290368411,
+      "adj p-val (Experiment02)": 0.4141611813,
+      "Overlap (Experiment01)": "PRKCD|STAT5A|SP1|IKBKB|ATF2|RAF1|AKT1|JUN|EZR|IRS1",
+      "Overlap (Experiment02)": "PRKCD|SP1|RAF1|STAT5A|ATF2|AKT1|IKBKB|JUN|IRS1|EZR",
+      "Score (Experiment01)": 0.3847000003,
+      "Score (Experiment02)": 2.4093000889
+    },
+    {
+      "Signature ID": "WP_ALZHEIMER_39_S_DISEASE",
+      "Percent Overlap (Experiment01)": 15.7,
+      "Percent Overlap (Experiment02)": 15.7,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.9687966526,
+      "Overlap (Experiment01)": "RB1CC1|ATG2B|RTN3|LRP1|SLC25A5|PSEN1|PLCB3|CASP7|ATP2A3|CSNK2A1|ARAF|MAPT|PPP3CA|MTOR|IKBKB|AXIN1|PPIF|TUBB|PSMD4|SLC25A6|PSMC3|LRP6|RAF1|AKT1|ATF4|PSMA2|FAS|CDK5|PSMA4|ATP2A2|PLCB4|PSMD1|MAP2K2|APC|GAPDH|BRAF|NRBF2|MAP3K5|PSMD2|IRS1|ULK1",
+      "Overlap (Experiment02)": "RB1CC1|SLC25A5|ATG2B|RAF1|PSEN1|MAPT|CSNK2A1|ARAF|PSMD1|SLC25A6|GAPDH|PLCB4|CASP7|PPIF|FAS|LRP1|ATF4|ATP2A2|AXIN1|AKT1|IKBKB|PSMA2|PPP3CA|PSMC3|PLCB3|PSMD4|ATP2A3|LRP6|NRBF2|IRS1|MTOR|MAP2K2|TUBB|BRAF|RTN3|PSMA4|APC|MAP3K5|ULK1|CDK5|PSMD2",
+      "Score (Experiment01)": -0.4672999978,
+      "Score (Experiment02)": 0.0953999981
+    },
+    {
+      "Signature ID": "WP_ALZHEIMER_39_S_DISEASE_AND_MIRNA_EFFECTS",
+      "Percent Overlap (Experiment01)": 15.4,
+      "Percent Overlap (Experiment02)": 15.4,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.9687966526,
+      "Overlap (Experiment01)": "RB1CC1|ATG2B|RTN3|LRP1|SLC25A5|PSEN1|PLCB3|CASP7|ATP2A3|CSNK2A1|ARAF|MAPT|PPP3CA|MTOR|IKBKB|AXIN1|PPIF|TUBB|PSMD4|SLC25A6|PSMC3|LRP6|RAF1|AKT1|ATF4|PSMA2|FAS|CDK5|PSMA4|ATP2A2|PLCB4|PSMD1|MAP2K2|APC|GAPDH|BRAF|NRBF2|MAP3K5|PSMD2|IRS1|ULK1",
+      "Overlap (Experiment02)": "RB1CC1|SLC25A5|ATG2B|RAF1|PSEN1|MAPT|CSNK2A1|ARAF|PSMD1|SLC25A6|GAPDH|PLCB4|CASP7|PPIF|FAS|LRP1|ATF4|ATP2A2|AXIN1|AKT1|IKBKB|PSMA2|PPP3CA|PSMC3|PLCB3|PSMD4|ATP2A3|LRP6|NRBF2|IRS1|MTOR|MAP2K2|TUBB|BRAF|RTN3|PSMA4|APC|MAP3K5|ULK1|CDK5|PSMD2",
+      "Score (Experiment01)": -0.4663000107,
+      "Score (Experiment02)": 0.0947000012
+    },
+    {
+      "Signature ID": "WP_AMP_ACTIVATED_PROTEIN_KINASE_SIGNALING",
+      "Percent Overlap (Experiment01)": 22.4,
+      "Percent Overlap (Experiment02)": 22.4,
+      "adj p-val (Experiment01)": 0.7552115726,
+      "adj p-val (Experiment02)": 0.7173661231,
+      "Overlap (Experiment01)": "PRKAB1|CAMKK1|CAMKK2|TSC1|PRKAG2|MTOR|EEF2K|AKT1|TSC2|PFKFB3|EIF4EBP1|EEF2|RPTOR|FASN|PPARGC1B",
+      "Overlap (Experiment02)": "CAMKK1|EEF2K|PRKAG2|TSC2|AKT1|EEF2|PFKFB3|PPARGC1B|RPTOR|MTOR|PRKAB1|CAMKK2|EIF4EBP1|FASN|TSC1",
+      "Score (Experiment01)": -1.2481000423,
+      "Score (Experiment02)": -1.2301000357
+    },
+    {
+      "Signature ID": "WP_ANDROGEN_RECEPTOR_NETWORK_IN_PROSTATE_CANCER",
+      "Percent Overlap (Experiment01)": 26.6,
+      "Percent Overlap (Experiment02)": 26.6,
+      "adj p-val (Experiment01)": 0.762811831,
+      "adj p-val (Experiment02)": 0.9059293395,
+      "Overlap (Experiment01)": "GAB1|BLM|SP1|RICTOR|DOCK1|BRCA1|TSC1|MTOR|PAK1|SOS1|MSH6|PRKDC|SMARCA4|RAP1A|RAF1|CDK2|AKT1|CDC25B|CRK|CHEK2|TSC2|JUN|EIF4EBP1|SMARCD2|MAP2K2|SMARCC2|RPTOR|RB1|PXN",
+      "Overlap (Experiment02)": "SMARCC2|CHEK2|RICTOR|SP1|SMARCA4|RAF1|PRKDC|DOCK1|GAB1|TSC2|PXN|AKT1|SOS1|RAP1A|JUN|MSH6|PAK1|CRK|RPTOR|SMARCD2|MTOR|MAP2K2|CDC25B|BRCA1|CDK2|BLM|EIF4EBP1|TSC1|RB1",
+      "Score (Experiment01)": -1.1857999563,
+      "Score (Experiment02)": -0.3874999881
+    },
+    {
+      "Signature ID": "WP_ANDROGEN_RECEPTOR_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 21.8,
+      "Percent Overlap (Experiment02)": 21.8,
+      "adj p-val (Experiment01)": 0.6242801978,
+      "adj p-val (Experiment02)": 0.413859978,
+      "Overlap (Experiment01)": "KAT7|CREB1|NR2C2|NCOR1|SP1|BAG1|BRCA1|NCOR2|HDAC1|KAT5|ZNF318|PATZ1|KAT2B|AKT1|LIMK2|JUN|SIN3A|RB1|FKBP4",
+      "Overlap (Experiment02)": "FKBP4|KAT7|SIN3A|KAT5|NCOR1|SP1|NCOR2|KAT2B|BAG1|HDAC1|CREB1|PATZ1|AKT1|JUN|NR2C2|LIMK2|ZNF318|BRCA1|RB1",
+      "Score (Experiment01)": 1.6891000271,
+      "Score (Experiment02)": 2.3010001183
+    },
+    {
+      "Signature ID": "WP_ANGIOPOIETIN_LIKE_PROTEIN_8_REGULATORY_PATHWAY",
+      "Percent Overlap (Experiment01)": 23.5,
+      "Percent Overlap (Experiment02)": 23.5,
+      "adj p-val (Experiment01)": 0.6871374386,
+      "adj p-val (Experiment02)": 0.7173661231,
+      "Overlap (Experiment01)": "FOXO3|PRKAB1|MAPKAP1|RPS6KA4|RICTOR|TSC1|PDPK1|PRKAG2|MTOR|MAP3K7|MINK1|SOS1|MAP3K3|MAP4K4|RAF1|CBL|THRA|AKT1|CRK|TSC2|MAP3K11|MLXIPL|EIF4EBP1|MAP2K2|SREBF2|MAP3K4|MAP3K5|RPTOR|FASN|IRS1|RPS6KA1",
+      "Overlap (Experiment02)": "FOXO3|RICTOR|MAP4K4|PRKAG2|MAP3K4|RAF1|MINK1|THRA|TSC2|PDPK1|AKT1|SOS1|MAP3K3|CBL|MAP3K7|RPS6KA4|MLXIPL|CRK|IRS1|RPTOR|MTOR|MAP2K2|PRKAB1|MAP3K11|SREBF2|MAP3K5|RPS6KA1|MAPKAP1|EIF4EBP1|FASN|TSC1",
+      "Score (Experiment01)": -1.4244999886,
+      "Score (Experiment02)": -1.2888000011
+    },
+    {
+      "Signature ID": "WP_APOPTOSIS",
+      "Percent Overlap (Experiment01)": 11.4,
+      "Percent Overlap (Experiment02)": 11.4,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.8211826687,
+      "Overlap (Experiment01)": "IGF1R|CASP7|DIABLO|IKBKB|SCAF11|AKT1|FAS|JUN|CASP4|TNFRSF21",
+      "Overlap (Experiment02)": "DIABLO|CASP7|FAS|AKT1|IKBKB|SCAF11|JUN|IGF1R|TNFRSF21|CASP4",
+      "Score (Experiment01)": -0.4436999857,
+      "Score (Experiment02)": -0.9193999767
+    },
+    {
+      "Signature ID": "WP_APOPTOSIS_MODULATION_AND_SIGNALING",
+      "Percent Overlap (Experiment01)": 10.9,
+      "Percent Overlap (Experiment02)": 10.9,
+      "adj p-val (Experiment01)": 0.902971715,
+      "adj p-val (Experiment02)": 0.9212476686,
+      "Overlap (Experiment01)": "AIFM1|TNFRSF10C|CASP7|MADD|DIABLO|IKBKB|FAS|JUN|CASP4|MAP3K5",
+      "Overlap (Experiment02)": "DIABLO|AIFM1|CASP7|FAS|IKBKB|TNFRSF10C|JUN|MADD|MAP3K5|CASP4",
+      "Score (Experiment01)": 0.8385999799,
+      "Score (Experiment02)": -0.4093999863
+    },
+    {
+      "Signature ID": "WP_APOPTOSIS_RELATED_NETWORK_DUE_TO_ALTERED_NOTCH3_IN_OVARIAN_CANCER",
+      "Percent Overlap (Experiment01)": 24.5,
+      "Percent Overlap (Experiment02)": 24.5,
+      "adj p-val (Experiment01)": 0.2328,
+      "adj p-val (Experiment02)": 0.7173661231,
+      "Overlap (Experiment01)": "CASP7|HDAC1|HSPD1|AXIN1|ABL1|YBX3|AKT1|PAK2|RIPK2|SQSTM1|HSPB1|SERBP1|TNFRSF21",
+      "Overlap (Experiment02)": "ABL1|HSPD1|HDAC1|CASP7|RIPK2|AXIN1|AKT1|YBX3|PAK2|HSPB1|SQSTM1|SERBP1|TNFRSF21",
+      "Score (Experiment01)": -3.2555999756,
+      "Score (Experiment02)": -1.2925000191
+    },
+    {
+      "Signature ID": "WP_ARRHYTHMOGENIC_RIGHT_VENTRICULAR_CARDIOMYOPATHY",
+      "Percent Overlap (Experiment01)": 13.5,
+      "Percent Overlap (Experiment02)": 13.5,
+      "adj p-val (Experiment01)": 0.5502168836,
+      "adj p-val (Experiment02)": 0.9687966526,
+      "Overlap (Experiment01)": "PKP2|ACTG1|ITGA3|DSP|ITGB1|EMD|ATP2A2|JUP|ACTN4|LMNA",
+      "Overlap (Experiment02)": "ACTN4|PKP2|ITGA3|JUP|ATP2A2|ACTG1|EMD|ITGB1|DSP|LMNA",
+      "Score (Experiment01)": -2.078799963,
+      "Score (Experiment02)": 0.1404999942
+    },
+    {
+      "Signature ID": "WP_ATM_SIGNALING_IN_DEVELOPMENT_AND_DISEASE",
+      "Percent Overlap (Experiment01)": 44.4,
+      "Percent Overlap (Experiment02)": 44.4,
+      "adj p-val (Experiment01)": 0.5502168836,
+      "adj p-val (Experiment02)": 0.9687966526,
+      "Overlap (Experiment01)": "HMGN1|MDC1|TP53BP1|TRIM28|RNF168|DCLRE1C|PPM1D|KAT5|MTOR|CEP63|NBN|ATF2|G6PD|PRKDC|CDK5|CHEK2|TSC2|RIF1|MAP3K5|HSPB1",
+      "Overlap (Experiment02)": "MDC1|CHEK2|KAT5|PRKDC|TRIM28|G6PD|TSC2|DCLRE1C|ATF2|NBN|CEP63|PPM1D|HSPB1|MTOR|RNF168|HMGN1|MAP3K5|CDK5|RIF1|TP53BP1",
+      "Score (Experiment01)": 2.1145000458,
+      "Score (Experiment02)": -0.1040000021
+    },
+    {
+      "Signature ID": "WP_ATM_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 30.0,
+      "Percent Overlap (Experiment02)": 30.0,
+      "adj p-val (Experiment01)": 0.5502168836,
+      "adj p-val (Experiment02)": 0.9212476686,
+      "Overlap (Experiment01)": "MDC1|TP53BP1|CREB1|FANCD2|BRCA1|NBN|ATF2|ABL1|CDK2|CHEK2|JUN|MDM4",
+      "Overlap (Experiment02)": "MDC1|CHEK2|ABL1|CREB1|ATF2|NBN|MDM4|JUN|BRCA1|CDK2|TP53BP1|FANCD2",
+      "Score (Experiment01)": 2.1031000614,
+      "Score (Experiment02)": -0.3528999984
+    },
+    {
+      "Signature ID": "WP_A_NETWORK_MAP_OF_MACROPHAGE_STIMULATING_PROTEIN_MSP_SIGNALING",
+      "Percent Overlap (Experiment01)": 25.6,
+      "Percent Overlap (Experiment02)": 25.6,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.9687966526,
+      "Overlap (Experiment01)": "IGF1R|PARP1|GAB1|FN1|RPS6KA4|PDPK1|MTOR|ABL1|PCNA|RAF1|MST1R|AKT1|LDHA|ITGB1|JUN|RPS6|MAP2K2|PLCG1|PDCD4|HSPB1|RPS6KA1",
+      "Overlap (Experiment02)": "MST1R|RAF1|FN1|ABL1|GAB1|PARP1|RPS6|LDHA|PDPK1|AKT1|JUN|IGF1R|ITGB1|RPS6KA4|PLCG1|HSPB1|MTOR|MAP2K2|PDCD4|PCNA|RPS6KA1",
+      "Score (Experiment01)": -0.4859000146,
+      "Score (Experiment02)": 0.1163000017
+    },
+    {
+      "Signature ID": "WP_BDNF_TRKB_SIGNALING",
+      "Percent Overlap (Experiment01)": 42.4,
+      "Percent Overlap (Experiment02)": 42.4,
+      "adj p-val (Experiment01)": 0.5654241448,
+      "adj p-val (Experiment02)": 0.4582388511,
+      "Overlap (Experiment01)": "GAB1|CREB1|TSC1|MTOR|SOS1|EEF2K|AKT1|TSC2|EIF4EBP1|BRAF|PLCG1|MKNK1|GAB2|RPS6KA1",
+      "Overlap (Experiment02)": "EEF2K|GAB1|CREB1|TSC2|AKT1|SOS1|MKNK1|PLCG1|MTOR|BRAF|GAB2|RPS6KA1|EIF4EBP1|TSC1",
+      "Score (Experiment01)": -1.954300046,
+      "Score (Experiment02)": -2.0350999832
+    },
+    {
+      "Signature ID": "WP_BRAIN_DERIVED_NEUROTROPHIC_FACTOR_BDNF_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 25.5,
+      "Percent Overlap (Experiment02)": 25.5,
+      "adj p-val (Experiment01)": 0.5246394231,
+      "adj p-val (Experiment02)": 0.9212476686,
+      "Overlap (Experiment01)": "FOXO3|PRKCD|CREB1|STAT5A|KIDINS220|SORT1|CSNK2A1|MAPT|PDPK1|DLG1|MTOR|IKBKB|CRTC1|RAP1A|RAF1|AKT1|CDK5|TSC2|NSF|VAV2|MEF2A|JUN|RPS6|SQSTM1|EIF4EBP1|NCF2|MAP2K2|APC|EEF2|EIF2S2|CYFIP1|PLCG1|IRS1|RPS6KA1|YBX1",
+      "Overlap (Experiment02)": "NSF|FOXO3|PRKCD|RAF1|STAT5A|MAPT|CSNK2A1|MEF2A|SORT1|CREB1|TSC2|RPS6|PDPK1|AKT1|IKBKB|EEF2|RAP1A|EIF2S2|DLG1|KIDINS220|JUN|CYFIP1|CRTC1|IRS1|PLCG1|MTOR|MAP2K2|VAV2|SQSTM1|APC|RPS6KA1|CDK5|NCF2|EIF4EBP1|YBX1",
+      "Score (Experiment01)": -2.2446000576,
+      "Score (Experiment02)": -0.3628000021
+    },
+    {
+      "Signature ID": "WP_BREAST_CANCER_PATHWAY",
+      "Percent Overlap (Experiment01)": 13.0,
+      "Percent Overlap (Experiment02)": 13.0,
+      "adj p-val (Experiment01)": 0.762811831,
+      "adj p-val (Experiment02)": 0.9212476686,
+      "Overlap (Experiment01)": "IGF1R|PARP1|SP1|ERBB2|BRCA1|CSNK2A1|ARAF|MTOR|AXIN1|NBN|FLT4|SOS1|LRP6|RAF1|AKT1|JUN|MAP2K2|APC|BRAF|RB1",
+      "Overlap (Experiment02)": "ERBB2|SP1|RAF1|CSNK2A1|ARAF|PARP1|NBN|AXIN1|AKT1|SOS1|FLT4|JUN|IGF1R|LRP6|MTOR|MAP2K2|BRAF|APC|BRCA1|RB1",
+      "Score (Experiment01)": 1.1578999758,
+      "Score (Experiment02)": -0.4009000063
+    },
+    {
+      "Signature ID": "WP_B_CELL_RECEPTOR_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 25.0,
+      "Percent Overlap (Experiment02)": 25.0,
+      "adj p-val (Experiment01)": 0.6871374386,
+      "adj p-val (Experiment02)": 0.8959541985,
+      "Overlap (Experiment01)": "PRKCD|GAB1|CREB1|BCL6|PDPK1|MAP3K7|IKBKB|SOS1|ATF2|RAF1|CBL|AKT1|PIP5K1A|CRK|VAV2|GTF2I|JUN|MAP2K2|BRAF|PLCG1|NFATC2|GAB2|RPS6KA1",
+      "Overlap (Experiment02)": "PRKCD|BCL6|RAF1|GAB1|CREB1|ATF2|PDPK1|AKT1|IKBKB|GTF2I|SOS1|CBL|JUN|NFATC2|MAP3K7|CRK|PLCG1|MAP2K2|BRAF|VAV2|GAB2|RPS6KA1|PIP5K1A",
+      "Score (Experiment01)": -1.4289000034,
+      "Score (Experiment02)": -0.5745999813
+    },
+    {
+      "Signature ID": "WP_CALCIUM_REGULATION_IN_CARDIAC_CELLS",
+      "Percent Overlap (Experiment01)": 6.6,
+      "Percent Overlap (Experiment02)": 6.6,
+      "adj p-val (Experiment01)": 0.9103691868,
+      "adj p-val (Experiment02)": 0.9687966526,
+      "Overlap (Experiment01)": "PRKCD|PRKAR2B|PLCB3|ATP2A3|PRKCH|STIM2|ATP2B1|GNAS|ATP2A2|ADCY9",
+      "Overlap (Experiment02)": "PRKCD|PRKAR2B|GNAS|ATP2B1|ATP2A2|PRKCH|PLCB3|ATP2A3|STIM2|ADCY9",
+      "Score (Experiment01)": 0.7889999747,
+      "Score (Experiment02)": 0.1154000014
+    },
+    {
+      "Signature ID": "WP_CAMKK2_PATHWAY",
+      "Percent Overlap (Experiment01)": 33.3,
+      "Percent Overlap (Experiment02)": 33.3,
+      "adj p-val (Experiment01)": 0.3919191919,
+      "adj p-val (Experiment02)": 0.4229212083,
+      "Overlap (Experiment01)": "CREB1|CAMKK2|TSC1|MTOR|RAF1|SQSTM1|RPTOR|GIT1|DNM1L|NFATC2|ARHGEF7",
+      "Overlap (Experiment02)": "RAF1|CREB1|DNM1L|GIT1|NFATC2|RPTOR|MTOR|ARHGEF7|SQSTM1|CAMKK2|TSC1",
+      "Score (Experiment01)": -2.6031000614,
+      "Score (Experiment02)": -2.1586999893
+    },
+    {
+      "Signature ID": "WP_CARDIAC_HYPERTROPHIC_RESPONSE",
+      "Percent Overlap (Experiment01)": 18.2,
+      "Percent Overlap (Experiment02)": 18.2,
+      "adj p-val (Experiment01)": 0.6999151104,
+      "adj p-val (Experiment02)": 0.9379748584,
+      "Overlap (Experiment01)": "PPP3CA|PDPK1|MTOR|MAP3K7|IKBKB|RAF1|AKT1|MEF2A|MAP2K2|NFATC2",
+      "Overlap (Experiment02)": "RAF1|MEF2A|PDPK1|AKT1|IKBKB|PPP3CA|NFATC2|MAP3K7|MTOR|MAP2K2",
+      "Score (Experiment01)": -1.3133000135,
+      "Score (Experiment02)": 0.287499994
+    },
+    {
+      "Signature ID": "WP_CELL_CYCLE",
+      "Percent Overlap (Experiment01)": 20.8,
+      "Percent Overlap (Experiment02)": 20.8,
+      "adj p-val (Experiment01)": 0.9170670116,
+      "adj p-val (Experiment02)": 0.02425,
+      "Overlap (Experiment01)": "MCM3|WEE1|MCM7|PKMYT1|HDAC1|ANAPC1|CDC20|CCNH|RBL2|ORC3|CDC7|PRKDC|ABL1|PCNA|CDK2|BUB3|MCM2|CDC25B|CHEK2|CCNE2|CDC45|RBL1|RB1|CDC6|ORC1",
+      "Overlap (Experiment02)": "CHEK2|BUB3|RBL2|PRKDC|ABL1|HDAC1|MCM2|CDC45|CCNH|ANAPC1|CDC7|PCNA|MCM3|CDC25B|PKMYT1|CDK2|RBL1|ORC3|CDC20|RB1|MCM7|CCNE2|WEE1|CDC6|ORC1",
+      "Score (Experiment01)": -0.6656000018,
+      "Score (Experiment02)": -4.5107002258
+    },
+    {
+      "Signature ID": "WP_CHEMOKINE_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 10.9,
+      "Percent Overlap (Experiment02)": 10.9,
+      "adj p-val (Experiment01)": 0.7397474747,
+      "adj p-val (Experiment02)": 0.9212476686,
+      "Overlap (Experiment01)": "FOXO3|PRKCD|PLCB3|IKBKB|PREX1|PAK1|SOS1|RAP1A|BCAR1|RAF1|AKT1|CRK|VAV2|PLCB4|BRAF|PXN|PARD3|ADCY9",
+      "Overlap (Experiment02)": "FOXO3|PRKCD|RAF1|PREX1|PXN|PLCB4|AKT1|IKBKB|SOS1|PLCB3|RAP1A|PAK1|CRK|BRAF|BCAR1|VAV2|PARD3|ADCY9",
+      "Score (Experiment01)": -1.2681000233,
+      "Score (Experiment02)": -0.3932000101
+    },
+    {
+      "Signature ID": "WP_CILIARY_LANDSCAPE",
+      "Percent Overlap (Experiment01)": 13.5,
+      "Percent Overlap (Experiment02)": 13.5,
+      "adj p-val (Experiment01)": 0.9170670116,
+      "adj p-val (Experiment02)": 0.413859978,
+      "Overlap (Experiment01)": "MCM9|NUP133|MCM3|WEE1|MCM7|NUP88|MYL6|MFAP1|SNAP29|TNKS1BP1|HDAC1|CEP170|IQCB1|EIF5B|EXOC1|DYNC1LI1|MCM2|YPEL5|RANBP10|MCM10|VPS4A|APC|ARHGDIA|YAP1|RB1|EXOC4|POM121|SMC4|EHBP1",
+      "Overlap (Experiment02)": "EIF5B|NUP88|SMC4|ARHGDIA|MFAP1|MYL6|HDAC1|CEP170|RANBP10|YPEL5|MCM2|EXOC1|VPS4A|SNAP29|YAP1|IQCB1|TNKS1BP1|EXOC4|APC|MCM3|POM121|DYNC1LI1|NUP133|EHBP1|RB1|MCM7|MCM9|WEE1|MCM10",
+      "Score (Experiment01)": -0.6231999993,
+      "Score (Experiment02)": -2.4542000294
+    },
+    {
+      "Signature ID": "WP_CILIOPATHIES",
+      "Percent Overlap (Experiment01)": 7.1,
+      "Percent Overlap (Experiment02)": 7.1,
+      "adj p-val (Experiment01)": 0.9979209979,
+      "adj p-val (Experiment02)": 0.4582388511,
+      "Overlap (Experiment01)": "FLCN|OFD1|INVS|C2CD3|HYLS1|SPAG1|CENPF|IQCB1|PIBF1|CSPP1|TOPORS|KIAA0586|NEK1",
+      "Overlap (Experiment02)": "HYLS1|FLCN|C2CD3|INVS|IQCB1|SPAG1|OFD1|TOPORS|PIBF1|NEK1|KIAA0586|CSPP1|CENPF",
+      "Score (Experiment01)": -0.0105999997,
+      "Score (Experiment02)": -2.037899971
+    },
+    {
+      "Signature ID": "WP_CIRCADIAN_RHYTHM_GENES",
+      "Percent Overlap (Experiment01)": 12.9,
+      "Percent Overlap (Experiment02)": 12.9,
+      "adj p-val (Experiment01)": 0.9805799415,
+      "adj p-val (Experiment02)": 0.4229212083,
+      "Overlap (Experiment01)": "DYRK1A|DBP|CREB1|NCOR1|THRAP3|PER1|SFPQ|HDAC1|CRTC1|KDM5A|PRKDC|SETX|ZFHX3|ATF4|CLOCK|FAS|MTA1|AHCY|TIMELESS|KMT2A|JUN|NRIP1|SIN3A|RAI1|SUV39H2|PML",
+      "Overlap (Experiment02)": "PML|CLOCK|DYRK1A|SIN3A|NCOR1|RAI1|SFPQ|PRKDC|HDAC1|KDM5A|DBP|THRAP3|CREB1|AHCY|PER1|FAS|ATF4|SETX|JUN|NRIP1|CRTC1|KMT2A|TIMELESS|ZFHX3|SUV39H2|MTA1",
+      "Score (Experiment01)": 0.1693000048,
+      "Score (Experiment02)": 2.0998001099
+    },
+    {
+      "Signature ID": "WP_CKAP4_SIGNALING_PATHWAY_MAP",
+      "Percent Overlap (Experiment01)": 11.7,
+      "Percent Overlap (Experiment02)": 11.7,
+      "adj p-val (Experiment01)": 0.5976341083,
+      "adj p-val (Experiment02)": 0.8754363559,
+      "Overlap (Experiment01)": "OCLN|SP1|BRCA1|DSP|AKT1|FAS|CHEK2|ITGB1|JUN|CASP4|MAP2K2|TJP1|PARD3",
+      "Overlap (Experiment02)": "CHEK2|TJP1|SP1|FAS|AKT1|JUN|ITGB1|OCLN|MAP2K2|DSP|BRCA1|PARD3|CASP4",
+      "Score (Experiment01)": -1.826300025,
+      "Score (Experiment02)": -0.730700016
+    },
+    {
+      "Signature ID": "WP_CLEAR_CELL_RENAL_CELL_CARCINOMA_PATHWAYS",
+      "Percent Overlap (Experiment01)": 20.0,
+      "Percent Overlap (Experiment02)": 20.0,
+      "adj p-val (Experiment01)": 0.5502168836,
+      "adj p-val (Experiment02)": 0.512173658,
+      "Overlap (Experiment01)": "ALDOA|AKT1S1|TSC1|PKM|MTOR|PHGDH|PGK1|TPI1|AKT1|TSC2|LDHA|SQSTM1|GAPDH|PFKP|RPTOR|FASN|SETD2",
+      "Overlap (Experiment02)": "ALDOA|AKT1S1|GAPDH|TSC2|LDHA|PKM|AKT1|TPI1|PHGDH|PGK1|RPTOR|MTOR|SQSTM1|SETD2|FASN|TSC1|PFKP",
+      "Score (Experiment01)": -2.1547000408,
+      "Score (Experiment02)": -1.8803999424
+    },
+    {
+      "Signature ID": "WP_CLOCK_CONTROLLED_AUTOPHAGY_IN_BONE_METABOLISM",
+      "Percent Overlap (Experiment01)": 12.5,
+      "Percent Overlap (Experiment02)": 12.5,
+      "adj p-val (Experiment01)": 0.9838183616,
+      "adj p-val (Experiment02)": 0.8749694227,
+      "Overlap (Experiment01)": "RB1CC1|PER1|MTOR|VCP|ARHGAP4|HMGB1|AKT1|CLOCK|SQSTM1|ULK1",
+      "Overlap (Experiment02)": "RB1CC1|CLOCK|HMGB1|PER1|AKT1|VCP|ARHGAP4|MTOR|SQSTM1|ULK1",
+      "Score (Experiment01)": -0.0838000029,
+      "Score (Experiment02)": 0.720600009
+    },
+    {
+      "Signature ID": "WP_CORTICOTROPIN_RELEASING_HORMONE_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 15.1,
+      "Percent Overlap (Experiment02)": 15.1,
+      "adj p-val (Experiment01)": 0.9170670116,
+      "adj p-val (Experiment02)": 0.4764243615,
+      "Overlap (Experiment01)": "PRKCD|PARP1|CREB1|TRIM28|ECE1|SP1|RAF1|GNAS|AKT1|BRAF|MAP3K5|PLCG1|JUP|HSP90AA1",
+      "Overlap (Experiment02)": "PRKCD|SP1|RAF1|TRIM28|HSP90AA1|CREB1|PARP1|GNAS|ECE1|JUP|AKT1|PLCG1|BRAF|MAP3K5",
+      "Score (Experiment01)": 0.5877000093,
+      "Score (Experiment02)": 1.9114999771
+    },
+    {
+      "Signature ID": "WP_CYTOPLASMIC_RIBOSOMAL_PROTEINS",
+      "Percent Overlap (Experiment01)": 18.2,
+      "Percent Overlap (Experiment02)": 18.2,
+      "adj p-val (Experiment01)": 0.7785351295,
+      "adj p-val (Experiment02)": 0.4782608696,
+      "Overlap (Experiment01)": "RPL29|RPL27A|RPL7A|RPL5|RPL18|RPL17|RPS26|RPL30|RPL15|RPS17|RPL14|RPS6|RPS10|RPL24|RPS6KA1|RPS2",
+      "Overlap (Experiment02)": "RPL27A|RPL15|RPL30|RPL5|RPS6|RPS26|RPL17|RPL7A|RPL29|RPS10|RPS17|RPS2|RPS6KA1|RPL18|RPL24|RPL14",
+      "Score (Experiment01)": -1.1239000559,
+      "Score (Experiment02)": -2.0139000416
+    },
+    {
+      "Signature ID": "WP_DNA_DAMAGE_RESPONSE",
+      "Percent Overlap (Experiment01)": 24.6,
+      "Percent Overlap (Experiment02)": 24.6,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.7423935091,
+      "Overlap (Experiment01)": "TLK2|CREB1|FANCD2|RFC1|BRCA1|NBN|PRKDC|RAD52|ABL1|CDK2|AKT1|FAS|CDK5|CHEK2|CCNE2|PML|RB1",
+      "Overlap (Experiment02)": "CHEK2|PML|TLK2|PRKDC|ABL1|CREB1|FAS|NBN|AKT1|RAD52|CDK5|BRCA1|CDK2|RB1|RFC1|FANCD2|CCNE2",
+      "Score (Experiment01)": 0.5724999905,
+      "Score (Experiment02)": -1.1216000319
+    },
+    {
+      "Signature ID": "WP_DNA_DAMAGE_RESPONSE_ONLY_ATM_DEPENDENT",
+      "Percent Overlap (Experiment01)": 12.7,
+      "Percent Overlap (Experiment02)": 12.7,
+      "adj p-val (Experiment01)": 0.9805799415,
+      "adj p-val (Experiment02)": 0.1656880538,
+      "Overlap (Experiment01)": "FOXO3|BCL6|ERBB2|MAP3K7|AXIN1|RBL2|SOS1|ABL1|HMGB1|AKT1|JUN|APC|MAP3K4|IRS1",
+      "Overlap (Experiment02)": "FOXO3|BCL6|RBL2|ERBB2|MAP3K4|ABL1|HMGB1|AXIN1|AKT1|SOS1|JUN|MAP3K7|IRS1|APC",
+      "Score (Experiment01)": -0.1590999961,
+      "Score (Experiment02)": 3.2005999088
+    },
+    {
+      "Signature ID": "WP_DNA_IR_DAMAGE_AND_CELLULAR_RESPONSE_VIA_ATR",
+      "Percent Overlap (Experiment01)": 37.0,
+      "Percent Overlap (Experiment02)": 37.0,
+      "adj p-val (Experiment01)": 0.6235714286,
+      "adj p-val (Experiment02)": 0.9687966526,
+      "Overlap (Experiment01)": "PARP1|MDC1|FOXM1|TP53BP1|TRIM28|SP1|BCL6|FANCD2|UIMC1|BRCA1|PPM1D|RMI1|NBN|CLK2|PRKDC|RAD52|PCNA|RECQL5|CLSPN|CDK2|XRCC5|MCM2|EXO1|CHEK2|CDC45|MCPH1|PML|SMARCC2|USP1|HERC2",
+      "Overlap (Experiment02)": "SMARCC2|MDC1|CHEK2|PML|BCL6|UIMC1|SP1|XRCC5|PRKDC|TRIM28|RECQL5|PARP1|RMI1|NBN|MCM2|CLK2|CDC45|RAD52|PPM1D|PCNA|HERC2|CLSPN|MCPH1|BRCA1|CDK2|TP53BP1|FANCD2|EXO1|USP1|FOXM1",
+      "Score (Experiment01)": 1.7353999615,
+      "Score (Experiment02)": -0.0838999972
+    },
+    {
+      "Signature ID": "WP_DNA_IR_DOUBLE_STRAND_BREAKS_AND_CELLULAR_RESPONSE_VIA_ATM",
+      "Percent Overlap (Experiment01)": 41.8,
+      "Percent Overlap (Experiment02)": 41.8,
+      "adj p-val (Experiment01)": 0.5502168836,
+      "adj p-val (Experiment02)": 0.7423935091,
+      "Overlap (Experiment01)": "PARP1|MDC1|BLM|TP53BP1|TRIM28|FANCD2|DCLRE1C|BRCA1|KAT5|NBN|ATF2|STK3|PRKDC|RAD52|ABL1|PCNA|CDK5|EXO1|CHEK2|RIF1|MCPH1|YAP1|LATS1",
+      "Overlap (Experiment02)": "MDC1|CHEK2|KAT5|PRKDC|ABL1|TRIM28|STK3|PARP1|DCLRE1C|ATF2|NBN|LATS1|YAP1|RAD52|PCNA|MCPH1|CDK5|BRCA1|BLM|RIF1|TP53BP1|FANCD2|EXO1",
+      "Score (Experiment01)": 2.0199000835,
+      "Score (Experiment02)": -1.1798000336
+    },
+    {
+      "Signature ID": "WP_DNA_REPAIR_PATHWAYS_FULL_NETWORK",
+      "Percent Overlap (Experiment01)": 17.5,
+      "Percent Overlap (Experiment02)": 17.5,
+      "adj p-val (Experiment01)": 0.4170093458,
+      "adj p-val (Experiment02)": 0.20995671,
+      "Overlap (Experiment01)": "PARP1|XRCC1|FANCD2|DCLRE1C|RFC1|POLM|BRCA1|LIG3|NBN|CCNH|MSH6|PRKDC|RAD52|RAP1A|PCNA|REV1|HMGB1|XRCC5|LIG1|EXO1|USP1",
+      "Overlap (Experiment02)": "LIG3|XRCC5|PRKDC|HMGB1|PARP1|DCLRE1C|NBN|POLM|RAP1A|RAD52|REV1|CCNH|MSH6|XRCC1|PCNA|LIG1|BRCA1|RFC1|FANCD2|EXO1|USP1",
+      "Score (Experiment01)": 2.592799902,
+      "Score (Experiment02)": -2.7153000832
+    },
+    {
+      "Signature ID": "WP_DNA_REPLICATION",
+      "Percent Overlap (Experiment01)": 28.6,
+      "Percent Overlap (Experiment02)": 28.6,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.02425,
+      "Overlap (Experiment01)": "MCM3|MCM7|RFC1|ORC3|CDC7|PCNA|CDK2|MCM2|CDC45|MCM10|CDC6|ORC1",
+      "Overlap (Experiment02)": "MCM2|CDC45|CDC7|PCNA|MCM3|CDK2|ORC3|MCM7|RFC1|CDC6|MCM10|ORC1",
+      "Score (Experiment01)": -0.5468999743,
+      "Score (Experiment02)": -5.5766000748
+    },
+    {
+      "Signature ID": "WP_DYRK1A_INVOLVEMENT_REGARDING_CELL_PROLIFERATION_IN_BRAIN_DEVELOPMENT",
+      "Percent Overlap (Experiment01)": 22.6,
+      "Percent Overlap (Experiment02)": 22.6,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.8211826687,
+      "Overlap (Experiment01)": "DYRK1A|CREB1|PSEN1|AKT1S1|MAPT|TSC1|LIN52|MTOR|RBL2|TSC2|RBL1|LIN9|RPTOR|LIN54",
+      "Overlap (Experiment02)": "LIN52|DYRK1A|RBL2|AKT1S1|PSEN1|MAPT|CREB1|TSC2|RPTOR|MTOR|LIN9|LIN54|RBL1|TSC1",
+      "Score (Experiment01)": 0.4826999903,
+      "Score (Experiment02)": 0.9257000089
+    },
+    {
+      "Signature ID": "WP_EBOLA_VIRUS_INFECTION_IN_HOST",
+      "Percent Overlap (Experiment01)": 12.4,
+      "Percent Overlap (Experiment02)": 12.4,
+      "adj p-val (Experiment01)": 0.9170670116,
+      "adj p-val (Experiment02)": 0.9212476686,
+      "Overlap (Experiment01)": "IGF1R|ACTG1|HLA-A|RFC1|KPNA1|PAK1|ITGA3|PRKRA|AKT1|VAV2|ITGB1|DAB2IP|VPS4A|RASA2|ACTN4|FLNB",
+      "Overlap (Experiment02)": "ACTN4|FLNB|PRKRA|ITGA3|AKT1|VPS4A|ACTG1|KPNA1|IGF1R|ITGB1|RASA2|HLA-A|PAK1|VAV2|DAB2IP|RFC1",
+      "Score (Experiment01)": -0.6040999889,
+      "Score (Experiment02)": -0.3330000043
+    },
+    {
+      "Signature ID": "WP_ECTODERM_DIFFERENTIATION",
+      "Percent Overlap (Experiment01)": 8.5,
+      "Percent Overlap (Experiment02)": 8.5,
+      "adj p-val (Experiment01)": 0.6871374386,
+      "adj p-val (Experiment02)": 0.7423935091,
+      "Overlap (Experiment01)": "PHF8|NUMA1|BCOR|PRKAG2|MECP2|WDR44|BAZ1A|GAS2L1|SERPINB6|PPFIBP2|JUP|BCAS3",
+      "Overlap (Experiment02)": "PRKAG2|WDR44|BCOR|JUP|MECP2|SERPINB6|BCAS3|PHF8|NUMA1|PPFIBP2|GAS2L1|BAZ1A",
+      "Score (Experiment01)": -1.4470000267,
+      "Score (Experiment02)": -1.1110999584
+    },
+    {
+      "Signature ID": "WP_EGFR_TYROSINE_KINASE_INHIBITOR_RESISTANCE",
+      "Percent Overlap (Experiment01)": 21.4,
+      "Percent Overlap (Experiment02)": 21.4,
+      "adj p-val (Experiment01)": 0.9170670116,
+      "adj p-val (Experiment02)": 0.8749694227,
+      "Overlap (Experiment01)": "FOXO3|IGF1R|GAB1|RRAS|ERBB2|ARAF|PDPK1|MTOR|SOS1|RAF1|AKT1|NF1|RPS6|EIF4EBP1|MAP2K2|BRAF|PLCG1|FGFR3",
+      "Overlap (Experiment02)": "NF1|FOXO3|ERBB2|RAF1|ARAF|GAB1|RPS6|PDPK1|AKT1|SOS1|IGF1R|RRAS|PLCG1|MTOR|MAP2K2|BRAF|EIF4EBP1|FGFR3",
+      "Score (Experiment01)": 0.7186999917,
+      "Score (Experiment02)": 0.7714999914
+    },
+    {
+      "Signature ID": "WP_EGF_EGFR_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 28.3,
+      "Percent Overlap (Experiment02)": 28.3,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.7924528302,
+      "Overlap (Experiment01)": "PRKCD|GAB1|CREB1|STAT5A|ABI1|SP1|ERBB2|SYNJ1|RICTOR|IQSEC1|AP2S1|PDPK1|ARHGEF1|STMN1|MTOR|AP2A1|PAK1|SOS1|MAP3K3|REPS2|ASAP1|RAP1A|ABL1|PCNA|BCAR1|RAF1|CBL|RALBP1|AKT1|CRK|VAV2|MEF2A|LIMK2|JUN|ATXN2|USP6NL|EIF4EBP1|MAP2K2|MAP3K4|BRAF|PTPN12|ELK4|PLCG1|GAB2|RPS6KA1",
+      "Overlap (Experiment02)": "PRKCD|RICTOR|ERBB2|MAP3K4|SP1|AP2S1|RAF1|STAT5A|AP2A1|ABI1|USP6NL|ABL1|MEF2A|GAB1|STMN1|CREB1|RALBP1|ELK4|PDPK1|ASAP1|AKT1|SYNJ1|SOS1|MAP3K3|RAP1A|REPS2|CBL|JUN|ARHGEF1|PAK1|CRK|PLCG1|IQSEC1|MTOR|MAP2K2|BRAF|BCAR1|ATXN2|VAV2|PCNA|LIMK2|PTPN12|GAB2|RPS6KA1|EIF4EBP1",
+      "Score (Experiment01)": -0.4867999852,
+      "Score (Experiment02)": 0.9587000012
+    },
+    {
+      "Signature ID": "WP_EMBRYONIC_STEM_CELL_PLURIPOTENCY_PATHWAYS",
+      "Percent Overlap (Experiment01)": 11.2,
+      "Percent Overlap (Experiment02)": 11.2,
+      "adj p-val (Experiment01)": 0.6897777778,
+      "adj p-val (Experiment02)": 0.7423935091,
+      "Overlap (Experiment01)": "GAB1|ARAF|MTOR|AXIN1|SOS1|LRP6|RAF1|AKT1|JUN|MAP2K2|APC|BRAF|FGFR3",
+      "Overlap (Experiment02)": "RAF1|ARAF|GAB1|AXIN1|AKT1|SOS1|JUN|LRP6|MTOR|MAP2K2|BRAF|APC|FGFR3",
+      "Score (Experiment01)": -1.421399951,
+      "Score (Experiment02)": -1.122699976
+    },
+    {
+      "Signature ID": "WP_ENDODERM_DIFFERENTIATION",
+      "Percent Overlap (Experiment01)": 16.1,
+      "Percent Overlap (Experiment02)": 16.1,
+      "adj p-val (Experiment01)": 0.6871374386,
+      "adj p-val (Experiment02)": 0.1902582543,
+      "Overlap (Experiment01)": "PLCH1|CEP250|AHDC1|BPTF|EPB41L5|JARID2|CRTC1|DIP2A|TRERF1|AEBP2|SIAH2|BCORL1|CEBPZ|BTAF1|WDHD1|APC|ELK4|NAA15|LEO1|WWC1|EMSY|ZNF462|RTF1",
+      "Overlap (Experiment02)": "AHDC1|LEO1|EMSY|NAA15|CEBPZ|ELK4|EPB41L5|TRERF1|RTF1|CRTC1|CEP250|SIAH2|BPTF|BTAF1|WWC1|APC|AEBP2|JARID2|WDHD1|DIP2A|PLCH1|ZNF462|BCORL1",
+      "Score (Experiment01)": -1.4721000195,
+      "Score (Experiment02)": -3.0964999199
+    },
+    {
+      "Signature ID": "WP_ENDOMETRIAL_CANCER",
+      "Percent Overlap (Experiment01)": 19.0,
+      "Percent Overlap (Experiment02)": 19.0,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.8959541985,
+      "Overlap (Experiment01)": "FOXO3|ERBB2|ARAF|PDPK1|AXIN1|SOS1|RAF1|AKT1|MAP2K2|APC|BRAF|FGFR3",
+      "Overlap (Experiment02)": "FOXO3|ERBB2|RAF1|ARAF|PDPK1|AXIN1|AKT1|SOS1|MAP2K2|BRAF|APC|FGFR3",
+      "Score (Experiment01)": -0.5314999819,
+      "Score (Experiment02)": 0.6004999876
+    },
+    {
+      "Signature ID": "WP_ENERGY_METABOLISM",
+      "Percent Overlap (Experiment01)": 22.9,
+      "Percent Overlap (Experiment02)": 22.9,
+      "adj p-val (Experiment01)": 0.2711390636,
+      "adj p-val (Experiment02)": 0.3997252747,
+      "Overlap (Experiment01)": "FOXO3|PRKAB1|CREB1|MED1|TFAM|PPP3CA|PRKAG2|HDAC1|ATF2|MEF2A|PPARGC1B",
+      "Overlap (Experiment02)": "FOXO3|PRKAG2|MEF2A|HDAC1|TFAM|CREB1|ATF2|PPP3CA|MED1|PPARGC1B|PRKAB1",
+      "Score (Experiment01)": 2.8417999744,
+      "Score (Experiment02)": 2.4456999302
+    },
+    {
+      "Signature ID": "WP_EPITHELIAL_TO_MESENCHYMAL_TRANSITION_IN_COLORECTAL_CANCER",
+      "Percent Overlap (Experiment01)": 9.9,
+      "Percent Overlap (Experiment02)": 9.9,
+      "adj p-val (Experiment01)": 0.5502168836,
+      "adj p-val (Experiment02)": 0.8959541985,
+      "Overlap (Experiment01)": "FN1|FOXM1|OCLN|PKP2|NR2C2|CLDN3|CLDN7|PAK1|SOS1|LRP6|DSP|RAF1|AKT1|MAP2K2|TJP1|JUP",
+      "Overlap (Experiment02)": "TJP1|RAF1|FN1|PKP2|CLDN3|JUP|AKT1|SOS1|OCLN|LRP6|PAK1|MAP2K2|NR2C2|DSP|CLDN7|FOXM1",
+      "Score (Experiment01)": 2.1317999363,
+      "Score (Experiment02)": -0.5322999954
+    },
+    {
+      "Signature ID": "WP_ERBB_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 21.1,
+      "Percent Overlap (Experiment02)": 21.1,
+      "adj p-val (Experiment01)": 0.9170670116,
+      "adj p-val (Experiment02)": 0.9577607341,
+      "Overlap (Experiment01)": "GAB1|STAT5A|PAK4|ERBB2|ARAF|PDPK1|MTOR|PAK1|SOS1|ABL1|RAF1|CBL|AKT1|CRK|PAK2|JUN|EIF4EBP1|MAP2K2|BRAF",
+      "Overlap (Experiment02)": "ERBB2|RAF1|STAT5A|ABL1|ARAF|GAB1|PDPK1|AKT1|SOS1|PAK4|CBL|JUN|PAK1|CRK|PAK2|MTOR|MAP2K2|BRAF|EIF4EBP1",
+      "Score (Experiment01)": 0.6834999919,
+      "Score (Experiment02)": 0.2883000076
+    },
+    {
+      "Signature ID": "WP_FACTORS_AND_PATHWAYS_AFFECTING_INSULIN_LIKE_GROWTH_FACTOR_IGF1_AKT_SIGNALING",
+      "Percent Overlap (Experiment01)": 27.8,
+      "Percent Overlap (Experiment02)": 27.8,
+      "adj p-val (Experiment01)": 0.6897777778,
+      "adj p-val (Experiment02)": 0.9059293395,
+      "Overlap (Experiment01)": "IGF1R|PRKAB1|MAPKAP1|RICTOR|AKT1S1|MTOR|AKT1|ITGB1|RPTOR|IRS1",
+      "Overlap (Experiment02)": "RICTOR|AKT1S1|AKT1|IGF1R|ITGB1|IRS1|RPTOR|MTOR|PRKAB1|MAPKAP1",
+      "Score (Experiment01)": 1.4099999666,
+      "Score (Experiment02)": -0.4489000142
+    },
+    {
+      "Signature ID": "WP_FAS_LIGAND_PATHWAY_AND_STRESS_INDUCTION_OF_HEAT_SHOCK_PROTEINS",
+      "Percent Overlap (Experiment01)": 39.5,
+      "Percent Overlap (Experiment02)": 39.5,
+      "adj p-val (Experiment01)": 0.7099510445,
+      "adj p-val (Experiment02)": 0.8616353272,
+      "Overlap (Experiment01)": "PARP1|ACTG1|CASP7|SPTAN1|NFX1|MAP3K7|PAK1|LMNB2|PRKDC|FAS|PAK2|JUN|RIPK2|FAF1|RB1|HSPB1|LMNA",
+      "Overlap (Experiment02)": "SPTAN1|PRKDC|FAF1|PARP1|CASP7|FAS|RIPK2|ACTG1|JUN|LMNB2|MAP3K7|PAK1|NFX1|PAK2|HSPB1|LMNA|RB1",
+      "Score (Experiment01)": -1.3486000299,
+      "Score (Experiment02)": -0.8554000258
+    },
+    {
+      "Signature ID": "WP_FOCAL_ADHESION",
+      "Percent Overlap (Experiment01)": 14.1,
+      "Percent Overlap (Experiment02)": 14.1,
+      "adj p-val (Experiment01)": 0.8210444574,
+      "adj p-val (Experiment02)": 0.8959541985,
+      "Overlap (Experiment01)": "IGF1R|FN1|ACTG1|PAK4|ERBB2|DOCK1|TNK1|PDPK1|PAK1|ITGA3|SOS1|RAP1A|BCAR1|RAF1|AKT1|ARHGAP35|CRK|PAK2|VAV2|MYLK|ARHGAP5|ITGB1|JUN|BRAF|TLN1|PXN|ACTN4|FLNB",
+      "Overlap (Experiment02)": "ACTN4|ERBB2|RAF1|FN1|FLNB|DOCK1|ITGA3|ARHGAP35|PXN|PDPK1|AKT1|MYLK|SOS1|ACTG1|RAP1A|PAK4|JUN|IGF1R|ITGB1|TNK1|PAK1|CRK|PAK2|ARHGAP5|BRAF|BCAR1|VAV2|TLN1",
+      "Score (Experiment01)": -1.0317000151,
+      "Score (Experiment02)": 0.5618000031
+    },
+    {
+      "Signature ID": "WP_FOCAL_ADHESION_PI3K_AKT_MTOR_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 11.6,
+      "Percent Overlap (Experiment02)": 11.6,
+      "adj p-val (Experiment01)": 0.9971878573,
+      "adj p-val (Experiment02)": 0.9687966526,
+      "Overlap (Experiment01)": "FOXO3|IGF1R|CDC37|FN1|EIF4B|CREB1|CREB3L4|TBC1D1|AKT1S1|TSC1|PDPK1|PPP2R5A|MTOR|IKBKB|ITGA3|FLT4|SOS1|ATF2|RAF1|RAB11B|AKT1|ATF4|HSP90B1|TSC2|ITGB1|PFKFB3|RPS6|EIF4EBP1|MAP2K2|RPTOR|HSP90AB1|HSP90AA1|IRS1|ULK1|FGFR3",
+      "Overlap (Experiment02)": "FOXO3|CREB3L4|RAB11B|AKT1S1|RAF1|FN1|HSP90AA1|CREB1|ITGA3|HSP90B1|TSC2|RPS6|ATF2|ATF4|PDPK1|AKT1|IKBKB|SOS1|PPP2R5A|PFKFB3|FLT4|IGF1R|ITGB1|HSP90AB1|IRS1|RPTOR|MTOR|MAP2K2|EIF4B|CDC37|TBC1D1|ULK1|EIF4EBP1|FGFR3|TSC1",
+      "Score (Experiment01)": 0.0156999994,
+      "Score (Experiment02)": -0.1125999987
+    },
+    {
+      "Signature ID": "WP_FRAGILE_X_SYNDROME",
+      "Percent Overlap (Experiment01)": 21.5,
+      "Percent Overlap (Experiment02)": 21.5,
+      "adj p-val (Experiment01)": 0.902971715,
+      "adj p-val (Experiment02)": 0.7423935091,
+      "Overlap (Experiment01)": "EIF4G1|GAB1|EPS8L1|CREB1|ARHGAP32|AKT1S1|ARAF|AP2S1|TSC1|PPP3CA|MECP2|MTOR|AP2A1|DUSP3|SOS1|RAF1|AKT1|TSC2|NF1|MAP2K2|BRAF|MAP1B|CYFIP1|PLCG1|RPTOR|MKNK1",
+      "Overlap (Experiment02)": "NF1|EPS8L1|AKT1S1|AP2S1|RAF1|AP2A1|ARAF|GAB1|CREB1|TSC2|MECP2|AKT1|DUSP3|SOS1|PPP3CA|ARHGAP32|MKNK1|CYFIP1|MAP1B|RPTOR|PLCG1|MTOR|MAP2K2|BRAF|EIF4G1|TSC1",
+      "Score (Experiment01)": 0.7914999723,
+      "Score (Experiment02)": 1.1621999741
+    },
+    {
+      "Signature ID": "WP_G1_TO_S_CELL_CYCLE_CONTROL",
+      "Percent Overlap (Experiment01)": 21.9,
+      "Percent Overlap (Experiment02)": 21.9,
+      "adj p-val (Experiment01)": 0.762811831,
+      "adj p-val (Experiment02)": 0.02425,
+      "Overlap (Experiment01)": "MCM3|WEE1|CREB1|MCM7|CREB3L4|CCNH|ORC3|PCNA|CDK2|MCM2|CCNE2|CDC45|RB1|ORC1",
+      "Overlap (Experiment02)": "CREB3L4|CREB1|MCM2|CDC45|CCNH|PCNA|MCM3|CDK2|ORC3|RB1|MCM7|CCNE2|WEE1|ORC1",
+      "Score (Experiment01)": 1.1374000311,
+      "Score (Experiment02)": -4.5847001076
+    },
+    {
+      "Signature ID": "WP_GASTRIN_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 22.6,
+      "Percent Overlap (Experiment02)": 22.6,
+      "adj p-val (Experiment01)": 0.9838183616,
+      "adj p-val (Experiment02)": 0.3459578804,
+      "Overlap (Experiment01)": "FOXO3|PRKCD|YES1|CREB1|SP1|ANXA2|KAT5|MTOR|IKBKB|PRKCH|PAK1|SOS1|ATF2|BCAR1|RAF1|AKT1|CRK|MAP3K11|ITGB1|JUN|RPS6|EIF4EBP1|PLCG1|TJP1|PXN|IRS1",
+      "Overlap (Experiment02)": "TJP1|FOXO3|PRKCD|ANXA2|KAT5|YES1|SP1|RAF1|CREB1|RPS6|PXN|ATF2|AKT1|IKBKB|SOS1|PRKCH|JUN|ITGB1|PAK1|CRK|IRS1|PLCG1|MTOR|BCAR1|MAP3K11|EIF4EBP1",
+      "Score (Experiment01)": -0.1439999938,
+      "Score (Experiment02)": 2.5422999859
+    },
+    {
+      "Signature ID": "WP_GLIOBLASTOMA_SIGNALING_PATHWAYS",
+      "Percent Overlap (Experiment01)": 28.0,
+      "Percent Overlap (Experiment02)": 28.0,
+      "adj p-val (Experiment01)": 0.9170670116,
+      "adj p-val (Experiment02)": 0.9687966526,
+      "Overlap (Experiment01)": "FOXO3|IGF1R|PRKCD|GAB1|ERBB2|BRCA1|ARAF|TSC1|PDPK1|PRKCH|MSH6|RAF1|CBL|CDK2|AKT1|TSC2|NF1|MAP2K2|BRAF|MDM4|PLCG1|RB1|IRS1",
+      "Overlap (Experiment02)": "NF1|FOXO3|PRKCD|ERBB2|RAF1|ARAF|GAB1|TSC2|PDPK1|AKT1|PRKCH|MDM4|CBL|IGF1R|MSH6|IRS1|PLCG1|MAP2K2|BRAF|BRCA1|CDK2|TSC1|RB1",
+      "Score (Experiment01)": 0.5928000212,
+      "Score (Experiment02)": 0.2041999996
+    },
+    {
+      "Signature ID": "WP_GLYCOLYSIS_AND_GLUCONEOGENESIS",
+      "Percent Overlap (Experiment01)": 26.7,
+      "Percent Overlap (Experiment02)": 26.7,
+      "adj p-val (Experiment01)": 0.8219314642,
+      "adj p-val (Experiment02)": 0.7423935091,
+      "Overlap (Experiment01)": "ALDOA|PGAM1|MDH2|PKM|PC|PGK1|TPI1|DLAT|FBP2|LDHA|GAPDH|PFKP",
+      "Overlap (Experiment02)": "MDH2|ALDOA|PC|FBP2|GAPDH|LDHA|PKM|TPI1|PGK1|DLAT|PGAM1|PFKP",
+      "Score (Experiment01)": 0.9473999739,
+      "Score (Experiment02)": 1.2160999775
+    },
+    {
+      "Signature ID": "WP_G_PROTEIN_SIGNALING_PATHWAYS",
+      "Percent Overlap (Experiment01)": 17.6,
+      "Percent Overlap (Experiment02)": 17.6,
+      "adj p-val (Experiment01)": 0.6242801978,
+      "adj p-val (Experiment02)": 0.7423935091,
+      "Overlap (Experiment01)": "PRKCD|RRAS|AKAP8|AKAP1|PRKAR2B|PLCB3|PPP3CA|ARHGEF1|PRKCH|AKAP9|AKAP10|PDE4D|GNAS|AKAP13|AKAP11|ADCY9",
+      "Overlap (Experiment02)": "PRKCD|PRKAR2B|AKAP9|AKAP1|GNAS|PDE4D|PPP3CA|PRKCH|PLCB3|AKAP8|ARHGEF1|RRAS|AKAP13|AKAP11|AKAP10|ADCY9",
+      "Score (Experiment01)": 1.6665999889,
+      "Score (Experiment02)": -1.1690000296
+    },
+    {
+      "Signature ID": "WP_HEAD_AND_NECK_SQUAMOUS_CELL_CARCINOMA",
+      "Percent Overlap (Experiment01)": 23.0,
+      "Percent Overlap (Experiment02)": 23.0,
+      "adj p-val (Experiment01)": 0.9648237558,
+      "adj p-val (Experiment02)": 0.7423935091,
+      "Overlap (Experiment01)": "IGF1R|GAB1|MAPKAP1|ERBB2|RICTOR|TSC1|PDPK1|MTOR|AKT1|AJUBA|TSC2|RPS6|EIF4EBP1|RPTOR|RB1|NUMB|FGFR3",
+      "Overlap (Experiment02)": "NUMB|RICTOR|ERBB2|GAB1|TSC2|RPS6|PDPK1|AKT1|IGF1R|AJUBA|RPTOR|MTOR|MAPKAP1|EIF4EBP1|FGFR3|TSC1|RB1",
+      "Score (Experiment01)": -0.2551000118,
+      "Score (Experiment02)": -1.1032999754
+    },
+    {
+      "Signature ID": "WP_HEPATITIS_B_INFECTION",
+      "Percent Overlap (Experiment01)": 11.9,
+      "Percent Overlap (Experiment02)": 11.9,
+      "adj p-val (Experiment01)": 0.9838183616,
+      "adj p-val (Experiment02)": 0.7056418426,
+      "Overlap (Experiment01)": "CREB1|STAT5A|CREB3L4|ARAF|MAP3K7|IKBKB|SOS1|ATF2|DDX3X|PCNA|RAF1|AKT1|ATF4|FAS|JUN|MAP2K2|BRAF|NFATC2",
+      "Overlap (Experiment02)": "CREB3L4|RAF1|STAT5A|ARAF|CREB1|FAS|ATF2|ATF4|DDX3X|AKT1|IKBKB|SOS1|JUN|NFATC2|MAP3K7|MAP2K2|BRAF|PCNA",
+      "Score (Experiment01)": -0.0864000022,
+      "Score (Experiment02)": 1.3042999506
+    },
+    {
+      "Signature ID": "WP_HEPATOCYTE_GROWTH_FACTOR_RECEPTOR_SIGNALING",
+      "Percent Overlap (Experiment01)": 32.4,
+      "Percent Overlap (Experiment02)": 32.4,
+      "adj p-val (Experiment01)": 0.8301901083,
+      "adj p-val (Experiment02)": 0.8749694227,
+      "Overlap (Experiment01)": "GAB1|DOCK1|PAK1|SOS1|RAP1A|RAF1|CRK|ITGB1|JUN|MAP2K2|PXN",
+      "Overlap (Experiment02)": "RAF1|DOCK1|GAB1|PXN|SOS1|RAP1A|JUN|ITGB1|PAK1|CRK|MAP2K2",
+      "Score (Experiment01)": -0.918200016,
+      "Score (Experiment02)": 0.7491000295
+    },
+    {
+      "Signature ID": "WP_HIPPO_MERLIN_SIGNALING_DYSREGULATION",
+      "Percent Overlap (Experiment01)": 13.2,
+      "Percent Overlap (Experiment02)": 13.2,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.413859978,
+      "Overlap (Experiment01)": "IGF1R|FOXM1|PRKAR2B|PAK4|PAK1|DCAF1|ITGA3|FLT4|STK3|AJUBA|PAK2|ITGB1|PLCB4|YAP1|LATS1|FGFR3",
+      "Overlap (Experiment02)": "PRKAR2B|STK3|ITGA3|PLCB4|LATS1|YAP1|FLT4|PAK4|IGF1R|ITGB1|AJUBA|PAK1|PAK2|FGFR3|DCAF1|FOXM1",
+      "Score (Experiment01)": -0.4151000082,
+      "Score (Experiment02)": -2.2047998905
+    },
+    {
+      "Signature ID": "WP_HIPPO_SIGNALING_REGULATION_PATHWAYS",
+      "Percent Overlap (Experiment01)": 15.3,
+      "Percent Overlap (Experiment02)": 15.3,
+      "adj p-val (Experiment01)": 0.8219314642,
+      "adj p-val (Experiment02)": 0.7748798766,
+      "Overlap (Experiment01)": "IGF1R|PRKCD|PRKAB1|PRKAR2B|PLCB3|PRKAG2|MTOR|PRKCH|FLT4|STK3|GNAS|PLCB4|YAP1|LATS1|FGFR3",
+      "Overlap (Experiment02)": "PRKCD|PRKAG2|PRKAR2B|STK3|GNAS|PLCB4|LATS1|PRKCH|PLCB3|YAP1|FLT4|IGF1R|MTOR|PRKAB1|FGFR3",
+      "Score (Experiment01)": 0.9656999707,
+      "Score (Experiment02)": 1.0292999744
+    },
+    {
+      "Signature ID": "WP_HISTONE_MODIFICATIONS",
+      "Percent Overlap (Experiment01)": 24.6,
+      "Percent Overlap (Experiment02)": 24.6,
+      "adj p-val (Experiment01)": 0.9805799415,
+      "adj p-val (Experiment02)": 0.0389558233,
+      "Overlap (Experiment01)": "KMT2D|SETD1B|ASH1L|KMT2B|KMT2E|KMT5C|KMT5A|AEBP2|SETD5|EHMT2|NSD1|KMT2A|PRDM2|SUV39H2|SETD2|KMT2C",
+      "Overlap (Experiment02)": "SETD1B|KMT2D|KMT2C|KMT2E|KMT5C|KMT2B|SETD5|EHMT2|AEBP2|KMT2A|NSD1|PRDM2|SETD2|ASH1L|SUV39H2|KMT5A",
+      "Score (Experiment01)": -0.1800000072,
+      "Score (Experiment02)": -3.2544000149
+    },
+    {
+      "Signature ID": "WP_IL_1_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 18.5,
+      "Percent Overlap (Experiment02)": 18.5,
+      "adj p-val (Experiment01)": 0.5976341083,
+      "adj p-val (Experiment02)": 0.6546510411,
+      "Overlap (Experiment01)": "TAB3|MAP3K7|IKBKB|ATF2|MAP3K3|AKT1|JUN|SQSTM1|MAP2K2|PLCG1",
+      "Overlap (Experiment02)": "TAB3|ATF2|AKT1|IKBKB|MAP3K3|JUN|MAP3K7|PLCG1|MAP2K2|SQSTM1",
+      "Score (Experiment01)": -1.8459999561,
+      "Score (Experiment02)": -1.4139000177
+    },
+    {
+      "Signature ID": "WP_IL_24_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 13.5,
+      "Percent Overlap (Experiment02)": 13.5,
+      "adj p-val (Experiment01)": 0.9694117647,
+      "adj p-val (Experiment02)": 0.5477412731,
+      "Overlap (Experiment01)": "EIF4G1|DNPH1|PARP1|AIFM1|CENPA|BCL6|SF3B1|CASP7|ABCC1|KRT4|MTOR|IKBKB|ATF2|EIF2A|PCNA|CDK2|AKT1|ATF4|HSP90B1|FAS|CHEK2|JUN|CASP4|RPS6|SQSTM1|EIF4EBP1|APC|PLCG1|MKI67|RB1|HSPB1|HSP90AA1",
+      "Overlap (Experiment02)": "KRT4|CHEK2|BCL6|AIFM1|HSP90AA1|HSP90B1|CENPA|PARP1|RPS6|CASP7|SF3B1|FAS|ATF2|ATF4|AKT1|IKBKB|ABCC1|DNPH1|EIF2A|JUN|PLCG1|HSPB1|MTOR|PCNA|SQSTM1|APC|CDK2|EIF4EBP1|EIF4G1|MKI67|RB1|CASP4",
+      "Score (Experiment01)": -0.2522999942,
+      "Score (Experiment02)": -1.6647000313
+    },
+    {
+      "Signature ID": "WP_IL_2_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 27.0,
+      "Percent Overlap (Experiment02)": 27.0,
+      "adj p-val (Experiment01)": 0.9971878573,
+      "adj p-val (Experiment02)": 0.5596153846,
+      "Overlap (Experiment01)": "FOXO3|STAT5A|MAPT|SOS1|RAF1|CBL|AKT1|RPS6|MAP2K2|GAB2",
+      "Overlap (Experiment02)": "FOXO3|RAF1|STAT5A|MAPT|RPS6|AKT1|SOS1|CBL|MAP2K2|GAB2",
+      "Score (Experiment01)": 0.0313000008,
+      "Score (Experiment02)": 1.6460000277
+    },
+    {
+      "Signature ID": "WP_IL_5_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 27.0,
+      "Percent Overlap (Experiment02)": 27.0,
+      "adj p-val (Experiment01)": 0.957825766,
+      "adj p-val (Experiment02)": 0.5477412731,
+      "Overlap (Experiment01)": "FOXO3|STAT5A|MAPT|SOS1|RAF1|AKT1|JUN|RPS6|MAP2K2|RPS6KA1",
+      "Overlap (Experiment02)": "FOXO3|RAF1|STAT5A|MAPT|RPS6|AKT1|SOS1|JUN|MAP2K2|RPS6KA1",
+      "Score (Experiment01)": -0.2795000076,
+      "Score (Experiment02)": 1.7454999685
+    },
+    {
+      "Signature ID": "WP_INSULIN_SIGNALING",
+      "Percent Overlap (Experiment01)": 21.9,
+      "Percent Overlap (Experiment02)": 21.9,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.9212476686,
+      "Overlap (Experiment01)": "FOXO3|IGF1R|PRKCD|GAB1|EHD1|RPS6KA4|SGK3|TSC1|PDPK1|MTOR|MAP3K7|IKBKB|PRKCH|MINK1|SOS1|MAP3K3|MAP4K4|TRIB3|RAF1|CBL|AKT1|STX4|CRK|TSC2|STXBP2|MAP3K11|JUN|EIF4EBP1|MAP2K2|MAP3K4|MAP3K5|MYO1C|IRS1|EHD2|RPS6KA1",
+      "Overlap (Experiment02)": "FOXO3|PRKCD|MAP4K4|MAP3K4|RAF1|SGK3|GAB1|MINK1|EHD1|TSC2|PDPK1|AKT1|IKBKB|STXBP2|STX4|SOS1|PRKCH|MAP3K3|TRIB3|CBL|JUN|IGF1R|MAP3K7|RPS6KA4|CRK|IRS1|MTOR|MAP2K2|EHD2|MAP3K11|MAP3K5|RPS6KA1|EIF4EBP1|TSC1|MYO1C",
+      "Score (Experiment01)": -0.4079000056,
+      "Score (Experiment02)": -0.3801000118
+    },
+    {
+      "Signature ID": "WP_INTEGRIN_MEDIATED_CELL_ADHESION",
+      "Percent Overlap (Experiment01)": 20.6,
+      "Percent Overlap (Experiment02)": 20.6,
+      "adj p-val (Experiment01)": 0.4170093458,
+      "adj p-val (Experiment02)": 0.6431184271,
+      "Overlap (Experiment01)": "PAK4|DOCK1|ARAF|PDPK1|PAK1|ITGA3|SOS1|TNS1|RAP1A|BCAR1|RAF1|AKT1|CRK|PAK2|VAV2|ITGB1|MAP2K2|BRAF|TLN1|PXN|ARHGEF7",
+      "Overlap (Experiment02)": "RAF1|DOCK1|ARAF|ITGA3|PXN|PDPK1|AKT1|SOS1|RAP1A|PAK4|ITGB1|TNS1|PAK1|CRK|PAK2|MAP2K2|ARHGEF7|BRAF|BCAR1|VAV2|TLN1",
+      "Score (Experiment01)": -2.5050001144,
+      "Score (Experiment02)": -1.5371999741
+    },
+    {
+      "Signature ID": "WP_INTERFERON_TYPE_I_SIGNALING_PATHWAYS",
+      "Percent Overlap (Experiment01)": 27.8,
+      "Percent Overlap (Experiment02)": 27.8,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.1252582645,
+      "Overlap (Experiment01)": "MAPKAP1|EIF4B|CREB1|STAT5A|RPS6KA4|MTOR|RAP1A|CBL|CRK|RPS6|EIF4EBP1|RPTOR|PDCD4|IRS1|GAB2",
+      "Overlap (Experiment02)": "STAT5A|CREB1|RPS6|RAP1A|CBL|RPS6KA4|CRK|IRS1|RPTOR|MTOR|PDCD4|EIF4B|GAB2|MAPKAP1|EIF4EBP1",
+      "Score (Experiment01)": -0.47330001,
+      "Score (Experiment02)": -2.8566000462
+    },
+    {
+      "Signature ID": "WP_JOUBERT_SYNDROME",
+      "Percent Overlap (Experiment01)": 14.5,
+      "Percent Overlap (Experiment02)": 14.5,
+      "adj p-val (Experiment01)": 0.6242801978,
+      "adj p-val (Experiment02)": 0.413859978,
+      "Overlap (Experiment01)": "PARP1|PCM1|OFD1|INVS|KAT5|PCNT|MTOR|ATF4|PIBF1|CSPP1|KIAA0586",
+      "Overlap (Experiment02)": "KAT5|PARP1|ATF4|INVS|OFD1|PCNT|PIBF1|MTOR|PCM1|KIAA0586|CSPP1",
+      "Score (Experiment01)": 1.7474999428,
+      "Score (Experiment02)": -2.1919999123
+    },
+    {
+      "Signature ID": "WP_KIT_RECEPTOR_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 24.5,
+      "Percent Overlap (Experiment02)": 24.5,
+      "adj p-val (Experiment01)": 0.6838027466,
+      "adj p-val (Experiment02)": 0.9059293395,
+      "Overlap (Experiment01)": "FOXO3|STAT5A|MAPT|SOS1|RAF1|CBL|AKT1|CRK|RPS6|MAP2K2|PLCG1|GAB2|RPS6KA1",
+      "Overlap (Experiment02)": "FOXO3|RAF1|STAT5A|MAPT|RPS6|AKT1|SOS1|CBL|CRK|PLCG1|MAP2K2|GAB2|RPS6KA1",
+      "Score (Experiment01)": -1.5219999552,
+      "Score (Experiment02)": 0.4584999979
+    },
+    {
+      "Signature ID": "WP_LEPTIN_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 22.5,
+      "Percent Overlap (Experiment02)": 22.5,
+      "adj p-val (Experiment01)": 0.6897777778,
+      "adj p-val (Experiment02)": 0.9687966526,
+      "Overlap (Experiment01)": "CREB1|SP1|ERBB2|MTOR|IKBKB|KPNA4|SOS1|KHDRBS1|RAF1|AKT1|RPS6|EIF4EBP1|MAP2K2|PLCG1|IRS1|RPS6KA1",
+      "Overlap (Experiment02)": "ERBB2|SP1|RAF1|KPNA4|CREB1|RPS6|AKT1|IKBKB|SOS1|KHDRBS1|IRS1|PLCG1|MTOR|MAP2K2|RPS6KA1|EIF4EBP1",
+      "Score (Experiment01)": -1.398900032,
+      "Score (Experiment02)": 0.0647
+    },
+    {
+      "Signature ID": "WP_MAPK_CASCADE",
+      "Percent Overlap (Experiment01)": 30.3,
+      "Percent Overlap (Experiment02)": 30.3,
+      "adj p-val (Experiment01)": 0.8707493343,
+      "adj p-val (Experiment02)": 0.8754363559,
+      "Overlap (Experiment01)": "RRAS|PLCB3|ARAF|SOS1|MAP3K3|RAF1|JUN|MAP2K2|BRAF|MAP2",
+      "Overlap (Experiment02)": "RAF1|ARAF|SOS1|MAP3K3|PLCB3|JUN|RRAS|MAP2K2|BRAF|MAP2",
+      "Score (Experiment01)": -0.8633999825,
+      "Score (Experiment02)": -0.605799973
+    },
+    {
+      "Signature ID": "WP_MAPK_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 15.8,
+      "Percent Overlap (Experiment02)": 15.8,
+      "adj p-val (Experiment01)": 0.4686828919,
+      "adj p-val (Experiment02)": 0.8749694227,
+      "Overlap (Experiment01)": "PRKCD|MAPK8IP2|RRAS|RPS6KA4|ARAF|MAPT|PPP3CA|STMN1|MAP3K7|IKBKB|PAK1|DUSP3|SOS1|ATF2|STK3|MAP4K4|RAP1A|RAF1|MKNK2|AKT1|ATF4|FAS|CDC25B|CRK|NF1|PAK2|MAP3K11|HSPA8|JUN|MAP2K2|MAP3K4|BRAF|ELK4|MAP3K5|MKNK1|RASA2|HSPB1|FLNB|FGFR3",
+      "Overlap (Experiment02)": "NF1|PRKCD|MAP4K4|MAP3K4|RAF1|FLNB|MAPT|ARAF|STMN1|STK3|MAPK8IP2|ELK4|FAS|ATF2|ATF4|MKNK2|AKT1|DUSP3|IKBKB|SOS1|PPP3CA|RAP1A|JUN|RRAS|MKNK1|RASA2|MAP3K7|RPS6KA4|PAK1|CRK|PAK2|HSPB1|MAP2K2|HSPA8|BRAF|MAP3K11|CDC25B|MAP3K5|FGFR3",
+      "Score (Experiment01)": -2.5829999447,
+      "Score (Experiment02)": 0.7235999703
+    },
+    {
+      "Signature ID": "WP_MEASLES_VIRUS_INFECTION",
+      "Percent Overlap (Experiment01)": 7.4,
+      "Percent Overlap (Experiment02)": 7.4,
+      "adj p-val (Experiment01)": 0.9805799415,
+      "adj p-val (Experiment02)": 0.5890688259,
+      "Overlap (Experiment01)": "STAT5A|CSNK2A1|MAP3K7|IKBKB|ADAR|CDK2|FAS|CCNE2|HSPA8|JUN",
+      "Overlap (Experiment02)": "STAT5A|CSNK2A1|FAS|IKBKB|JUN|MAP3K7|HSPA8|ADAR|CDK2|CCNE2",
+      "Score (Experiment01)": 0.196600005,
+      "Score (Experiment02)": -1.665899992
+    },
+    {
+      "Signature ID": "WP_MECHANOREGULATION_AND_PATHOLOGY_OF_YAP_TAZ_VIA_HIPPO_AND_NON_HIPPO_MECHANISMS",
+      "Percent Overlap (Experiment01)": 21.3,
+      "Percent Overlap (Experiment02)": 21.3,
+      "adj p-val (Experiment01)": 0.9170670116,
+      "adj p-val (Experiment02)": 0.885397,
+      "Overlap (Experiment01)": "ACTG1|PAK4|LIMD1|PAK1|STK3|MAP4K4|PAK2|ITGB1|YAP1|LATS1",
+      "Overlap (Experiment02)": "MAP4K4|STK3|LATS1|ACTG1|YAP1|LIMD1|PAK4|ITGB1|PAK1|PAK2",
+      "Score (Experiment01)": -0.6833000183,
+      "Score (Experiment02)": 0.6050999761
+    },
+    {
+      "Signature ID": "WP_MECP2_AND_ASSOCIATED_RETT_SYNDROME",
+      "Percent Overlap (Experiment01)": 19.2,
+      "Percent Overlap (Experiment02)": 19.2,
+      "adj p-val (Experiment01)": 0.6871374386,
+      "adj p-val (Experiment02)": 0.5225285139,
+      "Overlap (Experiment01)": "IGF1R|CREB1|NCOR1|SP1|BCL6|MECP2|HDAC1|MTOR|AKT1|GPRIN1|NF1|RPS6|SIN3A|YBX1",
+      "Overlap (Experiment02)": "NF1|BCL6|SIN3A|NCOR1|SP1|HDAC1|CREB1|RPS6|MECP2|AKT1|IGF1R|MTOR|GPRIN1|YBX1",
+      "Score (Experiment01)": 1.4804999828,
+      "Score (Experiment02)": 1.7042000294
+    },
+    {
+      "Signature ID": "WP_MELANOMA",
+      "Percent Overlap (Experiment01)": 14.7,
+      "Percent Overlap (Experiment02)": 14.7,
+      "adj p-val (Experiment01)": 0.8219314642,
+      "adj p-val (Experiment02)": 0.9368428774,
+      "Overlap (Experiment01)": "CREB1|ARAF|PAK1|SOS1|RAF1|AKT1|NF1|MAP2K2|BRAF|RB1",
+      "Overlap (Experiment02)": "NF1|RAF1|ARAF|CREB1|AKT1|SOS1|PAK1|MAP2K2|BRAF|RB1",
+      "Score (Experiment01)": -0.9685000181,
+      "Score (Experiment02)": 0.2838999927
+    },
+    {
+      "Signature ID": "WP_MESODERMAL_COMMITMENT_PATHWAY",
+      "Percent Overlap (Experiment01)": 15.0,
+      "Percent Overlap (Experiment02)": 15.0,
+      "adj p-val (Experiment01)": 0.9838183616,
+      "adj p-val (Experiment02)": 0.20995671,
+      "Overlap (Experiment01)": "PLCH1|CEP250|AHDC1|TRIM28|EPB41L5|CCDC6|JARID2|WDCP|AXIN1|CRTC1|DIP2A|FOXC1|TRERF1|AEBP2|BCORL1|WDHD1|ELK4|YAP1|EMSY|LATS1|ZNF462|SETD2",
+      "Overlap (Experiment02)": "AHDC1|EMSY|FOXC1|TRIM28|CCDC6|ELK4|AXIN1|LATS1|YAP1|EPB41L5|TRERF1|CRTC1|WDCP|CEP250|AEBP2|JARID2|WDHD1|DIP2A|SETD2|PLCH1|ZNF462|BCORL1",
+      "Score (Experiment01)": -0.1030000001,
+      "Score (Experiment02)": -2.7537000179
+    },
+    {
+      "Signature ID": "WP_METABOLIC_EPILEPTIC_DISORDERS",
+      "Percent Overlap (Experiment01)": 16.3,
+      "Percent Overlap (Experiment02)": 16.3,
+      "adj p-val (Experiment01)": 0.6871374386,
+      "adj p-val (Experiment02)": 0.5225285139,
+      "Overlap (Experiment01)": "ALDOA|PGAM1|SLC25A5|MDH2|PKM|PHGDH|PC|PGK1|TPI1|SLC1A5|DLAT|FBP2|LDHA|GAPDH|PFKP",
+      "Overlap (Experiment02)": "SLC25A5|MDH2|ALDOA|PC|FBP2|GAPDH|LDHA|PKM|TPI1|PHGDH|SLC1A5|PGK1|DLAT|PGAM1|PFKP",
+      "Score (Experiment01)": 1.5731999874,
+      "Score (Experiment02)": 1.8430000544
+    },
+    {
+      "Signature ID": "WP_METABOLIC_REPROGRAMMING_IN_COLON_CANCER",
+      "Percent Overlap (Experiment01)": 26.2,
+      "Percent Overlap (Experiment02)": 26.2,
+      "adj p-val (Experiment01)": 0.9509803922,
+      "adj p-val (Experiment02)": 0.9212476686,
+      "Overlap (Experiment01)": "PGAM1|MDH2|TALDO1|PKM|GART|G6PD|PGK1|SLC1A5|LDHA|GAPDH|FASN",
+      "Overlap (Experiment02)": "MDH2|G6PD|GAPDH|LDHA|PKM|SLC1A5|PGK1|TALDO1|GART|PGAM1|FASN",
+      "Score (Experiment01)": 0.2585000098,
+      "Score (Experiment02)": -0.3251999915
+    },
+    {
+      "Signature ID": "WP_MET_IN_TYPE_1_PAPILLARY_RENAL_CELL_CARCINOMA",
+      "Percent Overlap (Experiment01)": 27.1,
+      "Percent Overlap (Experiment02)": 27.1,
+      "adj p-val (Experiment01)": 0.762811831,
+      "adj p-val (Experiment02)": 0.9212476686,
+      "Overlap (Experiment01)": "GAB1|PAK4|ARAF|PAK1|SOS1|RAP1A|RAF1|CBL|AKT1|CRK|PAK2|JUN|MAP2K2|BRAF|STRN|PLCG1",
+      "Overlap (Experiment02)": "RAF1|ARAF|GAB1|STRN|AKT1|SOS1|RAP1A|PAK4|CBL|JUN|PAK1|CRK|PLCG1|PAK2|MAP2K2|BRAF",
+      "Score (Experiment01)": -1.192800045,
+      "Score (Experiment02)": -0.3154000044
+    },
+    {
+      "Signature ID": "WP_MICRORNAS_IN_CARDIOMYOCYTE_HYPERTROPHY",
+      "Percent Overlap (Experiment01)": 9.6,
+      "Percent Overlap (Experiment02)": 9.6,
+      "adj p-val (Experiment01)": 0.8089029833,
+      "adj p-val (Experiment02)": 0.9687966526,
+      "Overlap (Experiment01)": "IGF1R|PPP3CA|PDPK1|MTOR|IKBKB|LRP6|RAF1|AKT1|MYLK|MAP2K2",
+      "Overlap (Experiment02)": "RAF1|PDPK1|AKT1|IKBKB|MYLK|PPP3CA|IGF1R|LRP6|MTOR|MAP2K2",
+      "Score (Experiment01)": 1.0391000509,
+      "Score (Experiment02)": -0.1380999982
+    },
+    {
+      "Signature ID": "WP_MICROTUBULE_CYTOSKELETON_REGULATION",
+      "Percent Overlap (Experiment01)": 26.1,
+      "Percent Overlap (Experiment02)": 26.1,
+      "adj p-val (Experiment01)": 0.2711390636,
+      "adj p-val (Experiment02)": 0.8749694227,
+      "Overlap (Experiment01)": "MAPT|STMN1|PAK1|TPPP|ABL1|AKT1|LIMK1|APC|MAP1B|CLASP1|CLIP1|MARK2",
+      "Overlap (Experiment02)": "CLIP1|TPPP|CLASP1|MAPT|ABL1|STMN1|AKT1|MAP1B|PAK1|APC|MARK2|LIMK1",
+      "Score (Experiment01)": -2.9855000973,
+      "Score (Experiment02)": 0.7376999855
+    },
+    {
+      "Signature ID": "WP_MIRNA_REGULATION_OF_DNA_DAMAGE_RESPONSE",
+      "Percent Overlap (Experiment01)": 21.9,
+      "Percent Overlap (Experiment02)": 21.9,
+      "adj p-val (Experiment01)": 0.9170670116,
+      "adj p-val (Experiment02)": 0.7423935091,
+      "Overlap (Experiment01)": "TLK2|CREB1|FANCD2|RFC1|BRCA1|NBN|PRKDC|RAD52|ABL1|CDK2|FAS|CDK5|CHEK2|CCNE2|PML|RB1",
+      "Overlap (Experiment02)": "CHEK2|PML|TLK2|PRKDC|ABL1|CREB1|FAS|NBN|RAD52|CDK5|BRCA1|CDK2|RB1|RFC1|FANCD2|CCNE2",
+      "Score (Experiment01)": 0.6887999773,
+      "Score (Experiment02)": -1.1633000374
+    },
+    {
+      "Signature ID": "WP_MRNA_PROCESSING",
+      "Percent Overlap (Experiment01)": 30.2,
+      "Percent Overlap (Experiment02)": 30.2,
+      "adj p-val (Experiment01)": 0.5976341083,
+      "adj p-val (Experiment02)": 0.02425,
+      "Overlap (Experiment01)": "SRRM1|CLASRP|RBM39|SUPT5H|PPM1G|PRPF4B|SRSF9|RBMX|SF3B1|HNRNPM|HNRNPL|SUGP1|HNRNPK|SFPQ|DDX20|SNRPA|TRA2B|SNRNP70|DDX1|CPSF1|PRPF8|DHX8|CLK2|POLR2A|HNRNPA2B1|CSTF2|CPSF2|NCBP1|SFSWAP|PRPF3|HNRNPC|SRPK2|PRPF40A|SRSF6|SF3A1|DNAJC8|YBX1|HNRNPA1",
+      "Overlap (Experiment02)": "SF3A1|PPM1G|DNAJC8|PRPF4B|SNRPA|HNRNPC|SRRM1|SFSWAP|SRSF6|PRPF40A|SFPQ|DDX1|SUPT5H|HNRNPK|CLASRP|CPSF2|RBMX|HNRNPL|HNRNPM|HNRNPA2B1|SNRNP70|CSTF2|SF3B1|SRSF9|NCBP1|CPSF1|PRPF3|CLK2|SUGP1|PRPF8|RBM39|DDX20|DHX8|POLR2A|SRPK2|TRA2B|HNRNPA1|YBX1",
+      "Score (Experiment01)": 1.7761000395,
+      "Score (Experiment02)": 4.7234997749
+    },
+    {
+      "Signature ID": "WP_MYOMETRIAL_RELAXATION_AND_CONTRACTION_PATHWAYS",
+      "Percent Overlap (Experiment01)": 10.9,
+      "Percent Overlap (Experiment02)": 10.9,
+      "adj p-val (Experiment01)": 0.8210444574,
+      "adj p-val (Experiment02)": 0.6208835582,
+      "Overlap (Experiment01)": "PRKCD|CREB1|ACTG1|SP1|PRKAR2B|PLCB3|ATP2A3|PRKCH|ATF2|DGKZ|PDE4D|GNAS|ATF4|JUN|ATP2A2|PLCG1|ADCY9",
+      "Overlap (Experiment02)": "PRKCD|SP1|PRKAR2B|DGKZ|CREB1|GNAS|ATF2|ATF4|ATP2A2|PDE4D|PRKCH|ACTG1|PLCB3|JUN|ATP2A3|PLCG1|ADCY9",
+      "Score (Experiment01)": 1.0471999645,
+      "Score (Experiment02)": 1.5930999517
+    },
+    {
+      "Signature ID": "WP_NETWORK_MAP_OF_SARS_COV_2_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 6.9,
+      "Percent Overlap (Experiment02)": 6.9,
+      "adj p-val (Experiment01)": 0.957825766,
+      "adj p-val (Experiment02)": 0.5225285139,
+      "Overlap (Experiment01)": "FN1|RRAS|ACTG1|GTSE1|AKT1S1|MTOR|ITGA3|AKT1|HSPA8|LARP1|JUN|RPS6|EIF4EBP1|RPTOR|ULK1",
+      "Overlap (Experiment02)": "AKT1S1|FN1|ITGA3|RPS6|AKT1|ACTG1|JUN|RRAS|RPTOR|LARP1|MTOR|HSPA8|ULK1|EIF4EBP1|GTSE1",
+      "Score (Experiment01)": -0.2781000137,
+      "Score (Experiment02)": -1.7189999819
+    },
+    {
+      "Signature ID": "WP_NEUROINFLAMMATION_AND_GLUTAMATERGIC_SIGNALING",
+      "Percent Overlap (Experiment01)": 8.6,
+      "Percent Overlap (Experiment02)": 8.6,
+      "adj p-val (Experiment01)": 0.9170670116,
+      "adj p-val (Experiment02)": 0.6982450609,
+      "Overlap (Experiment01)": "TRPM4|CREB1|CAMKK1|CAMKK2|PLCB3|LRRC8A|PHGDH|DLAT|AKT1|PLCB4|SLC38A1|IRS1",
+      "Overlap (Experiment02)": "CAMKK1|CREB1|PLCB4|AKT1|PHGDH|PLCB3|LRRC8A|IRS1|DLAT|CAMKK2|TRPM4|SLC38A1",
+      "Score (Experiment01)": 0.6617000103,
+      "Score (Experiment02)": -1.3138999939
+    },
+    {
+      "Signature ID": "WP_NF1_COPY_NUMBER_VARIATION_SYNDROME",
+      "Percent Overlap (Experiment01)": 16.7,
+      "Percent Overlap (Experiment02)": 16.7,
+      "adj p-val (Experiment01)": 0.9290368411,
+      "adj p-val (Experiment02)": 0.1032601464,
+      "Overlap (Experiment01)": "EVL|SUPT5H|ATAD5|POLRMT|PER1|JARID2|SOS1|TUBB|PCNA|RAF1|RBBP7|EXOC1|LIMK1|NF1|CCNE2|USP1|EXOC4|EIF3A",
+      "Overlap (Experiment02)": "NF1|RAF1|SUPT5H|PER1|EXOC1|SOS1|POLRMT|RBBP7|EXOC4|TUBB|EVL|PCNA|EIF3A|JARID2|LIMK1|CCNE2|USP1|ATAD5",
+      "Score (Experiment01)": 0.4101999998,
+      "Score (Experiment02)": -3.0747001171
+    },
+    {
+      "Signature ID": "WP_NONALCOHOLIC_FATTY_LIVER_DISEASE",
+      "Percent Overlap (Experiment01)": 9.7,
+      "Percent Overlap (Experiment02)": 9.7,
+      "adj p-val (Experiment01)": 0.5663948455,
+      "adj p-val (Experiment02)": 0.7056418426,
+      "Overlap (Experiment01)": "PRKAB1|NDUFV3|CASP7|PRKAG2|IKBKB|AKT1|ATF4|FAS|MAP3K11|MLXIPL|JUN|MAP3K5|NDUFA4|IRS1|NDUFB7",
+      "Overlap (Experiment02)": "PRKAG2|NDUFV3|CASP7|FAS|ATF4|AKT1|IKBKB|JUN|MLXIPL|IRS1|PRKAB1|MAP3K11|NDUFA4|MAP3K5|NDUFB7",
+      "Score (Experiment01)": -1.881000042,
+      "Score (Experiment02)": -1.3279000521
+    },
+    {
+      "Signature ID": "WP_NON_SMALL_CELL_LUNG_CANCER",
+      "Percent Overlap (Experiment01)": 16.7,
+      "Percent Overlap (Experiment02)": 16.7,
+      "adj p-val (Experiment01)": 0.9820205839,
+      "adj p-val (Experiment02)": 0.7587809317,
+      "Overlap (Experiment01)": "FOXO3|STAT5A|ERBB2|ARAF|EML4|SOS1|RAF1|AKT1|MAP2K2|BRAF|PLCG1|RB1",
+      "Overlap (Experiment02)": "FOXO3|ERBB2|RAF1|STAT5A|ARAF|EML4|AKT1|SOS1|PLCG1|MAP2K2|BRAF|RB1",
+      "Score (Experiment01)": 0.1423999965,
+      "Score (Experiment02)": 1.1138999462
+    },
+    {
+      "Signature ID": "WP_NOTCH_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 22.2,
+      "Percent Overlap (Experiment02)": 22.2,
+      "adj p-val (Experiment01)": 0.5955828446,
+      "adj p-val (Experiment02)": 0.0389558233,
+      "Overlap (Experiment01)": "NCOR1|PSEN1|MAML2|NCOR2|MAPT|CIR1|HDAC1|SNW1|SPEN|RING1|AKT1|NUMB",
+      "Overlap (Experiment02)": "NUMB|NCOR1|SNW1|MAML2|NCOR2|PSEN1|MAPT|HDAC1|CIR1|RING1|AKT1|SPEN",
+      "Score (Experiment01)": 1.8767999411,
+      "Score (Experiment02)": 4.1916999817
+    },
+    {
+      "Signature ID": "WP_NUCLEAR_RECEPTORS_META_PATHWAY",
+      "Percent Overlap (Experiment01)": 6.1,
+      "Percent Overlap (Experiment02)": 6.1,
+      "adj p-val (Experiment01)": 0.3723608445,
+      "adj p-val (Experiment02)": 0.9212476686,
+      "Overlap (Experiment01)": "CDC37|SP1|EHHADH|LRRC8A|PTGES3|G6PD|KAT2B|CBR1|GPAM|PRRG4|JUN|NRIP1|AKAP13|SQSTM1|HSP90AB1|FASN|KTN1|FGD4|HSP90AA1",
+      "Overlap (Experiment02)": "CBR1|EHHADH|SP1|KAT2B|GPAM|G6PD|HSP90AA1|PTGES3|KTN1|LRRC8A|JUN|NRIP1|HSP90AB1|CDC37|SQSTM1|AKAP13|PRRG4|FGD4|FASN",
+      "Score (Experiment01)": -2.6273999214,
+      "Score (Experiment02)": -0.3066000044
+    },
+    {
+      "Signature ID": "WP_NUCLEOTIDE_EXCISION_REPAIR_IN_XERODERMA_PIGMENTOSUM",
+      "Percent Overlap (Experiment01)": 16.0,
+      "Percent Overlap (Experiment02)": 16.0,
+      "adj p-val (Experiment01)": 0.2711390636,
+      "adj p-val (Experiment02)": 0.5225285139,
+      "Overlap (Experiment01)": "HMGN1|PARP1|XRCC1|RFC1|BRCA1|XAB2|LIG3|CCNH|PCNA|LIG1|USP7|GPS1",
+      "Overlap (Experiment02)": "LIG3|XAB2|USP7|PARP1|GPS1|CCNH|XRCC1|PCNA|HMGN1|LIG1|BRCA1|RFC1",
+      "Score (Experiment01)": 2.8552000523,
+      "Score (Experiment02)": -1.7712999582
+    },
+    {
+      "Signature ID": "WP_ONCOSTATIN_M_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 25.0,
+      "Percent Overlap (Experiment02)": 25.0,
+      "adj p-val (Experiment01)": 0.9838183616,
+      "adj p-val (Experiment02)": 0.7173661231,
+      "Overlap (Experiment01)": "PRKCD|CREB1|RICTOR|CASP7|MTOR|PRKCH|SOS1|RAF1|CDK2|AKT1|RPS6|MAP2K2|PXN|IRS1",
+      "Overlap (Experiment02)": "PRKCD|RICTOR|RAF1|CREB1|RPS6|PXN|CASP7|AKT1|SOS1|PRKCH|IRS1|MTOR|MAP2K2|CDK2",
+      "Score (Experiment01)": -0.1165999994,
+      "Score (Experiment02)": 1.2699999809
+    },
+    {
+      "Signature ID": "WP_OREXIN_RECEPTOR_PATHWAY",
+      "Percent Overlap (Experiment01)": 14.8,
+      "Percent Overlap (Experiment02)": 14.8,
+      "adj p-val (Experiment01)": 0.9170670116,
+      "adj p-val (Experiment02)": 0.5225285139,
+      "Overlap (Experiment01)": "PRKCD|DAGLA|EIF4B|CREB1|CAMKK2|PDPK1|MTOR|GNAS|RPS6|EIF4EBP1|MAP2K2|RRAGC|RPS6KA1",
+      "Overlap (Experiment02)": "PRKCD|DAGLA|CREB1|RPS6|GNAS|PDPK1|MTOR|MAP2K2|EIF4B|CAMKK2|RPS6KA1|EIF4EBP1|RRAGC",
+      "Score (Experiment01)": 0.6335999966,
+      "Score (Experiment02)": -1.9046000242
+    },
+    {
+      "Signature ID": "WP_OVERLAP_BETWEEN_SIGNAL_TRANSDUCTION_PATHWAYS_CONTRIBUTING_TO_LMNA_LAMINOPATHIES",
+      "Percent Overlap (Experiment01)": 21.1,
+      "Percent Overlap (Experiment02)": 21.1,
+      "adj p-val (Experiment01)": 0.2711390636,
+      "adj p-val (Experiment02)": 0.7924528302,
+      "Overlap (Experiment01)": "HDAC1|AXIN1|TMPO|KAT2B|LEMD3|NAP1L1|FNTA|EMD|APC|ZMPSTE24|RB1|LMNA",
+      "Overlap (Experiment02)": "KAT2B|TMPO|HDAC1|FNTA|ZMPSTE24|AXIN1|EMD|NAP1L1|LEMD3|APC|LMNA|RB1",
+      "Score (Experiment01)": -3.1187999249,
+      "Score (Experiment02)": -0.9695000052
+    },
+    {
+      "Signature ID": "WP_P53_TRANSCRIPTIONAL_GENE_NETWORK",
+      "Percent Overlap (Experiment01)": 13.5,
+      "Percent Overlap (Experiment02)": 13.5,
+      "adj p-val (Experiment01)": 0.6871374386,
+      "adj p-val (Experiment02)": 0.9687966526,
+      "Overlap (Experiment01)": "PRKAB1|AKT1S1|PRKAG2|MTOR|PCNA|CDK2|XRCC5|FAS|TSC2|NCF2|PML|RPTOR|ULK1",
+      "Overlap (Experiment02)": "PML|AKT1S1|PRKAG2|XRCC5|TSC2|FAS|RPTOR|MTOR|PRKAB1|PCNA|ULK1|NCF2|CDK2",
+      "Score (Experiment01)": -1.5643999577,
+      "Score (Experiment02)": -0.1234000027
+    },
+    {
+      "Signature ID": "WP_PANCREATIC_ADENOCARCINOMA_PATHWAY",
+      "Percent Overlap (Experiment01)": 16.9,
+      "Percent Overlap (Experiment02)": 16.9,
+      "adj p-val (Experiment01)": 0.9805799415,
+      "adj p-val (Experiment02)": 0.9738916554,
+      "Overlap (Experiment01)": "PRKCD|PAK4|ERBB2|ARAF|MTOR|IKBKB|PAK1|RAF1|RALBP1|AKT1|ARHGEF6|PAK2|MAP2K2|BRAF|RB1",
+      "Overlap (Experiment02)": "PRKCD|ERBB2|RAF1|ARAF|RALBP1|AKT1|IKBKB|PAK4|PAK1|ARHGEF6|PAK2|MTOR|MAP2K2|BRAF|RB1",
+      "Score (Experiment01)": 0.1618999988,
+      "Score (Experiment02)": 0.0505999997
+    },
+    {
+      "Signature ID": "WP_PARKIN_UBIQUITIN_PROTEASOMAL_SYSTEM_PATHWAY",
+      "Percent Overlap (Experiment01)": 14.1,
+      "Percent Overlap (Experiment02)": 14.1,
+      "adj p-val (Experiment01)": 0.2328,
+      "adj p-val (Experiment02)": 0.5225285139,
+      "Overlap (Experiment01)": "TUBB|PSMD4|PSMC3|SIAH2|HSPA4|HSPA8|CASK|RNF19A|PSMD1|PSMD2",
+      "Overlap (Experiment02)": "HSPA4|PSMD1|CASK|PSMC3|PSMD4|SIAH2|HSPA8|TUBB|RNF19A|PSMD2",
+      "Score (Experiment01)": -3.1403000355,
+      "Score (Experiment02)": -1.7576999664
+    },
+    {
+      "Signature ID": "WP_PATHOGENIC_ESCHERICHIA_COLI_INFECTION",
+      "Percent Overlap (Experiment01)": 18.2,
+      "Percent Overlap (Experiment02)": 18.2,
+      "adj p-val (Experiment01)": 0.2711390636,
+      "adj p-val (Experiment02)": 0.8616353272,
+      "Overlap (Experiment01)": "ARPC1A|KRT18|OCLN|ARHGEF2|ACTG1|NCL|TUBB|ABL1|ITGB1|EZR",
+      "Overlap (Experiment02)": "ABL1|KRT18|ARPC1A|ACTG1|ARHGEF2|ITGB1|OCLN|EZR|TUBB|NCL",
+      "Score (Experiment01)": 2.970099926,
+      "Score (Experiment02)": -0.8891999722
+    },
+    {
+      "Signature ID": "WP_PATHWAYS_AFFECTED_IN_ADENOID_CYSTIC_CARCINOMA",
+      "Percent Overlap (Experiment01)": 38.5,
+      "Percent Overlap (Experiment02)": 38.5,
+      "adj p-val (Experiment01)": 0.9170670116,
+      "adj p-val (Experiment02)": 0.8749694227,
+      "Overlap (Experiment01)": "FOXO3|SMARCA2|MYBL1|NCOR1|BRD1|ARID4B|ERBB2|BRCA1|BCOR|SRCAP|ERBIN|PRKDC|RAF1|KANSL1|BCORL1|AKT1|MAGI1|KAT6A|CHEK2|NSD1|MAP2K2|MGA|SETD2|KMT2C|JMJD1C",
+      "Overlap (Experiment02)": "CHEK2|FOXO3|KANSL1|SMARCA2|NCOR1|ERBB2|RAF1|PRKDC|KAT6A|MAGI1|SRCAP|BCOR|AKT1|BRD1|KMT2C|ERBIN|ARID4B|MAP2K2|NSD1|BRCA1|MYBL1|MGA|SETD2|JMJD1C|BCORL1",
+      "Score (Experiment01)": 0.6575999856,
+      "Score (Experiment02)": 0.7372000217
+    },
+    {
+      "Signature ID": "WP_PHYSICO_CHEMICAL_FEATURES_AND_TOXICITY_ASSOCIATED_PATHWAYS",
+      "Percent Overlap (Experiment01)": 21.2,
+      "Percent Overlap (Experiment02)": 21.2,
+      "adj p-val (Experiment01)": 0.9904725284,
+      "adj p-val (Experiment02)": 0.5225285139,
+      "Overlap (Experiment01)": "FN1|STAT5A|ERBB2|PAK1|AXIN1|SOS1|RAF1|CBL|AKT1|MYLK|JUN|PFN1|APC|PLCG1",
+      "Overlap (Experiment02)": "ERBB2|RAF1|FN1|STAT5A|PFN1|AXIN1|AKT1|MYLK|SOS1|CBL|JUN|PAK1|PLCG1|APC",
+      "Score (Experiment01)": -0.0590999983,
+      "Score (Experiment02)": 1.7726000547
+    },
+    {
+      "Signature ID": "WP_PI3K_AKT_MTOR_SIGNALING_PATHWAY_AND_THERAPEUTIC_OPPORTUNITIES_IN_PROSTATE_CANCER",
+      "Percent Overlap (Experiment01)": 34.4,
+      "Percent Overlap (Experiment02)": 34.4,
+      "adj p-val (Experiment01)": 0.943927327,
+      "adj p-val (Experiment02)": 0.9687966526,
+      "Overlap (Experiment01)": "RB1CC1|FOXO3|MAPKAP1|RICTOR|MTOR|AKT1|TSC2|EIF4EBP1|TFEB|RPTOR|ULK1",
+      "Overlap (Experiment02)": "RB1CC1|FOXO3|RICTOR|TSC2|AKT1|RPTOR|TFEB|MTOR|ULK1|MAPKAP1|EIF4EBP1",
+      "Score (Experiment01)": 0.3743999898,
+      "Score (Experiment02)": 0.1886000037
+    },
+    {
+      "Signature ID": "WP_PI3K_AKT_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 10.6,
+      "Percent Overlap (Experiment02)": 10.6,
+      "adj p-val (Experiment01)": 0.8973942887,
+      "adj p-val (Experiment02)": 0.8749694227,
+      "Overlap (Experiment01)": "FOXO3|IGF1R|CDC37|FN1|EIF4B|CREB1|CREB3L4|PKN2|SGK3|BRCA1|TSC1|PDPK1|PPP2R5A|MTOR|IKBKB|ITGA3|FLT4|RBL2|SOS1|ATF2|RAF1|CDK2|AKT1|ATF4|HSP90B1|TSC2|CCNE2|ITGB1|RPS6|EIF4EBP1|MAP2K2|RPTOR|HSP90AB1|HSP90AA1|IRS1|FGFR3",
+      "Overlap (Experiment02)": "FOXO3|CREB3L4|RBL2|PKN2|RAF1|FN1|SGK3|HSP90AA1|CREB1|ITGA3|HSP90B1|TSC2|RPS6|ATF2|ATF4|PDPK1|AKT1|IKBKB|SOS1|PPP2R5A|FLT4|IGF1R|ITGB1|HSP90AB1|IRS1|RPTOR|MTOR|MAP2K2|EIF4B|CDC37|BRCA1|CDK2|EIF4EBP1|FGFR3|TSC1|CCNE2",
+      "Score (Experiment01)": 0.829400003,
+      "Score (Experiment02)": -0.7171999812
+    },
+    {
+      "Signature ID": "WP_PLEURAL_MESOTHELIOMA",
+      "Percent Overlap (Experiment01)": 15.3,
+      "Percent Overlap (Experiment02)": 15.3,
+      "adj p-val (Experiment01)": 0.7568499365,
+      "adj p-val (Experiment02)": 0.4229212083,
+      "Overlap (Experiment01)": "RB1CC1|EIF4G1|IGF1R|HMGN1|PRKAB1|FN1|FOXM1|EIF4B|CREB1|CIT|ACTG1|SP1|PAK4|BRCA1|AKT1S1|CSNK2A1|TSC1|PRKAG2|LIMD1|MTOR|MINK1|PAK1|AXIN1|ITGA3|FLT4|SOS1|ATF2|MAP3K3|STK3|MAP4K4|RING1|LRP6|KIF23|RAF1|MKNK2|SETD5|HMGB1|CDK2|AKT1|SLC3A2|AJUBA|TSC2|PAK2|MAP3K11|TNIK|ITGB1|JUN|RPS6|EIF4EBP1|PLCB4|MAP2K2|APC|MAP3K4|MDM4|MAP3K5|YY1|RPTOR|WWC1|YAP1|MKNK1|LATS1|SETD2|HCFC1|KMT2C|ULK1|FGFR3|RPS6KA1",
+      "Overlap (Experiment02)": "RB1CC1|SLC3A2|YY1|MAP4K4|AKT1S1|PRKAG2|MAP3K4|SP1|RAF1|FN1|CSNK2A1|MINK1|HMGB1|STK3|CREB1|ITGA3|TSC2|RING1|RPS6|PLCB4|ATF2|MKNK2|AXIN1|AKT1|LATS1|KIF23|KMT2C|SOS1|MAP3K3|MDM4|ACTG1|YAP1|LIMD1|FLT4|PAK4|JUN|IGF1R|MKNK1|ITGB1|AJUBA|LRP6|PAK1|RPTOR|SETD5|PAK2|MTOR|MAP2K2|PRKAB1|EIF4B|HMGN1|MAP3K11|WWC1|APC|TNIK|MAP3K5|ULK1|RPS6KA1|BRCA1|HCFC1|CDK2|EIF4EBP1|SETD2|FGFR3|EIF4G1|TSC1|CIT|FOXM1",
+      "Score (Experiment01)": -1.1744999886,
+      "Score (Experiment02)": -2.1991999149
+    },
+    {
+      "Signature ID": "WP_PRADER_WILLI_AND_ANGELMAN_SYNDROME",
+      "Percent Overlap (Experiment01)": 22.2,
+      "Percent Overlap (Experiment02)": 22.2,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.4226579521,
+      "Overlap (Experiment01)": "NUP133|PCM1|TPR|NUP88|NUP214|NUP153|NDC1|NUP98|NUP43|GLE1|SEH1L|AAAS|FEZ1|NUP205|NUP35|NUP160|RANBP2|MDM4|CYFIP1|RB1|CDC6|HERC2|POM121|AHCTF1",
+      "Overlap (Experiment02)": "FEZ1|NUP88|TPR|NUP160|NUP98|NUP205|NUP153|GLE1|AAAS|SEH1L|MDM4|NUP43|NDC1|CYFIP1|NUP35|HERC2|POM121|NUP214|RANBP2|PCM1|NUP133|RB1|AHCTF1|CDC6",
+      "Score (Experiment01)": -0.4444000125,
+      "Score (Experiment02)": -2.2600998878
+    },
+    {
+      "Signature ID": "WP_PRIMARY_FOCAL_SEGMENTAL_GLOMERULOSCLEROSIS_FSGS",
+      "Percent Overlap (Experiment01)": 18.1,
+      "Percent Overlap (Experiment02)": 18.1,
+      "adj p-val (Experiment01)": 0.2711390636,
+      "adj p-val (Experiment02)": 0.8754363559,
+      "Overlap (Experiment01)": "KRT8|INF2|ITGA3|LRP6|PCNA|SYNPO|CD2AP|AKT1|ITGB1|PLCG1|TLN1|MKI67|ACTN4",
+      "Overlap (Experiment02)": "KRT8|ACTN4|SYNPO|ITGA3|AKT1|INF2|ITGB1|LRP6|PLCG1|PCNA|TLN1|CD2AP|MKI67",
+      "Score (Experiment01)": -2.9902999401,
+      "Score (Experiment02)": -0.6995999813
+    },
+    {
+      "Signature ID": "WP_PRIMARY_OVARIAN_INSUFFICIENCY",
+      "Percent Overlap (Experiment01)": 9.2,
+      "Percent Overlap (Experiment02)": 9.2,
+      "adj p-val (Experiment01)": 0.6242801978,
+      "adj p-val (Experiment02)": 0.45,
+      "Overlap (Experiment01)": "FOXO3|MCM9|PARP1|BLM|BRCA1|PDPK1|NBN|COMT|KHDRBS1|EIF4ENIF1|GNAS|AKT1|EXO1|TSC2|EIF2S2|LMNA",
+      "Overlap (Experiment02)": "FOXO3|EIF4ENIF1|PARP1|TSC2|GNAS|NBN|PDPK1|AKT1|KHDRBS1|EIF2S2|COMT|BRCA1|BLM|LMNA|MCM9|EXO1",
+      "Score (Experiment01)": 1.670699954,
+      "Score (Experiment02)": -2.2007000446
+    },
+    {
+      "Signature ID": "WP_PROLACTIN_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 23.0,
+      "Percent Overlap (Experiment02)": 23.0,
+      "adj p-val (Experiment01)": 0.2711390636,
+      "adj p-val (Experiment02)": 0.8749694227,
+      "Overlap (Experiment01)": "STAT5A|ERBB2|MTOR|PAK1|SOS1|RAF1|CBL|AKT1|VAV2|ITGB1|JUN|RPS6|EIF4EBP1|MAP2K2|PXN|IRS1|GAB2",
+      "Overlap (Experiment02)": "ERBB2|RAF1|STAT5A|RPS6|PXN|AKT1|SOS1|CBL|JUN|ITGB1|PAK1|IRS1|MTOR|MAP2K2|VAV2|GAB2|EIF4EBP1",
+      "Score (Experiment01)": -2.697799921,
+      "Score (Experiment02)": -0.7825999856
+    },
+    {
+      "Signature ID": "WP_RAC1_PAK1_P38_MMP2_PATHWAY",
+      "Percent Overlap (Experiment01)": 20.6,
+      "Percent Overlap (Experiment02)": 20.6,
+      "adj p-val (Experiment01)": 0.9853531774,
+      "adj p-val (Experiment02)": 0.7423935091,
+      "Overlap (Experiment01)": "FN1|STAT5A|ERBB2|CASP7|STMN1|IKBKB|PAK1|SOS1|AKT1|CRK|ITGB1|EIF4EBP1|YAP1|PXN",
+      "Overlap (Experiment02)": "ERBB2|FN1|STAT5A|STMN1|PXN|CASP7|AKT1|IKBKB|SOS1|YAP1|ITGB1|PAK1|CRK|EIF4EBP1",
+      "Score (Experiment01)": 0.116899997,
+      "Score (Experiment02)": 1.1541999578
+    },
+    {
+      "Signature ID": "WP_RAS_SIGNALING",
+      "Percent Overlap (Experiment01)": 11.4,
+      "Percent Overlap (Experiment02)": 11.4,
+      "adj p-val (Experiment01)": 0.7785351295,
+      "adj p-val (Experiment02)": 0.8494839291,
+      "Overlap (Experiment01)": "IGF1R|GAB1|RRAS|PAK4|IKBKB|PAK1|FLT4|SOS1|RAP1A|ABL1|RAF1|RALBP1|AKT1|NF1|PAK2|MAP2K2|RASAL2|PLCG1|RASA2|GAB2|FGFR3",
+      "Overlap (Experiment02)": "NF1|RAF1|ABL1|GAB1|RALBP1|AKT1|IKBKB|SOS1|RAP1A|FLT4|PAK4|IGF1R|RRAS|RASA2|PAK1|PLCG1|PAK2|MAP2K2|GAB2|RASAL2|FGFR3",
+      "Score (Experiment01)": -1.0975999832,
+      "Score (Experiment02)": -0.8578000069
+    },
+    {
+      "Signature ID": "WP_REGULATION_OF_ACTIN_CYTOSKELETON",
+      "Percent Overlap (Experiment01)": 20.7,
+      "Percent Overlap (Experiment02)": 20.7,
+      "adj p-val (Experiment01)": 0.5200636676,
+      "adj p-val (Experiment02)": 0.02425,
+      "Overlap (Experiment01)": "FN1|RRAS|ACTG1|PAK4|SSH3|DOCK1|ARHGEF1|DIAPH3|BAIAP2|PAK1|SOS1|BCAR1|RAF1|ABI2|ARHGEF6|PIP5K1A|ARHGAP35|LIMK1|CRK|PAK2|MYLK|PFN1|FGD1|MAP2K2|APC|BRAF|EZR|GIT1|PXN|FGFR3|ARHGEF7",
+      "Overlap (Experiment02)": "RAF1|FN1|PFN1|DOCK1|ARHGAP35|PXN|MYLK|SOS1|ACTG1|GIT1|PAK4|ARHGEF1|RRAS|SSH3|PAK1|CRK|EZR|ARHGEF6|ABI2|PAK2|MAP2K2|ARHGEF7|BRAF|BCAR1|APC|FGD1|BAIAP2|LIMK1|PIP5K1A|FGFR3|DIAPH3",
+      "Score (Experiment01)": -2.3317000866,
+      "Score (Experiment02)": -3.3556001186
+    },
+    {
+      "Signature ID": "WP_RETINOBLASTOMA_GENE_IN_CANCER",
+      "Percent Overlap (Experiment01)": 30.3,
+      "Percent Overlap (Experiment02)": 30.3,
+      "adj p-val (Experiment01)": 0.7552115726,
+      "adj p-val (Experiment02)": 0.5225285139,
+      "Overlap (Experiment01)": "SMARCA2|NPAT|MCM3|WEE1|KIF4A|MCM7|CCDC6|HDAC1|STMN1|CDC7|MSH6|PRKDC|ABL1|PCNA|RAF1|RBBP7|HMGB1|CDK2|DCK|CDC25B|CCNE2|CDC45|SIN3A|ANLN|FAF1|RB1|ORC1",
+      "Overlap (Experiment02)": "NPAT|SMARCA2|SIN3A|RAF1|PRKDC|ABL1|FAF1|HDAC1|HMGB1|STMN1|CCDC6|CDC45|RBBP7|DCK|KIF4A|MSH6|CDC7|PCNA|MCM3|CDC25B|CDK2|ANLN|RB1|MCM7|CCNE2|WEE1|ORC1",
+      "Score (Experiment01)": 1.1852999926,
+      "Score (Experiment02)": -1.779399991
+    },
+    {
+      "Signature ID": "WP_RETT_SYNDROME_CAUSING_GENES",
+      "Percent Overlap (Experiment01)": 22.9,
+      "Percent Overlap (Experiment02)": 22.9,
+      "adj p-val (Experiment01)": 0.5246394231,
+      "adj p-val (Experiment02)": 0.0687943262,
+      "Overlap (Experiment01)": "SMARCA2|NCOR1|KDM5B|XAB2|NCOR2|MECP2|HDAC1|SYNE2|SMARCA4|CRK|BRAF",
+      "Overlap (Experiment02)": "KDM5B|SMARCA2|NCOR1|XAB2|SMARCA4|NCOR2|HDAC1|SYNE2|MECP2|CRK|BRAF",
+      "Score (Experiment01)": 2.4539999962,
+      "Score (Experiment02)": 3.2925000191
+    },
+    {
+      "Signature ID": "WP_SMITH_MAGENIS_AND_POTOCKI_LUPSKI_SYNDROME_COPY_NUMBER_VARIATION",
+      "Percent Overlap (Experiment01)": 16.4,
+      "Percent Overlap (Experiment02)": 16.4,
+      "adj p-val (Experiment01)": 0.9805799415,
+      "adj p-val (Experiment02)": 0.8915284099,
+      "Overlap (Experiment01)": "RB1CC1|FLCN|PRKAB1|BLM|CREB1|FLII|BCL6|PER1|RMI1|PRKAG2|MTOR|ALKBH5|FNIP1|FHOD1|CLOCK|LIMK1|LDHA|JUN|RAI1|GPS1|TFEB|RPTOR|YAP1|MPRIP|ULK1|PARD3",
+      "Overlap (Experiment02)": "RB1CC1|CLOCK|BCL6|PRKAG2|ALKBH5|RAI1|FLCN|CREB1|FLII|PER1|LDHA|RMI1|FNIP1|YAP1|JUN|GPS1|FHOD1|RPTOR|TFEB|MTOR|PRKAB1|ULK1|MPRIP|LIMK1|BLM|PARD3",
+      "Score (Experiment01)": -0.1352999955,
+      "Score (Experiment02)": 0.618900001
+    },
+    {
+      "Signature ID": "WP_SPLICING_FACTOR_NOVA_REGULATED_SYNAPTIC_PROTEINS",
+      "Percent Overlap (Experiment01)": 23.8,
+      "Percent Overlap (Experiment02)": 23.8,
+      "adj p-val (Experiment01)": 0.2328,
+      "adj p-val (Experiment02)": 0.6982450609,
+      "Overlap (Experiment01)": "SNW1|ATP2B1|EPB41L1|STXBP2|CASK|ANK3|PLCB4|EPB41L2|CLASP1|MAP4",
+      "Overlap (Experiment02)": "SNW1|CLASP1|CASK|PLCB4|ATP2B1|STXBP2|EPB41L2|EPB41L1|ANK3|MAP4",
+      "Score (Experiment01)": -3.3073999882,
+      "Score (Experiment02)": -1.391299963
+    },
+    {
+      "Signature ID": "WP_STEROL_REGULATORY_ELEMENT_BINDING_PROTEINS_SREBP_SIGNALING",
+      "Percent Overlap (Experiment01)": 21.7,
+      "Percent Overlap (Experiment02)": 21.7,
+      "adj p-val (Experiment01)": 0.8707493343,
+      "adj p-val (Experiment02)": 0.8754363559,
+      "Overlap (Experiment01)": "PRKAB1|CREB1|SP1|PRKAG2|MTOR|SCAP|AMFR|SEC31A|GPAM|AKT1|SREBF2|YY1|FASN|LPIN1|PPARGC1B",
+      "Overlap (Experiment02)": "YY1|PRKAG2|SP1|LPIN1|GPAM|CREB1|SCAP|AKT1|AMFR|PPARGC1B|SEC31A|MTOR|PRKAB1|SREBF2|FASN",
+      "Score (Experiment01)": -0.8543999791,
+      "Score (Experiment02)": 0.6589999795
+    },
+    {
+      "Signature ID": "WP_SUDDEN_INFANT_DEATH_SYNDROME_SIDS_SUSCEPTIBILITY_PATHWAYS",
+      "Percent Overlap (Experiment01)": 13.8,
+      "Percent Overlap (Experiment02)": 13.8,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.647144068,
+      "Overlap (Experiment01)": "ATP1A3|ALDOA|FOXM1|CREB1|ECE1|SP1|PRKAR2B|MBD1|MECP2|HDAC1|HSPD1|TPPP|SPTBN1|HSP90B1|CC2D1A|JUN|DEAF1|GAPDH|NOS1AP|PPARGC1B|MAP2|YBX1",
+      "Overlap (Experiment02)": "ALDOA|SP1|PRKAR2B|TPPP|MBD1|HSPD1|HDAC1|CREB1|ATP1A3|HSP90B1|GAPDH|NOS1AP|ECE1|DEAF1|MECP2|SPTBN1|JUN|CC2D1A|PPARGC1B|MAP2|FOXM1|YBX1",
+      "Score (Experiment01)": 0.5358999968,
+      "Score (Experiment02)": 1.4723000526
+    },
+    {
+      "Signature ID": "WP_TARGET_OF_RAPAMYCIN_SIGNALING",
+      "Percent Overlap (Experiment01)": 36.1,
+      "Percent Overlap (Experiment02)": 36.1,
+      "adj p-val (Experiment01)": 0.9805799415,
+      "adj p-val (Experiment02)": 0.5225285139,
+      "Overlap (Experiment01)": "PRKAB1|MAPKAP1|RICTOR|AKT1S1|TSC1|PRKAG2|MTOR|AKT1|TSC2|EIF4EBP1|RPTOR|RRAGC|ULK1",
+      "Overlap (Experiment02)": "RICTOR|AKT1S1|PRKAG2|TSC2|AKT1|RPTOR|MTOR|PRKAB1|ULK1|MAPKAP1|EIF4EBP1|TSC1|RRAGC",
+      "Score (Experiment01)": -0.1407999992,
+      "Score (Experiment02)": -1.7752000093
+    },
+    {
+      "Signature ID": "WP_TAR_SYNDROME",
+      "Percent Overlap (Experiment01)": 17.5,
+      "Percent Overlap (Experiment02)": 17.5,
+      "adj p-val (Experiment01)": 0.5955828446,
+      "adj p-val (Experiment02)": 0.6431184271,
+      "Overlap (Experiment01)": "CLCN3|HLA-A|FURIN|RBCK1|SLK|LAMTOR1|ZFHX3|BCL2L13|AKAP10|MTA1|ITGB1",
+      "Overlap (Experiment02)": "BCL2L13|FURIN|SLK|CLCN3|LAMTOR1|ITGB1|RBCK1|HLA-A|ZFHX3|AKAP10|MTA1",
+      "Score (Experiment01)": 1.891800046,
+      "Score (Experiment02)": -1.4665000439
+    },
+    {
+      "Signature ID": "WP_TGF_BETA_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 20.5,
+      "Percent Overlap (Experiment02)": 20.5,
+      "adj p-val (Experiment01)": 0.9290368411,
+      "adj p-val (Experiment02)": 0.4141611813,
+      "Overlap (Experiment01)": "FN1|SNIP1|DCP1A|NUP214|NUP153|SP1|HDAC1|SNW1|MAP3K7|AXIN1|RBL2|SOS1|ATF2|SPTBN1|BCAR1|RAF1|AKT1|PAK2|MEF2A|ITGB1|LIMK2|JUN|SIN3A|MAP2K2|RBL1|PML|YAP1",
+      "Overlap (Experiment02)": "PML|SIN3A|RBL2|SP1|SNW1|RAF1|FN1|SNIP1|MEF2A|HDAC1|DCP1A|NUP153|ATF2|SPTBN1|AXIN1|AKT1|SOS1|YAP1|JUN|ITGB1|MAP3K7|PAK2|MAP2K2|BCAR1|LIMK2|NUP214|RBL1",
+      "Score (Experiment01)": 0.3393000066,
+      "Score (Experiment02)": 2.2646000385
+    },
+    {
+      "Signature ID": "WP_THERMOGENESIS",
+      "Percent Overlap (Experiment01)": 20.4,
+      "Percent Overlap (Experiment02)": 20.4,
+      "adj p-val (Experiment01)": 0.9805799415,
+      "adj p-val (Experiment02)": 0.7667065868,
+      "Overlap (Experiment01)": "SMARCA2|PRKAB1|CREB1|ACTG1|CREB3L4|AKT1S1|TSC1|PRKAG2|MTOR|SOS1|ATF2|SMARCA4|GNAS|KDM3B|TSC2|RPS6|SMARCD2|MAP3K5|SMARCC2|RPTOR|RPS6KA1|ADCY9",
+      "Overlap (Experiment02)": "SMARCC2|CREB3L4|SMARCA2|AKT1S1|PRKAG2|SMARCA4|KDM3B|CREB1|TSC2|RPS6|GNAS|ATF2|SOS1|ACTG1|RPTOR|SMARCD2|MTOR|PRKAB1|MAP3K5|RPS6KA1|TSC1|ADCY9",
+      "Score (Experiment01)": -0.202000007,
+      "Score (Experiment02)": 1.0333000422
+    },
+    {
+      "Signature ID": "WP_THYROID_HORMONES_PRODUCTION_AND_PERIPHERAL_DOWNSTREAM_SIGNALING_EFFECTS",
+      "Percent Overlap (Experiment01)": 15.1,
+      "Percent Overlap (Experiment02)": 15.1,
+      "adj p-val (Experiment01)": 0.6242801978,
+      "adj p-val (Experiment02)": 0.9059293395,
+      "Overlap (Experiment01)": "AKT1S1|TTF1|TSC1|MTOR|SOS1|ATF2|RAF1|THRA|KDM3B|TSC2|RPS6|NHSL1|RPTOR|TTF2",
+      "Overlap (Experiment02)": "AKT1S1|RAF1|KDM3B|THRA|TSC2|RPS6|ATF2|SOS1|NHSL1|RPTOR|MTOR|TTF1|TSC1|TTF2",
+      "Score (Experiment01)": -1.6931999922,
+      "Score (Experiment02)": -0.3998999894
+    },
+    {
+      "Signature ID": "WP_THYROID_STIMULATING_HORMONE_TSH_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 27.6,
+      "Percent Overlap (Experiment02)": 27.6,
+      "adj p-val (Experiment01)": 0.8210444574,
+      "adj p-val (Experiment02)": 0.9212476686,
+      "Overlap (Experiment01)": "IGF1R|CREB1|PDPK1|MTOR|RBL2|RAP1A|RAF1|CDK2|PDE4D|GNAS|AKT1|SCRIB|RPS6|BRAF|RB1|RPS6KA1",
+      "Overlap (Experiment02)": "SCRIB|RBL2|RAF1|CREB1|RPS6|GNAS|PDPK1|AKT1|PDE4D|RAP1A|IGF1R|MTOR|BRAF|RPS6KA1|CDK2|RB1",
+      "Score (Experiment01)": -0.9951000214,
+      "Score (Experiment02)": -0.3592000008
+    },
+    {
+      "Signature ID": "WP_TNF_ALPHA_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 22.5,
+      "Percent Overlap (Experiment02)": 22.5,
+      "adj p-val (Experiment01)": 0.9290368411,
+      "adj p-val (Experiment02)": 0.8734468798,
+      "Overlap (Experiment01)": "CDC37|TANK|CASP7|MADD|CSNK2A1|TAB3|DIABLO|MAP3K7|IKBKB|SOS1|MAP3K3|OTUD7B|PYGL|RAF1|RFFL|AKT1|JUN|MAP3K5|PSMD2|HSP90AA1",
+      "Overlap (Experiment02)": "DIABLO|PYGL|RAF1|OTUD7B|CSNK2A1|HSP90AA1|TANK|CASP7|TAB3|AKT1|IKBKB|SOS1|MAP3K3|JUN|MAP3K7|RFFL|MADD|CDC37|MAP3K5|PSMD2",
+      "Score (Experiment01)": 0.3587000072,
+      "Score (Experiment02)": 0.7810000181
+    },
+    {
+      "Signature ID": "WP_TRANSLATION_FACTORS",
+      "Percent Overlap (Experiment01)": 34.0,
+      "Percent Overlap (Experiment02)": 34.0,
+      "adj p-val (Experiment01)": 0.8219314642,
+      "adj p-val (Experiment02)": 0.6327534905,
+      "Overlap (Experiment01)": "EIF4G1|CLUH|EIF4B|EIF4G3|EEF2K|EIF5B|EIF3B|EIF3D|EIF4H|EIF3J|EEF1G|EEF1D|EIF4EBP1|EEF2|EIF2S2|EIF5|EIF3A",
+      "Overlap (Experiment02)": "EIF5B|EEF2K|EIF3B|EIF4H|EIF3D|EEF1D|EEF2|EIF2S2|CLUH|EIF3J|EIF4G3|EIF5|EIF4B|EIF3A|EEF1G|EIF4EBP1|EIF4G1",
+      "Score (Experiment01)": -0.9498999715,
+      "Score (Experiment02)": -1.5379999876
+    },
+    {
+      "Signature ID": "WP_TRANSLATION_INHIBITORS_IN_CHRONICALLY_ACTIVATED_PDGFRA_CELLS",
+      "Percent Overlap (Experiment01)": 30.4,
+      "Percent Overlap (Experiment02)": 30.4,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.3997252747,
+      "Overlap (Experiment01)": "EIF4G1|PRKCD|EIF4B|EIF4G3|RPS6KA4|CSNK2A1|MTOR|AKT1|RPS6|EIF4EBP1|MAP2K2|RPTOR|PDCD4|RPS6KA1",
+      "Overlap (Experiment02)": "PRKCD|CSNK2A1|RPS6|AKT1|RPS6KA4|RPTOR|EIF4G3|MTOR|MAP2K2|PDCD4|EIF4B|RPS6KA1|EIF4EBP1|EIF4G1",
+      "Score (Experiment01)": 0.4088000059,
+      "Score (Experiment02)": -2.3831999302
+    },
+    {
+      "Signature ID": "WP_TROP2_REGULATORY_SIGNALING",
+      "Percent Overlap (Experiment01)": 26.7,
+      "Percent Overlap (Experiment02)": 26.7,
+      "adj p-val (Experiment01)": 0.6242801978,
+      "adj p-val (Experiment02)": 0.5225285139,
+      "Overlap (Experiment01)": "IGF1R|PRKCD|FN1|IGF2R|PAK4|CLDN7|ABCC1|CDK2|ITGB1|JUN|TLN1|RB1",
+      "Overlap (Experiment02)": "PRKCD|FN1|ABCC1|PAK4|JUN|IGF1R|IGF2R|ITGB1|CLDN7|CDK2|TLN1|RB1",
+      "Score (Experiment01)": 1.657400012,
+      "Score (Experiment02)": -1.7149000168
+    },
+    {
+      "Signature ID": "WP_T_CELL_ACTIVATION_SARS_COV_2",
+      "Percent Overlap (Experiment01)": 17.0,
+      "Percent Overlap (Experiment02)": 17.0,
+      "adj p-val (Experiment01)": 0.9478787879,
+      "adj p-val (Experiment02)": 0.7748798766,
+      "Overlap (Experiment01)": "FOXO3|RICTOR|TSC1|PDPK1|MTOR|IKBKB|IRF2BPL|SOS1|RAF1|AKT1|TSC2|JUN|MAP2K2|PLCG1|RPTOR",
+      "Overlap (Experiment02)": "FOXO3|RICTOR|RAF1|IRF2BPL|TSC2|PDPK1|AKT1|IKBKB|SOS1|JUN|RPTOR|PLCG1|MTOR|MAP2K2|TSC1",
+      "Score (Experiment01)": -0.2994000018,
+      "Score (Experiment02)": 1.023900032
+    },
+    {
+      "Signature ID": "WP_T_CELL_ANTIGEN_RECEPTOR_TCR_PATHWAY_DURING_STAPHYLOCOCCUS_AUREUS_INFECTION",
+      "Percent Overlap (Experiment01)": 21.0,
+      "Percent Overlap (Experiment02)": 21.0,
+      "adj p-val (Experiment01)": 0.762811831,
+      "adj p-val (Experiment02)": 0.8754363559,
+      "Overlap (Experiment01)": "RRAS|DLG1|MAP3K7|IKBKB|PAK1|SOS1|RAF1|CBL|AKT1|JUN|MAP2K2|PLCG1|NFATC2",
+      "Overlap (Experiment02)": "RAF1|AKT1|IKBKB|SOS1|DLG1|CBL|JUN|RRAS|NFATC2|MAP3K7|PAK1|PLCG1|MAP2K2",
+      "Score (Experiment01)": -1.2172000408,
+      "Score (Experiment02)": -0.6721000075
+    },
+    {
+      "Signature ID": "WP_T_CELL_RECEPTOR_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 24.0,
+      "Percent Overlap (Experiment02)": 24.0,
+      "adj p-val (Experiment01)": 0.6871374386,
+      "adj p-val (Experiment02)": 0.9687966526,
+      "Overlap (Experiment01)": "PRKCD|CREB1|PDPK1|MAP3K7|IKBKB|PAK1|SOS1|ATF2|RAF1|CBL|AKT1|CRK|JUN|RIPK2|MAP2K2|PLCG1|NFATC2|GAB2",
+      "Overlap (Experiment02)": "PRKCD|RAF1|CREB1|ATF2|RIPK2|PDPK1|AKT1|IKBKB|SOS1|CBL|JUN|NFATC2|MAP3K7|PAK1|CRK|PLCG1|MAP2K2|GAB2",
+      "Score (Experiment01)": -1.4198000431,
+      "Score (Experiment02)": 0.1093000025
+    },
+    {
+      "Signature ID": "WP_VASOPRESSIN_REGULATED_WATER_REABSORPTION",
+      "Percent Overlap (Experiment01)": 25.0,
+      "Percent Overlap (Experiment02)": 25.0,
+      "adj p-val (Experiment01)": 0.9211775878,
+      "adj p-val (Experiment02)": 0.4229212083,
+      "Overlap (Experiment01)": "CREB1|CREB3L4|DYNC1I1|DYNC1LI2|RAB11B|DYNC1LI1|GNAS|STX4|NSF|ARHGDIA|ADCY9",
+      "Overlap (Experiment02)": "NSF|CREB3L4|DYNC1I1|RAB11B|ARHGDIA|CREB1|GNAS|STX4|DYNC1LI2|DYNC1LI1|ADCY9",
+      "Score (Experiment01)": -0.4248000085,
+      "Score (Experiment02)": 2.2490999699
+    },
+    {
+      "Signature ID": "WP_VEGFA_VEGFR2_SIGNALING",
+      "Percent Overlap (Experiment01)": 21.6,
+      "Percent Overlap (Experiment02)": 21.6,
+      "adj p-val (Experiment01)": 0.9805799415,
+      "adj p-val (Experiment02)": 0.8201171542,
+      "Overlap (Experiment01)": "EIF4G1|FOXO3|SMARCA2|PRKCD|LUC7L|GAB1|RBM39|ALDOA|FN1|MAPKAP1|OCLN|CREB1|PPM1G|ACTG1|FLII|TFAM|GRSF1|CAMKK2|TNFRSF10C|BRD4|PLCB3|SYNJ1|RICTOR|AKT1S1|AP2S1|PRDX2|NCL|PPP3CA|PDPK1|EEA1|HDAC1|MTOR|ADAM9|AP2A1|SND1|PAK1|RPL5|UBAP2L|PTPN14|EIF4G2|ATF2|PRKRA|EIF2A|PSMD4|SHROOM2|RAP1A|ABL1|PGK1|BCAR1|RAF1|NAP1L1|SIAH2|CBL|EIF3D|RCN1|HMGB1|FHOD1|AKT1|ATF4|PRRC2C|FAS|LIMK1|CRK|PAK2|VAV2|LDHA|FGD5|PBK|ITGB1|JUN|PFN1|RPS6|NCF2|MAP2K2|FAF1|GAPDH|MAP3K5|PLCG1|EZR|FAM120A|MOV10|MKNK1|P4HB|USP10|MYO1C|NUMB|PXN|HSPB1|HSP90AA1|GIGYF2|DNAJA1|NFATC2|FLNB",
+      "Overlap (Experiment02)": "PPM1G|NUMB|FOXO3|ALDOA|PRKCD|RICTOR|SMARCA2|AKT1S1|AP2S1|RAF1|FN1|FLNB|AP2A1|PFN1|PRKRA|ABL1|FAF1|HDAC1|GAB1|SHROOM2|HMGB1|RPL5|P4HB|TFAM|HSP90AA1|CREB1|GAPDH|FLII|EIF3D|RPS6|PXN|LDHA|FAS|ATF2|PTPN14|PRDX2|ATF4|PDPK1|FAM120A|AKT1|BRD4|SYNJ1|EEA1|UBAP2L|MOV10|TNFRSF10C|PPP3CA|ACTG1|PLCB3|RBM39|PGK1|RAP1A|EIF2A|SND1|USP10|EIF4G2|NAP1L1|PSMD4|CBL|JUN|MKNK1|ITGB1|FGD5|OCLN|NFATC2|ADAM9|GRSF1|RCN1|PAK1|DNAJA1|CRK|FHOD1|EZR|PLCG1|PAK2|SIAH2|HSPB1|MTOR|MAP2K2|BCAR1|LUC7L|VAV2|CAMKK2|NCL|PBK|MAP3K5|NCF2|LIMK1|MAPKAP1|EIF4G1|MYO1C|PRRC2C|GIGYF2",
+      "Score (Experiment01)": -0.1194999963,
+      "Score (Experiment02)": 0.9211000204
+    },
+    {
+      "Signature ID": "WP_VITAMIN_D_RECEPTOR_PATHWAY",
+      "Percent Overlap (Experiment01)": 5.9,
+      "Percent Overlap (Experiment02)": 5.9,
+      "adj p-val (Experiment01)": 0.8219314642,
+      "adj p-val (Experiment02)": 0.8959541985,
+      "Overlap (Experiment01)": "CLMN|BCL6|LRRC8A|G6PD|ATP2B1|CDK2|CRACR2B|SATB1|NRIP1|MYO9B|NFATC2",
+      "Overlap (Experiment02)": "BCL6|CLMN|G6PD|ATP2B1|LRRC8A|CRACR2B|NRIP1|NFATC2|SATB1|CDK2|MYO9B",
+      "Score (Experiment01)": -0.9588999748,
+      "Score (Experiment02)": -0.5073000193
+    },
+    {
+      "Signature ID": "WP_WNT_SIGNALING",
+      "Percent Overlap (Experiment01)": 9.7,
+      "Percent Overlap (Experiment02)": 9.7,
+      "adj p-val (Experiment01)": 0.9170670116,
+      "adj p-val (Experiment02)": 0.8959541985,
+      "Overlap (Experiment01)": "INVS|PLCB3|CSNK2A1|PPP3CA|MAP3K7|AXIN1|LRP6|JUN|PLCB4|APC|NFATC2",
+      "Overlap (Experiment02)": "CSNK2A1|PLCB4|AXIN1|PPP3CA|PLCB3|INVS|JUN|NFATC2|MAP3K7|LRP6|APC",
+      "Score (Experiment01)": -0.7537999749,
+      "Score (Experiment02)": -0.55400002
+    },
+    {
+      "Signature ID": "WP_WNT_SIGNALING_PATHWAY",
+      "Percent Overlap (Experiment01)": 23.4,
+      "Percent Overlap (Experiment02)": 23.4,
+      "adj p-val (Experiment01)": 0.7785351295,
+      "adj p-val (Experiment02)": 0.8959541985,
+      "Overlap (Experiment01)": "PI4K2A|TSC1|MTOR|MAP3K7|AXIN1|LRP6|AKT1|TSC2|BCL9|APC|NFATC2",
+      "Overlap (Experiment02)": "BCL9|PI4K2A|TSC2|AXIN1|AKT1|NFATC2|MAP3K7|LRP6|MTOR|APC|TSC1",
+      "Score (Experiment01)": -1.1136000156,
+      "Score (Experiment02)": -0.5173000097
+    }
+  ]
+}

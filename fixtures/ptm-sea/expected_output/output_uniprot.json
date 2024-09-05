@@ -1,371 +1,458 @@
-[
-  {
-    "Signature ID": "PERT-P100-DIA2_VORINOSTAT",
-    "Overlap (Experiment01)": 5.4,
-    "Overlap (Experiment02)": 5.4,
-    "adj p-val (Experiment01)": 0.0341666667,
-    "adj p-val (Experiment02)": 0.0279481936,
-    "Score (Experiment01)": 3.9247999191,
-    "Score (Experiment02)": 3.3169999123
+{
+  "Log": {
+    "Version": "0.1.2"
   },
-  {
-    "Signature ID": "PERT-P100-DIA2_TBB",
-    "Overlap (Experiment01)": 8.2,
-    "Overlap (Experiment02)": 8.2,
-    "adj p-val (Experiment01)": 0.6331217693,
-    "adj p-val (Experiment02)": 0.1863159242,
-    "Score (Experiment01)": 0.9423999786,
-    "Score (Experiment02)": 1.7879999876
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_STAUROSPORINE",
-    "Overlap (Experiment01)": 4.9,
-    "Overlap (Experiment02)": 4.9,
-    "adj p-val (Experiment01)": 0.2395833333,
-    "adj p-val (Experiment02)": 0.0078139889,
-    "Score (Experiment01)": 2.451100111,
-    "Score (Experiment02)": 3.8403000832
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_SP600125",
-    "Overlap (Experiment01)": 8.9,
-    "Overlap (Experiment02)": 8.9,
-    "adj p-val (Experiment01)": 0.5302763081,
-    "adj p-val (Experiment02)": 0.8535244361,
-    "Score (Experiment01)": 1.1474000216,
-    "Score (Experiment02)": 0.3003999889
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_SOTRASTAURIN",
-    "Overlap (Experiment01)": 6.5,
-    "Overlap (Experiment02)": 6.5,
-    "adj p-val (Experiment01)": 0.6122726039,
-    "adj p-val (Experiment02)": 0.8967741935,
-    "Score (Experiment01)": 1.0104999542,
-    "Score (Experiment02)": 0.1632999927
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_SEMAGACESTAT",
-    "Overlap (Experiment01)": 5.6,
-    "Overlap (Experiment02)": 5.6,
-    "adj p-val (Experiment01)": 0.8305168713,
-    "adj p-val (Experiment02)": 0.8115159694,
-    "Score (Experiment01)": 0.4180999994,
-    "Score (Experiment02)": -0.347299993
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_RGFP966",
-    "Overlap (Experiment01)": 6.2,
-    "Overlap (Experiment02)": 6.2,
-    "adj p-val (Experiment01)": 0.2395833333,
-    "adj p-val (Experiment02)": 0.0786948177,
-    "Score (Experiment01)": 2.2973999977,
-    "Score (Experiment02)": 2.2411000729
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_PS-1145",
-    "Overlap (Experiment01)": 7.2,
-    "Overlap (Experiment02)": 7.2,
-    "adj p-val (Experiment01)": 0.4822145726,
-    "adj p-val (Experiment02)": 0.0078139889,
-    "Score (Experiment01)": -1.5686999559,
-    "Score (Experiment02)": 3.3445000648
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_PRAVASTATIN",
-    "Overlap (Experiment01)": 6.2,
-    "Overlap (Experiment02)": 6.2,
-    "adj p-val (Experiment01)": 0.280909374,
-    "adj p-val (Experiment02)": 0.5585769443,
-    "Score (Experiment01)": -2.3382999897,
-    "Score (Experiment02)": -0.8428000212
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_PONATINIB",
-    "Overlap (Experiment01)": 5.1,
-    "Overlap (Experiment02)": 5.1,
-    "adj p-val (Experiment01)": 0.3076479076,
-    "adj p-val (Experiment02)": 0.0842826552,
-    "Score (Experiment01)": 2.043200016,
-    "Score (Experiment02)": 2.560199976
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_OLMESARTAN",
-    "Overlap (Experiment01)": 5.2,
-    "Overlap (Experiment02)": 5.2,
-    "adj p-val (Experiment01)": 0.8305168713,
-    "adj p-val (Experiment02)": 0.0973031284,
-    "Score (Experiment01)": -0.4282999933,
-    "Score (Experiment02)": 2.3954999447
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_OKADAIC_ACID",
-    "Overlap (Experiment01)": 8.1,
-    "Overlap (Experiment02)": 8.1,
-    "adj p-val (Experiment01)": 0.6331217693,
-    "adj p-val (Experiment02)": 0.0806942208,
-    "Score (Experiment01)": -0.9449999928,
-    "Score (Experiment02)": 2.3815999031
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_MILRINONE",
-    "Overlap (Experiment01)": 4.7,
-    "Overlap (Experiment02)": 4.7,
-    "adj p-val (Experiment01)": 0.7068965517,
-    "adj p-val (Experiment02)": 0.0078139889,
-    "Score (Experiment01)": 0.6999999881,
-    "Score (Experiment02)": 3.7135999203
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_LENALIDOMIDE",
-    "Overlap (Experiment01)": 5.3,
-    "Overlap (Experiment02)": 5.3,
-    "adj p-val (Experiment01)": 0.9195171026,
-    "adj p-val (Experiment02)": 0.357466863,
-    "Score (Experiment01)": 0.1792999953,
-    "Score (Experiment02)": 1.3235000372
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_KN-62",
-    "Overlap (Experiment01)": 5.0,
-    "Overlap (Experiment02)": 5.0,
-    "adj p-val (Experiment01)": 0.0274983233,
-    "adj p-val (Experiment02)": 0.0279481936,
-    "Score (Experiment01)": 4.2744002342,
-    "Score (Experiment02)": 2.8454999924
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_IMATINIB",
-    "Overlap (Experiment01)": 5.9,
-    "Overlap (Experiment02)": 5.9,
-    "adj p-val (Experiment01)": 0.6709002836,
-    "adj p-val (Experiment02)": 0.0806942208,
-    "Score (Experiment01)": 0.8582000136,
-    "Score (Experiment02)": 2.6677999496
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_GSK1210151A",
-    "Overlap (Experiment01)": 6.8,
-    "Overlap (Experiment02)": 6.8,
-    "adj p-val (Experiment01)": 0.0274983233,
-    "adj p-val (Experiment02)": 0.7236842105,
-    "Score (Experiment01)": 3.5831999779,
-    "Score (Experiment02)": 0.5748000145
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_GEFITINIB",
-    "Overlap (Experiment01)": 4.9,
-    "Overlap (Experiment02)": 4.9,
-    "adj p-val (Experiment01)": 0.4942222961,
-    "adj p-val (Experiment02)": 0.0806942208,
-    "Score (Experiment01)": 1.3906999826,
-    "Score (Experiment02)": 2.6008999348
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_FLECAINIDE",
-    "Overlap (Experiment01)": 5.9,
-    "Overlap (Experiment02)": 5.9,
-    "adj p-val (Experiment01)": 0.6797230825,
-    "adj p-val (Experiment02)": 0.0257983325,
-    "Score (Experiment01)": 0.7930999994,
-    "Score (Experiment02)": 3.1126999855
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_FLAVOPIRIDOL",
-    "Overlap (Experiment01)": 7.3,
-    "Overlap (Experiment02)": 7.3,
-    "adj p-val (Experiment01)": 0.4822145726,
-    "adj p-val (Experiment02)": 0.2971014493,
-    "Score (Experiment01)": -1.5649000406,
-    "Score (Experiment02)": -1.4629000425
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_ERLOTINIB",
-    "Overlap (Experiment01)": 4.9,
-    "Overlap (Experiment02)": 4.9,
-    "adj p-val (Experiment01)": 0.4822145726,
-    "adj p-val (Experiment02)": 0.1447058824,
-    "Score (Experiment01)": 1.4496999979,
-    "Score (Experiment02)": 2.1013998985
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_EPZ004777",
-    "Overlap (Experiment01)": 8.7,
-    "Overlap (Experiment02)": 8.7,
-    "adj p-val (Experiment01)": 0.8815789474,
-    "adj p-val (Experiment02)": 0.2949105416,
-    "Score (Experiment01)": -0.3260999918,
-    "Score (Experiment02)": 1.5536999702
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_ENDOTHELIN",
-    "Overlap (Experiment01)": 4.9,
-    "Overlap (Experiment02)": 4.9,
-    "adj p-val (Experiment01)": 0.4822145726,
-    "adj p-val (Experiment02)": 0.0863629271,
-    "Score (Experiment01)": 1.6325999498,
-    "Score (Experiment02)": 2.3401999474
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_DOXORUBICIN",
-    "Overlap (Experiment01)": 4.5,
-    "Overlap (Experiment02)": 4.5,
-    "adj p-val (Experiment01)": 0.5256410256,
-    "adj p-val (Experiment02)": 0.1447058824,
-    "Score (Experiment01)": 1.2509000301,
-    "Score (Experiment02)": 2.0309000015
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_DMSO",
-    "Overlap (Experiment01)": 5.8,
-    "Overlap (Experiment02)": 5.8,
-    "adj p-val (Experiment01)": 0.2395833333,
-    "adj p-val (Experiment02)": 0.0078139889,
-    "Score (Experiment01)": 2.5381999016,
-    "Score (Experiment02)": 3.8578000069
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_DAUNORUBICIN",
-    "Overlap (Experiment01)": 7.3,
-    "Overlap (Experiment02)": 7.3,
-    "adj p-val (Experiment01)": 0.0341666667,
-    "adj p-val (Experiment02)": 0.0200587084,
-    "Score (Experiment01)": 3.4168999195,
-    "Score (Experiment02)": 3.511300087
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_CRIZOTINIB",
-    "Overlap (Experiment01)": 4.3,
-    "Overlap (Experiment02)": 4.3,
-    "adj p-val (Experiment01)": 0.4822145726,
-    "adj p-val (Experiment02)": 0.5185579196,
-    "Score (Experiment01)": 1.5992000103,
-    "Score (Experiment02)": 0.9150999784
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_COMPOUND_E",
-    "Overlap (Experiment01)": 6.2,
-    "Overlap (Experiment02)": 6.2,
-    "adj p-val (Experiment01)": 0.280909374,
-    "adj p-val (Experiment02)": 0.0068333333,
-    "Score (Experiment01)": 2.0646998882,
-    "Score (Experiment02)": 4.5261001587
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_CERITINIB",
-    "Overlap (Experiment01)": 7.0,
-    "Overlap (Experiment02)": 7.0,
-    "adj p-val (Experiment01)": 0.4822145726,
-    "adj p-val (Experiment02)": 0.0813492063,
-    "Score (Experiment01)": 1.4923000336,
-    "Score (Experiment02)": 2.4923000336
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_BOSUTINIB",
-    "Overlap (Experiment01)": 5.8,
-    "Overlap (Experiment02)": 5.8,
-    "adj p-val (Experiment01)": 0.5302763081,
-    "adj p-val (Experiment02)": 0.0068333333,
-    "Score (Experiment01)": -1.094900012,
-    "Score (Experiment02)": 4.2010998726
-  },
-  {
-    "Signature ID": "PERT-P100-DIA2_AXITINIB",
-    "Overlap (Experiment01)": 6.1,
-    "Overlap (Experiment02)": 6.1,
-    "adj p-val (Experiment01)": 0.2525667351,
-    "adj p-val (Experiment02)": 0.0719298246,
-    "Score (Experiment01)": 2.2792999744,
-    "Score (Experiment02)": 2.6886999607
-  },
-  {
-    "Signature ID": "KINASE-PSP_CK2A1\/CSNK2A1",
-    "Overlap (Experiment01)": 2.1,
-    "Overlap (Experiment02)": 2.1,
-    "adj p-val (Experiment01)": 0.0274983233,
-    "adj p-val (Experiment02)": 0.0719298246,
-    "Score (Experiment01)": 3.5803000927,
-    "Score (Experiment02)": 2.7980999947
-  },
-  {
-    "Signature ID": "KINASE-PSP_CDK2",
-    "Overlap (Experiment01)": 3.1,
-    "Overlap (Experiment02)": 3.1,
-    "adj p-val (Experiment01)": 0.4942222961,
-    "adj p-val (Experiment02)": 0.0068333333,
-    "Score (Experiment01)": -1.3619999886,
-    "Score (Experiment02)": -3.8127999306
-  },
-  {
-    "Signature ID": "KINASE-PSP_CDK1",
-    "Overlap (Experiment01)": 1.5,
-    "Overlap (Experiment02)": 1.5,
-    "adj p-val (Experiment01)": 0.280909374,
-    "adj p-val (Experiment02)": 0.0068333333,
-    "Score (Experiment01)": -2.1839001179,
-    "Score (Experiment02)": -5.4586000443
-  },
-  {
-    "Signature ID": "KINASE-iKiP_MAPK8.JNK1",
-    "Overlap (Experiment01)": 3.4,
-    "Overlap (Experiment02)": 3.4,
-    "adj p-val (Experiment01)": 0.9106404959,
-    "adj p-val (Experiment02)": 0.0078139889,
-    "Score (Experiment01)": 0.2061000019,
-    "Score (Experiment02)": -3.7999000549
-  },
-  {
-    "Signature ID": "KINASE-iKiP_MAPK3.ERK1",
-    "Overlap (Experiment01)": 3.6,
-    "Overlap (Experiment02)": 3.6,
-    "adj p-val (Experiment01)": 0.5256410256,
-    "adj p-val (Experiment02)": 0.0315061475,
-    "Score (Experiment01)": 1.2443000078,
-    "Score (Experiment02)": -2.8366999626
-  },
-  {
-    "Signature ID": "KINASE-iKiP_MAPK13",
-    "Overlap (Experiment01)": 4.1,
-    "Overlap (Experiment02)": 4.1,
-    "adj p-val (Experiment01)": 0.5256410256,
-    "adj p-val (Experiment02)": 0.0509201761,
-    "Score (Experiment01)": 1.2502000332,
-    "Score (Experiment02)": -2.9328000546
-  },
-  {
-    "Signature ID": "KINASE-iKiP_MAPK12",
-    "Overlap (Experiment01)": 3.3,
-    "Overlap (Experiment02)": 3.3,
-    "adj p-val (Experiment01)": 0.4822145726,
-    "adj p-val (Experiment02)": 0.0068333333,
-    "Score (Experiment01)": 1.4768999815,
-    "Score (Experiment02)": -4.3520998955
-  },
-  {
-    "Signature ID": "KINASE-iKiP_MAPK1.ERK2",
-    "Overlap (Experiment01)": 3.6,
-    "Overlap (Experiment02)": 3.6,
-    "adj p-val (Experiment01)": 0.7949814656,
-    "adj p-val (Experiment02)": 0.0068333333,
-    "Score (Experiment01)": 0.5156999826,
-    "Score (Experiment02)": -4.6538000107
-  },
-  {
-    "Signature ID": "KINASE-iKiP_DYRK2",
-    "Overlap (Experiment01)": 3.0,
-    "Overlap (Experiment02)": 3.0,
-    "adj p-val (Experiment01)": 0.8885836386,
-    "adj p-val (Experiment02)": 0.3032065033,
-    "Score (Experiment01)": 0.2375999987,
-    "Score (Experiment02)": -1.4829000235
-  },
-  {
-    "Signature ID": "KINASE-iKiP_CSNK2A2.CK2A2",
-    "Overlap (Experiment01)": 3.7,
-    "Overlap (Experiment02)": 3.7,
-    "adj p-val (Experiment01)": 0.2525667351,
-    "adj p-val (Experiment02)": 0.0990467485,
-    "Score (Experiment01)": 2.4012000561,
-    "Score (Experiment02)": 2.2158000469
-  }
-]
+  "Result": [
+    {
+      "Signature ID": "PERT-P100-DIA2_VORINOSTAT",
+      "Percent Overlap (Experiment01)": 5.4,
+      "Percent Overlap (Experiment02)": 5.4,
+      "adj p-val (Experiment01)": 0.0199805068,
+      "adj p-val (Experiment02)": 0.0196360153,
+      "Overlap (Experiment01)": "P16144;S1474-p;u|O15042;S67-p;u|Q6P2E9;S729-p;u|Q96PE2;S546-p;u|Q14566;S13-p;u|Q09666;S115-p;u|Q92522;S31-p;u|P62191;T53-p;u|Q8TEV9;S498-p;u|Q96G03;S165-p;u|P08047;S7-p;u|O14874;S31-p;d|O60832;S494-p;d|O43572;S96-p;d|Q13523;Y849-p;d|Q13951-2;S173-p;d|Q15773;S238-p;d|Q15061;S77-p;d|O75533;S194-p;d|P30305;S375-p;d|O75533;T426-p;d|Q68CZ2;T632-p;d|Q15942;T270-p;d|Q9GZR2;S15-p;d|Q9UNZ2;S140-p;d|Q13330;S576-p;d|Q9Y3B9;T104-p;d|P10412;T18-p;d|O94804;S454-p;d|P85037;S101-p;d",
+      "Overlap (Experiment02)": "Q96G03;S165-p;u|Q09666;S115-p;u|Q6P2E9;S729-p;u|Q8TEV9;S498-p;u|O15042;S67-p;u|Q14566;S13-p;u|Q96PE2;S546-p;u|P08047;S7-p;u|P62191;T53-p;u|P16144;S1474-p;u|Q92522;S31-p;u|O14874;S31-p;d|Q13523;Y849-p;d|Q13951-2;S173-p;d|O75533;T426-p;d|O43572;S96-p;d|Q15773;S238-p;d|O60832;S494-p;d|O94804;S454-p;d|P85037;S101-p;d|O75533;S194-p;d|Q68CZ2;T632-p;d|Q15061;S77-p;d|Q9UNZ2;S140-p;d|Q15942;T270-p;d|P30305;S375-p;d|Q9GZR2;S15-p;d|Q9Y3B9;T104-p;d|Q13330;S576-p;d|P10412;T18-p;d",
+      "Score (Experiment01)": 3.6935999393,
+      "Score (Experiment02)": 2.9619998932
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_TBB",
+      "Percent Overlap (Experiment01)": 8.2,
+      "Percent Overlap (Experiment02)": 8.2,
+      "adj p-val (Experiment01)": 0.60859375,
+      "adj p-val (Experiment02)": 0.2268754323,
+      "Overlap (Experiment01)": "O15042;S67-p;u|Q06210;S261-p;u|Q9C0C2;S672-p;u|Q15773;S238-p;u|Q13435;S307-p;u|P32119;S112-p;u|Q13523;Y849-p;d|P55317;S307-p;d|Q9Y2U5;S153-p;d|Q68DK7;S126-p;d|P10412;T18-p;d|Q9NZN4;S468-p;d",
+      "Overlap (Experiment02)": "P32119;S112-p;u|Q13435;S307-p;u|Q06210;S261-p;u|O15042;S67-p;u|Q9C0C2;S672-p;u|Q15773;S238-p;u|P55317;S307-p;d|Q13523;Y849-p;d|Q9Y2U5;S153-p;d|Q9NZN4;S468-p;d|Q68DK7;S126-p;d|P10412;T18-p;d",
+      "Score (Experiment01)": 0.9824000001,
+      "Score (Experiment02)": 1.7625999451
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_STAUROSPORINE",
+      "Percent Overlap (Experiment01)": 4.9,
+      "Percent Overlap (Experiment02)": 4.9,
+      "adj p-val (Experiment01)": 0.2411764706,
+      "adj p-val (Experiment02)": 0.0150596878,
+      "Overlap (Experiment01)": "Q9UQ35;S297-p;u|P16144;S1474-p;u|Q6P2E9;S729-p;u|Q96T37;S674-p;u|Q92522;S31-p;u|O75676;S745-p;u|Q9NQZ2;S365-p;u|Q06210;S261-p;u|Q9UQ35;T1043-p;u|Q9UKE5;S769-p;u|Q9C0C2;S1545-p;u|O43583;S73-p;u|Q96EV2;S41-p;u|Q9H6S0;S1221-p;u|O95453;S163-p;d|O75533;T211-p;d|Q9H7P6;S309-p;d|P20962;S5-p;d|P46100;S634-p;d|P06748;S260-p;d|Q15773;S238-p;d|Q68DK7;S126-p;d|Q13435;S307-p;d|O15541;S85-p;d|P30305;S375-p;d|Q9GZR2;S15-p;d|Q9Y3B9;T104-p;d|P10412;T18-p;d|P85037;S101-p;d",
+      "Overlap (Experiment02)": "Q9NQZ2;S365-p;u|Q96EV2;S41-p;u|Q9UQ35;S297-p;u|O75676;S745-p;u|Q9UQ35;T1043-p;u|Q6P2E9;S729-p;u|Q96T37;S674-p;u|Q06210;S261-p;u|Q9UKE5;S769-p;u|Q9C0C2;S1545-p;u|O43583;S73-p;u|P16144;S1474-p;u|Q9H6S0;S1221-p;u|Q92522;S31-p;u|O15541;S85-p;d|P46100;S634-p;d|P20962;S5-p;d|Q13435;S307-p;d|Q9H7P6;S309-p;d|Q15773;S238-p;d|P06748;S260-p;d|P85037;S101-p;d|O75533;T211-p;d|Q68DK7;S126-p;d|P30305;S375-p;d|O95453;S163-p;d|Q9GZR2;S15-p;d|Q9Y3B9;T104-p;d|P10412;T18-p;d",
+      "Score (Experiment01)": 2.506000042,
+      "Score (Experiment02)": 3.7693998814
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_SP600125",
+      "Percent Overlap (Experiment01)": 8.9,
+      "Percent Overlap (Experiment02)": 8.9,
+      "adj p-val (Experiment01)": 0.5084325397,
+      "adj p-val (Experiment02)": 0.8251037344,
+      "Overlap (Experiment01)": "Q6P2E9;S729-p;u|Q9H7P6;S309-p;u|Q06210;S261-p;u|Q9Y3B9;T104-p;u|Q9UQ35;S297-p;d|Q14566;S13-p;d|P28290;T1140-p;d|Q9UQ35;S2123-p;d|Q15773;S238-p;d|O75533;S194-p;d|Q68CZ2;T632-p;d|Q9GZR2;S15-p;d|O94804;S454-p;d|Q9H9L7;S22-p;d",
+      "Overlap (Experiment02)": "Q6P2E9;S729-p;u|Q06210;S261-p;u|Q9H7P6;S309-p;u|Q9Y3B9;T104-p;u|Q9UQ35;S297-p;d|Q9UQ35;S2123-p;d|Q14566;S13-p;d|Q15773;S238-p;d|O94804;S454-p;d|O75533;S194-p;d|Q68CZ2;T632-p;d|P28290;T1140-p;d|Q9H9L7;S22-p;d|Q9GZR2;S15-p;d",
+      "Score (Experiment01)": 1.182199955,
+      "Score (Experiment02)": 0.3032000065
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_SOTRASTAURIN",
+      "Percent Overlap (Experiment01)": 6.5,
+      "Percent Overlap (Experiment02)": 6.5,
+      "adj p-val (Experiment01)": 0.5428965517,
+      "adj p-val (Experiment02)": 0.9047619048,
+      "Overlap (Experiment01)": "Q06210;S261-p;u|P49792;S1509-p;u|Q15773;S238-p;u|P09012;T131-p;u|Q5VUA4;S1896-p;u|Q5JSH3;T219-p;u|Q13523;Y849-p;d|Q9H7P6;S309-p;d|Q68DK7;S126-p;d|P32119;S112-p;d|Q9NZN4;S468-p;d",
+      "Overlap (Experiment02)": "P49792;S1509-p;u|Q06210;S261-p;u|Q5JSH3;T219-p;u|P09012;T131-p;u|Q15773;S238-p;u|Q5VUA4;S1896-p;u|P32119;S112-p;d|Q13523;Y849-p;d|Q9H7P6;S309-p;d|Q9NZN4;S468-p;d|Q68DK7;S126-p;d",
+      "Score (Experiment01)": 1.1014000177,
+      "Score (Experiment02)": 0.1622000039
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_SEMAGACESTAT",
+      "Percent Overlap (Experiment01)": 5.6,
+      "Percent Overlap (Experiment02)": 5.6,
+      "adj p-val (Experiment01)": 0.8496955453,
+      "adj p-val (Experiment02)": 0.8251037344,
+      "Overlap (Experiment01)": "P22415;S186-p;u|Q92522;S31-p;u|P49792;S1509-p;u|P43487;S60-p;u|Q15742;S159-p;d|Q9C0C2;S672-p;d|Q9Y2U5;S153-p;d|P46821;S1427-p;d|P54105;S102-p;d|O15014;S758-p;d",
+      "Overlap (Experiment02)": "P49792;S1509-p;u|P22415;S186-p;u|P43487;S60-p;u|Q92522;S31-p;u|O15014;S758-p;d|P46821;S1427-p;d|P54105;S102-p;d|Q9C0C2;S672-p;d|Q9Y2U5;S153-p;d|Q15742;S159-p;d",
+      "Score (Experiment01)": 0.4090999961,
+      "Score (Experiment02)": -0.3314999938
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_RGFP966",
+      "Percent Overlap (Experiment01)": 6.2,
+      "Percent Overlap (Experiment02)": 6.2,
+      "adj p-val (Experiment01)": 0.2411764706,
+      "adj p-val (Experiment02)": 0.0599415205,
+      "Overlap (Experiment01)": "O15042;S67-p;u|P22415;S186-p;u|Q13523;Y849-p;u|Q92522;S31-p;u|Q6PCE3;S175-p;u|Q8N7R7;S344-p;u|O43583;S73-p;u|P62888;S10-p;u|Q9Y2U5;S153-p;d|P07305;T153-p;d",
+      "Overlap (Experiment02)": "Q6PCE3;S175-p;u|Q13523;Y849-p;u|Q8N7R7;S344-p;u|P22415;S186-p;u|O15042;S67-p;u|P62888;S10-p;u|O43583;S73-p;u|Q92522;S31-p;u|Q9Y2U5;S153-p;d|P07305;T153-p;d",
+      "Score (Experiment01)": 2.3392000198,
+      "Score (Experiment02)": 2.2465000153
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_PS-1145",
+      "Percent Overlap (Experiment01)": 7.2,
+      "Percent Overlap (Experiment02)": 7.2,
+      "adj p-val (Experiment01)": 0.4503787879,
+      "adj p-val (Experiment02)": 0.0311234818,
+      "Overlap (Experiment01)": "Q9UQ35;T1043-p;u|Q9C0C2;S1545-p;u|Q96G03;S165-p;u|O75396;S137-p;u|Q9H6S0;S1221-p;u|O14874;S31-p;d|O75533;T211-p;d|Q9Y4B5;S263-p;d|Q9UHN6;S10-p;d|O75533;S194-p;d|Q9UNZ2;S140-p;d|O43524;S253-p;d|P10412;T18-p;d",
+      "Overlap (Experiment02)": "O75396;S137-p;u|Q96G03;S165-p;u|Q9UQ35;T1043-p;u|Q9C0C2;S1545-p;u|Q9H6S0;S1221-p;u|O14874;S31-p;d|Q9Y4B5;S263-p;d|O75533;S194-p;d|O75533;T211-p;d|Q9UHN6;S10-p;d|Q9UNZ2;S140-p;d|O43524;S253-p;d|P10412;T18-p;d",
+      "Score (Experiment01)": -1.6232000589,
+      "Score (Experiment02)": 3.1368000507
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_PRAVASTATIN",
+      "Percent Overlap (Experiment01)": 6.2,
+      "Percent Overlap (Experiment02)": 6.2,
+      "adj p-val (Experiment01)": 0.2411764706,
+      "adj p-val (Experiment02)": 0.5848983004,
+      "Overlap (Experiment01)": "Q92522;S31-p;u|Q9H7P6;S309-p;u|Q9C0C2;S672-p;u|P42566;T777-p;u|P62888;S10-p;u|O14874;S31-p;d|Q9UL54-2;S1002-p;d|Q7Z6E9;T1468-p;d|O75533;T211-p;d|O43572;S96-p;d|O15014;S758-p;d|P10412;T18-p;d",
+      "Overlap (Experiment02)": "P42566;T777-p;u|P62888;S10-p;u|Q9C0C2;S672-p;u|Q9H7P6;S309-p;u|Q92522;S31-p;u|O14874;S31-p;d|Q9UL54-2;S1002-p;d|O15014;S758-p;d|O43572;S96-p;d|Q7Z6E9;T1468-p;d|O75533;T211-p;d|P10412;T18-p;d",
+      "Score (Experiment01)": -2.3299000263,
+      "Score (Experiment02)": -0.8378999829
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_PONATINIB",
+      "Percent Overlap (Experiment01)": 5.1,
+      "Percent Overlap (Experiment02)": 5.1,
+      "adj p-val (Experiment01)": 0.2549161365,
+      "adj p-val (Experiment02)": 0.0610119048,
+      "Overlap (Experiment01)": "P16144;S1474-p;u|Q96T37;S674-p;u|Q09666;S115-p;u|P52272;S701-p;u|O95453;S163-p;d|P04626;T1166-p;d|Q9Y2K6;S134-p;d|Q68DK7;S126-p;d|Q9UNZ2;S140-p;d|O94804;S454-p;d|P85037;S101-p;d",
+      "Overlap (Experiment02)": "P52272;S701-p;u|Q09666;S115-p;u|Q96T37;S674-p;u|P16144;S1474-p;u|P04626;T1166-p;d|Q9Y2K6;S134-p;d|O94804;S454-p;d|P85037;S101-p;d|Q9UNZ2;S140-p;d|Q68DK7;S126-p;d|O95453;S163-p;d",
+      "Score (Experiment01)": 2.1707000732,
+      "Score (Experiment02)": 2.768599987
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_OLMESARTAN",
+      "Percent Overlap (Experiment01)": 5.2,
+      "Percent Overlap (Experiment02)": 5.2,
+      "adj p-val (Experiment01)": 0.8470894413,
+      "adj p-val (Experiment02)": 0.0755911824,
+      "Overlap (Experiment01)": "P16144;S1474-p;u|Q09666;S115-p;u|Q9UKE5;S769-p;u|P78344;T508-p;u|Q9BTC0;S1456-p;u|P52272;S701-p;u|Q9UQ35;S297-p;d|O95453;S163-p;d|P30305;S375-p;d|P10412;T18-p;d",
+      "Overlap (Experiment02)": "P52272;S701-p;u|Q09666;S115-p;u|Q9UKE5;S769-p;u|Q9BTC0;S1456-p;u|P78344;T508-p;u|P16144;S1474-p;u|Q9UQ35;S297-p;d|P30305;S375-p;d|O95453;S163-p;d|P10412;T18-p;d",
+      "Score (Experiment01)": -0.426699996,
+      "Score (Experiment02)": 2.3413000107
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_OKADAIC_ACID",
+      "Percent Overlap (Experiment01)": 8.1,
+      "Percent Overlap (Experiment02)": 8.1,
+      "adj p-val (Experiment01)": 0.6236969697,
+      "adj p-val (Experiment02)": 0.0882859604,
+      "Overlap (Experiment01)": "O15042;S67-p;u|Q13523;Y849-p;u|Q06210;S261-p;u|P49792;S1509-p;u|Q8N7R7;S344-p;u|Q9C0C2;S672-p;u|Q15773;S238-p;u|Q13435;S307-p;u|Q5VUA4;S1896-p;u|Q5JSH3;T219-p;u|P62888;S10-p;u|Q9Y3L3;S550-p;d|Q9H1A4;S355-p;d|Q9Y2U5;S153-p;d|P06400;S249-p;d",
+      "Overlap (Experiment02)": "P49792;S1509-p;u|Q13523;Y849-p;u|Q8N7R7;S344-p;u|Q13435;S307-p;u|Q06210;S261-p;u|O15042;S67-p;u|P62888;S10-p;u|Q5JSH3;T219-p;u|Q9C0C2;S672-p;u|Q15773;S238-p;u|Q5VUA4;S1896-p;u|Q9Y2U5;S153-p;d|Q9H1A4;S355-p;d|Q9Y3L3;S550-p;d|P06400;S249-p;d",
+      "Score (Experiment01)": -0.8948000073,
+      "Score (Experiment02)": 2.2853000164
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_MILRINONE",
+      "Percent Overlap (Experiment01)": 4.7,
+      "Percent Overlap (Experiment02)": 4.7,
+      "adj p-val (Experiment01)": 0.6986658581,
+      "adj p-val (Experiment02)": 0.005125,
+      "Overlap (Experiment01)": "P16144;S1474-p;u|Q09666;S115-p;u|O75676;S745-p;u|Q9NQZ2;S365-p;u|Q9C0C2;S1545-p;u|Q96G03;S165-p;u|O95453;S163-p;d|O75533;T211-p;d|P68363;S340-p;d|Q9Y3B9;T104-p;d",
+      "Overlap (Experiment02)": "Q9NQZ2;S365-p;u|O75676;S745-p;u|Q96G03;S165-p;u|Q09666;S115-p;u|Q9C0C2;S1545-p;u|P16144;S1474-p;u|P68363;S340-p;d|O75533;T211-p;d|O95453;S163-p;d|Q9Y3B9;T104-p;d",
+      "Score (Experiment01)": 0.7318999767,
+      "Score (Experiment02)": 3.7279000282
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_LENALIDOMIDE",
+      "Percent Overlap (Experiment01)": 5.3,
+      "Percent Overlap (Experiment02)": 5.3,
+      "adj p-val (Experiment01)": 0.8927875244,
+      "adj p-val (Experiment02)": 0.3450549451,
+      "Overlap (Experiment01)": "Q13523;Y849-p;u|Q9C0C2;S672-p;u|P62191;T53-p;u|Q9H6S0;S1221-p;u|Q6P2E9;S729-p;d|Q15773;S238-p;d|O75683;S74-p;d|Q68CZ2;T632-p;d|Q9BRQ0;S97-p;d|Q9GZR2;S15-p;d",
+      "Overlap (Experiment02)": "Q13523;Y849-p;u|Q9C0C2;S672-p;u|P62191;T53-p;u|Q9H6S0;S1221-p;u|Q6P2E9;S729-p;d|Q9BRQ0;S97-p;d|Q15773;S238-p;d|Q68CZ2;T632-p;d|O75683;S74-p;d|Q9GZR2;S15-p;d",
+      "Score (Experiment01)": 0.1806000024,
+      "Score (Experiment02)": 1.3250000477
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_KN-62",
+      "Percent Overlap (Experiment01)": 5.0,
+      "Percent Overlap (Experiment02)": 5.0,
+      "adj p-val (Experiment01)": 0.0199805068,
+      "adj p-val (Experiment02)": 0.0276653171,
+      "Overlap (Experiment01)": "Q14566;S13-p;u|Q92522;S31-p;u|Q06210;S261-p;u|P49792;S1509-p;u|Q9C0C2;S672-p;u|Q15773;S238-p;d|Q13330;S576-p;d|Q9UGU5;S497-p;d|P51397;S3-p;d|P07305;T153-p;d",
+      "Overlap (Experiment02)": "P49792;S1509-p;u|Q06210;S261-p;u|Q14566;S13-p;u|Q9C0C2;S672-p;u|Q92522;S31-p;u|Q15773;S238-p;d|Q9UGU5;S497-p;d|P51397;S3-p;d|Q13330;S576-p;d|P07305;T153-p;d",
+      "Score (Experiment01)": 4.3846998215,
+      "Score (Experiment02)": 2.7446000576
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_IMATINIB",
+      "Percent Overlap (Experiment01)": 5.9,
+      "Percent Overlap (Experiment02)": 5.9,
+      "adj p-val (Experiment01)": 0.6236969697,
+      "adj p-val (Experiment02)": 0.0755911824,
+      "Overlap (Experiment01)": "O15042;S67-p;u|Q09666;S115-p;u|O75676;S745-p;u|Q8IY81;S676-p;u|Q96TA1;S665-p;u|Q15390;S290-p;u|O95453;S163-p;d|Q15773;S238-p;d|Q68DK7;S126-p;d|P85037;S101-p;d",
+      "Overlap (Experiment02)": "O75676;S745-p;u|Q09666;S115-p;u|Q96TA1;S665-p;u|O15042;S67-p;u|Q15390;S290-p;u|Q8IY81;S676-p;u|Q15773;S238-p;d|P85037;S101-p;d|Q68DK7;S126-p;d|O95453;S163-p;d",
+      "Score (Experiment01)": 0.871900022,
+      "Score (Experiment02)": 2.4697999954
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_GSK1210151A",
+      "Percent Overlap (Experiment01)": 6.8,
+      "Percent Overlap (Experiment02)": 6.8,
+      "adj p-val (Experiment01)": 0.0339544513,
+      "adj p-val (Experiment02)": 0.6949879669,
+      "Overlap (Experiment01)": "O15014;S1313-p;u|Q6P2E9;S729-p;u|Q96PE2;S546-p;u|Q92522;S31-p;u|Q9H6H4;S152-p;u|Q9C0C2;S672-p;d|Q15061;S77-p;d|Q68CZ2;T632-p;d|P51397;S91-p;d|Q3KQU3;S460-p;d",
+      "Overlap (Experiment02)": "Q6P2E9;S729-p;u|Q96PE2;S546-p;u|Q9H6H4;S152-p;u|O15014;S1313-p;u|Q92522;S31-p;u|P51397;S91-p;d|Q9C0C2;S672-p;d|Q68CZ2;T632-p;d|Q15061;S77-p;d|Q3KQU3;S460-p;d",
+      "Score (Experiment01)": 3.7962999344,
+      "Score (Experiment02)": 0.6039999723
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_GEFITINIB",
+      "Percent Overlap (Experiment01)": 4.9,
+      "Percent Overlap (Experiment02)": 4.9,
+      "adj p-val (Experiment01)": 0.4503787879,
+      "adj p-val (Experiment02)": 0.0599415205,
+      "Overlap (Experiment01)": "P16144;S1474-p;u|Q96T37;S674-p;u|Q14566;S13-p;u|Q09666;S115-p;u|Q13523;Y849-p;u|P13639;S48-p;u|O95453;S163-p;d|P68363;S340-p;d|Q15773;S238-p;d|Q9Y3B9;T104-p;d",
+      "Overlap (Experiment02)": "Q13523;Y849-p;u|Q09666;S115-p;u|Q96T37;S674-p;u|Q14566;S13-p;u|P13639;S48-p;u|P16144;S1474-p;u|P68363;S340-p;d|Q15773;S238-p;d|O95453;S163-p;d|Q9Y3B9;T104-p;d",
+      "Score (Experiment01)": 1.5292999744,
+      "Score (Experiment02)": 2.5487999916
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_FLECAINIDE",
+      "Percent Overlap (Experiment01)": 5.9,
+      "Percent Overlap (Experiment02)": 5.9,
+      "adj p-val (Experiment01)": 0.6236969697,
+      "adj p-val (Experiment02)": 0.0150596878,
+      "Overlap (Experiment01)": "P16144;S1474-p;u|Q6P2E9;S729-p;u|Q09666;S115-p;u|Q13523;Y849-p;u|P20962;S2-p;u|Q96TA1;S665-p;u|O95453;S163-p;d|O75533;T211-p;d|P46100;S634-p;d|Q15773;S238-p;d|O75683;S74-p;d|Q9BRQ0;S97-p;d",
+      "Overlap (Experiment02)": "P20962;S2-p;u|Q13523;Y849-p;u|Q09666;S115-p;u|Q6P2E9;S729-p;u|Q96TA1;S665-p;u|P16144;S1474-p;u|P46100;S634-p;d|Q9BRQ0;S97-p;d|Q15773;S238-p;d|O75533;T211-p;d|O95453;S163-p;d|O75683;S74-p;d",
+      "Score (Experiment01)": 0.8607000113,
+      "Score (Experiment02)": 3.1905999184
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_FLAVOPIRIDOL",
+      "Percent Overlap (Experiment01)": 7.3,
+      "Percent Overlap (Experiment02)": 7.3,
+      "adj p-val (Experiment01)": 0.4455433455,
+      "adj p-val (Experiment02)": 0.3450549451,
+      "Overlap (Experiment01)": "Q13523;Y849-p;u|Q92522;S31-p;u|Q9C0C2;S672-p;u|Q9H6S0;S1221-p;u|Q9UQ35;S297-p;d|O14874;S31-p;d|Q09666;S177-p;d|O60832;S494-p;d|Q7Z6E9;T1468-p;d|Q9Y4B5;S263-p;d|Q8TF72;S1441-p;d|O15541;S85-p;d|O75533;S194-p;d|Q9UNZ2;S140-p;d",
+      "Overlap (Experiment02)": "Q13523;Y849-p;u|Q9C0C2;S672-p;u|Q9H6S0;S1221-p;u|Q92522;S31-p;u|O14874;S31-p;d|Q9UQ35;S297-p;d|O15541;S85-p;d|Q9Y4B5;S263-p;d|Q8TF72;S1441-p;d|Q7Z6E9;T1468-p;d|O60832;S494-p;d|O75533;S194-p;d|Q09666;S177-p;d|Q9UNZ2;S140-p;d",
+      "Score (Experiment01)": -1.75849998,
+      "Score (Experiment02)": -1.3824000359
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_ERLOTINIB",
+      "Percent Overlap (Experiment01)": 4.9,
+      "Percent Overlap (Experiment02)": 4.9,
+      "adj p-val (Experiment01)": 0.4503787879,
+      "adj p-val (Experiment02)": 0.146254459,
+      "Overlap (Experiment01)": "O15042;S67-p;u|Q09666;S115-p;u|Q13523;Y849-p;u|O75676;S745-p;u|Q9UKE5;S769-p;u|Q9C0C2;S1545-p;u|O75683;S74-p;u|O75533;T211-p;d|P68363;S340-p;d|Q15773;S238-p;d|P10412;T18-p;d",
+      "Overlap (Experiment02)": "O75676;S745-p;u|Q13523;Y849-p;u|Q09666;S115-p;u|Q9UKE5;S769-p;u|O15042;S67-p;u|Q9C0C2;S1545-p;u|O75683;S74-p;u|P68363;S340-p;d|Q15773;S238-p;d|O75533;T211-p;d|P10412;T18-p;d",
+      "Score (Experiment01)": 1.4996000528,
+      "Score (Experiment02)": 2.1057999134
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_EPZ004777",
+      "Percent Overlap (Experiment01)": 8.7,
+      "Percent Overlap (Experiment02)": 8.7,
+      "adj p-val (Experiment01)": 0.8761410788,
+      "adj p-val (Experiment02)": 0.3113794821,
+      "Overlap (Experiment01)": "Q6P2E9;S729-p;u|Q13523;Y849-p;u|Q92522;S31-p;u|Q9C0C2;S672-p;u|Q15021;S1315-p;u|Q12929;S659-p;u|Q69YH5;S591-p;u|Q9NZN4;S468-p;u|Q9C0B0;S240-p;d|P06400;S249-p;d|Q15942;T270-p;d",
+      "Overlap (Experiment02)": "Q13523;Y849-p;u|Q6P2E9;S729-p;u|Q12929;S659-p;u|Q9C0C2;S672-p;u|Q69YH5;S591-p;u|Q9NZN4;S468-p;u|Q92522;S31-p;u|Q15021;S1315-p;u|Q9C0B0;S240-p;d|P06400;S249-p;d|Q15942;T270-p;d",
+      "Score (Experiment01)": -0.3199999928,
+      "Score (Experiment02)": 1.4859000444
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_ENDOTHELIN",
+      "Percent Overlap (Experiment01)": 4.9,
+      "Percent Overlap (Experiment02)": 4.9,
+      "adj p-val (Experiment01)": 0.4503787879,
+      "adj p-val (Experiment02)": 0.0793420416,
+      "Overlap (Experiment01)": "P16144;S1474-p;u|Q6P2E9;S729-p;u|Q96T37;S674-p;u|Q14566;S13-p;u|Q09666;S115-p;u|Q92522;S31-p;u|P52272;S701-p;u|O95453;S163-p;d|Q9C0C2;S672-p;d|P85037;S101-p;d",
+      "Overlap (Experiment02)": "P52272;S701-p;u|Q09666;S115-p;u|Q6P2E9;S729-p;u|Q96T37;S674-p;u|Q14566;S13-p;u|P16144;S1474-p;u|Q92522;S31-p;u|Q9C0C2;S672-p;d|P85037;S101-p;d|O95453;S163-p;d",
+      "Score (Experiment01)": 1.5372999907,
+      "Score (Experiment02)": 2.3199999332
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_DOXORUBICIN",
+      "Percent Overlap (Experiment01)": 4.5,
+      "Percent Overlap (Experiment02)": 4.5,
+      "adj p-val (Experiment01)": 0.5084325397,
+      "adj p-val (Experiment02)": 0.185126162,
+      "Overlap (Experiment01)": "P16144;S1474-p;u|Q96T37;S674-p;u|Q92522;S31-p;u|O75676;S745-p;u|Q9UKE5;S769-p;u|Q9Y597;S664-p;u|P40123;S301-p;d|O95453;S163-p;d|Q9P265;S100-p;d|Q68DK7;S126-p;d|P85037;S101-p;d",
+      "Overlap (Experiment02)": "O75676;S745-p;u|Q96T37;S674-p;u|Q9UKE5;S769-p;u|P16144;S1474-p;u|Q9Y597;S664-p;u|Q92522;S31-p;u|P40123;S301-p;d|P85037;S101-p;d|Q9P265;S100-p;d|Q68DK7;S126-p;d|O95453;S163-p;d",
+      "Score (Experiment01)": 1.2204999924,
+      "Score (Experiment02)": 1.9122999907
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_DMSO",
+      "Percent Overlap (Experiment01)": 5.8,
+      "Percent Overlap (Experiment02)": 5.8,
+      "adj p-val (Experiment01)": 0.2411764706,
+      "adj p-val (Experiment02)": 0.005125,
+      "Overlap (Experiment01)": "P16144;S1474-p;u|O15042;S67-p;u|Q6P2E9;S729-p;u|Q96T37;S674-p;u|Q96PE2;S546-p;u|Q14566;S13-p;u|Q09666;S115-p;u|Q13523;Y849-p;u|Q9NS69;S15-p;u|P22626;S85-p;u|Q06210;S261-p;u|P13639;S48-p;u|Q9UKE5;S769-p;u|O75683;S74-p;u|O75396;S137-p;u|Q9H6S0;S1221-p;u|P62888;S10-p;u|O95453;S163-p;d|O60832;S494-p;d|P0C7T5;T330-p;d|O75533;T211-p;d|Q9Y2U5;S153-p;d|P68363;S340-p;d|Q15773;S238-p;d|Q15061;S77-p;d|Q8TF72;S1221-p;d|Q68DK7;S126-p;d|Q5VUA4;S1896-p;d|O75533;S194-p;d|Q68CZ2;T632-p;d|P10412;T18-p;d|O94804;S454-p;d|P85037;S101-p;d|Q9NZN4;S468-p;d",
+      "Overlap (Experiment02)": "O75396;S137-p;u|Q9NS69;S15-p;u|Q13523;Y849-p;u|Q09666;S115-p;u|Q6P2E9;S729-p;u|Q96T37;S674-p;u|P22626;S85-p;u|Q06210;S261-p;u|Q9UKE5;S769-p;u|O15042;S67-p;u|P62888;S10-p;u|Q14566;S13-p;u|Q96PE2;S546-p;u|P13639;S48-p;u|P16144;S1474-p;u|Q9H6S0;S1221-p;u|O75683;S74-p;u|P0C7T5;T330-p;d|P68363;S340-p;d|Q9Y2U5;S153-p;d|Q8TF72;S1221-p;d|Q15773;S238-p;d|O60832;S494-p;d|O94804;S454-p;d|P85037;S101-p;d|O75533;S194-p;d|O75533;T211-p;d|Q68CZ2;T632-p;d|Q9NZN4;S468-p;d|Q15061;S77-p;d|Q5VUA4;S1896-p;d|Q68DK7;S126-p;d|O95453;S163-p;d|P10412;T18-p;d",
+      "Score (Experiment01)": 2.4626998901,
+      "Score (Experiment02)": 4.0274000168
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_DAUNORUBICIN",
+      "Percent Overlap (Experiment01)": 7.3,
+      "Percent Overlap (Experiment02)": 7.3,
+      "adj p-val (Experiment01)": 0.0199805068,
+      "adj p-val (Experiment02)": 0.0249809596,
+      "Overlap (Experiment01)": "P16144;S1474-p;u|Q9Y3L3;S550-p;u|Q6P2E9;S729-p;u|Q96T37;S674-p;u|Q14566;S13-p;u|Q09666;S115-p;u|Q13523;Y849-p;u|Q9H7P6;S309-p;u|P20962;S2-p;u|P13639;S48-p;u|P52272;S701-p;u|O95453;S163-p;d|P46100;S634-p;d|Q15773;S238-p;d|O75683;S74-p;d|O75909;S324-p;d|Q9Y3B9;T104-p;d|P10412;T18-p;d|P85037;S101-p;d",
+      "Overlap (Experiment02)": "P20962;S2-p;u|Q13523;Y849-p;u|P52272;S701-p;u|Q09666;S115-p;u|Q6P2E9;S729-p;u|Q96T37;S674-p;u|Q14566;S13-p;u|Q9H7P6;S309-p;u|P13639;S48-p;u|Q9Y3L3;S550-p;u|P16144;S1474-p;u|O75909;S324-p;d|P46100;S634-p;d|Q15773;S238-p;d|P85037;S101-p;d|O95453;S163-p;d|O75683;S74-p;d|Q9Y3B9;T104-p;d|P10412;T18-p;d",
+      "Score (Experiment01)": 3.4944000244,
+      "Score (Experiment02)": 3.40989995
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_CRIZOTINIB",
+      "Percent Overlap (Experiment01)": 4.3,
+      "Percent Overlap (Experiment02)": 4.3,
+      "adj p-val (Experiment01)": 0.4503787879,
+      "adj p-val (Experiment02)": 0.5351120351,
+      "Overlap (Experiment01)": "P16144;S1474-p;u|Q14566;S13-p;u|Q92522;S31-p;u|O75676;S745-p;u|P13639;S48-p;u|O60832;S494-p;d|Q9P265;S100-p;d|Q15773;S238-p;d|Q9Y4B5;S196-p;d|Q9Y3B9;T104-p;d",
+      "Overlap (Experiment02)": "O75676;S745-p;u|Q14566;S13-p;u|P13639;S48-p;u|P16144;S1474-p;u|Q92522;S31-p;u|Q9Y4B5;S196-p;d|Q15773;S238-p;d|O60832;S494-p;d|Q9P265;S100-p;d|Q9Y3B9;T104-p;d",
+      "Score (Experiment01)": 1.6258000135,
+      "Score (Experiment02)": 0.940599978
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_COMPOUND_E",
+      "Percent Overlap (Experiment01)": 6.2,
+      "Percent Overlap (Experiment02)": 6.2,
+      "adj p-val (Experiment01)": 0.2507241712,
+      "adj p-val (Experiment02)": 0.005125,
+      "Overlap (Experiment01)": "Q06210;S261-p;u|P49792;S1509-p;u|Q9C0C2;S672-p;u|Q15773;S238-p;u|P43487;S60-p;u|O75396;S137-p;u|Q9H6H4;S152-p;d|Q9Y2U5;S153-p;d|O75683;S74-p;d|P10412;T18-p;d|P16949;S63-p;d|Q9NZN4;S468-p;d",
+      "Overlap (Experiment02)": "O75396;S137-p;u|P49792;S1509-p;u|Q06210;S261-p;u|Q9C0C2;S672-p;u|P43487;S60-p;u|Q15773;S238-p;u|Q9Y2U5;S153-p;d|Q9H6H4;S152-p;d|Q9NZN4;S468-p;d|P16949;S63-p;d|O75683;S74-p;d|P10412;T18-p;d",
+      "Score (Experiment01)": 2.3271000385,
+      "Score (Experiment02)": 4.2990999222
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_CERITINIB",
+      "Percent Overlap (Experiment01)": 7.0,
+      "Percent Overlap (Experiment02)": 7.0,
+      "adj p-val (Experiment01)": 0.4503787879,
+      "adj p-val (Experiment02)": 0.0755911824,
+      "Overlap (Experiment01)": "P16144;S1474-p;u|Q96T37;S674-p;u|Q14566;S13-p;u|Q09666;S115-p;u|P22626;S85-p;u|O15344;S96-p;u|P52272;S701-p;u|O95453;S163-p;d|O75533;T211-p;d|P68363;S340-p;d|Q68DK7;S126-p;d|O75822;S11-p;d|Q96EV2;S41-p;d|Q9UNZ2;S140-p;d|P85037;S101-p;d",
+      "Overlap (Experiment02)": "P52272;S701-p;u|Q09666;S115-p;u|Q96T37;S674-p;u|P22626;S85-p;u|Q14566;S13-p;u|O15344;S96-p;u|P16144;S1474-p;u|Q96EV2;S41-p;d|P68363;S340-p;d|O75822;S11-p;d|P85037;S101-p;d|O75533;T211-p;d|Q9UNZ2;S140-p;d|Q68DK7;S126-p;d|O95453;S163-p;d",
+      "Score (Experiment01)": 1.527799964,
+      "Score (Experiment02)": 2.513600111
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_BOSUTINIB",
+      "Percent Overlap (Experiment01)": 5.8,
+      "Percent Overlap (Experiment02)": 5.8,
+      "adj p-val (Experiment01)": 0.5084325397,
+      "adj p-val (Experiment02)": 0.005125,
+      "Overlap (Experiment01)": "P16144;S1474-p;u|Q96T37;S674-p;u|P49792;S1509-p;u|P13639;S48-p;u|Q9UKE5;S769-p;u|Q8NDT2;T532-p;u|Q96IF1;S79-p;u|Q13501;S24-p;u|O75396;S137-p;u|Q6ZRV2;S785-p;u|O95453;S163-p;d|O75533;T211-p;d|Q86TB9-4;S233-p;d|Q9P265;S100-p;d|O75822;S11-p;d",
+      "Overlap (Experiment02)": "O75396;S137-p;u|P49792;S1509-p;u|Q13501;S24-p;u|Q8NDT2;T532-p;u|Q96T37;S674-p;u|Q9UKE5;S769-p;u|Q96IF1;S79-p;u|Q6ZRV2;S785-p;u|P13639;S48-p;u|P16144;S1474-p;u|O75822;S11-p;d|Q86TB9-4;S233-p;d|O75533;T211-p;d|Q9P265;S100-p;d|O95453;S163-p;d",
+      "Score (Experiment01)": -1.1947000027,
+      "Score (Experiment02)": 4.3975000381
+    },
+    {
+      "Signature ID": "PERT-P100-DIA2_AXITINIB",
+      "Percent Overlap (Experiment01)": 6.1,
+      "Percent Overlap (Experiment02)": 6.1,
+      "adj p-val (Experiment01)": 0.2507241712,
+      "adj p-val (Experiment02)": 0.0755911824,
+      "Overlap (Experiment01)": "P16144;S1474-p;u|Q96T37;S674-p;u|Q14566;S13-p;u|Q09666;S115-p;u|Q13523;Y849-p;u|Q92522;S31-p;u|P22626;S85-p;u|Q9UKE5;S769-p;u|P51610;S1205-p;u|O75683;S74-p;u|P52272;S701-p;u|O95453;S163-p;d|Q9P265;S100-p;d|Q9C0C2;S1545-p;d|Q15773;S238-p;d|O94804;S454-p;d|P85037;S101-p;d",
+      "Overlap (Experiment02)": "Q13523;Y849-p;u|P52272;S701-p;u|Q09666;S115-p;u|Q96T37;S674-p;u|P22626;S85-p;u|Q9UKE5;S769-p;u|Q14566;S13-p;u|P51610;S1205-p;u|P16144;S1474-p;u|Q92522;S31-p;u|O75683;S74-p;u|Q9C0C2;S1545-p;d|Q15773;S238-p;d|O94804;S454-p;d|P85037;S101-p;d|Q9P265;S100-p;d|O95453;S163-p;d",
+      "Score (Experiment01)": 2.3800001144,
+      "Score (Experiment02)": 2.4956998825
+    },
+    {
+      "Signature ID": "KINASE-PSP_CK2A1/CSNK2A1",
+      "Percent Overlap (Experiment01)": 2.1,
+      "Percent Overlap (Experiment02)": 2.1,
+      "adj p-val (Experiment01)": 0.0199805068,
+      "adj p-val (Experiment02)": 0.0599415205,
+      "Overlap (Experiment01)": "P05114;S99-p;u|P18887;T523-p;u|P06748;S125-p;u|Q13547;S423-p;u|P09958;S773-p;u|Q13371;S296-p;u|Q96RL1;S46-p;u|Q9BPX3;S973-p;u|Q06265;S394-p;u|Q9NY61;S321-p;u|O76061;S288-p;u|Q8NE71;S140-p;u",
+      "Overlap (Experiment02)": "Q8NE71;S140-p;u|P06748;S125-p;u|P09958;S773-p;u|Q96RL1;S46-p;u|P18887;T523-p;u|Q06265;S394-p;u|Q9NY61;S321-p;u|Q9BPX3;S973-p;u|Q13547;S423-p;u|O76061;S288-p;u|Q13371;S296-p;u|P05114;S99-p;u",
+      "Score (Experiment01)": 3.4437000751,
+      "Score (Experiment02)": 2.701800108
+    },
+    {
+      "Signature ID": "KINASE-PSP_CDK2",
+      "Percent Overlap (Experiment01)": 3.1,
+      "Percent Overlap (Experiment02)": 3.1,
+      "adj p-val (Experiment01)": 0.5084325397,
+      "adj p-val (Experiment02)": 0.0095906433,
+      "Overlap (Experiment01)": "O75533;T211-p;u|P13051;T60-p;u|Q08999;T642-p;u|P13051;S23-p;u|P26358;S154-p;u|O43583;S73-p;u|Q15003;T49-p;u|O75533;T426-p;u|P06400;S249-p;u|P29374;S1145-p;u|P10412;T18-p;u|Q8IZL8;S477-p;u|Q8WXE1;S224-p;u",
+      "Overlap (Experiment02)": "Q08999;T642-p;u|P29374;S1145-p;u|O75533;T426-p;u|O43583;S73-p;u|Q8IZL8;S477-p;u|Q15003;T49-p;u|O75533;T211-p;u|P06400;S249-p;u|Q8WXE1;S224-p;u|P13051;S23-p;u|P13051;T60-p;u|P26358;S154-p;u|P10412;T18-p;u",
+      "Score (Experiment01)": -1.2568999529,
+      "Score (Experiment02)": -3.9544999599
+    },
+    {
+      "Signature ID": "KINASE-PSP_CDK1",
+      "Percent Overlap (Experiment01)": 1.5,
+      "Percent Overlap (Experiment02)": 1.5,
+      "adj p-val (Experiment01)": 0.2507241712,
+      "adj p-val (Experiment02)": 0.005125,
+      "Overlap (Experiment01)": "Q9H1A4;S355-p;u|P78344;T508-p;u|P26358;S154-p;u|O43583;S73-p;u|Q15398;S618-p;u|P06400;S249-p;u|O43683;S593-p;u|Q9UNZ2;S140-p;u|P10412;T18-p;u|O94782;S313-p;u",
+      "Overlap (Experiment02)": "O43583;S73-p;u|P78344;T508-p;u|Q9H1A4;S355-p;u|P06400;S249-p;u|Q9UNZ2;S140-p;u|O43683;S593-p;u|Q15398;S618-p;u|O94782;S313-p;u|P26358;S154-p;u|P10412;T18-p;u",
+      "Score (Experiment01)": -2.263999939,
+      "Score (Experiment02)": -5.0929999352
+    },
+    {
+      "Signature ID": "KINASE-iKiP_MAPK8.JNK1",
+      "Percent Overlap (Experiment01)": 3.4,
+      "Percent Overlap (Experiment02)": 3.4,
+      "adj p-val (Experiment01)": 0.8761410788,
+      "adj p-val (Experiment02)": 0.005125,
+      "Overlap (Experiment01)": "Q9UKG1;S401-p;u|Q13200;S16-p;u|Q13263;S752-p;u|Q9H3K6;T76-p;u|Q15645;S18-p;u|Q15773;S238-p;u|P46379-3;S1111-p;u|Q86UE4;T143-p;u|Q8NDC0;S15-p;u|Q9UQ35;S2272-p;u|Q9C0C2;S712-p;u|O43242;S430-p;u|Q53EZ4;T430-p;u",
+      "Overlap (Experiment02)": "P46379-3;S1111-p;u|Q13263;S752-p;u|Q15645;S18-p;u|Q9UKG1;S401-p;u|O43242;S430-p;u|Q15773;S238-p;u|Q13200;S16-p;u|Q9H3K6;T76-p;u|Q9UQ35;S2272-p;u|Q8NDC0;S15-p;u|Q86UE4;T143-p;u|Q53EZ4;T430-p;u|Q9C0C2;S712-p;u",
+      "Score (Experiment01)": 0.2154999971,
+      "Score (Experiment02)": -3.6521000862
+    },
+    {
+      "Signature ID": "KINASE-iKiP_MAPK3.ERK1",
+      "Percent Overlap (Experiment01)": 3.6,
+      "Percent Overlap (Experiment02)": 3.6,
+      "adj p-val (Experiment01)": 0.5084325397,
+      "adj p-val (Experiment02)": 0.0276653171,
+      "Overlap (Experiment01)": "O95747;S359-p;u|Q13200;S16-p;u|Q13263;S752-p;u|Q9H3K6;T76-p;u|Q15645;S18-p;u|Q8WUF5;S110-p;u|Q15773;S238-p;u|Q15003;T49-p;u|Q8NDC0;S15-p;u|P49327;T2204-p;u|P05387;S79-p;u",
+      "Overlap (Experiment02)": "Q13263;S752-p;u|P05387;S79-p;u|Q15645;S18-p;u|Q15773;S238-p;u|Q13200;S16-p;u|Q9H3K6;T76-p;u|P49327;T2204-p;u|Q15003;T49-p;u|Q8WUF5;S110-p;u|Q8NDC0;S15-p;u|O95747;S359-p;u",
+      "Score (Experiment01)": 1.2405999899,
+      "Score (Experiment02)": -3.02760005
+    },
+    {
+      "Signature ID": "KINASE-iKiP_MAPK13",
+      "Percent Overlap (Experiment01)": 4.1,
+      "Percent Overlap (Experiment02)": 4.1,
+      "adj p-val (Experiment01)": 0.5084325397,
+      "adj p-val (Experiment02)": 0.0428123912,
+      "Overlap (Experiment01)": "Q4KMP7;S132-p;u|P42677;S11-p;u|Q13200;S16-p;u|P55789;S59-p;u|Q13263;S752-p;u|Q9H3K6;T76-p;u|Q6PCE3;S175-p;u|Q15648;S1479-p;u|Q15021;T1339-p;u|Q86UE4;T143-p;u|Q15003;T49-p;u|Q8NDC0;S15-p;u|Q13838-2;T187-p;u|Q9UQ35;S2272-p;u|Q9C0C2;S712-p;u|P49327;T2204-p;u|P05387;S79-p;u",
+      "Overlap (Experiment02)": "Q6PCE3;S175-p;u|Q15648;S1479-p;u|Q13263;S752-p;u|Q4KMP7;S132-p;u|P05387;S79-p;u|P55789;S59-p;u|Q13838-2;T187-p;u|Q13200;S16-p;u|Q9H3K6;T76-p;u|P49327;T2204-p;u|Q15003;T49-p;u|Q9UQ35;S2272-p;u|P42677;S11-p;u|Q8NDC0;S15-p;u|Q86UE4;T143-p;u|Q15021;T1339-p;u|Q9C0C2;S712-p;u",
+      "Score (Experiment01)": 1.323300004,
+      "Score (Experiment02)": -2.9679999352
+    },
+    {
+      "Signature ID": "KINASE-iKiP_MAPK12",
+      "Percent Overlap (Experiment01)": 3.3,
+      "Percent Overlap (Experiment02)": 3.3,
+      "adj p-val (Experiment01)": 0.4503787879,
+      "adj p-val (Experiment02)": 0.005125,
+      "Overlap (Experiment01)": "O95747;S359-p;u|Q7L2J0;S69-p;u|P42677;S11-p;u|P55789;S59-p;u|Q13263;S752-p;u|Q9H3K6;T76-p;u|Q15645;S18-p;u|Q8WUF5;S110-p;u|Q15773;S238-p;u|Q86UE4;T143-p;u|Q8NDC0;S15-p;u|Q9C0C2;S712-p;u|P10412;T18-p;u|Q5JSZ5;S556-p;u",
+      "Overlap (Experiment02)": "Q7L2J0;S69-p;u|Q13263;S752-p;u|P55789;S59-p;u|Q15645;S18-p;u|Q15773;S238-p;u|Q9H3K6;T76-p;u|Q8WUF5;S110-p;u|P42677;S11-p;u|Q8NDC0;S15-p;u|Q86UE4;T143-p;u|Q5JSZ5;S556-p;u|O95747;S359-p;u|Q9C0C2;S712-p;u|P10412;T18-p;u",
+      "Score (Experiment01)": 1.4946000576,
+      "Score (Experiment02)": -4.2444000244
+    },
+    {
+      "Signature ID": "KINASE-iKiP_MAPK1.ERK2",
+      "Percent Overlap (Experiment01)": 3.6,
+      "Percent Overlap (Experiment02)": 3.6,
+      "adj p-val (Experiment01)": 0.8076450893,
+      "adj p-val (Experiment02)": 0.005125,
+      "Overlap (Experiment01)": "O95747;S359-p;u|O75533;T211-p;u|P42677;S11-p;u|Q9UKG1;S401-p;u|Q13200;S16-p;u|Q9H3K6;T76-p;u|Q15645;S18-p;u|Q15773;S238-p;u|Q86UE4;T143-p;u|Q8NDC0;S15-p;u|P07814;S1350-p;u|Q9C0C2;S712-p;u|P49327;T2204-p;u|P04040;S515-p;u|P05387;S79-p;u|Q53EZ4;T430-p;u",
+      "Overlap (Experiment02)": "P07814;S1350-p;u|P05387;S79-p;u|Q15645;S18-p;u|Q9UKG1;S401-p;u|P04040;S515-p;u|Q15773;S238-p;u|Q13200;S16-p;u|Q9H3K6;T76-p;u|P49327;T2204-p;u|O75533;T211-p;u|P42677;S11-p;u|Q8NDC0;S15-p;u|Q86UE4;T143-p;u|O95747;S359-p;u|Q53EZ4;T430-p;u|Q9C0C2;S712-p;u",
+      "Score (Experiment01)": 0.4977999926,
+      "Score (Experiment02)": -4.5854001045
+    },
+    {
+      "Signature ID": "KINASE-iKiP_DYRK2",
+      "Percent Overlap (Experiment01)": 3.0,
+      "Percent Overlap (Experiment02)": 3.0,
+      "adj p-val (Experiment01)": 0.8761410788,
+      "adj p-val (Experiment02)": 0.3275694801,
+      "Overlap (Experiment01)": "Q7L2J0;S69-p;u|P42677;S11-p;u|Q9UKG1;S401-p;u|Q9H3K6;T76-p;u|Q15021;T1339-p;u|Q01650;S35-p;u|Q02790;S15-p;u|Q86UE4;T143-p;u|P47914;S142-p;u|P10412;T18-p;u|P05387;S79-p;u|Q8WZA9;S44-p;u",
+      "Overlap (Experiment02)": "Q02790;S15-p;u|Q7L2J0;S69-p;u|Q01650;S35-p;u|P05387;S79-p;u|Q9UKG1;S401-p;u|P47914;S142-p;u|Q9H3K6;T76-p;u|Q8WZA9;S44-p;u|P42677;S11-p;u|Q86UE4;T143-p;u|Q15021;T1339-p;u|P10412;T18-p;u",
+      "Score (Experiment01)": 0.2396000028,
+      "Score (Experiment02)": -1.415199995
+    },
+    {
+      "Signature ID": "KINASE-iKiP_CSNK2A2.CK2A2",
+      "Percent Overlap (Experiment01)": 3.7,
+      "Percent Overlap (Experiment02)": 3.7,
+      "adj p-val (Experiment01)": 0.2411764706,
+      "adj p-val (Experiment02)": 0.1072175732,
+      "Overlap (Experiment01)": "Q02790;T436-p;u|Q96I25;S155-p;u|Q13547;S423-p;u|Q96D46;T470-p;u|Q13371;S296-p;u|Q96EB6;T719-p;u|P55081;T267-p;u|Q13435;S307-p;u|P54105;S102-p;u|Q9BPX3;S674-p;u|P14625;S306-p;u|Q8NE71;S140-p;u",
+      "Overlap (Experiment02)": "Q8NE71;S140-p;u|P14625;S306-p;u|Q96I25;S155-p;u|Q02790;T436-p;u|Q96EB6;T719-p;u|Q13435;S307-p;u|Q96D46;T470-p;u|P55081;T267-p;u|Q13547;S423-p;u|P54105;S102-p;u|Q13371;S296-p;u|Q9BPX3;S674-p;u",
+      "Score (Experiment01)": 2.404599905,
+      "Score (Experiment02)": 2.132600069
+    }
+  ]
+}

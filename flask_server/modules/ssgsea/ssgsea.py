@@ -73,11 +73,13 @@ def postprocess_ssgsea(output_gct: Path) -> Path:
         experiment_names = [name.replace('-', '.') for name in experiment_names]
         gct_df_joined = gct_parsed.row_metadata_df[[f'Signature.set.overlap.percent.{exp}' for exp in experiment_names]
                                                    + [f'fdr.pvalue.{exp}' for exp in experiment_names]
+                                                   + [f'Signature.set.overlap.{exp}' for exp in experiment_names]
                                                    ].join(gct_parsed.data_df).reset_index()
 
         gct_df_joined.columns = (['Signature ID']
-                                 + [f'Overlap ({exp})' for exp in experiment_names]
+                                 + [f'Percent Overlap ({exp})' for exp in experiment_names]
                                  + [f'adj p-val ({exp})' for exp in experiment_names]
+                                 + [f'Overlap ({exp})' for exp in experiment_names]
                                  + [f'Score ({exp})' for exp in experiment_names])
 
         gct_df_joined.to_json(path_or_buf=output_json, orient='records',
