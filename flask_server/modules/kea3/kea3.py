@@ -9,7 +9,7 @@ def run_kea3_api(filepath: Path) -> Path:
     input_json = json.load(open(filepath))
     result = dict()
     for experiment in input_json.keys():
-        payload = {'gene_set': input_json[experiment], 'query_name': experiment}
+        payload = {'gene_set': [val for val in input_json[experiment] if val], 'query_name': experiment}
         response = requests.post(KEA3_URL, data=json.dumps(payload))
         if not response.ok:
             raise Exception(f'Error in Enrichment of Experiment {experiment}')
