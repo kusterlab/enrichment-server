@@ -43,7 +43,8 @@ services:
         - "traefik.docker.network=EXTERNAL"
       resources:
         limits:
-          memory: 8192M
+          memory: 24000M
+          cpus: '0.5'
         reservations:
           memory: 5000M
 networks:
