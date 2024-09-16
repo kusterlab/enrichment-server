@@ -94,6 +94,7 @@ RUN Rscript -e "install.packages('stringi')"
 ENV DISPLAY=:1
 
 #Start Xvfb for headless Cytoscape, then run the python server
-ENTRYPOINT Xvfb :1 -screen 0 1024x768x24 & poetry run python enrichment_server.py
+RUN chmod 775 /app/flask_server/gunicorn.sh
+ENTRYPOINT Xvfb :1 -screen 0 1024x768x24 & /app/flask_server/gunicorn.sh
 
 EXPOSE 4321

@@ -15,6 +15,7 @@ kinact = { git = "https://github.com/saezlab/kinact.git" }
 py4cytoscape = "^1.9.0"
 kstar = "^0.5.3"
 tqdm = "^4.66.5"
+gunicorn = "^23.0.0"
 
 
 [tool.poetry.dev-dependencies]
