@@ -44,6 +44,7 @@ services:
       resources:
         limits:
           memory: 24000M
+          cpus: '16'
         reservations:
           memory: 5000M
 networks:
