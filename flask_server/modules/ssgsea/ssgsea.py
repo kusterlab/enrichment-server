@@ -4,6 +4,41 @@ import json
 import pandas as pd
 from cmapPy.pandasGEXpress import parse_gct
 
+R_SPECIAL_CHARACTERS_MAPPING = str.maketrans({elem: '.' for elem in [
+    " ",  # Space
+    "+",  # Plus
+    "-",  # Minus
+    "*",  # Multiplication
+    "/",  # Division
+    "^",  # Exponentiation
+    "#",  # Pound sign
+    "%",  # Percentage
+    "&",  # Ampersand
+    "!",  # Exclamation mark
+    "?",  # Question mark
+    ",",  # Comma
+    ".",  # Period (when at the start of a name)
+    ";",  # Semicolon
+    ":",  # Colon
+    "@",  # At sign
+    "~",  # Tilde
+    "\\",  # Backslash
+    '"',  # Double quotation mark
+    "'",  # Single quotation mark
+    "(",  # Left parenthesis
+    ")",  # Right parenthesis
+    "<",  # Left angle bracket
+    ">",  # Right angle bracket
+    "{",  # Left curly bracket
+    "}",  # Right curly bracket
+    "[",  # Left square bracket
+    "]",  # Right square bracket
+    "$",  # Dollar sign
+    "=",  # Equal sign
+    "|",  # Pipe
+    "`"  # Backtick
+]})
+
 
 def preprocess_ssgsea(filepath: Path, type_isnot_gcr) -> Path:
     output_dir = filepath.parent
@@ -69,8 +104,8 @@ def postprocess_ssgsea(output_gct: Path) -> Path:
     else:
         gct_parsed = parse_gct.parse(output_gct)
         experiment_names = gct_parsed.data_df.columns
-        # Sanitize experiment names - R turns '-' into '.'
-        experiment_names = [name.replace('-', '.') for name in experiment_names]
+        # Sanitize experiment names - R turns several characters into dots
+        experiment_names = [name.translate(R_SPECIAL_CHARACTERS_MAPPING) for name in experiment_names]
         gct_df_joined = gct_parsed.row_metadata_df[[f'Signature.set.overlap.percent.{exp}' for exp in experiment_names]
                                                    + [f'fdr.pvalue.{exp}' for exp in experiment_names]
                                                    + [f'Signature.set.overlap.{exp}' for exp in experiment_names]
