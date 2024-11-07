@@ -9,6 +9,8 @@ import werkzeug.wrappers
 from werkzeug.utils import secure_filename
 from flask import Flask, request, send_file, jsonify, make_response
 import flask.wrappers
+import logging
+import sys
 
 from modules.ssgsea import ssgsea
 from modules.ksea import ksea
@@ -175,6 +177,35 @@ def send_response(result: werkzeug.wrappers.Response, output_folder=None) -> fla
     return response
 
 
+def setup_logger():
+    global LOGGER
+    #Great. Now it's not in the logfile anymore. To be continued...
+    # logging.basicConfig(filename='process.log', level=logging.INFO, format='%(asctime)s - %(message)s')
+    LOGGER = logging.getLogger('enrichment_server')
+    LOGGER.setLevel(logging.INFO)
+
+    file_handler = logging.FileHandler('process.log')
+    file_handler.setLevel(logging.INFO)
+    LOGGER.addHandler(file_handler)
+
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.INFO)
+    LOGGER.addHandler(console_handler)
+
+    formatter = logging.Formatter('%(asctime)s - %(message)s')
+    file_handler.setFormatter(formatter)
+    # stderr_handler = logging.StreamHandler(sys.stderr)
+    # LOGGER.addHandler(stderr_handler)
+    # stderr_handler.setLevel(logging.ERROR)
+
+#TODO: Also output on command line!
+
+    sys.excepthook = lambda logtype, value, tb: LOGGER.exception("UNCAUGHT EXCEPTION:", exc_info=(logtype, value, tb))
+
+
+
+
+
 if __name__ == '__main__':
     # # DEBUG: Limit memory usage
     # import resource
@@ -201,4 +232,5 @@ if __name__ == '__main__':
     # # GUBED
     # memory_limit_half()
 
+    setup_logger()
     app.run(debug=os.getenv("PRODUCTION", '0') != '1', host='0.0.0.0', port=int(os.getenv("PORT", '4321')))

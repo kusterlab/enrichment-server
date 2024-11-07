@@ -85,14 +85,15 @@ def run_ssgsea(filepath: Path, ssgsea_type, ssc_input_type) -> Path:
         case 'gc' | 'gcr':
             database = "../db/c2.cp.kegg+wp.v2023.2.Hs.symbols.gmt"
 
-    subprocess.run(["Rscript",
+    result = subprocess.run(["Rscript",
                     "../ssGSEA2.0/ssgsea-cli.R",
                     "-i", str(Path('..') / 'flask_server' / filepath),
                     "-o", str(output_prefix),
                     "-d", database,
                     "-w", "0.75",
                     "-e", "FALSE",
-                    ])
+                    ], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    #TODO: Maybe need to manually write out result.stdout or result.stderr
     return Path(str(output_prefix) + '-combined.gct')
 
 
