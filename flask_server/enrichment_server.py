@@ -95,7 +95,7 @@ def handle_ssgsea_request(ssgsea_type, ssc_input_type='flanking') -> werkzeug.wr
     ssgsea_combined_output = ssgsea.run_ssgsea(ssgsea_input, ssgsea_type, ssc_input_type)
 
     return send_response(postprocess_request_response(ssgsea.postprocess_ssgsea(ssgsea_combined_output),
-                                                      f'ssGSEA ({ssgsea_type.upper()})'),
+                                                      f'ssGSEA ({ssgsea_type.upper()})', request.form),
                          filepath.parent)
 
 
@@ -115,7 +115,7 @@ def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
 
     ksea_result = ksea.perform_ksea(preprocessed_filepath)
     return send_response(postprocess_request_response(
-        ksea_result, 'KSEA' if not ksea_type else 'RoKAI+KSEA'),
+        ksea_result, 'KSEA' if not ksea_type else 'RoKAI+KSEA', request.form),
         filepath.parent)
 
 
@@ -134,7 +134,8 @@ def handle_phonemes_request() -> werkzeug.wrappers.Response | str:
     cytoscape_result = phonemes.run_cytoscape(phonemes_result)
     pathway_skeletons_json = phonemes.create_pathway_skeleton(cytoscape_result)
 
-    return send_response(postprocess_request_response(pathway_skeletons_json, 'PHONEMeS'), filepath.parent)
+    return send_response(postprocess_request_response(pathway_skeletons_json, 'PHONEMeS', request.form),
+                         filepath.parent)
 
 
 @app.route('/motif_enrichment', methods=['POST'])
@@ -147,7 +148,8 @@ def handle_motif_enrichment_request() -> werkzeug.wrappers.Response | str:
     filepath = post_request_processed
     motif_enrichment_result = motif_enrichment.run_motif_enrichment(filepath)
 
-    return send_response(postprocess_request_response(motif_enrichment_result, 'Motif Enrichment'), filepath.parent)
+    return send_response(postprocess_request_response(motif_enrichment_result, 'Motif Enrichment', request.form),
+                         filepath.parent)
 
 
 @app.route('/kea3', methods=['POST'])
@@ -160,7 +162,7 @@ def handle_kea3_request() -> werkzeug.wrappers.Response | str:
     filepath = post_request_processed
     kea3_result = kea3.run_kea3_api(filepath)
 
-    return send_response(postprocess_request_response(kea3_result, 'KEA3'), filepath.parent)
+    return send_response(postprocess_request_response(kea3_result, 'KEA3', request.form), filepath.parent)
 
 
 @app.route('/kstar', methods=['POST'])
@@ -173,7 +175,7 @@ def handle_kstar_request() -> werkzeug.wrappers.Response | str:
     filepath = post_request_processed
     kstar_result = k_star.run_kstar(filepath)
 
-    return send_response(postprocess_request_response(kstar_result, 'KSTAR'), filepath.parent)
+    return send_response(postprocess_request_response(kstar_result, 'KSTAR', request.form), filepath.parent)
 
 
 def process_post_request(post_request: werkzeug.Request, method: str) -> Path | str:
@@ -205,12 +207,12 @@ def process_post_request(post_request: werkzeug.Request, method: str) -> Path | 
     return input_filepath
 
 
-def postprocess_request_response(result_path: Path, method: str) -> werkzeug.wrappers.Response:
+def postprocess_request_response(result_path: Path, method: str, form: dict) -> werkzeug.wrappers.Response:
     result_raw = json.load(open(result_path))
     result_with_log = {'Log': {'Version': VERSION}, 'Result': result_raw}
     with open(result_path, 'w') as outfile:
         json.dump(result_with_log, outfile)
-    print(f"{method} analysis completed successfully.")
+    print(f"{method} analysis finished. Session ID: {form['session_id']}, Dataset Name: {form['dataset_name']}.")
     return send_file(result_path, as_attachment=False)
 
 
