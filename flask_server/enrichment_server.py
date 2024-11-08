@@ -19,9 +19,49 @@ from modules.motif_enrichment import motif_enrichment
 from modules.kea3 import kea3
 from modules.k_star import k_star
 
-app = Flask(__name__)
+VERSION = '0.1.3'
 
-VERSION = '0.1.2'
+
+def setup_logger():
+    global LOGGER
+    LOGGER = logging.getLogger('enrichment_server')
+    LOGGER.setLevel(logging.INFO)
+
+    file_handler = logging.FileHandler('enrichment_server_logfile.log')
+    file_handler.setLevel(logging.INFO)
+    formatter = logging.Formatter('%(asctime)s - %(message)s')
+    file_handler.setFormatter(formatter)
+    LOGGER.addHandler(file_handler)
+
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.INFO)
+    LOGGER.addHandler(console_handler)
+
+    # Redirect print statements to the logger
+    class LoggerWriter:
+        def __init__(self, level):
+            self.level = level
+
+        def write(self, message):
+            if message.strip():  # Avoid logging empty messages
+                self.level(message)
+
+        def flush(self):
+            pass  # No-op for compatibility with sys.stdout/err
+
+    # Replace stdout and stderr with logger
+    sys.stdout = LoggerWriter(LOGGER.info)
+    sys.stderr = LoggerWriter(LOGGER.error)
+
+
+def create_app():
+    setup_logger()
+    app = Flask(__name__)
+    print('App created.')
+    return app
+
+
+app = create_app()
 
 
 @app.route('/', methods=['GET'])
@@ -160,7 +200,7 @@ def process_post_request(post_request: werkzeug.Request, method: str) -> Path | 
             o.write(post_request.form['data'])
     else:
         return "Error: You must either provide the input data " \
-            + "as a JSON string (-F data=<JSON_String>) or as a file (-F file=@<Filepath>).\n"
+               + "as a JSON string (-F data=<JSON_String>) or as a file (-F file=@<Filepath>).\n"
 
     return input_filepath
 
@@ -180,38 +220,6 @@ def send_response(result: werkzeug.wrappers.Response, output_folder=None) -> fla
     if output_folder:
         shutil.rmtree(output_folder)
     return response
-
-
-def setup_logger():
-    global LOGGER
-    LOGGER = logging.getLogger('enrichment_server')
-    LOGGER.setLevel(logging.INFO)
-
-    file_handler = logging.FileHandler('enrichment_server_logfile.log')
-    file_handler.setLevel(logging.INFO)
-    formatter = logging.Formatter('%(asctime)s - %(message)s')
-    file_handler.setFormatter(formatter)
-    LOGGER.addHandler(file_handler)
-
-    console_handler = logging.StreamHandler()
-    console_handler.setLevel(logging.INFO)
-    LOGGER.addHandler(console_handler)
-
-    # Redirect print statements to the logger
-    class LoggerWriter:
-        def __init__(self, level):
-            self.level = level
-
-        def write(self, message):
-            if message.strip():  # Avoid logging empty messages
-                self.level(message)
-
-        def flush(self):
-            pass  # No-op for compatibility with sys.stdout/err
-
-    # Replace stdout and stderr with logger
-    sys.stdout = LoggerWriter(LOGGER.info)
-    sys.stderr = LoggerWriter(LOGGER.error)
 
 
 if __name__ == '__main__':
@@ -240,5 +248,4 @@ if __name__ == '__main__':
     # # GUBED
     # memory_limit_half()
 
-    setup_logger()
     app.run(debug=os.getenv("PRODUCTION", '0') != '1', host='0.0.0.0', port=int(os.getenv("PORT", '4321')))
