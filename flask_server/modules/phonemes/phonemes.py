@@ -59,13 +59,14 @@ def run_phonemes(file_prefix: Path) -> Path:
 
     for experiment in experiments:
         output_path = output_dir / f'{experiment}_phonemes_out.sif'
-        subprocess.run(["Rscript",
-                        "modules/phonemes/run_phonemes.R",
-                        f'{file_prefix}_{experiment}_sites.csv',
-                        f'{file_prefix}_{experiment}_targets.csv',
-                        output_path
-                        ])
-
+        subprocess_output = subprocess.run(["Rscript",
+                                            "modules/phonemes/run_phonemes.R",
+                                            f'{file_prefix}_{experiment}_sites.csv',
+                                            f'{file_prefix}_{experiment}_targets.csv',
+                                            output_path],
+                                           capture_output=True, text=True)
+        print(subprocess_output.stdout)
+        print(subprocess_output.stderr)
     return output_dir
 
 

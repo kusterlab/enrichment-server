@@ -31,10 +31,13 @@ def preprocess_ksea(filepath: Path) -> Path:
 
 def run_rokai(filepath: Path) -> Path:
     output_path = filepath.parent / f'rokai_result.csv'
-    subprocess.run(["Rscript",
-                    "modules/ksea/run_rokai.R",
-                    str(filepath),
-                    str(output_path)])
+    subprocess_output = subprocess.run(["Rscript",
+                                        "modules/ksea/run_rokai.R",
+                                        str(filepath),
+                                        str(output_path)],
+                                       capture_output=True, text=True)
+    print(subprocess_output.stdout)
+    print(subprocess_output.stderr)
     return output_path
 
 
