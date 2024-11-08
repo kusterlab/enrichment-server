@@ -93,6 +93,9 @@ RUN Rscript -e "install.packages('stringi')"
 #Tell Cytoscape to use the Xvfb virtual display
 ENV DISPLAY=:1
 
+#Tell renv to not use a sandbox, this seems to slow things down
+ENV RENV_CONFIG_SANDBOX_ENABLED=FALSE
+
 #Start Xvfb for headless Cytoscape, then run the python server
 RUN chmod 775 /app/flask_server/gunicorn.sh
 ENTRYPOINT Xvfb :1 -screen 0 1024x768x24 & /app/flask_server/gunicorn.sh
