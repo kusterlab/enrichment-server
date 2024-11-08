@@ -177,7 +177,6 @@ def handle_kstar_request() -> werkzeug.wrappers.Response | str:
 
 
 def process_post_request(post_request: werkzeug.Request, method: str) -> Path | str:
-    print(f"{method} request received.")
     request_url = urlparse(request.base_url)
 
     form = post_request.form
@@ -186,6 +185,7 @@ def process_post_request(post_request: werkzeug.Request, method: str) -> Path | 
         if param not in form:
             return f'Error: parameter {param} not specified.\n'
 
+    print(f"{method} request received. Session ID: {form['session_id']}, Dataset Name: {form['dataset_name']}.")
     output_dir = Path('..') / secure_filename(form['session_id']) / secure_filename(
         form['dataset_name'] + request_url.path.replace('/', '_'))
     Path.mkdir(output_dir, parents=True, exist_ok=True)
