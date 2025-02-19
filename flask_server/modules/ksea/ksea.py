@@ -56,13 +56,22 @@ def perform_ksea(filepath: Path) -> Path:
                 interactions=adjacency_matrix,
                 mP=input_df[experiment].mean(),
                 delta=input_df[experiment].std())
-            intersect = {kinase: list(set(adjacency_matrix[kinase].dropna().index).intersection(
-                input_df[experiment].dropna().index)) for kinase in adjacency_matrix}
+            overlap = {}
+            percent_overlap = {}
+            experiment_sites = set(input_df[experiment].dropna().index)
+            for kinase in adjacency_matrix:
+                substrates = set(adjacency_matrix[kinase].dropna().index)
+                kinase_overlap = list(substrates.intersection(experiment_sites))
+                if len(kinase_overlap) > 0:
+                    overlap[kinase] = list(substrates.intersection(experiment_sites))
+                    percent_overlap[kinase] = f'{100*len(overlap[kinase]) / len(substrates):.2f}%'
+
 
             res = pd.DataFrame({
                 f'Score ({experiment})': scores,
                 f'adj p-val ({experiment})': p_values,
-                f'intersect ({experiment})': intersect}).dropna()
+                f'Overlap ({experiment})': overlap,
+                f'Percent Overlap ({experiment})': percent_overlap}).dropna()
             ksea_results.append(res)
         except ZeroDivisionError:
             continue
