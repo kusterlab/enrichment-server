@@ -60,7 +60,7 @@ def run_kstar(filepath: Path) -> Path:
                                                             # We already filtered for regulations, so 0 is an acceptable threshold
                                                             agg='mean', threshold=0,
                                                             # We expect kinase inhibition, so check for values smaller than the threshold
-                                                            greater=(direction == 'up'), PROCESSES=4)
+                                                            greater=(direction == 'up'), PROCESSES=1)
 
                 result_df = np.log10(kinact_dict[phospho_type].activities) * (-1 if direction == 'up' else 1)
 
