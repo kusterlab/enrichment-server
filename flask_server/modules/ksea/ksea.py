@@ -2,6 +2,7 @@ from pathlib import Path
 import json
 import subprocess
 import pandas as pd
+import numpy as np
 import kinact
 
 
@@ -55,7 +56,13 @@ def perform_ksea(filepath: Path) -> Path:
                 interactions=adjacency_matrix,
                 mP=input_df[experiment].mean(),
                 delta=input_df[experiment].std())
-            res = pd.DataFrame({f'Score ({experiment})': scores, f'adj p-val ({experiment})': p_values})
+            intersect = {kinase: list(set(adjacency_matrix[kinase].dropna().index).intersection(
+                input_df[experiment].dropna().index)) for kinase in adjacency_matrix}
+
+            res = pd.DataFrame({
+                f'Score ({experiment})': scores,
+                f'adj p-val ({experiment})': p_values,
+                f'intersect ({experiment})': intersect}).dropna()
             ksea_results.append(res)
         except ZeroDivisionError:
             continue

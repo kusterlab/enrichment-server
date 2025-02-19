@@ -150,7 +150,7 @@ class TestClass:
 
         self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea.json')
-        self.expected_result = json.load(open(expected_result_file))
+        self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ksea()
 
     def test_ksea_rokai(self, client):
@@ -165,7 +165,7 @@ class TestClass:
 
         self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea_rokai.json')
-        self.expected_result = json.load(open(expected_result_file))
+        self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ksea()
 
     def test_motif_enrichment(self, client):
