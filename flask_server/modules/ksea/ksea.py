@@ -64,7 +64,7 @@ def perform_ksea(filepath: Path) -> Path:
                 kinase_overlap = list(substrates.intersection(experiment_sites))
                 if len(kinase_overlap) > 0:
                     overlap[kinase] = list(substrates.intersection(experiment_sites))
-                    percent_overlap[kinase] = f'{100*len(overlap[kinase]) / len(substrates):.2f}%'
+                    percent_overlap[kinase] = 100*len(overlap[kinase]) / len(substrates)
 
 
             res = pd.DataFrame({
