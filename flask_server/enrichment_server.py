@@ -83,7 +83,7 @@ def handle_ssgsea_request(ssgsea_type, ssc_input_type='flanking') -> werkzeug.wr
     if ssc_input_type not in valid_ssc_input_types:
         return f"Invalid 'ssc_input_type'. Allowed values are {', '.join(valid_ssc_input_types)}"
 
-    post_request_processed = process_post_request(request, f'ssGSEA ({ssgsea_type.upper()})')
+    post_request_processed, request_form = process_post_request(request, f'ssGSEA ({ssgsea_type.upper()})')
 
     if type(post_request_processed) is str:
         return post_request_processed
@@ -96,14 +96,14 @@ def handle_ssgsea_request(ssgsea_type, ssc_input_type='flanking') -> werkzeug.wr
     ssgsea_combined_output = ssgsea.run_ssgsea(ssgsea_input, ssgsea_type, ssc_input_type)
 
     return send_response(postprocess_request_response(ssgsea.postprocess_ssgsea(ssgsea_combined_output),
-                                                      f'ssGSEA ({ssgsea_type.upper()})', request.form),
+                                                      f'ssGSEA ({ssgsea_type.upper()})', request_form),
                          filepath.parent)
 
 
 @app.route('/ksea', methods=['POST'])
 @app.route('/ksea/<string:ksea_type>', methods=['POST'])
 def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
-    post_request_processed = process_post_request(request, 'KSEA' if not ksea_type else 'RoKAI+KSEA')
+    post_request_processed, request_form = process_post_request(request, 'KSEA' if not ksea_type else 'RoKAI+KSEA')
 
     if type(post_request_processed) is str:
         return post_request_processed
@@ -116,13 +116,13 @@ def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
 
     ksea_result = ksea.perform_ksea(preprocessed_filepath)
     return send_response(postprocess_request_response(
-        ksea_result, 'KSEA' if not ksea_type else 'RoKAI+KSEA', request.form),
+        ksea_result, 'KSEA' if not ksea_type else 'RoKAI+KSEA', request_form),
         filepath.parent)
 
 
 @app.route('/phonemes', methods=['POST'])
 def handle_phonemes_request() -> werkzeug.wrappers.Response | str:
-    post_request_processed = process_post_request(request, 'PHONEMeS')
+    post_request_processed, request_form = process_post_request(request, 'PHONEMeS')
 
     if type(post_request_processed) is str:
         return post_request_processed
@@ -135,13 +135,13 @@ def handle_phonemes_request() -> werkzeug.wrappers.Response | str:
     cytoscape_result = phonemes.run_cytoscape(phonemes_result)
     pathway_skeletons_json = phonemes.create_pathway_skeleton(cytoscape_result)
 
-    return send_response(postprocess_request_response(pathway_skeletons_json, 'PHONEMeS', request.form),
+    return send_response(postprocess_request_response(pathway_skeletons_json, 'PHONEMeS', request_form),
                          filepath.parent)
 
 
 @app.route('/motif_enrichment', methods=['POST'])
 def handle_motif_enrichment_request() -> werkzeug.wrappers.Response | str:
-    post_request_processed = process_post_request(request, 'Motif Enrichment')
+    post_request_processed, request_form = process_post_request(request, 'Motif Enrichment')
 
     if type(post_request_processed) is str:
         return post_request_processed
@@ -149,13 +149,13 @@ def handle_motif_enrichment_request() -> werkzeug.wrappers.Response | str:
     filepath = post_request_processed
     motif_enrichment_result = motif_enrichment.run_motif_enrichment(filepath)
 
-    return send_response(postprocess_request_response(motif_enrichment_result, 'Motif Enrichment', request.form),
+    return send_response(postprocess_request_response(motif_enrichment_result, 'Motif Enrichment', request_form),
                          filepath.parent)
 
 
 @app.route('/kea3', methods=['POST'])
 def handle_kea3_request() -> werkzeug.wrappers.Response | str:
-    post_request_processed = process_post_request(request, 'KEA3')
+    post_request_processed, request_form = process_post_request(request, 'KEA3')
 
     if type(post_request_processed) is str:
         return post_request_processed
@@ -163,12 +163,12 @@ def handle_kea3_request() -> werkzeug.wrappers.Response | str:
     filepath = post_request_processed
     kea3_result = kea3.run_kea3_api(filepath)
 
-    return send_response(postprocess_request_response(kea3_result, 'KEA3', request.form), filepath.parent)
+    return send_response(postprocess_request_response(kea3_result, 'KEA3', request_form), filepath.parent)
 
 
 @app.route('/kstar', methods=['POST'])
 def handle_kstar_request() -> werkzeug.wrappers.Response | str:
-    post_request_processed = process_post_request(request, 'KSTAR')
+    post_request_processed, request_form = process_post_request(request, 'KSTAR')
 
     if type(post_request_processed) is str:
         return post_request_processed
@@ -176,7 +176,7 @@ def handle_kstar_request() -> werkzeug.wrappers.Response | str:
     filepath = post_request_processed
     kstar_result = k_star.run_kstar(filepath)
 
-    return send_response(postprocess_request_response(kstar_result, 'KSTAR', request.form), filepath.parent)
+    return send_response(postprocess_request_response(kstar_result, 'KSTAR', request_form), filepath.parent)
 
 
 def process_post_request(post_request: werkzeug.Request, method: str) -> Path | str:
@@ -208,11 +208,10 @@ def process_post_request(post_request: werkzeug.Request, method: str) -> Path | 
         return "Error: You must either provide the input data " \
                + "as a JSON string (-F data=<JSON_String>) or as a file (-F file=@<Filepath>).\n"
 
-    return input_filepath
+    return input_filepath, form
 
 
 def postprocess_request_response(result_path: Path, method: str, form: dict) -> werkzeug.wrappers.Response:
-    #TODO: Is session/dataset persistent if I changed it previously?
     result_raw = json.load(open(result_path))
     result_with_log = {'Log': {'Version': VERSION}, 'Result': result_raw}
     with open(result_path, 'w') as outfile:
