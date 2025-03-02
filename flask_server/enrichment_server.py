@@ -11,6 +11,7 @@ from flask import Flask, request, send_file, jsonify, make_response
 import flask.wrappers
 import logging
 import sys
+import uuid
 
 from modules.ssgsea import ssgsea
 from modules.ksea import ksea
@@ -181,11 +182,14 @@ def handle_kstar_request() -> werkzeug.wrappers.Response | str:
 def process_post_request(post_request: werkzeug.Request, method: str) -> Path | str:
     request_url = urlparse(request.base_url)
 
-    form = post_request.form
-    required_parameters = ['session_id', 'dataset_name']
-    for param in required_parameters:
-        if param not in form:
-            return f'Error: parameter {param} not specified.\n'
+    form = dict(post_request.form)
+
+    #Set default session id & dataset name, if not provided
+    #Must be unique to avoid conflicts if there are simultaneous requests
+    if 'session_id' not in form:
+        form['session_id'] = str(uuid.uuid4())
+    if 'dataset_name' not in form:
+        form['dataset_name'] = str(uuid.uuid4())
 
     print(f"{method} request received. Session ID: {form['session_id']}, Dataset Name: {form['dataset_name']}.")
     output_dir = Path('..') / secure_filename(form['session_id']) / secure_filename(
@@ -208,6 +212,7 @@ def process_post_request(post_request: werkzeug.Request, method: str) -> Path | 
 
 
 def postprocess_request_response(result_path: Path, method: str, form: dict) -> werkzeug.wrappers.Response:
+    #TODO: Is session/dataset persistent if I changed it previously?
     result_raw = json.load(open(result_path))
     result_with_log = {'Log': {'Version': VERSION}, 'Result': result_raw}
     with open(result_path, 'w') as outfile:
