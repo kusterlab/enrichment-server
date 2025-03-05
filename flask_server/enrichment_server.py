@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 import shutil
 import json
+from typing import Tuple, Any, Dict
 from urllib.parse import urlparse
 import werkzeug.wrappers
 from werkzeug.utils import secure_filename
@@ -12,6 +13,7 @@ import flask.wrappers
 import logging
 import sys
 import uuid
+import toml
 
 from modules.ssgsea import ssgsea
 from modules.ksea import ksea
@@ -83,7 +85,7 @@ def handle_ssgsea_request(ssgsea_type, ssc_input_type='flanking') -> werkzeug.wr
     if ssc_input_type not in valid_ssc_input_types:
         return f"Invalid 'ssc_input_type'. Allowed values are {', '.join(valid_ssc_input_types)}"
 
-    post_request_processed, request_form = process_post_request(request, f'ssGSEA ({ssgsea_type.upper()})')
+    post_request_processed, request_form, parameters = process_post_request(request, f'ssGSEA ({ssgsea_type.upper()})')
 
     if type(post_request_processed) is str:
         return post_request_processed
@@ -103,7 +105,7 @@ def handle_ssgsea_request(ssgsea_type, ssc_input_type='flanking') -> werkzeug.wr
 @app.route('/ksea', methods=['POST'])
 @app.route('/ksea/<string:ksea_type>', methods=['POST'])
 def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
-    post_request_processed, request_form = process_post_request(request, 'KSEA' if not ksea_type else 'RoKAI+KSEA')
+    post_request_processed, request_form, parameters = process_post_request(request, 'KSEA' if not ksea_type else 'RoKAI+KSEA')
 
     if type(post_request_processed) is str:
         return post_request_processed
@@ -122,7 +124,7 @@ def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
 
 @app.route('/phonemes', methods=['POST'])
 def handle_phonemes_request() -> werkzeug.wrappers.Response | str:
-    post_request_processed, request_form = process_post_request(request, 'PHONEMeS')
+    post_request_processed, request_form, parameters = process_post_request(request, 'PHONEMeS')
 
     if type(post_request_processed) is str:
         return post_request_processed
@@ -141,7 +143,7 @@ def handle_phonemes_request() -> werkzeug.wrappers.Response | str:
 
 @app.route('/motif_enrichment', methods=['POST'])
 def handle_motif_enrichment_request() -> werkzeug.wrappers.Response | str:
-    post_request_processed, request_form = process_post_request(request, 'Motif Enrichment')
+    post_request_processed, request_form, parameters = process_post_request(request, 'Motif Enrichment')
 
     if type(post_request_processed) is str:
         return post_request_processed
@@ -155,7 +157,7 @@ def handle_motif_enrichment_request() -> werkzeug.wrappers.Response | str:
 
 @app.route('/kea3', methods=['POST'])
 def handle_kea3_request() -> werkzeug.wrappers.Response | str:
-    post_request_processed, request_form = process_post_request(request, 'KEA3')
+    post_request_processed, request_form, parameters = process_post_request(request, 'KEA3')
 
     if type(post_request_processed) is str:
         return post_request_processed
@@ -168,7 +170,7 @@ def handle_kea3_request() -> werkzeug.wrappers.Response | str:
 
 @app.route('/kstar', methods=['POST'])
 def handle_kstar_request() -> werkzeug.wrappers.Response | str:
-    post_request_processed, request_form = process_post_request(request, 'KSTAR')
+    post_request_processed, request_form, parameters = process_post_request(request, 'KSTAR')
 
     if type(post_request_processed) is str:
         return post_request_processed
@@ -179,13 +181,14 @@ def handle_kstar_request() -> werkzeug.wrappers.Response | str:
     return send_response(postprocess_request_response(kstar_result, 'KSTAR', request_form), filepath.parent)
 
 
-def process_post_request(post_request: werkzeug.Request, method: str) -> Path | str:
+def process_post_request(post_request: werkzeug.Request, method: str) -> tuple[
+    Path, dict[str, str], dict[str]]:
     request_url = urlparse(request.base_url)
 
     form = dict(post_request.form)
 
-    #Set default session id & dataset name, if not provided
-    #Must be unique to avoid conflicts if there are simultaneous requests
+    # Set default session id & dataset name, if not provided
+    # Must be unique to avoid conflicts if there are simultaneous requests
     if 'session_id' not in form:
         form['session_id'] = str(uuid.uuid4())
     if 'dataset_name' not in form:
@@ -206,9 +209,16 @@ def process_post_request(post_request: werkzeug.Request, method: str) -> Path | 
             o.write(post_request.form['data'])
     else:
         return "Error: You must either provide the input data " \
-               + "as a JSON string (-F data=<JSON_String>) or as a file (-F file=@<Filepath>).\n"
+            + "as a JSON string (-F data=<JSON_String>) or as a file (-F file=@<Filepath>).\n"
 
-    return input_filepath, form
+    # Process the parameters file, if present
+    if 'parameters' in post_request.files and post_request.files['parameters'].filename != '':
+        post_request.files['parameters'].save(output_dir / post_request.files['parameters'].filename)
+        parameters = toml.load(output_dir / post_request.files['parameters'].filename)
+    else:
+        parameters = dict()
+
+    return input_filepath, form, parameters
 
 
 def postprocess_request_response(result_path: Path, method: str, form: dict) -> werkzeug.wrappers.Response:
@@ -223,8 +233,9 @@ def postprocess_request_response(result_path: Path, method: str, form: dict) -> 
 def send_response(result: werkzeug.wrappers.Response, output_folder=None) -> flask.Response:
     response = make_response(result)
     response.headers.add('Access-Control-Allow-Origin', '*')
-    if output_folder:
-        shutil.rmtree(output_folder)
+    # TODO: Hmm feels like this is causing problems all of a sudden, how come?
+    # if output_folder:
+    #     shutil.rmtree(output_folder)
     return response
 
 
