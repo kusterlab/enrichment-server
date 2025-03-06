@@ -18,6 +18,7 @@ class TestClass:
     session_id = 'TESTSESSION'
     dataset_name = None
     input_json = None
+    parameters_toml = None
     actual_result = None
     expected_result = None
 
@@ -90,6 +91,23 @@ class TestClass:
 
         self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/ptm-sea/expected_output/output_flanking.json')
+        self.expected_result = json.load(open(expected_result_file))['Result']
+        self.evaluate_ssgsea()
+
+    def test_ssgsea_ssc_flanking_w_parameters(self, client):
+        self.input_json = Path('../fixtures/ptm-sea/input/input_flanking.json')
+        self.parameters_toml = Path('../fixtures/ptm-sea/input/parameters.toml')
+        self.dataset_name = 'ptmsea_test'
+
+        response = client.post('/ssgsea/ssc/flanking', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_json.open('rb'),
+            "parameters": self.parameters_toml.open('rb')
+        })
+
+        self.actual_result = json.loads(response.data)['Result']
+        expected_result_file = Path('../fixtures/ptm-sea/expected_output/output_flanking_w_parameters.json')
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ssgsea()
 

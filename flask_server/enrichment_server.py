@@ -1,10 +1,10 @@
 # How to send a request:
-# curl -X POST -F file=@<input_file> -F session_id=ABCDEF12345  -F dataset_name=FooBar http://127.0.0.1:1234/<route>
+# curl -X POST -F file=@<input_file> -F parameters=@<parameters_file> http://127.0.0.1:1234/<route>
 import os
 from pathlib import Path
 import shutil
 import json
-from typing import Tuple, Any, Dict
+from typing import Tuple, Any, Dict, Literal
 from urllib.parse import urlparse
 import werkzeug.wrappers
 from werkzeug.utils import secure_filename
@@ -75,7 +75,8 @@ def get_status() -> flask.wrappers.Response:
 # TODO: In the second route, the ssgsea_type actually can only be ssc. Can I enforce this?
 @app.route('/ssgsea/<string:ssgsea_type>', methods=['POST'])
 @app.route('/ssgsea/<string:ssgsea_type>/<string:ssc_input_type>', methods=['POST'])
-def handle_ssgsea_request(ssgsea_type, ssc_input_type='flanking') -> werkzeug.wrappers.Response | str:
+def handle_ssgsea_request(ssgsea_type: Literal['ssc', 'gc', 'gcr'], ssc_input_type: Literal[
+    'flanking', 'uniprot'] = 'flanking') -> werkzeug.wrappers.Response | str:
     valid_ssgsea_types = ['ssc', 'gc', 'gcr']
 
     if ssgsea_type not in valid_ssgsea_types:
@@ -95,7 +96,7 @@ def handle_ssgsea_request(ssgsea_type, ssc_input_type='flanking') -> werkzeug.wr
     # Preprocess the json input into a gct file
     ssgsea_input = ssgsea.preprocess_ssgsea(filepath, ssgsea_type != 'gcr')
 
-    ssgsea_combined_output = ssgsea.run_ssgsea(ssgsea_input, ssgsea_type, ssc_input_type)
+    ssgsea_combined_output = ssgsea.run_ssgsea(ssgsea_input, ssgsea_type, ssc_input_type, parameters)
 
     return send_response(postprocess_request_response(ssgsea.postprocess_ssgsea(ssgsea_combined_output),
                                                       f'ssGSEA ({ssgsea_type.upper()})', request_form),
@@ -105,7 +106,8 @@ def handle_ssgsea_request(ssgsea_type, ssc_input_type='flanking') -> werkzeug.wr
 @app.route('/ksea', methods=['POST'])
 @app.route('/ksea/<string:ksea_type>', methods=['POST'])
 def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
-    post_request_processed, request_form, parameters = process_post_request(request, 'KSEA' if not ksea_type else 'RoKAI+KSEA')
+    post_request_processed, request_form, parameters = process_post_request(request,
+                                                                            'KSEA' if not ksea_type else 'RoKAI+KSEA')
 
     if type(post_request_processed) is str:
         return post_request_processed
@@ -181,8 +183,7 @@ def handle_kstar_request() -> werkzeug.wrappers.Response | str:
     return send_response(postprocess_request_response(kstar_result, 'KSTAR', request_form), filepath.parent)
 
 
-def process_post_request(post_request: werkzeug.Request, method: str) -> tuple[
-    Path, dict[str, str], dict[str]]:
+def process_post_request(post_request: werkzeug.Request, method: str) -> tuple[Path, dict[str, str], dict[str]] or str:
     request_url = urlparse(request.base_url)
 
     form = dict(post_request.form)
@@ -209,12 +210,12 @@ def process_post_request(post_request: werkzeug.Request, method: str) -> tuple[
             o.write(post_request.form['data'])
     else:
         return "Error: You must either provide the input data " \
-            + "as a JSON string (-F data=<JSON_String>) or as a file (-F file=@<Filepath>).\n"
+               + "as a JSON string (-F data=<JSON_String>) or as a file (-F file=@<Filepath>).\n"
 
     # Process the parameters file, if present
     if 'parameters' in post_request.files and post_request.files['parameters'].filename != '':
-        post_request.files['parameters'].save(output_dir / post_request.files['parameters'].filename)
-        parameters = toml.load(output_dir / post_request.files['parameters'].filename)
+        post_request.files['parameters'].save(output_dir / 'parameters.toml')
+        parameters = toml.load(output_dir / 'parameters.toml')
     else:
         parameters = dict()
 

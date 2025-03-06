@@ -3,6 +3,7 @@ from pathlib import Path
 import json
 import pandas as pd
 from cmapPy.pandasGEXpress import parse_gct
+from typing import Literal
 
 R_SPECIAL_CHARACTERS_MAPPING = str.maketrans({elem: '.' for elem in [
     " ",  # Space
@@ -72,7 +73,8 @@ def preprocess_ssgsea(filepath: Path, type_isnot_gcr) -> Path:
     return input_gct_file
 
 
-def run_ssgsea(filepath: Path, ssgsea_type, ssc_input_type) -> Path:
+def run_ssgsea(filepath: Path, ssgsea_type: Literal['gc', 'gcr', 'ssc'],
+               ssc_input_type: Literal['flanking', 'uniprot'], parameters: dict) -> Path:
     output_dir = filepath.parent
     output_prefix = output_dir / f'ssgsea_{ssgsea_type}_out'
 
@@ -86,14 +88,20 @@ def run_ssgsea(filepath: Path, ssgsea_type, ssc_input_type) -> Path:
             database = "../db/c2.cp.kegg+wp.v2023.2.Hs.symbols.gmt"
 
     subprocess_output = subprocess.run(["Rscript",
-                             "../ssGSEA2.0/ssgsea-cli.R",
-                             "-i", str(Path('..') / 'flask_server' / filepath),
-                             "-o", str(output_prefix),
-                             "-d", database,
-                             "-w", "0.75",
-                             "-e", "FALSE",
-                             ],
-                            capture_output=True, text=True)
+                                        "../ssGSEA2.0/ssgsea-cli.R",
+                                        "-i", str(Path('..') / 'flask_server' / filepath),
+                                        "-o", str(output_prefix),
+                                        "-d", database,
+                                        "-e", "FALSE",
+                                        "-n", parameters.get('n', parameters.get('norm', 'rank')),
+                                        "-w", str(parameters.get('w', parameters.get('weight', 0.75))),
+                                        "-c", parameters.get('c', parameters.get('correl', 'z.score')),
+                                        "-t", parameters.get('t', parameters.get('test', 'area.under.RES')),
+                                        "-s", parameters.get('s', parameters.get('score', 'NES')),
+                                        "-p", str(parameters.get('p', parameters.get('perm', 1000))),
+                                        "-m", str(parameters.get('m', parameters.get('minoverlap', 10))),
+                                        ],
+                                       capture_output=True, text=True)
     print(subprocess_output.stdout)
     print(subprocess_output.stderr)
     return Path(str(output_prefix) + '-combined.gct')
