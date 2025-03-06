@@ -97,7 +97,7 @@ class TestClass:
     def test_ssgsea_ssc_flanking_w_parameters(self, client):
         self.input_json = Path('../fixtures/ptm-sea/input/input_flanking.json')
         self.parameters_toml = Path('../fixtures/ptm-sea/input/parameters.toml')
-        self.dataset_name = 'ptmsea_test'
+        self.dataset_name = 'ptmsea_test_w_parameters'
 
         response = client.post('/ssgsea/ssc/flanking', data={
             "session_id": self.session_id,
@@ -168,6 +168,23 @@ class TestClass:
 
         self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea.json')
+        self.expected_result = json.load(open(expected_result_file))['Result']
+        self.evaluate_ksea()
+
+    def test_ksea_w_parameters(self, client):
+        self.input_json = Path('../fixtures/ksea/input/input.json')
+        self.parameters_toml = Path('../fixtures/ksea/input/parameters.toml')
+        self.dataset_name = 'ksea_test_w_parameters'
+
+        response = client.post('/ksea', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_json.open('rb'),
+            "parameters": self.parameters_toml.open('rb')
+        })
+
+        self.actual_result = json.loads(response.data)['Result']
+        expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea_w_parameters.json')
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ksea()
 

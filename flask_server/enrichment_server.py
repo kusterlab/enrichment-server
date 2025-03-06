@@ -118,7 +118,7 @@ def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
     if ksea_type == 'rokai':
         preprocessed_filepath = ksea.run_rokai(preprocessed_filepath)
 
-    ksea_result = ksea.perform_ksea(preprocessed_filepath)
+    ksea_result = ksea.perform_ksea(preprocessed_filepath, parameters)
     return send_response(postprocess_request_response(
         ksea_result, 'KSEA' if not ksea_type else 'RoKAI+KSEA', request_form),
         filepath.parent)

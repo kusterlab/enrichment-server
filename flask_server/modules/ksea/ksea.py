@@ -2,7 +2,6 @@ from pathlib import Path
 import json
 import subprocess
 import pandas as pd
-import numpy as np
 import kinact
 
 
@@ -42,7 +41,7 @@ def run_rokai(filepath: Path) -> Path:
     return output_path
 
 
-def perform_ksea(filepath: Path) -> Path:
+def perform_ksea(filepath: Path, parameters: dict) -> Path:
     input_df = pd.read_csv(filepath)
     input_df.set_index('Site', inplace=True)
 
@@ -51,11 +50,14 @@ def perform_ksea(filepath: Path) -> Path:
     ksea_results = []
     for experiment in input_df:
         try:
+
             scores, p_values = kinact.ksea.ksea_mean(
                 data_fc=input_df[experiment],
                 interactions=adjacency_matrix,
                 mP=input_df[experiment].mean(),
-                delta=input_df[experiment].std())
+                delta=input_df[experiment].std(),
+                minimum_set_size=parameters.get('minimum_set_size', 5),
+                median=parameters.get('median', False))
             overlap = {}
             percent_overlap = {}
             experiment_sites = set(input_df[experiment].dropna().index)
@@ -65,7 +67,6 @@ def perform_ksea(filepath: Path) -> Path:
                 if len(kinase_overlap) > 0:
                     overlap[kinase] = list(substrates.intersection(experiment_sites))
                     percent_overlap[kinase] = 100*len(overlap[kinase]) / len(substrates)
-
 
             res = pd.DataFrame({
                 f'Score ({experiment})': scores,
