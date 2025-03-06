@@ -233,9 +233,8 @@ def postprocess_request_response(result_path: Path, method: str, form: dict) -> 
 def send_response(result: werkzeug.wrappers.Response, output_folder=None) -> flask.Response:
     response = make_response(result)
     response.headers.add('Access-Control-Allow-Origin', '*')
-    # TODO: Hmm feels like this is causing problems all of a sudden, how come?
-    # if output_folder:
-    #     shutil.rmtree(output_folder)
+    if output_folder:
+        shutil.rmtree(output_folder)
     return response
 
 

@@ -3,6 +3,7 @@ name = "enrichment_server"
 version = "0.1.0"
 description = ""
 authors = ["Julian Müller <julian2.mueller@tum.de>"]
+package-mode = false
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.12"
@@ -19,8 +20,6 @@ gunicorn = "^23.0.0"
 toml = "^0.10.2"
 
 
-[tool.poetry.dev-dependencies]
-
 [tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"
 psite-annotation = "^0.5.0"
@@ -28,5 +27,5 @@ psite-annotation = "^0.5.0"
 pytest = "^8.0.0"
 
 [build-system]
-requires = ["poetry-core>=1.4.0"]
+requires = ["poetry-core>=1.8.3"]
 build-backend = "poetry.core.masonry.api"

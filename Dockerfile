@@ -39,7 +39,7 @@ RUN echo 'export PATH="/root/.local/bin:$PATH"' >> ~/.bashrc
 
 #Ubuntu 22.04 only support libssl3. as we need libssl1.1 we need to install it separately
 #Note that we manually need to update this url when this package is updated in the ubuntu archives, e.g. ubuntu2.22 => ubuntu2.23
-RUN curl http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.23_amd64.deb --output libssl.deb
+RUN curl http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.24_amd64.deb --output libssl.deb
 RUN dpkg -i libssl.deb
 RUN rm libssl.deb
 
