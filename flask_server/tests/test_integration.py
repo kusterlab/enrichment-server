@@ -32,6 +32,17 @@ class TestClass:
 
             for res, exp in zip(self.actual_result, self.expected_result))
 
+    def evaluate_go_enrichment(self):
+        assert len(self.actual_result) == len(self.expected_result) and all(
+            res['GO_ID'] == exp['GO_ID'] and
+            res['Intersection_Size (Experiment01)'] == exp['Intersection_Size (Experiment01)'] and
+            ((res['Intersection (Experiment02)'] is None and exp['Intersection (Experiment02)'] is None) or
+             set(res['Intersection (Experiment02)'].split(',')) ==
+             set(exp['Intersection (Experiment02)'].split(','))) and
+            res['neg_log10_adjusted_p_value (Experiment03)'] == exp['neg_log10_adjusted_p_value (Experiment03)']
+
+            for res, exp in zip(self.actual_result, self.expected_result))
+
     def evaluate_ksea(self):
         assert len(self.actual_result) == len(self.expected_result) and all(
             res['Gene'] == exp['Gene'] and
@@ -61,7 +72,8 @@ class TestClass:
         for key in self.expected_result.keys():
             for ranktype in 'MeanRank', 'TopRank':
                 assert len(self.actual_result[key][ranktype]) == len(self.expected_result[key][ranktype])
-                for rank_actual, rank_expected in zip(self.actual_result[key][ranktype], self.expected_result[key][ranktype]):
+                for rank_actual, rank_expected in zip(self.actual_result[key][ranktype],
+                                                      self.expected_result[key][ranktype]):
                     assert rank_actual['TF'] == rank_expected['TF']
                     assert rank_actual['Score'] == rank_expected['Score']
 
@@ -156,6 +168,37 @@ class TestClass:
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ssgsea()
 
+    def test_go_enrichment(self, client):
+        self.input_json = Path('../fixtures/go_enrichment/input/input.json')
+        self.dataset_name = 'go_enrichment_test'
+
+        response = client.post('/go_enrichment', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_json.open('rb')
+        })
+
+        self.actual_result = json.loads(response.data)['Result']
+        expected_result_file = Path('../fixtures/go_enrichment/expected_output/go_enrichment_result.json')
+        self.expected_result = json.load(open(expected_result_file))['Result']
+        self.evaluate_go_enrichment()
+
+    def test_go_enrichment_w_custom_background(self, client):
+        self.input_json = Path('../fixtures/go_enrichment/input/input_w_background.json')
+        self.dataset_name = 'go_enrichment_w_custom_background_test'
+
+        response = client.post('/go_enrichment', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_json.open('rb')
+        })
+
+        self.actual_result = json.loads(response.data)['Result']
+        expected_result_file = Path(
+            '../fixtures/go_enrichment/expected_output/go_enrichment_w_custom_background_result.json')
+        self.expected_result = json.load(open(expected_result_file))['Result']
+        self.evaluate_go_enrichment()
+
     def test_ksea(self, client):
         self.input_json = Path('../fixtures/ksea/input/input.json')
         self.dataset_name = 'ksea_test'
@@ -248,7 +291,7 @@ class TestClass:
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_kstar()
 
-#Run PHONEMeS last because it takes the longest
+    # Run PHONEMeS last because it takes the longest
     def test_phonemes(self, client):
         self.input_json = Path('../fixtures/phonemes/input/input.json')
         self.dataset_name = 'phonemes_test'

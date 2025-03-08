@@ -21,6 +21,7 @@ from modules.phonemes import phonemes
 from modules.motif_enrichment import motif_enrichment
 from modules.kea3 import kea3
 from modules.k_star import k_star
+from modules.go_enrichment import go_enrichment
 
 VERSION = '0.1.3'
 
@@ -183,6 +184,21 @@ def handle_kstar_request() -> werkzeug.wrappers.Response | str:
     return send_response(postprocess_request_response(kstar_result, 'KSTAR', request_form), filepath.parent)
 
 
+@app.route('/go_enrichment', methods=['POST'])
+def handle_go_enrichment_request() -> werkzeug.wrappers.Response | str:
+    post_request_processed, request_form, parameters = process_post_request(request, 'GO Enrichment')
+
+    if type(post_request_processed) is str:
+        return post_request_processed
+
+    filepath = post_request_processed
+
+    go_enrichment_result = go_enrichment.run_go_enrichment(filepath, parameters)
+
+    return send_response(postprocess_request_response(go_enrichment_result, 'GO Enrichment', request_form),
+                         filepath.parent)
+
+
 def process_post_request(post_request: werkzeug.Request, method: str) -> tuple[Path, dict[str, str], dict[str]] or str:
     request_url = urlparse(request.base_url)
 
@@ -210,7 +226,7 @@ def process_post_request(post_request: werkzeug.Request, method: str) -> tuple[P
             o.write(post_request.form['data'])
     else:
         return "Error: You must either provide the input data " \
-               + "as a JSON string (-F data=<JSON_String>) or as a file (-F file=@<Filepath>).\n"
+            + "as a JSON string (-F data=<JSON_String>) or as a file (-F file=@<Filepath>).\n"
 
     # Process the parameters file, if present
     if 'parameters' in post_request.files and post_request.files['parameters'].filename != '':
