@@ -1,7 +1,9 @@
 from pathlib import Path
 import json
 import pytest
+import pandas as pd
 from enrichment_server import app as application, VERSION
+import io
 
 
 @pytest.fixture()
@@ -17,7 +19,7 @@ def client(app):
 class TestClass:
     session_id = 'TESTSESSION'
     dataset_name = None
-    input_json = None
+    input_file = None
     parameters_toml = None
     actual_result = None
     expected_result = None
@@ -68,6 +70,9 @@ class TestClass:
             res == exp for res, exp in zip(self.actual_result, self.expected_result)
         )
 
+    def evaluate_motif_enrichment_csv(self):
+        pd.testing.assert_frame_equal(self.actual_result, self.expected_result)
+
     def evaluate_kea3(self):
         for key in self.expected_result.keys():
             for ranktype in 'MeanRank', 'TopRank':
@@ -92,13 +97,13 @@ class TestClass:
         assert response.json == {'status': 200, 'version': VERSION}, response.json
 
     def test_ssgsea_ssc_flanking(self, client):
-        self.input_json = Path('../fixtures/ptm-sea/input/input_flanking.json')
+        self.input_file = Path('../fixtures/ptm-sea/input/input_flanking.json')
         self.dataset_name = 'ptmsea_test'
 
         response = client.post('/ssgsea/ssc/flanking', data={
             "session_id": self.session_id,
             "dataset_name": self.dataset_name,
-            "file": self.input_json.open('rb')
+            "file": self.input_file.open('rb')
         })
 
         self.actual_result = json.loads(response.data)['Result']
@@ -107,14 +112,14 @@ class TestClass:
         self.evaluate_ssgsea()
 
     def test_ssgsea_ssc_flanking_w_parameters(self, client):
-        self.input_json = Path('../fixtures/ptm-sea/input/input_flanking.json')
+        self.input_file = Path('../fixtures/ptm-sea/input/input_flanking.json')
         self.parameters_toml = Path('../fixtures/ptm-sea/input/parameters.toml')
         self.dataset_name = 'ptmsea_test_w_parameters'
 
         response = client.post('/ssgsea/ssc/flanking', data={
             "session_id": self.session_id,
             "dataset_name": self.dataset_name,
-            "file": self.input_json.open('rb'),
+            "file": self.input_file.open('rb'),
             "parameters": self.parameters_toml.open('rb')
         })
 
@@ -124,13 +129,13 @@ class TestClass:
         self.evaluate_ssgsea()
 
     def test_ssgsea_ssc_uniprot(self, client):
-        self.input_json = Path('../fixtures/ptm-sea/input/input_uniprot.json')
+        self.input_file = Path('../fixtures/ptm-sea/input/input_uniprot.json')
         self.dataset_name = 'ptmsea_test'
 
         response = client.post('/ssgsea/ssc/uniprot', data={
             "session_id": self.session_id,
             "dataset_name": self.dataset_name,
-            "file": self.input_json.open('rb')
+            "file": self.input_file.open('rb')
         })
 
         self.actual_result = json.loads(response.data)['Result']
@@ -138,14 +143,27 @@ class TestClass:
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ssgsea()
 
+    def test_ssgsea_ssc_flanking_csv(self, client):
+        # TODO: Probably does not work yet, but I couldn't test without R
+        self.input_file = Path('../fixtures/ptm-sea/input/input_flanking.txt')
+        self.dataset_name = 'ptmsea_test_csv'
+
+        response = client.post('/ssgsea/ssc/flanking', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_file.open('rb')
+        })
+        # TODO: Rewrite tests for csv output
+        # self.actual_result = json.loads(response.data)['Result']
+
     def test_ssgsea_gc(self, client):
-        self.input_json = Path('../fixtures/ssgsea/input/input.json')
+        self.input_file = Path('../fixtures/ssgsea/input/input.json')
         self.dataset_name = 'ssgsea_gc_test'
 
         response = client.post('/ssgsea/gc', data={
             "session_id": self.session_id,
             "dataset_name": self.dataset_name,
-            "file": self.input_json.open('rb')
+            "file": self.input_file.open('rb')
         })
 
         self.actual_result = json.loads(response.data)['Result']
@@ -154,13 +172,13 @@ class TestClass:
         self.evaluate_ssgsea()
 
     def test_ssgsea_gcr(self, client):
-        self.input_json = Path('../fixtures/ssgsea/input/input.json')
+        self.input_file = Path('../fixtures/ssgsea/input/input.json')
         self.dataset_name = 'ssgsea_gcr_test'
 
         response = client.post('/ssgsea/gcr', data={
             "session_id": self.session_id,
             "dataset_name": self.dataset_name,
-            "file": self.input_json.open('rb')
+            "file": self.input_file.open('rb')
         })
 
         self.actual_result = json.loads(response.data)['Result']
@@ -169,13 +187,13 @@ class TestClass:
         self.evaluate_ssgsea()
 
     def test_go_enrichment(self, client):
-        self.input_json = Path('../fixtures/go_enrichment/input/input.json')
+        self.input_file = Path('../fixtures/go_enrichment/input/input.json')
         self.dataset_name = 'go_enrichment_test'
 
         response = client.post('/go_enrichment', data={
             "session_id": self.session_id,
             "dataset_name": self.dataset_name,
-            "file": self.input_json.open('rb')
+            "file": self.input_file.open('rb')
         })
 
         self.actual_result = json.loads(response.data)['Result']
@@ -184,13 +202,13 @@ class TestClass:
         self.evaluate_go_enrichment()
 
     def test_go_enrichment_w_custom_background(self, client):
-        self.input_json = Path('../fixtures/go_enrichment/input/input_w_background.json')
+        self.input_file = Path('../fixtures/go_enrichment/input/input_w_background.json')
         self.dataset_name = 'go_enrichment_w_custom_background_test'
 
         response = client.post('/go_enrichment', data={
             "session_id": self.session_id,
             "dataset_name": self.dataset_name,
-            "file": self.input_json.open('rb')
+            "file": self.input_file.open('rb')
         })
 
         self.actual_result = json.loads(response.data)['Result']
@@ -200,13 +218,13 @@ class TestClass:
         self.evaluate_go_enrichment()
 
     def test_ksea(self, client):
-        self.input_json = Path('../fixtures/ksea/input/input.json')
+        self.input_file = Path('../fixtures/ksea/input/input.json')
         self.dataset_name = 'ksea_test'
 
         response = client.post('/ksea', data={
             "session_id": self.session_id,
             "dataset_name": self.dataset_name,
-            "file": self.input_json.open('rb')
+            "file": self.input_file.open('rb')
         })
 
         self.actual_result = json.loads(response.data)['Result']
@@ -215,14 +233,14 @@ class TestClass:
         self.evaluate_ksea()
 
     def test_ksea_w_parameters(self, client):
-        self.input_json = Path('../fixtures/ksea/input/input.json')
+        self.input_file = Path('../fixtures/ksea/input/input.json')
         self.parameters_toml = Path('../fixtures/ksea/input/parameters.toml')
         self.dataset_name = 'ksea_test_w_parameters'
 
         response = client.post('/ksea', data={
             "session_id": self.session_id,
             "dataset_name": self.dataset_name,
-            "file": self.input_json.open('rb'),
+            "file": self.input_file.open('rb'),
             "parameters": self.parameters_toml.open('rb')
         })
 
@@ -232,13 +250,13 @@ class TestClass:
         self.evaluate_ksea()
 
     def test_ksea_rokai(self, client):
-        self.input_json = Path('../fixtures/ksea/input/input.json')
+        self.input_file = Path('../fixtures/ksea/input/input.json')
         self.dataset_name = 'ksea_rokai_test'
 
         response = client.post('/ksea/rokai', data={
             "session_id": self.session_id,
             "dataset_name": self.dataset_name,
-            "file": self.input_json.open('rb')
+            "file": self.input_file.open('rb')
         })
 
         self.actual_result = json.loads(response.data)['Result']
@@ -247,13 +265,13 @@ class TestClass:
         self.evaluate_ksea()
 
     def test_motif_enrichment(self, client):
-        self.input_json = Path('../fixtures/motif_enrichment/input/input.json')
+        self.input_file = Path('../fixtures/motif_enrichment/input/input.json')
         self.dataset_name = 'motif_enrichment_test'
 
         response = client.post('/motif_enrichment', data={
             "session_id": self.session_id,
             "dataset_name": self.dataset_name,
-            "file": self.input_json.open('rb')
+            "file": self.input_file.open('rb')
         })
 
         self.actual_result = json.loads(response.data)['Result']
@@ -261,14 +279,30 @@ class TestClass:
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_motif_enrichment()
 
+
+    def test_motif_enrichment_csv(self, client):
+        self.input_file = Path('../fixtures/motif_enrichment/input/input.txt')
+        self.dataset_name = 'motif_enrichment_test_csv'
+
+        response = client.post('/motif_enrichment', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_file.open('rb')
+        })
+        # TODO: Rewrite tests for csv output
+        self.actual_result = pd.read_csv(io.BytesIO(response.data), sep='\t')
+        expected_result_file = Path('../fixtures/motif_enrichment/expected_output/output.txt')
+        self.expected_result = pd.read_csv(expected_result_file, sep='\t')
+        self.evaluate_motif_enrichment_csv()
+
     def test_kea3(self, client):
-        self.input_json = Path('../fixtures/kea3/input/input.json')
+        self.input_file = Path('../fixtures/kea3/input/input.json')
         self.dataset_name = 'kea3_test'
 
         response = client.post('/kea3', data={
             "session_id": self.session_id,
             "dataset_name": self.dataset_name,
-            "file": self.input_json.open('rb')
+            "file": self.input_file.open('rb')
         })
 
         self.actual_result = json.loads(response.data)['Result']
@@ -277,13 +311,13 @@ class TestClass:
         self.evaluate_kea3()
 
     def test_kstar(self, client):
-        self.input_json = Path('../fixtures/kstar/input/input.json')
+        self.input_file = Path('../fixtures/kstar/input/input.json')
         self.dataset_name = 'kstar_test'
 
         response = client.post('/kstar', data={
             "session_id": self.session_id,
             "dataset_name": self.dataset_name,
-            "file": self.input_json.open('rb')
+            "file": self.input_file.open('rb')
         })
 
         self.actual_result = json.loads(response.data)['Result']
@@ -293,13 +327,13 @@ class TestClass:
 
     # Run PHONEMeS last because it takes the longest
     def test_phonemes(self, client):
-        self.input_json = Path('../fixtures/phonemes/input/input.json')
+        self.input_file = Path('../fixtures/phonemes/input/input.json')
         self.dataset_name = 'phonemes_test'
 
         response = client.post('/phonemes', data={
             "session_id": self.session_id,
             "dataset_name": self.dataset_name,
-            "file": self.input_json.open('rb')
+            "file": self.input_file.open('rb')
         })
 
         self.actual_result = json.loads(response.data)['Result']

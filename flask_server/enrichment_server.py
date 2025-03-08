@@ -94,14 +94,22 @@ def handle_ssgsea_request(ssgsea_type: Literal['ssc', 'gc', 'gcr'], ssc_input_ty
 
     filepath = post_request_processed
 
-    # Preprocess the json input into a gct file
-    ssgsea_input = ssgsea.preprocess_ssgsea(filepath, ssgsea_type != 'gcr')
+    # Preprocess the input into a gct file
+    ssgsea_input = ssgsea.preprocess_ssgsea(
+        filepath=filepath,
+        type_isnot_gcr=ssgsea_type != 'gcr',
+        input_is_json=filepath.name.lower().endswith('.json')
+    )
 
     ssgsea_combined_output = ssgsea.run_ssgsea(ssgsea_input, ssgsea_type, ssc_input_type, parameters)
 
-    return send_response(postprocess_request_response(ssgsea.postprocess_ssgsea(ssgsea_combined_output),
-                                                      f'ssGSEA ({ssgsea_type.upper()})', request_form),
-                         filepath.parent)
+    # TODO: Do not call postprocess if it is csv
+    return send_response(
+        postprocess_request_response(ssgsea.postprocess_ssgsea(
+            ssgsea_combined_output,
+            input_was_json=filepath.name.lower().endswith('.json')),
+            f'ssGSEA ({ssgsea_type.upper()})', request_form),
+        filepath.parent)
 
 
 @app.route('/ksea', methods=['POST'])
@@ -152,10 +160,16 @@ def handle_motif_enrichment_request() -> werkzeug.wrappers.Response | str:
         return post_request_processed
 
     filepath = post_request_processed
-    motif_enrichment_result = motif_enrichment.run_motif_enrichment(filepath)
+    motif_enrichment_result = motif_enrichment.run_motif_enrichment(filepath,
+                                                                    input_is_json=filepath.name.lower().endswith(
+                                                                        '.json'))
 
-    return send_response(postprocess_request_response(motif_enrichment_result, 'Motif Enrichment', request_form),
-                         filepath.parent)
+    return send_response(postprocess_request_response(
+        result_path=motif_enrichment_result,
+        method='Motif Enrichment',
+        form=request_form,
+        input_was_json=filepath.name.lower().endswith('.json')),
+        output_folder=filepath.parent)
 
 
 @app.route('/kea3', methods=['POST'])
@@ -215,18 +229,23 @@ def process_post_request(post_request: werkzeug.Request, method: str) -> tuple[P
     output_dir = Path('..') / secure_filename(form['session_id']) / secure_filename(
         form['dataset_name'] + request_url.path.replace('/', '_'))
     Path.mkdir(output_dir, parents=True, exist_ok=True)
-    input_filepath = output_dir / 'input.json'
     # Check if the POST request has the file part, and else if it has the data part
     if 'file' in post_request.files and post_request.files['file'].filename != '':
         file = post_request.files['file']
+        if post_request.files['file'].filename.lower().endswith('json'):
+            input_filepath = output_dir / 'input.json'
+        else:
+            input_filepath = output_dir / 'input.csv'
         file.save(input_filepath)
     elif 'data' in post_request.form:
         # TODO: This variant is not tested yet
-        with open(input_filepath, 'w') as o:
+        # This has to be JSON right now
+        input_filepath = output_dir / 'input.json'
+        with open(output_dir / 'input.json', 'w') as o:
             o.write(post_request.form['data'])
     else:
         return "Error: You must either provide the input data " \
-            + "as a JSON string (-F data=<JSON_String>) or as a file (-F file=@<Filepath>).\n"
+               + "as a JSON string (-F data=<JSON_String>) or as a file (-F file=@<Filepath>).\n", None, None
 
     # Process the parameters file, if present
     if 'parameters' in post_request.files and post_request.files['parameters'].filename != '':
@@ -238,12 +257,16 @@ def process_post_request(post_request: werkzeug.Request, method: str) -> tuple[P
     return input_filepath, form, parameters
 
 
-def postprocess_request_response(result_path: Path, method: str, form: dict) -> werkzeug.wrappers.Response:
-    result_raw = json.load(open(result_path))
-    result_with_log = {'Log': {'Version': VERSION}, 'Result': result_raw}
-    with open(result_path, 'w') as outfile:
-        json.dump(result_with_log, outfile)
-    print(f"{method} analysis finished. Session ID: {form['session_id']}, Dataset Name: {form['dataset_name']}.")
+def postprocess_request_response(result_path: Path,
+                                 method: str,
+                                 form: dict,
+                                 input_was_json: bool) -> werkzeug.wrappers.Response:
+    if input_was_json:
+        result_raw = json.load(open(result_path))
+        result_with_log = {'Log': {'Version': VERSION}, 'Result': result_raw}
+        with open(result_path, 'w') as outfile:
+            json.dump(result_with_log, outfile)
+        print(f"{method} analysis finished. Session ID: {form['session_id']}, Dataset Name: {form['dataset_name']}.")
     return send_file(result_path, as_attachment=False)
 
 

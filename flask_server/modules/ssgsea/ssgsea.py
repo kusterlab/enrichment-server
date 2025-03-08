@@ -4,6 +4,16 @@ import json
 import pandas as pd
 from cmapPy.pandasGEXpress import parse_gct
 from typing import Literal
+import csv
+
+
+# TODO: This violates DRY, you could make each module inherit from an abstract class that implements this
+def get_delimiter(file_path, bytes=4096):
+    sniffer = csv.Sniffer()
+    data = open(file_path, "r").read(bytes)
+    delimiter = sniffer.sniff(data).delimiter
+    return delimiter
+
 
 R_SPECIAL_CHARACTERS_MAPPING = str.maketrans({elem: '.' for elem in [
     " ",  # Space
@@ -41,11 +51,15 @@ R_SPECIAL_CHARACTERS_MAPPING = str.maketrans({elem: '.' for elem in [
 ]})
 
 
-def preprocess_ssgsea(filepath: Path, type_isnot_gcr) -> Path:
-    output_dir = filepath.parent
-    input_json = json.load(open(filepath))
-    input_df = pd.DataFrame.from_dict(input_json)
+def preprocess_ssgsea(filepath: Path, type_isnot_gcr: bool, input_is_json: bool) -> Path:
+    if input_is_json:
+        input_json = json.load(open(filepath))
+        input_df = pd.DataFrame.from_dict(input_json)
+    else:
+        delimiter = get_delimiter(filepath)
+        input_df = pd.read_csv(filepath, sep=delimiter)
 
+    output_dir = filepath.parent
     idcolumn = 'Site' if 'Site' in input_df else 'id'
 
     # If it's a non-redundant gene-centric ssGSEA, we need to eliminate duplicates
@@ -107,10 +121,12 @@ def run_ssgsea(filepath: Path, ssgsea_type: Literal['gc', 'gcr', 'ssc'],
     return Path(str(output_prefix) + '-combined.gct')
 
 
-def postprocess_ssgsea(output_gct: Path) -> Path:
-    output_json = output_gct.parent / f'{output_gct.stem}_result.json'
+def postprocess_ssgsea(output_gct: Path, input_was_json:bool) -> Path:
+
+    output_file = output_gct.parent / f'{output_gct.stem}_result.{"json" if input_was_json else "txt"}'
+
     if not output_gct.exists():
-        with open(output_json, 'w') as o:
+        with open(output_file, 'w') as o:
             o.write('[]')
     else:
         gct_parsed = parse_gct.parse(output_gct)
@@ -128,7 +144,10 @@ def postprocess_ssgsea(output_gct: Path) -> Path:
                                  + [f'Overlap ({exp})' for exp in experiment_names]
                                  + [f'Score ({exp})' for exp in experiment_names])
 
-        gct_df_joined.to_json(path_or_buf=output_json, orient='records',
-                              # indent=1  # For DEBUG
-                              )
-    return output_json
+        if input_was_json:
+            gct_df_joined.to_json(path_or_buf=output_file, orient='records',
+                                  # indent=1  # For DEBUG
+                                  )
+        else:
+            gct_df_joined.to_csv(output_file, index=False, sep='\t')
+    return output_file

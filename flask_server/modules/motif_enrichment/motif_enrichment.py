@@ -9,10 +9,18 @@ import pandas as pd
 import psite_annotation as pa
 from scipy.stats import fisher_exact
 import statsmodels.api as sm
-
+import csv
 from tqdm import tqdm
 
 tqdm.pandas()
+
+
+def get_delimiter(file_path, bytes=4096):
+    sniffer = csv.Sniffer()
+    data = open(file_path, "r").read(bytes)
+    delimiter = sniffer.sniff(data).delimiter
+    return delimiter
+
 
 PHOSPHOSITE_FASTA = "../db/Phosphosite_seq.fasta"
 ODDS_PATH = "../db/kinase_library/Motif_Odds_Ratios.txt"
@@ -26,18 +34,26 @@ MOTIF_COLS = [
 ]
 
 
-def run_motif_enrichment(filepath: Path) -> Path:
-    input_json = json.load(open(filepath))
-    input_df = pd.DataFrame.from_dict(input_json)
+def run_motif_enrichment(filepath: Path, input_is_json: bool) -> Path:
+    if input_is_json:
+        input_json = json.load(open(filepath))
+        input_df = pd.DataFrame.from_dict(input_json)
+    else:
+        delimiter = get_delimiter(filepath)
+        input_df = pd.read_csv(filepath, sep=delimiter)
+
     result_df = run_motif_enrichment_dataframe(input_df)
 
-    output_json = filepath.parent / f"motif_enrichment_result.json"
-    result_df.to_json(
-        path_or_buf=output_json,
-        orient="records",
-        # indent=1
-    )
-    return output_json
+    output_file = filepath.parent / f"motif_enrichment_result.{'json' if input_is_json else 'txt'}"
+    if input_is_json:
+        result_df.to_json(
+            path_or_buf=output_file,
+            orient="records",
+            # indent=1
+        )
+    else:
+        result_df.to_csv(output_file, index=False, sep='\t')
+    return output_file
 
 
 def run_motif_enrichment_dataframe(input_df: pd.DataFrame) -> pd.DataFrame:
@@ -117,8 +133,8 @@ def quantile(s, Q_kinase):
 
 
 def motif_enrichment_analysis(
-    df,
-    site_weights=False,
+        df,
+        site_weights=False,
 ):
     """
     Motif enrichment according to the Johnson paper DOI: 10.1038/s41586-022-05575-3 as default values.
@@ -168,7 +184,8 @@ def motif_enrichment_analysis(
     return enrichment
 
 
-def find_upstream_kinase(seq: pd.Series, Q, P, top_n=15, threshold=-np.inf, threshold_type='percentile', sort_type='percentile'):
+def find_upstream_kinase(seq: pd.Series, Q, P, top_n=15, threshold=-np.inf, threshold_type='percentile',
+                         sort_type='percentile'):
     """
     Score all kinases against input sequence based on Q-Matrix and P-Matrix.
     Percentile is the standard metic according to Johnson et al. and has the best perfromace in my hands as well.
@@ -197,7 +214,7 @@ def find_upstream_kinase(seq: pd.Series, Q, P, top_n=15, threshold=-np.inf, thre
     """
     if len(seq["Site sequence context"]) == 0:
         return ("", "", "", "")
-    
+
     # Map the different parameter options
     str_to_int_map = {'score': 0, 'percentile': 1, 'total': 2, }
     if threshold_type not in str_to_int_map:
