@@ -426,3 +426,40 @@ class TestClass:
         expected_result_file = Path('../fixtures/phonemes/expected_output/json_skeletons.json')
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_phonemes()
+
+    def test_nofile(self, client):
+        response = client.post('/phonemes', data={
+        })
+        assert response.status_code == 400
+
+    def test_forbidden_csv_inputs(self, client):
+        # Use KSEA Input, but it could be any file ending in .csv
+        self.input_file = Path('../fixtures/ksea/input/input.csv')
+        self.dataset_name = 'forbidden_csv_test'
+
+        # Call three endpoints that have no csv
+        phonemes_response = client.post('/phonemes', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_file.open('rb')
+        })
+
+        assert phonemes_response.status_code == 400
+
+        # Call three endpoints that have no csv
+        kea3_response = client.post('/kea3', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_file.open('rb')
+        })
+
+        assert kea3_response.status_code == 400
+
+        # Call three endpoints that have no csv
+        go_enrichment_response = client.post('/go_enrichment', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_file.open('rb')
+        })
+
+        assert go_enrichment_response.status_code == 400

@@ -89,7 +89,7 @@ def handle_ssgsea_request(ssgsea_type: Literal['ssc', 'gc', 'gcr'], ssc_input_ty
 
     post_request_processed, request_form, parameters = process_post_request(request, f'ssGSEA ({ssgsea_type.upper()})')
 
-    if type(post_request_processed) is str:
+    if type(post_request_processed) is flask.Response:
         return post_request_processed
 
     filepath = post_request_processed
@@ -120,7 +120,7 @@ def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
     post_request_processed, request_form, parameters = process_post_request(request,
                                                                             'KSEA' if not ksea_type else 'RoKAI+KSEA')
 
-    if type(post_request_processed) is str:
+    if type(post_request_processed) is flask.Response:
         return post_request_processed
 
     filepath = post_request_processed
@@ -142,7 +142,7 @@ def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
 def handle_rokai_request() -> werkzeug.wrappers.Response | str:
     post_request_processed, request_form, parameters = process_post_request(request, 'RoKAI')
 
-    if type(post_request_processed) is str:
+    if type(post_request_processed) is flask.Response:
         return post_request_processed
 
     filepath = post_request_processed
@@ -162,10 +162,13 @@ def handle_rokai_request() -> werkzeug.wrappers.Response | str:
 def handle_phonemes_request() -> werkzeug.wrappers.Response | str:
     post_request_processed, request_form, parameters = process_post_request(request, 'PHONEMeS')
 
-    if type(post_request_processed) is str:
+    if type(post_request_processed) is flask.Response:
         return post_request_processed
 
     filepath = post_request_processed
+
+    if not filepath.name.lower().endswith('.json'):
+        return make_response('Error: This endpoint only supports JSON input!', 400)
 
     preprocessed_filepath = phonemes.preprocess_phonemes(filepath)
 
@@ -174,7 +177,7 @@ def handle_phonemes_request() -> werkzeug.wrappers.Response | str:
     pathway_skeletons_json = phonemes.create_pathway_skeleton(cytoscape_result)
 
     return send_response(postprocess_request_response(pathway_skeletons_json, 'PHONEMeS', request_form,
-                                                      input_was_json=filepath.name.lower().endswith('.json')),
+                                                      input_was_json=True),
                          filepath.parent)
 
 
@@ -182,7 +185,7 @@ def handle_phonemes_request() -> werkzeug.wrappers.Response | str:
 def handle_motif_enrichment_request() -> werkzeug.wrappers.Response | str:
     post_request_processed, request_form, parameters = process_post_request(request, 'Motif Enrichment')
 
-    if type(post_request_processed) is str:
+    if type(post_request_processed) is flask.Response:
         return post_request_processed
 
     filepath = post_request_processed
@@ -202,14 +205,18 @@ def handle_motif_enrichment_request() -> werkzeug.wrappers.Response | str:
 def handle_kea3_request() -> werkzeug.wrappers.Response | str:
     post_request_processed, request_form, parameters = process_post_request(request, 'KEA3')
 
-    if type(post_request_processed) is str:
+    if type(post_request_processed) is flask.Response:
         return post_request_processed
 
     filepath = post_request_processed
+
+    if not filepath.name.lower().endswith('.json'):
+        return make_response('Error: This endpoint only supports JSON input!', 400)
+
     kea3_result = kea3.run_kea3_api(filepath)
 
     return send_response(postprocess_request_response(kea3_result, 'KEA3', request_form,
-                                                      input_was_json=filepath.name.lower().endswith('.json')),
+                                                      input_was_json=True),
                          filepath.parent)
 
 
@@ -217,7 +224,7 @@ def handle_kea3_request() -> werkzeug.wrappers.Response | str:
 def handle_kstar_request() -> werkzeug.wrappers.Response | str:
     post_request_processed, request_form, parameters = process_post_request(request, 'KSTAR')
 
-    if type(post_request_processed) is str:
+    if type(post_request_processed) is flask.Response:
         return post_request_processed
 
     filepath = post_request_processed
@@ -233,15 +240,17 @@ def handle_kstar_request() -> werkzeug.wrappers.Response | str:
 def handle_go_enrichment_request() -> werkzeug.wrappers.Response | str:
     post_request_processed, request_form, parameters = process_post_request(request, 'GO Enrichment')
 
-    if type(post_request_processed) is str:
+    if type(post_request_processed) is flask.Response:
         return post_request_processed
 
     filepath = post_request_processed
+    if not filepath.name.lower().endswith('.json'):
+        return make_response('Error: This endpoint only supports JSON input!', 400)
 
     go_enrichment_result = go_enrichment.run_go_enrichment(filepath, parameters)
 
     return send_response(postprocess_request_response(go_enrichment_result, 'GO Enrichment', request_form,
-                                                      input_was_json=filepath.name.lower().endswith('.json')),
+                                                      input_was_json=True),
                          filepath.parent)
 
 
@@ -276,8 +285,8 @@ def process_post_request(post_request: werkzeug.Request, method: str) -> tuple[P
         with open(output_dir / 'input.json', 'w') as o:
             o.write(post_request.form['data'])
     else:
-        return "Error: You must either provide the input data " \
-               + "as a JSON string (-F data=<JSON_String>) or as a file (-F file=@<Filepath>).\n", None, None
+        return make_response("Error: You must either provide the input data " \
+               + "as a JSON string (-F data=<JSON_String>) or as a file (-F file=@<Filepath>).\n", 400), None, None
 
     # Process the parameters file, if present
     if 'parameters' in post_request.files and post_request.files['parameters'].filename != '':
