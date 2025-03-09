@@ -6,15 +6,28 @@ import numpy as np
 import pandas as pd
 import psite_annotation as pa
 from kstar import helpers, calculate, mapping, config
+import csv
 
 
-def run_kstar(filepath: Path) -> Path:
-    output_dir = filepath.parent
-    input_json = json.load(open(filepath))
-    input_df = pd.DataFrame.from_dict(input_json)
+def get_delimiter(file_path, bytes=4096):
+    sniffer = csv.Sniffer()
+    data = open(file_path, "r").read(bytes)
+    delimiter = sniffer.sniff(data).delimiter
+    return delimiter
+
+
+def run_kstar(filepath: Path, input_is_json: bool) -> Path:
+    if input_is_json:
+        input_json = json.load(open(filepath))
+        input_df = pd.DataFrame.from_dict(input_json)
+    else:
+        delimiter = get_delimiter(filepath)
+        input_df = pd.read_csv(filepath, sep=str(delimiter))
+
     data_columns = [col for col in input_df if
                     col not in ['Modified sequence', 'Proteins']]
 
+    output_dir = filepath.parent
     # We need to convert the sequences into +/-7 flanking format with modified residues in lowercase
     input_df = pa.addPeptideAndPsitePositions(input_df, '../db/Phosphosite_seq.fasta', pspInput=True,
                                               context_left=7, context_right=7, retain_other_mods=True)
@@ -44,6 +57,7 @@ def run_kstar(filepath: Path) -> Path:
 
     # Test if there is enough evidence to perform ST and/or Y enrichment, only then perform it
     result = dict(ST=[], Y=[])
+    result_dfs = []
     for phospho_type in ['ST', 'Y']:
         for direction in ['up', 'down']:
             kinact = calculate.KinaseActivity(exp_mapper.experiment,
@@ -64,16 +78,34 @@ def run_kstar(filepath: Path) -> Path:
 
                 result_df = np.log10(kinact_dict[phospho_type].activities) * (-1 if direction == 'up' else 1)
 
-                # Post Process and convert into JSON
-                result_list = result_df.rename({
+                result_df = result_df.rename({
                     # Trim away the 'data:'
-                    col: col[5:] for col in kinact_dict[phospho_type].activities.columns
-                }, axis=1).reset_index(names='Kinase').to_dict(orient='records')
+                    col: f'{direction} ({col[5:]})' for col in kinact_dict[phospho_type].activities.columns
+                }, axis=1)
+
+
+
+                # Post Process and convert into JSON
+                # TODO: The separation into ST and Y is not actually necessary (since obviously, there are no duplicates)
+                # But right now, PTMNavigator wouldn't like it so do not remove it for now
+                result_list = result_df.reset_index(names='Kinase').to_dict(orient='records')
+
+                result_dfs.append(result_df)
 
                 result[phospho_type] += result_list
 
-    output_json = output_dir / f'kstar_result.json'
-    with open(output_json, 'w') as outfile:
-        json.dump(result, outfile)
+    output_file = output_dir / f'kstar_result.{"json" if input_is_json else "txt"}'
+    if input_is_json:
+        with open(output_file, 'w') as outfile:
+            json.dump(result, outfile)
+    else:
+        # We have four dataframes, each of which has half of the final rows or columns
+        # Basically, each data frame describes a quarter of the full data (ST or Y kinases, and up or down)
+        # So we need to use a two-level concat to fuse them into one
+        full_result_df = pd.concat([pd.concat([result_dfs[0], result_dfs[1]], axis=1),
+                                    pd.concat([result_dfs[2], result_dfs[3]], axis=1)],
+                                   axis=0)
 
-    return output_json
+        full_result_df.reset_index(names='Kinase').to_csv(output_file, index=False, sep='\t')
+
+    return output_file

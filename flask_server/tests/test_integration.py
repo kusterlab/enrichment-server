@@ -116,13 +116,20 @@ class TestClass:
                     assert rank_actual['TF'] == rank_expected['TF']
                     assert rank_actual['Score'] == rank_expected['Score']
 
-    def evaluate_kstar(self):
+    def evaluate_kstar_json(self):
         for phospho_type in ['ST', 'Y']:
             assert len(self.actual_result[phospho_type]) == len(self.expected_result[phospho_type])
             for actual_elem, expected_elem in zip(self.actual_result[phospho_type], self.expected_result[phospho_type]):
                 assert actual_elem['Kinase'] == expected_elem['Kinase']
-                assert round(actual_elem['Experiment01'], 5) == round(expected_elem['Experiment01'], 5)
-                assert round(actual_elem['Experiment02'], 5) == round(expected_elem['Experiment02'], 5)
+                if 'up (Experiment01)' in actual_elem:
+                    assert round(actual_elem['up (Experiment01)'], 5) == round(expected_elem['up (Experiment01)'], 5)
+                else:
+                    assert round(actual_elem['down (Experiment02)'], 5) == round(expected_elem['down (Experiment02)'], 5)
+
+    def evaluate_kstar_csv(self):
+        pd.testing.assert_frame_equal(self.actual_result, self.expected_result,
+                                      check_exact=False, atol=1e-4)
+
 
     def test_get_status(self, client):
         response = client.get('/')
@@ -374,9 +381,9 @@ class TestClass:
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_kea3()
 
-    def test_kstar(self, client):
+    def test_kstar_json(self, client):
         self.input_file = Path('../fixtures/kstar/input/input.json')
-        self.dataset_name = 'kstar_test'
+        self.dataset_name = 'kstar_test_json'
 
         response = client.post('/kstar', data={
             "session_id": self.session_id,
@@ -386,8 +393,23 @@ class TestClass:
 
         self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/kstar/expected_output/output.json')
-        self.expected_result = json.load(open(expected_result_file))
-        self.evaluate_kstar()
+        self.expected_result = json.load(open(expected_result_file))['Result']
+        self.evaluate_kstar_json()
+
+    def test_kstar_csv(self, client):
+        self.input_file = Path('../fixtures/kstar/input/input.csv')
+        self.dataset_name = 'kstar_test_csv'
+
+        response = client.post('/kstar', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_file.open('rb')
+        })
+
+        self.actual_result = pd.read_csv(io.BytesIO(response.data), sep='\t')
+        expected_result_file = Path('../fixtures/kstar/expected_output/output.txt')
+        self.expected_result = pd.read_csv(expected_result_file, sep='\t')
+        self.evaluate_kstar_csv()
 
     # Run PHONEMeS last because it takes the longest
     def test_phonemes(self, client):
