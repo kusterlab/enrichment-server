@@ -64,7 +64,9 @@ def preprocess_ssgsea(filepath: Path, type_isnot_gcr: bool, input_is_json: bool)
 
     # If it's a non-redundant gene-centric ssGSEA, we need to eliminate duplicates
     if type_isnot_gcr:
-        def abs_max_signed(group):
+        def abs_max_signed(group: pd.api.typing.DataFrameGroupBy):
+            if not group.any():
+                return float('nan')
             idx = group.abs().idxmax()
             return group.loc[idx] if pd.notna(idx) else float('nan')
 
