@@ -41,7 +41,7 @@ def run_gene_ontology_fisher_test(query: set, annotation: GOAnnotation, backgrou
             f'Intersection ({experiment_name})': ",".join(annotation_query_overlap)}
 
 
-def run_go_enrichment(filepath: Path, parameters: dict) -> Path:
+def run_go_enrichment(filepath: Path) -> Path:
     go_terms = load_go_annotations()
 
     input_json = CIDict(json.load(open(filepath)))

@@ -238,7 +238,7 @@ def handle_kstar_request() -> werkzeug.wrappers.Response | str:
 
 @app.route('/go_enrichment', methods=['POST'])
 def handle_go_enrichment_request() -> werkzeug.wrappers.Response | str:
-    post_request_processed, request_form, parameters = process_post_request(request, 'GO Enrichment')
+    post_request_processed, request_form, _ = process_post_request(request, 'GO Enrichment')
 
     if type(post_request_processed) is flask.Response:
         return post_request_processed
@@ -247,7 +247,7 @@ def handle_go_enrichment_request() -> werkzeug.wrappers.Response | str:
     if not filepath.name.lower().endswith('.json'):
         return make_response('Error: This endpoint only supports JSON input!', 400)
 
-    go_enrichment_result = go_enrichment.run_go_enrichment(filepath, parameters)
+    go_enrichment_result = go_enrichment.run_go_enrichment(filepath)
 
     return send_response(postprocess_request_response(go_enrichment_result, 'GO Enrichment', request_form,
                                                       input_was_json=True),
