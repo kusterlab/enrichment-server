@@ -230,6 +230,7 @@ def handle_kstar_request() -> werkzeug.wrappers.Response | str:
 
     filepath = post_request_processed
     kstar_result = k_star.run_kstar(filepath,
+                                    parameters,
                                     input_is_json=filepath.name.lower().endswith('.json'))
 
     return send_response(postprocess_request_response(kstar_result, 'KSTAR', request_form,

@@ -16,7 +16,7 @@ def get_delimiter(file_path, bytes=4096):
     return delimiter
 
 
-def run_kstar(filepath: Path, input_is_json: bool) -> Path:
+def run_kstar(filepath: Path, parameters: dict, input_is_json: bool) -> Path:
     if input_is_json:
         input_json = json.load(open(filepath))
         input_df = pd.DataFrame.from_dict(input_json)
@@ -63,8 +63,8 @@ def run_kstar(filepath: Path, input_is_json: bool) -> Path:
             kinact = calculate.KinaseActivity(exp_mapper.experiment,
                                               activity_log,
                                               phospho_type=phospho_type)
-            threshold_test = kinact.test_threshold(agg='mean',
-                                                   threshold=0,
+            threshold_test = kinact.test_threshold(agg=parameters.get('agg', 'mean'),  # mean, max, min, count,
+                                                   threshold=parameters.get('threshold', 0),
                                                    greater=(direction == 'up'),
                                                    return_evidence_sizes=True)
 
@@ -72,7 +72,8 @@ def run_kstar(filepath: Path, input_is_json: bool) -> Path:
                 kinact_dict = calculate.enrichment_analysis(exp_mapper.experiment, activity_log, networks,
                                                             phospho_types=[phospho_type],
                                                             # We already filtered for regulations, so 0 is an acceptable threshold
-                                                            agg='mean', threshold=0,
+                                                            agg=parameters.get('agg', 'mean'),
+                                                            threshold=parameters.get('threshold', 0),
                                                             # We expect kinase inhibition, so check for values smaller than the threshold
                                                             greater=(direction == 'up'), PROCESSES=1)
 
@@ -82,7 +83,6 @@ def run_kstar(filepath: Path, input_is_json: bool) -> Path:
                     # Trim away the 'data:'
                     col: f'{direction} ({col[5:]})' for col in kinact_dict[phospho_type].activities.columns
                 }, axis=1)
-
 
 
                 # Post Process and convert into JSON

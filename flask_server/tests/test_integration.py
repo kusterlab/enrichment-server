@@ -429,6 +429,24 @@ class TestClass:
         self.expected_result = pd.read_csv(expected_result_file, sep='\t')
         self.evaluate_kstar_csv()
 
+    def test_kstar_w_parameters(self, client):
+        self.input_file = Path('../fixtures/kstar/input/input.csv')
+        self.parameters_toml = Path('../fixtures/kstar/input/parameters.toml')
+
+        self.dataset_name = 'kstar_test_w_parameters'
+
+        response = client.post('/kstar', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_file.open('rb'),
+            "parameters": self.parameters_toml.open('rb')
+        })
+
+        self.actual_result = pd.read_csv(io.BytesIO(response.data), sep='\t')
+        expected_result_file = Path('../fixtures/kstar/expected_output/output_w_parameters.txt')
+        self.expected_result = pd.read_csv(expected_result_file, sep='\t')
+        self.evaluate_kstar_csv()
+
     # Run PHONEMeS last because it takes the longest
     def test_phonemes(self, client):
         self.input_file = Path('../fixtures/phonemes/input/input.json')
