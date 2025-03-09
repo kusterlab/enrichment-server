@@ -54,6 +54,17 @@ class TestClass:
                 [1, 2, 3])
             for res, exp in zip(self.actual_result, self.expected_result))
 
+    def evaluate_rokai(self):
+        assert len(self.actual_result) == len(self.expected_result) and all(
+            res['Gene'] == exp['Gene'] and
+            all(round(res[f'Activity (Quantification{suffix})'], 5) == round(exp[f'Activity (Quantification{suffix})'],
+                                                                             5) for suffix in
+                ['', '.2']) and
+            all(round(res[f'FDR (Quantification{suffix})'], 5) == round(
+                exp[f'FDR (Quantification{suffix})'], 5) for suffix in
+                ['', '.2'])
+            for res, exp in zip(self.actual_result, self.expected_result))
+
     def evaluate_phonemes(self):
         assert len(self.actual_result) == len(self.expected_result) and all(
             res['pathway'] == exp['pathway'] and
@@ -263,6 +274,22 @@ class TestClass:
         expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea_rokai.json')
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ksea()
+
+    #TODO: Also run with params!
+    def test_rokai(self, client):
+        self.input_json = Path('../fixtures/rokai/input/input.json')
+        self.dataset_name = 'rokai_test'
+
+        response = client.post('/rokai', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_json.open('rb')
+        })
+
+        self.actual_result = json.loads(response.data)['Result']
+        expected_result_file = Path('../fixtures/rokai/expected_output/rokai_result.json')
+        self.expected_result = json.load(open(expected_result_file))['Result']
+        self.evaluate_rokai()
 
     def test_motif_enrichment(self, client):
         self.input_file = Path('../fixtures/motif_enrichment/input/input.json')

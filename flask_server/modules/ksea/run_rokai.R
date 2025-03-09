@@ -3,12 +3,18 @@ source("../RokaiApp/compute_pvalues.R")
 source("../RokaiApp/rokai_core.R")
 source("../RokaiApp/rokai_circuit.R")
 source("../RokaiApp/rokai_weights.R")
+source("../RokaiApp/rokai_kinase_weights.R")
+source("../RokaiApp/rokai_inference.R")
+source("../RokaiApp/compute_pvalues.R")
 
 ### Parse arguments
 args <- commandArgs(trailingOnly = TRUE)
 
 input_csv <- args[1]
 output_csv <- args[2]
+only_refine_phospho_profiles_str <- args[3]
+
+only_refine_phospho_profiles <- tolower(only_refine_phospho_profiles_str) %in% c('true', 't')
 
 ### Load the network
 network_file <- '../RokaiApp/data/rokai_network_data_uniprotkb_human.rds'
@@ -82,12 +88,42 @@ for (experiment in experiment_names) {
     Ws2s <- Ws2s | NetworkData$net$Wsite2site.coev
     Ws2s <- Ws2s[validSites, validSites]
     rc <- rokai_core(Xv, Sx, wk2s, Wk2k, Ws2s)
-    rokai_result_experiment <- data.frame(phospho_data[valids, 'Site'][order(indices[valids])], rc$Xs)
-    names(rokai_result_experiment) <- c('Site', experiment)
+
+
+    if (only_refine_phospho_profiles) {
+      rokai_result_experiment <- data.frame(phospho_data[valids, 'Site'][order(indices[valids])], rc$Xs)
+      names(rokai_result_experiment) <- c('Site', experiment)
+    }else {
+      #Run the kinase activity inference part of RoKAI
+      Fk <- rokai_kinase_weights(Xv, wk2s, rc$F)
+      ri <- rokai_inference(Xv, Sx, Fk)
+      A <- ri$A
+      S <- ri$S
+      Z <- ri$Z
+      res <- compute_pvalues(as.matrix(Z))
+      K <- NetworkData$Kinase
+      #Define Column names experiment-specific
+      activity_col <- paste0('Activity (', experiment, ')')
+      std_err_col <- paste0('StdErr (', experiment, ')')
+      zscore_col <- paste0('ZScore (', experiment, ')')
+      fdr_col <- paste0('FDR (', experiment, ')')
+      K[activity_col] <- as.matrix(A)
+      K[std_err_col] <- as.matrix(S)
+      K[zscore_col] <- as.matrix(Z)
+      K[fdr_col] <- res$QValues
+      isPhosphatase <- K$Type == "Phosphatase"
+      K[isPhosphatase, activity_col] <- -1 * K[isPhosphatase, activity_col]
+      K[isPhosphatase, zscore_col] <- -1 * K[isPhosphatase, zscore_col]
+
+      rokai_result_experiment <- K[complete.cases(K), c('Gene', activity_col, std_err_col, zscore_col, fdr_col)]
+    }
     rokai_result_all[[length(rokai_result_all) + 1]] <- rokai_result_experiment
   }, error = function(e) e)
 }
 
-rokai_result_singledf <- Reduce(function(x, y) merge(x, y, by = 'Site', all = TRUE), rokai_result_all)
-
+if (only_refine_phospho_profiles) {
+  rokai_result_singledf <- Reduce(function(x, y) merge(x, y, by = 'Site', all = TRUE), rokai_result_all)
+} else {
+  rokai_result_singledf <- Reduce(function(x, y) merge(x, y, by = 'Gene', all = TRUE), rokai_result_all)
+}
 write.csv(rokai_result_singledf, output_csv, quote = F, row.names = F)

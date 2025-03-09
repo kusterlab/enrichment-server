@@ -112,7 +112,9 @@ def handle_ssgsea_request(ssgsea_type: Literal['ssc', 'gc', 'gcr'], ssc_input_ty
         filepath.parent)
 
 
+@app.route('/kinact', methods=['POST'])
 @app.route('/ksea', methods=['POST'])
+@app.route('/kinact/<string:ksea_type>', methods=['POST'])
 @app.route('/ksea/<string:ksea_type>', methods=['POST'])
 def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
     post_request_processed, request_form, parameters = process_post_request(request,
@@ -124,12 +126,34 @@ def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
     filepath = post_request_processed
 
     preprocessed_filepath = ksea.preprocess_ksea(filepath)
+    # TODO: 'rokai' is the only actually possible value for ksea_type. It's only about presence or absence.
+    # Is there a more elegant way to handle this?
     if ksea_type == 'rokai':
-        preprocessed_filepath = ksea.run_rokai(preprocessed_filepath)
+        preprocessed_filepath = ksea.run_rokai(preprocessed_filepath, only_refine_phospho_profiles=True)
 
     ksea_result = ksea.perform_ksea(preprocessed_filepath, parameters)
     return send_response(postprocess_request_response(
         ksea_result, 'KSEA' if not ksea_type else 'RoKAI+KSEA', request_form),
+        filepath.parent)
+
+
+@app.route('/rokai', methods=['POST'])
+def handle_rokai_request() -> werkzeug.wrappers.Response | str:
+    post_request_processed, request_form, parameters = process_post_request(request, 'RoKAI')
+
+    if type(post_request_processed) is str:
+        return post_request_processed
+
+    filepath = post_request_processed
+
+    preprocessed_filepath = ksea.preprocess_ksea(filepath)
+    rokai_result_csv_path = ksea.run_rokai(preprocessed_filepath, only_refine_phospho_profiles=False)
+
+    # TODO: Maybe in CSV Mode skip this
+    rokai_result_json_path = ksea.post_process_rokai(rokai_result_csv_path)
+
+    return send_response(postprocess_request_response(
+        rokai_result_json_path, 'RoKAI', request_form),
         filepath.parent)
 
 
