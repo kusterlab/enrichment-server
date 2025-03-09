@@ -1,0 +1,4 @@
+top_n = 10
+threshold = 0
+threshold_type = 'score'
+sort_type = 'score'

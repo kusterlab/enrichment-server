@@ -352,6 +352,24 @@ class TestClass:
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_motif_enrichment()
 
+
+    def test_motif_enrichment_w_parameters(self, client):
+        self.input_file = Path('../fixtures/motif_enrichment/input/input.json')
+        self.parameters_toml = Path('../fixtures/motif_enrichment/input/parameters.toml')
+        self.dataset_name = 'motif_enrichment_test_w_parameters'
+
+        response = client.post('/motif_enrichment', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_file.open('rb'),
+            "parameters": self.parameters_toml.open('rb')
+        })
+
+        self.actual_result = json.loads(response.data)['Result']
+        expected_result_file = Path('../fixtures/motif_enrichment/expected_output/output_w_parameters.json')
+        self.expected_result = json.load(open(expected_result_file))['Result']
+        self.evaluate_motif_enrichment()
+
     def test_motif_enrichment_csv(self, client):
         self.input_file = Path('../fixtures/motif_enrichment/input/input.txt')
         self.dataset_name = 'motif_enrichment_test_csv'

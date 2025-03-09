@@ -190,6 +190,7 @@ def handle_motif_enrichment_request() -> werkzeug.wrappers.Response | str:
 
     filepath = post_request_processed
     motif_enrichment_result = motif_enrichment.run_motif_enrichment(filepath,
+                                                                    parameters,
                                                                     input_is_json=filepath.name.lower().endswith(
                                                                         '.json'))
 

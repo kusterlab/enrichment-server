@@ -34,7 +34,7 @@ MOTIF_COLS = [
 ]
 
 
-def run_motif_enrichment(filepath: Path, input_is_json: bool) -> Path:
+def run_motif_enrichment(filepath: Path, parameters: dict, input_is_json: bool) -> Path:
     if input_is_json:
         input_json = json.load(open(filepath))
         input_df = pd.DataFrame.from_dict(input_json)
@@ -42,7 +42,7 @@ def run_motif_enrichment(filepath: Path, input_is_json: bool) -> Path:
         delimiter = get_delimiter(filepath)
         input_df = pd.read_csv(filepath, sep=str(delimiter))
 
-    result_df = run_motif_enrichment_dataframe(input_df)
+    result_df = run_motif_enrichment_dataframe(input_df, parameters)
 
     output_file = filepath.parent / f"motif_enrichment_result.{'json' if input_is_json else 'txt'}"
     if input_is_json:
@@ -56,7 +56,7 @@ def run_motif_enrichment(filepath: Path, input_is_json: bool) -> Path:
     return output_file
 
 
-def run_motif_enrichment_dataframe(input_df: pd.DataFrame) -> pd.DataFrame:
+def run_motif_enrichment_dataframe(input_df: pd.DataFrame, parameters:dict) -> pd.DataFrame:
     ## Load the ODD ratios
     ODDS = pd.read_csv(ODDS_PATH, sep='\t', index_col=['Kinase', 'Position', 'AA'])
 
@@ -95,6 +95,10 @@ def run_motif_enrichment_dataframe(input_df: pd.DataFrame) -> pd.DataFrame:
         find_upstream_kinase,
         Q=QUANTILES,
         P=ODDS,
+        top_n=parameters.get('top_n', 15),
+        threshold=parameters.get('threshold', -np.inf),
+        threshold_type=parameters.get('threshold_type', 'percentile'),
+        sort_type=parameters.get('sort_type', 'percentile'),
         result_type="expand",
         axis=1,
     )
