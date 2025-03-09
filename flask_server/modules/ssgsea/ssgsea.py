@@ -8,9 +8,9 @@ import csv
 
 
 # TODO: This violates DRY, you could make each module inherit from an abstract class that implements this
-def get_delimiter(file_path, bytes=4096):
+def get_delimiter(file_path: Path, bytes_to_read: int = 4096):
     sniffer = csv.Sniffer()
-    data = open(file_path, "r").read(bytes)
+    data = open(file_path, "r").read(bytes_to_read)
     delimiter = sniffer.sniff(data).delimiter
     return delimiter
 
@@ -57,7 +57,7 @@ def preprocess_ssgsea(filepath: Path, type_isnot_gcr: bool, input_is_json: bool)
         input_df = pd.DataFrame.from_dict(input_json)
     else:
         delimiter = get_delimiter(filepath)
-        input_df = pd.read_csv(filepath, sep=delimiter)
+        input_df = pd.read_csv(filepath, sep=str(delimiter))
 
     output_dir = filepath.parent
     idcolumn = 'Site' if 'Site' in input_df else 'id'

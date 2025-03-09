@@ -3,13 +3,25 @@ import json
 import subprocess
 import pandas as pd
 import kinact
+import csv
 
 
-def preprocess_ksea(filepath: Path) -> Path:
+def get_delimiter(file_path, bytes=4096):
+    sniffer = csv.Sniffer()
+    data = open(file_path, "r").read(bytes)
+    delimiter = sniffer.sniff(data).delimiter
+    return delimiter
+
+
+def preprocess_ksea(filepath: Path, input_is_json: bool) -> Path:
+    if input_is_json:
+        input_json = json.load(open(filepath))
+        input_df = pd.DataFrame.from_dict(input_json)
+    else:
+        delimiter = get_delimiter(filepath)
+        input_df = pd.read_csv(filepath, sep=str(delimiter))
+
     output_dir = filepath.parent
-    input_json = json.load(open(filepath))
-    input_df = pd.DataFrame.from_dict(input_json)
-
     # Todo: Merge with preprocess_ssgsea function
     idcolumn = 'Site' if 'Site' in input_df else 'id'
 
@@ -42,7 +54,7 @@ def run_rokai(filepath: Path, only_refine_phospho_profiles: bool) -> Path:
     return output_path
 
 
-def perform_ksea(filepath: Path, parameters: dict) -> Path:
+def perform_ksea(filepath: Path, parameters: dict, input_is_json: bool) -> Path:
     input_df = pd.read_csv(filepath)
     input_df.set_index('Site', inplace=True)
 
@@ -67,7 +79,7 @@ def perform_ksea(filepath: Path, parameters: dict) -> Path:
                 kinase_overlap = list(substrates.intersection(experiment_sites))
                 if len(kinase_overlap) > 0:
                     overlap[kinase] = list(substrates.intersection(experiment_sites))
-                    percent_overlap[kinase] = 100*len(overlap[kinase]) / len(substrates)
+                    percent_overlap[kinase] = 100 * len(overlap[kinase]) / len(substrates)
 
             res = pd.DataFrame({
                 f'Score ({experiment})': scores,

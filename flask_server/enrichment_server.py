@@ -103,7 +103,6 @@ def handle_ssgsea_request(ssgsea_type: Literal['ssc', 'gc', 'gcr'], ssc_input_ty
 
     ssgsea_combined_output = ssgsea.run_ssgsea(ssgsea_input, ssgsea_type, ssc_input_type, parameters)
 
-    # TODO: Do not call postprocess if it is csv
     return send_response(
         postprocess_request_response(ssgsea.postprocess_ssgsea(
             ssgsea_combined_output,
@@ -126,13 +125,13 @@ def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
 
     filepath = post_request_processed
 
-    preprocessed_filepath = ksea.preprocess_ksea(filepath)
+    preprocessed_filepath = ksea.preprocess_ksea(filepath, filepath.name.lower().endswith('.json'))
     # TODO: 'rokai' is the only actually possible value for ksea_type. It's only about presence or absence.
     # Is there a more elegant way to handle this?
     if ksea_type == 'rokai':
         preprocessed_filepath = ksea.run_rokai(preprocessed_filepath, only_refine_phospho_profiles=True)
 
-    ksea_result = ksea.perform_ksea(preprocessed_filepath, parameters)
+    ksea_result = ksea.perform_ksea(preprocessed_filepath, parameters, filepath.name.lower().endswith('.json'))
     return send_response(postprocess_request_response(
         ksea_result, 'KSEA' if not ksea_type else 'RoKAI+KSEA', request_form,
         input_was_json=filepath.name.lower().endswith('.json')),
@@ -148,14 +147,14 @@ def handle_rokai_request() -> werkzeug.wrappers.Response | str:
 
     filepath = post_request_processed
 
-    preprocessed_filepath = ksea.preprocess_ksea(filepath)
-    rokai_result_csv_path = ksea.run_rokai(preprocessed_filepath, only_refine_phospho_profiles=False)
+    preprocessed_filepath = ksea.preprocess_ksea(filepath, filepath.name.lower().endswith('.json'))
+    rokai_result_path = ksea.run_rokai(preprocessed_filepath, only_refine_phospho_profiles=False)
 
-    # TODO: Maybe in CSV Mode skip this
-    rokai_result_json_path = ksea.post_process_rokai(rokai_result_csv_path)
+    if filepath.name.lower().endswith('.json'):
+        rokai_result_path = ksea.post_process_rokai(rokai_result_path)
 
     return send_response(postprocess_request_response(
-        rokai_result_json_path, 'RoKAI', request_form, input_was_json=filepath.name.lower().endswith('.json')),
+        rokai_result_path, 'RoKAI', request_form, input_was_json=filepath.name.lower().endswith('.json')),
         filepath.parent)
 
 

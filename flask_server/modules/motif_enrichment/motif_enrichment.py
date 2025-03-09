@@ -40,7 +40,7 @@ def run_motif_enrichment(filepath: Path, input_is_json: bool) -> Path:
         input_df = pd.DataFrame.from_dict(input_json)
     else:
         delimiter = get_delimiter(filepath)
-        input_df = pd.read_csv(filepath, sep=delimiter)
+        input_df = pd.read_csv(filepath, sep=str(delimiter))
 
     result_df = run_motif_enrichment_dataframe(input_df)
 
