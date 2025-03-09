@@ -428,7 +428,11 @@ class TestClass:
         self.evaluate_phonemes()
 
     def test_nofile(self, client):
+        self.dataset_name = 'no_file'
+
         response = client.post('/phonemes', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name
         })
         assert response.status_code == 400
 
