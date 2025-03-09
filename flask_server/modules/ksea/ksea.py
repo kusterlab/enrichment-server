@@ -89,20 +89,23 @@ def perform_ksea(filepath: Path, parameters: dict, input_is_json: bool) -> Path:
             ksea_results.append(res)
         except ZeroDivisionError:
             continue
-    output_json = filepath.parent / f'ksea_result.json'
+
+    output_file = filepath.parent / f'ksea_result.{"json" if input_is_json else "txt"}'
 
     if len(ksea_results) == 0:
-        with open(output_json, 'w') as o:
+        with open(output_file, 'w') as o:
             o.write(str(ksea_results))
     else:
         ksea_results_df = pd.concat(ksea_results, axis=1)
         ksea_results_df.index.name = 'Gene'
-
-        ksea_results_df.reset_index().to_json(path_or_buf=output_json,
-                                              orient='records',
-                                              # indent=1  # For DEBUG
-                                              )
-    return output_json
+        if input_is_json:
+            ksea_results_df.reset_index().to_json(path_or_buf=output_file,
+                                                  orient='records',
+                                                  # indent=1  # For DEBUG
+                                                  )
+        else:
+            ksea_results_df.reset_index().to_csv(output_file, index=False, sep='\t')
+    return output_file
 
 
 def post_process_rokai(csv_path: Path) -> Path:

@@ -62,6 +62,21 @@ class TestClass:
                 [1, 2, 3])
             for res, exp in zip(self.actual_result, self.expected_result))
 
+    def evaluate_ksea_csv(self):
+        pd.testing.assert_series_equal(self.actual_result['Gene'], self.expected_result['Gene'])
+        pd.testing.assert_series_equal(self.actual_result['Score (Experiment_1)'],
+                                       self.expected_result['Score (Experiment_1)'], check_exact=False,
+                                       atol=1e-4)
+        pd.testing.assert_series_equal(self.actual_result['adj p-val (Experiment_2)'],
+                                       self.expected_result['adj p-val (Experiment_2)'], check_exact=False,
+                                       atol=1e-4)
+        pd.testing.assert_series_equal(
+            self.actual_result['Overlap (Experiment_3)'].apply(lambda s: json.loads(s.replace("'", '"'))).apply(
+                set),
+            self.expected_result['Overlap (Experiment_3)'].apply(
+                lambda s: json.loads(s.replace("'", '"'))).apply(set))
+
+    #TODO: Cannot test rokai right now, do it later!
     def evaluate_rokai(self):
         assert len(self.actual_result) == len(self.expected_result) and all(
             res['Gene'] == exp['Gene'] and
@@ -237,9 +252,9 @@ class TestClass:
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_go_enrichment()
 
-    def test_ksea(self, client):
+    def test_ksea_json(self, client):
         self.input_file = Path('../fixtures/ksea/input/input.json')
-        self.dataset_name = 'ksea_test'
+        self.dataset_name = 'ksea_test_json'
 
         response = client.post('/ksea', data={
             "session_id": self.session_id,
@@ -251,6 +266,21 @@ class TestClass:
         expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea.json')
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ksea()
+
+    def test_ksea_csv(self, client):
+        self.input_file = Path('../fixtures/ksea/input/input.csv')
+        self.dataset_name = 'ksea_test_csv'
+
+        response = client.post('/ksea', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_file.open('rb')
+        })
+
+        self.actual_result = pd.read_csv(io.BytesIO(response.data), sep='\t')
+        expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea.txt')
+        self.expected_result = pd.read_csv(expected_result_file, sep='\t')
+        self.evaluate_ksea_csv()
 
     def test_ksea_w_parameters(self, client):
         self.input_file = Path('../fixtures/ksea/input/input.json')
