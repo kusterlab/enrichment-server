@@ -34,6 +34,14 @@ class TestClass:
 
             for res, exp in zip(self.actual_result, self.expected_result))
 
+    def evaluate_ssgsea_csv(self):
+        pd.testing.assert_frame_equal(self.actual_result[
+                                          ['Signature ID', 'Overlap (Experiment01)', 'Overlap (Experiment02)',
+                                           'Percent Overlap (Experiment01)', 'Percent Overlap (Experiment02)']],
+                                      self.expected_result[
+                                          ['Signature ID', 'Overlap (Experiment01)', 'Overlap (Experiment02)',
+                                           'Percent Overlap (Experiment01)', 'Percent Overlap (Experiment02)']])
+
     def evaluate_go_enrichment(self):
         assert len(self.actual_result) == len(self.expected_result) and all(
             res['GO_ID'] == exp['GO_ID'] and
@@ -155,7 +163,6 @@ class TestClass:
         self.evaluate_ssgsea()
 
     def test_ssgsea_ssc_flanking_csv(self, client):
-        # TODO: Probably does not work yet, but I couldn't test without R
         self.input_file = Path('../fixtures/ptm-sea/input/input_flanking.txt')
         self.dataset_name = 'ptmsea_test_csv'
 
@@ -164,8 +171,10 @@ class TestClass:
             "dataset_name": self.dataset_name,
             "file": self.input_file.open('rb')
         })
-        # TODO: Rewrite tests for csv output
-        # self.actual_result = json.loads(response.data)['Result']
+        self.actual_result = pd.read_csv(io.BytesIO(response.data), sep='\t')
+        expected_result_file = Path('../fixtures/ptm-sea/expected_output/ptmsea_output.txt')
+        self.expected_result = pd.read_csv(expected_result_file, sep='\t')
+        self.evaluate_ssgsea_csv()
 
     def test_ssgsea_gc(self, client):
         self.input_file = Path('../fixtures/ssgsea/input/input.json')
@@ -275,7 +284,7 @@ class TestClass:
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ksea()
 
-    #TODO: Also run with params!
+    # TODO: Also run with params!
     def test_rokai(self, client):
         self.input_json = Path('../fixtures/rokai/input/input.json')
         self.dataset_name = 'rokai_test'
@@ -306,7 +315,6 @@ class TestClass:
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_motif_enrichment()
 
-
     def test_motif_enrichment_csv(self, client):
         self.input_file = Path('../fixtures/motif_enrichment/input/input.txt')
         self.dataset_name = 'motif_enrichment_test_csv'
@@ -316,7 +324,6 @@ class TestClass:
             "dataset_name": self.dataset_name,
             "file": self.input_file.open('rb')
         })
-        # TODO: Rewrite tests for csv output
         self.actual_result = pd.read_csv(io.BytesIO(response.data), sep='\t')
         expected_result_file = Path('../fixtures/motif_enrichment/expected_output/output.txt')
         self.expected_result = pd.read_csv(expected_result_file, sep='\t')

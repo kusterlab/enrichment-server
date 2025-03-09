@@ -108,7 +108,8 @@ def handle_ssgsea_request(ssgsea_type: Literal['ssc', 'gc', 'gcr'], ssc_input_ty
         postprocess_request_response(ssgsea.postprocess_ssgsea(
             ssgsea_combined_output,
             input_was_json=filepath.name.lower().endswith('.json')),
-            f'ssGSEA ({ssgsea_type.upper()})', request_form),
+            f'ssGSEA ({ssgsea_type.upper()})', request_form,
+            input_was_json=filepath.name.lower().endswith('.json')),
         filepath.parent)
 
 
@@ -133,7 +134,8 @@ def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
 
     ksea_result = ksea.perform_ksea(preprocessed_filepath, parameters)
     return send_response(postprocess_request_response(
-        ksea_result, 'KSEA' if not ksea_type else 'RoKAI+KSEA', request_form),
+        ksea_result, 'KSEA' if not ksea_type else 'RoKAI+KSEA', request_form,
+        input_was_json=filepath.name.lower().endswith('.json')),
         filepath.parent)
 
 
@@ -153,7 +155,7 @@ def handle_rokai_request() -> werkzeug.wrappers.Response | str:
     rokai_result_json_path = ksea.post_process_rokai(rokai_result_csv_path)
 
     return send_response(postprocess_request_response(
-        rokai_result_json_path, 'RoKAI', request_form),
+        rokai_result_json_path, 'RoKAI', request_form, input_was_json=filepath.name.lower().endswith('.json')),
         filepath.parent)
 
 
@@ -172,7 +174,8 @@ def handle_phonemes_request() -> werkzeug.wrappers.Response | str:
     cytoscape_result = phonemes.run_cytoscape(phonemes_result)
     pathway_skeletons_json = phonemes.create_pathway_skeleton(cytoscape_result)
 
-    return send_response(postprocess_request_response(pathway_skeletons_json, 'PHONEMeS', request_form),
+    return send_response(postprocess_request_response(pathway_skeletons_json, 'PHONEMeS', request_form,
+                                                      input_was_json=filepath.name.lower().endswith('.json')),
                          filepath.parent)
 
 
@@ -206,7 +209,9 @@ def handle_kea3_request() -> werkzeug.wrappers.Response | str:
     filepath = post_request_processed
     kea3_result = kea3.run_kea3_api(filepath)
 
-    return send_response(postprocess_request_response(kea3_result, 'KEA3', request_form), filepath.parent)
+    return send_response(postprocess_request_response(kea3_result, 'KEA3', request_form,
+                                                      input_was_json=filepath.name.lower().endswith('.json')),
+                         filepath.parent)
 
 
 @app.route('/kstar', methods=['POST'])
@@ -219,7 +224,9 @@ def handle_kstar_request() -> werkzeug.wrappers.Response | str:
     filepath = post_request_processed
     kstar_result = k_star.run_kstar(filepath)
 
-    return send_response(postprocess_request_response(kstar_result, 'KSTAR', request_form), filepath.parent)
+    return send_response(postprocess_request_response(kstar_result, 'KSTAR', request_form,
+                                                      input_was_json=filepath.name.lower().endswith('.json')),
+                         filepath.parent)
 
 
 @app.route('/go_enrichment', methods=['POST'])
@@ -233,7 +240,8 @@ def handle_go_enrichment_request() -> werkzeug.wrappers.Response | str:
 
     go_enrichment_result = go_enrichment.run_go_enrichment(filepath, parameters)
 
-    return send_response(postprocess_request_response(go_enrichment_result, 'GO Enrichment', request_form),
+    return send_response(postprocess_request_response(go_enrichment_result, 'GO Enrichment', request_form,
+                                                      input_was_json=filepath.name.lower().endswith('.json')),
                          filepath.parent)
 
 
