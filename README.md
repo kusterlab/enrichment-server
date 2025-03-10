@@ -167,6 +167,70 @@ E.g.:
 </details>
 
 <details>  
+<summary> <b>GO Enrichment</b>
+</summary>
+
+<i>Description</i>  
+This endpoints performs Gene Ontology (GO) Enrichment Analysis using Fisher's exact test.
+It is a more straightforward method than ssGSEA, and requires only a set of differentially regulated genes as input.
+Each gene set in the GO database is then tested for overrepresentation.  
+In order to use this approach with PTM datasets, you need to map the peptide/site-level information to gene-level
+information.
+This approach also cannot take into account the direction, fold change, or significance of each regulation;
+therefore we advise you to use PTM-SEA or ssGSEA instead, if you have more than just a list of regulated genes.  
+As database, we use the GO annotations provided by g:Profiler under this
+link: https://biit.cs.ut.ee/gprofiler//static/gprofiler_full_hsapiens.name.gmt
+(last downloaded **2025-03-10**).
+
+<i>Endpoint</i>
+
+`/go`
+
+<i>Reference</i>
+
+Code:  Custom, for running the Fisher test we use
+SciPy: https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.fisher_exact.html  
+Publication:  https://www.nature.com/articles/ng0500_25, https://academic.oup.com/genetics/article/224/1/iyad031/7068118
+
+<i>Input</i>
+
+A list of differentially regulated genes for each experiment in your dataset.
+You can supply a custom background (e.g. all genes measured in your model system) using the "Background" key (
+case-insensitive).
+E.g.:
+
+```
+{
+  "Experiment01": [
+    "FOXM1",
+    "SMAD9"
+  ],
+  "Experiment02": [
+    "ZNF264",
+    "TMPO",
+    "ISL2"
+  ],
+  "Background": [
+    "SLC25A25",
+    "TMEM217",
+    ...
+  ]
+}
+```
+
+The default background are all genes annotated in the GO database.
+
+<i>Example Command</i>
+
+`curl -X POST -F file=@fixtures/go/input/input.json
+-F session_id=ABCDEF12345
+-F dataset_name=go http://10.152.171.101:4321/go
+-o output_go.json`
+
+</details>
+
+
+<details>  
 <summary> <b>KSEA</b>
 </summary>
 
@@ -420,6 +484,7 @@ E.g.:
     "TMPO",
     "ISL2"
   ]
+}
 ```
 
 <i>Example Command</i>
