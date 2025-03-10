@@ -4,9 +4,14 @@ Developed and Maintained by Julian Müller (julian2.mueller@tum.de).
 
 ## Usage
 
-The Enrichment Server is currently running here: https://enrichment.kusterlab.org/main_enrichment-server/
-The currently implemented services are described below. You can use each one of them by sending a POST request
-and attaching your input data in JSON format.  
+The Enrichment Server is currently running internally on `atlas` (http://10.152.171.101:4321)
+and `ucc-ml` (http://131.159.152.7:4321).
+The currently implemented services are described below.
+Examples are given using `curl` (https://curl.se/), but you can use any software that can send a POST request,
+e.g. `httr` if you're using R or `requests` for Python.  
+All endpoints accept the input in JSON format and also return JSON data.  
+Most endpoints additionally accept CSV input and output.
+
 <b>Pro Tip:</b> If you are preparing your input data as a `pandas` data frame, an easy way to convert it into the
 required input format
 is using
@@ -23,7 +28,7 @@ Basically a GSEA that is Single-Site-Centric (ssc).
 
 <i>Endpoint</i>
 
-`/ssgsea/ssc`
+`/ssgsea/ssc`  (JSON + CSV)
 
 <i>Reference</i>
 
@@ -36,6 +41,7 @@ Publication: https://www.mcponline.org/article/S1535-9476(20)31860-0/fulltext
    experiment.
    E.g.:
 
+JSON:
 ```
  [...,
  {
@@ -44,6 +50,14 @@ Publication: https://www.mcponline.org/article/S1535-9476(20)31860-0/fulltext
   "Experiment02": 12.9784002304
  },
  ...]
+```
+
+CSV:
+
+```
+id	Experiment01	Experiment02
+ALLQLDGTPRVCRAA-p 15.7046003342  12.9784002304
+...
 ```
 
 2. `.../ssc/uniprot`: Alternatively, encode the sites as a list of Uniprot identifiers and site positions:
@@ -87,7 +101,7 @@ We use the KEGG and Wikipathways signatures only
 
 <i>Endpoint</i>
 
-`/ssgsea/gc`
+`/ssgsea/gc` (JSON + CSV)
 
 <i>Reference</i>
 
@@ -98,7 +112,8 @@ Publication: https://www.mcponline.org/article/S1535-9476(20)31860-0/fulltext
 
 A list of gene symbols, and their expression in each experiment.
 
-E.g.:
+E.g.:  
+JSON:
 
 ```
  [...,
@@ -110,6 +125,13 @@ E.g.:
  ...]
 ```
 
+CSV:
+
+```
+id	Experiment01	Experiment02
+PSEN1 10.0033998489  14.6499004364
+...
+```
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/ssgsea/input/input.json
@@ -132,7 +154,7 @@ it poses a good compromise between the two approaches.
 
 <i>Endpoint</i>
 
-`/ssgsea/gcr`
+`/ssgsea/gcr`  (JSON + CSV)
 
 <i>Reference</i>
 
@@ -144,6 +166,8 @@ Publication: https://www.mcponline.org/article/S1535-9476(20)31860-0/fulltext
 Identical to Non-Redundant Gene-Centric PEA.  
 E.g.:
 
+JSON:
+
 ```
  [...,
  {
@@ -152,6 +176,14 @@ E.g.:
   "Experiment02":14.6499004364
  },
  ...]
+```
+
+CSV:
+
+```
+id	Experiment01	Experiment02
+PSEN1 10.0033998489  14.6499004364
+...
 ```
 
 <i>Example Command</i>
@@ -179,7 +211,7 @@ link: https://biit.cs.ut.ee/gprofiler//static/gprofiler_full_hsapiens.name.gmt
 
 <i>Endpoint</i>
 
-`/go`
+`/go` (JSON)
 
 <i>Reference</i>
 
@@ -240,7 +272,7 @@ in `db/scripts/update_ksea_es_db.py`.
 
 <i>Endpoint</i>
 
-`/ksea`
+`/ksea`  (JSON + CSV)
 
 <i>Reference</i>
 
@@ -249,8 +281,10 @@ Publication:  https://www.science.org/doi/10.1126/scisignal.2003573
 
 <i>Input</i>
 
-E.g.:
 A list of phosphosites, encoded in the format `<Uniprot_Acc>_<Res><Position>`, and their expression in each experiment.
+E.g.:
+
+JSON:
 
 ```
  [...,
@@ -262,6 +296,15 @@ A list of phosphosites, encoded in the format `<Uniprot_Acc>_<Res><Position>`, a
  },
  ...]
 ```
+
+CSV:
+
+```
+Site,Experiment_1,Experiment_2,Experiment_3
+O75822_S11,0.0,-0.002266224,0.0
+...
+```
+
 
 <i>Example Command</i>
 
@@ -285,7 +328,7 @@ publication).
 
 <i>Endpoint</i>
 
-`/ksea/rokai`
+`/ksea/rokai`  (JSON + CSV)
 
 <i>Reference</i>
 
@@ -297,6 +340,8 @@ Publication: https://www.nature.com/articles/s41467-021-21211-6
 Identical to KSEA.  
 E.g.:
 
+JSON:
+
 ```
  [...,
  {
@@ -307,6 +352,15 @@ E.g.:
  },
  ...]
 ```
+
+CSV:
+
+```
+Site,Experiment_1,Experiment_2,Experiment_3
+O75822_S11,0.0,-0.002266224,0.0
+...
+```
+
 
 <i>Example Command</i>
 
@@ -337,7 +391,7 @@ nodes are returned.
 
 <i>Endpoint</i>
 
-`/phonemes`
+`/phonemes` (JSON)
 
 <i>Reference</i>
 
@@ -405,7 +459,7 @@ The endpoint returns the enrichment values for every scored kinase motif.
 
 <i>Endpoint</i>
 
-`/motif_enrichment`
+`/motif_enrichment`  (JSON + CSV)
 
 <i>Reference</i>
 
@@ -418,6 +472,7 @@ A list of modified sequences, the Uniprot accession number(s) of the proteins th
 and for each experiment whether the peptide was up- or down-regulated.
 E.g.:
 
+JSON:
 ```
  [...,
   {
@@ -427,6 +482,13 @@ E.g.:
     "Experiment02": "up"
   },
  ...]
+```
+
+CSV:
+```
+Modified sequence,Proteins,Experiment01,Experiment02
+RDS(ph)ASYR,A0A1X7SBZ2;A0A5H1ZRQ2;Q92841;Q92841-1;Q92841-2;Q92841-3,down,up
+...
 ```
 
 <i>Example Command</i>
@@ -451,7 +513,7 @@ The endpoint calls the API of KEA3 and returns the `MeanRank` and `TopRank` tabl
 
 <i>Endpoint</i>
 
-`/kea3`
+`/kea3`  (JSON)
 
 <i>Reference</i>
 
@@ -460,7 +522,7 @@ Publication: https://academic.oup.com/nar/article/49/W1/W304/6279841
 
 <i>Input</i>
 
-A list of proteins for each experiment.
+A list of gene names representing proteins that are differentially regulated in each experiment.
 E.g.:
 
 ```
@@ -501,7 +563,7 @@ more processing power and time.
 
 <i>Endpoint</i>
 
-`/kstar`
+`/kstar` (JSON + CSV)
 
 <i>Reference</i>
 
@@ -514,6 +576,7 @@ A list of modified sequences, the Uniprot accession number(s) of the proteins th
 and for each experiment the expression value of the peptide.
 E.g.:
 
+JSON:
 ```
  [...,
  {
@@ -523,6 +586,13 @@ E.g.:
   "Experiment02":-2.2462854621
  },
  ...]
+```
+
+CSV:
+```
+Modified sequence	Proteins	Experiment01	Experiment02
+RS(ph)VGSDE C9JBX5;E9PAL7;P43307;P43307-2 -1.2895137775  -2.2462854621
+...
 ```
 
 <i>Example Command</i>
