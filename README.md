@@ -272,7 +272,7 @@ in `db/scripts/update_ksea_es_db.py`.
 
 <i>Endpoint</i>
 
-`/ksea`  (JSON + CSV)
+`/ksea`, `/kinact`   (JSON + CSV)
 
 <i>Reference</i>
 
@@ -316,11 +316,11 @@ http://10.152.171.101:4321/ksea
 
 
 <details>  
-<summary> <b>KSEA with RoKAI</b>
+<summary> <b>RoKAI</b>
 </summary>
 
 <i>Description</i>  
-This endpoint uses `RoKAI` to refine the phosphorylation profiles before using `kinact` to perform KSEA.
+This endpoint uses `RoKAI` to refine the phosphorylation profiles and subsequently infer kinase activities.
 `RoKAI` has been shown to produce more robust results when combined with any kinase activity inference method (see the
 publication by Yılmaz et al. below).
 We use all 5 components of RoKAI's functional/structural neighbourhood network as information source (see Fig. 3 in the
@@ -328,12 +328,61 @@ publication).
 
 <i>Endpoint</i>
 
-`/ksea/rokai`  (JSON + CSV)
+`/rokai`  (JSON + CSV)
 
 <i>Reference</i>
 
 Code: https://github.com/serhan-yilmaz/RokaiApp  
 Publication: https://www.nature.com/articles/s41467-021-21211-6
+
+<i>Input</i>
+
+Identical to KSEA.  
+E.g.:
+
+JSON:
+
+```
+ [...,
+ {
+  "Site":"O75822_S11",
+  "Experiment_1":0.0,
+  "Experiment_2":-0.002266224,
+  "Experiment_3":0.0
+ },
+ ...]
+```
+
+CSV:
+
+```
+Site,Experiment_1,Experiment_2,Experiment_3
+O75822_S11,0.0,-0.002266224,0.0
+...
+```
+
+
+<i>Example Command</i>
+
+`curl -X POST -F file=@fixtures/rokai/input/input.json
+http://10.152.171.101:4321/rokai
+-o output_rokai.json`
+
+</details>
+
+
+
+<details>  
+<summary> <b>KSEA with RoKAI</b>
+</summary>
+
+<i>Description</i>  
+This endpoint uses only the first part of `RoKAI` to refine the phosphorylation profiles.
+These are then further processed by `kinact` to perform KSEA.
+
+<i>Endpoint</i>
+
+`/ksea/rokai`  (JSON + CSV)
 
 <i>Input</i>
 
