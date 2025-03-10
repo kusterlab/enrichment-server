@@ -6,8 +6,7 @@ Developed and Maintained by Julian Müller (julian2.mueller@tum.de).
 
 The Enrichment Server is currently running here: https://enrichment.kusterlab.org/main_enrichment-server/
 The currently implemented services are described below. You can use each one of them by sending a POST request
-and attaching your input data in JSON format, as well as a session ID and a dataset name
-(those are needed for PTMNavigator, you can use whatever - maybe I will implement defaults for that at some point).  
+and attaching your input data in JSON format.  
 <b>Pro Tip:</b> If you are preparing your input data as a `pandas` data frame, an easy way to convert it into the
 required input format
 is using
@@ -63,13 +62,11 @@ Publication: https://www.mcponline.org/article/S1535-9476(20)31860-0/fulltext
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/ptm-sea/input/input_flanking.json
--F session_id=ABCDEF12345
--F dataset_name=ptm-sea https://enrichment.kusterlab.org/main_enrichment-server/ssgsea/ssc/flanking
+http://10.152.171.101:4321/ssgsea/ssc/flanking
 -o output_ptmsea_flanking.json`
 
 `curl -X POST -F file=@fixtures/ptm-sea/input/input_uniprot.json
--F session_id=ABCDEF12345
--F dataset_name=ptm-sea https://enrichment.kusterlab.org/main_enrichment-server/ssgsea/ssc/uniprot
+http://10.152.171.101:4321/ssgsea/ssc/uniprot
 -o output_ptmsea_uniprot.json`
 </details>  
 
@@ -116,8 +113,7 @@ E.g.:
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/ssgsea/input/input.json
--F session_id=ABCDEF12345
--F dataset_name=genecentric https://enrichment.kusterlab.org/main_enrichment-server/ssgsea/gc
+http://10.152.171.101:4321/ssgsea/gc
 -o output_gc.json`
 </details>
 
@@ -161,8 +157,7 @@ E.g.:
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/ssgsea/input/input.json
--F session_id=ABCDEF12345
--F dataset_name=genecentricredundant https://enrichment.kusterlab.org/main_enrichment-server/ssgsea/gcr
+http://10.152.171.101:4321/ssgsea/gcr
 -o output_gcr.json`
 </details>
 
@@ -223,8 +218,7 @@ The default background are all genes annotated in the GO database.
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/go/input/input.json
--F session_id=ABCDEF12345
--F dataset_name=go http://10.152.171.101:4321/go
+http://10.152.171.101:4321/go
 -o output_go.json`
 
 </details>
@@ -272,8 +266,7 @@ A list of phosphosites, encoded in the format `<Uniprot_Acc>_<Res><Position>`, a
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/ksea/input/input.json
--F session_id=ABCDEF12345
--F dataset_name=ksea https://enrichment.kusterlab.org/main_enrichment-server/ksea
+http://10.152.171.101:4321/ksea
 -o output_ksea.json`
 
 </details>
@@ -318,8 +311,7 @@ E.g.:
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/ksea/input/input.json
--F session_id=ABCDEF12345
--F dataset_name=ksea_rokai https://enrichment.kusterlab.org/main_enrichment-server/ksea/rokai
+http://10.152.171.101:4321/ksea/rokai
 -o output_ksea_rokai.json`
 
 </details>
@@ -395,8 +387,7 @@ E.g.:
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/phonemes/input/input.json
--F session_id=ABCDEF12345
--F dataset_name=phonemes https://enrichment.kusterlab.org/main_enrichment-server/phonemes
+http://10.152.171.101:4321/phonemes
 -o output_phonemes.json`
 
 </details>
@@ -441,8 +432,7 @@ E.g.:
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/motif_enrichment/input/input.json
--F session_id=ABCDEF12345
--F dataset_name=motif_enrichment https://enrichment.kusterlab.org/main_enrichment-server/motif_enrichment
+http://10.152.171.101:4321/motif_enrichment
 -o output_motif_enrichment.json`
 
 </details>
@@ -490,8 +480,7 @@ E.g.:
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/kea3/input/input.json
--F session_id=ABCDEF12345
--F dataset_name=kea3 https://enrichment.kusterlab.org/main_enrichment-server/kea3
+http://10.152.171.101:4321/kea3
 -o output_kea3.json`
 
 </details>
@@ -539,8 +528,7 @@ E.g.:
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/kstar/input/input.json
--F session_id=ABCDEF12345
--F dataset_name=kstar https://enrichment.kusterlab.org/main_enrichment-server/kstar
+http://10.152.171.101:4321/kstar
 -o output_kstar.json`
 
 </details>
