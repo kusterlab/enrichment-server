@@ -4,8 +4,7 @@ Developed and Maintained by Julian Müller (julian2.mueller@tum.de).
 
 ## Usage
 
-The Enrichment Server is currently running internally on `atlas` (http://10.152.171.101:4321)
-and `ucc-ml` (http://131.159.152.7:4321).
+The Enrichment Server is currently running here: https://enrichment.kusterlab.org/main_enrichment-server/
 The currently implemented services are described below.
 Examples are given using `curl` (https://curl.se/), but you can use any software that can send a POST request,
 e.g. `httr` if you're using R or `requests` for Python.  
@@ -91,11 +90,11 @@ ALLQLDGTPRVCRAA-p 15.7046003342  12.9784002304
 
 `curl -X POST -F file=@fixtures/ptm-sea/input/input_flanking.json
 -F parameters=@fixtures/ptm-sea/input/parameters.toml
-http://10.152.171.101:4321/ssgsea/ssc/flanking
+https://enrichment.kusterlab.org/main_enrichment-server/ssgsea/ssc/flanking
 -o output_ptmsea_flanking.json`
 
 `curl -X POST -F file=@fixtures/ptm-sea/input/input_uniprot.json
-http://10.152.171.101:4321/ssgsea/ssc/uniprot
+https://enrichment.kusterlab.org/main_enrichment-server/ssgsea/ssc/uniprot
 -o output_ptmsea_uniprot.json`
 </details>  
 
@@ -154,7 +153,7 @@ Same as for PTM-SEA.
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/ssgsea/input/input.json
-http://10.152.171.101:4321/ssgsea/gc
+https://enrichment.kusterlab.org/main_enrichment-server/ssgsea/gc
 -o output_gc.json`
 </details>
 
@@ -211,7 +210,7 @@ Same as for PTM-SEA.
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/ssgsea/input/input.json
-http://10.152.171.101:4321/ssgsea/gcr
+https://enrichment.kusterlab.org/main_enrichment-server/ssgsea/gcr
 -o output_gcr.json`
 </details>
 
@@ -272,7 +271,7 @@ The default background are all genes annotated in the GO database.
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/go/input/input.json
-http://10.152.171.101:4321/go
+https://enrichment.kusterlab.org/main_enrichment-server/go
 -o output_go.json`
 
 </details>
@@ -335,7 +334,7 @@ O75822_S11,0.0,-0.002266224,0.0
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/ksea/input/input.json
-http://10.152.171.101:4321/ksea
+https://enrichment.kusterlab.org/main_enrichment-server/ksea
 -o output_ksea.json`
 
 </details>
@@ -393,7 +392,7 @@ TODO!
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/rokai/input/input.json
-http://10.152.171.101:4321/rokai
+https://enrichment.kusterlab.org/main_enrichment-server/rokai
 -o output_rokai.json`
 
 </details>
@@ -445,7 +444,7 @@ TODO!!
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/ksea/input/input.json
-http://10.152.171.101:4321/ksea/rokai
+https://enrichment.kusterlab.org/main_enrichment-server/ksea/rokai
 -o output_ksea_rokai.json`
 
 </details>
@@ -525,7 +524,7 @@ TODO!!
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/phonemes/input/input.json
-http://10.152.171.101:4321/phonemes
+https://enrichment.kusterlab.org/main_enrichment-server/phonemes
 -o output_phonemes.json`
 
 </details>
@@ -585,7 +584,7 @@ RDS(ph)ASYR,A0A1X7SBZ2;A0A5H1ZRQ2;Q92841;Q92841-1;Q92841-2;Q92841-3,down,up
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/motif_enrichment/input/input.json
-http://10.152.171.101:4321/motif_enrichment
+https://enrichment.kusterlab.org/main_enrichment-server/motif_enrichment
 -o output_motif_enrichment.json`
 
 </details>
@@ -633,7 +632,7 @@ E.g.:
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/kea3/input/input.json
-http://10.152.171.101:4321/kea3
+https://enrichment.kusterlab.org/main_enrichment-server/kea3
 -o output_kea3.json`
 
 </details>
@@ -694,7 +693,7 @@ RS(ph)VGSDE C9JBX5;E9PAL7;P43307;P43307-2 -1.2895137775  -2.2462854621
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/kstar/input/input.json
-http://10.152.171.101:4321/kstar
+https://enrichment.kusterlab.org/main_enrichment-server/kstar
 -o output_kstar.json`
 
 </details>
