@@ -9,14 +9,19 @@ and `ucc-ml` (http://131.159.152.7:4321).
 The currently implemented services are described below.
 Examples are given using `curl` (https://curl.se/), but you can use any software that can send a POST request,
 e.g. `httr` if you're using R or `requests` for Python.  
+
+### Input Format
 All endpoints accept the input in JSON format and also return JSON data.  
 Most endpoints additionally accept CSV input and output.
 
-<b>Pro Tip:</b> If you are preparing your input data as a `pandas` data frame, an easy way to convert it into the
-required input format
-is using
-`df.to_json(orient='records')`.
+### Parameter File
+For some endpoints, you can also supply additional parameters to customize the execution of the respective algorithm.
+Please specify them in a file `parameters.toml` in the format `<key> = <value>` (each parameter on a separate line).  
+If you do not supply a parameters file, default values will be used (all tunable parameters are described below;
+for details, please always refer to the respective publication).
 
+
+## Description of Endpoints
 <details>  
 <summary> <b>PTM Signature Enrichment Analysis</b>
 </summary>
@@ -73,9 +78,19 @@ ALLQLDGTPRVCRAA-p 15.7046003342  12.9784002304
  ...]
 ```
 
+<i>Parameters</i>  
+- `norm`: Type of Sample Normalization. Possible values are `'rank', 'log', 'log.rank', 'none'` (default: `'rank'`)
+- `weight`: Weight of quantitative values (default: `0.75`)
+- `correl`: Correlation Type. Possible values are `'rank', 'z.score', 'symm.rank'` (default: `'z.score'`)
+- `test`: Test statistic. Possible values are `'area.under.RES', 'Kolmogorov-Smirnov'` (default: `'area.under.RES'`)
+- `score`: Score type. Possible values are `'ES', 'NES'` (default: `'NES'`)
+- `perm`: Number of permutations for p-value estimation (default: `1000`)
+- `minoverlap`: Minimal overlap between signature and data set (default: `10`)
+
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/ptm-sea/input/input_flanking.json
+-F parameters=@fixtures/ptm-sea/input/parameters.toml
 http://10.152.171.101:4321/ssgsea/ssc/flanking
 -o output_ptmsea_flanking.json`
 
@@ -132,6 +147,10 @@ id	Experiment01	Experiment02
 PSEN1 10.0033998489  14.6499004364
 ...
 ```
+
+<i>Parameters</i>  
+Same as for PTM-SEA.   
+
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/ssgsea/input/input.json
@@ -185,6 +204,9 @@ id	Experiment01	Experiment02
 PSEN1 10.0033998489  14.6499004364
 ...
 ```
+
+<i>Parameters</i>  
+Same as for PTM-SEA.   
 
 <i>Example Command</i>
 
@@ -305,6 +327,10 @@ O75822_S11,0.0,-0.002266224,0.0
 ...
 ```
 
+<i>Parameters</i>  
+- `minimum_set_size`: Minimum overlap between the sites in the dataset and in the substrate set of a kinase (default: `5`)
+- `median`: Use median instead of mean substrate Fold Change. Possible values are `true, false` (default: `false`)
+
 
 <i>Example Command</i>
 
@@ -361,6 +387,8 @@ O75822_S11,0.0,-0.002266224,0.0
 ...
 ```
 
+<i>Parameters</i>  
+TODO!  
 
 <i>Example Command</i>
 
@@ -409,6 +437,9 @@ Site,Experiment_1,Experiment_2,Experiment_3
 O75822_S11,0.0,-0.002266224,0.0
 ...
 ```
+
+<i>Parameters</i>  
+TODO!!
 
 
 <i>Example Command</i>
@@ -487,6 +518,10 @@ E.g.:
  }
 ```
 
+<i>Parameters</i>  
+TODO!!  
+
+
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/phonemes/input/input.json
@@ -539,6 +574,13 @@ Modified sequence,Proteins,Experiment01,Experiment02
 RDS(ph)ASYR,A0A1X7SBZ2;A0A5H1ZRQ2;Q92841;Q92841-1;Q92841-2;Q92841-3,down,up
 ...
 ```
+
+<i>Parameters</i>   
+- `top_n`: How many top kinases to consider (default: `15`)
+- `threshold`: Filters for values at least this big (default: `-inf` (specify a numeric value))
+- `threshold_type`: Metric to use for filtering. Possible values are `'score', 'percentile', 'total'` (default: `'percentile'`)
+- `sort_type`: Metric to use for ranking. Possible values are `'score', 'percentile', 'total'` (default: `'percentile'`)
+
 
 <i>Example Command</i>
 
@@ -643,6 +685,11 @@ Modified sequence	Proteins	Experiment01	Experiment02
 RS(ph)VGSDE C9JBX5;E9PAL7;P43307;P43307-2 -1.2895137775  -2.2462854621
 ...
 ```
+
+<i>Parameters</i>   
+- `agg`: How to aggregate sites that appear multiple times. Possible values are `'mean', 'max', 'min', 'count'` (default: `'mean'`)
+- `threshold`: Cutoff for keeping a site as evidence  (default: `0`)
+
 
 <i>Example Command</i>
 
