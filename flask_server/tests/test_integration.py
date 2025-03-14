@@ -76,7 +76,7 @@ class TestClass:
             self.expected_result['Overlap (Experiment_3)'].apply(
                 lambda s: json.loads(s.replace("'", '"'))).apply(set))
 
-    #TODO: Cannot test rokai right now, do it later!
+    # TODO: Cannot test rokai right now, do it later!
     def evaluate_rokai(self):
         assert len(self.actual_result) == len(self.expected_result) and all(
             res['Gene'] == exp['Gene'] and
@@ -124,12 +124,12 @@ class TestClass:
                 if 'up (Experiment01)' in actual_elem:
                     assert round(actual_elem['up (Experiment01)'], 5) == round(expected_elem['up (Experiment01)'], 5)
                 else:
-                    assert round(actual_elem['down (Experiment02)'], 5) == round(expected_elem['down (Experiment02)'], 5)
+                    assert round(actual_elem['down (Experiment02)'], 5) == round(expected_elem['down (Experiment02)'],
+                                                                                 5)
 
     def evaluate_kstar_csv(self):
         pd.testing.assert_frame_equal(self.actual_result, self.expected_result,
                                       check_exact=False, atol=1e-4)
-
 
     def test_get_status(self, client):
         response = client.get('/')
@@ -228,8 +228,8 @@ class TestClass:
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ssgsea()
 
-    def test_go_enrichment(self, client):
-        self.input_file = Path('../fixtures/go_enrichment/input/input.json')
+    def test_go_enrichment_human(self, client):
+        self.input_file = Path('../fixtures/go_enrichment/input/input_hsa.json')
         self.dataset_name = 'go_enrichment_test'
 
         response = client.post('/go_enrichment', data={
@@ -239,7 +239,7 @@ class TestClass:
         })
 
         self.actual_result = json.loads(response.data)['Result']
-        expected_result_file = Path('../fixtures/go_enrichment/expected_output/go_enrichment_result.json')
+        expected_result_file = Path('../fixtures/go_enrichment/expected_output/go_enrichment_result_hsa.json')
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_go_enrichment()
 
@@ -256,6 +256,33 @@ class TestClass:
         self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path(
             '../fixtures/go_enrichment/expected_output/go_enrichment_w_custom_background_result.json')
+        self.expected_result = json.load(open(expected_result_file))['Result']
+        self.evaluate_go_enrichment()
+
+    def test_go_enrichment_bad_organism(self, client):
+        self.input_file = Path('../fixtures/go_enrichment/input/input_hsa.json')
+        self.dataset_name = 'go_enrichment_bad_organism_test'
+
+        response = client.post('/go_enrichment/lol', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_file.open('rb')
+        })
+
+        assert response.status_code == 400
+
+    def test_go_enrichment_mouse(self, client):
+        self.input_file = Path('../fixtures/go_enrichment/input/input_mmu.json')
+        self.dataset_name = 'go_enrichment_mouse_test'
+
+        response = client.post('/go_enrichment/mmu', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_file.open('rb')
+        })
+
+        self.actual_result = json.loads(response.data)['Result']
+        expected_result_file = Path('../fixtures/go_enrichment/expected_output/go_enrichment_result_mmu.json')
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_go_enrichment()
 
@@ -351,7 +378,6 @@ class TestClass:
         expected_result_file = Path('../fixtures/motif_enrichment/expected_output/output.json')
         self.expected_result = json.load(open(expected_result_file))
         self.evaluate_motif_enrichment()
-
 
     def test_motif_enrichment_w_parameters(self, client):
         self.input_file = Path('../fixtures/motif_enrichment/input/input.json')

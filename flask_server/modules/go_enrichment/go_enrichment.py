@@ -6,11 +6,17 @@ from scipy import stats
 from typing import TypedDict, List, Dict
 from requests.structures import CaseInsensitiveDict as CIDict
 
+
+ORGANISM_TO_ANNOTATION_FILE = \
+    {'hsa': '../db/go/gprofiler_hsapiens.GO.name.gmt',
+     'mmu': '../db/go/gprofiler_mmusculus.GO.name.gmt'}
+
+SUPPORTED_ORGANISMS: list[str] = list(ORGANISM_TO_ANNOTATION_FILE.keys())
 GOAnnotation = TypedDict('GOAnnotation', {'ID': str, 'Name': str, 'Genes': list[str]})
 
 
-def load_go_annotations() -> list[GOAnnotation]:
-    go_terms_file = Path('../db/go/gprofiler_hsapiens.GO.name.gmt')
+def load_go_annotations(organism: SUPPORTED_ORGANISMS) -> list[GOAnnotation]:
+    go_terms_file = Path(ORGANISM_TO_ANNOTATION_FILE.get(organism))
     go_terms = []
     with open(go_terms_file, 'r') as infile:
         line = infile.readline().strip()
@@ -41,11 +47,9 @@ def run_gene_ontology_fisher_test(query: set, annotation: GOAnnotation, backgrou
             f'Intersection ({experiment_name})': ",".join(annotation_query_overlap)}
 
 
-def run_go_enrichment(filepath: Path) -> Path:
-    go_terms = load_go_annotations()
-
+def run_go_enrichment(filepath: Path, organism: SUPPORTED_ORGANISMS) -> Path:
+    go_terms = load_go_annotations(organism)
     input_json = CIDict(json.load(open(filepath)))
-
     if 'background' in input_json:
         background = set(input_json.pop('background'))
     else:

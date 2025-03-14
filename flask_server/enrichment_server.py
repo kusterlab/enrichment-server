@@ -4,7 +4,7 @@ import os
 from pathlib import Path
 import shutil
 import json
-from typing import Tuple, Any, Dict, Literal
+from typing import Tuple, Any, Dict, Literal, List
 from urllib.parse import urlparse
 import werkzeug.wrappers
 from werkzeug.utils import secure_filename
@@ -24,7 +24,6 @@ from modules.k_star import k_star
 from modules.go_enrichment import go_enrichment
 
 VERSION = '0.1.3'
-
 
 def setup_logger():
     global LOGGER
@@ -239,7 +238,12 @@ def handle_kstar_request() -> werkzeug.wrappers.Response | str:
 
 
 @app.route('/go_enrichment', methods=['POST'])
-def handle_go_enrichment_request() -> werkzeug.wrappers.Response | str:
+@app.route('/go_enrichment/<string:organism>', methods=['POST'])
+def handle_go_enrichment_request(organism: go_enrichment.SUPPORTED_ORGANISMS = 'hsa') -> werkzeug.wrappers.Response | str:
+    if organism not in go_enrichment.SUPPORTED_ORGANISMS:
+        return make_response("Error: Organism must be one of: 'hsa', 'mmu'", 400)
+
+
     post_request_processed, request_form, _ = process_post_request(request, 'GO Enrichment')
 
     if type(post_request_processed) is flask.Response:
@@ -249,7 +253,7 @@ def handle_go_enrichment_request() -> werkzeug.wrappers.Response | str:
     if not filepath.name.lower().endswith('.json'):
         return make_response('Error: This endpoint only supports JSON input!', 400)
 
-    go_enrichment_result = go_enrichment.run_go_enrichment(filepath)
+    go_enrichment_result = go_enrichment.run_go_enrichment(filepath, organism)
 
     return send_response(postprocess_request_response(go_enrichment_result, 'GO Enrichment', request_form,
                                                       input_was_json=True),
