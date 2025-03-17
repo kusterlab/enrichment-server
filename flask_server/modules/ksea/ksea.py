@@ -41,13 +41,19 @@ def preprocess_ksea(filepath: Path, input_is_json: bool) -> Path:
     return output_csv
 
 
-def run_rokai(filepath: Path, only_refine_phospho_profiles: bool) -> Path:
+def run_rokai(filepath: Path, parameters: dict, only_refine_phospho_profiles: bool) -> Path:
     output_path = filepath.parent / f'rokai_result.csv'
     subprocess_output = subprocess.run(["Rscript",
                                         "modules/ksea/run_rokai.R",
                                         str(filepath),
                                         str(output_path),
-                                        str(only_refine_phospho_profiles)],
+                                        str(only_refine_phospho_profiles),
+                                        parameters.get('datanorm', 'Normalized'),
+                                        str(parameters.get('signor', 'false')),
+                                        str(parameters.get('ppi', 'true')),
+                                        str(parameters.get('sd', 'true')),
+                                        str(parameters.get('coev', 'true')),
+                                        ],
                                        capture_output=True, text=True)
     print(subprocess_output.stdout)
     print(subprocess_output.stderr)

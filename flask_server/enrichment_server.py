@@ -128,7 +128,7 @@ def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
     # TODO: 'rokai' is the only actually possible value for ksea_type. It's only about presence or absence.
     # Is there a more elegant way to handle this?
     if ksea_type == 'rokai':
-        preprocessed_filepath = ksea.run_rokai(preprocessed_filepath, only_refine_phospho_profiles=True)
+        preprocessed_filepath = ksea.run_rokai(preprocessed_filepath, parameters, only_refine_phospho_profiles=True)
 
     ksea_result = ksea.perform_ksea(preprocessed_filepath, parameters, filepath.name.lower().endswith('.json'))
     return send_response(postprocess_request_response(
@@ -147,7 +147,7 @@ def handle_rokai_request() -> werkzeug.wrappers.Response | str:
     filepath = post_request_processed
 
     preprocessed_filepath = ksea.preprocess_ksea(filepath, filepath.name.lower().endswith('.json'))
-    rokai_result_path = ksea.run_rokai(preprocessed_filepath, only_refine_phospho_profiles=False)
+    rokai_result_path = ksea.run_rokai(preprocessed_filepath, parameters, only_refine_phospho_profiles=False)
 
     if filepath.name.lower().endswith('.json'):
         rokai_result_path = ksea.post_process_rokai(rokai_result_path)

@@ -387,7 +387,12 @@ O75822_S11,0.0,-0.002266224,0.0
 ```
 
 <i>Parameters</i>  
-TODO!  
+- `datanorm`: Normalization Strategy. Possible values are `'Normalized', 'Centered', 'Raw'` (default: `'Normalized'`)
+- `signor`: Whether or not to use Signor kinase-substrate annotation in addition to PhosphoSitePlus. Possible values are `true, false` (default: `false`)
+- `ppi`: Whether or not to include the protein-protein interactions from STRING in the RoKAI network. Possible values are `true, false` (default: `true`)
+- `sd`: Whether or not to include the structural distance information from PTMcode in the RoKAI network. Possible values are `true, false` (default: `true`)
+- `coev`: Whether or not to include the coevolution information from PTMcode in the RoKAI network. Possible values are `true, false` (default: `true`)
+
 
 <i>Example Command</i>
 

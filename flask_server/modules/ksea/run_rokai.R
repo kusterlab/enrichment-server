@@ -13,8 +13,17 @@ args <- commandArgs(trailingOnly = TRUE)
 input_csv <- args[1]
 output_csv <- args[2]
 only_refine_phospho_profiles_str <- args[3]
+datanorm <- args[4]
+include_signor_str <- args[5]
+include_ppi_str <- args[6]
+include_sd_str <- args[7]
+include_coev_str <- args[8]
 
 only_refine_phospho_profiles <- tolower(only_refine_phospho_profiles_str) %in% c('true', 't')
+include_signor <- tolower(include_signor_str) %in% c('true', 't')
+include_ppi <- tolower(include_ppi_str) %in% c('true', 't')
+include_sd <- tolower(include_sd_str) %in% c('true', 't')
+include_coev <- tolower(include_coev_str) %in% c('true', 't')
 
 ### Load the network
 network_file <- '../RokaiApp/data/rokai_network_data_uniprotkb_human.rds'
@@ -65,17 +74,30 @@ for (experiment in experiment_names) {
     validSites <- !is.na(X)
     Xv <- X[validSites]
     #Normalize
-    Xv <- (Xv - mean(Xv)) / sd(Xv)
+    switch (datanorm,
+        "Centered" = Xv <- (Xv - mean(Xv)),
+        "Normalized" = Xv <- (Xv - mean(Xv)) / sd(Xv),
+        "Raw" = Xv <- Xv)
     Sx <- rep(sd(Xv), length(Xv))
     ds <- (list("Xv" = Xv, "Sx" = Sx, "validSites" = validSites))
     ### Run RoKAI
     Wk2s <- NetworkData$net$Wkin2site.psp
+
+    if(include_signor){
+      Wk2s <- Wk2s | NetworkData$net$Wkin2site.signor
+    }
+
     nSite <- ncol(Wk2s) #I think it was already set to that value but let's be on the safe side
     wk2s <- Wk2s[, validSites];
     nSubs <- (wk2s %*% rep(1, length(Xv)))
 
     #Add 'ppi' network
+    if(include_ppi){
     Wk2k <- NetworkData$net$Wkin2kin * 1e-3
+    }else{
+      Wk2k <- NULL
+    }
+
     Ws2s <- Matrix::sparseMatrix(
       i = c(),
       j = c(),
@@ -83,9 +105,14 @@ for (experiment in experiment_names) {
       dims = c(nSite, nSite)
     )
     #Add 'sd' network
+    if(include_sd){
     Ws2s <- Ws2s | NetworkData$net$Wsite2site.sd
+    }
+
     #Add 'coev' network
+    if(include_coev){
     Ws2s <- Ws2s | NetworkData$net$Wsite2site.coev
+    }
     Ws2s <- Ws2s[validSites, validSites]
     rc <- rokai_core(Xv, Sx, wk2s, Wk2k, Ws2s)
 

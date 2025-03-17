@@ -76,7 +76,6 @@ class TestClass:
             self.expected_result['Overlap (Experiment_3)'].apply(
                 lambda s: json.loads(s.replace("'", '"'))).apply(set))
 
-    # TODO: Cannot test rokai right now, do it later!
     def evaluate_rokai(self):
         assert len(self.actual_result) == len(self.expected_result) and all(
             res['Gene'] == exp['Gene'] and
@@ -348,7 +347,6 @@ class TestClass:
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ksea()
 
-    # TODO: Also run with params!
     def test_rokai(self, client):
         self.input_json = Path('../fixtures/rokai/input/input.json')
         self.dataset_name = 'rokai_test'
@@ -361,6 +359,25 @@ class TestClass:
 
         self.actual_result = json.loads(response.data)['Result']
         expected_result_file = Path('../fixtures/rokai/expected_output/rokai_result.json')
+        self.expected_result = json.load(open(expected_result_file))['Result']
+        self.evaluate_rokai()
+
+    def test_rokai_w_parameters(self, client):
+        self.input_json = Path('../fixtures/rokai/input/input.json')
+        self.dataset_name = 'rokai_test_w_parameters'
+        self.parameters_toml = Path('../fixtures/rokai/input/parameters.toml')
+
+
+        response = client.post('/rokai', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_json.open('rb'),
+            "parameters": self.parameters_toml.open('rb')
+
+        })
+
+        self.actual_result = json.loads(response.data)['Result']
+        expected_result_file = Path('../fixtures/rokai/expected_output/rokai_result_w_parameters.json')
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_rokai()
 
