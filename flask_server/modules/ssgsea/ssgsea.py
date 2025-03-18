@@ -101,7 +101,7 @@ def run_ssgsea(filepath: Path, ssgsea_type: Literal['gc', 'gcr', 'ssc'],
             elif ssc_input_type == 'uniprot':
                 database = "../ssGSEA2.0/db/ptmsigdb/ptm.sig.db.all.uniprot.human.v2.0.0.gmt"
         case 'gc' | 'gcr':
-            database = "../db/c2.cp.kegg+wp.v2023.2.Hs.symbols.gmt"
+            database = "../db/ssgsea/c2.cp.kegg+wp.v2023.2.Hs.symbols.gmt"
 
     subprocess_output = subprocess.run(["Rscript",
                                         "../ssGSEA2.0/ssgsea-cli.R",

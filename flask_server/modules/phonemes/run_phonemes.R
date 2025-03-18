@@ -3,8 +3,8 @@ sites_path <- args[1]
 targets_path <- args[2]
 output_path <- args[3]
 
-pkn_path <- '../db/phonemesPKN.csv'
-# pkn_path <- '../db/phonemes_PKN_KSN.csv'
+pkn_path <- '../db/phonemes/phonemesPKN.csv'
+# pkn_path <- '../db/phonemes/phonemes_PKN_KSN.csv'
 
 
 carnival_options <- PHONEMeS::default_carnival_options(solver = "cplex")

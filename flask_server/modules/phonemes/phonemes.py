@@ -8,9 +8,9 @@ import numpy as np
 import pandas as pd
 import py4cytoscape as p4c
 
-PHONEMES_PKN = Path('../db/phonemesPKN.csv')
-PHONEMES_KSN = Path('../db/phonemesKSN.csv')
-PHONEMES_PKN_KSN = Path('../db/phonemes_PKN_KSN.csv')
+PHONEMES_PKN = Path('../db/phonemes/phonemesPKN.csv')
+PHONEMES_KSN = Path('../db/phonemes/phonemesKSN.csv')
+PHONEMES_PKN_KSN = Path('../db/phonemes/phonemes_PKN_KSN.csv')
 CYTOSCAPE_PATH = '../Cytoscape_v3.10.1/Cytoscape'
 UNIPROT_MAPPING_ENDPOINT = 'https://rest.uniprot.org/idmapping/run'
 UNIPROT_RESULT_ENDPOINT = 'https://rest.uniprot.org/idmapping/stream/'

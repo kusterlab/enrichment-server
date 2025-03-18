@@ -22,7 +22,7 @@ def get_delimiter(file_path, bytes=4096):
     return delimiter
 
 
-PHOSPHOSITE_FASTA = "../db/Phosphosite_seq.fasta"
+PHOSPHOSITE_FASTA = "../db/psite_annotation/Phosphosite_seq.fasta"
 ODDS_PATH = "../db/kinase_library/Motif_Odds_Ratios.txt"
 QUANTILE_MATRIX_PATH = "../db/kinase_library/Kinase_Score_Quantile_Matrix.txt"
 
