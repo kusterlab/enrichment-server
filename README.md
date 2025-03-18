@@ -4,8 +4,12 @@ Developed and Maintained by Julian Müller (julian2.mueller@tum.de).
 
 ## Usage
 
-The Enrichment Server is currently running here: https://enrichment.kusterlab.org/main_enrichment-server/
-The currently implemented services are described below.
+The Enrichment Server is currently running here: https://enrichment.kusterlab.org/main_enrichment-server/  
+The currently implemented services are described below.  
+All services work with _Homo sapiens_ data. Most services additionally work with _Mus musculus_ data 
+(this depends on the availability of an annotation database for the respective algorithm).
+The organism can be specified using the parameter `organism` (use `'hsa'` for _H. sapiens_ and `'mmu'` for _M. musculus_; 
+if not specified, `'hsa'` is assumed).   
 Examples are given using `curl` (https://curl.se/), but you can use any software that can send a POST request,
 e.g. `httr` if you're using R or `requests` for Python.  
 
@@ -86,14 +90,19 @@ ALLQLDGTPRVCRAA-p 15.7046003342  12.9784002304
 - `perm`: Number of permutations for p-value estimation (default: `1000`)
 - `minoverlap`: Minimal overlap between signature and data set (default: `10`)
 
+<i>Supported Organisms</i>  
+`hsa`, `mmu`
+
 <i>Example Command</i>
 
-`curl -X POST -F file=@fixtures/ptm-sea/input/input_flanking.json
+`curl -X POST -F file=@fixtures/ptm-sea/input/input_flanking_mmu.json
 -F parameters=@fixtures/ptm-sea/input/parameters.toml
+-F organism=mmu
 https://enrichment.kusterlab.org/main_enrichment-server/ssgsea/ssc/flanking
--o output_ptmsea_flanking.json`
+-o output_ptmsea_flanking_mmu.json`
 
 `curl -X POST -F file=@fixtures/ptm-sea/input/input_uniprot.json
+-F organism=hsa
 https://enrichment.kusterlab.org/main_enrichment-server/ssgsea/ssc/uniprot
 -o output_ptmsea_uniprot.json`
 </details>  
@@ -149,6 +158,9 @@ PSEN1 10.0033998489  14.6499004364
 
 <i>Parameters</i>  
 Same as for PTM-SEA.   
+
+<i>Supported Organisms</i>  
+`hsa`, `mmu`
 
 <i>Example Command</i>
 
@@ -206,6 +218,10 @@ PSEN1 10.0033998489  14.6499004364
 
 <i>Parameters</i>  
 Same as for PTM-SEA.   
+
+<i>Supported Organisms</i>  
+`hsa`, `mmu`
+
 
 <i>Example Command</i>
 
@@ -267,6 +283,10 @@ E.g.:
 ```
 
 The default background are all genes annotated in the GO database.
+
+<i>Supported Organisms</i>  
+`hsa`, `mmu`
+
 
 <i>Example Command</i>
 
@@ -331,6 +351,9 @@ O75822_S11,0.0,-0.002266224,0.0
 - `median`: Use median instead of mean substrate Fold Change. Possible values are `true, false` (default: `false`)
 
 
+<i>Supported Organisms</i>  
+`hsa`, `mmu`
+
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/ksea/input/input.json
@@ -393,11 +416,15 @@ O75822_S11,0.0,-0.002266224,0.0
 - `sd`: Whether or not to include the structural distance information from PTMcode in the RoKAI network. Possible values are `true, false` (default: `true`)
 - `coev`: Whether or not to include the coevolution information from PTMcode in the RoKAI network. Possible values are `true, false` (default: `true`)
 
+<i>Supported Organisms</i>  
+`hsa`, `mmu`
+
 
 <i>Example Command</i>
 
 `curl -X POST -F file=@fixtures/rokai/input/input.json
 https://enrichment.kusterlab.org/main_enrichment-server/rokai
+-F organism=mmu
 -o output_rokai.json`
 
 </details>
@@ -443,7 +470,11 @@ O75822_S11,0.0,-0.002266224,0.0
 ```
 
 <i>Parameters</i>  
-TODO!!
+All parameters from both KSEA and RoKAI.
+
+
+<i>Supported Organisms</i>  
+`hsa`, `mmu`
 
 
 <i>Example Command</i>
@@ -521,9 +552,6 @@ E.g.:
  ...]
  }
 ```
-
-<i>Parameters</i>  
-TODO!!  
 
 
 <i>Example Command</i>

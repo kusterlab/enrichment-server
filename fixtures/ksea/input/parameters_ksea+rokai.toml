@@ -1,0 +1,7 @@
+datanorm = 'Raw'
+signor = 'true'
+ppi = 'false'
+sd = 'false'
+coev = 'false'
+minimum_set_size = 13
+median = true

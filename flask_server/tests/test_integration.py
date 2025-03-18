@@ -421,8 +421,21 @@ class TestClass:
             'organism': 'hsa'
         })
 
+    def test_ksea_rokai_w_parameters(self, client):
+        self.input_file = Path('../fixtures/ksea/input/input_hsa.json')
+        self.parameters_toml = Path('../fixtures/ksea/input/parameters_ksea+rokai.toml')
+        self.dataset_name = 'ksea_rokai_test_w_parameters'
+
+        response = client.post('/ksea/rokai', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_file.open('rb'),
+            'organism': 'hsa',
+            "parameters": self.parameters_toml.open('rb')
+        })
+
         self.actual_result = json.loads(response.data)['Result']
-        expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea_rokai_hsa.json')
+        expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea_rokai_w_parameters.json')
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ksea()
 
