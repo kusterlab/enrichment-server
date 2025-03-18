@@ -18,6 +18,7 @@ include_signor_str <- args[5]
 include_ppi_str <- args[6]
 include_sd_str <- args[7]
 include_coev_str <- args[8]
+network_file <- args[9]
 
 only_refine_phospho_profiles <- tolower(only_refine_phospho_profiles_str) %in% c('true', 't')
 include_signor <- tolower(include_signor_str) %in% c('true', 't')
@@ -26,7 +27,6 @@ include_sd <- tolower(include_sd_str) %in% c('true', 't')
 include_coev <- tolower(include_coev_str) %in% c('true', 't')
 
 ### Load the network
-network_file <- '../RokaiApp/data/rokai_network_data_uniprotkb_human.rds'
 NetworkData <- readRDS(network_file)
 NetworkData$Kinase$Type <- "Kinase"
 nKinase <- nrow(NetworkData$Kinase)
@@ -55,7 +55,7 @@ Wphospha2kinx <- Matrix::sparseMatrix(i = 1:nPhosphatase, j = nKinase + (1:nPhos
 NetworkData$net$Wkin2site.depod <- (Matrix::t(Wphospha2kinx) %*% NetworkData$net$Wphospha2site)
 
 ### Parse the input csv file
-phospho_data_all <- read.csv(input_csv)
+phospho_data_all <- read.csv(input_csv, sep='\t')
 experiment_names <- colnames(phospho_data_all)[2:length(colnames(phospho_data_all))]
 
 phospho_data_all$ID <- gsub('_\\D', '_', phospho_data_all$Site)
@@ -153,4 +153,4 @@ if (only_refine_phospho_profiles) {
 } else {
   rokai_result_singledf <- Reduce(function(x, y) merge(x, y, by = 'Gene', all = TRUE), rokai_result_all)
 }
-write.csv(rokai_result_singledf, output_csv, quote = F, row.names = F)
+write.table(rokai_result_singledf, output_csv, quote = F, row.names = F, sep='\t')

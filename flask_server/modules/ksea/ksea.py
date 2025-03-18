@@ -5,6 +5,18 @@ import pandas as pd
 import kinact
 import csv
 
+ORGANISM_TO_KSEA_ADJACENCY_MATRIX = \
+    {'hsa': '../db/ksea/psp_kinase_substrate_adjacency_matrix_9606.csv',
+     'mmu': '../db/ksea/psp_kinase_substrate_adjacency_matrix_10090.csv'}
+
+SUPPORTED_ORGANISMS_KSEA: list[str] = list(ORGANISM_TO_KSEA_ADJACENCY_MATRIX.keys())
+
+ORGANISM_TO_ROKAI_NETWORK = \
+    {'hsa': '../RokaiApp/data/rokai_network_data_uniprotkb_human.rds',
+     'mmu': '../RokaiApp/data/rokai_network_data_uniprotkb_mouse.rds'}
+
+SUPPORTED_ORGANISMS_ROKAI: list[str] = list(ORGANISM_TO_ROKAI_NETWORK.keys())
+
 
 def get_delimiter(file_path, bytes=4096):
     sniffer = csv.Sniffer()
@@ -37,11 +49,14 @@ def preprocess_ksea(filepath: Path, input_is_json: bool) -> Path:
     Path.mkdir(output_dir, parents=True, exist_ok=True)
 
     output_csv = output_dir / f'{filepath.stem}.csv'
-    input_df.to_csv(output_csv, index=False)
+    input_df.to_csv(output_csv, index=False, sep='\t')
     return output_csv
 
 
-def run_rokai(filepath: Path, parameters: dict, only_refine_phospho_profiles: bool) -> Path:
+def run_rokai(filepath: Path, parameters: dict, organism: SUPPORTED_ORGANISMS_ROKAI,
+              only_refine_phospho_profiles: bool) -> Path:
+    network_file = ORGANISM_TO_ROKAI_NETWORK[organism]
+
     output_path = filepath.parent / f'rokai_result.csv'
     subprocess_output = subprocess.run(["Rscript",
                                         "modules/ksea/run_rokai.R",
@@ -53,6 +68,7 @@ def run_rokai(filepath: Path, parameters: dict, only_refine_phospho_profiles: bo
                                         str(parameters.get('ppi', 'true')),
                                         str(parameters.get('sd', 'true')),
                                         str(parameters.get('coev', 'true')),
+                                        network_file
                                         ],
                                        capture_output=True, text=True)
     print(subprocess_output.stdout)
@@ -60,11 +76,11 @@ def run_rokai(filepath: Path, parameters: dict, only_refine_phospho_profiles: bo
     return output_path
 
 
-def perform_ksea(filepath: Path, parameters: dict, input_is_json: bool) -> Path:
-    input_df = pd.read_csv(filepath)
+def perform_ksea(filepath: Path, parameters: dict, organism: SUPPORTED_ORGANISMS_KSEA, input_is_json: bool) -> Path:
+    input_df = pd.read_csv(filepath, sep='\t')
     input_df.set_index('Site', inplace=True)
 
-    adjacency_matrix = pd.read_csv('../db/psp_kinase_substrate_adjacency_matrix.csv', skiprows=1).set_index('p_site')
+    adjacency_matrix = pd.read_csv(ORGANISM_TO_KSEA_ADJACENCY_MATRIX[organism], skiprows=1).set_index('p_site')
 
     ksea_results = []
     for experiment in input_df:
@@ -115,7 +131,7 @@ def perform_ksea(filepath: Path, parameters: dict, input_is_json: bool) -> Path:
 
 
 def post_process_rokai(csv_path: Path) -> Path:
-    input_df = pd.read_csv(csv_path)
+    input_df = pd.read_csv(csv_path, sep='\t')
     output_json = csv_path.parent / f'rokai_result.json'
     input_df.to_json(path_or_buf=output_json,
                      orient='records',

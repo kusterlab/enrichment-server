@@ -122,15 +122,24 @@ def handle_ksea_request(ksea_type=None) -> werkzeug.wrappers.Response | str:
     if type(post_request_processed) is flask.Response:
         return post_request_processed
 
+    if 'organism' in request_form:
+        organism = request_form['organism']
+    else:
+        organism = 'hsa'
+    if organism not in ksea.SUPPORTED_ORGANISMS_KSEA:
+        return make_response("Error: Organism must be one of: 'hsa', 'mmu'", 400)
+
     filepath = post_request_processed
 
     preprocessed_filepath = ksea.preprocess_ksea(filepath, filepath.name.lower().endswith('.json'))
     # TODO: 'rokai' is the only actually possible value for ksea_type. It's only about presence or absence.
     # Is there a more elegant way to handle this?
     if ksea_type == 'rokai':
-        preprocessed_filepath = ksea.run_rokai(preprocessed_filepath, parameters, only_refine_phospho_profiles=True)
+        preprocessed_filepath = ksea.run_rokai(preprocessed_filepath, parameters, organism,
+                                               only_refine_phospho_profiles=True)
 
-    ksea_result = ksea.perform_ksea(preprocessed_filepath, parameters, filepath.name.lower().endswith('.json'))
+    ksea_result = ksea.perform_ksea(preprocessed_filepath, parameters, organism,
+                                    filepath.name.lower().endswith('.json'))
     return send_response(postprocess_request_response(
         ksea_result, 'KSEA' if not ksea_type else 'RoKAI+KSEA', request_form,
         input_was_json=filepath.name.lower().endswith('.json')),
@@ -144,10 +153,17 @@ def handle_rokai_request() -> werkzeug.wrappers.Response | str:
     if type(post_request_processed) is flask.Response:
         return post_request_processed
 
+    if 'organism' in request_form:
+        organism = request_form['organism']
+    else:
+        organism = 'hsa'
+    if organism not in ksea.SUPPORTED_ORGANISMS_KSEA:
+        return make_response("Error: Organism must be one of: 'hsa', 'mmu'", 400)
+
     filepath = post_request_processed
 
     preprocessed_filepath = ksea.preprocess_ksea(filepath, filepath.name.lower().endswith('.json'))
-    rokai_result_path = ksea.run_rokai(preprocessed_filepath, parameters, only_refine_phospho_profiles=False)
+    rokai_result_path = ksea.run_rokai(preprocessed_filepath, parameters, organism, only_refine_phospho_profiles=False)
 
     if filepath.name.lower().endswith('.json'):
         rokai_result_path = ksea.post_process_rokai(rokai_result_path)
@@ -238,16 +254,18 @@ def handle_kstar_request() -> werkzeug.wrappers.Response | str:
 
 
 @app.route('/go_enrichment', methods=['POST'])
-@app.route('/go_enrichment/<string:organism>', methods=['POST'])
-def handle_go_enrichment_request(organism: go_enrichment.SUPPORTED_ORGANISMS = 'hsa') -> werkzeug.wrappers.Response | str:
-    if organism not in go_enrichment.SUPPORTED_ORGANISMS:
-        return make_response("Error: Organism must be one of: 'hsa', 'mmu'", 400)
-
-
+def handle_go_enrichment_request() -> werkzeug.wrappers.Response | str:
     post_request_processed, request_form, _ = process_post_request(request, 'GO Enrichment')
 
     if type(post_request_processed) is flask.Response:
         return post_request_processed
+
+    if 'organism' in request_form:
+        organism = request_form['organism']
+    else:
+        organism = 'hsa'
+    if organism not in go_enrichment.SUPPORTED_ORGANISMS:
+        return make_response("Error: Organism must be one of: 'hsa', 'mmu'", 400)
 
     filepath = post_request_processed
     if not filepath.name.lower().endswith('.json'):

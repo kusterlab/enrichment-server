@@ -87,6 +87,18 @@ class TestClass:
                 ['', '.2'])
             for res, exp in zip(self.actual_result, self.expected_result))
 
+    def evaluate_rokai_csv(self):
+        pd.testing.assert_series_equal(self.actual_result['Gene'], self.expected_result['Gene'])
+        pd.testing.assert_series_equal(self.actual_result['Activity (Experiment_1)'],
+                                       self.expected_result['Activity (Experiment_1)'], check_exact=False,
+                                       atol=1e-4)
+        pd.testing.assert_series_equal(self.actual_result['FDR (Experiment_3)'],
+                                       self.expected_result['FDR (Experiment_3)'], check_exact=False,
+                                       atol=1e-4)
+        pd.testing.assert_series_equal(self.actual_result['ZScore (Experiment_3)'],
+                                       self.expected_result['ZScore (Experiment_3)'], check_exact=False,
+                                       atol=1e-4)
+
     def evaluate_phonemes(self):
         assert len(self.actual_result) == len(self.expected_result) and all(
             res['pathway'] == exp['pathway'] and
@@ -262,10 +274,11 @@ class TestClass:
         self.input_file = Path('../fixtures/go_enrichment/input/input_hsa.json')
         self.dataset_name = 'go_enrichment_bad_organism_test'
 
-        response = client.post('/go_enrichment/lol', data={
+        response = client.post('/go_enrichment', data={
             "session_id": self.session_id,
             "dataset_name": self.dataset_name,
-            "file": self.input_file.open('rb')
+            "file": self.input_file.open('rb'),
+            'organism': 'lol'
         })
 
         assert response.status_code == 400
@@ -274,10 +287,11 @@ class TestClass:
         self.input_file = Path('../fixtures/go_enrichment/input/input_mmu.json')
         self.dataset_name = 'go_enrichment_mouse_test'
 
-        response = client.post('/go_enrichment/mmu', data={
+        response = client.post('/go_enrichment', data={
             "session_id": self.session_id,
             "dataset_name": self.dataset_name,
-            "file": self.input_file.open('rb')
+            "file": self.input_file.open('rb'),
+            "organism": "mmu"
         })
 
         self.actual_result = json.loads(response.data)['Result']
@@ -286,7 +300,7 @@ class TestClass:
         self.evaluate_go_enrichment()
 
     def test_ksea_json(self, client):
-        self.input_file = Path('../fixtures/ksea/input/input.json')
+        self.input_file = Path('../fixtures/ksea/input/input_hsa.json')
         self.dataset_name = 'ksea_test_json'
 
         response = client.post('/ksea', data={
@@ -301,7 +315,7 @@ class TestClass:
         self.evaluate_ksea()
 
     def test_ksea_csv(self, client):
-        self.input_file = Path('../fixtures/ksea/input/input.csv')
+        self.input_file = Path('../fixtures/ksea/input/input_hsa.csv')
         self.dataset_name = 'ksea_test_csv'
 
         response = client.post('/ksea', data={
@@ -311,12 +325,12 @@ class TestClass:
         })
 
         self.actual_result = pd.read_csv(io.BytesIO(response.data), sep='\t')
-        expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea.txt')
+        expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea_hsa.txt')
         self.expected_result = pd.read_csv(expected_result_file, sep='\t')
         self.evaluate_ksea_csv()
 
     def test_ksea_w_parameters(self, client):
-        self.input_file = Path('../fixtures/ksea/input/input.json')
+        self.input_file = Path('../fixtures/ksea/input/input_hsa.json')
         self.parameters_toml = Path('../fixtures/ksea/input/parameters.toml')
         self.dataset_name = 'ksea_test_w_parameters'
 
@@ -332,23 +346,40 @@ class TestClass:
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ksea()
 
+    def test_ksea_mouse(self, client):
+        self.input_file = Path('../fixtures/ksea/input/input_mmu.csv')
+        self.dataset_name = 'ksea_test_mouse'
+
+        response = client.post('/ksea', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_file.open('rb'),
+            "organism": 'mmu'
+        })
+
+        self.actual_result = pd.read_csv(io.BytesIO(response.data), sep='\t')
+        expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea_mmu.txt')
+        self.expected_result = pd.read_csv(expected_result_file, sep='\t')
+        self.evaluate_ksea_csv()
+
     def test_ksea_rokai(self, client):
-        self.input_file = Path('../fixtures/ksea/input/input.json')
+        self.input_file = Path('../fixtures/ksea/input/input_hsa.json')
         self.dataset_name = 'ksea_rokai_test'
 
         response = client.post('/ksea/rokai', data={
             "session_id": self.session_id,
             "dataset_name": self.dataset_name,
-            "file": self.input_file.open('rb')
+            "file": self.input_file.open('rb'),
+            'organism': 'hsa'
         })
 
         self.actual_result = json.loads(response.data)['Result']
-        expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea_rokai.json')
+        expected_result_file = Path('../fixtures/ksea/expected_output/output_ksea_rokai_hsa.json')
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ksea()
 
-    def test_rokai(self, client):
-        self.input_json = Path('../fixtures/rokai/input/input.json')
+    def test_rokai_hsa_json(self, client):
+        self.input_json = Path('../fixtures/rokai/input/input_hsa.json')
         self.dataset_name = 'rokai_test'
 
         response = client.post('/rokai', data={
@@ -358,15 +389,30 @@ class TestClass:
         })
 
         self.actual_result = json.loads(response.data)['Result']
-        expected_result_file = Path('../fixtures/rokai/expected_output/rokai_result.json')
+        expected_result_file = Path('../fixtures/rokai/expected_output/rokai_result_hsa.json')
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_rokai()
 
+    def test_rokai_mmu_csv(self, client):
+        self.input_json = Path('../fixtures/rokai/input/input_mmu.csv')
+        self.dataset_name = 'rokai_test_mmu'
+
+        response = client.post('/rokai', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_json.open('rb'),
+            'organism': 'mmu'
+        })
+
+        self.actual_result = pd.read_csv(io.BytesIO(response.data), sep='\t')
+        expected_result_file = Path('../fixtures/rokai/expected_output/rokai_result_mmu.txt')
+        self.expected_result = pd.read_csv(expected_result_file, sep='\t')
+        self.evaluate_rokai_csv()
+
     def test_rokai_w_parameters(self, client):
-        self.input_json = Path('../fixtures/rokai/input/input.json')
+        self.input_json = Path('../fixtures/rokai/input/input_hsa.json')
         self.dataset_name = 'rokai_test_w_parameters'
         self.parameters_toml = Path('../fixtures/rokai/input/parameters.toml')
-
 
         response = client.post('/rokai', data={
             "session_id": self.session_id,
@@ -517,7 +563,7 @@ class TestClass:
 
     def test_forbidden_csv_inputs(self, client):
         # Use KSEA Input, but it could be any file ending in .csv
-        self.input_file = Path('../fixtures/ksea/input/input.csv')
+        self.input_file = Path('../fixtures/ksea/input/input_hsa.csv')
         self.dataset_name = 'forbidden_csv_test'
 
         # Call three endpoints that have no csv
