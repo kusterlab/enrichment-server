@@ -6,6 +6,16 @@ from cmapPy.pandasGEXpress import parse_gct
 from typing import Literal
 import csv
 
+DATABASES_MAP = \
+    {'hsa': {'ssc': {'flanking': "../ssGSEA2.0/db/ptmsigdb/ptm.sig.db.all.flanking.human.v2.0.0.gmt",
+                     'uniprot': "../ssGSEA2.0/db/ptmsigdb/ptm.sig.db.all.uniprot.human.v2.0.0.gmt"},
+             'gc': "../db/ssgsea/c2.cp.kegg+wp.v2023.2.Hs.symbols.gmt"},
+     'mmu': {'ssc': {'flanking': "../ssGSEA2.0/db/ptmsigdb/ptm.sig.db.all.flanking.mouse.v2.0.0.gmt",
+                     'uniprot': "../ssGSEA2.0/db/ptmsigdb/ptm.sig.db.all.uniprot.mouse.v2.0.0.gmt"},
+             'gc': "../db/ssgsea/m2.cp.kegg+wikipathways.v2024.1.Mm.symbols.gmt"}}
+
+SUPPORTED_ORGANISMS_SSGSEA: list[str] = list(DATABASES_MAP.keys())
+
 
 # TODO: This violates DRY, you could make each module inherit from an abstract class that implements this
 def get_delimiter(file_path: Path, bytes_to_read: int = 4096):
@@ -89,19 +99,19 @@ def preprocess_ssgsea(filepath: Path, type_isnot_gcr: bool, input_is_json: bool)
     return input_gct_file
 
 
-def run_ssgsea(filepath: Path, ssgsea_type: Literal['gc', 'gcr', 'ssc'],
-               ssc_input_type: Literal['flanking', 'uniprot'], parameters: dict) -> Path:
+def run_ssgsea(filepath: Path,
+               ssgsea_type: Literal['gc', 'gcr', 'ssc'],
+               ssc_input_type: Literal['flanking', 'uniprot'],
+               organism: SUPPORTED_ORGANISMS_SSGSEA,
+               parameters: dict) -> Path:
     output_dir = filepath.parent
     output_prefix = output_dir / f'ssgsea_{ssgsea_type}_out'
 
     match ssgsea_type:
         case 'ssc':
-            if ssc_input_type == 'flanking':
-                database = "../ssGSEA2.0/db/ptmsigdb/ptm.sig.db.all.flanking.human.v2.0.0.gmt"
-            elif ssc_input_type == 'uniprot':
-                database = "../ssGSEA2.0/db/ptmsigdb/ptm.sig.db.all.uniprot.human.v2.0.0.gmt"
+            database = DATABASES_MAP[organism]['ssc'][ssc_input_type]
         case 'gc' | 'gcr':
-            database = "../db/ssgsea/c2.cp.kegg+wp.v2023.2.Hs.symbols.gmt"
+            database = DATABASES_MAP[organism]['gc']
 
     subprocess_output = subprocess.run(["Rscript",
                                         "../ssGSEA2.0/ssgsea-cli.R",

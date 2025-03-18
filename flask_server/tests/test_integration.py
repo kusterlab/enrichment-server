@@ -149,7 +149,7 @@ class TestClass:
         assert response.json == {'status': 200, 'version': VERSION}, response.json
 
     def test_ssgsea_ssc_flanking(self, client):
-        self.input_file = Path('../fixtures/ptm-sea/input/input_flanking.json')
+        self.input_file = Path('../fixtures/ptm-sea/input/input_flanking_hsa.json')
         self.dataset_name = 'ptmsea_test'
 
         response = client.post('/ssgsea/ssc/flanking', data={
@@ -159,12 +159,12 @@ class TestClass:
         })
 
         self.actual_result = json.loads(response.data)['Result']
-        expected_result_file = Path('../fixtures/ptm-sea/expected_output/output_flanking.json')
+        expected_result_file = Path('../fixtures/ptm-sea/expected_output/output_flanking_hsa.json')
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ssgsea()
 
     def test_ssgsea_ssc_flanking_w_parameters(self, client):
-        self.input_file = Path('../fixtures/ptm-sea/input/input_flanking.json')
+        self.input_file = Path('../fixtures/ptm-sea/input/input_flanking_hsa.json')
         self.parameters_toml = Path('../fixtures/ptm-sea/input/parameters.toml')
         self.dataset_name = 'ptmsea_test_w_parameters'
 
@@ -181,7 +181,7 @@ class TestClass:
         self.evaluate_ssgsea()
 
     def test_ssgsea_ssc_uniprot(self, client):
-        self.input_file = Path('../fixtures/ptm-sea/input/input_uniprot.json')
+        self.input_file = Path('../fixtures/ptm-sea/input/input_uniprot_hsa.json')
         self.dataset_name = 'ptmsea_test'
 
         response = client.post('/ssgsea/ssc/uniprot', data={
@@ -191,12 +191,12 @@ class TestClass:
         })
 
         self.actual_result = json.loads(response.data)['Result']
-        expected_result_file = Path('../fixtures/ptm-sea/expected_output/output_uniprot.json')
+        expected_result_file = Path('../fixtures/ptm-sea/expected_output/output_uniprot_hsa.json')
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ssgsea()
 
     def test_ssgsea_ssc_flanking_csv(self, client):
-        self.input_file = Path('../fixtures/ptm-sea/input/input_flanking.txt')
+        self.input_file = Path('../fixtures/ptm-sea/input/input_flanking_hsa.txt')
         self.dataset_name = 'ptmsea_test_csv'
 
         response = client.post('/ssgsea/ssc/flanking', data={
@@ -205,12 +205,12 @@ class TestClass:
             "file": self.input_file.open('rb')
         })
         self.actual_result = pd.read_csv(io.BytesIO(response.data), sep='\t')
-        expected_result_file = Path('../fixtures/ptm-sea/expected_output/ptmsea_output.txt')
+        expected_result_file = Path('../fixtures/ptm-sea/expected_output/ptmsea_output_hsa.txt')
         self.expected_result = pd.read_csv(expected_result_file, sep='\t')
         self.evaluate_ssgsea_csv()
 
     def test_ssgsea_gc(self, client):
-        self.input_file = Path('../fixtures/ssgsea/input/input.json')
+        self.input_file = Path('../fixtures/ssgsea/input/input_hsa.json')
         self.dataset_name = 'ssgsea_gc_test'
 
         response = client.post('/ssgsea/gc', data={
@@ -220,12 +220,12 @@ class TestClass:
         })
 
         self.actual_result = json.loads(response.data)['Result']
-        expected_result_file = Path('../fixtures/ssgsea/expected_output/output_gc.json')
+        expected_result_file = Path('../fixtures/ssgsea/expected_output/output_gc_hsa.json')
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ssgsea()
 
     def test_ssgsea_gcr(self, client):
-        self.input_file = Path('../fixtures/ssgsea/input/input.json')
+        self.input_file = Path('../fixtures/ssgsea/input/input_hsa.json')
         self.dataset_name = 'ssgsea_gcr_test'
 
         response = client.post('/ssgsea/gcr', data={
@@ -235,9 +235,57 @@ class TestClass:
         })
 
         self.actual_result = json.loads(response.data)['Result']
-        expected_result_file = Path('../fixtures/ssgsea/expected_output/output_gcr.json')
+        expected_result_file = Path('../fixtures/ssgsea/expected_output/output_gcr_hsa.json')
         self.expected_result = json.load(open(expected_result_file))['Result']
         self.evaluate_ssgsea()
+
+    def test_ssgsea_mouse_gc(self, client):
+        self.input_file = Path('../fixtures/ssgsea/input/input_mmu.txt')
+        self.dataset_name = 'ssgsea_mouse_gc_test'
+
+        response = client.post('/ssgsea/gc', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_file.open('rb'),
+            "organism": 'mmu'
+        })
+
+        self.actual_result = pd.read_csv(io.BytesIO(response.data), sep='\t')
+        expected_result_file = Path('../fixtures/ssgsea/expected_output/output_gc_mmu.txt')
+        self.expected_result = pd.read_csv(expected_result_file, sep='\t')
+        self.evaluate_ssgsea_csv()
+
+    def test_ssgsea_mouse_gcr(self, client):
+        self.input_file = Path('../fixtures/ssgsea/input/input_mmu.txt')
+        self.dataset_name = 'ssgsea_mouse_gcr_test'
+
+        response = client.post('/ssgsea/gcr', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_file.open('rb'),
+            "organism": 'mmu'
+        })
+
+        self.actual_result = pd.read_csv(io.BytesIO(response.data), sep='\t')
+        expected_result_file = Path('../fixtures/ssgsea/expected_output/output_gcr_mmu.txt')
+        self.expected_result = pd.read_csv(expected_result_file, sep='\t')
+        self.evaluate_ssgsea_csv()
+
+    def test_ssgsea_mouse_ssc_flanking(self, client):
+        self.input_file = Path('../fixtures/ptm-sea/input/input_flanking_mmu.txt')
+        self.dataset_name = 'ptmsea_mouse_test'
+
+        response = client.post('/ssgsea/ssc/flanking', data={
+            "session_id": self.session_id,
+            "dataset_name": self.dataset_name,
+            "file": self.input_file.open('rb'),
+            "organism": 'mmu'
+        })
+
+        self.actual_result = pd.read_csv(io.BytesIO(response.data), sep='\t')
+        expected_result_file = Path('../fixtures/ptm-sea/expected_output/ptmsea_output_mmu.txt')
+        self.expected_result = pd.read_csv(expected_result_file, sep='\t')
+        self.evaluate_ssgsea_csv()
 
     def test_go_enrichment_human(self, client):
         self.input_file = Path('../fixtures/go_enrichment/input/input_hsa.json')

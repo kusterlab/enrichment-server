@@ -91,6 +91,13 @@ def handle_ssgsea_request(ssgsea_type: Literal['ssc', 'gc', 'gcr'], ssc_input_ty
     if type(post_request_processed) is flask.Response:
         return post_request_processed
 
+    if 'organism' in request_form:
+        organism = request_form['organism']
+    else:
+        organism = 'hsa'
+    if organism not in ssgsea.SUPPORTED_ORGANISMS_SSGSEA:
+        return make_response("Error: Organism must be one of: 'hsa', 'mmu'", 400)
+
     filepath = post_request_processed
 
     # Preprocess the input into a gct file
@@ -100,7 +107,7 @@ def handle_ssgsea_request(ssgsea_type: Literal['ssc', 'gc', 'gcr'], ssc_input_ty
         input_is_json=filepath.name.lower().endswith('.json')
     )
 
-    ssgsea_combined_output = ssgsea.run_ssgsea(ssgsea_input, ssgsea_type, ssc_input_type, parameters)
+    ssgsea_combined_output = ssgsea.run_ssgsea(ssgsea_input, ssgsea_type, ssc_input_type, organism, parameters)
 
     return send_response(
         postprocess_request_response(ssgsea.postprocess_ssgsea(
