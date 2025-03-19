@@ -751,5 +751,5 @@ Now you can just build and run the docker container:
 If the Enrichment Server is useful for your research, please cite the following publication:  
 
  **PTMNavigator: Interactive Visualization of Differentially Regulated Post-Translational Modifications in Cellular Signaling Pathways**  
-Julian Müller, Florian P. Bayer, Mathias Wilhelm, Bernhard Kuster, Matthew The  
+Julian Müller, Florian P. Bayer, Mathias Wilhelm, Maximilian G. Schuh, Bernhard Kuster, Matthew The  
 _Nature Communications_ 16:510 (2025); doi: https://doi.org/10.1038/s41467-024-55533-y
