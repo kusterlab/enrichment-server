@@ -23,7 +23,7 @@ from modules.kea3 import kea3
 from modules.k_star import k_star
 from modules.go_enrichment import go_enrichment
 
-VERSION = '0.1.3'
+VERSION = '0.2.0'
 
 def setup_logger():
     global LOGGER
