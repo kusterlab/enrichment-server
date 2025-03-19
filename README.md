@@ -248,7 +248,7 @@ link: https://biit.cs.ut.ee/gprofiler//static/gprofiler_full_hsapiens.name.gmt
 
 <i>Endpoint</i>
 
-`/go` (JSON)
+`/go_enrichment` (JSON)
 
 <i>Reference</i>
 
@@ -290,8 +290,8 @@ The default background are all genes annotated in the GO database.
 
 <i>Example Command</i>
 
-`curl -X POST -F file=@fixtures/go/input/input.json
-https://enrichment.kusterlab.org/main_enrichment-server/go
+`curl -X POST -F file=@fixtures/go_enrichment/input/input.json
+https://enrichment.kusterlab.org/main_enrichment-server/go_enrichment
 -o output_go.json`
 
 </details>
