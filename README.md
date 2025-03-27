@@ -553,6 +553,9 @@ E.g.:
  }
 ```
 
+<i>Supported Organisms</i>  
+`hsa`
+
 
 <i>Example Command</i>
 
@@ -613,6 +616,9 @@ RDS(ph)ASYR,A0A1X7SBZ2;A0A5H1ZRQ2;Q92841;Q92841-1;Q92841-2;Q92841-3,down,up
 - `threshold_type`: Metric to use for filtering. Possible values are `'score', 'percentile', 'total'` (default: `'percentile'`)
 - `sort_type`: Metric to use for ranking. Possible values are `'score', 'percentile', 'total'` (default: `'percentile'`)
 
+<i>Supported Organisms</i>  
+`hsa`
+
 
 <i>Example Command</i>
 
@@ -661,6 +667,10 @@ E.g.:
   ]
 }
 ```
+
+<i>Supported Organisms</i>  
+`hsa`
+
 
 <i>Example Command</i>
 
@@ -721,6 +731,9 @@ RS(ph)VGSDE C9JBX5;E9PAL7;P43307;P43307-2 -1.2895137775  -2.2462854621
 <i>Parameters</i>   
 - `agg`: How to aggregate sites that appear multiple times. Possible values are `'mean', 'max', 'min', 'count'` (default: `'mean'`)
 - `threshold`: Cutoff for keeping a site as evidence  (default: `0`)
+
+<i>Supported Organisms</i>  
+`hsa`
 
 
 <i>Example Command</i>
