@@ -242,9 +242,7 @@ In order to use this approach with PTM datasets, you need to map the peptide/sit
 information.
 This approach also cannot take into account the direction, fold change, or significance of each regulation;
 therefore we advise you to use PTM-SEA or ssGSEA instead, if you have more than just a list of regulated genes.  
-As database, we use the GO annotations provided by g:Profiler under this
-link: https://biit.cs.ut.ee/gprofiler//static/gprofiler_full_hsapiens.name.gmt
-(last downloaded **2025-03-10**).
+As database, we use the GO annotations provided by g:Profiler.
 
 <i>Endpoint</i>
 
