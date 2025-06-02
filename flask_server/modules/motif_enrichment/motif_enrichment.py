@@ -52,7 +52,7 @@ def run_motif_enrichment(filepath: Path, parameters: dict, input_is_json: bool) 
             # indent=1
         )
     else:
-        result_df.to_csv(output_file, index=False, sep='\t')
+        result_df.sort_values(by='Kinase').to_csv(output_file, index=False, sep='\t')
     return output_file
 
 
@@ -73,7 +73,8 @@ def run_motif_enrichment_dataframe(input_df: pd.DataFrame, parameters:dict) -> p
 
     if 'Modified sequence' in input_df:
         input_df = pa.addPeptideAndPsitePositions(input_df, PHOSPHOSITE_FASTA, pspInput=True, context_left=5,
-                                                  context_right=5, retain_other_mods=True)
+                                                  context_right=5, retain_other_mods=True,
+                                                  return_unique=True, return_sorted=True)
     else:
         input_df = pa.addSiteSequenceContext(input_df, PHOSPHOSITE_FASTA, pspInput=True, context_left=5,
                                              context_right=5,

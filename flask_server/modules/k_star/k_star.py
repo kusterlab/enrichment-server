@@ -30,7 +30,8 @@ def run_kstar(filepath: Path, parameters: dict, input_is_json: bool) -> Path:
     output_dir = filepath.parent
     # We need to convert the sequences into +/-7 flanking format with modified residues in lowercase
     input_df = pa.addPeptideAndPsitePositions(input_df, '../db/psite_annotation/Phosphosite_seq.fasta', pspInput=True,
-                                              context_left=7, context_right=7, retain_other_mods=True)
+                                              context_left=7, context_right=7, retain_other_mods=True,
+                                              return_unique=True, return_sorted=True)
 
     input_df['Uniprot_Accession'] = input_df['Matched proteins'].apply(lambda prot: prot.split(';')[0])
 
